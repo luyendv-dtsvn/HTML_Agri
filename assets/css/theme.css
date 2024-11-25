@@ -1,8 +1,59 @@
 /*!
- * Theme Name: Default
- * Package : DashLite
- * Author: Softnio
- * Author URI: http://themeforest.net/user/softnio
+ * Theme Name: Custome
+ * Package : HTML Agri
+ * Author: DTSVN LuyenDV
  * Version	 :	1.0.0
- * Updated	 :	07.23.2020
 **/
+.pre-header{
+    padding: 0px;
+    color: white;
+    
+}
+.nk-header-pre-header {
+    background-color: var(--red-color) !important;
+    border: none;
+}
+.pre-header .nk-menu-main .nk-menu-link {
+    color: white;
+}
+.pre-header .menu-item-line em{
+    font-size: 15px !important;
+}
+.pre-header ul{
+    padding-left: 0px !important;
+}
+.faded-line {
+    width: 2px; /* Độ rộng thanh */
+    height: 20px; /* Chiều cao thanh */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255 255 255) 50%, rgba(0, 0, 0, 0) 100%);
+}
+.menu-item-line{
+    display: inline-flex !important;
+    align-items: center;
+    vertical-align: middle;
+    
+}
+.icon-langue {
+    background-image: url("../images/vietnam_flag.png");
+    width: 16px;
+    height: 16px;
+    background-size: contain; /* Đảm bảo hình ảnh vừa khít trong thẻ */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    background-position: center; /* Căn giữa hình ảnh */
+    vertical-align: middle;
+}
+.btn-login{
+    background-color: var(--red-color);
+    color: white;
+    margin-left: 10px;
+}
+
+@media (min-width: 992px) {
+    .pre-header >.nk-menu-main > li.nk-menu-item > .nk-menu-link {
+        padding: 8px 10px 6px 10px;
+        font-size: 12px;
+    }
+    .pre-header>.nk-menu-main > li.nk-menu-item {
+        padding: 0rem;
+    }
+}
