@@ -4,15 +4,137 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif, "SVN-Helvetica Now";
+    background-color: #ffffff;
 }
+
+
+
+
+
+
+/* Tổng thể */
+.agribank-culture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Chiều rộng bằng toàn bộ màn hình */
+    height: 583px; /* Chiều cao bằng toàn bộ màn hình */
+    overflow: hidden;
+    position: relative; /* Đặt vị trí tương đối */
+}
+
+/* Container */
+.agribank-culture-container {
+    display: flex;
+    flex-wrap: wrap; /* Đảm bảo hoạt động tốt trên màn hình nhỏ */
+    width: 100%; /* Chiều rộng đầy đủ */
+    height: 100%; /* Đảm bảo bao phủ toàn màn hình */
+    box-sizing: border-box;
+}
+
+/* Cột trái (nền đỏ) */
+.agribank-culture-text {
+    flex: 40%;
+    background: linear-gradient(115deg, #9E2B47 0.44%, #AF0B35 103.79%);
+    color: #ffffff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 280px;
+}
+
+.agribank-culture-breadcrumb {
+    color: var(--white, #FFF);
+    font-family: "SVN-Helvetica Now";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px; /* 176.923% */
+}
+
+.agribank-culture-breadcrumb-icon {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.agribank-culture-breadcrumb span {
+    color: var(--white, #9f9f9f);
+}
+
+.agribank-culture-text-title {
+    gap: 16px;
+}
+
+.agribank-culture-title {
+    color: #FFF;
+    font-family: "SVN-Helvetica Now";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 52px */
+    letter-spacing: -0.4px;
+}
+
+.agribank-culture-description {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "SVN-Helvetica Now";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: -0.16px;
+}
+
+/* Cột phải (hình ảnh) */
+.agribank-culture-image {
+    flex: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+.agribank-culture-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Tràn chiều ngang */
+    height: 100%; /* Tràn chiều dọc */
+    object-fit: cover; /* Đảm bảo ảnh bao phủ toàn bộ */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .agribank-culture-container {
+        flex-direction: column;
+    }
+
+    .agribank-culture-text {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .agribank-culture-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; /* Đảm bảo ảnh không bị cắt */
+    }
+}
+
+
+
+
+
+
+
 
 /* Container chính */
 .agribank-culture-identity-container {
-    max-width: 1900px;
-    margin: 0 auto;
+    max-width: 85%;
     padding: 20px;
+    padding: 0 17px;
+    margin: 0 auto;
+    margin-top: 80px;
 }
 
 /* Tiêu đề */
@@ -36,7 +158,7 @@ body {
 
 .agribank-culture-identity-title-main {
     /* Hiển thị tiêu đề */
-    width: 544px;
+    width: auto;
     height: auto;
     position: relative;
     top: 0;
@@ -54,10 +176,11 @@ body {
 
 /* Cards */
 .agribank-culture-identity-card-container {
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .agribank-culture-identity-card {
@@ -88,14 +211,14 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 20px;
+    padding: 0 20px;
     text-align: left;
 }
 
 /* Tiêu đề trong card */
 .agribank-culture-identity-card h3 {
     margin-top: 190px;
-    margin-left: 28px;
+    text-align: center;
     font-family: 'SVN-Helvetica Now', sans-serif;
     font-size: 19px;
     font-weight: 500;
@@ -128,8 +251,8 @@ body {
 /* Khi hover */
 .agribank-culture-identity-card:hover {
     width: 557px;
-    background-color: #AF0B35;
-    border-color: #AF0B35;
+    border-radius: 4px;
+    background: var(--red-1, #AF0B35);
     color: #FFFFFF;
 }
 
@@ -139,7 +262,6 @@ body {
 
 .agribank-culture-identity-card:hover h3 {
     margin-top: 50px;
-    margin-left: 20px;
     color: #FFFFFF;
 }
 
@@ -186,8 +308,10 @@ body {
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 80px;
+
 }
 /* Container */
 .featured-culture-container {
@@ -195,15 +319,18 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
-    max-width: 1600px;
+    width: 100%;
     width: 100%;
 }
-
+.featured-culture-agribank-title {
+    width: 100%;
+    text-align: left; /* Hiển thị nội dung ở đầu dòng */
+    margin-bottom: 30px; /* Tạo khoảng cách dưới tiêu đề */
+}
 /* Hình ảnh */
 .featured-culture-image {
-    flex: 1;
     border-radius: 8px; /* Bo góc hình ảnh */
-    max-width: 50%;
+    width: 50%;
     overflow: hidden;
     background-color: #D9D9D9; /* Màu nền mặc định */
 }
@@ -216,8 +343,7 @@ body {
 
 /* Nội dung */
 .featured-culture-content {
-    flex: 1;
-    max-width: 50%; /* Chiếm 50% không gian */
+    width: 50%; /* Chiếm 50% không gian */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -242,7 +368,6 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column; /* Các mục xếp theo cột */
-    gap: 15px; /* Khoảng cách giữa các mục */
 }
 
 /* Mục con */
@@ -277,7 +402,7 @@ body {
 .featured-culture-heading {
     width: 757px;
     height: 36px;
-    color: #EFEFEF;
+    color: #7f7f7f;
     font-family: "SVN-Helvetica Now";
     font-size: 30px;
     font-style: normal;
@@ -348,6 +473,7 @@ body {
     background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ */
     background-position: center; /* Đảm bảo ảnh căn giữa */
     background-repeat: no-repeat; /* Không lặp lại ảnh */
+    margin-top: 80px;
 }
 
 .why-agribank-culture-content {
@@ -412,15 +538,16 @@ body {
     position: relative;
     width: 100%;
     height: 800px;
-    padding: 70px 40px; /* Tăng khoảng padding để nội dung có thêm không gian */
+    margin: 0 auto;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .agribank-quote-container {
-    max-width: 1400px; /* Tăng chiều rộng tối đa của container */
+    width: 100%; /* Tăng chiều rộng tối đa của container */
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -432,17 +559,22 @@ body {
 .agribank-quote-main {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 30px;
     text-align: left;
 }
 
 .agribank-quote-image img {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #D00027;
+}
+
+.agribank-quote-icon {
+    width: 31px;
+    height: 30px;
+    flex-shrink: 0;
+    fill: rgba(74, 74, 74, 0.50);
 }
 
 .agribank-quote-text {
@@ -450,34 +582,54 @@ body {
 }
 
 .agribank-quote-text p {
-    font-family: "SVN-Helvetica Now", sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #080808;
-    margin-bottom: 10px;
+    color: var(--dark-1, #080808);
+    font-family: "SVN-Helvetica Now";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 48px */
+    letter-spacing: -0.4px;
 }
 
 .agribank-quote-text .highlight {
-    color: #D00027;
-    font-weight: bold;
+    color: var(--red-1, #AF0B35);
+    font-family: "SVN-Helvetica Now";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.4px;
 }
 
 .agribank-quote-text cite {
-    display: block;
-    font-family: "SVN-Helvetica Now", sans-serif;
+    color: var(--dark-1, #080808);
+    font-family: "SVN-Helvetica Now";
     font-size: 16px;
-    color: #666;
-    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: -0.32px;
+}
+
+.agribank-quote-text .star {
+    color: var(--dark-3, #606060);
+    font-family: "SVN-Helvetica Now";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.32px;
 }
 
 /* Các hình ảnh phụ */
 .agribank-quote-images {
+    margin-top: 150px;
     position: absolute;
     top: 50%; /* Giữ ảnh phụ căn giữa */
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 120%; /* Tăng kích thước tổng thể của các ảnh phụ */
-    height: 120%; /* Tăng chiều cao tổng thể của ảnh phụ */
+    width: 100%; /* Tăng kích thước tổng thể của các ảnh phụ */
+    height: 100%; /* Tăng chiều cao tổng thể của ảnh phụ */
     pointer-events: none; /* Đảm bảo không tương tác được */
 }
 
@@ -487,7 +639,16 @@ body {
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #D00027;
+}
+
+.agribank-quote-images-background {
+    margin-left: 300px;
+    margin-top: 40px;
+    width: 479.803px;
+    height: 596.015px;
+    flex-shrink: 0;
+    color: linear-gradient(180deg, #D9D9D9 0%, rgba(115, 115, 115, 0.00) 75.85%);
+
 }
 
 /* Vị trí hình ảnh phụ */
@@ -497,17 +658,17 @@ body {
 }
 
 .floating-image-2 {
-    top: 30%;
+    top: 20%;
     right: 25%;
 }
 
 .floating-image-3 {
-    bottom: 20%;
+    bottom: 15%;
     left: 15%;
 }
 
 .floating-image-4 {
-    top: 60%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -518,7 +679,7 @@ body {
 }
 
 .floating-image-6 {
-    top: 15%;
+    top: 17%;
     right: 15%;
 }
 
@@ -541,82 +702,38 @@ body {
 
 /* Tổng thể section */
 .agribank-news {
-    padding: 40px 20px;
-    background-color: #ffffff;
-    text-align: center;
-    box-sizing: border-box;
+    width: 85%;
+    margin: 0 auto;
 }
 
+/* Container */
 .agribank-news-container {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
 
 /* Tiêu đề */
 .agribank-news-title {
-    font-family: 'SVN-Helvetica Now', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    color: #000000;
-    margin-bottom: 40px;
-}
-
-/* Danh sách tin */
-.agribank-news-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-/* Bài viết */
-.agribank-news-item {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.agribank-news-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.agribank-news-image {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-/* Nội dung bài viết */
-.agribank-news-content {
-    padding: 15px;
-}
-
-.agribank-news-category {
-    font-family: 'SVN-Helvetica Now', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #666666;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-}
-
-.agribank-news-title-item {
-    font-family: 'SVN-Helvetica Now', sans-serif;
-    font-size: 16px;
+    display: flex;
+    justify-content: space-between; /* Điều hướng và tiêu đề nằm hai bên */
+    align-items: center;
+    color: var(--dark-1, #080808);
+    font-family: "SVN-Helvetica Now";
+    font-size: 36px;
+    font-style: normal;
     font-weight: 400;
-    color: #000000;
-    line-height: 1.5;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: -0.36px;
+    margin-bottom: 20px;
 }
 
-/* Điều hướng */
+.agribank-news-title-main {
+    text-align: left; /* Căn tiêu đề bên trái */
+}
+
 .agribank-news-navigation {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
     display: flex;
     gap: 10px;
 }
@@ -641,6 +758,86 @@ body {
     color: #ffffff;
 }
 
+/* Danh sách bài viết */
+.agribank-news-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Linh hoạt hiển thị 4 cột */
+    gap: 10px; /* Khoảng cách giữa các bài viết */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Bài viết */
+.agribank-news-item {
+    display: flex;
+    width: 413px;
+    border-radius: 8px;
+    overflow: hidden;
+    align-items: flex-start;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Đảm bảo hình và nội dung xếp theo chiều dọc */
+}
+
+.agribank-news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.agribank-news-image {
+    height: 258px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Nội dung bài viết */
+.agribank-news-content {
+    display: flex;
+    padding-right: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.agribank-news-category {
+    align-self: stretch;
+    color: #494949;
+    font-family: "SVN-Helvetica Now";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+}
+
+.agribank-news-title-item {
+    align-self: stretch;
+    color: var(--dark-2, #393939);
+    font-family: "SVN-Helvetica Now";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .agribank-news-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .agribank-news-navigation {
+        margin-top: 10px;
+    }
+}
+
+
+
+
 
 
 
@@ -649,13 +846,14 @@ body {
 
 /* Section Tổng */
 .culture-agribank-download {
-    width: 100%; /* Chiều rộng toàn bộ */
-    padding: 104px; /* Khoảng cách trắng ở ngoài */
-    background-color: #ffffff; /* Nền trắng */
+    width: 85%;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .culture-agribank-download-inner {
@@ -664,9 +862,8 @@ body {
     background: linear-gradient(115deg, #9E2B47 0.44%, #761930 103.79%);
     box-sizing: border-box;
     padding: 20px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 /* Container */
@@ -677,7 +874,6 @@ body {
     padding: 67px 48px;
     color: #FFFFFF;
     box-sizing: border-box;
-    gap: 500px;
 }
 
 /* Nội dung bên trái */
