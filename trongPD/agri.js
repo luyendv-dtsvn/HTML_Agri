@@ -68,3 +68,30 @@ document.addEventListener("DOMContentLoaded", function () {
     // Khởi tạo hiển thị ban đầu
     updateVisibleItems();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Lấy tất cả các tab và item
+    const tabs = document.querySelectorAll('.loan-tabs-filter button');
+    const cards = document.querySelectorAll('.loan-card');
+    
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            const tabText = tab.textContent.trim(); // Lấy tên tab
+
+            // Lặp qua các item và kiểm tra nhóm
+            cards.forEach(card => {
+                const category = card.dataset.category; // Lấy nhóm từ data-category
+
+                if (tabText === 'Tất cả' || category === tabText) {
+                    card.style.display = 'flex'; // Hiển thị item
+                } else {
+                    card.style.display = 'none'; // Ẩn item
+                }
+            });
+
+            // Làm nổi bật tab được chọn
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+        });
+    });
+});

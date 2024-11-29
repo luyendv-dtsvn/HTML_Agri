@@ -1,10 +1,124 @@
+/* Black */
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Black Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* ExtraBold */
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text ExtraBold Italic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* ExtraLight */
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text ExtraLight Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Light Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Medium Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Regular Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Thin */
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now';
+    src: url('./fonts/SVN-Helvetica Now Text Thin Italic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+
 /* Tổng quát */
 body {
     width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif, "SVN-Helvetica Now";
+    font-family: SVN-Helvetica Now, sans-serif, "SVN-Helvetica Now";
     background-color: #ffffff;
 }
 /* Tổng thể */
@@ -388,7 +502,7 @@ body {
     transition: all 0.3s ease;
 }
 
-li:last-child {
+.featured-culture-list li:last-child {
     border-bottom: 1px solid #E1E1E1; /* Chỉ hiển thị đường viền trên */
   }
 
@@ -1102,23 +1216,31 @@ li:last-child {
 
 
 .loan-section {
-width: 100%;
+    width: 100%;
+    align-content: center;
 }
 
 .loan-tabs {
 display: flex;
-gap: 15px;
+align-items: center;
 padding-left: 5%;
 padding-right: 5%;
 border-bottom: 1px solid #E1E1E1; /* Chỉ hiển thị đường viền trên */
+justify-content: space-between;
 }
 .loan-tabs-filter {
-    padding: 14px 28px;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .loan-tabs-filter button {
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: rgba(0, 0, 0, 0.04);;
+    background: rgba(0, 0, 0, 0.04);
     color: #353535;
     font-family: "SVN-Helvetica Now";
     font-size: 14px;
@@ -1128,18 +1250,31 @@ border-bottom: 1px solid #E1E1E1; /* Chỉ hiển thị đường viền trên *
     letter-spacing: -0.14px;
 }
 
-.loan-tabs button:hover {
-    background-color: #f0f0f0;
+.loan-tabs-filter button:hover {
+    color: var(--red-1, #AF0B35);
 }
-    
+
+.loan-tabs-filter button.active {
+    border: 2px solid rgba(0, 0, 0, 0.34);
+}
 
 .loan-tabs-right {
     height: 100%;
     text-align: center;
-    border: 1px solid #E1E1E1
 }
 
 .loan-tabs-right button {
+    display: inline-flex;
+    height: 91px;
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border: none;
+    background-color: #FFF;
+    border-right: 1px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
     color: #AF0B35;
     -webkit-text-stroke-width: 0.10000000149011612;
     -webkit-text-stroke-color: #AF0B35;
@@ -1151,64 +1286,187 @@ border-bottom: 1px solid #E1E1E1; /* Chỉ hiển thị đường viền trên *
     letter-spacing: -0.15px;
 }
 
+.loan-tabs-right button:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+.loan-cards-contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loan-cards {
+    width: 90%;
+    align-items: center;
+}
+
 .loan-card {
-display: flex;
-gap: 20px;
-margin-bottom: 30px;
-padding: 20px;
-border: 1px solid #ccc;
-border-radius: 8px;
-background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EAEAEA;
+    position: relative; /* Đảm bảo rằng các phần tử con có thể sử dụng position: absolute */
+    overflow: hidden; /* Ẩn phần ảnh vượt khỏi khung */
+}
+
+
+.loan-card:last-child {
+    border-bottom: none;
 }
 
 .loan-card-image {
-flex: 1;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: stretch;
+    position: relative;
+    overflow: hidden; /* Đảm bảo ảnh không tràn khỏi khung */
 }
 
 .loan-card-image img {
-width: 100%;
-height: auto;
-border-radius: 8px;
+    transition: transform 0.3s ease; /* Tạo hiệu ứng chuyển đổi mượt */
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
 .loan-card-content {
-flex: 2;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+    display: flex;
+    padding: 40px 56px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    flex: 1.1;
 }
 
 .loan-card-content h2 {
-font-size: 24px;
-margin-bottom: 10px;
+    align-self: stretch;
+    color: var(--dark-1, #080808);
+    font-family: "SVN-Helvetica Now";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 36.4px */
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+.loan-card-content-title {
+    display: flex;
+    align-items: center;
+}
+
+.loan-card-title-1 {
+    display: flex;
+    width: 193px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 20px;
+    border-right: 1px solid #EAEAEA;
+}
+
+.loan-card-title-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.loan-card-title-sub {
+    color: var(--dark-3, #606060);
+    font-family: "SVN-Helvetica Now";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.14px;
+}
+
+.loan-card-title {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    color: var(--dark-2, #393939);
+    font-family: "SVN-Helvetica Now";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 62.4px */
+    letter-spacing: -0.52px;
+}
+
+
+.loan-card-title span {
+    color: var(--dark-3, #606060);
+    font-family: "SVN-Helvetica Now";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 16.8px */
+    letter-spacing: -0.14px;
 }
 
 .loan-card-content ul {
-list-style: none;
-padding: 0;
-margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 30px;
 }
 
 .loan-card-content ul li {
-margin-bottom: 8px;
+    flex: 1 0 0;
+    color: var(--dark-2, #393939);
+    font-family: "SVN-Helvetica Now";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.14px;
+    list-style: url(./images/CheckCircle.svg);
 }
 
-.loan-card-content ul li strong {
-color: #a00026;
-}
 
 .loan-card-actions {
-display: flex;
-gap: 15px;
+    display: flex;
+    padding-top: 8px;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
 }
 
 .primary-btn {
-padding: 10px 20px;
-background-color: #a00026;
-color: #fff;
-border: none;
-border-radius: 4px;
-cursor: pointer;
+    display: flex;
+    height: 52px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--red-2, #9E2B47);
+    border: none;
+}
+
+.primary-btn span {
+    display: flex;
+    padding: 0px 6px 2px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #FFF;
+    font-family: "SVN-Helvetica Now";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 15.4px */
+    letter-spacing: -0.14px;
 }
 
 .primary-btn:hover {
@@ -1216,17 +1474,82 @@ background-color: #900022;
 }
 
 .secondary-link {
-color: #a00026;
-text-decoration: none;
-font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: #AF0B35;
+    -webkit-text-stroke-width: 0.10000000149011612;
+    -webkit-text-stroke-color: #AF0B35;
+    font-family: "SVN-Helvetica Now";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 16.5px */
+    letter-spacing: -0.15px;
+    text-decoration: none;
 }
 
 .secondary-link:hover {
 text-decoration: underline;
 }
 
+.loan-card:hover .loan-card-image img {
+    transform: scale(1.1); /* Phóng to ảnh 10% */
+}
 
 
+
+
+
+
+
+.request-consultation {
+    display: flex;
+    width: 100%;
+    height: 192px;
+    align-items: center;
+    justify-content: center;
+}
+
+.request-container {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px dashed #DCDCDC;
+}
+
+.request-button {
+    display: flex;
+    color: var(--red-2, #9E2B47);
+    font-family: "SVN-Helvetica Now";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 18.7px */
+    letter-spacing: -0.17px;
+    text-decoration: none;
+}
+
+.request-button span {
+    display: flex;
+    padding: 0px 6px 1px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.request-button-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0; 
+}
+
+.request-container:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
 
 
 
