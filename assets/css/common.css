@@ -82,114 +82,352 @@
 /*    }*/
 /*}*/
 
-.txt-heading-1 {
+
+/* Black */
+@font-face {
+    font-family: 'SVN-Helvetica Now normal';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now normal-italic';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ Black\ Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'SVN-Helvetica Now bold';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now bold-italic';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ Bold\ Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* ExtraBold */
+@font-face {
+    font-family: 'SVN-Helvetica Now ExtraBold';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now ExtraBold-italic';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ ExtraBold\ Italic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* ExtraLight */
+@font-face {
+    font-family: 'SVN-Helvetica Now ExtraLight';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now ExtraLight-italic';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ ExtraLight\ Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: 'SVN-Helvetica Now Light';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now Light-italic';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ Light\ Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'SVN-Helvetica Now Medium';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now Medium-italic';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ Medium\ Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'SVN-Helvetica Now Regular';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now Regular-italic';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ Regular\ Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Thin  */
+@font-face {
+    font-family: 'SVN-Helvetica Now Thin';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Helvetica Now Thin-italic';
+    src: url('../fonts/SVN-Helvetica\ Now\ Text\ Thin\ Italic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+body, button {
+    font-family: 'SVN-Helvetica Now Regular';
+}
+
+/* Head text */
+.Heading-H1 {
+    font-family: 'SVN-Helvetica Now Regular';
     font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 76.8px */
-    letter-spacing: -0.64px;
+    line-height: 120.00000476837158%;
+    letter-spacing: -1%;
 }
 
-.txt-heading-2 {
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 57.6px */
+.Heading-H2 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 55px;
+    line-height: 89.99999761581421%;
+    letter-spacing: 0%;
 }
 
-.txt-heading-3 {
+.Heading-H3 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 52px;
+    line-height: 120.00000476837158%;
+    letter-spacing: 0%;
+}
+
+.Heading-H4 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 52px;
+    line-height: 120.00000476837158%;
+    letter-spacing: 0%;
+}
+
+.Heading-H5 {
+    font-family: 'SVN-Helvetica Now Regular';
     font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 48px */
+    line-height: 120.00000476837158%;
+    letter-spacing: -1%;
 }
 
-.txt-heading-4 {
+.Heading-H6 {
+    font-family: 'SVN-Helvetica Now Regular';
     font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 43.2px */
-    letter-spacing: -0.36px;
+    line-height: 120.00000476837158%;
+    letter-spacing: -1%;
 }
 
-.txt-heading-5 {
+.Heading-H7 {
+    font-family: 'SVN-Helvetica Now Regular';
     font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 33.6px */
+    line-height: 120.00000476837158%;
+    letter-spacing: -1%;
 }
 
-.txt-heading-6 {
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 31.2px */
-    letter-spacing: -0.26px;
-}
-
-.txt-heading-7 {
+.Heading-H8 {
+    font-family: 'SVN-Helvetica Now Regular';
     font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%; /* 26px */
+    line-height: 139.9999976158142%;
+    letter-spacing: 0%;
 }
 
-.txt-heading-8 {
+.Body-19 {
+    font-family: 'SVN-Helvetica Now Medium';
+    font-size: 19px;
+    line-height: 139.9999976158142%;
+    letter-spacing: 0%;
+}
+
+.Body-17 {
+    font-family: 'SVN-Helvetica Now Medium';
+    font-size: 17px;
+    line-height: 110.00000238418579%;
+    letter-spacing: -1%;
+}
+
+.Body-18 {
+    font-family: 'SVN-Helvetica Now Medium';
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 19.8px */
-    letter-spacing: -0.18px;
+    line-height: 110.00000238418579%;
+    letter-spacing: 0%;
 }
 
-.txt-heading-9 {
+.Body-16 {
+    font-family: 'SVN-Helvetica Now Medium';
     font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 17.6px */
-    letter-spacing: -0.16px;
+    line-height: 110.00000238418579%;
+    letter-spacing: -1%;
 }
 
-.txt-heading-10 {
+.Body-15 {
+    font-family: 'SVN-Helvetica Now Medium';
     font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 16.5px */
-    letter-spacing: -0.15px;
+    line-height: 110.00000238418579%;
+    letter-spacing: -1%;
 }
 
-.txt-heading-11 {
+.Body-14 {
+    font-family: 'SVN-Helvetica Now Medium';
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 19.6px */
+    line-height: 110.00000238418579%;
+    letter-spacing: 0%;
 }
 
-.txt-heading-12 {
+.Body-13 {
+    font-family: 'SVN-Helvetica Now Medium';
     font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 14.3px */
-    letter-spacing: 0.52px;
+    line-height: 160.0000023841858%;
+    letter-spacing: -1%;
 }
 
-.txt-heading-13 {
+.Body-12 {
+    font-family: 'SVN-Helvetica Now Medium';
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 13.2px */
-    letter-spacing: 0.48px;
+    line-height: 110.00000238418579%;
+    letter-spacing: -1%;
 }
 
-.txt-heading-14 {
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 57.2px */
-    letter-spacing: -0.44px;
+.Body-Regular-18 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -1%;
 }
 
-.color-white-def {
+.Body-Regular-17 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: -2%;
+}
+
+.Body-Regular-16 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -1%;
+}
+
+.Body-Regular-15 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: -1%;
+}
+
+.Body-Regular-14 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 14px;
+    line-height: 139.9999976158142%;
+    letter-spacing: 0%;
+}
+
+.Body-Regular-13 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 13px;
+    line-height: 110.00000238418579%;
+    letter-spacing: -1%;
+}
+
+.Body-Regular-12 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 12px;
+    line-height: 139.9999976158142%;
+    letter-spacing: 0%;
+}
+
+.Subtitle-12 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 12px;
+    line-height: 110.00000238418579%;
+    letter-spacing: 4%;
+}
+
+.Subtitle-14 {
+    font-family: 'SVN-Helvetica Now Regular';
+    font-size: 14px;
+    line-height: 110.00000238418579%;
+    letter-spacing: 4%;
+}
+/* color */
+.white {
+    color: rgb(255, 255, 255);
+}
+
+.Gradient-1 {
+    color: linear-gradient(122deg, #AF0B35 19.31%, #9D5165 38.51%, #490516 71.05%);
+}
+
+.red-1 {
+    color: #AF0B35;
+}
+
+.red-2 {
+    color: rgb(158, 43, 71);
+}
+
+.red-2-1 {
+    color: rgb(170, 29, 64);
+}
+
+.red-3 {
+    color: rgb(195, 60, 94);
+}
+
+.dark-1 {
+    color: rgb(8, 8, 8);
+}
+
+.dark-2 {
+    color: rgb(57, 57, 57);
+}
+
+.dark-3 {
+    color: rgb(96, 96, 96);
+}
+
+.Linear-1 {
+    color: linear-gradient(
+        115deg, 
+      rgba(158, 43, 71, 1) 0%,  
+      rgba(118, 25, 48, 1) 100% 
+    );
+}
+
+.Linear-2 {
+    color: linear-gradient(
+        270deg, 
+      rgba(175, 11, 53, 1) 0%,  
+      rgba(201, 50, 89, 1) 100% 
+    );
+}
+  
+
+/* .color-white-def {
     color: #FFF;
 }
 .color-white-opa-1 {
@@ -215,4 +453,4 @@
 }
 .color-dark-pink-1 {
     color: #AF0B35;
-} 
+}  */
