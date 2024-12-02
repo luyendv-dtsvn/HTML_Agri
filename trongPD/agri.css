@@ -1164,12 +1164,7 @@ body {
 
 .personal-loan-breadcrumb {
     width: 50%;
-    color: var(--white, #FFF);
     font-family: "SVN-Helvetica Now";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 23px; /* 176.923% */
     margin-top: 20px;
 }
 
@@ -1178,9 +1173,6 @@ body {
     margin-right: 20px;
 }
 
-.personal-loan-breadcrumb span {
-    color: rgba(255, 255, 255, 0.80);
-}
 
 .personal-loan-text-title {
     width: 60%;
@@ -1189,23 +1181,11 @@ body {
 }
 
 .personal-loan-title {
-    color: #FFF;
     font-family: "SVN-Helvetica Now";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 52px */
-    letter-spacing: -0.4px;
 }
 
 .personal-loan-description {
-    color: rgba(255, 255, 255, 0.80);
     font-family: "SVN-Helvetica Now";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; /* 25.6px */
-    letter-spacing: -0.16px;
 }
 
 
@@ -1243,11 +1223,6 @@ justify-content: space-between;
     background: rgba(0, 0, 0, 0.04);
     color: #353535;
     font-family: "SVN-Helvetica Now";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 15.4px */
-    letter-spacing: -0.14px;
 }
 
 .loan-tabs-filter button:hover {
@@ -1275,19 +1250,12 @@ justify-content: space-between;
     background-color: #FFF;
     border-right: 1px solid #E1E1E1;
     border-left: 1px solid #E1E1E1;
-    color: #AF0B35;
-    -webkit-text-stroke-width: 0.10000000149011612;
-    -webkit-text-stroke-color: #AF0B35;
     font-family: "SVN-Helvetica Now";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 16.5px */
-    letter-spacing: -0.15px;
 }
 
 .loan-tabs-right button:hover {
-    background: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    background: rgba(195, 60, 94, 0.06);
 }
 .loan-cards-contents {
     width: 100%;
@@ -1345,12 +1313,7 @@ justify-content: space-between;
 
 .loan-card-content h2 {
     align-self: stretch;
-    color: var(--dark-1, #080808);
     font-family: "SVN-Helvetica Now";
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 36.4px */
     margin-bottom: 0px;
     margin-top: 0px;
 
@@ -1380,11 +1343,6 @@ justify-content: space-between;
 .loan-card-title-sub {
     color: var(--dark-3, #606060);
     font-family: "SVN-Helvetica Now";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 21px */
-    letter-spacing: -0.14px;
 }
 
 .loan-card-title {
@@ -1404,11 +1362,6 @@ justify-content: space-between;
 .loan-card-title span {
     color: var(--dark-3, #606060);
     font-family: "SVN-Helvetica Now";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 16.8px */
-    letter-spacing: -0.14px;
 }
 
 .loan-card-content ul {
@@ -1426,11 +1379,6 @@ justify-content: space-between;
     flex: 1 0 0;
     color: var(--dark-2, #393939);
     font-family: "SVN-Helvetica Now";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 21px */
-    letter-spacing: -0.14px;
     list-style: url(./images/CheckCircle.svg);
 }
 
@@ -1450,7 +1398,7 @@ justify-content: space-between;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    background: var(--red-2, #9E2B47);
+    background: var(--red-21, #AA1D40);
     border: none;
 }
 
@@ -1460,38 +1408,46 @@ justify-content: space-between;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    color: #FFF;
     font-family: "SVN-Helvetica Now";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 15.4px */
-    letter-spacing: -0.14px;
 }
 
-.primary-btn:hover {
-background-color: #900022;
+..primary-btn:hover {
+    border-radius: 4px;
+    background: var(--red-3, #bb5e75) !important;
 }
+
+.primary-btn:focus {
+    border-radius: 7px; /* Tăng bo góc */
+    border: 2px solid var(--red-21) !important; /* Viền màu đỏ nổi bật */
+    outline: none; /* Tắt viền outline mặc định */
+}
+
 
 .secondary-link {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4px;
+    font-family: "SVN-Helvetica Now";
+    text-decoration: none;
+}
+.secondary-link:disabled {
+    opacity: 0.5;
     color: #AF0B35;
+    text-align: right;
     -webkit-text-stroke-width: 0.10000000149011612;
     -webkit-text-stroke-color: #AF0B35;
     font-family: "SVN-Helvetica Now";
-    font-size: 15px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 110%; /* 16.5px */
-    letter-spacing: -0.15px;
-    text-decoration: none;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: -0.16px;
 }
 
-.secondary-link:hover {
-text-decoration: underline;
+.secondary-link:focus {
+    border-radius: 4px;
+    border: 1px solid var(--red-1, #AF0B35);
 }
 
 .loan-card:hover .loan-card-image img {
@@ -1523,7 +1479,6 @@ text-decoration: underline;
 
 .request-button {
     display: flex;
-    color: var(--red-2, #9E2B47);
     font-family: "SVN-Helvetica Now";
     font-size: 17px;
     font-style: normal;
@@ -1547,8 +1502,9 @@ text-decoration: underline;
     flex-shrink: 0; 
 }
 
-.request-container:hover {
-    background: rgba(0, 0, 0, 0.04);
+.request-container:focus {
+    border-radius: 4px;
+    border: 1px solid var(--red-1, #AF0B35);
 }
 
 
@@ -1591,17 +1547,12 @@ color: #fff;
 }
 
 .loan-info-box p {
-    color: rgba(255, 255, 255, 0.80);
     font-family: "SVN-Helvetica Now";
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 41.6px */
     letter-spacing: -0.32px;
-}
-
-.loan-info-box span {
-    color: #fff;
 }
 
 /* Buttons */
@@ -1624,13 +1575,7 @@ gap: 10px;
 }
 
 .loan-info-btn span {
-    color: #FFF;
     font-family: "SVN-Helvetica Now";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 17.6px */
-    letter-spacing: -0.16px;
 }
 
 .loan-info-btn-icon {
@@ -1639,7 +1584,7 @@ gap: 10px;
 }
 
 .loan-info-btn:hover {
-background-color: #f91212; /* Màu nền nút khi hover */
+background-color: #C33C5E;
 }
 
 
