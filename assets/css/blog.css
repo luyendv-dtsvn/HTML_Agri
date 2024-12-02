@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: SVN-Helvetica Now, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+
+
+}
+
+.content {
+    width: 1920px;
+
+
+}
+.content-between{
+    display: block;
+}
+
+.content-top {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0 0 50px;
+    width: 1712px;
+    
+}
+.content-top a{
+    text-decoration: none;
+    color: #5A5A5A;
+}
+
+.content-top-menu {
+    display: inline-block;
+    cursor: pointer;
+    width: 232px; /* Đặt chiều rộng cho mỗi div */
+    text-align: center; /* Căn giữa nội dung bên trong */
+    padding-bottom: 20px; /* Khoảng cách dưới để tạo không gian cho gạch chân */
+    position: relative;
+  }
+  
+  .content-top-menu.underline::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%; /* Chiều dài gạch chân ban đầu */
+    height: 3px;
+    background-color: red;
+    transform: translateX(-50%); /* Để gạch chân căn giữa */
+  }
+  
+  .content-top-menu img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+  }
+  
+  .content-top-menu div {
+    color: black; /* Màu chữ mặc định */
+    font-size: 14px; /* Kích thước chữ */
+    font-weight: 500;
+  }
+  
+  .content-top-menu.active div {
+    color: red; /* Màu chữ khi div được click */
+  }
+  
+  .hr {
+    margin: 0 auto;
+    width: 1712px;
+    /* Chiều rộng của thanh ngang */
+    height: 1px;
+    /* Chiều cao của thanh ngang */
+    background-color: #ECECEC;
+  }
+  
+
+.content-between {
+    margin: 20px 50px;
+}
+
+.content-between-blog {
+    justify-content: center;
+    /* Căn giữa các phần tử theo chiều ngang */
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.blog {
+    border-radius: 4px;
+    justify-content: center;
+    /* Căn giữa nội dung theo chiều ngang trong box */
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.blog img {
+    width: 413px;
+    height: 258px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+.blog:hover img {
+    transform: scale(1.1);  
+}
+
+.blog-title {
+    font-size: 12px;
+    color: #494949;
+    font-weight: 400;
+    margin: 20px 0 12px 0;
+}
+
+.blog-subtitle {
+    font-size: 20px;
+    color: #393939;
+    font-weight: 500;
+}
+
+
+.turn-page {
+    
+    display: flex;
+    justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc nếu cần */
+    flex-wrap: wrap; /* Nếu cần thiết, cho phép các phần tử con xuống dòng */
+    margin: 30px auto 50px auto; /* Tự động căn giữa phần tử cha (nếu cần) */
+  }
+  
+.turn-page a{
+    font-size: 18px;
+    font-weight: 500;
+}
+.stt {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid black; */
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s; /* Thêm hiệu ứng chuyển màu nền và chuyển động */
+}
+
+/* Khi hover */
+.stt:hover {
+    background-color: #AF0B35;  /* Thay đổi màu nền khi hover */
+    /* transform: scale(1.1);        Phóng to phần tử khi hover */
+}
+
+/* Khi active (nhấn vào) */
+.stt:active {
+    background-color: #ddd;       /* Màu nền khi phần tử đang được nhấn */
+    transform: scale(0.9);         /* Thu nhỏ phần tử khi active */
+}
+
+/* Khi phần tử có lớp 'active' thì giữ màu nền khi được nhấn */
+.stt.active {
+    background-color: #AF0B35; /* Màu nền khi thẻ đã được nhấn và giữ lại */
+    color: white;            /* Màu chữ khi active */
+}
+
