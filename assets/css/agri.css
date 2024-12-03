@@ -1,125 +1,9 @@
-/* Black */
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Black Italic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-/* Bold */
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Bold Italic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-/* ExtraBold */
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text ExtraBold Italic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-}
-
-/* ExtraLight */
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text ExtraLight Italic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
-}
-
-/* Light */
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Light Italic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-/* Medium */
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Medium Italic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-/* Regular */
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Regular Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-/* Thin */
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SVN-Helvetica Now';
-    src: url('./fonts/SVN-Helvetica Now Text Thin Italic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
-
-
-
 /* Tổng quát */
 body {
     width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
-    font-family: SVN-Helvetica Now, sans-serif, "SVN-Helvetica Now";
-    background-color: #ffffff;
 }
 /* Tổng thể */
 .agribank-culture {
@@ -326,7 +210,7 @@ body {
     margin-top: 28px;
     width: 40px;
     height: 40px;
-    background: url('./images/Frame.svg') no-repeat center;
+    background: url('../images/vanhoa-vaylist-vaydetail/Frame.svg') no-repeat center;
     background-size: contain;
 }
 
@@ -407,7 +291,7 @@ body {
     width: 14px;
     height: 14px;
     margin-left: 8px;
-    background: url('./images/down-chevron.png') no-repeat center;
+    background: url('../images/vanhoa-vaylist-vaydetail/down-chevron.png') no-repeat center;
     background-size: contain;
 }
 
@@ -588,7 +472,7 @@ body {
     display: flex;
     align-items: center; /* Căn giữa nội dung theo chiều dọc */
     justify-content: center; /* Căn nội dung về phía trái */
-    background-image: url('./images/background-why.png'); /* Thay bằng đường dẫn đến ảnh của bạn */
+    background-image: url('../images/vanhoa-vaylist-vaydetail/background-why.png'); /* Thay bằng đường dẫn đến ảnh của bạn */
     background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ */
     background-position: center; /* Đảm bảo ảnh căn giữa */
     background-repeat: no-repeat; /* Không lặp lại ảnh */
@@ -1101,7 +985,7 @@ body {
     display: flex;
     align-items: center; /* Căn giữa nội dung theo chiều dọc */
     justify-content: center; /* Căn nội dung về phía trái */
-    background-image: url('./images/background-heading-productlist.png'); /* Thay bằng đường dẫn đến ảnh của bạn */
+    background-image: url('../images/vanhoa-vaylist-vaydetail/background-heading-productlist.png'); /* Thay bằng đường dẫn đến ảnh của bạn */
     background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ */
     background-position: center; /* Đảm bảo ảnh căn giữa */
     background-repeat: no-repeat; /* Không lặp lại ảnh */
@@ -1431,7 +1315,7 @@ justify-content: space-between;
     font-weight: 400;
     line-height: 150%; /* 21px */
     letter-spacing: -0.14px;
-    list-style: url(./images/CheckCircle.svg);
+    list-style: url("../images/vanhoa-vaylist-vaydetail/CheckCircle.svg");
 }
 
 
