@@ -196,6 +196,7 @@
 }
 body, button {
     font-family: 'SVN-Helvetica Now Regular';
+    background: #fff;
 }
 
 /* Head text */
@@ -374,43 +375,43 @@ body, button {
     letter-spacing: 4%;
 }
 /* color */
-.white {
+.color-white {
     color: rgb(255, 255, 255);
 }
 
-.Gradient-1 {
+.color-Gradient-1 {
     color: linear-gradient(122deg, #AF0B35 19.31%, #9D5165 38.51%, #490516 71.05%);
 }
 
-.red-1 {
+.color-red-1 {
     color: #AF0B35;
 }
 
-.red-2 {
+.color-red-2 {
     color: rgb(158, 43, 71);
 }
 
-.red-2-1 {
+.color-red-2-1 {
     color: rgb(170, 29, 64);
 }
 
-.red-3 {
+.color-red-3 {
     color: rgb(195, 60, 94);
 }
 
-.dark-1 {
+.color-dark-1 {
     color: rgb(8, 8, 8);
 }
 
-.dark-2 {
+.color-dark-2 {
     color: rgb(57, 57, 57);
 }
 
-.dark-3 {
+.color-dark-3 {
     color: rgb(96, 96, 96);
 }
 
-.Linear-1 {
+.color-Linear-1 {
     color: linear-gradient(
         115deg, 
       rgba(158, 43, 71, 1) 0%,  
@@ -418,7 +419,7 @@ body, button {
     );
 }
 
-.Linear-2 {
+.color-Linear-2 {
     color: linear-gradient(
         270deg, 
       rgba(175, 11, 53, 1) 0%,  
