@@ -297,4 +297,99 @@ document.getElementById('loan-duration-display').addEventListener('input', funct
     document.getElementById('end-payment-date').innerText = endDate.toLocaleDateString('vi-VN');
   });
   
-  
+
+
+//------Phần timeline trên trang history page ---------------
+
+document.addEventListener("DOMContentLoaded", function () {
+  const yearList = document.getElementById("history-year-list");
+  const yearItems = yearList.querySelectorAll("li");
+  const scrollUpButton = document.getElementById("scroll-up");
+  const scrollDownButton = document.getElementById("scroll-down");
+
+  const MAX_VISIBLE_YEARS = 14; // Số năm hiển thị tối đa
+  const ITEM_HEIGHT = 40; // Chiều cao mỗi mục năm (px)
+  const totalYears = yearItems.length;
+  let currentStartIndex = 0;
+
+  // Cập nhật hiển thị danh sách năm
+  function updateYearList() {
+    const offset = currentStartIndex * ITEM_HEIGHT;
+    yearList.style.transform = `translateY(-${offset}px)`; // Di chuyển danh sách
+
+    // Vô hiệu hóa nút khi không thể cuộn thêm
+    scrollUpButton.disabled = currentStartIndex === 0;
+    scrollDownButton.disabled = currentStartIndex + MAX_VISIBLE_YEARS >= totalYears;
+  }
+
+  // Xử lý sự kiện nút lên
+  scrollUpButton.addEventListener("click", function () {
+    if (currentStartIndex > 0) {
+      currentStartIndex--;
+      updateYearList();
+    }
+  });
+
+  // Xử lý sự kiện nút xuống
+  scrollDownButton.addEventListener("click", function () {
+    if (currentStartIndex + MAX_VISIBLE_YEARS < totalYears) {
+      currentStartIndex++;
+      updateYearList();
+    }
+  });
+
+  // Xử lý sự kiện chọn năm
+  yearItems.forEach((item, index) => {
+    item.addEventListener("click", function () {
+      // Đặt active cho mục năm
+      yearItems.forEach((year) => year.classList.remove("active"));
+      this.classList.add("active");
+
+      // Cuộn để đảm bảo mục năm được hiển thị trong danh sách
+      if (index < currentStartIndex) {
+        currentStartIndex = index; // Nếu mục năm nằm trên phần hiển thị
+      } else if (index >= currentStartIndex + MAX_VISIBLE_YEARS) {
+        currentStartIndex = index - MAX_VISIBLE_YEARS + 1; // Nếu mục năm nằm dưới phần hiển thị
+      }
+      updateYearList();
+
+      // Cuộn đến nội dung tương ứng (nếu cần)
+      const year = this.getAttribute("data-year");
+      const target = document.getElementById(year);
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 20,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+
+  // Khởi tạo trạng thái
+  updateYearList();
+});
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButtons = document.querySelectorAll(".history-year-content-button");
+
+  toggleButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const textContainer = this.previousElementSibling; // Phần tử trước nút bấm (chứa nội dung văn bản)
+      const moreText = textContainer.querySelector(".history-year-more-text"); // Phần mở rộng
+
+      if (moreText.style.display === "none" || moreText.style.display === "") {
+        moreText.style.display = "inline"; // Hiển thị phần mở rộng
+        this.textContent = "Thu gọn"; // Thay đổi nút bấm
+      } else {
+        moreText.style.display = "none"; // Ẩn phần mở rộng
+        this.textContent = "Đọc tiếp"; // Thay đổi nút bấm
+      }
+    });
+  });
+});
