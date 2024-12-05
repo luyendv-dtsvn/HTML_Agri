@@ -1,0 +1,367 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+  width: 1920px;
+}
+
+.content {
+  width: 1920px;
+  
+
+
+}
+
+.content-between {
+  display: block;
+}
+
+.content-top {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+  margin: 38px 50px 0 50px;
+
+}
+
+.content-top a {
+  text-decoration: none;
+  color: #5A5A5A;
+}
+
+.content-top-menu {
+  display: inline-block;
+  cursor: pointer;
+  width: 232px;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.content-top-menu.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  height: 3px;
+  background-color: #9E2B47;
+  transform: translateX(-50%);
+}
+
+.content-top-menu img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.content-betwent {
+  display: none;
+  width: 415px;
+  height: 491px;
+
+}
+
+.content-betwent.active {
+  display: block;
+
+}
+
+.content-betwent {
+  position: relative;
+
+  text-align: center;
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+.content-betwent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+.content-betwent .name,
+.content-betwent .position {
+  display: block;
+  margin-top: 10px;
+}
+.content-top-menu svg {
+  transition: stroke 0.3s ease; /* Hiệu ứng chuyển màu mượt */
+}
+
+.content-top-menu.active svg path {
+  stroke: #9E2B47; /* Màu đỏ khi được click */
+}
+
+.content-top-menu div {
+  color: #5A5A5A;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.content-top-menu.active div {
+  color: #9E2B47;
+}
+
+.hr {
+  margin: 0 auto;
+  width: 1712px;
+  height: 1px;
+  background-color: #ECECEC;
+  margin-bottom: 57px;
+}
+
+
+
+
+/* 
+ */
+/* Slider container */
+.content-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* Ẩn các phần tử nằm ngoài khung */
+  width: 100%;
+  position: relative;
+  height: 300px;
+  /* Tùy chỉnh chiều cao */
+}
+
+/* Slider item */
+
+.team-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1712px;
+  /* Chiều rộng tối đa của slider */
+  margin: 125px auto 0;
+  position: relative;
+  margin-bottom: 127px;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  /* Đảm bảo wrapper chiếm toàn bộ chiều rộng của .team-slider */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  gap: 20px;
+}
+
+.slider-item {
+  width: 269px;
+  /* Tính chiều rộng mỗi mục để hiển thị 6 mục */
+  height: 450px;
+  text-align: center;
+  margin: 0 5px;
+  /* Khoảng cách giữa các mục */
+  /* background-color: #f9f9f9; */
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 70%;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.name,
+.position {
+  padding: 5px 10px;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.position {
+  font-size: 14px;
+  color: gray;
+  margin-top: 5px;
+}
+
+
+
+
+
+.related-information {
+  display: flex;
+  margin: 50px 104px;
+  gap: 20px;
+
+}
+
+.related-information-list {
+  width: 558px;
+  height: 256px;
+  position: relative;
+  overflow: hidden;
+}
+
+.filter {
+  position: absolute;
+  width: 745.631px;
+  height: 155.701px;
+  border-radius: 745.631px;
+  background: #9E2B47;
+  filter: blur(47px);
+  bottom: -100px;
+  left: -30px;
+
+  /* Chỉ hiển thị nửa trên */
+ 
+}
+
+.related-information-list img {
+  border-radius: 4px;
+}
+
+.related-information-title {
+  position: absolute;
+  bottom: 40px;
+  color: #fff;
+  left: 32px;
+}
+
+.agribank-culture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Chiều rộng bằng toàn bộ màn hình */
+  height: 583px; /* Chiều cao bằng toàn bộ màn hình */
+  overflow: hidden;
+  position: relative; /* Đặt vị trí tương đối */
+}
+
+/* Container */
+.agribank-culture-container {
+  display: flex;
+  flex-wrap: wrap; /* Đảm bảo hoạt động tốt trên màn hình nhỏ */
+  width: 100%; /* Chiều rộng đầy đủ */
+  height: 100%; /* Đảm bảo bao phủ toàn màn hình */
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.agribank-culture-background {
+  width: 100%; /* Chiều rộng đầy đủ */
+  height: 100%; /* Đảm bảo bao phủ toàn màn hình */
+  background: linear-gradient(115deg, #9E2B47 0.44%, #AF0B35 103.79%);
+}
+
+.agribank-culture-image {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  right: 0;
+
+}
+
+.agribank-culture-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Tràn chiều ngang */
+  height: 100%; /* Tràn chiều dọc */
+  object-fit: cover; /* Đảm bảo ảnh bao phủ toàn bộ */
+}
+
+
+/* Cột trái (nền đỏ) */
+.agribank-culture-text {
+  position: absolute;
+  color: #ffffff;
+  width: 90%;
+  height: 100%;
+  /* text-align: center; */
+  flex-direction: column; /* Nội dung sắp xếp dọc */
+  box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước */
+}
+
+.agribank-culture-text-sub {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.agribank-culture-breadcrumb {
+  width: 50%;
+  color: var(--white, #FFF);
+  font-family: "SVN-Helvetica Now";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px; /* 176.923% */
+  margin-top: 20px;
+}
+
+.agribank-culture-breadcrumb-icon {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.agribank-culture-breadcrumb span {
+  color: rgba(255, 255, 255, 0.80);
+}
+
+.agribank-culture-text-title {
+  width: 60%;
+  gap: 16px;
+  margin-bottom: 70px;
+}
+
+.agribank-culture-title {
+  color: #FFF;
+  font-family: "SVN-Helvetica Now";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 52px */
+  letter-spacing: -0.4px;
+}
+
+.agribank-culture-description {
+  color: rgba(255, 255, 255, 0.80);
+  font-family: "SVN-Helvetica Now";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.16px;
+}
