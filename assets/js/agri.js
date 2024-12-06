@@ -300,96 +300,64 @@ document.getElementById('loan-duration-display').addEventListener('input', funct
 
 
 //------Phần timeline trên trang history page ---------------
+document.addEventListener("DOMContentLoaded", () => {
+  const yearList = document.getElementById("year-list"); // Danh sách năm
+  const scrollUpButton = document.getElementById("history-scroll-up"); // Nút cuộn lên
+  const scrollDownButton = document.getElementById("history-scroll-down"); // Nút cuộn xuống
+  const yearItems = document.querySelectorAll("#year-list li"); // Các mục năm
+  const visibleYearsCount = 7; // Số năm hiển thị cùng lúc
+  const yearHeight = 40; // Chiều cao mỗi năm (px)
+  let currentStartIndex = 0; // Chỉ số đầu tiên hiển thị trong khung
 
-document.addEventListener("DOMContentLoaded", function () {
-  const yearList = document.getElementById("history-year-list");
-  const yearItems = yearList.querySelectorAll("li");
-  const scrollUpButton = document.getElementById("scroll-up");
-  const scrollDownButton = document.getElementById("scroll-down");
+  /**
+   * Cập nhật trạng thái của các nút cuộn
+   */
+  const updateScrollButtons = () => {
+      scrollUpButton.disabled = currentStartIndex === 0; // Vô hiệu hóa nút lên nếu đang ở đầu danh sách
+      scrollDownButton.disabled =
+          currentStartIndex + visibleYearsCount >= yearItems.length; // Vô hiệu hóa nút xuống nếu đang ở cuối danh sách
+  };
 
-  const MAX_VISIBLE_YEARS = 14; // Số năm hiển thị tối đa
-  const ITEM_HEIGHT = 40; // Chiều cao mỗi mục năm (px)
-  const totalYears = yearItems.length;
-  let currentStartIndex = 0;
+  /**
+   * Cuộn danh sách năm lên hoặc xuống
+   * @param {String} direction - "up" hoặc "down" để xác định hướng cuộn
+   */
+  const scrollYears = (direction) => {
+      const step = direction === "up" ? -1 : 1;
+      const nextIndex = currentStartIndex + step;
 
-  // Cập nhật hiển thị danh sách năm
-  function updateYearList() {
-    const offset = currentStartIndex * ITEM_HEIGHT;
-    yearList.style.transform = `translateY(-${offset}px)`; // Di chuyển danh sách
-
-    // Vô hiệu hóa nút khi không thể cuộn thêm
-    scrollUpButton.disabled = currentStartIndex === 0;
-    scrollDownButton.disabled = currentStartIndex + MAX_VISIBLE_YEARS >= totalYears;
-  }
-
-  // Xử lý sự kiện nút lên
-  scrollUpButton.addEventListener("click", function () {
-    if (currentStartIndex > 0) {
-      currentStartIndex--;
-      updateYearList();
-    }
-  });
-
-  // Xử lý sự kiện nút xuống
-  scrollDownButton.addEventListener("click", function () {
-    if (currentStartIndex + MAX_VISIBLE_YEARS < totalYears) {
-      currentStartIndex++;
-      updateYearList();
-    }
-  });
-
-  // Xử lý sự kiện chọn năm
-  yearItems.forEach((item, index) => {
-    item.addEventListener("click", function () {
-      // Đặt active cho mục năm
-      yearItems.forEach((year) => year.classList.remove("active"));
-      this.classList.add("active");
-
-      // Cuộn để đảm bảo mục năm được hiển thị trong danh sách
-      if (index < currentStartIndex) {
-        currentStartIndex = index; // Nếu mục năm nằm trên phần hiển thị
-      } else if (index >= currentStartIndex + MAX_VISIBLE_YEARS) {
-        currentStartIndex = index - MAX_VISIBLE_YEARS + 1; // Nếu mục năm nằm dưới phần hiển thị
+      // Kiểm tra nếu có thể cuộn thêm
+      if (nextIndex >= 0 && nextIndex + visibleYearsCount <= yearItems.length) {
+          currentStartIndex = nextIndex;
+          const offset = -currentStartIndex * yearHeight; // Tính khoảng cách cần cuộn
+          yearList.style.transform = `translateY(${offset}px)`; // Dịch chuyển danh sách năm
+          yearList.style.transition = "transform 0.3s ease"; // Hiệu ứng mượt khi cuộn
+          updateScrollButtons(); // Cập nhật trạng thái nút
       }
-      updateYearList();
+  };
 
-      // Cuộn đến nội dung tương ứng (nếu cần)
-      const year = this.getAttribute("data-year");
-      const target = document.getElementById(year);
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop - 20,
-          behavior: "smooth",
-        });
-      }
-    });
+  /**
+   * Khi người dùng nhấn vào một năm
+   */
+  yearItems.forEach((item) => {
+      item.addEventListener("click", () => {
+          // Đặt trạng thái 'active' cho năm được chọn
+          yearItems.forEach((el) => el.classList.remove("active"));
+          item.classList.add("active");
+
+          // Lấy năm được chọn và cuộn đến nội dung tương ứng
+          const year = item.getAttribute("data-year");
+          const target = document.querySelector(`[data-content="${year}"]`);
+          if (target) {
+              target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+      });
   });
 
-  // Khởi tạo trạng thái
-  updateYearList();
-});
+  // Thêm sự kiện click cho nút cuộn lên và xuống
+  scrollUpButton.addEventListener("click", () => scrollYears("up"));
+  scrollDownButton.addEventListener("click", () => scrollYears("down"));
 
-
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButtons = document.querySelectorAll(".history-year-content-button");
-
-  toggleButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const textContainer = this.previousElementSibling; // Phần tử trước nút bấm (chứa nội dung văn bản)
-      const moreText = textContainer.querySelector(".history-year-more-text"); // Phần mở rộng
-
-      if (moreText.style.display === "none" || moreText.style.display === "") {
-        moreText.style.display = "inline"; // Hiển thị phần mở rộng
-        this.textContent = "Thu gọn"; // Thay đổi nút bấm
-      } else {
-        moreText.style.display = "none"; // Ẩn phần mở rộng
-        this.textContent = "Đọc tiếp"; // Thay đổi nút bấm
-      }
-    });
-  });
+  // Khởi tạo trạng thái nút cuộn ban đầu
+  updateScrollButtons();
 });
