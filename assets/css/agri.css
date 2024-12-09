@@ -2347,3 +2347,43 @@ input[type="range"]::-webkit-slider-thumb {
 .Agribank-all-awards-content {
     width: 50%;
 }
+
+.answer-tab-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.answer-tab-title {
+    padding: 0px 40px;
+}
+
+.nav-item {
+    padding-right: 0px;
+}
+
+.tab-pane {
+    display: flex;
+    width: 100%;
+}
+
+.answer-tab-content {
+    width: 100%;
+    display: flex;
+    padding: 81px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-tab-content-text {
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.answer-tab-content-pagination {
+    display: flex;
+    justify-content: center;
+}
