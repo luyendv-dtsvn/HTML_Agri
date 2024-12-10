@@ -1,0 +1,195 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: SVN-Helvetica Now, sans-serif; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+
+
+}
+.main{
+    width: 100%;
+    position: relative;
+
+}
+.main img{
+    width: 100%;
+
+}
+
+.top {
+    width: 100%;
+    position: relative;
+}
+
+.top-user {
+    width: 100%;
+    height: 36px;
+    padding: 0px 104px 0 94px;
+
+}
+
+.top-user-right,
+.top-user-left {
+    display: flex;
+    color: #fff;
+
+}
+
+.top-user-right div,
+.top-user-left div {
+    margin: 10px 10px;
+    display: flex;
+    /* Kích hoạt Flexbox */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+}
+
+
+
+.individual {
+    padding: 10px 10px;
+
+    border-bottom: 3px solid #701029;
+    background: rgba(66, 9, 24, 0.25);
+}
+
+.top-user {
+    width: 100%;
+    display: flex;
+    height: 36px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: linear-gradient(90deg, #AF0B35 0%, #8F1030 86%);
+}
+
+.hrr {
+    width: 1px;
+    height: 17px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.50) 50%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.hr {
+    width: 1px;
+    height: 36px;
+    background: #F2F2F2;
+    margin: 0 16px ;
+}
+
+.menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.top-menu {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 76px;
+    padding: 0px 104px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    background-color:white;
+}
+
+.top-menu-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: rgba(0, 0, 0, 0.80);
+
+}
+.top-menu-left div a    {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.80);
+
+}
+
+
+.top-menu-right {
+    display: flex;
+    align-items: center;
+    /* gap: 16px; */
+    align-self: stretch;
+}
+
+.login {
+    border: none;
+    color: #FFF;
+    align-items: center;
+    justify-content: center;
+    width: 132px;
+    height: 44px;
+    display: flex;
+    gap: 10px;
+    background: var(--red-21, #AA1D40);
+    border-radius: 4px;
+}
+.login:hover{
+    background: var(--red-3, #C33C5E);
+}
+.login:active{
+    border-radius: 4px;
+    background: var(--red-21, #AA1D40);
+    border: 4px solid #fff; /* Lớp border bên trong */
+    outline: 4px solid #AA1D40; /* Lớp border bên ngoài */
+    outline-offset: -1px;
+}
+.content{
+    position: relative;
+    top:300px;
+    display: flex; 
+    justify-content: center;
+   text-align: center;
+   color: #FFF;
+}
+.search{
+    top: 550px;
+    position: relative;
+    display: flex; 
+   justify-content: center;
+}
+.input-search{
+    width: 40%;
+    /* padding: 8px 28px 28px 28px; */
+}
+
+.form-search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 26px 16px 26px 8px;
+    margin: 0 16px;
+    border-radius: 4px;
+    background: var(--Linear-2, linear-gradient(270deg, #AF0B35 0%, #C93259 100%));
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.23);
+}
+.form-search input{
+    width: 90%;
+    border: none;
+    background: transparent; /* Hoàn toàn trong suốt */
+    color: #FFF;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.80);
+
+}
+input:focus {
+    outline: none;}
+
+
+

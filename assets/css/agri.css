@@ -136,45 +136,41 @@ body {
         object-fit: contain; /* Đảm bảo ảnh không bị cắt */
     }
 }
+
+.agribank-culture-identity {
+    display: flex;
+    padding: 47px 5%;
+    padding-top: 75px;
+}
+
 /* Container chính */
 .agribank-culture-identity-container {
-    max-width: 90%;
-    padding: 20px;
-    padding: 0 17px;
-    margin: 0 auto;
-    margin-top: 80px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
 }
 
 /* Tiêu đề */
 .agribank-culture-identity-title {
     /* text-align: center; */
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 }
 
 .agribank-culture-identity-title-sub {
-    width: 269px;
-    height: auto;
+    width: 100%;
     color: #494949;
-    font-family: "SVN-Helvetica Now";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%; /* 19.6px */
-    letter-spacing: 0.56px;
-    text-transform: uppercase;
 }
 
 .agribank-culture-identity-title-main {
     /* Hiển thị tiêu đề */
-    width: auto;
-    height: auto;
+    width: 100%;
     position: relative;
     top: 0;
     left: 0;
     opacity: 1; /* Hiển thị */
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 48px;
     color: #080808;
 }
 
@@ -1094,6 +1090,11 @@ body {
 
 
 
+.advantage-product-detail {
+    
+}
+
+
 
 
 
@@ -1534,4 +1535,449 @@ background-color: #f91212; /* Màu nền nút khi hover */
     flex-direction: column; /* Xếp dọc trên màn hình nhỏ */
     gap: 10px;
 }
+}
+
+
+
+.button-product-detail {
+    display: flex;
+    height: 52px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--red-3, #C33C5E);
+    border: none;
+}
+
+.button-product-detail-text {
+    display: flex;
+    padding: 0px 6px 2px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.advantage-product-detail {
+    position: relative;
+    display: flex;
+    padding: 55px 5%;
+}
+
+.advantage-product-detail-containers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.advantage-card {
+    display: flex;
+    padding-right: 96px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.advantage-card-content {
+    display: flex;
+    padding: 6px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.advantage-card-content h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+.advantage-card-question {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 99px;
+}
+
+.advantage-card-question-containers {
+    width: 90%;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0px;
+    background: var(--Linear-1, linear-gradient(115deg, #9E2B47 0.44%, #761930 103.79%));
+}
+
+.advantage-card-question-text {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantage-card-question-content {
+    display: flex;
+    gap: 34px;
+}
+
+.advantage-card-question-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.advantage-card-asked-questions {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 54px 5%;
+}
+
+.asked-questions {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.asked-questions-card-containers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.asked-questions-card {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    flex: 1 0 0;
+    border-radius: 4px;
+    border: 1px solid #F1F1F1;
+    background: linear-gradient(92deg, #F7F7F7 0%, #FAF8F8 100.37%);
+}
+
+.product-info-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F6F6F6;
+}
+
+.product-info-container {
+    width: 90%;
+    margin-top: 71px;
+    margin-bottom: 54px;
+    display: flex;
+}
+
+.product-info-title {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 15px;
+    padding-right: 192px ;
+}
+
+.product-info-title h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.product-info-tabs {
+    width: 60%;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    border-radius: 4px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+}
+
+.tabs-header {
+    display: flex;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid #E8E8E8;
+    background: linear-gradient(92deg, #F7F7F7 0%, #FAF8F8 100.37%);
+}
+
+.tab-button {
+    display: flex;
+    height: 44px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border: none;
+    border-right: 1px solid #E8E8E8;
+}
+
+.tabs-header:last-child {
+    border-right: none;
+}
+
+.tab-button.active {
+    background: var(--red-2, #9E2B47);
+    color: #FFF;
+}
+
+.tab-button:hover {
+    background-color: #eee;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content-table {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.tab-content-table table {
+    width: 100%;
+    margin: 20px 0px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.tab-content-table tr {
+    width: 100%;
+    display: flex;
+    padding: 16px 0px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.tab-content-table th {
+    width: 30%;
+    display: flex;
+    padding-left: 16px;
+}
+
+.tab-content-table td {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-content-table tr:last-child {
+    border-bottom: none;
+}
+
+.tab-content-table ul li {
+    list-style: url("../images/vanhoa-vaylist-vaydetail/CheckCircle.svg");
+}
+
+.tab-content-table-button {
+    display: flex;
+    align-items: center;
+    gap: 8xp;
+    color: #AF0B35;
+    text-decoration: none;
+}
+  
+.loan-tool-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loan-tool-container {
+    width: 90%;
+    margin-top: 71px;
+    padding-bottom: 54px;
+    display: flex;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.loan-tool-tabs {
+    width: 60%;
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    border-radius: 4px;
+    border: 1px solid #F1F1F1;
+    background: linear-gradient(92deg, #F7F7F7 0%, #FAF8F8 100.37%);
+}
+
+.loan-calculator {
+    width: 100%;
+    display: flex;
+    padding: 32px 0px 32px 32px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: auto;
+}
+
+.loan-calculator h3 {
+    padding-bottom: 30px;
+}
+
+.loan-calculator-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.loan-calculator-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.loan-calculator-radio-form {
+    display: flex;
+    gap: 24px;
+}
+
+.loan-calculator-radio-form label{
+    width: 50%;
+}
+
+.loan-calculator-radio label{
+    margin-bottom: 0px;
+}
+
+.money-time-loan-calculator-group {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.money-time-loan-calculator-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.loan-result {
+    display: flex;
+    width: 35%;
+    padding: 32px 32px 24px 32px;
+    flex-direction: column;
+    gap: 44px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid #F2F2F2;
+    background: #FFF;
+    justify-content: space-between;
+}
+
+.money-time-loan-calculator-input {
+    width: 100%;
+    background: #FFF;
+
+}
+
+.input-slider-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 16px 16px 0px 16px;
+    align-items: center;
+}
+
+.input-slider-wrapper input[type="number"] {
+    width: 80%;
+    border: 1px #FFF;
+    border-right: 1px solid  #F2F2F2;
+}
+
+.input-slider-wrapper .currency-unit {
+    color: #333;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #aa1d40;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-display {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+}
+
+.loan-calculator-button {
+    width: 100%;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--red-2, #9E2B47);
+    border: none;
+}
+
+.col-sm-6 {
+    width: 100%;
+    padding-left: 0px;
+}
+
+.loan-result-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+}
+.loan-result-content p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.loan-result a {
+    display: flex;
+    padding-bottom: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #AF0B35;
 }
