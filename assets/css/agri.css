@@ -365,14 +365,13 @@
 
 /* Mục con */
 .featured-culture-item {
-    padding: 5px 5px;
+    padding: 15px 0px;
     border-top: 1px solid #E1E1E1; /* Chỉ hiển thị đường viền trên */
     border-left: none; /* Xóa viền trái */
     border-right: none; /* Xóa viền phải */
     border-radius: 0; /* Loại bỏ bo góc */
     cursor: pointer;
     position: relative;
-    background-color: #FFFFFF; /* Nền trắng */
     transition: all 0.3s ease;
 }
 
@@ -386,10 +385,7 @@
 }
 
 .featured-culture-item.active {
-    background-color: #FFFFFF; /* Nền giữ màu trắng */
-    /* border-top: 2px solid #D00027;  */
-    /* border-bottom: 2px solid #D00027;  */
-    padding: 10px 15px; /* Tăng thêm khoảng cách khi chọn */
+    padding: 10px 0px; /* Tăng thêm khoảng cách khi chọn */
     border-left: none;
     border-right: none;
 }
@@ -423,14 +419,16 @@
 
 /* Icon toggle */
 .featured-culture-item .featured-culture-icon {
-    position: absolute;
-    top: 15px;
-    right: 20px;
     font-size: 16px;
     font-weight: bold;
     color: #D00027;
     transition: transform 0.3s ease;
 }
+
+.featured-culture-icon img {
+    max-width: unset !important;
+}
+
 
 .featured-culture-item.active .featured-culture-icon {
     transform: rotate(180deg); /* Chuyển thành dấu "-" */
@@ -2240,6 +2238,19 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 /* css prize page */
+.slick-track {
+    display: flex;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    align-self: stretch;
+}
+
+.slick-slide {
+    height: auto !important;
+}
+
 .card-inner {   
     padding: 0px;
 }
@@ -2260,7 +2271,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .card {
-    height: auto;
+    flex: 1 1 auto;
 }
 /* end css prize page */
 
@@ -2269,10 +2280,6 @@ input[type="range"]::-webkit-slider-thumb {
     padding: auto;
     justify-content: center;
     align-items: center;
-}
-
-.Agribank-award-card-img img {
-    box-shadow: 102px 44px 31px 0px rgba(0, 0, 0, 0.00), 65px 28px 28px 0px rgba(0, 0, 0, 0.01), 37px 16px 24px 0px rgba(0, 0, 0, 0.05), 16px 7px 18px 0px rgba(0, 0, 0, 0.09), 4px 2px 10px 0px rgba(0, 0, 0, 0.10);
 }
 
 .Agribank-award-card-content {
@@ -2333,6 +2340,10 @@ input[type="range"]::-webkit-slider-thumb {
 
 .featured-culture-card-title {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:  40px;
 }
 
 .featured-culture-card-title h3 {
@@ -2377,7 +2388,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .answer-tab-content-text {
-    width: 44%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -2387,3 +2398,34 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     justify-content: center;
 }
+
+.text-center {
+    text-align: unset !important;
+}
+
+.answer-tab-content-text-question {
+    width: 100%;
+}
+
+.answer-tab-content-text-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.Answer-content-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.Answer-content-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+
