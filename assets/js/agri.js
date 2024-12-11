@@ -301,63 +301,104 @@ document.getElementById('loan-duration-display').addEventListener('input', funct
 
 //------Phần timeline trên trang history page ---------------
 document.addEventListener("DOMContentLoaded", () => {
-  const yearList = document.getElementById("year-list"); // Danh sách năm
-  const scrollUpButton = document.getElementById("history-scroll-up"); // Nút cuộn lên
-  const scrollDownButton = document.getElementById("history-scroll-down"); // Nút cuộn xuống
-  const yearItems = document.querySelectorAll("#year-list li"); // Các mục năm
-  const visibleYearsCount = 7; // Số năm hiển thị cùng lúc
-  const yearHeight = 40; // Chiều cao mỗi năm (px)
-  let currentStartIndex = 0; // Chỉ số đầu tiên hiển thị trong khung
+  const yearList = document.getElementById("year-list");
+  const scrollUpButton = document.getElementById("history-scroll-up");
+  const scrollDownButton = document.getElementById("history-scroll-down");
 
-  /**
-   * Cập nhật trạng thái của các nút cuộn
-   */
-  const updateScrollButtons = () => {
-      scrollUpButton.disabled = currentStartIndex === 0; // Vô hiệu hóa nút lên nếu đang ở đầu danh sách
-      scrollDownButton.disabled =
-          currentStartIndex + visibleYearsCount >= yearItems.length; // Vô hiệu hóa nút xuống nếu đang ở cuối danh sách
+  const itemHeight = 24; // Chiều cao mỗi mục (bao gồm khoảng cách giữa các mục)
+  const visibleItems = 10; // Số lượng mục có thể hiển thị đồng thời
+  let currentIndex = 0;
+
+  const updateButtons = () => {
+      scrollUpButton.disabled = currentIndex === 0;
+      scrollDownButton.disabled = currentIndex + visibleItems >= yearList.children.length;
   };
 
-  /**
-   * Cuộn danh sách năm lên hoặc xuống
-   * @param {String} direction - "up" hoặc "down" để xác định hướng cuộn
-   */
-  const scrollYears = (direction) => {
-      const step = direction === "up" ? -1 : 1;
-      const nextIndex = currentStartIndex + step;
-
-      // Kiểm tra nếu có thể cuộn thêm
-      if (nextIndex >= 0 && nextIndex + visibleYearsCount <= yearItems.length) {
-          currentStartIndex = nextIndex;
-          const offset = -currentStartIndex * yearHeight; // Tính khoảng cách cần cuộn
-          yearList.style.transform = `translateY(${offset}px)`; // Dịch chuyển danh sách năm
-          yearList.style.transition = "transform 0.3s ease"; // Hiệu ứng mượt khi cuộn
-          updateScrollButtons(); // Cập nhật trạng thái nút
+  const scrollList = (direction) => {
+      if (direction === "up" && currentIndex > 0) {
+          currentIndex--;
+      } else if (direction === "down" && currentIndex + visibleItems < yearList.children.length) {
+          currentIndex++;
       }
+      yearList.style.transform = `translateY(-${currentIndex * itemHeight}px)`;
+      updateButtons();
   };
 
-  /**
-   * Khi người dùng nhấn vào một năm
-   */
-  yearItems.forEach((item) => {
-      item.addEventListener("click", () => {
-          // Đặt trạng thái 'active' cho năm được chọn
-          yearItems.forEach((el) => el.classList.remove("active"));
-          item.classList.add("active");
+  scrollUpButton.addEventListener("click", () => scrollList("up"));
+  scrollDownButton.addEventListener("click", () => scrollList("down"));
 
-          // Lấy năm được chọn và cuộn đến nội dung tương ứng
-          const year = item.getAttribute("data-year");
-          const target = document.querySelector(`[data-content="${year}"]`);
-          if (target) {
-              target.scrollIntoView({ behavior: "smooth", block: "start" });
-          }
-      });
+  updateButtons();
+
+  // Lắng nghe sự kiện cuộn chuột
+  document.addEventListener("wheel", (event) => {
+      if (event.deltaY > 0) {
+          scrollList("down");
+      } else {
+          scrollList("up");
+      }
   });
 
-  // Thêm sự kiện click cho nút cuộn lên và xuống
-  scrollUpButton.addEventListener("click", () => scrollYears("up"));
-  scrollDownButton.addEventListener("click", () => scrollYears("down"));
+  // Tự động cuộn thanh navigation khi lăn chuột
+  const timelineYears = document.querySelector(".timeline-history-years");
+  window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const timelineTop = timelineYears.offsetTop;
+      const maxScrollTop = timelineYears.scrollHeight - timelineYears.offsetHeight;
 
-  // Khởi tạo trạng thái nút cuộn ban đầu
-  updateScrollButtons();
+      if (scrollTop >= timelineTop && scrollTop <= maxScrollTop) {
+          timelineYears.style.transform = `translateY(${scrollTop - timelineTop}px)`;
+      }
+  });
 });
+
+//-------------------------------------------------
+window.onload = function() {
+
+  const easeInCubic = function (t) { return t*t*t } 
+  const scrollElems = document.getElementsByClassName('scroll-year');
+  
+  
+  //console.log(scrollElems);
+  const scrollToElem = (start, stamp, duration, scrollEndElemTop, startScrollOffset) => {
+      //debugger;
+      const runtime = stamp - start;
+      let progress = runtime / duration;
+      const ease = easeInCubic(progress);
+      
+      progress = Math.min(progress, 1);
+      console.log(startScrollOffset,startScrollOffset + (scrollEndElemTop * ease));
+      
+      const newScrollOffset = startScrollOffset + (scrollEndElemTop * ease);
+      window.scroll(0, startScrollOffset + (scrollEndElemTop * ease));
+  
+      if(runtime < duration){
+        requestAnimationFrame((timestamp) => {
+          const stamp = new Date().getTime();
+          scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset);
+        })
+      }
+    }
+  
+  for(let i=0; i<scrollElems.length; i++){
+    const elem = scrollElems[i];
+    
+    elem.addEventListener('click',function(e) {
+      e.preventDefault();
+      const scrollElemId = e.target.href.split('#')[1];
+      const scrollEndElem = document.getElementById(scrollElemId);
+      
+      const anim = requestAnimationFrame(() => {
+        const stamp = new Date().getTime();
+        const duration = 1200;
+        const start = stamp;
+            
+        const startScrollOffset = window.pageYOffset;
+  
+        const scrollEndElemTop = scrollEndElem.getBoundingClientRect().top;
+              
+        scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset);
+        // scrollToElem(scrollEndElemTop);
+        })
+      })
+    }
+  }
