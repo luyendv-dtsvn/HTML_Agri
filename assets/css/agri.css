@@ -1,4 +1,5 @@
 
+
 /* Tổng thể */
 .agribank-culture {
     display: flex;
@@ -34,7 +35,19 @@
     height: 100%;
     overflow: hidden;
     right: 0;
+}
 
+.agribank-culture-image-content {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+}
+
+.agribank-culture-image-content img {
+    width: 100%;
+    height: 100%;
 }
 
 .agribank-culture-image img {
@@ -79,8 +92,8 @@
 }
 
 .agribank-culture-breadcrumb-icon {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .agribank-culture-breadcrumb span {
@@ -1039,8 +1052,11 @@
 
 .personal-loan-text-title {
     width: 60%;
+    display: flex;
     gap: 16px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .advantage-product-detail {
@@ -1276,12 +1292,20 @@ text-decoration: underline;
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
     padding-bottom: 104px;
+}
+
+.request-consultation-section {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
 }
 
 .request-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     padding: 20px;
     border-radius: 4px;
@@ -1440,11 +1464,6 @@ background-color: #f91212; /* Màu nền nút khi hover */
     align-self: stretch;
 }
 
-.advantage-card-content h2 {
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
 
 .advantage-card-question {
     position: relative;
@@ -1534,11 +1553,14 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 .product-info-title {
     width: 40%;
+}
+
+.product-info-title-content {
+    width: 70%;
     display: flex;
     flex-direction: column;
     padding-top: 20px;
     gap: 15px;
-    padding-right: 192px ;
 }
 
 .product-info-title h2 {
@@ -1562,6 +1584,12 @@ background-color: #f91212; /* Màu nền nút khi hover */
     border-radius: 4px;
     border: 1px solid #E8E8E8;
     background: linear-gradient(92deg, #F7F7F7 0%, #FAF8F8 100.37%);
+}
+
+.product-info-tabs-mobile {
+    display: none;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 .tab-button {
@@ -1589,7 +1617,7 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 .tab-content {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-end;
     gap: 16px;
@@ -1597,7 +1625,7 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 .tab-content.active {
-    display: block;
+    display: flex;
 }
 
 .tab-content-table {
@@ -1640,6 +1668,10 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 .tab-content-table ul li {
     list-style: url("../images/vanhoa-vaylist-vaydetail/CheckCircle.svg");
+}
+
+.tab-content-table ul {
+    padding-left: 22px;
 }
 
 .tab-content-table-button {
@@ -2319,7 +2351,8 @@ input[type="range"]::-webkit-slider-thumb {
 
     .personal-loan-text-title {
         width: 100%;
-        margin-bottom: 0px;
+        padding-bottom: 30px;
+        gap: 0;
     }
     
     .personal-loan-breadcrumb-icon {
@@ -2399,5 +2432,234 @@ input[type="range"]::-webkit-slider-thumb {
         display: flex;
         flex-direction: column;
         gap: 16px;
+    }
+
+    /* page product-detail */
+    .agribank-culture {
+        height: 365px;
+    }
+
+    .agribank-culture-image-content {
+        width: 100%;
+    }
+
+    .advantage-product-detail {
+        padding: 20px 5%;
+    }
+
+    .advantage-product-detail-containers {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .advantage-card {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: row;
+        padding-right: 0;
+        gap: 10px;
+        border-bottom: 1px solid #EAEAEA;
+
+    }
+
+    .advantage-card-text svg {
+        max-width: none;
+    }
+
+    .advantage-card :last-child {
+        border-bottom: none;
+    }
+    
+    .product-info-container {
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .product-info-title {
+        width: 100%;
+    }
+
+    .product-info-title-content {
+        width: 100%;
+    }
+
+    .product-info-tabs {
+        width: 100%;
+    }
+
+    .tabs-header {
+        display: none;
+    }
+
+    .product-info-tabs-mobile {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tab-content-table {
+        margin-top: 0%;
+    }
+
+    .tab-content-table tr{
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .tab-content-table th {
+        padding-left: 0px;
+        width: 100%;
+    }
+    
+    .tab-content-table td {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .tab-content-table tr:first-child {
+        padding-top: 0px;
+    }
+
+    /* sửa tại button downlist */
+    .btn-round {
+        border-radius: 4px;
+    }
+    
+    .btn-primary {
+        background-color: #9E2B47;
+        border-color: #9E2B47;
+    }
+    /* end */
+    .advantage-card-question-text {
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+        align-items: unset;
+    }
+
+    .advantage-card-question-content {
+        flex-direction: column;
+    }
+
+    .advantage-card-question-buttons-card {
+        display: none;
+    }
+
+    .advantage-card-question {
+        margin-bottom: 60px;
+    }
+
+    .advantage-card-question-containers {
+        padding: 24px;
+    }
+
+    .loan-tool-container {
+        flex-direction: column;
+    }
+
+    .loan-tool-tabs {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .loan-calculator {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .loan-calculator-group {
+        gap: 20px;
+    }
+
+    .loan-calculator h3 {
+        padding-bottom: 0;
+    }
+
+    .loan-calculator-radio-form {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .loan-calculator-radio-form label {
+        width: 100%;
+    }
+
+    .money-time-loan-calculator-group {
+        flex-direction: column;
+    }
+
+    .money-time-loan-calculator-form {
+        width: 100%;
+    }
+
+    .loan-result {
+        width: 100%;
+        gap: 20px;
+        padding: 24px;
+    }
+
+    .loan-result-content p {
+        padding-bottom: 16px;
+    }
+
+    .loan-result a {
+        padding-bottom: 0;
+    }
+
+    /* page prize */
+
+    .Agribank-related-info {
+        padding: 0%;
+        padding-bottom: 60px;
+        padding-top: 20px;
+    }
+
+    .Agribank-related-info-container {
+        gap: 13px;
+    }
+
+    .Agribank-related-info-content {
+        grid-template-columns:none;
+        gap: 12px;
+    }
+
+    .Agribank-all-awards-container {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .Agribank-all-awards-text {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .Agribank-all-awards-text-title {
+        padding-right: 0;
+        gap: 12px;
+    }
+
+    .Agribank-all-awards-main {
+        padding: 17px 0px;
+    }
+
+    .Agribank-all-awards-main-1 {
+        width: 45%;
+        padding-right: 16px;
+    }
+
+    .Agribank-all-awards-main-2 {
+        padding-left: 16px;
+    }
+
+    .Agribank-all-awards-content {
+        width: 100%;
+    }
+
+    .Agribank-all-awards-card-text {
+        padding-right: 0;
     }
 }

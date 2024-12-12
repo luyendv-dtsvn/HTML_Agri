@@ -273,6 +273,7 @@
 body, button {
     font-family: 'SVN-Helvetica Now Regular';
     background: #fff;
+    margin: 0;
 }
 
 /* Head text */
@@ -726,6 +727,22 @@ body, button {
 
     .regular-14 {
         font-size: 12px;
+    }
+
+    .body-15 {
+        font-size: 14px;
+    }
+
+    .heading-h8 {
+        font-size: 17px;
+    }
+
+    .regular-15 {
+        font-size: 13px;
+    }
+
+    .heading-h6 {
+        font-size: 22px;
     }
 }
 

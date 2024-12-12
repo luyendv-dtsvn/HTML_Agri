@@ -112,43 +112,56 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //-------------------phần chuyển tab------------------------------
-
 // Lấy tất cả các nút tab và nội dung tab
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
 
+// Hàm ẩn tất cả nội dung tab
+function hideAllTabs() {
+  tabContents.forEach(content => {
+    content.classList.remove('active');
+    content.hidden = true; // Ẩn nội dung
+  });
+}
+
+// Hàm xóa trạng thái active khỏi tất cả các nút
+function deactivateAllButtons() {
+  tabButtons.forEach(button => button.classList.remove('active'));
+}
+
 // Lắng nghe sự kiện click trên mỗi nút tab
 tabButtons.forEach(button => {
   button.addEventListener('click', () => {
-    // Xóa trạng thái active khỏi tất cả các nút và nội dung
-    tabButtons.forEach(btn => btn.classList.remove('active'));
-    tabContents.forEach(content => content.style.display = 'none');
+    // Ẩn tất cả nội dung và nút không cần thiết
+    hideAllTabs();
+    deactivateAllButtons();
 
-    // Thêm trạng thái active cho nút được chọn
+    // Kích hoạt nút và hiển thị tab tương ứng
     button.classList.add('active');
-
-    // Hiển thị nội dung tương ứng với tab được chọn
     const tabId = button.getAttribute('data-tab');
     const activeTabContent = document.getElementById(tabId);
     if (activeTabContent) {
-      activeTabContent.style.display = 'block';
+      activeTabContent.hidden = false; // Hiển thị nội dung
+      activeTabContent.classList.add('active');
     }
   });
 });
 
 // Khởi tạo trạng thái hiển thị tab đầu tiên
-window.onload = function () {
+window.addEventListener('DOMContentLoaded', () => {
   const defaultButton = document.querySelector('.tab-button.active');
   if (defaultButton) {
     const defaultTabId = defaultButton.getAttribute('data-tab');
     const defaultContent = document.getElementById(defaultTabId);
 
     if (defaultContent) {
-      defaultContent.style.display = 'block';
+      defaultContent.hidden = false; // Hiển thị tab đầu tiên
+      defaultContent.classList.add('active');
     }
+  } else {
+    hideAllTabs(); // Nếu không có nút active mặc định, ẩn tất cả tab
   }
-};
-
+});
 
 
 // -------------Phần tính toán khoản vay---------------------
