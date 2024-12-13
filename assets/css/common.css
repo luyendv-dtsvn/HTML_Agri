@@ -789,19 +789,6 @@ button {
         letter-spacing: 0%;
     }
 
-    .subtitle-12 {
-        font-family: 'BT Grotesk Regular';
-        font-size: 12px;
-        line-height: 110.00000238418579%;
-        letter-spacing: 4%;
-    }
-
-    .subtitle-14 {
-        font-family: 'BT Grotesk Medium';
-        font-size: 14px;
-        line-height: 139.9999976158142%;
-        letter-spacing: 4%;
-    }
 }
 
 @media (max-width: 375px) {
@@ -1089,6 +1076,7 @@ button {
 .color-white {
     color: rgb(255, 255, 255);
 }
+
 
 .color-white-1 {
     color: rgba(255, 255, 255, 0.80);

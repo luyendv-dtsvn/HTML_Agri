@@ -1,0 +1,193 @@
+/* Đảm bảo rằng toàn bộ trang sử dụng chiều rộng và chiều cao của màn hình */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Đảm bảo rằng các phần tử không bị lệch kích thước vì padding và border */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* Sử dụng 100% chiều cao của viewport */
+    background-color: #fff;
+    /* Màu nền cho body */
+}
+
+.main {
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+}
+
+.menu {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+}
+
+.top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
+    padding: 0px 104px;
+}
+
+.top-right {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.hr {
+    width: 1px;
+    height: 36px;
+    background: #F2F2F2;
+}
+
+.btn-login {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    border-radius: 4px;
+    background: var(--red-21, #AA1D40);
+}
+.btn-login:hover{
+    background: var(--red-3, #C33C5E);
+}
+.btn-login:active{
+    border-radius: 4px;
+    background: var(--red-21, #AA1D40);
+    border: 4px solid #fff; /* Lớp border bên trong */
+    outline: 4px solid #AA1D40; /* Lớp border bên ngoài */
+    outline-offset: -1px;
+}
+.btn-login svg{
+    position: relative;
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+
+}
+
+
+.weather {
+    top: 31%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    color: #fff;
+}
+
+.logo-weather {
+    display: flex;
+
+}
+
+.weather-title {
+    display: block;
+}
+
+.title {
+    top: 40%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.search {
+    bottom: 37%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    color: #fff;
+    padding: 16px;
+    background-color: #fff;
+    width: 30%;
+    border-radius: 4px;
+    gap: 12px;
+}
+
+.search input {
+    border: none;
+    width: 87%;
+}
+
+input::placeholder {
+    color: #000000B2;
+
+}
+
+.search input:focus {
+    outline: none;
+    /* Loại bỏ viền mặc định */
+    border: none;
+}
+
+.menu1 {
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 10%;
+
+
+}
+
+.tab {
+    margin: 0 104px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 26px;
+    border-radius: 4px;
+    background: var(--Linear-2, linear-gradient(270deg, #AF0B35 0%, #C93259 100%));
+}
+.tab a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.financial-institutions,
+.business-customers,
+.individual-customers,
+.agri,
+.blog,
+.utility-tool,
+.hotline {
+    width: 14.28571428571429%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.hrr {
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.20);
+    background-color: #FFFFFF33;
+}

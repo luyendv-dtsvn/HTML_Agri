@@ -112,10 +112,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //-------------------phần chuyển tab------------------------------
+<<<<<<< HEAD
+
+=======
+>>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564
 // Lấy tất cả các nút tab và nội dung tab
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content-info');
 
+<<<<<<< HEAD
+// Lắng nghe sự kiện click trên mỗi nút tab
+tabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Xóa trạng thái active khỏi tất cả các nút và nội dung
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    tabContents.forEach(content => content.style.display = 'none');
+
+    // Thêm trạng thái active cho nút được chọn
+    button.classList.add('active');
+
+    // Hiển thị nội dung tương ứng với tab được chọn
+    const tabId = button.getAttribute('data-tab');
+    const activeTabContent = document.getElementById(tabId);
+    if (activeTabContent) {
+      activeTabContent.style.display = 'block';
+=======
 // Hàm ẩn tất cả nội dung tab
 function hideAllTabs() {
   tabContents.forEach(content => {
@@ -143,18 +164,30 @@ tabButtons.forEach(button => {
     if (activeTabContent) {
       activeTabContent.hidden = false; // Hiển thị nội dung
       activeTabContent.classList.add('active');
+>>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564
     }
   });
 });
 
 // Khởi tạo trạng thái hiển thị tab đầu tiên
+<<<<<<< HEAD
+window.onload = function () {
+=======
 window.addEventListener('DOMContentLoaded', () => {
+>>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564
   const defaultButton = document.querySelector('.tab-button.active');
   if (defaultButton) {
     const defaultTabId = defaultButton.getAttribute('data-tab');
     const defaultContent = document.getElementById(defaultTabId);
 
     if (defaultContent) {
+<<<<<<< HEAD
+      defaultContent.style.display = 'block';
+    }
+  }
+};
+
+=======
       defaultContent.hidden = false; // Hiển thị tab đầu tiên
       defaultContent.classList.add('active');
     }
@@ -162,6 +195,7 @@ window.addEventListener('DOMContentLoaded', () => {
     hideAllTabs(); // Nếu không có nút active mặc định, ẩn tất cả tab
   }
 });
+>>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564
 
 
 // Lấy các phần tử liên quan
@@ -382,6 +416,9 @@ document.getElementById('loan-duration-display').addEventListener('input', funct
     document.getElementById('end-payment-date').innerText = endDate.toLocaleDateString('vi-VN');
   });
   
+<<<<<<< HEAD
+  
+=======
 
 
 //------Phần timeline trên trang history page ---------------
@@ -487,3 +524,4 @@ window.onload = function() {
       })
     }
   }
+>>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564
