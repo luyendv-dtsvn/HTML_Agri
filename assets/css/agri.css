@@ -318,7 +318,6 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: 0 auto;
     margin-top: 80px;
 
 }
@@ -1004,7 +1003,6 @@
 
 .personal-loan-image {
     position: absolute;
-    width: 40%;
     height: 100%;
     overflow: hidden;
     left: 0;
@@ -1031,7 +1029,6 @@
 }
 
 .personal-loan-text-sub {
-    width: 50%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -1040,7 +1037,6 @@
 }
 
 .personal-loan-breadcrumb {
-    width: 50%;
     margin-top: 20px;
 }
 
@@ -1054,16 +1050,11 @@
 }
 
 .personal-loan-text-title {
-    width: 60%;
     display: flex;
     gap: 16px;
     padding-bottom: 70px;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.advantage-product-detail {
-    
 }
 
 
@@ -2379,6 +2370,11 @@ input[type="range"]::-webkit-slider-thumb {
     flex: 1;
 }
 
+.answer-header-content-search-list {
+    background: #FFF;
+    color: #080808;
+}
+
 @media (max-width: 375px) {
 
     /* Trang product-list */
@@ -2390,16 +2386,11 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
     }
 
-    .personal-loan-text-sub {
-        width: 100%;
-    }
-
     .personal-loan-breadcrumb {
         width: 100%;
     }
 
     .personal-loan-text-title {
-        width: 100%;
         padding-bottom: 30px;
         gap: 0;
     }
@@ -2741,6 +2732,7 @@ input[type="range"]::-webkit-slider-thumb {
         flex: 1;
         display: flex;
         justify-content: space-between;
+        background: #FFF;
     }
 
     .answer-tab-content-text {
@@ -2755,5 +2747,51 @@ input[type="range"]::-webkit-slider-thumb {
         padding: 0px;
     }
 
+    .tabs-mobile-answer {
+        padding-bottom: 5px; 
+        display: flex; 
+        width: 100%; 
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .tabs-mobile-answer-button {
+        flex: 1; 
+        display: flex; 
+        justify-content: space-between; 
+        background-color: unset; 
+        border: none;
+        color: #080808;
+    }
+
+    /* page văn hóa */
+    .featured-culture-container {
+        flex-direction: column;
+    }
+
+    .featured-culture-image {
+        width: 100%;
+    }
+
+    .featured-culture-content {
+        width: 100%;
+    }
+
+    .featured-culture-agribank {
+        
+
+
+    }
+}
+@media (max-width: 1024px) {
+
+    .personal-loan-section {
+        height: 500px;
+    }
 }
 
+@media (max-width: 768px) {
+    
+    .personal-loan-section {
+        height: 400px;
+    }
+}
