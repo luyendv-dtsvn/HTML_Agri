@@ -112,11 +112,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //-------------------phần chuyển tab------------------------------
+<<<<<<< HEAD
 
+=======
+>>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564
 // Lấy tất cả các nút tab và nội dung tab
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
 
+<<<<<<< HEAD
 // Lắng nghe sự kiện click trên mỗi nút tab
 tabButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -132,23 +136,66 @@ tabButtons.forEach(button => {
     const activeTabContent = document.getElementById(tabId);
     if (activeTabContent) {
       activeTabContent.style.display = 'block';
+=======
+// Hàm ẩn tất cả nội dung tab
+function hideAllTabs() {
+  tabContents.forEach(content => {
+    content.classList.remove('active');
+    content.hidden = true; // Ẩn nội dung
+  });
+}
+
+// Hàm xóa trạng thái active khỏi tất cả các nút
+function deactivateAllButtons() {
+  tabButtons.forEach(button => button.classList.remove('active'));
+}
+
+// Lắng nghe sự kiện click trên mỗi nút tab
+tabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Ẩn tất cả nội dung và nút không cần thiết
+    hideAllTabs();
+    deactivateAllButtons();
+
+    // Kích hoạt nút và hiển thị tab tương ứng
+    button.classList.add('active');
+    const tabId = button.getAttribute('data-tab');
+    const activeTabContent = document.getElementById(tabId);
+    if (activeTabContent) {
+      activeTabContent.hidden = false; // Hiển thị nội dung
+      activeTabContent.classList.add('active');
+>>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564
     }
   });
 });
 
 // Khởi tạo trạng thái hiển thị tab đầu tiên
+<<<<<<< HEAD
 window.onload = function () {
+=======
+window.addEventListener('DOMContentLoaded', () => {
+>>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564
   const defaultButton = document.querySelector('.tab-button.active');
   if (defaultButton) {
     const defaultTabId = defaultButton.getAttribute('data-tab');
     const defaultContent = document.getElementById(defaultTabId);
 
     if (defaultContent) {
+<<<<<<< HEAD
       defaultContent.style.display = 'block';
     }
   }
 };
 
+=======
+      defaultContent.hidden = false; // Hiển thị tab đầu tiên
+      defaultContent.classList.add('active');
+    }
+  } else {
+    hideAllTabs(); // Nếu không có nút active mặc định, ẩn tất cả tab
+  }
+});
+>>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564
 
 
 // -------------Phần tính toán khoản vay---------------------
@@ -297,4 +344,112 @@ document.getElementById('loan-duration-display').addEventListener('input', funct
     document.getElementById('end-payment-date').innerText = endDate.toLocaleDateString('vi-VN');
   });
   
+<<<<<<< HEAD
   
+=======
+
+
+//------Phần timeline trên trang history page ---------------
+document.addEventListener("DOMContentLoaded", () => {
+  const yearList = document.getElementById("year-list");
+  const scrollUpButton = document.getElementById("history-scroll-up");
+  const scrollDownButton = document.getElementById("history-scroll-down");
+
+  const itemHeight = 24; // Chiều cao mỗi mục (bao gồm khoảng cách giữa các mục)
+  const visibleItems = 10; // Số lượng mục có thể hiển thị đồng thời
+  let currentIndex = 0;
+
+  const updateButtons = () => {
+      scrollUpButton.disabled = currentIndex === 0;
+      scrollDownButton.disabled = currentIndex + visibleItems >= yearList.children.length;
+  };
+
+  const scrollList = (direction) => {
+      if (direction === "up" && currentIndex > 0) {
+          currentIndex--;
+      } else if (direction === "down" && currentIndex + visibleItems < yearList.children.length) {
+          currentIndex++;
+      }
+      yearList.style.transform = `translateY(-${currentIndex * itemHeight}px)`;
+      updateButtons();
+  };
+
+  scrollUpButton.addEventListener("click", () => scrollList("up"));
+  scrollDownButton.addEventListener("click", () => scrollList("down"));
+
+  updateButtons();
+
+  // Lắng nghe sự kiện cuộn chuột
+  document.addEventListener("wheel", (event) => {
+      if (event.deltaY > 0) {
+          scrollList("down");
+      } else {
+          scrollList("up");
+      }
+  });
+
+  // Tự động cuộn thanh navigation khi lăn chuột
+  const timelineYears = document.querySelector(".timeline-history-years");
+  window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const timelineTop = timelineYears.offsetTop;
+      const maxScrollTop = timelineYears.scrollHeight - timelineYears.offsetHeight;
+
+      if (scrollTop >= timelineTop && scrollTop <= maxScrollTop) {
+          timelineYears.style.transform = `translateY(${scrollTop - timelineTop}px)`;
+      }
+  });
+});
+
+//-------------------------------------------------
+window.onload = function() {
+
+  const easeInCubic = function (t) { return t*t*t } 
+  const scrollElems = document.getElementsByClassName('scroll-year');
+  
+  
+  //console.log(scrollElems);
+  const scrollToElem = (start, stamp, duration, scrollEndElemTop, startScrollOffset) => {
+      //debugger;
+      const runtime = stamp - start;
+      let progress = runtime / duration;
+      const ease = easeInCubic(progress);
+      
+      progress = Math.min(progress, 1);
+      console.log(startScrollOffset,startScrollOffset + (scrollEndElemTop * ease));
+      
+      const newScrollOffset = startScrollOffset + (scrollEndElemTop * ease);
+      window.scroll(0, startScrollOffset + (scrollEndElemTop * ease));
+  
+      if(runtime < duration){
+        requestAnimationFrame((timestamp) => {
+          const stamp = new Date().getTime();
+          scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset);
+        })
+      }
+    }
+  
+  for(let i=0; i<scrollElems.length; i++){
+    const elem = scrollElems[i];
+    
+    elem.addEventListener('click',function(e) {
+      e.preventDefault();
+      const scrollElemId = e.target.href.split('#')[1];
+      const scrollEndElem = document.getElementById(scrollElemId);
+      
+      const anim = requestAnimationFrame(() => {
+        const stamp = new Date().getTime();
+        const duration = 1200;
+        const start = stamp;
+            
+        const startScrollOffset = window.pageYOffset;
+  
+        const scrollEndElemTop = scrollEndElem.getBoundingClientRect().top;
+              
+        scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset);
+        // scrollToElem(scrollEndElemTop);
+        })
+      })
+    }
+  }
+>>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564

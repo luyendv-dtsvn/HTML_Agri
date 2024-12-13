@@ -19,6 +19,7 @@ body {
 .main {
     position: relative;
     width: 100%;
+    height: auto;
 }
 
 /* Header */
@@ -167,18 +168,20 @@ body {
 /* Content section */
 .content {
     position: absolute;
-    top: 300px;
-    left: 35%;
-    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #FFF;
+    text-align: center;
 }
 
 /* Search section */
 
 .input-search {
-    top: 70%;
+    top: 80%;
     position: absolute;
-    left: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 45%;
     border-radius: 4px;
     background: linear-gradient(270deg, #AF0B35 0%, #C93259 100%);
@@ -214,13 +217,16 @@ input:focus {
 
 /* List of search results */
 .list-search {
-    overflow: hidden; 
+    overflow: hidden;
     width: 100%;
     display: flex;
     gap: 10px;
     white-space: nowrap;
     /* position: relative; */
 }
+
+
+
 
 .search-product a,
 .calculation-tool a,
@@ -239,20 +245,22 @@ input:focus {
     background: #82283E;
 }
 
-.btn-next{
+.btn-next {
     width: 10%;
     height: 24%;
-   position: absolute;
-   display: flex;
-   justify-content: center;
-   text-align: center;
-    background: linear-gradient(270deg, #B00C36 40%, rgba(158, 43, 71, 0.00) 100%);    position: absolute;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(270deg, #B00C36 40%, rgba(158, 43, 71, 0.00) 100%);
+    position: absolute;
     bottom: 15%;
     right: 3%;
 }
+
 .btn-next svg {
     position: absolute;
-    
+
     width: 24px;
     height: 24px;
     border-radius: 100px;
@@ -264,8 +272,9 @@ input:focus {
 
 .pull-down {
     position: absolute;
-    top: 90%;
-    left: 44%;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .pull-down-title {
@@ -348,13 +357,18 @@ input:focus {
 
 .content-betwent {
     margin: 0 104px;
+    display: none;
+
 }
+
 
 
 .content-betwent.active {
     display: block;
-
+    /* Tab hiện tại sẽ hiển thị */
 }
+
+
 
 .content-top-menu svg {
     transition: stroke 0.3s ease;
@@ -546,11 +560,15 @@ input:focus {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 0 7px 0 7px;
 }
 
 .owl-stage {
     display: flex;
-    gap: 5px;
+    gap: 6px;
+}
+.list-search span{
+    margin-top: 2%;
 }
 
 .community {
@@ -565,7 +583,7 @@ input:focus {
 .community-stats {
     display: flex;
     /* justify-content: center; */
-    gap: 50px;
+    gap: 30px;
     margin: 20px 0;
     justify-content: space-between;
 }
@@ -607,6 +625,7 @@ input:focus {
     gap: 50px;
     justify-content: space-between;
     text-align: justify;
+    white-space: nowrap;
     color: var(--dark-1, #080808);
 
 }
@@ -699,7 +718,8 @@ input:focus {
     width: 100%;
     position: relative;
 }
-.map img{
+
+.map img {
     width: 100%;
     position: absolute;
     /* height: 100%; */
@@ -709,7 +729,7 @@ input:focus {
     margin-top: 6%;
     left: 6%;
     display: flex;
-    width: 35%;
+    width: auto;
     padding: 48px;
     flex-direction: column;
     align-items: flex-start;
@@ -720,30 +740,91 @@ input:focus {
     border: 1px solid #F1F1F1;
     background: #FFF;
 }
-.btn-map{
+
+.btn-map {
     display: flex;
-height: 48px;
-padding: 16px 20px;
-justify-content: center;
-align-items: center;
-border-radius: 4px;
-background: var(--red-21, #AA1D40);
+    height: 48px;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--red-21, #AA1D40);
 }
-.icon-map1{
+
+.icon-map1 {
     margin-top: 6%;
     left: 60%;
     position: absolute;
 }
-.icon-map2{
+
+.icon-map2 {
     margin-top: 8%;
     left: 80%;
     position: absolute;
 }
-.icon-map3{
+
+.icon-map3 {
     margin-top: 11%;
     left: 70%;
     position: absolute;
 }
-.btn-map a{
+
+.btn-map a {
     color: #fff !important;
+}
+
+
+
+
+
+/* responsive */
+
+@media (max-width: 1366px) {
+    .top-user a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .top-user-right,
+    .top-user-left {
+        display: flex;
+    }
+
+    .top-user-right div,
+    .top-user-left div {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Individual section */
+    .individual {
+        padding: 10px;
+        border-bottom: 3px solid #701029;
+        background: rgba(66, 9, 24, 0.25);
+    }
+
+    .top-menu-left {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: rgba(0, 0, 0, 0.80);
+    }
+
+    .content {
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        text-align: center;
+        color: #FFF;
+    }
+}
+.footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.accordion{
+    background-color: #9D1D26;
 }

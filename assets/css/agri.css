@@ -1,10 +1,5 @@
-/* Tổng quát */
-body {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
+
+
 /* Tổng thể */
 .agribank-culture {
     display: flex;
@@ -40,7 +35,19 @@ body {
     height: 100%;
     overflow: hidden;
     right: 0;
+}
 
+.agribank-culture-image-content {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+}
+
+.agribank-culture-image-content img {
+    width: 100%;
+    height: 100%;
 }
 
 .agribank-culture-image img {
@@ -85,8 +92,8 @@ body {
 }
 
 .agribank-culture-breadcrumb-icon {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .agribank-culture-breadcrumb span {
@@ -371,14 +378,13 @@ body {
 
 /* Mục con */
 .featured-culture-item {
-    padding: 5px 5px;
+    padding: 15px 0px;
     border-top: 1px solid #E1E1E1; /* Chỉ hiển thị đường viền trên */
     border-left: none; /* Xóa viền trái */
     border-right: none; /* Xóa viền phải */
     border-radius: 0; /* Loại bỏ bo góc */
     cursor: pointer;
     position: relative;
-    background-color: #FFFFFF; /* Nền trắng */
     transition: all 0.3s ease;
 }
 
@@ -386,16 +392,9 @@ body {
     border-bottom: 1px solid #E1E1E1; /* Chỉ hiển thị đường viền trên */
   }
 
-.featured-culture-item:hover {
-    background-color: #F5F5F5;
-    /* border-color: #D00027; */
-}
 
 .featured-culture-item.active {
-    background-color: #FFFFFF; /* Nền giữ màu trắng */
-    /* border-top: 2px solid #D00027;  */
-    /* border-bottom: 2px solid #D00027;  */
-    padding: 10px 15px; /* Tăng thêm khoảng cách khi chọn */
+    padding: 10px 0px; /* Tăng thêm khoảng cách khi chọn */
     border-left: none;
     border-right: none;
 }
@@ -415,15 +414,8 @@ body {
 
 /* Mô tả */
 .featured-culture-description {
-    width: 616px;
-    color: var(--dark-2, #393939);
-    font-family: "SVN-Helvetica Now";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 22.5px */
-    letter-spacing: -0.15px;
     display: none; /* Ẩn nội dung mô tả */
+    gap: 23px;
 }
 
 .featured-culture-item.active .featured-culture-description {
@@ -436,14 +428,16 @@ body {
 
 /* Icon toggle */
 .featured-culture-item .featured-culture-icon {
-    position: absolute;
-    top: 15px;
-    right: 20px;
     font-size: 16px;
     font-weight: bold;
     color: #D00027;
     transition: transform 0.3s ease;
 }
+
+.featured-culture-icon img {
+    max-width: unset !important;
+}
+
 
 .featured-culture-item.active .featured-culture-icon {
     transform: rotate(180deg); /* Chuyển thành dấu "-" */
@@ -1044,18 +1038,12 @@ body {
 
 .personal-loan-breadcrumb {
     width: 50%;
-    color: var(--white, #FFF);
-    font-family: "SVN-Helvetica Now";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 23px; /* 176.923% */
     margin-top: 20px;
 }
 
 .personal-loan-breadcrumb-icon {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .personal-loan-breadcrumb span {
@@ -1064,30 +1052,16 @@ body {
 
 .personal-loan-text-title {
     width: 60%;
+    display: flex;
     gap: 16px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.personal-loan-title {
-    color: #FFF;
-    font-family: "SVN-Helvetica Now";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 52px */
-    letter-spacing: -0.4px;
+.advantage-product-detail {
+    
 }
-
-.personal-loan-description {
-    color: rgba(255, 255, 255, 0.80);
-    font-family: "SVN-Helvetica Now";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; /* 25.6px */
-    letter-spacing: -0.16px;
-}
-
 
 
 .advantage-product-detail {
@@ -1119,6 +1093,12 @@ justify-content: space-between;
     gap: 8px;
 }
 
+.loan-tabs-filter-mobile {
+    display: none;
+    border: none;
+    gap: 3px;
+} 
+
 .loan-tabs-filter button {
     padding: 14px 28px;
     justify-content: center;
@@ -1126,13 +1106,6 @@ justify-content: space-between;
     border-radius: 4px;
     border: rgba(0, 0, 0, 0.04);;
     background: rgba(0, 0, 0, 0.04);
-    color: #353535;
-    font-family: "SVN-Helvetica Now";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 15.4px */
-    letter-spacing: -0.14px;
 }
 
 .loan-tabs-filter button:hover {
@@ -1150,25 +1123,14 @@ justify-content: space-between;
 
 .loan-tabs-right button {
     display: inline-flex;
-    height: 91px;
-    padding: 0px 24px;
+    padding: 34px 24px;
     justify-content: center;
     align-items: center;
     gap: 8px;
     flex-shrink: 0;
     border: none;
-    background-color: #FFF;
     border-right: 1px solid #E1E1E1;
     border-left: 1px solid #E1E1E1;
-    color: #AF0B35;
-    -webkit-text-stroke-width: 0.10000000149011612;
-    -webkit-text-stroke-color: #AF0B35;
-    font-family: "SVN-Helvetica Now";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 16.5px */
-    letter-spacing: -0.15px;
 }
 
 .loan-tabs-right button:hover {
@@ -1230,12 +1192,6 @@ justify-content: space-between;
 
 .loan-card-content h2 {
     align-self: stretch;
-    color: var(--dark-1, #080808);
-    font-family: "SVN-Helvetica Now";
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 36.4px */
     margin-bottom: 0px;
     margin-top: 0px;
 
@@ -1248,10 +1204,9 @@ justify-content: space-between;
 
 .loan-card-title-1 {
     display: flex;
-    width: 193px;
     flex-direction: column;
     align-items: flex-start;
-    padding-right: 20px;
+    padding-right: 40px;
     border-right: 1px solid #EAEAEA;
 }
 
@@ -1259,41 +1214,13 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 20px;
-}
-
-.loan-card-title-sub {
-    color: var(--dark-3, #606060);
-    font-family: "SVN-Helvetica Now";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 21px */
-    letter-spacing: -0.14px;
+    padding-left: 40px;
 }
 
 .loan-card-title {
     display: flex;
     align-items: baseline;
     gap: 10px;
-    color: var(--dark-2, #393939);
-    font-family: "SVN-Helvetica Now";
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 120%; /* 62.4px */
-    letter-spacing: -0.52px;
-}
-
-
-.loan-card-title span {
-    color: var(--dark-3, #606060);
-    font-family: "SVN-Helvetica Now";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 16.8px */
-    letter-spacing: -0.14px;
 }
 
 .loan-card-content ul {
@@ -1309,13 +1236,6 @@ justify-content: space-between;
 
 .loan-card-content ul li {
     flex: 1 0 0;
-    color: var(--dark-2, #393939);
-    font-family: "SVN-Helvetica Now";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 21px */
-    letter-spacing: -0.14px;
     list-style: url("../images/vanhoa-vaylist-vaydetail/CheckCircle.svg");
 }
 
@@ -1330,7 +1250,6 @@ justify-content: space-between;
 
 .primary-btn {
     display: flex;
-    height: 52px;
     padding: 16px;
     justify-content: center;
     align-items: center;
@@ -1345,13 +1264,6 @@ justify-content: space-between;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    color: #FFF;
-    font-family: "SVN-Helvetica Now";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 15.4px */
-    letter-spacing: -0.14px;
 }
 
 .primary-btn:hover {
@@ -1363,15 +1275,6 @@ background-color: #900022;
     justify-content: center;
     align-items: center;
     gap: 4px;
-    color: #AF0B35;
-    -webkit-text-stroke-width: 0.10000000149011612;
-    -webkit-text-stroke-color: #AF0B35;
-    font-family: "SVN-Helvetica Now";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 16.5px */
-    letter-spacing: -0.15px;
     text-decoration: none;
 }
 
@@ -1392,14 +1295,22 @@ text-decoration: underline;
 .request-consultation {
     display: flex;
     width: 100%;
-    height: 192px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 104px;
+}
+
+.request-consultation-section {
+    display: flex;
+    width: 90%;
     align-items: center;
     justify-content: center;
 }
 
 .request-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     padding: 20px;
     border-radius: 4px;
@@ -1408,13 +1319,6 @@ text-decoration: underline;
 
 .request-button {
     display: flex;
-    color: var(--red-2, #9E2B47);
-    font-family: "SVN-Helvetica Now";
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 18.7px */
-    letter-spacing: -0.17px;
     text-decoration: none;
 }
 
@@ -1445,7 +1349,6 @@ text-decoration: underline;
     position: relative;
     display: flex;
     width: 100%;
-    height: 306px;
     background-color: #7B0D29; /* Màu nền đỏ */
 }
 
@@ -1475,20 +1378,6 @@ color: #fff;
     text-align: left;
 }
 
-.loan-info-box p {
-    color: rgba(255, 255, 255, 0.80);
-    font-family: "SVN-Helvetica Now";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 41.6px */
-    letter-spacing: -0.32px;
-}
-
-.loan-info-box span {
-    color: #fff;
-}
-
 /* Buttons */
 .loan-info-actions {
 display: flex;
@@ -1506,16 +1395,6 @@ gap: 10px;
     background: #650D23;
     gap: 6px;
     text-decoration: none;
-}
-
-.loan-info-btn span {
-    color: #FFF;
-    font-family: "SVN-Helvetica Now";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 17.6px */
-    letter-spacing: -0.16px;
 }
 
 .loan-info-btn-icon {
@@ -1589,6 +1468,7 @@ background-color: #f91212; /* Màu nền nút khi hover */
     gap: 8px;
     align-self: stretch;
 }
+
 
 .advantage-card-content h2 {
     margin-bottom: 0px;
@@ -1684,11 +1564,20 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 .product-info-title {
     width: 40%;
+
+
+}
+
+.product-info-title-content {
+    width: 70%;
+
     display: flex;
     flex-direction: column;
     padding-top: 20px;
     gap: 15px;
+
     padding-right: 192px ;
+
 }
 
 .product-info-title h2 {
@@ -1713,6 +1602,15 @@ background-color: #f91212; /* Màu nền nút khi hover */
     border: 1px solid #E8E8E8;
     background: linear-gradient(92deg, #F7F7F7 0%, #FAF8F8 100.37%);
 }
+
+
+
+.product-info-tabs-mobile {
+    display: none;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
 
 .tab-button {
     display: flex;
@@ -1739,7 +1637,11 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 .tab-content {
+
     display: flex;
+
+    display: none;
+
     flex-direction: column;
     align-items: flex-end;
     gap: 16px;
@@ -1747,7 +1649,11 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 .tab-content.active {
+
     display: block;
+
+    display: flex;
+
 }
 
 .tab-content-table {
@@ -1791,6 +1697,10 @@ background-color: #f91212; /* Màu nền nút khi hover */
 .tab-content-table ul li {
     list-style: url("../images/vanhoa-vaylist-vaydetail/CheckCircle.svg");
 }
+.tab-content-table ul {
+    padding-left: 22px;
+}
+
 
 .tab-content-table-button {
     display: flex;
@@ -1981,3 +1891,797 @@ input[type="range"]::-webkit-slider-thumb {
     gap: 8px;
     color: #AF0B35;
 }
+
+.timeline-history-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .timeline-history-container {
+    display: flex;
+    width: 90%;
+    border-top: 1px solid #F6F6F6;
+    border-bottom: 1px solid #F6F6F6;
+    padding: 60px 0px;
+  }
+  
+  .timeline-history-years {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+    max-height: 80vh; /* Giới hạn chiều cao cho khung timeline */
+    background: #fff;
+    position: sticky;
+    top: 20px;
+    overflow: hidden; /* Ẩn các nội dung thừa */
+  }
+  
+  /* Thanh navigation bên trái */
+.timeline-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* position: sticky; */
+    top: 20px;
+    overflow: hidden; /* Ẩn nội dung vượt quá */
+    gap: 24px;
+  }
+  
+  
+  /* Nút cuộn */
+.history-scroll-button {
+    display: inline-flex;
+    padding: 4px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--red-3, #C33C5E);
+}
+
+.history-scroll-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.5; /* Giảm độ rõ ràng khi nút bị vô hiệu */
+}
+
+.history-scroll-button:hover:not(:disabled) {
+    background: #900022; /* Màu nền khi hover */
+}
+
+  
+  /* Danh sách các năm */
+  #year-list {
+    overflow: auto; /* Ẩn nội dung vượt quá */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt */
+
+  }
+  
+  #year-list li {
+    cursor: pointer;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #year-list li.active {
+    color: #aa1d40;
+    font-weight: bold;
+  }
+  
+  
+  .timeline-history-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-left: 1px solid #e8e8e8;
+    padding-left: 145px;
+  }
+
+  .timeline-history-content:last-child {
+    border-bottom: none;
+  }
+
+  .history-year-content {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #e8e8e8;
+    gap: 148px;
+    padding-bottom: 36px;
+    align-items: flex-start;
+  }
+  
+  .history-year-conten-text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-top: 21px;
+    gap: 20px;
+  }
+
+  .history-year-content-img {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá container */
+    height: auto; /* Giữ tỷ lệ gốc của ảnh */
+    border-radius: 8px; /* Bo góc ảnh */
+    display: block; /* Loại bỏ khoảng trắng thừa */
+    object-fit: contain; /* Đảm bảo ảnh hiển thị đầy đủ */
+    flex-shrink: 0; /* Ngăn ảnh bị co lại khi không gian thiếu */
+  }
+  
+  /* css history page */
+
+  .accordion-inner {
+    padding: 0px;
+    display: flex;
+    gap: 13px;
+    flex-direction: column;
+  }
+
+  .accordion-inner p {
+    margin-bottom: 0px;
+  }
+
+  .accordion-head {
+    padding: 0px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .accordion {
+    border: none;
+
+  }
+
+  .accordion-item:last-child .accordion-inner {
+    border: none;
+  }
+
+  .accordion-icon {
+    transform: none;
+    position: static;
+  }
+
+  .accordion-head .title {
+    color: var(--red-21, #AA1D40);
+  }
+
+  .accordion-head .accordion-icon {
+    color: var(--red-21, #AA1D40);
+  }
+
+  .accordion-head.collapsed .title {
+    color: var(--red-21, #AA1D40);
+  }
+
+  .a {
+    color: inherit !important; /* Kế thừa màu từ phần tử cha */
+ }
+  /* end css history page */
+
+  .history-year-content:last-child {
+    border-bottom: none;
+  }
+
+
+
+
+
+  /* Section tổng quan */
+.Agribank-related-info {
+    width: 100%;
+    display: flex;
+    padding: 83px 0px;
+    padding-bottom: 100px;
+    justify-content: center;
+  }
+  
+  .Agribank-related-info-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  /* Grid các card */
+  .Agribank-related-info-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột đều nhau */
+    gap: 20px; /* Khoảng cách giữa các card */
+  }
+  
+  /* Card */
+  .Agribank-related-info-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Agribank-related-info-card:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ảnh trong card */
+  .Agribank-related-info-card-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  
+  /* Overlay */
+  .Agribank-related-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(170, 29, 64, 0.9), rgba(170, 29, 64, 0.2));
+    padding: 20px;
+    text-align: left;
+  }
+  
+
+.Agribank-award-section {
+    width: 100%;
+    padding: 85px 5%;
+}
+
+.Agribank-award-container {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+}
+
+.Agribank-award-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+}
+
+.Agribank-award-header p{
+    margin-bottom: 0px;
+}
+
+.Agribank-award-header span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* css prize page */
+.slick-track {
+    display: flex;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    align-self: stretch;
+}
+
+.slick-slide {
+    height: auto !important;
+}
+
+.card-inner {   
+    padding: 0px;
+}
+
+.card-preview {
+    border: none;
+}
+
+.pricing {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    background: #F8F8F8;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 auto;
+}
+/* end css prize page */
+
+.Agribank-award-card-img {
+    display: flex;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.Agribank-award-card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+    gap: 8px;
+}
+
+.Agribank-all-awards-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Agribank-all-awards-container {
+    width: 90%;
+    padding: 96px 0px;
+    border-bottom: 1px solid #EAEAEA;
+    display: flex;
+    gap: 20px;
+}
+
+.Agribank-all-awards-text {
+    width: 50%;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.Agribank-all-awards-text-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 22px;
+}
+
+.Agribank-all-awards-main {
+    width: 100%;
+    border-bottom: 1px solid #EAEAEA;
+    border-top: 1px solid #EAEAEA;
+    padding: 20px 63px 20px 0px;
+    display: flex;
+}
+
+.Agribank-all-awards-main-1 {
+    width: 40%;
+    border-right: 1px solid #EAEAEA;
+    padding-right: 40px;
+}
+
+.Agribank-all-awards-main-2 {
+    padding-left: 40px;
+}
+
+.featured-culture-card-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:  40px;
+}
+
+.featured-culture-card-title h3 {
+    margin-bottom: 0px;
+}
+
+.Agribank-all-awards-card-text {
+    margin-top: 20px;
+    padding-right: 30%;
+}
+
+.Agribank-all-awards-content {
+    width: 50%;
+}
+
+.answer-tab-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.answer-tab-title {
+    padding: 0px 40px;
+}
+
+.nav-item {
+    padding-right: 0px;
+}
+
+.tab-pane {
+    display: flex;
+    width: 100%;
+}
+
+.answer-tab-content {
+    width: 100%;
+    display: flex;
+    padding: 81px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-tab-content-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.answer-tab-content-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: unset !important;
+}
+
+.answer-tab-content-text-question {
+    width: 100%;
+}
+
+.answer-tab-content-text-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.Answer-content-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.Answer-content-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 375px) {
+
+    /* Trang product-list */
+    .personal-loan-section {
+        height: 365px;
+    }
+
+    .personal-loan-image {
+        width: 100%;
+    }
+
+    .personal-loan-text-sub {
+        width: 100%;
+    }
+
+    .personal-loan-breadcrumb {
+        width: 100%;
+    }
+
+    .personal-loan-text-title {
+        width: 100%;
+        padding-bottom: 30px;
+        gap: 0;
+    }
+    
+    .personal-loan-breadcrumb-icon {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .loan-tabs {
+        border-bottom: none;
+    }
+
+    .loan-tabs-filter {
+        display: none;
+    }
+
+    .loan-tabs-filter-mobile {
+        display: flex;
+        padding: 0px;
+    }
+    
+    .loan-tabs-right button {
+        padding: 20px 0px;
+        border: none;
+    }
+
+    .loan-info-section {
+        display: none;
+    }
+
+    .request-consultation {
+        padding: 20px 0px;
+    }
+
+    .request-container {
+        padding: 20px 0px;
+    }
+
+    .loan-card {
+        flex-direction: column;
+        border-radius: 4px;
+        border: 1px solid #D9D9D9;
+        padding: 0px;
+        gap: 0px;
+    }
+    
+    .loan-card-image img{
+        border-radius:0%;
+    }
+
+    .loan-card-content {
+        padding: 20px 16px 32px 16px;
+    }
+
+    .loan-card-content h2 {
+        padding-bottom: 12px;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .loan-card-title-1 {
+        padding-right: 20px;
+    }
+
+    .loan-card-title-2 {
+        padding-left: 20px;
+    }
+
+    .loan-card-content-title {
+        padding-bottom: 19px;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .loan-card-actions {
+        display: none;
+    }
+
+    .loan-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* page product-detail */
+    .agribank-culture {
+        height: 365px;
+    }
+
+    .agribank-culture-image-content {
+        width: 100%;
+    }
+
+    .advantage-product-detail {
+        padding: 20px 5%;
+    }
+
+    .advantage-product-detail-containers {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .advantage-card {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: row;
+        padding-right: 0;
+        gap: 10px;
+        border-bottom: 1px solid #EAEAEA;
+
+    }
+
+    .advantage-card-text svg {
+        max-width: none;
+    }
+
+    .advantage-card :last-child {
+        border-bottom: none;
+    }
+    
+    .product-info-container {
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .product-info-title {
+        width: 100%;
+    }
+
+    .product-info-title-content {
+        width: 100%;
+    }
+
+    .product-info-tabs {
+        width: 100%;
+    }
+
+    .tabs-header {
+        display: none;
+    }
+
+    .product-info-tabs-mobile {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tab-content-table {
+        margin-top: 0%;
+    }
+
+    .tab-content-table tr{
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .tab-content-table th {
+        padding-left: 0px;
+        width: 100%;
+    }
+    
+    .tab-content-table td {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .tab-content-table tr:first-child {
+        padding-top: 0px;
+    }
+
+    /* sửa tại button downlist */
+    .btn-round {
+        border-radius: 4px;
+    }
+    
+    .btn-primary {
+        background-color: #9E2B47;
+        border-color: #9E2B47;
+    }
+    /* end */
+    .advantage-card-question-text {
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+        align-items: unset;
+    }
+
+    .advantage-card-question-content {
+        flex-direction: column;
+    }
+
+    .advantage-card-question-buttons-card {
+        display: none;
+    }
+
+    .advantage-card-question {
+        margin-bottom: 60px;
+    }
+
+    .advantage-card-question-containers {
+        padding: 24px;
+    }
+
+    .loan-tool-container {
+        flex-direction: column;
+    }
+
+    .loan-tool-tabs {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .loan-calculator {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .loan-calculator-group {
+        gap: 20px;
+    }
+
+    .loan-calculator h3 {
+        padding-bottom: 0;
+    }
+
+    .loan-calculator-radio-form {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .loan-calculator-radio-form label {
+        width: 100%;
+    }
+
+    .money-time-loan-calculator-group {
+        flex-direction: column;
+    }
+
+    .money-time-loan-calculator-form {
+        width: 100%;
+    }
+
+    .loan-result {
+        width: 100%;
+        gap: 20px;
+        padding: 24px;
+    }
+
+    .loan-result-content p {
+        padding-bottom: 16px;
+    }
+
+    .loan-result a {
+        padding-bottom: 0;
+    }
+
+    /* page prize */
+
+    .Agribank-related-info {
+        padding: 0%;
+        padding-bottom: 60px;
+        padding-top: 20px;
+    }
+
+    .Agribank-related-info-container {
+        gap: 13px;
+    }
+
+    .Agribank-related-info-content {
+        grid-template-columns:none;
+        gap: 12px;
+    }
+
+    .Agribank-all-awards-container {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .Agribank-all-awards-text {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .Agribank-all-awards-text-title {
+        padding-right: 0;
+        gap: 12px;
+    }
+
+    .Agribank-all-awards-main {
+        padding: 17px 0px;
+    }
+
+    .Agribank-all-awards-main-1 {
+        width: 45%;
+        padding-right: 16px;
+    }
+
+    .Agribank-all-awards-main-2 {
+        padding-left: 16px;
+    }
+
+    .Agribank-all-awards-content {
+        width: 100%;
+    }
+
+    .Agribank-all-awards-card-text {
+        padding-right: 0;
+    }
+}
+
