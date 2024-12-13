@@ -744,6 +744,22 @@ body, button {
     .heading-h6 {
         font-size: 22px;
     }
+
+    .heading-h5 {
+        font-size: 25px;
+    }
+
+    .subtitle-14 {
+        font-size: 12px;
+    }
+
+    .body-19 {
+        font-size: 15px;
+    }
+
+    .body-16 {
+        font-size: 13px;
+    }
 }
 
 
