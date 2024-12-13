@@ -1058,6 +1058,11 @@
 }
 
 
+.advantage-product-detail {
+    
+}
+
+
 
 
 
@@ -1459,6 +1464,12 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 
+.advantage-card-content h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
 .advantage-card-question {
     position: relative;
     display: flex;
@@ -1547,14 +1558,20 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 .product-info-title {
     width: 40%;
+
+
 }
 
 .product-info-title-content {
     width: 70%;
+
     display: flex;
     flex-direction: column;
     padding-top: 20px;
     gap: 15px;
+
+    padding-right: 192px ;
+
 }
 
 .product-info-title h2 {
@@ -1579,6 +1596,8 @@ background-color: #f91212; /* Màu nền nút khi hover */
     border: 1px solid #E8E8E8;
     background: linear-gradient(92deg, #F7F7F7 0%, #FAF8F8 100.37%);
 }
+
+
 
 .product-info-tabs-mobile {
     display: none;
@@ -1610,8 +1629,10 @@ background-color: #f91212; /* Màu nền nút khi hover */
     background-color: #eee;
 }
 
+
 .tab-content-info {
     display: none;
+
     flex-direction: column;
     align-items: flex-end;
     gap: 16px;
@@ -1633,7 +1654,11 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 
 .tab-content.active {
+
+    display: block;
+
     display: flex;
+
 }
 
 .tab-content-table {
@@ -1677,10 +1702,10 @@ background-color: #f91212; /* Màu nền nút khi hover */
 .tab-content-table ul li {
     list-style: url("../images/vanhoa-vaylist-vaydetail/CheckCircle.svg");
 }
-
 .tab-content-table ul {
     padding-left: 22px;
 }
+
 
 .tab-content-table-button {
     display: flex;
@@ -1870,13 +1895,6 @@ input[type="range"]::-webkit-slider-thumb {
     gap: 8px;
     color: #AF0B35;
 }
-
-
-
-
-
-
-
 
 .timeline-history-section {
     display: flex;
@@ -2703,6 +2721,7 @@ input[type="range"]::-webkit-slider-thumb {
     .Agribank-all-awards-card-text {
         padding-right: 0;
     }
+
 
     /* page answer */
 

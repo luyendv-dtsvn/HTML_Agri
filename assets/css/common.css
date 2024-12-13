@@ -754,20 +754,17 @@ button {
         letter-spacing: -2%;
     }
 
+
+    .regular-15 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 15px;
+
     .regular-16 {
         font-family: 'BT Grotesk Regular';
         font-size: 16px;
         line-height: 150%;
         letter-spacing: 1%;
     }
-
-    .regular-15 {
-        font-family: 'BT Grotesk Regular';
-        font-size: 15px;
-        line-height: 150%;
-        letter-spacing: 1%;
-    }
-
     .regular-14 {
         font-family: 'BT Grotesk Regular';
         font-size: 14px;
@@ -1089,6 +1086,7 @@ button {
 .color-white {
     color: rgb(255, 255, 255);
 }
+
 
 .color-white-1 {
     color: rgba(255, 255, 255, 0.80);
