@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
 >>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564
 // Lấy tất cả các nút tab và nội dung tab
 const tabButtons = document.querySelectorAll('.tab-button');
-const tabContents = document.querySelectorAll('.tab-content');
+const tabContents = document.querySelectorAll('.tab-content-info');
 
 <<<<<<< HEAD
 // Lắng nghe sự kiện click trên mỗi nút tab
@@ -196,6 +196,78 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 >>>>>>> 25ce34f9515b65a5b8733976cda76c2366496564
+
+
+// Lấy các phần tử liên quan
+const selectButton = document.getElementById('tab-select');
+const tabOptions = document.querySelectorAll('.tab-option-info');
+
+// Xử lý khi chọn một tùy chọn từ menu
+tabOptions.forEach(option => {
+  option.addEventListener('click', () => {
+
+    // Đổi nội dung nút select thành tên tab đã chọn
+    selectButton.textContent = option.textContent;
+
+    // Kích hoạt tab tương ứng
+    const tabId = option.getAttribute('data-tab');
+    const activeTabButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+
+    if (activeTabButton) {
+      activeTabButton.click(); // Kích hoạt tab thông qua JS
+    }
+
+  });
+});
+
+
+// -------------------- Thanh menu bên trong answer page ------------
+
+// Lấy các phần tử liên quan
+const selectButtonAnswer = document.getElementById('tab-select-answer');
+const tabOptionsAnswer = document.querySelectorAll('.tab-pane-answer');
+const dropdownMenu = selectButtonAnswer.nextElementSibling; // Dropdown menu
+
+// Xử lý khi nhấn nút select để mở menu
+selectButtonAnswer.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('show'); // Hiển thị/Ẩn menu
+});
+
+// Xử lý khi chọn một tùy chọn từ menu
+tabOptionsAnswer.forEach(option => {
+  option.addEventListener('click', (e) => {
+    e.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+    
+    // Đổi nội dung nút select thành tên tab đã chọn
+    const tabName = option.textContent;
+    selectButtonAnswer.querySelector('span').textContent = tabName;
+
+    // Đóng menu sau khi chọn
+    dropdownMenu.classList.remove('show');
+
+    // Kích hoạt tab tương ứng
+    const tabId = option.getAttribute('data-tab');
+    const allTabs = document.querySelectorAll('.tab-pane');
+    const activeTab = document.getElementById(tabId);
+
+    if (activeTab) {
+      // Ẩn tất cả các tab
+      allTabs.forEach(tab => tab.classList.remove('active'));
+
+      // Hiển thị tab được chọn
+      activeTab.classList.add('active');
+    }
+  });
+});
+
+// Đóng menu khi nhấp bên ngoài
+document.addEventListener('click', (e) => {
+  if (!selectButtonAnswer.contains(e.target) && !dropdownMenu.contains(e.target)) {
+    dropdownMenu.classList.remove('show');
+  }
+});
+
+
 
 
 // -------------Phần tính toán khoản vay---------------------

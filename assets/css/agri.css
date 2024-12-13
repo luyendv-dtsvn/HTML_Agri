@@ -27,6 +27,9 @@
     width: 100%; /* Chiều rộng đầy đủ */
     height: 100%; /* Đảm bảo bao phủ toàn màn hình */
     background: linear-gradient(115deg, #9E2B47 0.44%, #AF0B35 103.79%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .agribank-culture-image {
@@ -1611,8 +1614,7 @@ background-color: #f91212; /* Màu nền nút khi hover */
     padding-bottom: 20px;
 }
 
-
-.tab-button {
+.tab-button {   
     display: flex;
     height: 44px;
     padding: 16px;
@@ -1636,10 +1638,8 @@ background-color: #f91212; /* Màu nền nút khi hover */
     background-color: #eee;
 }
 
-.tab-content {
 
-    display: flex;
-
+.tab-content-info {
     display: none;
 
     flex-direction: column;
@@ -1647,6 +1647,20 @@ background-color: #f91212; /* Màu nền nút khi hover */
     gap: 16px;
     align-self: stretch;
 }
+
+.tab-content-info.active {
+    display: flex;
+}
+
+
+.tab-content {
+    display: block;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    align-self: stretch;
+}
+
 
 .tab-content.active {
 
@@ -1719,8 +1733,7 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 .loan-tool-container {
     width: 90%;
-    margin-top: 71px;
-    padding-bottom: 54px;
+    padding: 54px 0px;
     display: flex;
     border-bottom: 1px solid #E8E8E8;
 }
@@ -2350,6 +2363,39 @@ input[type="range"]::-webkit-slider-thumb {
     justify-content: center;
 }
 
+.answer-header-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.answer-header-content-sub {
+    display: flex;
+}
+
+.answer-header-content-title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 37px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.answer-header-content-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    gap: 15px;
+}
+
+.answer-header-content-search-input {
+    flex: 1;
+}
 
 @media (max-width: 375px) {
 
@@ -2579,6 +2625,7 @@ input[type="range"]::-webkit-slider-thumb {
 
     .loan-tool-container {
         flex-direction: column;
+        padding: 25px;
     }
 
     .loan-tool-tabs {
@@ -2683,5 +2730,49 @@ input[type="range"]::-webkit-slider-thumb {
     .Agribank-all-awards-card-text {
         padding-right: 0;
     }
+
+
+    /* page answer */
+
+    .agribank-culture-background {
+        align-items: stretch; 
+    }
+
+    .answer-header-content {
+        width: 90%;
+        align-items: stretch; 
+        justify-content: space-between;
+    }
+
+    .answer-header-content-title {
+        gap: 12px;
+        align-items: stretch;
+        padding-bottom: 40px;
+    }
+    
+    .answer-header-content-search {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .answer-header-content-search-list {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .answer-tab-content-text {
+        width: 100%;
+    }
+
+    .Answer-content-tab-text {
+        display: none;
+    }
+
+    .answer-tab-content {
+        padding: 0px;
+    }
+
 }
 
