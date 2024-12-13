@@ -16,11 +16,9 @@ body {
 
 .main {
     position: relative;
-
 }
 
 .main img {
-
     width: 100%;
 }
 
@@ -74,6 +72,10 @@ body {
     outline: 4px solid #AA1D40; /* Lớp border bên ngoài */
     outline-offset: -1px;
 }
+.btn-login svg{
+    position: relative;
+}
+
 .home {
     width: 100%;
     display: flex;
@@ -108,6 +110,7 @@ body {
     position: absolute;
     justify-content: center;
     color: #fff;
+    text-align: center;
 }
 
 .search {
@@ -153,7 +156,6 @@ input::placeholder {
 .tab {
     margin: 0 104px;
     width: 100%;
-    color: #fff;
     display: flex;
     position: relative;
     justify-content: center;
@@ -161,6 +163,11 @@ input::placeholder {
     gap: 26px;
     border-radius: 4px;
     background: var(--Linear-2, linear-gradient(270deg, #AF0B35 0%, #C93259 100%));
+}
+.tab a{
+    text-decoration: none;
+    color: #fff;
+
 }
 
 .financial-institutions,
@@ -171,9 +178,10 @@ input::placeholder {
 .utility-tool,
 .hotline {
     width: 14.28571428571429%;
-    display: block;
+    display: flex;
     text-align: center;
     justify-content: center;
+    flex-direction: column;
 
 }
 
