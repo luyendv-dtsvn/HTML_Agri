@@ -6,8 +6,7 @@
 **/
 :root {
     /* Màu sắc chung */
-    --red-1: #AF0B35;
-    --dark-3: #606060;
+    --red-color: #8F1030;
     /* Màu chính */
 
 }
@@ -450,7 +449,6 @@ button {
         letter-spacing: 4%;
     }
 }
-
 @media (max-width:1024px) {
 
     .heading-h1 {
@@ -628,7 +626,6 @@ button {
         letter-spacing: 4%;
     }
 }
-
 @media (max-width:768px) {
 
     .heading-h1 {
@@ -762,14 +759,12 @@ button {
         font-family: 'BT Grotesk Regular';
         font-size: 15px;
     }
-
     .regular-16 {
         font-family: 'BT Grotesk Regular';
         font-size: 16px;
         line-height: 150%;
         letter-spacing: 1%;
     }
-
     .regular-14 {
         font-family: 'BT Grotesk Regular';
         font-size: 14px;
@@ -790,7 +785,7 @@ button {
         line-height: 139.9999976158142%;
         letter-spacing: 0%;
     }
-
+ 
     .subtitle-12 {
         font-family: 'BT Grotesk Regular';
         font-size: 12px;
@@ -814,7 +809,6 @@ button {
         letter-spacing: -1%;
     }
 }
-
 @media (max-width: 375px) {
     .heading-h2 {
         font-family: 'BT Grotesk Regular';
@@ -939,54 +933,31 @@ button {
             rgba(201, 50, 89, 1) 100%);
 }
 
-/* luyendv */
-.custom-radio.custom-control-pro.no-control .custom-control-input:checked~.custom-control-label {
-    border-color: var(--red-1);
-    z-index: 2;
-    background-color: var(--red-1);
-    color: #fff;
-}
 
-.custom-input-group input {
-    background: #F4F4F4;
-    border: none;
-    height: calc(2.125rem + 12px);
+/* .color-white-def {
+    color: #FFF;
 }
-
-.custom-input-group input:focus {
-    color: var(--dark-3);
-    background-color: #fff;
-    border-color: var(--red-1);
-    outline: 0;
-    box-shadow: 0 0 0 3px rgba(175, 11, 53, 0.1);
+.color-white-opa-1 {
+    color: rgba(255, 255, 255, 0.96)
 }
-
-.custom-input-group button {
-    background-color: #F4F4F4 !important;
-    border: none;
-    color: var(--dark-3) !important;
-
+.color-white-opa-2 {
+    color: rgba(255, 255, 255, 0.80)
 }
-
-.form-control-wrap.icon-change-rate {
-    display: flex;
-    height: 36px;
-    align-items: center;
-    border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.10);;
-    width: 36px;
-    justify-content: space-evenly;
+.color-dark-red-1 {
+    color: #9E2B47;
 }
-
-.form-icon-custom {
-    height: calc(2.125rem + 12px);
-    display: flex;
-    align-items: center;
+.color-dark-red-2 {
+    color:#AA1D40;
 }
-.custom-input-group .input-group-append button:focus{
-    border-color: var(--red-1);
-    box-shadow: 0 0 0 0.2rem rgba(175, 11, 53, 0.5)!important;
-    background-color: 0 0 0 0.2rem rgba(175, 11, 53, 0.5) !important;
+.color-dark-gray-1 {
+    color: #5A5A5A;
 }
-
-/* end luyendv */
+.color-dark-gray-2 {
+    color: #757575;
+}
+.color-dark-gray-3 {
+    color: #080808;
+}
+.color-dark-pink-1 {
+    color: #AF0B35;
+}  */

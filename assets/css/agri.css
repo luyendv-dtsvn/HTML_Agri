@@ -1,4 +1,6 @@
-
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto, .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9, .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl, .col-xxl-auto {
+    padding: 0px;
+}
 
 /* Tổng thể */
 .agribank-culture {
@@ -42,7 +44,6 @@
 
 .agribank-culture-image-content {
     position: absolute;
-    width: 40%;
     height: 100%;
     overflow: hidden;
     left: 0;
@@ -2393,6 +2394,137 @@ input[type="range"]::-webkit-slider-thumb {
     color: #080808;
 }
 
+@media (max-width: 1366px) {
+
+    .loan-info-btn {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .personal-loan-section {
+        height: 500px;
+    }
+
+    .loan-tabs-right button {
+        padding: 22px;
+    }
+
+    .loan-tabs-filter button {
+        padding: 12px;
+    }
+
+    .loan-card {
+        flex-direction: column;
+        border-radius: 4px;
+        border: 1px solid #D9D9D9;
+        padding: 0px;
+        gap: 0px;
+    }
+
+    .loan-card-image img{
+        border-radius:0%;
+    }
+
+    .loan-card-content {
+        padding: 20px 16px 32px 16px;
+        width: 100%;
+    }
+
+    .loan-card-content h2 {
+        padding-bottom: 12px;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .loan-card-title-1 {
+        padding-right: 15px;
+    }
+
+    .loan-card-title-2 {
+        padding-left: 15px;
+    }
+
+    .loan-card-content-title {
+        padding-bottom: 19px;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .loan-card-actions {
+        display: none;
+    }
+
+    .loan-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .loan-info-section {
+        justify-content: center;
+    }
+
+    .loan-info-container {
+        width: 90%;
+        padding: 20px 0px;
+    }
+
+    .loan-info-btn {
+        padding: 10px;
+    }
+
+    .loan-info-box {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .personal-loan-section {
+        height: 400px;
+    }
+
+    .loan-tabs-right button {
+        padding: 20px;
+    }
+
+    .loan-tabs-filter {
+        display: none;
+    }
+
+    .loan-tabs-filter-mobile {
+        display: flex;
+    }
+
+    .loan-info-section {
+        display: none;
+    }
+
+    .loan-card-title {
+        align-items: center;
+        gap: 5px;
+    }
+
+    .loan-card-title-1 {
+        padding-right: 10px;
+        width: 50%;
+    }
+
+    .loan-card-title-2 {
+        padding-left: 10px;
+        width: 50%;
+    }
+
+    .loan-card-content {
+        gap: 10px;
+    }
+
+    .loan-card-content-title {
+        padding-bottom: 10px;
+        width: 100%;
+    }
+}
+
 @media (max-width: 375px) {
 
     /* Trang product-list */
@@ -2436,6 +2568,9 @@ input[type="range"]::-webkit-slider-thumb {
         border: none;
     }
 
+    .loan-info-section {
+        display: none;
+    }
 
     .request-consultation {
         padding: 20px 0px;
@@ -2444,8 +2579,6 @@ input[type="range"]::-webkit-slider-thumb {
     .request-container {
         padding: 20px 0px;
     }
-
-    .loan-card-content-title
 
     /* page product-detail */
     .agribank-culture {
@@ -2677,6 +2810,7 @@ input[type="range"]::-webkit-slider-thumb {
         padding-right: 0;
     }
 
+
     /* page answer */
 
     .agribank-culture-background {
@@ -2749,132 +2883,4 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
     }
 
-    .featured-culture-agribank {
-        
-
-
-    }
-}
-@media (max-width: 1024px) {
-
-    .personal-loan-section {
-        height: 500px;
-    }
-
-    .loan-tabs-right button {
-        padding: 22px;
-    }
-
-    .loan-tabs-filter button {
-        padding: 12px;
-    }
-
-    .loan-card {
-        flex-direction: column;
-        border-radius: 4px;
-        border: 1px solid #D9D9D9;
-        padding: 0px;
-        gap: 0px;
-    }
-    
-    .loan-card-image img{
-        border-radius:0%;
-    }
-
-    .loan-card-content {
-        padding: 20px 16px 32px 16px;
-        width: 100%;
-    }
-
-    .loan-card-content h2 {
-        padding-bottom: 12px;
-        border-bottom: 1px solid #EAEAEA;
-    }
-
-    .loan-card-title-1 {
-        padding-right: 15px;
-    }
-
-    .loan-card-title-2 {
-        padding-left: 15px;
-    }
-
-    .loan-card-content-title {
-        padding-bottom: 19px;
-        border-bottom: 1px solid #EAEAEA;
-    }
-
-    .loan-card-actions {
-        display: none;
-    }
-
-    .loan-cards {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .loan-info-section {
-        justify-content: center;
-    }
-
-    .loan-info-container {
-        width: 90%;
-        padding: 20px 0px;
-    }
-
-    .loan-info-btn {
-        padding: 10px;
-    }
-
-    .loan-info-box {
-        padding: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    
-    .personal-loan-section {
-        height: 400px;
-    }
-
-    .loan-tabs-right button {
-        padding: 20px;
-    }
-
-    .loan-tabs-filter {
-        display: none;
-    }
-
-    .loan-tabs-filter-mobile {
-        display: flex;
-    }
-
-    .loan-info-section {
-        display: none;
-    }
-
-    .loan-card-title {
-        align-items: center;
-        gap: 5px;
-    }
-
-    .loan-card-title-1 {
-        padding-right: 10px;
-        width: 50%;
-    }
-
-    .loan-card-title-2 {
-        padding-left: 10px;
-        width: 50%;
-    }
-
-    .loan-card-content {
-        gap: 10px;
-    }
-
-    .loan-card-content-title {
-        padding-bottom: 10px;
-        width: 100%;
-    }
 }
