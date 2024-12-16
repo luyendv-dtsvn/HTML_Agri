@@ -30767,7 +30767,8 @@ body.nav-shown {
 
 @media (min-width: 576px) {
   .nk-content {
-    padding: 32px 22px;
+    /* padding: 32px 22px; */
+    padding: 32px 4.9%;
   }
 
   .nk-content-fluid {
