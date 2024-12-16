@@ -7,6 +7,11 @@
 :root {
     /* Màu sắc chung */
     --red-color: #8F1030;
+    --red-1: #AF0B35;
+    --dark-3: #606060;
+    --dark-1: #080808;
+    --red-21: #AA1D40;
+    --red-3: #C33C5E;
     /* Màu chính */
 
 }
@@ -92,7 +97,7 @@
 
 body,
 button {
-    /* font-family: 'SVN-Helvetica Now Regular'; */
+    font-family: 'BT Grotesk Regular';
     background: #fff;
     margin: 0;
 }
@@ -941,30 +946,110 @@ button {
 }
 
 
-/* .color-white-def {
-    color: #FFF;
+
+.custom-input-group .input-group-append button:focus {
+    border-color: var(--red-1);
+    box-shadow: 0 0 0 0.2rem rgba(175, 11, 53, 0.5) !important;
+    background-color: 0 0 0 0.2rem rgba(175, 11, 53, 0.5) !important;
 }
-.color-white-opa-1 {
-    color: rgba(255, 255, 255, 0.96)
+
+.line-along {
+    background: rgba(0, 0, 0, 0.10);
+    width: 1px;
+    margin: 0px 2rem;
+    /* height: 107px; */
 }
-.color-white-opa-2 {
-    color: rgba(255, 255, 255, 0.80)
+
+.change-rate-price {
+    align-items: baseline;
+    gap: 6px;
 }
-.color-dark-red-1 {
-    color: #9E2B47;
+
+.line-h {
+    width: 100%;
+    height: 1px;
+    background: #F2F2F2;
 }
-.color-dark-red-2 {
-    color:#AA1D40;
+
+.card-rate .user-avatar {
+    background: transparent !important;
 }
-.color-dark-gray-1 {
-    color: #5A5A5A;
+
+.vertical-mid {
+    vertical-align: middle !important;
 }
-.color-dark-gray-2 {
-    color: #757575;
+
+.table-rate thead {
+    background: rgba(195, 60, 94, 0.07);
 }
-.color-dark-gray-3 {
-    color: #080808;
+
+.table-rate thead tr th {
+    color: #494949 !important;
 }
-.color-dark-pink-1 {
-    color: #AF0B35;
-}  */
+
+.table-rate {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.table-rate .table th,
+.table-rate .table td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    ;
+}
+
+.table-rate .table tr th,
+.table-rate .table tr td {
+    padding: 1.2rem;
+}
+
+.table-rate .user-avatar,
+[class^="user-avatar"]:not([class*="-group"]) {
+    align-items: unset;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.btn-show-more {
+    border-radius: 4px;
+    background: var(--red-21);
+    color: white;
+    padding: 16px 20px;
+    width: 153px;
+    justify-content: center;
+}
+
+.btn-show-more:hover {
+    background: var(--red-3);
+    color: #fff;
+}
+
+.row-ct {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio-rate .custom-radio label {
+    border: unset;
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.exchange-rate input.date-picker {
+    min-width: 150px;
+}
+
+.icon-change-rate:hover {
+    background: var(--red-1)
+}
+.icon-change-rate em {
+    font-size: 16px;
+}
+.icon-change-rate:hover em{
+   color: #fff;
+}
+
+/* end luyendv */
