@@ -5,14 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cá Nhân</title>
-  <link rel="stylesheet" href="/assets/css/dashlite.css" />
-  <link rel="stylesheet" href="/assets/css/home-user.css" />
-  <link rel="stylesheet" href="/assets/css/common.css" />
+  <link rel="stylesheet" href="../assets/css/dashlite.css" />
+  <link rel="stylesheet" href="../assets/css/home-user.css" />
+  <link rel="stylesheet" href="../assets/css/common.css" />
   <!-- <link rel="stylesheet" href="/assets/css/bld.css"> -->
   <style>
     .owl-carousel .owl-nav.disabled,
     .owl-carousel .owl-dots.disabled {
       display: flex !important;
+      gap: 54px;
+      position: absolute;
+      right: 3%;
+      bottom: 121%;
 
     }
 
@@ -24,13 +28,38 @@
     .custom-prev {
       padding: 12px;
       border-radius: 100px;
-      border: 1px solid black;
+      border: 1px solid #DEDEDE;
       position: absolute;
+      
+
+    }
+    .custom-next:hover,
+    .custom-prev:hover {
+      padding: 12px;
+      /* fill: #fff; */
+      border-radius: 100px;
+      background: var(--red-1, #AF0B35);
+    }
+    .custom-next:hover path,
+    .custom-prev:hover path{
+      fill: #fff;
+    }
+    .custom-next:active,
+    .custom-prev:active {
+      padding: 12px;
+      /* fill: #fff; */
+      border-radius: 100px;
+      background: #fff;
+      border: 1px solid var(--Linear-1, #9E2B47);
 
 
     }
 
-    .custom-prev {
+    .owl-carousel .owl-item img{
+      border-radius: 4px;
+    }
+
+    /* .custom-prev {
       top: -26%;
       right: 3%;
     }
@@ -38,7 +67,7 @@
     .custom-next {
       top: -26%;
       right: 0%;
-    }
+    } */
 
     .owl-item {
       width: 80%;
@@ -56,17 +85,17 @@
       <div class="top">
         <div class="top-user">
           <div class="top-user-left ">
-            <div class="individual Body-12"><a href="#">Cá nhân</a></div>
-            <div class="Body-12"><a href="#">Doanh nghiệp</a></div>
-            <div class="Body-12"><a href="#">Định chế tài chính</a></div>
+            <div class="individual body-12"><a href="#">Cá nhân</a></div>
+            <div class="body-12"><a href="#">Doanh nghiệp</a></div>
+            <div class="body-12"><a href="#">Định chế tài chính</a></div>
           </div>
-          <div class="top-user-right Body-12">
-            <div class="Body-12"> <a href="#">Về Agribank</a></div>
-            <div class="Body-12"><a href="#">Tin tức</a></div>
-            <div class="Body-12"><a href="#">Tuyển dụng</a></div>
-            <div class="Body-12"><a href="#">Hỗ trợ</a></div>
-            <div class="Body-12"><a href="#">Công cụ tiện ích</a></div>
-            <div class="Body-12"><a href="#">Liên hệ</a></div>
+          <div class="top-user-right body-12">
+            <div class="body-12"> <a href="#">Về Agribank</a></div>
+            <div class="body-12"><a href="#">Tin tức</a></div>
+            <div class="body-12"><a href="#">Tuyển dụng</a></div>
+            <div class="body-12"><a href="#">Hỗ trợ</a></div>
+            <div class="body-12"><a href="#">Công cụ tiện ích</a></div>
+            <div class="body-12"><a href="#">Liên hệ</a></div>
             <div class="hrr"></div>
             <div>
               <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
@@ -106,9 +135,10 @@
       </div>
       <div class="menu">
         <div class="top-menu">
-          <div class="top-menu-left Body-15">
+          <div class="top-menu-left body-15">
             <div class="icon-agri">
-              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="189" height="34" viewBox="0 0 189 34"
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="189" height="34" viewBox="0 0 189 34"
                   fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M116.472 18.679C117.764 18.9266 118.73 19.3222 119.371 19.8657C120.257 20.6229 120.701 21.5508 120.701 22.6457C120.701 23.4775 120.409 24.2759 119.823 25.0379C119.236 25.7987 118.435 26.3553 117.415 26.7056C116.393 27.0559 114.836 27.2313 112.738 27.2313H103.953V26.7736H104.654C105.431 26.7736 105.99 26.5506 106.328 26.1072C106.539 25.8178 106.644 25.2031 106.644 24.2646V13.438C106.644 12.401 106.511 11.7445 106.246 11.4743C105.888 11.1098 105.359 10.9295 104.654 10.9295H103.953V10.4724H111.998C113.497 10.4724 114.702 10.5704 115.609 10.7696C116.981 11.0661 118.029 11.5895 118.751 12.346C119.475 13.0991 119.834 13.9655 119.834 14.9453C119.834 15.786 119.552 16.5398 118.985 17.2003C118.418 17.8643 117.579 18.3572 116.472 18.679ZM109.28 18.0111C109.619 18.0697 110.005 18.1131 110.439 18.14C110.875 18.1705 111.351 18.1837 111.876 18.1837C113.209 18.1837 114.215 18.0536 114.889 17.7952C115.561 17.5355 116.074 17.1376 116.431 16.6024C116.789 16.0677 116.967 15.4823 116.967 14.848C116.967 13.866 116.522 13.0305 115.635 12.3408C114.749 11.6468 113.453 11.3007 111.75 11.3007C110.836 11.3007 110.011 11.3902 109.28 11.5722V18.0111ZM109.28 26.0194C110.339 26.2427 111.39 26.3542 112.423 26.3542C114.08 26.3542 115.343 26.0171 116.212 25.3446C117.082 24.6746 117.516 23.8451 117.516 22.8558C117.516 22.203 117.319 21.5801 116.926 20.9786C116.532 20.3764 115.891 19.9015 115.003 19.5559C114.117 19.2087 113.017 19.0363 111.711 19.0363C111.142 19.0363 110.658 19.0458 110.254 19.0625C109.852 19.0781 109.527 19.1074 109.28 19.1496V26.0194Z"
@@ -176,17 +206,22 @@
                 </svg></a>
             </div>
             <div class="hrr"></div>
-            <div>
-              <a href="#">Về chúng tôi</a>
+            <div style="text-align: center;">
+              <a href="#">
+                Sản phẩm dịch vụ
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                  <path d="M12.8175 6.21458L8.44254 10.5896C8.38158 10.6508 8.30913 10.6993 8.22936 10.7324C8.14959 10.7655 8.06407 10.7826 7.9777 10.7826C7.89133 10.7826 7.80581 10.7655 7.72604 10.7324C7.64627 10.6993 7.57382 10.6508 7.51286 10.5896L3.13786 6.21458C3.01457 6.09129 2.94531 5.92408 2.94531 5.74973C2.94531 5.57538 3.01457 5.40817 3.13786 5.28489C3.26114 5.1616 3.42835 5.09234 3.6027 5.09234C3.77705 5.09234 3.94426 5.1616 4.06754 5.28489L7.97825 9.19559L11.889 5.28434C12.0122 5.16106 12.1794 5.0918 12.3538 5.0918C12.5281 5.0918 12.6954 5.16106 12.8186 5.28434C12.9419 5.40763 13.0112 5.57484 13.0112 5.74919C13.0112 5.92354 12.9419 6.09075 12.8186 6.21403L12.8175 6.21458Z" fill="black"/>
+                </svg>
+              </a>
 
             </div>
             <div>
-              <a href="#">Công bố thông tin</a>
-
+              <a href="#">Ngân hàng số</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                <path d="M12.8175 6.21458L8.44254 10.5896C8.38158 10.6508 8.30913 10.6993 8.22936 10.7324C8.14959 10.7655 8.06407 10.7826 7.9777 10.7826C7.89133 10.7826 7.80581 10.7655 7.72604 10.7324C7.64627 10.6993 7.57382 10.6508 7.51286 10.5896L3.13786 6.21458C3.01457 6.09129 2.94531 5.92408 2.94531 5.74973C2.94531 5.57538 3.01457 5.40817 3.13786 5.28489C3.26114 5.1616 3.42835 5.09234 3.6027 5.09234C3.77705 5.09234 3.94426 5.1616 4.06754 5.28489L7.97825 9.19559L11.889 5.28434C12.0122 5.16106 12.1794 5.0918 12.3538 5.0918C12.5281 5.0918 12.6954 5.16106 12.8186 5.28434C12.9419 5.40763 13.0112 5.57484 13.0112 5.74919C13.0112 5.92354 12.9419 6.09075 12.8186 6.21403L12.8175 6.21458Z" fill="black"/>
+              </svg>
             </div>
             <div><a href="#">Thư viện Agribank</a></div>
-            <div><a href="#">Tin tức</a></div>
-            <div>Tài sản bán đấu giá</div>
           </div>
           <div class="top-menu-right">
             <div class="icon-search">
@@ -205,22 +240,25 @@
                 background: rgba(255, 255, 255, 0.2);
               "></div>
             <hr class="hr" />
-            <button class="login Body-Regular-14" type="button">
+            <div class="login body-regular-14" type="button">
               Đăng nhập
               <div class="icon-selection">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M13 6L8 11L3 6" stroke="white" stroke-width="1.42857" stroke-linecap="square" />
                 </svg>
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </div>
 
     </div>
     <div class="banner">
-      <img src="/images/avatar/hoach-le-dinh-PeRt3uMmjYM-unsplash 1.png" alt="" />
-      <div class="content Heading-H1">
+      <video class="banner-video" autoplay muted loop>
+        <source src="../assets/images/home/-6d89-4278-af99-959203b48a4e.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+      <div class="content heading-h1">
         Mang phồn thịnh <br> đến với khách hàng
       </div>
       <div class="search">
@@ -234,7 +272,7 @@
                 <path d="M15.8047 15.8047L21.0012 21.0012" stroke="white" stroke-width="1.5" stroke-linecap="square" />
               </svg>
             </div>
-            <input class="Body-1818" type="text" name="query" placeholder="Bạn cần tìm kiếm gì?" />
+            <input class="body-1818" type="text" name="query" placeholder="Bạn cần tìm kiếm gì?" />
             <div class="icon-next">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
@@ -260,7 +298,7 @@
                     <path d="M4.75 7L10 10L15.25 7" stroke="white" stroke-width="0.75" />
                     <path d="M10 10V16" stroke="white" stroke-width="0.75" />
                   </svg>
-                  <span class="Body-Regular-13">Tìm sản phẩm</span>
+                  <span class="body-regular-13">Tìm sản phẩm</span>
                 </a>
               </div>
               <div class="calculation-tool
@@ -288,7 +326,7 @@
                       d="M13.125 15.625C13.6428 15.625 14.0625 15.2053 14.0625 14.6875C14.0625 14.1697 13.6428 13.75 13.125 13.75C12.6072 13.75 12.1875 14.1697 12.1875 14.6875C12.1875 15.2053 12.6072 15.625 13.125 15.625Z"
                       fill="white" />
                   </svg>
-                  <span class="Body-Regular-13">Công cụ tính</span></a>
+                  <span class="body-regular-13">Công cụ tính</span></a>
               </div>
               <div class="find-branch
               ">
@@ -301,7 +339,7 @@
                       d="M16.25 8.125C16.25 13.75 10 18.125 10 18.125C10 18.125 3.75 13.75 3.75 8.125C3.75 6.4674 4.40848 4.87769 5.58058 3.70558C6.75269 2.53348 8.3424 1.875 10 1.875C11.6576 1.875 13.2473 2.53348 14.4194 3.70558C15.5915 4.87769 16.25 6.4674 16.25 8.125Z"
                       stroke="white" stroke-width="0.75" />
                   </svg>
-                  <span class="Body-Regular-13">Tìm chi nhánh</span></a>
+                  <span class="body-regular-13">Tìm chi nhánh</span></a>
               </div>
               <div class="fee-schedule
               ">
@@ -312,7 +350,7 @@
                     <path d="M7.5 10.625H12.5" stroke="white" stroke-width="0.75" />
                     <path d="M7.5 13.125H12.5" stroke="white" stroke-width="0.75" />
                   </svg>
-                  <span class="Body-Regular-13">Biểu phí</span></a>
+                  <span class="body-regular-13">Biểu phí</span></a>
               </div>
               <div class="interest-rate
               ">
@@ -326,7 +364,7 @@
                       d="M14.0625 16.25C15.2706 16.25 16.25 15.2706 16.25 14.0625C16.25 12.8544 15.2706 11.875 14.0625 11.875C12.8544 11.875 11.875 12.8544 11.875 14.0625C11.875 15.2706 12.8544 16.25 14.0625 16.25Z"
                       stroke="white" stroke-width="0.75" />
                   </svg>
-                  <span class="Body-Regular-13">Lãi suất</span></a>
+                  <span class="body-regular-13">Lãi suất</span></a>
               </div>
               <div class="exchange-rate
               ">
@@ -335,7 +373,7 @@
                     <path d="M17.5 16.25H2.5V3.75" stroke="white" stroke-width="0.75" />
                     <path d="M17.5 7.5L12.5 11.875L7.5 8.125L2.8125 12.5" stroke="white" stroke-width="0.75" />
                   </svg>
-                  <span class="Body-Regular-13">Tỷ giá</span></a>
+                  <span class="body-regular-13">Tỷ giá</span></a>
               </div>
               <div class="exchange-rate
               ">
@@ -344,7 +382,7 @@
                     <path d="M17.5 16.25H2.5V3.75" stroke="white" stroke-width="0.75" />
                     <path d="M17.5 7.5L12.5 11.875L7.5 8.125L2.8125 12.5" stroke="white" stroke-width="0.75" />
                   </svg>
-                  <span class="Body-Regular-13">Tỷ giá</span></a>
+                  <span class="body-regular-13">Tỷ giá</span></a>
               </div>
               <div class="exchange-rate
               ">
@@ -353,7 +391,7 @@
                     <path d="M17.5 16.25H2.5V3.75" stroke="white" stroke-width="0.75" />
                     <path d="M17.5 7.5L12.5 11.875L7.5 8.125L2.8125 12.5" stroke="white" stroke-width="0.75" />
                   </svg>
-                  <span class="Body-Regular-13">Tỷ giá</span></a>
+                  <span class="body-regular-13">Tỷ giá</span></a>
               </div>
               <div class="exchange-rate
               ">
@@ -362,7 +400,7 @@
                     <path d="M17.5 16.25H2.5V3.75" stroke="white" stroke-width="0.75" />
                     <path d="M17.5 7.5L12.5 11.875L7.5 8.125L2.8125 12.5" stroke="white" stroke-width="0.75" />
                   </svg>
-                  <span class="Body-Regular-13">Tỷ giá</span></a>
+                  <span class="body-regular-13">Tỷ giá</span></a>
               </div>
               <div class="exchange-rate
               ">
@@ -371,7 +409,7 @@
                     <path d="M17.5 16.25H2.5V3.75" stroke="white" stroke-width="0.75" />
                     <path d="M17.5 7.5L12.5 11.875L7.5 8.125L2.8125 12.5" stroke="white" stroke-width="0.75" />
                   </svg>
-                  <span class="Body-Regular-13">Tỷ giá</span></a>
+                  <span class="body-regular-13">Tỷ giá</span></a>
               </div>
               <div class="exchange-rate
               ">
@@ -380,7 +418,7 @@
                     <path d="M17.5 16.25H2.5V3.75" stroke="white" stroke-width="0.75" />
                     <path d="M17.5 7.5L12.5 11.875L7.5 8.125L2.8125 12.5" stroke="white" stroke-width="0.75" />
                   </svg>
-                  <span class="Body-Regular-13">Tỷ giá</span></a>
+                  <span class="body-regular-13">Tỷ giá</span></a>
               </div>
 
 
@@ -396,13 +434,13 @@
             <path d="M14.625 9.5625L9 15.1875L3.375 9.5625" stroke="white" stroke-width="1.5" stroke-linecap="square" />
             <path d="M14.625 3.9375L9 9.5625L3.375 3.9375" stroke="white" stroke-width="1.5" stroke-linecap="square" />
           </svg>
-          <span class="Body-15">Kéo xuống để khám phá thêm</span>
+          <span class="body-15">Kéo xuống để khám phá thêm</span>
         </div>
       </div>
     </div>
     <div class="outstanding-products">
-      <div class="about-title Subtitle-14 ">SẢN PHẨM NỔI BẬT</div>
-      <div class="about-subtitle Heading-H4-5">
+      <div class="about-title subtitle-14 ">SẢN PHẨM NỔI BẬT</div>
+      <div class="about-subtitle heading-h4-5">
         <span style="color: var(--dark-1, #080808);">Khám phá những sản</span>
         <br>
         <span class="high">phẩm hàng đầu của Agribank</span>
@@ -411,14 +449,14 @@
     <div>
       <div>
         <div class="content-top">
-          <div class="content-top-menu" data-tab="tab1">
+          <div class="content-top-menu active" data-tab="tab1">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
               <path
                 d="M8 32L10.6666 29.3334M32.0271 32L29.3605 29.3334M10.6666 10.6395L8 7.97288M32.0271 7.97288L29.3605 10.6395M22.2849 10.8546C22.8174 12.4522 23.7146 13.9039 24.9054 15.0946C26.0961 16.2854 27.5478 17.1826 29.1454 17.7151L36 20L29.1454 22.2849C27.5478 22.8174 26.0961 23.7146 24.9054 24.9054C23.7146 26.0961 22.8174 27.5478 22.2849 29.1454L20 36L17.7151 29.1454C17.1826 27.5478 16.2854 26.0961 15.0946 24.9054C13.9039 23.7146 12.4522 22.8174 10.8546 22.2849L4 20L10.8546 17.7151C12.4522 17.1826 13.9039 16.2854 15.0946 15.0946C16.2854 13.9039 17.1826 12.4522 17.7151 10.8546L20 4L22.2849 10.8546Z"
                 stroke="#393939" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-            <div class="Body-16">Nổi bật</div>
+            <div class="body-16">Nổi bật</div>
           </div>
           <div class="content-top-menu" data-tab="tab2">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -431,7 +469,7 @@
                 d="M21 14C24.3137 14 27 11.3137 27 8C27 4.68629 24.3137 2 21 2C17.6863 2 15 4.68629 15 8C15 11.3137 17.6863 14 21 14Z"
                 stroke="#393939" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="square" />
             </svg>
-            <div class="Body-16">Gửi tiền</div>
+            <div class="body-16">Gửi tiền</div>
           </div>
           <div class="content-top-menu" data-tab="tab3">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -447,7 +485,7 @@
                 d="M29.4994 13.3261C28.6503 13.7277 27.6945 13.8453 26.7733 13.6616C25.8522 13.4779 25.0146 13.0026 24.3845 12.3061C23.7543 11.6095 23.3651 10.7286 23.2744 9.79372C23.1836 8.85881 23.3962 7.91953 23.8806 7.11479C24.365 6.31004 25.0956 5.68257 25.9642 5.32517C26.8329 4.96777 27.7935 4.89943 28.704 5.13024C29.6145 5.36106 30.4265 5.87878 31.02 6.60683C31.6135 7.33488 31.9569 8.23461 31.9994 9.17294"
                 stroke="#393939" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="square" />
             </svg>
-            <div class="Body-16 color-dark-gray-1">Vay vốn</div>
+            <div class="body-16 color-dark-gray-1">Vay vốn</div>
           </div>
           <div class="content-top-menu" data-tab="tab4">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -460,7 +498,7 @@
               <path d="M4 15.25H36.5" stroke="#393939" stroke-width="1.35" stroke-miterlimit="10"
                 stroke-linecap="square" />
             </svg>
-            <div class="Body-16 color-dark-gray-1">Thẻ</div>
+            <div class="body-16 color-dark-gray-1">Thẻ</div>
           </div>
           <div class="content-top-menu" data-tab="tab5">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -471,17 +509,17 @@
               <path d="M6.13281 18.5H33.3641" stroke="#393939" stroke-width="1.35" stroke-miterlimit="10"
                 stroke-linecap="square" />
             </svg>
-            <div class="Body-16 color-dark-gray-1">Bảo hiểm</div>
+            <div class="body-16 color-dark-gray-1">Bảo hiểm</div>
           </div>
         </div>
         <div class="hrrr"></div>
         <div class="content-betwent active" data-content="tab1">
           <div class="row">
             <div class="borrow col-6">
-              <img src="/HTML_Agri/image/shutterstock_249236566_huge 2.png" alt="Cho vay ưu đãi">
+              <img src="../HTML_Agri/image/shutterstock_249236566_huge 2.png" alt="Cho vay ưu đãi">
               <div class="title">
-                <span class="borrow-titler Heading-H7">Cho vay ưu đãi lãi suất</span>
-                <span class="borrow-subtitle Body-Regular-16">
+                <span class="borrow-titler heading-h7">Cho vay ưu đãi lãi suất</span>
+                <span class="borrow-subtitle body-regular-16">
                   Agribank triển khai chương trình cho vay ưu đãi, với <br> mục tiêu hỗ trợ người dân và doanh nghiệp
                   tại
                   64 <br> huyện
@@ -490,17 +528,17 @@
               </div>
               <div class="title-bottom">
                 <div>
-                  <span class="Body-14">Thời gian vay đến</span>
+                  <span class="body-14">Thời gian vay đến</span>
                   <div class="highlight">
-                    <span class="Heading-H4">12</span>
-                    <span class="Body-14">tháng</span>
+                    <span class="heading-h4">12</span>
+                    <span class="body-14">tháng</span>
                   </div>
                 </div>
                 <div>
-                  <span class="Body-14">Hạn mức vay lên đến</span>
+                  <span class="body-14">Hạn mức vay lên đến</span>
                   <div class="highlight">
-                    <span class="Heading-H4">100%</span>
-                    <span class="Body-14">dư nợ kỳ trước</span>
+                    <span class="heading-h4">100%</span>
+                    <span class="body-14">dư nợ kỳ trước</span>
                   </div>
                 </div>
               </div>
@@ -508,34 +546,34 @@
             <div class="column col-6">
               <div class="card">
                 <div class="bgr-color"></div>
-                <span class=" card-titler Heading-H7">Thẻ tín dụng <br> Agribank JCB Ultimate</span>
+                <span class=" card-titler heading-h7">Thẻ tín dụng <br> Agribank JCB Ultimate</span>
                 <div class="card-bottom">
                   <div>
-                    <span class="Body-14">Miễn lãi lên đến</span>
+                    <span class="body-14">Miễn lãi lên đến</span>
                     <div class="highlight">
-                      <span class="Heading-H4">45</span>
-                      <span class="Body-14">ngày</span>
+                      <span class="heading-h4">45</span>
+                      <span class="body-14">ngày</span>
                     </div>
                   </div>
                   <div>
-                    <span class="Body-14">Hoàn tiền lên đến</span>
+                    <span class="body-14">Hoàn tiền lên đến</span>
                     <div class="highlight">
-                      <span class="Heading-H4">6.5</span>
-                      <span class="Body-14">% mỗi giao dịch</span>
+                      <span class="heading-h4">6.5</span>
+                      <span class="body-14">% mỗi giao dịch</span>
                     </div>
                   </div>
                 </div>
-                <img src="/HTML_Agri/image/image 233.png" alt="Card Image">
+                <img src="../HTML_Agri/image/image 233.png" alt="Card Image">
               </div>
               <div class="plus">
                 <div class="bgr">
                 </div>
                 <div class="plus-title">
-                  <span class="Heading-H7">Agribank Plus</span>
-                  <span class="Body-Regular-16">Thực hiện các dịch vụ tài chính <br> nhanh chóng chỉ trong 1 chạm</span>
+                  <span class="heading-h7">Agribank Plus</span>
+                  <span class="body-regular-16">Thực hiện các dịch vụ tài chính <br> nhanh chóng chỉ trong 1 chạm</span>
                 </div>
-                <img class="phone" src="/HTML_Agri/image/image 241.png" alt="">
-                <img class="background" src="/HTML_Agri/image/ss_2480749507 1.png" alt="Agribank Plus">
+                <img class="phone" src="../HTML_Agri/image/image 241.png" alt="">
+                <img class="background" src="../HTML_Agri/image/ss_2480749507 1.png" alt="Agribank Plus">
               </div>
             </div>
           </div>
@@ -543,10 +581,10 @@
         <div class="content-betwent" data-content="tab2">
           <div class="row">
             <div class="borrow col-6">
-              <img src="/HTML_Agri/image/shutterstock_249236566_huge 2.png" alt="Cho vay ưu đãi">
+              <img src="../HTML_Agri/image/shutterstock_249236566_huge 2.png" alt="Cho vay ưu đãi">
               <div class="title">
-                <span class="borrow-titler Heading-H7">Cho vay ưu đãi lãi suất</span>
-                <span class="borrow-subtitle Body-Regular-16">
+                <span class="borrow-titler heading-h7">Cho vay ưu đãi lãi suất</span>
+                <span class="borrow-subtitle body-regular-16">
                   Agribank triển khai chương trình cho vay ưu đãi, với <br> mục tiêu hỗ trợ người dân và doanh nghiệp
                   tại
                   64 <br> huyện
@@ -555,17 +593,17 @@
               </div>
               <div class="title-bottom">
                 <div>
-                  <span class="Body-14">Thời gian vay đến</span>
+                  <span class="body-14">Thời gian vay đến</span>
                   <div class="highlight">
-                    <span class="Heading-H4">12</span>
-                    <span class="Body-14">tháng</span>
+                    <span class="heading-h4">12</span>
+                    <span class="body-14">tháng</span>
                   </div>
                 </div>
                 <div>
-                  <span class="Body-14">Hạn mức vay lên đến</span>
+                  <span class="body-14">Hạn mức vay lên đến</span>
                   <div class="highlight">
-                    <span class="Heading-H4">100%</span>
-                    <span class="Body-14">dư nợ kỳ trước</span>
+                    <span class="heading-h4">100%</span>
+                    <span class="body-14">dư nợ kỳ trước</span>
                   </div>
                 </div>
               </div>
@@ -573,34 +611,34 @@
             <div class="column col-6">
               <div class="card">
                 <div class="bgr-color"></div>
-                <span class=" card-titler Heading-H7">Thẻ tín dụng <br> Agribank JCB Ultimate</span>
+                <span class=" card-titler heading-h7">Thẻ tín dụng <br> Agribank JCB Ultimate</span>
                 <div class="card-bottom">
                   <div>
-                    <span class="Body-14">Miễn lãi lên đến</span>
+                    <span class="body-14">Miễn lãi lên đến</span>
                     <div class="highlight">
-                      <span class="Heading-H4">45</span>
-                      <span class="Body-14">ngày</span>
+                      <span class="heading-h4">45</span>
+                      <span class="body-14">ngày</span>
                     </div>
                   </div>
                   <div>
-                    <span class="Body-14">Hoàn tiền lên đến</span>
+                    <span class="body-14">Hoàn tiền lên đến</span>
                     <div class="highlight">
-                      <span class="Heading-H4">6.5</span>
-                      <span class="Body-14">% mỗi giao dịch</span>
+                      <span class="heading-h4">6.5</span>
+                      <span class="body-14">% mỗi giao dịch</span>
                     </div>
                   </div>
                 </div>
-                <img src="/HTML_Agri/image/image 233.png" alt="Card Image">
+                <img src="../HTML_Agri/image/image 233.png" alt="Card Image">
               </div>
               <div class="plus">
                 <div class="bgr">
                 </div>
                 <div class="plus-title">
-                  <span class="Heading-H7">Agribank Plus</span>
-                  <span class="Body-Regular-16">Thực hiện các dịch vụ tài chính <br> nhanh chóng chỉ trong 1 chạm</span>
+                  <span class="heading-h7">Agribank Plus</span>
+                  <span class="body-regular-16">Thực hiện các dịch vụ tài chính <br> nhanh chóng chỉ trong 1 chạm</span>
                 </div>
-                <img class="phone" src="/HTML_Agri/image/image 241.png" alt="">
-                <img class="background" src="/HTML_Agri/image/ss_2480749507 1.png" alt="Agribank Plus">
+                <img class="phone" src="../HTML_Agri/image/image 241.png" alt="">
+                <img class="background" src="../HTML_Agri/image/ss_2480749507 1.png" alt="Agribank Plus">
               </div>
             </div>
           </div>
@@ -608,10 +646,10 @@
         <div class="content-betwent" data-content="tab3">
           <div class="row">
             <div class="borrow col-6">
-              <img src="/HTML_Agri/image/shutterstock_249236566_huge 2.png" alt="Cho vay ưu đãi">
+              <img src="../HTML_Agri/image/shutterstock_249236566_huge 2.png" alt="Cho vay ưu đãi">
               <div class="title">
-                <span class="borrow-titler Heading-H7">Cho vay ưu đãi lãi suất</span>
-                <span class="borrow-subtitle Body-Regular-16">
+                <span class="borrow-titler heading-h7">Cho vay ưu đãi lãi suất</span>
+                <span class="borrow-subtitle body-regular-16">
                   Agribank triển khai chương trình cho vay ưu đãi, với <br> mục tiêu hỗ trợ người dân và doanh nghiệp
                   tại
                   64 <br> huyện
@@ -620,17 +658,17 @@
               </div>
               <div class="title-bottom">
                 <div>
-                  <span class="Body-14">Thời gian vay đến</span>
+                  <span class="body-14">Thời gian vay đến</span>
                   <div class="highlight">
-                    <span class="Heading-H4">12</span>
-                    <span class="Body-14">tháng</span>
+                    <span class="heading-h4">12</span>
+                    <span class="body-14">tháng</span>
                   </div>
                 </div>
                 <div>
-                  <span class="Body-14">Hạn mức vay lên đến</span>
+                  <span class="body-14">Hạn mức vay lên đến</span>
                   <div class="highlight">
-                    <span class="Heading-H4">100%</span>
-                    <span class="Body-14">dư nợ kỳ trước</span>
+                    <span class="heading-h4">100%</span>
+                    <span class="body-14">dư nợ kỳ trước</span>
                   </div>
                 </div>
               </div>
@@ -638,34 +676,34 @@
             <div class="column col-6">
               <div class="card">
                 <div class="bgr-color"></div>
-                <span class=" card-titler Heading-H7">Thẻ tín dụng <br> Agribank JCB Ultimate</span>
+                <span class=" card-titler heading-h7">Thẻ tín dụng <br> Agribank JCB Ultimate</span>
                 <div class="card-bottom">
                   <div>
-                    <span class="Body-14">Miễn lãi lên đến</span>
+                    <span class="body-14">Miễn lãi lên đến</span>
                     <div class="highlight">
-                      <span class="Heading-H4">45</span>
-                      <span class="Body-14">ngày</span>
+                      <span class="heading-h4">45</span>
+                      <span class="body-14">ngày</span>
                     </div>
                   </div>
                   <div>
-                    <span class="Body-14">Hoàn tiền lên đến</span>
+                    <span class="body-14">Hoàn tiền lên đến</span>
                     <div class="highlight">
-                      <span class="Heading-H4">6.5</span>
-                      <span class="Body-14">% mỗi giao dịch</span>
+                      <span class="heading-h4">6.5</span>
+                      <span class="body-14">% mỗi giao dịch</span>
                     </div>
                   </div>
                 </div>
-                <img src="/HTML_Agri/image/image 233.png" alt="Card Image">
+                <img src="../HTML_Agri/image/image 233.png" alt="Card Image">
               </div>
               <div class="plus">
                 <div class="bgr">
                 </div>
                 <div class="plus-title">
-                  <span class="Heading-H7">Agribank Plus</span>
-                  <span class="Body-Regular-16">Thực hiện các dịch vụ tài chính <br> nhanh chóng chỉ trong 1 chạm</span>
+                  <span class="heading-h7">Agribank Plus</span>
+                  <span class="body-regular-16">Thực hiện các dịch vụ tài chính <br> nhanh chóng chỉ trong 1 chạm</span>
                 </div>
-                <img class="phone" src="/HTML_Agri/image/image 241.png" alt="">
-                <img class="background" src="/HTML_Agri/image/ss_2480749507 1.png" alt="Agribank Plus">
+                <img class="phone" src="../HTML_Agri/image/image 241.png" alt="">
+                <img class="background" src="../HTML_Agri/image/ss_2480749507 1.png" alt="Agribank Plus">
               </div>
             </div>
           </div>
@@ -673,10 +711,10 @@
         <div class="content-betwent" data-content="tab4">
           <div class="row">
             <div class="borrow col-6">
-              <img src="/HTML_Agri/image/shutterstock_249236566_huge 2.png" alt="Cho vay ưu đãi">
+              <img src="../HTML_Agri/image/shutterstock_249236566_huge 2.png" alt="Cho vay ưu đãi">
               <div class="title">
-                <span class="borrow-titler Heading-H7">Cho vay ưu đãi lãi suất</span>
-                <span class="borrow-subtitle Body-Regular-16">
+                <span class="borrow-titler heading-h7">Cho vay ưu đãi lãi suất</span>
+                <span class="borrow-subtitle body-regular-16">
                   Agribank triển khai chương trình cho vay ưu đãi, với <br> mục tiêu hỗ trợ người dân và doanh nghiệp
                   tại
                   64 <br> huyện
@@ -685,17 +723,17 @@
               </div>
               <div class="title-bottom">
                 <div>
-                  <span class="Body-14">Thời gian vay đến</span>
+                  <span class="body-14">Thời gian vay đến</span>
                   <div class="highlight">
-                    <span class="Heading-H4">12</span>
-                    <span class="Body-14">tháng</span>
+                    <span class="heading-h4">12</span>
+                    <span class="body-14">tháng</span>
                   </div>
                 </div>
                 <div>
-                  <span class="Body-14">Hạn mức vay lên đến</span>
+                  <span class="body-14">Hạn mức vay lên đến</span>
                   <div class="highlight">
-                    <span class="Heading-H4">100%</span>
-                    <span class="Body-14">dư nợ kỳ trước</span>
+                    <span class="heading-h4">100%</span>
+                    <span class="body-14">dư nợ kỳ trước</span>
                   </div>
                 </div>
               </div>
@@ -703,34 +741,34 @@
             <div class="column col-6">
               <div class="card">
                 <div class="bgr-color"></div>
-                <span class=" card-titler Heading-H7">Thẻ tín dụng <br> Agribank JCB Ultimate</span>
+                <span class=" card-titler heading-h7">Thẻ tín dụng <br> Agribank JCB Ultimate</span>
                 <div class="card-bottom">
                   <div>
-                    <span class="Body-14">Miễn lãi lên đến</span>
+                    <span class="body-14">Miễn lãi lên đến</span>
                     <div class="highlight">
-                      <span class="Heading-H4">45</span>
-                      <span class="Body-14">ngày</span>
+                      <span class="heading-h4">45</span>
+                      <span class="body-14">ngày</span>
                     </div>
                   </div>
                   <div>
-                    <span class="Body-14">Hoàn tiền lên đến</span>
+                    <span class="body-14">Hoàn tiền lên đến</span>
                     <div class="highlight">
-                      <span class="Heading-H4">6.5</span>
-                      <span class="Body-14">% mỗi giao dịch</span>
+                      <span class="heading-h4">6.5</span>
+                      <span class="body-14">% mỗi giao dịch</span>
                     </div>
                   </div>
                 </div>
-                <img src="/HTML_Agri/image/image 233.png" alt="Card Image">
+                <img src="../HTML_Agri/image/image 233.png" alt="Card Image">
               </div>
               <div class="plus">
                 <div class="bgr">
                 </div>
                 <div class="plus-title">
-                  <span class="Heading-H7">Agribank Plus</span>
-                  <span class="Body-Regular-16">Thực hiện các dịch vụ tài chính <br> nhanh chóng chỉ trong 1 chạm</span>
+                  <span class="heading-h7">Agribank Plus</span>
+                  <span class="body-regular-16">Thực hiện các dịch vụ tài chính <br> nhanh chóng chỉ trong 1 chạm</span>
                 </div>
-                <img class="phone" src="/HTML_Agri/image/image 241.png" alt="">
-                <img class="background" src="/HTML_Agri/image/ss_2480749507 1.png" alt="Agribank Plus">
+                <img class="phone" src="../HTML_Agri/image/image 241.png" alt="">
+                <img class="background" src="../HTML_Agri/image/ss_2480749507 1.png" alt="Agribank Plus">
               </div>
             </div>
           </div>
@@ -738,10 +776,10 @@
         <div class="content-betwent" data-content="tab5">
           <div class="row">
             <div class="borrow col-6">
-              <img src="/HTML_Agri/image/shutterstock_249236566_huge 2.png" alt="Cho vay ưu đãi">
+              <img src="../HTML_Agri/image/shutterstock_249236566_huge 2.png" alt="Cho vay ưu đãi">
               <div class="title">
-                <span class="borrow-titler Heading-H7">Cho vay ưu đãi lãi suất</span>
-                <span class="borrow-subtitle Body-Regular-16">
+                <span class="borrow-titler heading-h7">Cho vay ưu đãi lãi suất</span>
+                <span class="borrow-subtitle body-regular-16">
                   Agribank triển khai chương trình cho vay ưu đãi, với <br> mục tiêu hỗ trợ người dân và doanh nghiệp
                   tại
                   64 <br> huyện
@@ -750,17 +788,17 @@
               </div>
               <div class="title-bottom">
                 <div>
-                  <span class="Body-14">Thời gian vay đến</span>
+                  <span class="body-14">Thời gian vay đến</span>
                   <div class="highlight">
-                    <span class="Heading-H4">12</span>
-                    <span class="Body-14">tháng</span>
+                    <span class="heading-h4">12</span>
+                    <span class="body-14">tháng</span>
                   </div>
                 </div>
                 <div>
-                  <span class="Body-14">Hạn mức vay lên đến</span>
+                  <span class="body-14">Hạn mức vay lên đến</span>
                   <div class="highlight">
-                    <span class="Heading-H4">100%</span>
-                    <span class="Body-14">dư nợ kỳ trước</span>
+                    <span class="heading-h4">100%</span>
+                    <span class="body-14">dư nợ kỳ trước</span>
                   </div>
                 </div>
               </div>
@@ -768,34 +806,34 @@
             <div class="column col-6">
               <div class="card">
                 <div class="bgr-color"></div>
-                <span class=" card-titler Heading-H7">Thẻ tín dụng <br> Agribank JCB Ultimate</span>
+                <span class=" card-titler heading-h7">Thẻ tín dụng <br> Agribank JCB Ultimate</span>
                 <div class="card-bottom">
                   <div>
-                    <span class="Body-14">Miễn lãi lên đến</span>
+                    <span class="body-14">Miễn lãi lên đến</span>
                     <div class="highlight">
-                      <span class="Heading-H4">45</span>
-                      <span class="Body-14">ngày</span>
+                      <span class="heading-h4">45</span>
+                      <span class="body-14">ngày</span>
                     </div>
                   </div>
                   <div>
-                    <span class="Body-14">Hoàn tiền lên đến</span>
+                    <span class="body-14">Hoàn tiền lên đến</span>
                     <div class="highlight">
-                      <span class="Heading-H4">6.5</span>
-                      <span class="Body-14">% mỗi giao dịch</span>
+                      <span class="heading-h4">6.5</span>
+                      <span class="body-14">% mỗi giao dịch</span>
                     </div>
                   </div>
                 </div>
-                <img src="/HTML_Agri/image/image 233.png" alt="Card Image">
+                <img src="../HTML_Agri/image/image 233.png" alt="Card Image">
               </div>
               <div class="plus">
                 <div class="bgr">
                 </div>
                 <div class="plus-title">
-                  <span class="Heading-H7">Agribank Plus</span>
-                  <span class="Body-Regular-16">Thực hiện các dịch vụ tài chính <br> nhanh chóng chỉ trong 1 chạm</span>
+                  <span class="heading-h7">Agribank Plus</span>
+                  <span class="body-regular-16">Thực hiện các dịch vụ tài chính <br> nhanh chóng chỉ trong 1 chạm</span>
                 </div>
-                <img class="phone" src="/HTML_Agri/image/image 241.png" alt="">
-                <img class="background" src="/HTML_Agri/image/ss_2480749507 1.png" alt="Agribank Plus">
+                <img class="phone" src="../HTML_Agri/image/image 241.png" alt="">
+                <img class="background" src="../HTML_Agri/image/ss_2480749507 1.png" alt="Agribank Plus">
               </div>
             </div>
           </div>
@@ -804,8 +842,9 @@
     </div>
     <div class="saler ">
       <div>
-        <div><span class="Subtitle-14">ƯU ĐÃI & KHUYẾN MÃI</span>
-          <div class="Head Heading-H6">
+        <div style="display: flex;flex-direction: column;gap: 14px;">
+          <span class="subtitle-14 " style="color:#494949;">ƯU ĐÃI & KHUYẾN MÃI</span>
+          <div class="Head heading-h6">
             <span style="color: var(--dark-1, #080808);">Khám phá những khuyến mãi</span>
             <span class="high ">tuyệt vời đến từ Agribank</span>
           </div>
@@ -814,27 +853,28 @@
     </div>
     <div class="slider owl-carousel ">
       <div class="list  ">
-        <img src="/HTML_Agri/image/Web+Mobile 2.png" alt="">
-        <span class="Subtitle-12">ƯU ĐÃI VAY</span>
-        <span class="Heading-H8">Ưu đãi khách hàng cá nhân vay vốn đầu tư hoạt động sản xuất kinh doanh</span>
+        <img src="../HTML_Agri/image/Web+Mobile 2.png" alt="">
+        <span class="subtitle-12">ƯU ĐÃI VAY</span>
+        <span class="heading-h8">Ưu đãi khách hàng cá nhân vay vốn đầu tư hoạt động sản xuất kinh doanh</span>
       </div>
       <div class="list ">
-        <img src="/HTML_Agri/image/imageno.png" alt="">
-        <span class="Subtitle-12">ƯU ĐÃI</span>
-        <span class="Heading-H8">Agribank dành 2,6 tỷ đồng tặng Tân sinh viên 2024</span>
+        <img src="../HTML_Agri/image/imageno.png" alt="">
+        <span class="subtitle-12">ƯU ĐÃI</span>
+        <span class="heading-h8">Agribank dành 2,6 tỷ đồng tặng Tân sinh viên 2024</span>
       </div>
       <div class="list ">
-        <img src="/HTML_Agri/image/image 236.png" alt="">
-        <span class="Subtitle-12">TÀI KHOẢN</span>
-        <span class="Heading-H8">35000 khách hàng may mắn đã được nhận thưởng trong Tuần lễ sinh nhật Agribank</span>
+        <img src="../HTML_Agri/image/image 236.png" alt="">
+        <span class="subtitle-12">TÀI KHOẢN</span>
+        <span class="heading-h8">35000 khách hàng may mắn đã được nhận thưởng trong Tuần lễ sinh nhật Agribank</span>
       </div>
       <div class="list ">
-        <img src="/HTML_Agri/image/image 237.png" alt="">
-        <span class="Subtitle-12">ƯU ĐÃI THẺ</span>
-        <span class="Heading-H8">Hoàn tiền “mê say” khi đăng ký và sử dụng thẻ Agribank JCB</span>
+        <img src="../HTML_Agri/image/image 237.png" alt="">
+        <span class="subtitle-12">ƯU ĐÃI THẺ</span>
+        <span class="heading-h8">Hoàn tiền “mê say” khi đăng ký và sử dụng thẻ Agribank JCB</span>
       </div>
 
     </div>
+    <hr style="margin: 47px 104px 0 104px; border: 1px solid #E9E9E9;">
     <div class="background-bottom">
       <div class="community">
         <div class="community-title Subtitle14">BÁO CÁO PHÁT TRIỂN BỀN VỮNG</div>
@@ -842,7 +882,7 @@
           <div class="community-stats-left col-6">
             <div style="display: flex; gap: 20px">
               <a href="#" class=""><img src="./image/“.svg" alt="" /></a>
-              <div class="community-stats-left-title Heading-H5">
+              <div class="community-stats-left-title heading-h5">
                 <span style="color: var(--dark-1, #080808);">Cung cấp cái nhìn toàn diện về <br> những hoạt động, sáng
                   kiến và <br> thành tựu của ngân hàng trong việc <br /></span>
 
@@ -850,19 +890,19 @@
               </div>
             </div>
             <div class="community-stats-left-subtitle-a">
-              <hr />
+              <hr style="width: 65%;" />
               <div class="community-stats-left-subtitle">
                 <div style="display: block;">
-                  <p class="Heading-H5">42.883 </p>
-                  <p class="Regular-15">Khách hàng ở lĩnh vực hoạt động xanh</p>
+                  <p class="heading-h5">42.883 </p>
+                  <p class="regular-15">Khách hàng ở lĩnh vực hoạt động xanh</p>
                 </div>
                 <div style="border-left: 2px solid #EAEAEA"></div>
                 <div style="display: block;margin-right: 7%;">
-                  <p class="Heading-H5">560 tỷ đồng</p>
-                  <p class="Regular-15">Được đóng góp cho các hoạt động xanh</p>
+                  <p class="heading-h5">560 tỷ đồng</p>
+                  <p class="regular-15">Được đóng góp cho các hoạt động xanh</p>
                 </div>
               </div>
-              <hr />
+              <hr style="width: 65%;" />
               <a style="margin-top: 20px;" href="#">Tin tức hoạt động cộng đồng
                 <img src=".//image/CaretRight.svg" style="margin-top: 20px " alt="" /></a>
             </div>
@@ -872,8 +912,8 @@
               <div class="community-stats-left-1">
                 <img src="./image/image (1).png" alt="" />
                 <div class="community-stats-right-title">
-                  <div class="Subtitle-12" style="color: #494949;">Hoạt động cộng đồng</div>
-                  <p style="color: var(--dark-2, #393939);" class="Heading-H8">
+                  <span class="subtitle-12" style="color: #494949;">Hoạt động cộng đồng</span>
+                  <p style="color: var(--dark-2, #393939);" class="heading-h8">
                     Agribank đồng hành cùng chương trình <br />
                     "Giữ biển trời quê hương" - Bất khuất tinh thần <br />
                     Việt Nam
@@ -885,8 +925,8 @@
             <div class="community-stats-left-1">
               <img src="./image/image (2).png" alt="" />
               <div class="community-stats-right-title">
-                <div class="Subtitle-12" style="color: #494949;">Hoạt động cộng đồng</div>
-                <p style="color: var(--dark-2, #393939);" class="Heading-H8">
+                <div class="subtitle-12" style="color: #494949;">Hoạt động cộng đồng</div>
+                <p style="color: var(--dark-2, #393939);" class="heading-h8">
                   Agribank cùng cả nước hướng tới kỷ niệm <br />
                   70 năm Chiến thắng Điện Biên Phủ
                 </p>
@@ -898,8 +938,8 @@
             <div class="community-stats-left-1">
               <img src="./image/image (3).png" alt="" />
               <div class="community-stats-right-title">
-                <div class="Subtitle-12" style="color: #494949;">Hoạt động cộng đồng</div>
-                <p style="color: var(--dark-2, #393939);" class="Heading-H8">
+                <div class="subtitle-12" style="color: #494949;">Hoạt động cộng đồng</div>
+                <p style="color: var(--dark-2, #393939);" class="heading-h8">
                   Agribank đồng hành cùng chương trình <br />
                   “Nghĩa tình Dân vận” năm 2024
                 </p>
@@ -911,11 +951,11 @@
       </div>
     </div>
     <div class="map">
-      <img src="/HTML_Agri/image/image 2.png" alt="">
+      <img src="../HTML_Agri/image/image 2.png" alt="">
       <div class="network">
         <div style="display: flex; flex-direction: column;">
-          <span class="Heading-H6">Kết nốt cùng Agaribank với</span>
-          <span class="high Heading-H6">mạng lưới phủ khắp mọi <br> vùng, miền, huyện đảo</span>
+          <span class="heading-h6">Kết nốt cùng Agaribank với</span>
+          <span class="high heading-h6">mạng lưới phủ khắp mọi <br> vùng, miền, huyện đảo</span>
         </div>
         <div class="community-stats-left-subtitle">
           <div style="display: block;">
@@ -940,7 +980,7 @@
                 d="M10 5.5C9.38193 5.5 8.77775 5.68328 8.26384 6.02666C7.74994 6.37004 7.3494 6.8581 7.11288 7.42911C6.87635 8.00013 6.81447 8.62847 6.93505 9.23466C7.05562 9.84085 7.35325 10.3977 7.79029 10.8347C8.22733 11.2717 8.78415 11.5694 9.39034 11.69C9.99653 11.8105 10.6249 11.7486 11.1959 11.5121C11.7669 11.2756 12.255 10.8751 12.5983 10.3612C12.9417 9.84725 13.125 9.24307 13.125 8.625C13.125 7.7962 12.7958 7.00134 12.2097 6.41529C11.6237 5.82924 10.8288 5.5 10 5.5ZM10 10.5C9.62916 10.5 9.26665 10.39 8.95831 10.184C8.64996 9.97798 8.40964 9.68514 8.26773 9.34253C8.12581 8.99992 8.08868 8.62292 8.16103 8.25921C8.23337 7.89549 8.41195 7.5614 8.67417 7.29917C8.9364 7.03695 9.27049 6.85837 9.63421 6.78603C9.99792 6.71368 10.3749 6.75081 10.7175 6.89273C11.0601 7.03464 11.353 7.27496 11.559 7.58331C11.765 7.89165 11.875 8.25416 11.875 8.625C11.875 9.12228 11.6775 9.59919 11.3258 9.95083C10.9742 10.3025 10.4973 10.5 10 10.5ZM10 1.75C8.17727 1.75207 6.42979 2.47706 5.14092 3.76592C3.85206 5.05479 3.12707 6.80227 3.125 8.625C3.125 11.0781 4.25859 13.6781 6.40625 16.1445C7.37127 17.259 8.45739 18.2626 9.64453 19.1367C9.74962 19.2103 9.87482 19.2498 10.0031 19.2498C10.1314 19.2498 10.2566 19.2103 10.3617 19.1367C11.5467 18.2623 12.6307 17.2587 13.5938 16.1445C15.7383 13.6781 16.875 11.0781 16.875 8.625C16.8729 6.80227 16.1479 5.05479 14.8591 3.76592C13.5702 2.47706 11.8227 1.75207 10 1.75ZM10 17.8438C8.70859 16.8281 4.375 13.0977 4.375 8.625C4.375 7.13316 4.96763 5.70242 6.02252 4.64752C7.07742 3.59263 8.50816 3 10 3C11.4918 3 12.9226 3.59263 13.9775 4.64752C15.0324 5.70242 15.625 7.13316 15.625 8.625C15.625 13.0961 11.2914 16.8281 10 17.8438Z"
                 fill="white" />
             </svg>
-            <span>Tìm địa chỉ</span>
+            <span>Tìm địa điểm</span>
           </a>
         </div>
       </div>
@@ -970,8 +1010,8 @@
     <div class="footer">
       <div id="accordion" class="accordion">
         <div class="accordion-item">
-          <div>
-            <div>
+          <div class="footer-top">
+            <div class="logo-agr col-6">
               <svg xmlns="http://www.w3.org/2000/svg" width="253" height="34" viewBox="0 0 253 34" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M157.555 19.3655C159.38 19.7149 160.745 20.2732 161.65 21.0401C162.902 22.1086 163.53 23.418 163.53 24.963C163.53 26.1368 163.117 27.2634 162.289 28.3386C161.461 29.4122 160.328 30.1977 158.887 30.692C157.443 31.1863 155.244 31.4338 152.28 31.4338H139.867V30.788H140.857C141.956 30.788 142.745 30.4732 143.223 29.8476C143.52 29.4392 143.669 28.5718 143.669 27.2474V11.9699C143.669 10.5066 143.482 9.58028 143.107 9.19888C142.601 8.68452 141.854 8.4301 140.857 8.4301H139.867V7.78516H151.234C153.352 7.78516 155.054 7.92337 156.336 8.20453C158.274 8.62293 159.755 9.36144 160.775 10.4291C161.798 11.4917 162.305 12.7144 162.305 14.0968C162.305 15.2833 161.906 16.3469 161.106 17.279C160.305 18.216 159.12 18.9115 157.555 19.3655ZM147.393 18.4231C147.872 18.5058 148.418 18.567 149.031 18.605C149.647 18.648 150.32 18.6666 151.061 18.6666C152.944 18.6666 154.365 18.4831 155.319 18.1184C156.267 17.752 156.992 17.1904 157.497 16.4352C158.003 15.6807 158.254 14.8546 158.254 13.9596C158.254 12.5738 157.625 11.395 156.372 10.4217C155.12 9.44236 153.29 8.95398 150.883 8.95398C149.591 8.95398 148.426 9.08021 147.393 9.3371V18.4231ZM147.393 29.7237C148.89 30.0388 150.375 30.1961 151.834 30.1961C154.176 30.1961 155.96 29.7204 157.187 28.7714C158.416 27.826 159.03 26.6555 159.03 25.2595C159.03 24.3384 158.752 23.4593 158.196 22.6105C157.639 21.7608 156.734 21.0907 155.48 20.603C154.227 20.113 152.673 19.8698 150.828 19.8698C150.024 19.8698 149.34 19.8832 148.77 19.9068C148.202 19.9288 147.742 19.9701 147.393 20.0297V29.7237Z" fill="white" stroke="#9D1D26" stroke-width="0.0531427"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M183.879 23.5163H173.694L171.915 27.2481C171.474 28.1658 171.252 28.8539 171.252 29.305C171.252 29.6671 171.444 29.9828 171.823 30.2557C172.207 30.5301 173.034 30.7079 174.297 30.7862V31.4354H166.016V30.7862C167.113 30.6153 167.826 30.3872 168.148 30.1084C168.809 29.5518 169.54 28.4169 170.341 26.7084L179.593 7.24609H180.274L189.428 26.9179C190.164 28.4975 190.834 29.5241 191.435 29.9965C192.035 30.4671 192.873 30.7297 193.946 30.7862V31.4354H183.567V30.7862C184.618 30.7406 185.323 30.5874 185.695 30.3179C186.061 30.0527 186.244 29.7243 186.244 29.3429C186.244 28.8293 185.986 28.0227 185.469 26.9179L183.879 23.5163ZM183.336 22.2262L178.876 12.6687L174.297 22.2262H183.336Z" fill="white" stroke="#9D1D26" stroke-width="0.0531427"/>
@@ -995,14 +1035,21 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7628 9.4823C14.7628 9.4823 13.5364 5.92277 17.9311 4.95703C17.9311 4.95703 18.9129 6.33113 17.3049 7.75864C16.8701 8.16303 15.0411 9.07881 14.7628 9.4823Z" fill="#FFDC00" stroke="#9D1D26" stroke-width="0.114674"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6152 2.25025C21.6152 2.25025 17.0561 2.14575 17.2481 6.17627C17.2481 6.17627 20.1029 5.3101 20.8719 4.47472C21.2521 4.04051 21.6659 3.22423 21.6152 2.25025Z" fill="#FFDC00" stroke="#9D1D26" stroke-width="0.114674"/>
               </svg>
-              <span></span>
+              <span>Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam</span>
             </div>
-            <a href="#" class="" data-toggle="collapse" data-target="#accordion-item-1">
+            <a href="#" class="col-6" data-toggle="collapse" data-target="#accordion-item-1">
               <span class="accordion-icon accordion-head">Mở rộng trang</span>
             </a>
-            <div>Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam</div>
+          </div>
+          <div class="customer-care">
+          <hr style="margin: 59px 0; border: 1px solid rgba(255, 255, 255, 0.08);" >
+            <div class="col-3">aa</div>
+            <div class="col-3">aa</div>
+            <div class="col-3">aa</div>
+            <div class="col-3">a</div>
           </div>
           <div class="accordion-body collapse show" id="accordion-item-1" data-parent="#accordion">
+          <hr style="margin: 59px 0; border: 1px solid rgba(255, 255, 255, 0.08);" >
             <div class="accordion-inner">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -1021,9 +1068,9 @@
   </div>
 </body>
 
-<script src="/assets/js/bld.js"></script>
-<script src="/assets/js/bundle.js"></script>
-<script src="/assets/js/scripts.js"></script>
+<script src="../assets/js/bld.js"></script>
+<script src="../assets/js/bundle.js"></script>
+<script src="../assets/js/scripts.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
   crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
@@ -1059,7 +1106,8 @@
       loop: true,
       nav: true, // Bật các nút điều hướng
       navText: [
-        '<div class="btn-next"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"fill="none"><path d="M6 3.75L9.625 7.375L6 11" stroke="white" stroke-linecap="square" /></svg></div>', // Tùy chỉnh nút "Next"
+        '<div class="btn-prev"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"fill="none"><path d="M6 3.75L9.625 7.375L6 11" stroke="white" stroke-linecap="square" /></svg></div>',
+        '<div class="btn-next"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"fill="none"><path d="M6 3.75L9.625 7.375L6 11" stroke="white" stroke-linecap="square" /></svg></div>' // Tùy chỉnh nút "Next"
       ],
       responsive: {
         0: {

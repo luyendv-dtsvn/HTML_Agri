@@ -92,7 +92,7 @@
 
 body,
 button {
-    font-family: 'SVN-Helvetica Now Regular';
+    /* font-family: 'SVN-Helvetica Now Regular'; */
     background: #fff;
     margin: 0;
 }
@@ -121,6 +121,13 @@ button {
 .heading-h4 {
     font-family: 'BT Grotesk Regular';
     font-size: 46px;
+    line-height: 129.99999523162842%;
+    letter-spacing: -1%;
+}
+
+.heading-h4-5 {
+    font-family: 'BT Grotesk Regular';
+    font-size: 40px;
     line-height: 129.99999523162842%;
     letter-spacing: -1%;
 }
