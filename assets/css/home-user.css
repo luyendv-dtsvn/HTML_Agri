@@ -868,7 +868,7 @@ p{
     height: auto;
     position: relative;
     background-color: #9D1D26;
-    padding-top: ;
+    /* padding-top: ; */
 }
 
 .accordion-item:last-child .accordion-inner{
