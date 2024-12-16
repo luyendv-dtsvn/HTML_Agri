@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="../assets/css/agri.css">
     <link rel="stylesheet" href="../assets/css/common.css">
 </head>
+<style>
+    @media (max-width: 1024px) {
+        .heading-h6 {
+            font-size: 22px;
+        }
+
+        .regular-16 {
+            font-size: 11px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .heading-h3 {
+            font-size: 39px;
+        }
+
+        .regular-16 {
+            font-size: 11px;
+        }
+    }
+</style>
 <body >
     <section class="personal-loan-section">
         <div class="personal-loan-container">
@@ -64,10 +85,10 @@
     <section class="loan-section">
         <div class="loan-tabs">
             <div class="loan-tabs-filter regular-14 color-dark-2">
-                <button>Tất cả</button>
-                <button>Vay tiêu dùng</button>
-                <button>Vay phục vụ nông nghiệp</button>
-                <button>Vay kinh doanh</button>
+                <button class="regular-14 color-dark-2">Tất cả</button>
+                <button class="regular-14 color-dark-2">Vay tiêu dùng</button>
+                <button class="regular-14 color-dark-2">Vay phục vụ nông nghiệp</button>
+                <button class="regular-14 color-dark-2">Vay kinh doanh</button>
             </div>
             <button class="loan-tabs-filter-mobile regular-12 color-dark-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
@@ -317,7 +338,7 @@
                     </a>
                 </div>
             </div>
-            <div class="loan-info-box">
+            <div class="loan-info-box" style="padding-left: 5%;">
                 <p class="heading-h6 color-white-1">Mở khoản vay nhanh chóng <br>
                     <span class="color-white">trực tiếp tại chi nhánh Agribank</span>
                 </p>
