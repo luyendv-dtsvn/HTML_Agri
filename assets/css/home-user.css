@@ -36,6 +36,45 @@ body {
     /* Đảm bảo ảnh phủ hết phần tử */
     background-position: center;
     /* Căn giữa ảnh */
+
+
+
+
+}
+
+.home-user .custom-next,
+.home-user .custom-prev {
+    border-radius: 100px;
+    border: 1px solid #DEDEDE;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.home-user .custom-next:hover,
+.home-user .custom-prev:hover {
+    padding: 12px;
+    /* fill: #fff; */
+    border-radius: 100px;
+    background: var(--red-1, #AF0B35);
+}
+
+.home-user .custom-next:hover path,
+.home-user .custom-prev:hover path {
+    fill: #fff;
+}
+
+.home-user .custom-next:active,
+.home-user .custom-prev:active {
+    padding: 12px;
+    border-radius: 100px;
+    background: #fff;
+    border: 1px solid var(--Linear-1, #9E2B47);
+
+
 }
 
 /* .banner source {
@@ -333,12 +372,10 @@ input:focus {
 }
 
 .content-top {
-    margin-top: 30px;
     display: flex;
     /* gap: 20px; */
     text-align: center;
     justify-content: center;
-    margin: 38px 104px 0 104px;
 
 }
 
@@ -375,7 +412,7 @@ input:focus {
 }
 
 .content-betwent {
-    margin: 0 104px;
+    /* margin: 0 104px; */
     display: none;
 
 }
@@ -411,11 +448,11 @@ input:focus {
 }
 
 .hrrr {
-    margin: 0 104px;
+    /* margin: 0 104px; */
     /* width: 100%; */
     height: 1px;
     background-color: #ECECEC;
-    margin-bottom: 57px;
+    /* margin-bottom: 57px; */
 }
 
 .borrow {
@@ -554,7 +591,7 @@ input:focus {
 }
 
 .saler {
-    margin: 0 104px;
+    /* margin: 0 104px; */
     display: flex;
     gap: 14px;
     justify-content: space-between;
@@ -581,7 +618,7 @@ input:focus {
 }
 
 .slider {
-    margin: 0 104px;
+    /* margin: 0 104px; */
     display: flex;
     gap: 20px;
     gap: 10px;
@@ -605,7 +642,6 @@ input:focus {
 } */
 
 .community {
-    margin: 90px 0;
     height: 900px;
     padding: 0 4.9%;
 
@@ -709,6 +745,7 @@ p {
 .community-stats-left-1 img:hover {
     transform: scale(1.1);
     border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
 
 }
 
@@ -949,6 +986,8 @@ p {
 .div-image-recent {
     width: 269px;
     height: 168px;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 .community-stats-right-title span {
