@@ -2,6 +2,11 @@
     padding: 0px;
 }
 
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
 /* Tổng thể */
 .agribank-culture {
     display: flex;
@@ -36,8 +41,8 @@
 
 .agribank-culture-image {
     position: absolute;
-    width: 60%;
     height: 100%;
+    width: 60%;
     overflow: hidden;
     right: 0;
 }
@@ -139,12 +144,6 @@
     .agribank-culture-text {
         padding: 30px;
         text-align: center;
-    }
-
-    .agribank-culture-image img {
-        width: 100%;
-        height: auto;
-        object-fit: contain; /* Đảm bảo ảnh không bị cắt */
     }
 }
 
@@ -1441,18 +1440,14 @@ background-color: #f91212; /* Màu nền nút khi hover */
 .advantage-product-detail-containers {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
 }
 
 .advantage-card {
     display: flex;
-    padding-right: 96px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    flex: 1 0 0;
+    padding-right: 10px;
 }
 
 .advantage-card-content {
@@ -1462,12 +1457,6 @@ background-color: #f91212; /* Màu nền nút khi hover */
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
-}
-
-
-.advantage-card-content h2 {
-    margin-bottom: 0px;
-    margin-top: 0px;
 }
 
 
@@ -1497,7 +1486,7 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 .advantage-card-question-content {
     display: flex;
-    gap: 34px;
+    gap: 20px;
 }
 
 .advantage-card-question-buttons {
@@ -1522,17 +1511,9 @@ background-color: #f91212; /* Màu nền nút khi hover */
     gap: 24px;
 }
 
-.asked-questions-card-containers {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-}
-
 .asked-questions-card {
     display: flex;
-    padding: 24px;
+    padding: 15px;
     flex-direction: column;
     align-items: flex-start;
     gap: 28px;
@@ -1542,37 +1523,33 @@ background-color: #f91212; /* Màu nền nút khi hover */
     background: linear-gradient(92deg, #F7F7F7 0%, #FAF8F8 100.37%);
 }
 
+.col {
+    margin-right: 10px;
+}
+
 .product-info-section {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #F6F6F6;
+    padding: 0px 5%;
 }
 
 .product-info-container {
-    width: 90%;
     margin-top: 71px;
     margin-bottom: 54px;
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.product-info-title {
-    width: 40%;
-
-
-}
 
 .product-info-title-content {
-    width: 70%;
-
     display: flex;
     flex-direction: column;
     padding-top: 20px;
     gap: 15px;
-
-    padding-right: 192px ;
-
 }
 
 .product-info-title h2 {
@@ -1581,7 +1558,6 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 .product-info-tabs {
-    width: 60%;
     display: flex;
     padding: 40px;
     flex-direction: column;
@@ -1698,6 +1674,7 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 .tab-content-table tr:last-child {
     border-bottom: none;
+    padding-bottom: 0;
 }
 
 .tab-content-table ul li {
@@ -1721,20 +1698,24 @@ background-color: #f91212; /* Màu nền nút khi hover */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px 5%;
+
 }
 
 .loan-tool-container {
-    width: 90%;
+    width: 100%;
     padding: 54px 0px;
     display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #E8E8E8;
+    gap: 20px;
 }
 
 .loan-tool-tabs {
-    width: 60%;
+    width: 100%;
     display: flex;
     padding: 12px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 32px;
     border-radius: 4px;
@@ -1796,7 +1777,7 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 .loan-result {
     display: flex;
-    width: 35%;
+    width: 100%;
     padding: 32px 32px 24px 32px;
     flex-direction: column;
     gap: 44px;
@@ -2402,9 +2383,14 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 @media (max-width: 1024px) {
-
+    /* page product-list */
     .personal-loan-section {
         height: 500px;
+    }
+
+    .personal-loan-text-title {
+        padding-bottom: 30px;
+        gap: 10px;
     }
 
     .loan-tabs-right button {
@@ -2476,6 +2462,25 @@ input[type="range"]::-webkit-slider-thumb {
     .loan-info-box {
         padding: 0;
     }
+
+    /* page product detail */
+    .agribank-culture {
+        height: 500px;
+    }
+
+    .product-info-tabs {
+        padding: 20px;
+    }
+
+    .tab-content-table {
+        margin-top: 10px;
+    }
+
+    .advantage-card-question-text {
+        gap: 15px;
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -2523,6 +2528,66 @@ input[type="range"]::-webkit-slider-thumb {
         padding-bottom: 10px;
         width: 100%;
     }
+
+    /* page product detail */
+    .agribank-culture {
+        height: 400px;
+    }
+    .advantage-product-detail {
+        padding: 30px 0px;
+    }
+
+    .advantage-product-detail-containers {
+        flex-wrap: wrap;
+    }
+
+    .advantage-card {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: row;
+        padding-right: 0;
+        gap: 10px;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .advantage-card:first-child {
+        padding-top: 0;
+    }
+
+    .advantage-card:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .tabs-header {
+        display: none;
+    }
+
+    .product-info-tabs-mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .product-info-tabs-mobile-dropdown {
+        width: 100%;
+    }
+
+    .product-info-tabs-mobile-button {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: #650D23;
+    }
+
+    .advantage-card-question-content {
+        flex-direction: column;
+    }
+
+    .button-product-detail {
+        padding: 10px;
+    }
+
 }
 
 @media (max-width: 375px) {
@@ -2593,27 +2658,8 @@ input[type="range"]::-webkit-slider-thumb {
         padding: 20px 5%;
     }
 
-    .advantage-product-detail-containers {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .advantage-card {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        flex-direction: row;
-        padding-right: 0;
-        gap: 10px;
-        border-bottom: 1px solid #EAEAEA;
-
-    }
-
     .advantage-card-text svg {
         max-width: none;
-    }
-
-    .advantage-card :last-child {
-        border-bottom: none;
     }
     
     .product-info-container {
@@ -2632,15 +2678,6 @@ input[type="range"]::-webkit-slider-thumb {
 
     .product-info-tabs {
         width: 100%;
-    }
-
-    .tabs-header {
-        display: none;
-    }
-
-    .product-info-tabs-mobile {
-        display: flex;
-        justify-content: center;
     }
     
     .tab-content-table {
@@ -2704,7 +2741,6 @@ input[type="range"]::-webkit-slider-thumb {
 
     .loan-tool-container {
         flex-direction: column;
-        padding: 25px;
     }
 
     .loan-tool-tabs {
