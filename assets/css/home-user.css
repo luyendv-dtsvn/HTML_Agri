@@ -159,22 +159,26 @@ body {
 .banner {
     width: 100%;
     position: relative;
+
     overflow: hidden;
     /* Đảm bảo không có phần thừa */
     height: 100vh;
     /* Đặt chiều cao banner toàn màn hình */
+
 }
 
 .banner-video {
     position: absolute;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
     /* Đặt video vào giữa */
     width: 100%;
     height: 100%;
     object-fit: cover;
     /* Đảm bảo video phủ toàn bộ khu vực mà không bị méo */
+
 }
 
 
@@ -261,6 +265,7 @@ input:focus {
 
 /* .owl-prev, */
 .btn-prev {
+
     display: none;
 }
 
@@ -437,8 +442,10 @@ input:focus {
 }
 
 .borrow img:hover {
+
     transform: scale(1.1);
     /* Phóng to ảnh lên 10% */
+
     border-radius: 4px;
 
 }
@@ -605,7 +612,9 @@ input:focus {
 } */
 
 .community {
+
     margin: 90px 0;
+
     height: 900px;
     padding: 0 4.9%;
 
@@ -637,6 +646,9 @@ input:focus {
     top: 20%;
 
 
+}
+p{
+    margin-bottom: 0px !important;   
 }
 
 p {
@@ -670,8 +682,10 @@ p {
 .community-stats-right-title {
     display: flex;
     flex-direction: column;
+
     /* margin-bottom: 40px;
     margin-top: 30px; */
+
     gap: 12px;
 }
 
@@ -872,13 +886,16 @@ p {
     width: 90%;
 }
 
+
 .footer {
+
     width: 100%;
     height: auto;
     position: relative;
     background-color: #9D1D26;
     /* padding-top: ; */
 }
+
 
 .accordion-item:last-child .accordion-inner {
     border-top: none !important;
@@ -890,17 +907,20 @@ p {
 }
 
 .accordion {
+
     border: none !important;
     margin: 0 104px 0 104px;
     padding-top: 58px;
     background: none !important;
 }
 
+
 .footer-top {
     display: flex;
 }
 
 .logo-agr {
+
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -911,14 +931,18 @@ p {
 
 }
 
+
+
 @media (min-width: 768px) {
     .accordion-inner {
         padding: 0 !important;
     }
 
+
     .accordion-icon {
         right: 0 !important;
     }
+
 
     .accordion-head {
         padding: 0 !important;
@@ -940,6 +964,7 @@ p {
     line-height: 20px !important;
 }
 
+
 .customer-care {
     display: flex;
 }
@@ -956,3 +981,4 @@ p {
 }
 
 /* end luyendv  */
+
