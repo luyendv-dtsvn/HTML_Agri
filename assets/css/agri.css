@@ -1855,6 +1855,13 @@ input[type="range"]::-webkit-slider-thumb {
     padding-left: 0px;
 }
 
+.money-time-loan-calculator-year {
+    letter-spacing: initial;
+    text-transform: none;
+    font-weight: normal;
+    color: #080808;
+}
+
 .loan-result-content {
     width: 100%;
     flex-direction: column;
@@ -2210,11 +2217,10 @@ input[type="range"]::-webkit-slider-thumb {
     border-bottom: 1px solid #EAEAEA;
     display: flex;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .Agribank-all-awards-text {
-    width: 50%;
-    padding-right: 20%;
     display: flex;
     flex-direction: column;
     gap: 37px;
@@ -2232,7 +2238,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
     border-bottom: 1px solid #EAEAEA;
     border-top: 1px solid #EAEAEA;
-    padding: 20px 63px 20px 0px;
+    padding: 20px 0px;
     display: flex;
 }
 
@@ -2260,11 +2266,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .Agribank-all-awards-card-text {
     margin-top: 20px;
-    padding-right: 30%;
-}
-
-.Agribank-all-awards-content {
-    width: 50%;
+    padding-right: 20%;
 }
 
 .answer-tab-title {
@@ -2272,10 +2274,6 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-}
-
-.answer-tab-title {
-    padding: 0px 40px;
 }
 
 .nav-item {
@@ -2379,6 +2377,10 @@ input[type="range"]::-webkit-slider-thumb {
 
     .loan-info-btn {
         padding: 10px;
+    }
+
+    .loan-result {
+        padding: 20px 25px 18px 25px;
     }
 }
 
@@ -2588,6 +2590,109 @@ input[type="range"]::-webkit-slider-thumb {
         padding: 10px;
     }
 
+    .loan-calculator {
+        padding: 10px;
+    }
+
+    .loan-tool-container {
+        padding: 30px 0px;
+    }
+
+    .product-info-title-content {
+        padding-top: 0;
+    }
+
+
+    /* answer page */
+    .answer-header-content {
+        width: 90%;
+    }
+
+    .answer-header-content-search {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .answer-header-content-search-list {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        background: #FFF;
+    }
+
+    .Answer-content-tab-text {
+        display: none;
+    }
+
+    .answer-tab-content {
+        padding: 0px;
+        width: 100%;
+    }
+
+    .tabs-mobile-answer {
+        padding-bottom: 5px; 
+        display: flex; 
+        width: 100%; 
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .tabs-mobile-answer-button {
+        flex: 1; 
+        display: flex; 
+        justify-content: space-between; 
+        background-color: unset; 
+        border: none;
+        color: #080808;
+    }
+
+    .tabs-mobile-answer-button span {
+        color: #AF0B35;
+    }
+
+    .answer-tab-content-text {
+        width: 100%;
+    }
+
+    .Agribank-all-awards-card-text {
+        padding-right: 0;
+    }
+
+    .Agribank-related-info {
+        padding: 0%;
+        padding-bottom: 60px;
+        padding-top: 20px;
+    }
+
+    .Agribank-related-info-container {
+        gap: 13px;
+    }
+
+    .Agribank-related-info-content {
+        grid-template-columns:none;
+        gap: 12px;
+    }
+    
+    .Agribank-all-awards-text {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .Agribank-all-awards-main {
+        padding: 17px 0px;
+    }
+
+    .Agribank-all-awards-main-2 {
+        padding-left: 16px;
+    }
+
+    .Agribank-all-awards-container {
+        padding: 20px 0px;
+    }
+
+    .Agribank-award-section {
+        padding: 30px 5%;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2710,11 +2815,7 @@ input[type="range"]::-webkit-slider-thumb {
     .btn-round {
         border-radius: 4px;
     }
-    
-    .btn-primary {
-        background-color: #9E2B47;
-        border-color: #9E2B47;
-    }
+
     /* end */
     .advantage-card-question-text {
         width: 100%;
@@ -2781,8 +2882,8 @@ input[type="range"]::-webkit-slider-thumb {
 
     .loan-result {
         width: 100%;
-        gap: 20px;
-        padding: 24px;
+        gap: 16px;
+        padding: 16px;
     }
 
     .loan-result-content p {
@@ -2791,59 +2892,6 @@ input[type="range"]::-webkit-slider-thumb {
 
     .loan-result a {
         padding-bottom: 0;
-    }
-
-    /* page prize */
-
-    .Agribank-related-info {
-        padding: 0%;
-        padding-bottom: 60px;
-        padding-top: 20px;
-    }
-
-    .Agribank-related-info-container {
-        gap: 13px;
-    }
-
-    .Agribank-related-info-content {
-        grid-template-columns:none;
-        gap: 12px;
-    }
-
-    .Agribank-all-awards-container {
-        flex-direction: column;
-        padding: 0;
-    }
-    
-    .Agribank-all-awards-text {
-        width: 100%;
-        padding-right: 0;
-    }
-
-    .Agribank-all-awards-text-title {
-        padding-right: 0;
-        gap: 12px;
-    }
-
-    .Agribank-all-awards-main {
-        padding: 17px 0px;
-    }
-
-    .Agribank-all-awards-main-1 {
-        width: 45%;
-        padding-right: 16px;
-    }
-
-    .Agribank-all-awards-main-2 {
-        padding-left: 16px;
-    }
-
-    .Agribank-all-awards-content {
-        width: 100%;
-    }
-
-    .Agribank-all-awards-card-text {
-        padding-right: 0;
     }
 
 
@@ -2864,47 +2912,7 @@ input[type="range"]::-webkit-slider-thumb {
         align-items: stretch;
         padding-bottom: 40px;
     }
-    
-    .answer-header-content-search {
-        flex-direction: column;
-        width: 100%;
-        align-items: stretch;
-    }
 
-    .answer-header-content-search-list {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        background: #FFF;
-    }
-
-    .answer-tab-content-text {
-        width: 100%;
-    }
-
-    .Answer-content-tab-text {
-        display: none;
-    }
-
-    .answer-tab-content {
-        padding: 0px;
-    }
-
-    .tabs-mobile-answer {
-        padding-bottom: 5px; 
-        display: flex; 
-        width: 100%; 
-        border-bottom: 1px solid #eaeaea;
-    }
-
-    .tabs-mobile-answer-button {
-        flex: 1; 
-        display: flex; 
-        justify-content: space-between; 
-        background-color: unset; 
-        border: none;
-        color: #080808;
-    }
 
     /* page văn hóa */
     .featured-culture-container {
