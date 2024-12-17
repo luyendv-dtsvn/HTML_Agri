@@ -8,6 +8,7 @@ body {
     font-family: SVN-Helvetica Now, sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
     background-color: #ffffff;
     color: #333;
     /* width: 100%; */
@@ -35,7 +36,7 @@ body {
 .content-top-menu {
     display: inline-block;
     cursor: pointer;
-    width:8.66%;
+    width:16%;
     text-align: center;
     padding-bottom: 1%;
     position: relative;
@@ -59,9 +60,11 @@ body {
     margin-bottom: 16px;
 }
 
+
 .content-betwent {
-    margin: 0 104px;
+    /* margin: 0 0 0 104px; */
     display: none;
+   
 
 }
 
@@ -76,7 +79,7 @@ body {
 
 .content-top-menu svg {
     transition: stroke 0.3s ease;
-    margin-bottom: 10.5%;
+    margin-bottom: 6.5%;
     /* Hiệu ứng chuyển màu mượt */
 }
 
@@ -94,10 +97,41 @@ body {
 .content-top-menu.active div {
     color: #9E2B47;
 }
+.content-betwent-title{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 16px;
+}
+.content-betwent-subtitle{
+    flex: 1 1 calc(25% - 16px);
+    /* width: 80%; */
+    display: flex;
+    flex-direction:column ;
+    gap: 12px;
+    overflow: hidden;
+    border-radius: 4px;
+
+}
+.content-betwent-subtitle img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+.content-betwent-subtitle:hover img{
+    transform: scale(1.1);
+}
+.cate{
+    color: #494949;
+}
+.subtitle{
+    color: var(--dark-2, #393939);
+    width: 90%;
+
+}
 
 .hrrr {
-    margin: 0 104px;
-    /* width: 100%; */
+
     height: 1px;
     background-color: #ECECEC;
     margin-bottom: 57px;
@@ -147,5 +181,74 @@ body {
 .stt.active {
     background-color: #AF0B35; /* Màu nền khi thẻ đã được nhấn và giữ lại */
     color: white;            /* Màu chữ khi active */
+}
+@media (max-width:1366px) {
+    .content-top-menu svg{
+        width: 30px;
+        height:30px;
+    }
+    .content-betwent-subtitle {
+        flex: 1 1 calc(25% - 16px); /* Mỗi hàng hiển thị 2 phần tử */
+    }
+   
+
+}
+@media (max-width:1024px) {
+    .content-top-menu svg{
+        width: 20px;
+        height:20px;
+    }
+    .content-betwent-subtitle {
+        flex: 1 1 calc(50% - 16px); /* Mỗi hàng hiển thị 2 phần tử */
+    }
+    .heading-h8 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 16px !important;
+        line-height: 139.9999976158142%;
+        letter-spacing: 0%;
+    }
+    .body-16 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 10px !important;
+        line-height: 110.00000238418579%;
+        letter-spacing: -1%;
+    }
+    .subtitle-12 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 10px !important;
+        line-height: 110.00000238418579%;
+        letter-spacing: 4%;
+    }
+   
+
+}
+@media (max-width:768px) {
+    .content-top-menu svg{
+        width: 20px;
+        height:20px;
+    }
+    .content-betwent-subtitle {
+        flex: 1 1 calc(100% - 16px); /* Mỗi hàng hiển thị 2 phần tử */
+    }
+    .heading-h8 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 16px !important;
+        line-height: 139.9999976158142%;
+        letter-spacing: 0%;
+    }
+    .body-16 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 10px !important;
+        line-height: 110.00000238418579%;
+        letter-spacing: -1%;
+    }
+    .subtitle-12 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 10px !important;
+        line-height: 110.00000238418579%;
+        letter-spacing: 4%;
+    }
+   
+
 }
 
