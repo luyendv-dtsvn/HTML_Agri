@@ -36,7 +36,9 @@ body {
 .content-top-menu {
     display: inline-block;
     cursor: pointer;
+
     width:16%;
+
     text-align: center;
     padding-bottom: 1%;
     position: relative;
@@ -61,10 +63,12 @@ body {
 }
 
 
+
 .content-betwent {
     /* margin: 0 0 0 104px; */
     display: none;
    
+
 
 }
 
@@ -79,6 +83,7 @@ body {
 
 .content-top-menu svg {
     transition: stroke 0.3s ease;
+
     margin-bottom: 6.5%;
     /* Hiệu ứng chuyển màu mượt */
 }
@@ -123,14 +128,17 @@ body {
 }
 .cate{
     color: #494949;
+
 }
 .subtitle{
     color: var(--dark-2, #393939);
     width: 90%;
 
+
 }
 
 .hrrr {
+
 
     height: 1px;
     background-color: #ECECEC;
