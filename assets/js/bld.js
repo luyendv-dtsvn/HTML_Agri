@@ -43,75 +43,84 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // -------------- Page Blog ---------------
 
-window.addEventListener("resize", toggleMenuVisibility);
-window.addEventListener("load", toggleMenuVisibility);
+if (window.location.pathname.endsWith("blog.html")) {
+  window.addEventListener("resize", toggleMenuVisibility);
+  window.addEventListener("load", toggleMenuVisibility);
 
-function toggleMenuVisibility() {
-  const isMobile = window.innerWidth < 768;
-  
-  const desktopMenu = document.querySelector(".content-top");
-  const mobileMenu = document.querySelector(".menu-top-mobile");
+  function toggleMenuVisibility() {
+    const isMobile = window.innerWidth < 768;
+    
+    const desktopMenu = document.querySelector(".content-top");
+    const mobileMenu = document.querySelector(".menu-top-mobile");
 
-  if (isMobile) {
-    desktopMenu.style.display = "none";
-    mobileMenu.style.display = "block";
-  } else {
-    desktopMenu.style.display = "block";
-    mobileMenu.style.display = "none";
-  }
-}
-// ------------------------
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdownBtn = document.querySelector("#tab-select-blog");
-  const dropdownMenu = document.querySelector(".dropdown-menu");
-
-  // Mở dropdown khi click vào button
-  dropdownBtn.addEventListener("click", function () {
-    dropdownMenu.classList.toggle("show");
-  });
-
-  // Đóng dropdown nếu click bên ngoài dropdown
-  window.addEventListener("click", function (e) {
-    if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
-      dropdownMenu.classList.remove("show");
+    if (isMobile) {
+      desktopMenu.style.display = "none";
+      mobileMenu.style.display = "block";
+    } else {
+      desktopMenu.style.display = "block";
+      mobileMenu.style.display = "none";
     }
-  });
+  }
 
-  // Lấy tất cả các mục trong menu dropdown
-  const menuItems = document.querySelectorAll(".tab-menu-blog");
-  // Lấy tất cả các tab nội dung
-  const contentTabs = document.querySelectorAll(".content-betwent");
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdownBtn = document.querySelector("#tab-select-blog");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
 
-  // Lặp qua từng menu item
-  menuItems.forEach((item) => {
-    item.addEventListener("click", function () {
-      // Lấy data-tab của mục đã click
-      const tabId = item.getAttribute("data-tab");
-      // Lấy nội dung của mục được chọn
-      const selectedText = item.textContent.trim();
+    // Mở dropdown khi click vào button
+    dropdownBtn.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("show");
+    });
 
-      // Ẩn tất cả các tab trước khi hiển thị tab mới
-      contentTabs.forEach((tab) => {
-        tab.classList.remove("active");
-      });
-
-      // Hiển thị tab tương ứng
-      const targetTab = document.querySelector(
-        `.content-betwent[data-content="${tabId}"]`
-      );
-      if (targetTab) {
-        targetTab.classList.add("active");
-      }
-
-      // Cập nhật tên menu trên button
-      if (dropdownBtn) {
-        dropdownBtn.querySelector("span").textContent = selectedText;
-      }
-
-      // Đóng dropdown menu sau khi chọn một mục
-      if (dropdownMenu) {
+    // Đóng dropdown nếu click bên ngoài dropdown
+    window.addEventListener("click", function (e) {
+      if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
         dropdownMenu.classList.remove("show");
       }
     });
+
+    // Lấy tất cả các mục trong menu dropdown
+    const menuItems = document.querySelectorAll(".tab-menu-blog");
+    // Lấy tất cả các tab nội dung
+    const contentTabs = document.querySelectorAll(".content-betwent");
+
+    // Lặp qua từng menu item
+    menuItems.forEach((item) => {
+      item.addEventListener("click", function () {
+        // Lấy data-tab của mục đã click
+        const tabId = item.getAttribute("data-tab");
+        // Lấy nội dung của mục được chọn
+        const selectedText = item.textContent.trim();
+
+        // Ẩn tất cả các tab trước khi hiển thị tab mới
+        contentTabs.forEach((tab) => {
+          tab.classList.remove("active");
+        });
+
+        // Hiển thị tab tương ứng
+        const targetTab = document.querySelector(
+          `.content-betwent[data-content="${tabId}"]`
+        );
+        if (targetTab) {
+          targetTab.classList.add("active");
+        }
+
+        // Cập nhật tên menu trên button
+        if (dropdownBtn) {
+          dropdownBtn.querySelector("span").textContent = selectedText;
+        }
+
+        // Đóng dropdown menu sau khi chọn một mục
+        if (dropdownMenu) {
+          dropdownMenu.classList.remove("show");
+        }
+      });
+    });
   });
-});
+}
+
+
+// -------------------------- Detail Blog --------------------------------
+// Kiểm tra kích thước màn hình và thêm sự kiện kéo chuột
+
+
+
