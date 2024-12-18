@@ -162,8 +162,10 @@ body {
 }
 
 .title-heade-h {
+    white-space: nowrap;
     display: block;
     margin-bottom: 40px;
+    
 }
 
 .keywords {
@@ -269,7 +271,18 @@ body {
     display: block;
   }
   
+  @media (max-width:1366px) {
 
+.main{
+    padding: 0 3%;
+}
+.community-stats-left-1 img{
+    height: 90%;
+}
+    .community-stats-right-title{
+        margin-top: 0;
+    }
+  }
 
 @media (max-width:1024px) {
     .content {
