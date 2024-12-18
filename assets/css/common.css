@@ -665,7 +665,7 @@ button {
 
     .heading-h4 {
         font-family: 'BT Grotesk Regular';
-        font-size: 46px;
+        font-size: 25px;
         line-height: 129.99999523162842%;
         letter-spacing: -1%;
     }
@@ -686,14 +686,14 @@ button {
 
     .heading-h7 {
         font-family: 'BT Grotesk Regular';
-        font-size: 25px;
+        font-size: 20px;
         line-height: 129.99999523162842%;
         letter-spacing: -1%;
     }
 
     .heading-h8 {
         font-family: 'BT Grotesk Medium';
-        font-size:20px;
+        font-size:15px;
         line-height: 139.9999976158142%;
         letter-spacing: 0%;
     }
@@ -728,7 +728,7 @@ button {
 
     .body-15 {
         font-family: 'BT Grotesk Medium';
-        font-size: 15px;
+        font-size: 13px;
         line-height: 110.00000238418579%;
         letter-spacing: 1%;
     }
@@ -763,7 +763,7 @@ button {
 
     .regular-17 {
         font-family: 'BT Grotesk Regular';
-        font-size: 17px;
+        font-size: 15px;
         line-height: 29px;
         letter-spacing: -2%;
     }
@@ -797,14 +797,14 @@ button {
 
     .regular-12 {
         font-family: 'BT Grotesk Regular';
-        font-size: 12px;
+        font-size: 9px;
         line-height: 139.9999976158142%;
         letter-spacing: 0%;
     }
 
     .subtitle-12 {
         font-family: 'BT Grotesk Regular';
-        font-size: 12px;
+        font-size: 10px;
         line-height: 110.00000238418579%;
         letter-spacing: 4%;
     }
@@ -827,6 +827,13 @@ button {
 }
 
 @media (max-width: 375px) {
+
+    .heading-h4 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 25px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
     .heading-h2 {
         font-family: 'BT Grotesk Regular';
         font-size: 25px;
@@ -839,6 +846,9 @@ button {
     }
 
     .body-16 {
+        font-size: 13px;
+    }
+    .body-17 {
         font-size: 15px;
     }
 
@@ -860,7 +870,6 @@ button {
     .regular-14 {
         font-size: 12px;
     }
-
     .body-15 {
         font-size: 14px;
     }
@@ -882,15 +891,11 @@ button {
     }
 
     .subtitle-14 {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .body-19 {
         font-size: 15px;
-    }
-
-    .body-16 {
-        font-size: 13px;
     }
 }
 
