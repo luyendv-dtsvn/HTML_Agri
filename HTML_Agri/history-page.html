@@ -8,6 +8,46 @@
     <link rel="stylesheet" href="../assets/css/agri.css">
     <link rel="stylesheet" href="../assets/css/common.css">
 </head>
+<style>
+    .owl-nav {
+        display: flex;
+    }
+
+    /* Bao ngoài container */
+.scroll-wrapper {
+  width: 320px; /* Chiều rộng container */
+  height: 450px; /* Chiều cao container */
+  overflow-y: auto; /* Kích hoạt thanh cuộn dọc */
+  border: 3px solid #ccc; /* Viền container */
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* Nội dung cuộn */
+.scroll-content {
+  display: flex;
+  flex-direction: column; /* Sắp xếp các mục theo chiều dọc */
+  padding: 10px;
+}
+
+/* Các mục trong danh sách */
+.scroll-item {
+  background-color: #007BFF; /* Màu nền của mục */
+  color: white;              /* Màu chữ */
+  text-align: center;        /* Căn giữa nội dung */
+  padding: 15px;             /* Khoảng cách bên trong */
+  margin: 8px 0;             /* Khoảng cách giữa các mục */
+  border-radius: 5px;        /* Bo tròn góc */
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng khi hover */
+.scroll-item:hover {
+  transform: scale(1.05); /* Phóng to nhẹ khi di chuột vào */
+}
+</style>
 <body>
     <section class="agribank-culture">
         <div class="agribank-culture-container">
@@ -48,7 +88,7 @@
         </div>
     </section>
     <section class="agribank-culture-identity">
-        <div class="col-12 col-md-5 agribank-culture-identity-container">
+        <div class="col-12 col-md-8 col-lg-5 agribank-culture-identity-container">
             <div class="agribank-culture-identity-title">
                 <span class="agribank-culture-identity-title-sub subtitle-14 color-dark-3">LỊCH SỬ HÌNH THÀNH</span>
                 <span class="agribank-culture-identity-title-main heading-h5">Agribank đã không ngừng lớn mạnh và trở thành một trong những <span>ngân hàng thương mại hàng đầu Việt Nam.</span></span>
@@ -57,8 +97,8 @@
     </section>
     <section class="timeline-history-section">
         <div class="col-12 timeline-history-container row">
-            
-            <div class="col-12">
+            <!-- hiển thị year-list trên mobile -->
+            <div class="col-12 timeline-history-years-mobile">
                 <div class="owl-carousel owl-theme">
                     <div class="item">
                         <a href="#2022" class="scroll-year body-16 color-dark-3">2022</a>
@@ -170,7 +210,7 @@
                                             <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-1">
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-1">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
                                     </a>
@@ -198,7 +238,7 @@
                                             <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-2">
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-2">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
                                     </a>
@@ -227,7 +267,7 @@
                                             <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-3">
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-3">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
                                     </a>
@@ -256,7 +296,7 @@
                                             <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-4">
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-4">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
                                     </a>
@@ -285,7 +325,7 @@
                                             <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-5">
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-5">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
                                     </a>
@@ -314,7 +354,7 @@
                                             <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-6">
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-6">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
                                     </a>
@@ -343,7 +383,7 @@
                                             <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-7">
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-7">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
                                     </a>
@@ -372,7 +412,7 @@
                                             <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-8">
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-8">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
                                     </a>
@@ -491,8 +531,8 @@
         dots: false,
         nav: true, // Bật các nút điều hướng
         navText: [
-          '<button class="custom-prev1"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M6.17089 0.902344L7.173111.90461L2.71325 6.36452H18V7.78195H2.71325L7.17311 12.2418L6.17089 13.2441L0 7.07319L6.17089 0.902344Z" fill="currentColor"/></svg></button>', // Tùy chỉnh nút "Prev"
-          '<button class="custom-next2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none"><path d="M12.8291 4.90234L11.82695.90461L16.2868 10.3645H1V11.7819H16.2868L11.8269 16.2418L12.8291 17.2441L19 11.0732L12.8291 4.90234Z" fill="currentColor"/></svg></button>', // Tùy chỉnh nút "Next"
+          '<button class="custom-prev1"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M8 3.75L4.375 7.375L8 11" stroke="white" stroke-linecap="square"/></svg></button>', // Tùy chỉnh nút "Prev"
+          '<button class="custom-next1"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M6 3.75L9.625 7.375L6 11" stroke="white" stroke-linecap="square"/></svg></button>', // Tùy chỉnh nút "Next"
         ],
         responsive: {
           0: {
