@@ -1094,11 +1094,147 @@ button {
 .icon-change-rate:hover {
     background: var(--red-1)
 }
+
 .icon-change-rate em {
     font-size: 16px;
 }
-.icon-change-rate:hover em{
-   color: #fff;
+
+.icon-change-rate:hover em {
+    color: #fff;
 }
+
+.footer {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.footer .accordion-icon {
+    left: 1rem !important;
+    right: 0 !important;
+}
+
+.footer .accordion-head {
+    padding-left: 2.5rem;
+}
+
+.footer .btn-extend {
+    border-radius: 4px;
+    background: rgba(134, 21, 49, 0.60);
+    color: #FFF;
+}
+
+.footer .accordion-head {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
+
+.footer .accordion-item:last-child .accordion-inner {
+    border-top: none;
+}
+
+.footer-pre {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.footer .block-h {
+    display: flex;
+    padding: 4px 40px 0px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+}
+
+.footer .block-h .desf {
+    display: flex;
+    padding-top: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.footer .contact-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer .down-app {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.ct-footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ct-footer-copyright .clause {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.ct-footer-copyright .follow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.ct-footer-copyright .social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.line-v {
+    width: 1px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0.13);
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.12);
+    padding: 15px 4.9%;
+}
+
+.footer .block-h-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    flex: 1 0 0;
+}
+.color-black{
+    color: #000 !important;
+}
+/* mega menu */
+.mega-menu .dropdown-menu{
+    display: flex;
+    position: absolute;
+    top: 7rem;
+    width: 100vw;
+    background: #fff;
+    border-top: 1px rgba(0, 0, 0, .1) solid;
+    border-bottom: 1px rgba(0, 0, 0, .1) solid;
+    -webkit-animation: fadeIn .3s;
+    animation: fadeIn .3s;
+    z-index: 12;
+    max-height: calc(100vh - 115px);
+    overflow-y: visible;
+    overflow-x: hidden;
+    right: 0;
+    left: 0;
+}
+
+
+
 
 /* end luyendv */
