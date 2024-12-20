@@ -1,0 +1,209 @@
+.home-business-background-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-business-background-containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-business-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+}
+
+.home-business-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-business-background-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 80px 5%;
+}
+
+.home-business-background-content {
+    display: flex;
+    height: 536px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.home-business-background-content-heading {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #eaeaea;
+    justify-content: space-between;
+}
+
+.home-business-background-heading-tab {
+    display: flex;
+    padding: 14px 0px;
+    padding-left: 48px;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-business-background-heading-tab span {
+    padding-right: 10px;
+    border-right: 1px solid #eaeaea;
+}
+
+.home-business-background-tab {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.home-business-background-tab button {
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: rgba(0, 0, 0, 0.04);;
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.home-business-background-tab button:hover {
+    color: var(--red-1, #AF0B35);
+}
+
+.home-business-background-tab button.active {
+    border: 2px solid rgba(0, 0, 0, 0.34);
+}
+
+.home-business-background-heading-right {
+    display: flex;
+}
+
+.home-business-background-heading-arrow {
+    border-left: 1px solid #eaeaea;
+    padding: 24px;
+}
+
+.home-business-background-titlte {
+    display: flex;
+    padding: 28px 48px 48px 48px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: url(../images/vanhoa-vaylist-vaydetail/background-title-business.png);
+}
+
+.home-business-background-titlte button {
+    display: flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid rgba(170, 29, 64, 0.12);
+    background: rgba(175, 11, 53, 0.06);
+}
+
+
+
+
+
+/* home financial institution page */
+.provided-services-section {
+    width: 100%;
+    padding: 50px 5%;
+    display: flex;
+    align-items: center;
+}
+
+.provided-services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.provided-services-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.provided-services-title h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.provided-services-item {
+    padding: 5px;
+    overflow: hidden;
+}
+
+.provided-services-item img {
+    width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.provided-services-item-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.community-stats {
+    flex-direction: column;
+    margin: 20px 5%;
+    gap: 44px;
+}
+
+.banking-finance-title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.banking-finance-title-main {
+    gap: 22px;
+}
+
+.banking-finance-title-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.banking-finance-card {
+    gap: 20px;
+}
+
+.banking-finance-card {
+    gap: 34px;
+}
