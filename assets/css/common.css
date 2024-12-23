@@ -1173,6 +1173,7 @@ button {
     align-items: flex-start;
     gap: 4px;
     align-self: stretch;
+    flex-wrap: wrap;
 }
 
 .ct-footer-copyright {
@@ -1238,8 +1239,12 @@ button {
     right: 0;
     left: 0;
 }
-
-
+.menu-mobile{
+    padding-top: 0px;
+}
+.nav-tabs .nav-link.active svg  {
+    fill: #AF0B35;
+  }
 
 
 /* end luyendv */
