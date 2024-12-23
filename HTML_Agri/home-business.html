@@ -26,7 +26,25 @@
       bottom: 121%;
     }
 
-    .owl-carousel {
+    .owl-carousel-agri .owl-nav.disabled,
+    .owl-carousel-agri .owl-dots.disabled {
+      display: flex !important;
+      gap: 69px;
+      position: absolute;
+      right: 6%;
+      bottom: 115%;
+    }
+
+    .owl-carousel-agri .owl-nav,
+    .owl-carousel-agri .owl-dots {
+      position: relative;
+      bottom: 7%;
+      display: flex;
+      gap: 70px;
+      left: 78%;
+    }
+
+    .owl-carousel, .owl-carousel-agri {
       width: auto !important;
     }
 
@@ -37,6 +55,8 @@
     .owl-item {
       width: 80%;
     }
+
+
   </style>
 </head>
 
@@ -1216,10 +1236,7 @@
       </div>
 </div>
       <section class="home-business-background-section">
-        <div class="home-business-background-containers">
-          <div class="home-business-background">
-            <img src="../assets/images/vanhoa-vaylist-vaydetail/home-business-background.png" alt="">
-          </div>
+        <div class="col-12 home-business-background-containers">
           <div class="col-12 home-business-background-text">
             <div class="col-12 col-md-8 col-lg-5 home-business-background-text-title">
               <span class="subtitle-14 color-white">BẮT ĐẦU CÙNG AGRIBANK</span>
@@ -1264,22 +1281,10 @@
                       <span>Mở rộng quy mô</span>
                     </button>
                   </div>
-                </div>
-                <div class="home-business-background-heading-right">
-                  <div class="home-business-background-heading-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path d="M7.17089 15.6875L8.17311 14.6852L3.71325 10.2253L19 10.2253L19 8.80789L3.71325 8.80789L8.17311 4.34803L7.17089 3.34577L1 9.51666L7.17089 15.6875Z" fill="#383838"/>
-                    </svg>
-                  </div>
-                  <div class="home-business-background-heading-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path d="M12.8291 4.3125L11.8269 5.31477L16.2868 9.77467H1V11.1921H16.2868L11.8269 15.652L12.8291 16.6542L19 10.4833L12.8291 4.3125Z" fill="#383838"/>
-                    </svg>
-                  </div>
-                </div>          
+                </div> 
               </div>
 
-              <div class="home-business-background-content-text">
+              <div class="col-12 home-business-background-content-text row">
                 <div class="col-12 col-md-4 home-business-background-titlte">
                     <h3 class="heading-h7 color-dark-1">Mở rộng quy mô cùng Agribank với các giải pháp tài chính linh hoạt, <span class="color-red-1">hỗ trợ tối đa nguồn vốn và tài nguyên cho doanh nghiệp mới</span></h3>
                     <button>
@@ -1290,10 +1295,64 @@
                       <span class="body-15 color-red-1">Liên hệ hỗ trợ</span>
                     </button>
                 </div>
-                
+                <div class="col-12 col-md-8 owl-carousel-agri owl-carousel home-business-item-list row">
+                  <!-- item-1 -->
+                  <div class="list home-business-item-card">
+                    <img src="../assets/images/vanhoa-vaylist-vaydetail/home-business-item-card-1.png" alt="">
+                    <div class="home-business-item-content">
+                      <div class="home-business-item-text">
+                        <h6 class="body-18 color-dark-1">Cho vay ưu đãi xuất khẩu</h6>
+                        <span class="regular-14 color-dark-3">Hỗ trợ chi phí để thu mua, sản xuất, chế biến hàng xuất khẩu</span>
+                      </div>
+                      <a href="#" class="home-business-item-button">
+                        <span class="body-15 color-red-2">Xem chi tiết</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                          <path d="M6 3.5L11 8.5L6 13.5" stroke="#AA1D40" stroke-width="1.25" stroke-linecap="square"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- item-2 -->
+                  <div class="list home-business-item-card">
+                    <img src="../assets/images/vanhoa-vaylist-vaydetail/home-business-item-card-2.png" alt="">
+                    <div class="home-business-item-content">
+                      <div class="home-business-item-text">
+                        <h6 class="body-18 color-dark-1">Bảo lãnh dự thầu</h6>
+                        <span class="regular-14 color-dark-3">Cam kết thực hiện thay trong trường hợp khách hàng không thực hiện</span>
+                      </div>
+                      <a href="#" class="home-business-item-button">
+                        <span class="body-15 color-red-2">Xem chi tiết</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                          <path d="M6 3.5L11 8.5L6 13.5" stroke="#AA1D40" stroke-width="1.25" stroke-linecap="square"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- item-3 -->
+                  <div class="list home-business-item-card">
+                    <img src="../assets/images/vanhoa-vaylist-vaydetail/home-business-item-card-3.png" alt="">
+                    <div class="home-business-item-content">
+                      <div class="home-business-item-text">
+                        <h6 class="body-18 color-dark-1">Nhờ thu xuất khẩu</h6>
+                        <span class="regular-14 color-dark-3">Chiết khấu bộ chứng từ nhờ thu với mức chiết khấu cao ngay sau khi hoàn thành nghĩa vụ</span>
+                      </div>
+                      <a href="#" class="home-business-item-button">
+                        <span class="body-15 color-red-2">Xem chi tiết</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                          <path d="M6 3.5L11 8.5L6 13.5" stroke="#AA1D40" stroke-width="1.25" stroke-linecap="square"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="home-business-background">
+          <img src="../assets/images/vanhoa-vaylist-vaydetail/home-business-background.png" alt="">
         </div>
       </section>
 <div class="nk-content">
@@ -1308,7 +1367,7 @@
           </div>
         </div>
       </div>
-      <div class="slider owl-carousel ">
+      <div class="slider owl-carousel-blog owl-carousel ">
         <div class="list  ">
           <img src="../HTML_Agri/image/Web+Mobile 2.png" alt="">
           <span class="subtitle-12">ƯU ĐÃI VAY</span>
@@ -1735,7 +1794,7 @@
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
   $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
+    $(".owl-carousel-blog").owlCarousel({
       loop: true,
       nav: true, // Bật các nút điều hướng
       navText: [
@@ -1746,32 +1805,45 @@
         0: {
           items: 1,
         },
-        600: {
-          items: 3,
-        },
-        1000: {
+        900: {
           items: 4,
         },
       },
     });
   });
+  // $(document).ready(function () {
+  //   $(".owl-carousel1").owlCarousel({
+  //     loop: true,
+  //     nav: true, // Bật các nút điều hướng
+  //     navText: [
+  //       '<div class="btn-prev"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"fill="none"><path d="M6 3.75L9.625 7.375L6 11" stroke="white" stroke-linecap="square" /></svg></div>',
+  //       '<div class="btn-next"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"fill="none"><path d="M6 3.75L9.625 7.375L6 11" stroke="white" stroke-linecap="square" /></svg></div>' // Tùy chỉnh nút "Next"
+  //     ],
+  //     responsive: {
+  //       0: {
+  //         items: 1,
+  //       },
+  //       900: {
+  //         items: 3,
+  //       },
+  //     },
+  //   });
+  // });
+
   $(document).ready(function () {
-    $(".owl-carousel1").owlCarousel({
+    $(".owl-carousel-agri").owlCarousel({
       loop: true,
       nav: true, // Bật các nút điều hướng
       navText: [
-        '<div class="btn-prev"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"fill="none"><path d="M6 3.75L9.625 7.375L6 11" stroke="white" stroke-linecap="square" /></svg></div>',
-        '<div class="btn-next"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"fill="none"><path d="M6 3.75L9.625 7.375L6 11" stroke="white" stroke-linecap="square" /></svg></div>' // Tùy chỉnh nút "Next"
+        '<div class=" custom-prev-business"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.17089 4.31445L8.17311 5.31672L3.71325 9.77663H19V11.1941H3.71325L8.17311 15.6539L7.17089 16.6562L1 10.4853L7.17089 4.31445Z"fill="#383838" /></svg></div>', // Tùy chỉnh nút "Prev"
+        ' <div class=" custom-next-business"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"fill = "none" ><path d="M12.8291 4.31445L11.8269 5.31672L16.2868 9.77663H1V11.1941H16.2868L11.8269 15.6539L12.8291 16.6562L19 10.4853L12.8291 4.31445Z" fill="#383838" /></svg ></div > ', // Tùy chỉnh nút "Next"
       ],
       responsive: {
         0: {
           items: 1,
         },
-        600: {
-          items: 4,
-        },
-        1000: {
-          items: 6,
+        900: {
+          items: 3,
         },
       },
     });
