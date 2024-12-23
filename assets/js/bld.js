@@ -120,7 +120,7 @@ if (window.location.pathname.endsWith("blog.html")) {
 
 
 // -------------------------- Detail Blog --------------------------------
-// Kiểm tra kích thước màn hình và thêm sự kiện kéo chuột
+
 
 
 

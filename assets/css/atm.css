@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    width: 100%;
+  }
+  .top-atm{
+    width: 100%;
+    background: linear-gradient(115deg, #9E2B47 0.44%, #AF0B35 103.79%);  }
