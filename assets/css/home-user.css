@@ -23,24 +23,7 @@ body {
     display: block;
 }
 
-/* Header */
-.header {
-    position: relative;
-    width: 100%;
-    width: 100%;
-    /* Đảm bảo phần header chiếm toàn bộ chiều rộng */
-    height: auto;
-    /* Chiều cao tự động theo kích thước của ảnh */
-    background-image: url('/images/avatar/hoach-le-dinh-PeRt3uMmjYM-unsplash 1.png');
-    background-size: cover;
-    /* Đảm bảo ảnh phủ hết phần tử */
-    background-position: center;
-    /* Căn giữa ảnh */
 
-
-
-
-}
 
 .home-user .custom-next,
 .home-user .custom-prev {
@@ -77,51 +60,8 @@ body {
 
 }
 
-/* .banner source {
-    position: absolute;
-    width: 100%;
-} */
 
-/* Top user section */
-.top {
-    width: 100%;
-    position: relative;
-}
 
-.top-user {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 36px;
-    padding: 0px 104px 0 94px;
-    background: linear-gradient(90deg, #AF0B35 0%, #8F1030 86%);
-}
-
-.top-user a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.top-user-right,
-.top-user-left {
-    display: flex;
-}
-
-.top-user-right div,
-.top-user-left div {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Individual section */
-.individual {
-    padding: 10px;
-    border-bottom: 3px solid #701029;
-    background: rgba(66, 9, 24, 0.25);
-}
 
 /* Horizontal lines */
 .hrr {
@@ -138,62 +78,6 @@ body {
 }
 
 /* Menu section */
-
-
-.top-menu {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 76px;
-    padding: 0px 104px;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0;
-    background-color: white;
-}
-
-.top-menu-left {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    color: rgba(0, 0, 0, 0.80);
-}
-
-.top-menu-left div a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.80);
-}
-
-.top-menu-right {
-    display: flex;
-    align-items: center;
-}
-
-/* Login button */
-.login {
-    border: none;
-    color: #FFF;
-    align-items: center;
-    justify-content: center;
-    width: 132px;
-    height: 44px;
-    display: flex;
-    gap: 10px;
-    background: #AA1D40;
-    border-radius: 4px;
-}
-
-.login:hover {
-    background: #C33C5E;
-}
-
-.login:active {
-    border-radius: 4px;
-    background: #AA1D40;
-    border: 4px solid #fff;
-    outline: 4px solid #AA1D40;
-    outline-offset: -1px;
-}
 
 .banner {
     width: 100%;
@@ -794,7 +678,9 @@ p {
 
 .map {
     width: 100%;
+    background-image: url(../images/backgroundmap.png);
     position: relative;
+    height: 683px;
 }
 
 .map img {
@@ -911,26 +797,12 @@ p {
 
 .footer {
     width: 100%;
+    padding-top: 48px;
     height: auto;
     position: relative;
-    background-color: #9D1D26;
+    background: linear-gradient(270deg, #AF0B35 0%, #99193A 100%);
+box-shadow: 0px -12px 36px 0px rgba(0, 0, 0, 0.00);
     /* padding-top: ; */
-}
-
-.accordion-item:last-child .accordion-inner {
-    border-top: none !important;
-}
-
-.accordion-item {
-    /* background-color: #9D1D26; */
-
-}
-
-.accordion {
-    border: none !important;
-    margin: 0 104px 0 104px;
-    padding-top: 58px;
-    background: none !important;
 }
 
 .footer-top {
@@ -944,45 +816,11 @@ p {
     margin: 58px 104 0 104px;
 
     color: rgba(255, 255, 255, 0.90);
-
-
 }
-
-@media (min-width: 768px) {
-    .accordion-inner {
-        padding: 0 !important;
-    }
-
-    .accordion-icon {
-        right: 0 !important;
-    }
-
-    .accordion-head {
-        padding: 0 !important;
-    }
-}
-
-.accordion-icon {
-    position: absolute;
-    display: flex;
-    right: 11% !important;
-    top: 51% !important;
-    white-space: nowrap;
-    gap: 8px;
-    font-size: 1rem !important;
-    color: #364a63 !important;
-    transform: translateY(-50%) !important;
-    transition: rotate 0.4s !important;
-    text-align: center !important;
-    line-height: 20px !important;
-}
-
 .customer-care {
     display: flex;
 }
-
 /* luyendv */
-
 .div-image-recent {
     width: 269px;
     height: 168px;
@@ -992,6 +830,9 @@ p {
 
 .community-stats-right-title span {
     text-transform: uppercase;
+}
+.logo-agr img {
+    width: 251px;
 }
 
 /* end luyendv  */

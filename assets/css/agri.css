@@ -150,12 +150,11 @@
 .agribank-culture-identity {
     display: flex;
     padding: 47px 5%;
-    padding-top: 75px;
+    padding-bottom: 30px;
 }
 
 /* Container chính */
 .agribank-culture-identity-container {
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 56px;
@@ -170,13 +169,11 @@
 }
 
 .agribank-culture-identity-title-sub {
-    width: 100%;
     color: #494949;
 }
 
 .agribank-culture-identity-title-main {
     /* Hiển thị tiêu đề */
-    width: 100%;
     position: relative;
     top: 0;
     left: 0;
@@ -1890,14 +1887,19 @@ input[type="range"]::-webkit-slider-thumb {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    padding: 0px 5%;
   }
   
   .timeline-history-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     border-top: 1px solid #F6F6F6;
     border-bottom: 1px solid #F6F6F6;
-    padding: 60px 0px;
+    padding: 45px 0px;
+  }
+
+  .timeline-history-years-mobile {
+    display: none;
   }
   
   .timeline-history-years {
@@ -1905,7 +1907,7 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-height: 80vh; /* Giới hạn chiều cao cho khung timeline */
+    max-height: 60vh; /* Giới hạn chiều cao cho khung timeline */
     background: #fff;
     position: sticky;
     top: 20px;
@@ -1969,12 +1971,10 @@ input[type="range"]::-webkit-slider-thumb {
   
   
   .timeline-history-content {
-    width: 90%;
-    display: flex;
     flex-direction: column;
-    gap: 30px;
     border-left: 1px solid #e8e8e8;
-    padding-left: 145px;
+    gap: 20px;
+    padding-left: 7%;
   }
 
   .timeline-history-content:last-child {
@@ -1982,18 +1982,23 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   .history-year-content {
-    width: 100%;
-    display: flex;
     border-bottom: 1px solid #e8e8e8;
-    gap: 148px;
     padding-bottom: 36px;
+  }
+
+  .history-year-content-card-text {
     align-items: flex-start;
+    gap: 7%;
+    padding-top: 30px;
+  }
+
+  .history-year-content-card-text:first-child {
+    padding-top: 0;
   }
   
   .history-year-conten-text {
     display: flex;
     flex-direction: column;
-    width: 70%;
     padding-top: 21px;
     gap: 20px;
   }
@@ -2373,6 +2378,17 @@ input[type="range"]::-webkit-slider-thumb {
     color: #080808;
 }
 
+.custom-prev1, .custom-next1 {
+    display: inline-flex;
+    padding: 4px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--red-3, #C33C5E);
+    border: none;
+
+}
+
 @media (max-width: 1366px) {
 
     .loan-info-btn {
@@ -2481,6 +2497,12 @@ input[type="range"]::-webkit-slider-thumb {
     .advantage-card-question-text {
         gap: 15px;
         flex-direction: column;
+    }
+    /* page history */
+
+    .history-year-content-card-text {
+        gap: 20px;
+        padding-top: 20px;
     }
 
 }
@@ -2693,6 +2715,33 @@ input[type="range"]::-webkit-slider-thumb {
     .Agribank-award-section {
         padding: 30px 5%;
     }
+
+    /* history page */
+    .agribank-culture-identity {
+        padding-bottom: 20px;
+    }
+
+    .timeline-history-content {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .history-year-conten-text {
+        padding-top: 0;
+    }
+
+    .history-year-content {
+        padding: 20px 0px;
+    }
+
+    .timeline-history-container {
+        padding: 20px 0px;
+    }
+
+    .timeline-history-years-mobile {
+        display: flex;
+    }
+    
 }
 
 @media (max-width: 375px) {
@@ -2912,7 +2961,11 @@ input[type="range"]::-webkit-slider-thumb {
         align-items: stretch;
         padding-bottom: 40px;
     }
+    /* page history */
 
+    .history-year-conten-text {
+        gap: 0;
+    }
 
     /* page văn hóa */
     .featured-culture-container {

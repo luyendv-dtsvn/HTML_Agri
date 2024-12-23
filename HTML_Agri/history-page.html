@@ -8,6 +8,46 @@
     <link rel="stylesheet" href="../assets/css/agri.css">
     <link rel="stylesheet" href="../assets/css/common.css">
 </head>
+<style>
+    .owl-nav {
+        display: flex;
+    }
+
+    /* Bao ngoài container */
+.scroll-wrapper {
+  width: 320px; /* Chiều rộng container */
+  height: 450px; /* Chiều cao container */
+  overflow-y: auto; /* Kích hoạt thanh cuộn dọc */
+  border: 3px solid #ccc; /* Viền container */
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* Nội dung cuộn */
+.scroll-content {
+  display: flex;
+  flex-direction: column; /* Sắp xếp các mục theo chiều dọc */
+  padding: 10px;
+}
+
+/* Các mục trong danh sách */
+.scroll-item {
+  background-color: #007BFF; /* Màu nền của mục */
+  color: white;              /* Màu chữ */
+  text-align: center;        /* Căn giữa nội dung */
+  padding: 15px;             /* Khoảng cách bên trong */
+  margin: 8px 0;             /* Khoảng cách giữa các mục */
+  border-radius: 5px;        /* Bo tròn góc */
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng khi hover */
+.scroll-item:hover {
+  transform: scale(1.05); /* Phóng to nhẹ khi di chuột vào */
+}
+</style>
 <body>
     <section class="agribank-culture">
         <div class="agribank-culture-container">
@@ -48,24 +88,77 @@
         </div>
     </section>
     <section class="agribank-culture-identity">
-        <div class="agribank-culture-identity-container">
+        <div class="col-12 col-md-8 col-lg-5 agribank-culture-identity-container">
             <div class="agribank-culture-identity-title">
                 <span class="agribank-culture-identity-title-sub subtitle-14 color-dark-3">LỊCH SỬ HÌNH THÀNH</span>
-                <span class="agribank-culture-identity-title-main heading-h5">Agribank đã không ngừng lớn <br> mạnh và trở thành một trong những <br><span>ngân hàng thương mại hàng đầu <br> Việt Nam.</span></span>
+                <span class="agribank-culture-identity-title-main heading-h5">Agribank đã không ngừng lớn mạnh và trở thành một trong những <span>ngân hàng thương mại hàng đầu Việt Nam.</span></span>
             </div>
         </div>
     </section>
     <section class="timeline-history-section">
-        <div class="timeline-history-container">
+        <div class="col-12 timeline-history-container row">
+            <!-- hiển thị year-list trên mobile -->
+            <div class="col-12 timeline-history-years-mobile">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="#2022" class="scroll-year body-16 color-dark-3">2022</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2021" class="scroll-year body-16 color-dark-3">2021</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2020" class="scroll-year body-16 color-dark-3">2020</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2019" class="scroll-year body-16 color-dark-3">2019</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2018" class="scroll-year body-16 color-dark-3">2018</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2017" class="scroll-year body-16 color-dark-3">2017</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2016" class="scroll-year body-16 color-dark-3">2016</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2015" class="scroll-year body-16 color-dark-3">2015</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2014" class="scroll-year body-16 color-dark-3">2014</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2013" class="scroll-year body-16 color-dark-3">2013</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2012" class="scroll-year body-16 color-dark-3">2012</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2011" class="scroll-year body-16 color-dark-3">2011</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2010" class="scroll-year body-16 color-dark-3">2010</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2009" class="scroll-year body-16 color-dark-3">2009</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2008" class="scroll-year body-16 color-dark-3">2008</a>
+                    </div>
+                    <div class="item">
+                        <a href="#2007" class="scroll-year body-16 color-dark-3">2007</a>
+                    </div>
+                  </div>
+            </div>
+
             <div class="col-12 col-md-1 timeline-history-years">
-                <div class="timeline-navigation">
+                <!-- <div class="timeline-navigation">
                     <button class="history-scroll-button" id="history-scroll-up" disabled>
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                             <path d="M10.25 8L6.625 4.375L3 8" stroke="white" stroke-linecap="square"/>
                         </svg>
                     </button>
                     <ul id="year-list">
-                        <!-- Các năm -->
                         <li class="Body-16 color-dark-3"><a href="#2022" class="scroll-year">2022</a></li>
                         <li class="Body-16 color-dark-3"><a href="#2021" class="scroll-year">2021</a></li>
                         <li class="Body-16 color-dark-3"><a href="#2020" class="scroll-year">2020</a></li>
@@ -96,246 +189,262 @@
                             <path d="M10.25 6L6.625 9.625L3 6" stroke="white" stroke-linecap="square"/>
                         </svg>
                     </button>
-                </div>
+                </div> -->
             </div>
-            <div class="timeline-history-content">
+            <div class="col-12 col-md-11 timeline-history-content">
                 <!-- item 2022 -->
-                <div class="history-year-content" id="2022">
-                    <div class="history-year-conten-text">
-                        <div class="accordion-body collapse show"  data-parent="#accordion">
-                            <div class="accordion-inner">
-                                <span class="Heading-H2 color-dark-1">2022</span>
-                                <p class="Body-Regular-15">Đến cuối năm 2022, tổng tài sản của Agribank đạt 1,82 triệu tỷ đồng; nguồn vốn đạt trên 1,63 triệu tỷ đồng; tổng dư nợ cho vay nền kinh tế đạt trên 1,44 triệu tỷ đồng, trong đó khoảng 65% dư nợ cho vay phục vụ phát triển nông nghiệp, nông dân và nông thôn, chiếm tỷ trọng lớn nhất trong dư nợ tín dụng “Tam nông” tại Việt Nam.</p>
-                            </div>
-                        </div>
-                        <div id="accordion" class="accordion">
-                            <div class="accordion-item">
-                                <div class="accordion-body collapse " id="accordion-item-1" data-parent="#accordion">
-                                    <div class="accordion-inner">
-                                        <p class="Body-Regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
-                                        <p class="Body-Regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
-                                    </div>
+                <div class="col-12 history-year-content" id="2022">
+                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
+                        <div class="col-12 col-lg-5 history-year-conten-text">
+                            <div class="accordion-body collapse show"  data-parent="#accordion">
+                                <div class="accordion-inner">
+                                    <span class="heading-h2 color-dark-1">2022</span>
+                                    <p class="regular-15">Đến cuối năm 2022, tổng tài sản của Agribank đạt 1,82 triệu tỷ đồng; nguồn vốn đạt trên 1,63 triệu tỷ đồng; tổng dư nợ cho vay nền kinh tế đạt trên 1,44 triệu tỷ đồng, trong đó khoảng 65% dư nợ cho vay phục vụ phát triển nông nghiệp, nông dân và nông thôn, chiếm tỷ trọng lớn nhất trong dư nợ tín dụng “Tam nông” tại Việt Nam.</p>
                                 </div>
-                                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-1">
-                                    <h6 class="title Body-Regular-16">Đọc tiếp</h6>
-                                    <span class="accordion-icon"></span>
-                                </a>
+                            </div>
+                            <div id="accordion" class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-body collapse " id="accordion-item-1" data-parent="#accordion">
+                                        <div class="accordion-inner">
+                                            <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
+                                            <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-1">
+                                        <h6 class="title regular-16">Đọc tiếp</h6>
+                                        <span class="accordion-icon"></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <img class="col-12 col-lg-5 history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2022.png" alt=""/>   
                     </div>
-                    <img class="history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2022.png" alt=""/>   
                 </div>
                 <!-- item 2021 -->
-                <div class="history-year-content" id="2021">
-                    <div class="history-year-conten-text">
-                        <div class="accordion-body collapse show"  data-parent="#accordion">
-                            <div class="accordion-inner">
-                                <span class="Heading-H2 color-dark-1">2021</span>
-                                <p class="Body-Regular-15">Đến 31/12/2021, tổng tài sản của Agribank đạt 1,68 triệu tỷ đồng; nguồn vốn đạt trên 1,58 triệu tỷ đồng; tổng dư nợ cho vay nền kinh tế đạt trên 1,31 triệu tỷ đồng, trong đó gần 70% dư nợ cho vay phục vụ phát triển nông nghiệp, nông dân và nông thôn, chiếm tỷ trọng lớn nhất trong dư nợ tín dụng “Tam nông” tại Việt Nam.Năm 2021 Agribank.</p>
-                            </div>
-                        </div>
-                        <div id="accordion" class="accordion">
-                            <div class="accordion-item">
-                                <div class="accordion-body collapse " id="accordion-item-2" data-parent="#accordion">
-                                    <div class="accordion-inner">
-                                        <p class="Body-Regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
-                                        <p class="Body-Regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
-                                    </div>
+                <div class="col-12 history-year-content" id="2021">
+                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
+                        <div class="col-12 col-lg-5 history-year-conten-text">
+                            <div class="accordion-body collapse show"  data-parent="#accordion">
+                                <div class="accordion-inner">
+                                    <span class="heading-h2 color-dark-1">2021</span>
+                                    <p class="regular-15">Đến 31/12/2021, tổng tài sản của Agribank đạt 1,68 triệu tỷ đồng; nguồn vốn đạt trên 1,58 triệu tỷ đồng; tổng dư nợ cho vay nền kinh tế đạt trên 1,31 triệu tỷ đồng, trong đó gần 70% dư nợ cho vay phục vụ phát triển nông nghiệp, nông dân và nông thôn, chiếm tỷ trọng lớn nhất trong dư nợ tín dụng “Tam nông” tại Việt Nam.Năm 2021 Agribank.</p>
                                 </div>
-                                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-2">
-                                    <h6 class="title Body-Regular-16">Đọc tiếp</h6>
-                                    <span class="accordion-icon"></span>
-                                </a>
+                            </div>
+                            <div id="accordion" class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-body collapse " id="accordion-item-2" data-parent="#accordion">
+                                        <div class="accordion-inner">
+                                            <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
+                                            <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-2">
+                                        <h6 class="title regular-16">Đọc tiếp</h6>
+                                        <span class="accordion-icon"></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <img class="col-12 col-lg-5 history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2021.png" alt=""/>
                     </div>
-                    <img class="history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2021.png" alt=""/>   
                 </div>
                 <!-- item 2020 -->
-                <div class="history-year-content" id="2020">
-                    <div class="history-year-conten-text">
-                        <div class="accordion-body collapse show"  data-parent="#accordion">
-                            <div class="accordion-inner">
-                                <span class="Heading-H2 color-dark-1">2020</span>
-                                <p class="Body-Regular-15">Đến 31/12/2020, tổng tài sản đạt trên 1,57 triệu tỷ đồng; nguồn vốn đạt trên 1,45 triệu tỷ đồng; tổng dư nợ cho vay nền kinh tế đạt trên 1,21 triệu tỷ đồng, trong đó gần 70% dư nợ dành cho đầu tư phát triển nông nghiệp, nông thôn.
-                                    Năm 2020, Agribank tiếp tục được khẳng định là Quán quân các NHTM được vinh danh vị trí thứ 8 trong Bảng xếp.</p>
-                            </div>
-                        </div>
-                        <div id="accordion" class="accordion">
-                            <div class="accordion-item">
-                                <div class="accordion-body collapse " id="accordion-item-3" data-parent="#accordion">
-                                    <div class="accordion-inner">
-                                        <p class="Body-Regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
-                                        <p class="Body-Regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
-                                    </div>
+                <div class="col-12 history-year-content" id="2020">
+                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
+                        <div class="col-12 col-lg-5 history-year-conten-text">
+                            <div class="accordion-body collapse show"  data-parent="#accordion">
+                                <div class="accordion-inner">
+                                    <span class="heading-h2 color-dark-1">2020</span>
+                                    <p class="regular-15">Đến 31/12/2020, tổng tài sản đạt trên 1,57 triệu tỷ đồng; nguồn vốn đạt trên 1,45 triệu tỷ đồng; tổng dư nợ cho vay nền kinh tế đạt trên 1,21 triệu tỷ đồng, trong đó gần 70% dư nợ dành cho đầu tư phát triển nông nghiệp, nông thôn.
+                                                    Năm 2020, Agribank tiếp tục được khẳng định là Quán quân các NHTM được vinh danh vị trí thứ 8 trong Bảng xếp.</p>
                                 </div>
-                                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-3">
-                                    <h6 class="title Body-Regular-16">Đọc tiếp</h6>
-                                    <span class="accordion-icon"></span>
-                                </a>
+                            </div>
+                            <div id="accordion" class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-body collapse " id="accordion-item-3" data-parent="#accordion">
+                                        <div class="accordion-inner">
+                                            <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
+                                            <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-3">
+                                        <h6 class="title regular-16">Đọc tiếp</h6>
+                                        <span class="accordion-icon"></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <img class="col-12 col-lg-5 history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2020.png" alt=""/>  
                     </div>
-                    <img class="history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2020.png" alt=""/>   
                 </div>
                 <!-- item 2019 -->
-                <div class="history-year-content" id="2019">
-                    <div class="history-year-conten-text">
-                        <div class="accordion-body collapse show"  data-parent="#accordion">
-                            <div class="accordion-inner">
-                                <span class="Heading-H2 color-dark-1">2019</span>
-                                <p class="Body-Regular-15">Tổng tài sản đạt trên 1,45 triệu tỷ đồng; Nguồn vốn đạt trên 1,34 triệu tỷ đồng; Tổng dư nợ và đầu tư đạt trên 1,3 triệu tỷ đồng, trong đó cho vay nền kinh tế đạt trên 1,12 triệu tỷ đồng. Dư nợ trong lĩnh vực nông nghiệp, nông thôn luôn chiếm tỷ trọng trên 70%/tổng dư nợ.
-                                    Năm 2019, Agribank tiếp tục được khẳng định là.</p>
-                            </div>
-                        </div>
-                        <div id="accordion" class="accordion">
-                            <div class="accordion-item">
-                                <div class="accordion-body collapse " id="accordion-item-4" data-parent="#accordion">
-                                    <div class="accordion-inner">
-                                        <p class="Body-Regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
-                                        <p class="Body-Regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
-                                    </div>
+                <div class="col-12 history-year-content" id="2019">
+                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
+                        <div class="col-12 col-lg-5 history-year-conten-text">
+                            <div class="accordion-body collapse show"  data-parent="#accordion">
+                                <div class="accordion-inner">
+                                    <span class="heading-h2 color-dark-1">2019</span>
+                                    <p class="regular-15">Tổng tài sản đạt trên 1,45 triệu tỷ đồng; Nguồn vốn đạt trên 1,34 triệu tỷ đồng; Tổng dư nợ và đầu tư đạt trên 1,3 triệu tỷ đồng, trong đó cho vay nền kinh tế đạt trên 1,12 triệu tỷ đồng. Dư nợ trong lĩnh vực nông nghiệp, nông thôn luôn chiếm tỷ trọng trên 70%/tổng dư nợ.</p>
+                                    <p class="regular-15">Năm 2019, Agribank tiếp tục được khẳng định là...</p>
                                 </div>
-                                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-4">
-                                    <h6 class="title Body-Regular-16">Đọc tiếp</h6>
-                                    <span class="accordion-icon"></span>
-                                </a>
+                            </div>
+                            <div id="accordion" class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-body collapse " id="accordion-item-4" data-parent="#accordion">
+                                        <div class="accordion-inner">
+                                            <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
+                                            <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-4">
+                                        <h6 class="title regular-16">Đọc tiếp</h6>
+                                        <span class="accordion-icon"></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <img class="col-12 col-lg-5 history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2019.png" alt=""/>   
                     </div>
-                    <img class="history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2019.png" alt=""/>   
                 </div>
                 <!-- item 2018 -->
-                <div class="history-year-content" id="2018">
-                    <div class="history-year-conten-text">
-                        <div class="accordion-body collapse show"  data-parent="#accordion">
-                            <div class="accordion-inner">
-                                <span class="Heading-H2 color-dark-1">2018</span>
-                                <p class="Body-Regular-15">Tổng tài sản đạt gần 1,3 triệu tỷ đồng, nguồn vốn huy đạt trên 1,2 triệu tỷ đồng, tổng dư nợ tín dụng và đầu tư đạt trên 1,1 triệu tỷ đồng, trong đó dư nợ nông nghiệp, nông thôn chiếm 73,6%/tổng dư nợ và chiếm 51% thị phần tín dụng của ngành Ngân hàng đầu tư lĩnh vực này.
-                                    Các giải thưởng: Huân chương Lao động hạng Nhất.</p>
-                            </div>
-                        </div>
-                        <div id="accordion" class="accordion">
-                            <div class="accordion-item">
-                                <div class="accordion-body collapse " id="accordion-item-5" data-parent="#accordion">
-                                    <div class="accordion-inner">
-                                        <p class="Body-Regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
-                                        <p class="Body-Regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
-                                    </div>
+                <div class="col-12 history-year-content" id="2018">
+                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
+                        <div class="col-12 col-lg-5 history-year-conten-text">
+                            <div class="accordion-body collapse show"  data-parent="#accordion">
+                                <div class="accordion-inner">
+                                    <span class="heading-h2 color-dark-1">2018</span>
+                                    <p class="regular-15">Tổng tài sản đạt gần 1,3 triệu tỷ đồng, nguồn vốn huy đạt trên 1,2 triệu tỷ đồng, tổng dư nợ tín dụng và đầu tư đạt trên 1,1 triệu tỷ đồng, trong đó dư nợ nông nghiệp, nông thôn chiếm 73,6%/tổng dư nợ và chiếm 51% thị phần tín dụng của ngành Ngân hàng đầu tư lĩnh vực này.
+                                                    Các giải thưởng: Huân chương Lao động hạng Nhất.</p>
                                 </div>
-                                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-5">
-                                    <h6 class="title Body-Regular-16">Đọc tiếp</h6>
-                                    <span class="accordion-icon"></span>
-                                </a>
+                            </div>
+                            <div id="accordion" class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-body collapse " id="accordion-item-5" data-parent="#accordion">
+                                        <div class="accordion-inner">
+                                            <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
+                                            <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-5">
+                                        <h6 class="title regular-16">Đọc tiếp</h6>
+                                        <span class="accordion-icon"></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <img class="col-12 col-lg-5 history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2018.png" alt=""/>   
                     </div>
-                    <img class="history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2018.png" alt=""/>   
                 </div>
                 <!-- item 2017 -->
-                <div class="history-year-content" id="2017">
-                    <div class="history-year-conten-text">
-                        <div class="accordion-body collapse show"  data-parent="#accordion">
-                            <div class="accordion-inner">
-                                <span class="Heading-H2 color-dark-1">2017</span>
-                                <p class="Body-Regular-15">Tập trung đẩy mạnh việc triển khai dự án E-Banking để xây dựng nền tảng dịch vụ đa kênh hoàn chỉnh, giúp khách hàng có thể sử dụng dịch vụ ngân hàng qua nhiều kênh khác nhau, đặc biệt là Internet Banking và Mobile Banking.
-                                    Thực hiện Nghị quyết số 30/2017/NQ-CP của Chính phủ về gói tín dụng 100.000 tỷ đồng dành cho nông nghiệp.</p>
-                            </div>
-                        </div>
-                        <div id="accordion" class="accordion">
-                            <div class="accordion-item">
-                                <div class="accordion-body collapse " id="accordion-item-6" data-parent="#accordion">
-                                    <div class="accordion-inner">
-                                        <p class="Body-Regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
-                                        <p class="Body-Regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
-                                    </div>
+                <div class="col-12 history-year-content" id="2017">
+                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
+                        <div class="col-12 col-lg-5 history-year-conten-text">
+                            <div class="accordion-body collapse show"  data-parent="#accordion">
+                                <div class="accordion-inner">
+                                    <span class="heading-h2 color-dark-1">2017</span>
+                                    <p class="regular-15">Tập trung đẩy mạnh việc triển khai dự án E-Banking để xây dựng nền tảng dịch vụ đa kênh hoàn chỉnh, giúp khách hàng có thể sử dụng dịch vụ ngân hàng qua nhiều kênh khác nhau, đặc biệt là Internet Banking và Mobile Banking.
+                                                    Thực hiện Nghị quyết số 30/2017/NQ-CP của Chính phủ về gói tín dụng 100.000 tỷ đồng dành cho nông nghiệp.</p>
                                 </div>
-                                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-6">
-                                    <h6 class="title Body-Regular-16">Đọc tiếp</h6>
-                                    <span class="accordion-icon"></span>
-                                </a>
+                            </div>
+                            <div id="accordion" class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-body collapse " id="accordion-item-6" data-parent="#accordion">
+                                        <div class="accordion-inner">
+                                            <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
+                                            <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-6">
+                                        <h6 class="title regular-16">Đọc tiếp</h6>
+                                        <span class="accordion-icon"></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <img class="col-12 col-lg-5 history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2017.png" alt=""/>   
                     </div>
-                    <img class="history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2017.png" alt=""/>   
                 </div>
                 <!-- item 2016 -->
-                <div class="history-year-content" id="2016">
-                    <div class="history-year-conten-text">
-                        <div class="accordion-body collapse show"  data-parent="#accordion">
-                            <div class="accordion-inner">
-                                <span class="Heading-H2 color-dark-1">2016</span>
-                                <p class="Body-Regular-15">Tháng 8</p>
-                                <p class="Body-Regular-15">Agribank ký thỏa thuận với Văn phòng điều phối Nông thôn mới Trung ương về việc hợp tác trong xây dựng nông thôn mới giai đoạn 2016-2020.</p>
-                            </div>
-                        </div>
-                        <div id="accordion" class="accordion">
-                            <div class="accordion-item">
-                                <div class="accordion-body collapse" id="accordion-item-7" data-parent="#accordion">
-                                    <div class="accordion-inner">
-                                        <p class="Body-Regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
-                                        <p class="Body-Regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
-                                    </div>
+                <div class="col-12 history-year-content" id="2016">
+                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
+                        <div class="col-12 col-lg-5 history-year-conten-text">
+                            <div class="accordion-body collapse show"  data-parent="#accordion">
+                                <div class="accordion-inner">
+                                    <span class="heading-h2 color-dark-1">2016</span>
+                                    <p class="regular-15">Tháng 8</p>
+                                    <p class="regular-15">Agribank ký thỏa thuận với Văn phòng điều phối Nông thôn mới Trung ương về việc hợp tác trong xây dựng nông thôn mới giai đoạn 2016-2020.</p>
                                 </div>
-                                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-7">
-                                    <h6 class="title Body-Regular-16">Đọc tiếp</h6>
-                                    <span class="accordion-icon"></span>
-                                </a>
+                            </div>
+                            <div id="accordion" class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-body collapse " id="accordion-item-7" data-parent="#accordion">
+                                        <div class="accordion-inner">
+                                            <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
+                                            <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-7">
+                                        <h6 class="title regular-16">Đọc tiếp</h6>
+                                        <span class="accordion-icon"></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <img class="col-12 col-lg-5 history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2016.png" alt=""/>   
                     </div>
-                    <img class="history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2016.png" alt=""/>   
                 </div>
                 <!-- item 2015 -->
-                <div class="history-year-content" id="2015">
-                    <div class="history-year-conten-text">
-                        <div class="accordion-body collapse show"  data-parent="#accordion">
-                            <div class="accordion-inner">
-                                <span class="Heading-H2 color-dark-1">2015</span>
-                                <p class="Body-Regular-15">Tháng 8</p>
-                                <p class="Body-Regular-15">Agribank đã hoàn thành mục tiêu giảm nợ xấu về mức dưới 3% sớm hơn 4 tháng theo phê duyệt của NHNN và tiếp tục nỗ lực giảm nợ xấu về 1,89% tại thời điểm 31/12/2016.</p>
-                            </div>
-                        </div>
-                        <div id="accordion" class="accordion">
-                            <div class="accordion-item">
-                                <div class="accordion-body collapse " id="accordion-item-8" data-parent="#accordion">
-                                    <div class="accordion-inner">
-                                        <p class="Body-Regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
-                                        <p class="Body-Regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
-                                    </div>
+                <div class="col-12 history-year-content" id="2015">
+                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
+                        <div class="col-12 col-lg-5 history-year-conten-text">
+                            <div class="accordion-body collapse show"  data-parent="#accordion">
+                                <div class="accordion-inner">
+                                    <span class="heading-h2 color-dark-1">2015</span>
+                                    <p class="regular-15">Tháng 8</p>
+                                    <p class="regular-15">Agribank đã hoàn thành mục tiêu giảm nợ xấu về mức dưới 3% sớm hơn 4 tháng theo phê duyệt của NHNN và tiếp tục nỗ lực giảm nợ xấu về 1,89% tại thời điểm 31/12/2016.</p>
                                 </div>
-                                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-8">
-                                    <h6 class="title Body-Regular-16">Đọc tiếp</h6>
-                                    <span class="accordion-icon"></span>
-                                </a>
+                            </div>
+                            <div id="accordion" class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-body collapse " id="accordion-item-8" data-parent="#accordion">
+                                        <div class="accordion-inner">
+                                            <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ tăng trưởng tỉ lệ giao dịch thanh toán chạm; Thương hiệu quốc gia Việt Nam năm 2022; Top 10 Thương hiệu Mạnh ngành Ngân hàng Tài chính năm 2022 (do Tạp chí Kinh tế Việt Nam – VnEconomy – Vietnam Economics Times bình chọn); Giải thưởng Chuyển đổi Số Việt Nam năm 2022, Agribank được vinh danh tại 2 hạng mục đó là Sản phẩm cộng nghệ số tiêu biểu của Hệ thống thanh toán giá trị thấp thời gian thực và Doanh nghiệp chuyển đổi số xuất sắc của Hệ thống hạ tầng thanh toán tập trung ; Giải thưởng Sao Khuê 2022 với sản phẩm Thẻ Agribank Lộc Việt; Top 10 thương hiệu giá trị nhất Việt Nam năm 2022; Top 10 Ngân hàng Thương mại Việt Nam uy tín năm 2022 (Vietnam Report).</p>
+                                            <p class="regular-15">Về giải thưởng quốc tế của Agribank năm 2022: Agribank được ngân hàng JP Morgan-Mỹ trao tặng giải thưởng “Chất lượng Thanh toán xuất sắc”; tổ chức xếp hạng tín nhiệm Moody’s nâng hạng tiền gửi nội tệ và nhà phát hành nội tệ/ngoại tệ từ mức “Ba3” lên mức “Ba2” với triển vọng “Ổn định”. Thương hiệu Agribank được xếp hạng cao nhất trong các Ngân hàng Việt Nam tại bảng xếp hạng Brand Finance Banking 500 năm 2022. Tại bảng xếp hạng này Agribank đứng thứ 157 tăng 16 bậc so với năm 2021,  xếp hạng cao nhất trong 11 ngân hàng thương mại hàng đầu Việt Nam được xếp hạng toàn cầu năm 2022. </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse" data-target="#accordion-item-8">
+                                        <h6 class="title regular-16">Đọc tiếp</h6>
+                                        <span class="accordion-icon"></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <img class="col-12 col-lg-5 history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2015.png" alt=""/>     
                     </div>
-                    <img class="history-year-content-img" src="../assets/images/vanhoa-vaylist-vaydetail/history-2015.png" alt=""/>   
                 </div>
             </div>
         </div>
     </section>
     <section class="Agribank-related-info">
         <div class="Agribank-related-info-container">
-          <span class="Heading-H6 color-dark-1">Thông tin liên quan</span>
+          <span class="heading-h6 color-dark-1">Thông tin liên quan</span>
           <div class="Agribank-related-info-content">
             <div class="Agribank-related-info-card">
               <img src="../assets/images/vanhoa-vaylist-vaydetail/related-info-1.png" alt="Ban lãnh đạo" class="Agribank-related-info-card-image">
               <div class="Agribank-related-card-overlay">
-                <p class="Heading-H8 color-white">Ban lãnh đạo</p>
+                <p class="heading-h8 color-white">Ban lãnh đạo</p>
               </div>
             </div>
             <div class="Agribank-related-info-card">
               <img src="../assets/images/vanhoa-vaylist-vaydetail/related-info-2.png" alt="Giải thưởng" class="Agribank-related-info-card-image">
               <div class="Agribank-related-card-overlay">
-                <p class="Heading-H8 color-white">Giải thưởng</p>
+                <p class="heading-h8 color-white">Giải thưởng</p>
               </div>
             </div>
             <div class="Agribank-related-info-card">
               <img src="../assets/images/vanhoa-vaylist-vaydetail/related-info-3.png" alt="Văn hóa Agribank" class="Agribank-related-info-card-image">
               <div class="Agribank-related-card-overlay">
-                <p class="Heading-H8 color-white">Văn hóa Agribank</p>
+                <p class="heading-h8 color-white">Văn hóa Agribank</p>
               </div>
             </div>
           </div>
@@ -347,66 +456,97 @@
     <script>
         //------Phần timeline trên trang history page ---------------
         document.addEventListener("DOMContentLoaded", () => {
-  // Lấy các phần tử cần thiết
-  const yearList = document.getElementById("year-list");
-  const scrollUpButton = document.getElementById("history-scroll-up");
-  const scrollDownButton = document.getElementById("history-scroll-down");
-  const scrollItems = document.querySelectorAll(".scroll-year"); // Link các năm
-  const itemHeight = 24; // Chiều cao mỗi mục (bao gồm khoảng cách)
-  const visibleItems = 10; // Số mục hiển thị cùng lúc
-  let currentIndex = 0;
+            // Lấy các phần tử cần thiết
+            const yearList = document.getElementById("year-list");
+            const scrollUpButton = document.getElementById("history-scroll-up");
+            const scrollDownButton = document.getElementById("history-scroll-down");
+            const scrollItems = document.querySelectorAll(".scroll-year"); // Link các năm
+            const itemHeight = 24; // Chiều cao mỗi mục (bao gồm khoảng cách)
+            const visibleItems = 10; // Số mục hiển thị cùng lúc
+            let currentIndex = 0;
 
-  // Hàm cập nhật trạng thái của các nút cuộn
-  function updateButtons() {
-    scrollUpButton.disabled = currentIndex === 0;
-    scrollDownButton.disabled =
-      currentIndex + visibleItems >= yearList.children.length;
-  }
+            // Hàm cập nhật trạng thái của các nút cuộn
+            function updateButtons() {
+                scrollUpButton.disabled = currentIndex === 0;
+                scrollDownButton.disabled =
+                currentIndex + visibleItems >= yearList.children.length;
+            }
 
-  // Hàm cuộn danh sách lên hoặc xuống
-  function scrollList(direction) {
-    if (direction === "up" && currentIndex > 0) {
-      currentIndex--;
-    } else if (
-      direction === "down" &&
-      currentIndex + visibleItems < yearList.children.length
-    ) {
-      currentIndex++;
-    }
-    yearList.style.transform = `translateY(-${currentIndex * itemHeight}px)`;
-    updateButtons();
-  }
+            // Hàm cuộn danh sách lên hoặc xuống
+            function scrollList(direction) {
+                if (direction === "up" && currentIndex > 0) {
+                currentIndex--;
+                } else if (
+                direction === "down" &&
+                currentIndex + visibleItems < yearList.children.length
+                ) {
+                currentIndex++;
+                }
+                yearList.style.transform = `translateY(-${currentIndex * itemHeight}px)`;
+                updateButtons();
+            }
 
-  // Sự kiện click nút cuộn lên và xuống
-  scrollUpButton.addEventListener("click", () => scrollList("up"));
-  scrollDownButton.addEventListener("click", () => scrollList("down"));
+            // Sự kiện click nút cuộn lên và xuống
+            scrollUpButton.addEventListener("click", () => scrollList("up"));
+            scrollDownButton.addEventListener("click", () => scrollList("down"));
 
-  // Sự kiện cuộn chuột
-  document.addEventListener("wheel", (event) => {
-    if (event.deltaY > 0) {
-      scrollList("down");
-    } else {
-      scrollList("up");
-    }
-  });
+            // Sự kiện cuộn chuột
+            document.addEventListener("wheel", (event) => {
+                if (event.deltaY > 0) {
+                scrollList("down");
+                } else {
+                scrollList("up");
+                }
+            });
 
-  // Sự kiện click vào các năm để cuộn đến nội dung tương ứng
-  scrollItems.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      e.preventDefault();
-      const targetId = item.getAttribute("href").substring(1); // Lấy ID của mục được cuộn
-      const targetElement = document.getElementById(targetId);
+            // Sự kiện click vào các năm để cuộn đến nội dung tương ứng
+            scrollItems.forEach((item) => {
+                item.addEventListener("click", (e) => {
+                e.preventDefault();
+                const targetId = item.getAttribute("href").substring(1); // Lấy ID của mục được cuộn
+                const targetElement = document.getElementById(targetId);
 
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    });
-  });
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+                });
+            });
 
-  // Khởi tạo trạng thái ban đầu
-  updateButtons();
-});
-
+            // Khởi tạo trạng thái ban đầu
+            updateButtons();
+        });
     </script>
+    <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        dots: false,
+        nav: true, // Bật các nút điều hướng
+        navText: [
+          '<button class="custom-prev1"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M8 3.75L4.375 7.375L8 11" stroke="white" stroke-linecap="square"/></svg></button>', // Tùy chỉnh nút "Prev"
+          '<button class="custom-next1"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M6 3.75L9.625 7.375L6 11" stroke="white" stroke-linecap="square"/></svg></button>', // Tùy chỉnh nút "Next"
+        ],
+        responsive: {
+          0: {
+            items: 7,
+          },
+          768: {
+            items: 9,
+          },
+          1000: {
+            items: 10,
+          },
+        },
+      });
+    });
+  </script>
 </body>
 </html>
