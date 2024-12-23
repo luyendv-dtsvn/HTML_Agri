@@ -304,45 +304,60 @@
   <script>
     $(document).ready(function () {
       let owlCarouselInstance;
-
-      window.addEventListener("resize", () => {
+  
+      // Hàm khởi tạo Owl Carousel
+      const initializeOwlCarousel = () => {
+        if (!owlCarouselInstance) {
+          owlCarouselInstance = $("#slider_new").owlCarousel({
+            loop: true,
+            responsive: {
+              0: {
+                items: 1.5,
+              },
+              375: {
+                items: 2,
+              },
+              768: {
+                items: 3,
+              },
+              1024: {
+                items: 3,
+              },
+            },
+          });
+        }
+      };
+  
+      const destroyOwlCarousel = () => {
+        if (owlCarouselInstance) {
+          owlCarouselInstance.owlCarousel("destroy");
+          owlCarouselInstance = null;
+        }
+      };
+  
+      // Kiểm tra trạng thái khi tải trang
+      const checkDevice = () => {
         const isMobile = window.matchMedia("(max-width: 1024px)").matches;
-
-        // Kiểm tra nếu đang ở chế độ mobile
+  
         if (isMobile) {
           if (!$("#slider_new").hasClass("owl-carousel")) {
             $("#slider_new").addClass("owl-carousel");
           }
-
-          // Nếu instance chưa được khởi động thì tạo mới
-          if (!owlCarouselInstance) {
-            owlCarouselInstance = $(".owl-carousel").owlCarousel({
-              loop: true,
-              responsive: {
-                0: {
-                  items: 1.5,
-                },
-                375: {
-                  items: 2,
-                },
-                768: {
-                  items: 3,
-                },
-                1024: {
-                  items: 3,
-                },
-              },
-            });
-          }
+          initializeOwlCarousel();
         } else {
-          // Nếu không phải mobile, xóa owl-carousel và hủy instance
           if ($("#slider_new").hasClass("owl-carousel")) {
             $("#slider_new").removeClass("owl-carousel");
-            owlCarouselInstance.owlCarousel("destroy");
-            owlCarouselInstance = null;
+            destroyOwlCarousel();
           }
         }
-      });
+      };
+  
+      // Kiểm tra trạng thái khi trang tải
+      checkDevice();
+  
+      // Thêm sự kiện resize
+      window.addEventListener("resize", checkDevice);
     });
   </script>
+  
 </html>
