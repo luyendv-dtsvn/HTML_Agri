@@ -29,10 +29,12 @@
     .owl-carousel-agri .owl-nav.disabled,
     .owl-carousel-agri .owl-dots.disabled {
       display: flex !important;
-      gap: 69px;
+      gap: 68px;
       position: absolute;
-      right: 6%;
-      bottom: 115%;
+      right: 3%;
+      bottom: 117%;
+      justify-content: flex-end;
+      padding-right: 5%;
     }
 
     .owl-carousel-agri .owl-nav,
@@ -42,6 +44,7 @@
       display: flex;
       gap: 70px;
       left: 78%;
+      padding-right: 5%;
     }
 
     .owl-carousel, .owl-carousel-agri {
@@ -56,6 +59,54 @@
       width: 80%;
     }
 
+    
+    @media (max-width: 1366px) {
+      .owl-carousel-agri .owl-nav.disabled,
+      .owl-carousel-agri .owl-dots.disabled {
+        right: 5%;
+        bottom: 117%;
+        gap: 69px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .owl-carousel-agri .owl-nav.disabled,
+      .owl-carousel-agri .owl-dots.disabled {
+        right: 6%;
+        bottom: 116%;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .owl-carousel-agri .owl-nav,
+      .owl-carousel-agri .owl-dots {
+        bottom: -1%;
+        left: 73%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .owl-carousel-agri .owl-nav,
+      .owl-carousel-agri .owl-dots {
+        left: 85%;
+        bottom: 0%;
+        gap: 51px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .owl-carousel-agri .owl-nav,
+      .owl-carousel-agri .owl-dots {
+        left: 80%;
+      }
+    }
+
+    @media (max-width: 375px) {
+      .owl-carousel-agri .owl-nav,
+      .owl-carousel-agri .owl-dots {
+        left: 68%;
+      }
+    }
 
   </style>
 </head>
@@ -1238,12 +1289,13 @@
       <section class="home-business-background-section">
         <div class="col-12 home-business-background-containers">
           <div class="col-12 home-business-background-text">
-            <div class="col-12 col-md-8 col-lg-5 home-business-background-text-title">
+            <div class="col-12 col-lg-8 col-xl-5 home-business-background-text-title">
               <span class="subtitle-14 color-white">BẮT ĐẦU CÙNG AGRIBANK</span>
               <h2 class="heading-h4 color-white">Agribank luôn sẵn sàng đồng hành cùng doanh nghiệp</h2>
             </div>
             <div class="col-12 home-business-background-content row">
               <div class="home-business-background-content-heading">
+                <!-- tab PC -->
                 <div class="home-business-background-heading-tab">
                   <span class="body-14 color-dark-1">Chọn nhóm sản phẩm</span>
                   <div class="home-business-background-tab">
@@ -1270,22 +1322,70 @@
                     </button>
                     <button class="regular-14 color-dark-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M15.25 2.5H19V6.25" stroke="white" stroke-width="0.75"/>
-                        <path d="M4.75 17.5H1V13.75" stroke="white" stroke-width="0.75"/>
-                        <path d="M19 13.75V17.5H15.25" stroke="white" stroke-width="0.75"/>
-                        <path d="M1 6.25V2.5H4.75" stroke="white" stroke-width="0.75"/>
-                        <path d="M10 4L15.25 7V13L10 16L4.75 13V7L10 4Z" stroke="white" stroke-width="0.75"/>
-                        <path d="M4.75 7L10 10L15.25 7" stroke="white" stroke-width="0.75"/>
-                        <path d="M10 10V16" stroke="white" stroke-width="0.75"/>
+                        <path d="M15.25 2.5H19V6.25" stroke="#343330" stroke-width="0.75"/>
+                        <path d="M4.75 17.5H1V13.75" stroke="#343330" stroke-width="0.75"/>
+                        <path d="M19 13.75V17.5H15.25" stroke="#343330" stroke-width="0.75"/>
+                        <path d="M1 6.25V2.5H4.75" stroke="#343330" stroke-width="0.75"/>
+                        <path d="M10 4L15.25 7V13L10 16L4.75 13V7L10 4Z" stroke="#343330" stroke-width="0.75"/>
+                        <path d="M4.75 7L10 10L15.25 7" stroke="#343330" stroke-width="0.75"/>
+                        <path d="M10 10V16" stroke="#343330" stroke-width="0.75"/>
                       </svg>
                       <span>Mở rộng quy mô</span>
                     </button>
                   </div>
                 </div> 
               </div>
-
+              <!-- tab mobile -->
+              <div class="home-business-background-mobile">
+                <span class="body-14 color-dark-1">Chọn nhóm sản phẩm</span>
+                <div class="home-business-background-heading-tab-mobile">
+                  <div class="dropdown tabs-mobile-answer">
+                      <button id="tab-select-answer" class="btn btn-primary body-15 color-dark-1 tabs-mobile-answer-button" data-toggle="dropdown" style="padding: 10px 0px;">
+                          <span class="body-15">Khởi nghiệp</span><em class="icon ni ni-chevron-down"></em></button>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-auto mt-1">
+                          <ul class="link-list-plain">
+                              <li><a class="tab-pane-answer" data-tab="tab-startup">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                  <path d="M4.5 12C9.55241 10.2426 11.8226 9.06986 16.875 7.3125L3.9375 2.8125V15.1875" stroke="#343330" stroke-width="0.75" stroke-linecap="square"/>
+                                </svg>
+                                <span>Khởi nghiệp</span>
+                              </a></li>
+                              <li><a class="tab-pane-answer" data-tab="tab-growth">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path d="M19 17H1V3" stroke="#343330" stroke-width="0.75" stroke-linecap="square" stroke-linejoin="round"/>
+                                  <path d="M16 5L9.57143 11.9231L6.71429 8.84615L1 15" stroke="#343330" stroke-width="0.75" stroke-linecap="square" stroke-linejoin="round"/>
+                                  <path d="M16 8V5H13" stroke="#343330" stroke-width="0.75" stroke-linecap="square"/>
+                                </svg>
+                                <span>Phát triển</span>
+                              </a></li>
+                              <li><a class="tab-pane-answer" data-tab="tab-optimize-control">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#343330" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M3.23691 13.9125C2.89158 13.3177 2.62701 12.6795 2.4502 12.0148L3.76113 10.3742C3.74629 10.1234 3.74629 9.87192 3.76113 9.62109L2.45098 7.98047C2.62749 7.31569 2.89152 6.67729 3.23613 6.08203L5.32285 5.84766C5.48949 5.65992 5.66714 5.48226 5.85488 5.31563L6.08926 3.22969C6.68366 2.88671 7.32101 2.62426 7.98457 2.44922L9.6252 3.76016C9.87602 3.74531 10.1275 3.74531 10.3783 3.76016L12.0189 2.45C12.6837 2.62652 13.3221 2.89054 13.9174 3.23516L14.1518 5.32187C14.3395 5.48851 14.5172 5.66617 14.6838 5.85391L16.7697 6.08828C17.1151 6.6831 17.3796 7.32126 17.5564 7.98594L16.2455 9.62656C16.2604 9.87738 16.2604 10.1289 16.2455 10.3797L17.5557 12.0203C17.3804 12.6849 17.1177 13.3233 16.7744 13.9187L14.6877 14.1531C14.5211 14.3409 14.3434 14.5185 14.1557 14.6852L13.9213 16.7711C13.3265 17.1164 12.6883 17.381 12.0236 17.5578L10.383 16.2469C10.1322 16.2617 9.88071 16.2617 9.62988 16.2469L7.98926 17.557C7.32467 17.3817 6.68628 17.119 6.09082 16.7758L5.85645 14.6891C5.66871 14.5224 5.49105 14.3448 5.32441 14.157L3.23691 13.9125Z" stroke="#343330" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Tối ưu & kiểm soát</span>
+                              </a></li>
+                              <li><a class="tab-pane-answer" data-tab="tab-scale-up">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path d="M15.25 2.5H19V6.25" stroke="#343330" stroke-width="0.75"/>
+                                  <path d="M4.75 17.5H1V13.75" stroke="#343330" stroke-width="0.75"/>
+                                  <path d="M19 13.75V17.5H15.25" stroke="#343330" stroke-width="0.75"/>
+                                  <path d="M1 6.25V2.5H4.75" stroke="#343330" stroke-width="0.75"/>
+                                  <path d="M10 4L15.25 7V13L10 16L4.75 13V7L10 4Z" stroke="#343330" stroke-width="0.75"/>
+                                  <path d="M4.75 7L10 10L15.25 7" stroke="#343330" stroke-width="0.75"/>
+                                  <path d="M10 10V16" stroke="#343330" stroke-width="0.75"/>
+                                </svg>
+                                <span>Mở rộng quy mô</span>
+                              </a></li>
+                          </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
               <div class="col-12 home-business-background-content-text row">
                 <div class="col-12 col-md-4 home-business-background-titlte">
+                  <img src="../assets/images/vanhoa-vaylist-vaydetail/background-title-business.png" alt="">
                     <h3 class="heading-h7 color-dark-1">Mở rộng quy mô cùng Agribank với các giải pháp tài chính linh hoạt, <span class="color-red-1">hỗ trợ tối đa nguồn vốn và tài nguyên cho doanh nghiệp mới</span></h3>
                     <button>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -1344,9 +1444,9 @@
                       </a>
                     </div>
                   </div>
-
-                  
                 </div>
+                <!-- thanh arrow mobile -->
+                <div class="col-12 home-business-list-arrow-button"></div>
               </div>
             </div>
           </div>
@@ -1779,6 +1879,7 @@
 
 
 <script src="../assets/js/navmenu.js"></script>
+<script src="../assets/js/agri.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
   integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -1841,6 +1942,9 @@
       responsive: {
         0: {
           items: 1,
+        },
+        700: {
+          items: 2,
         },
         900: {
           items: 3,
