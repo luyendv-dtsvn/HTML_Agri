@@ -74,7 +74,7 @@
           </div>
 
         </div>
-        <div class="line-h" style="background: rgba(255, 255, 255, 0);"></div>
+        <div class="line-h" style="background: #af1f43;"></div>
         <div class="menu">
           <div class="top-menu">
             <div class="top-menu-left body-15 h-100">
@@ -1112,7 +1112,7 @@
         </div>
       </div>
     </div>
-    <div class="nk-content">
+    <div class="nk-content" data-aos="fade-up">
       <div class="outstanding-products">
         <div class="about-title subtitle-14 ">SẢN PHẨM NỔI BẬT</div>
         <div class="about-subtitle heading-h4-5">
@@ -1525,7 +1525,7 @@
           <div class="hrrr mb-5"></div>
         </div>
       </div>
-      <div class="saler pt-5">
+      <div class="saler pt-5" data-aos="fade-up">
         <div>
           <div style="display: flex;flex-direction: column;gap: 14px;">
             <span class="subtitle-14 " style="color:#494949;">ƯU ĐÃI & KHUYẾN MÃI</span>
@@ -1536,7 +1536,7 @@
           </div>
         </div>
       </div>
-      <div class="slider owl-carousel slider-blog">
+      <div class="slider owl-carousel slider-blog" data-aos="fade-up">
         <div class="list  ">
           <img src="../HTML_Agri/image/Web+Mobile 2.png" alt="">
           <span class="subtitle-12">ƯU ĐÃI VAY</span>
@@ -1560,7 +1560,7 @@
       </div>
       <div class="hrrr mb-5 mt-5"></div>
     </div>
-    <div class="background-relative">
+    <div class="background-relative" data-aos="fade-up">
       <div class="community col-12">
         <div class="community-title subtitle-14">BÁO CÁO PHÁT TRIỂN BỀN VỮNG</div>
         <div class="community-stats row-ct">
@@ -1624,8 +1624,8 @@
         </div>
       </div>
     </div>
-    <div class="background-exchange row-ct">
-      <div class="col-xl-7 col-12 home-table-exchange">
+    <div class="background-exchange row-ct" >
+      <div class="col-xl-7 col-12 home-table-exchange" data-aos="fade-up">
         <div class="nk-block-head-content col-12">
           <h2 class="nk-block-title heading-h7">Bảng tỷ giá</h2>
         </div>
@@ -1728,7 +1728,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-3  col-12 home-exchange-contact">
+      <div class="col-xl-3  col-12 home-exchange-contact" data-aos="fade-up">
         <div class="exchange-title">
           <span class="heading-h7 color-dark-2">Liên hệ với <span class="color-red-1">Agribank</span></span>
           <span class="regular-15 color-dark-1 col-12 col-xl-9 pl-0 pr-0">Liên hệ trực tiếp tổng đài để nhận được hỗ trợ nhanh chóng</span>
@@ -2075,6 +2075,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
   integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
@@ -2119,6 +2121,12 @@
       },
     });
   });
+  document.addEventListener("DOMContentLoaded", () => {
+  AOS.init({
+    duration: 1000, // Thời gian hiệu ứng (ms)
+    offset: 100,    // Khoảng cách từ đáy màn hình để kích hoạt (px)
+  });
+});
 </script>
 
 <script src="../assets/js/navmenu.js" defer></script>
