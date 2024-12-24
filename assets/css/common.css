@@ -285,6 +285,622 @@ button {
 }
 
 
+@media (max-width:1366px) {
+
+    .heading-h1 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 64px;
+        line-height: 120.00000476837158%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h2 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 55px;
+        line-height: 89.99999761581421%;
+        letter-spacing: 0%;
+    }
+
+    .heading-h3 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 52px;
+        line-height: 120.00000476837158%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h4 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 46px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h5 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 37px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h6 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 33px;
+        line-height: 120.00000476837158%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h7 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 25px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h8 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 15px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 0%;
+    }
+
+    .body-19 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 19px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 0%;
+    }
+
+    .body-17 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 17px;
+        line-height: 110.00000238418579%;
+        letter-spacing: -1%;
+    }
+
+    .body-18 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 18px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 0%;
+    }
+
+    .body-16 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 15px;
+        line-height: 110.00000238418579%;
+        letter-spacing: -1%;
+    }
+
+    .body-15 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 15px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 1%;
+    }
+
+    .body-14 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 14px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 0%;
+    }
+
+    .body-13 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 13px;
+        line-height: 160.0000023841858%;
+        letter-spacing: -1%;
+    }
+
+    .body-12 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 12px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 2%;
+    }
+
+    .regular-18 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -1%;
+    }
+
+    .regular-17 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 17px;
+        line-height: 29px;
+        letter-spacing: -2%;
+    }
+
+    .regular-16 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 1%;
+    }
+
+    .regular-15 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 15px;
+        line-height: 150%;
+        letter-spacing: 1%;
+    }
+
+    .regular-14 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 14px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 2%;
+    }
+
+    .regular-13 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 13px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 2%;
+    }
+
+    .regular-12 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 12px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 0%;
+    }
+
+    .subtitle-12 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 11px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 4%;
+    }
+
+    .subtitle-14 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 14px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 4%;
+    }
+}
+
+@media (max-width:1024px) {
+
+    .heading-h1 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 64px;
+        line-height: 120.00000476837158%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h2 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 55px;
+        line-height: 89.99999761581421%;
+        letter-spacing: 0%;
+    }
+
+    .heading-h3 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 52px;
+        line-height: 120.00000476837158%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h4 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 46px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h5 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 37px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h6 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 27px;
+        line-height: 120.00000476837158%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h7 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 25px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h8 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 19px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 0%;
+    }
+
+    .body-19 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 19px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 0%;
+    }
+
+    .body-17 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 17px;
+        line-height: 110.00000238418579%;
+        letter-spacing: -1%;
+    }
+
+    .body-18 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 18px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 0%;
+    }
+
+    .body-16 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 13px;
+        line-height: 110.00000238418579%;
+        letter-spacing: -1%;
+    }
+
+    .body-15 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 15px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 1%;
+    }
+
+    .body-14 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 14px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 0%;
+    }
+
+    .body-13 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 13px;
+        line-height: 160.0000023841858%;
+        letter-spacing: -1%;
+    }
+
+    .body-12 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 12px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 2%;
+    }
+
+    .regular-18 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -1%;
+    }
+
+    .regular-17 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 17px;
+        line-height: 29px;
+        letter-spacing: -2%;
+    }
+
+    .regular-16 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 1%;
+    }
+
+    .regular-15 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 15px;
+        line-height: 150%;
+        letter-spacing: 1%;
+    }
+
+    .regular-14 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 14px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 2%;
+    }
+
+    .regular-13 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 13px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 2%;
+    }
+
+    .regular-12 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 12px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 0%;
+    }
+
+    .subtitle-12 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 12px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 4%;
+    }
+
+    .subtitle-14 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 14px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 4%;
+    }
+}
+
+@media (max-width:768px) {
+
+    .heading-h1 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 64px;
+        line-height: 120.00000476837158%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h2 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 55px;
+        line-height: 89.99999761581421%;
+        letter-spacing: 0%;
+    }
+
+    .heading-h3 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 52px;
+        line-height: 120.00000476837158%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h4 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 25px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h5 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 37px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h6 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 33px;
+        line-height: 120.00000476837158%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h7 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 20px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
+
+    .heading-h8 {
+        font-family: 'BT Grotesk Medium';
+        font-size:15px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 0%;
+    }
+
+    .body-19 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 19px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 0%;
+    }
+
+    .body-17 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 17px;
+        line-height: 110.00000238418579%;
+        letter-spacing: -1%;
+    }
+
+    .body-18 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 18px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 0%;
+    }
+
+    .body-16 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 12px;
+        line-height: 110.00000238418579%;
+        letter-spacing: -1%;
+    }
+
+    .body-15 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 13px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 1%;
+    }
+
+    .body-14 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 14px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 0%;
+    }
+
+    .body-13 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 13px;
+        line-height: 160.0000023841858%;
+        letter-spacing: -1%;
+    }
+
+    .body-12 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 12px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 2%;
+    }
+
+    .regular-18 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -1%;
+    }
+
+    .regular-17 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 15px;
+        line-height: 29px;
+        letter-spacing: -2%;
+    }
+
+
+    .regular-15 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 15px;
+    }
+
+    .regular-16 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 1%;
+    }
+
+    .regular-14 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 14px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 2%;
+    }
+
+    .regular-13 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 13px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 2%;
+    }
+
+    .regular-12 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 9px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 0%;
+    }
+
+    .subtitle-12 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 10px;
+        line-height: 110.00000238418579%;
+        letter-spacing: 4%;
+    }
+
+    .subtitle-14 {
+        font-family: 'BT Grotesk Medium';
+        font-size: 14px;
+        line-height: 139.9999976158142%;
+        letter-spacing: 4%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .Heading-H5 {
+        font-size: 16px;
+        line-height: 120.00000476837158%;
+        letter-spacing: -1%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .heading-h4 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 25px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
+    .heading-h2 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 25px;
+        line-height: 129.99999523162842%;
+        letter-spacing: -1%;
+    }
+
+    .regular-18 {
+        font-size: 15px;
+    }
+
+    .body-16 {
+        font-size: 13px;
+    }
+    .body-17 {
+        font-size: 15px;
+    }
+
+    .heading-h7 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 19px;
+        line-height: 129.99999523162842%;
+        letter-spacing: 0%;
+    }
+
+    .body-14 {
+        font-size: 12px;
+    }
+
+    .heading-h3 {
+        font-size: 34px;
+    }
+
+    .regular-14 {
+        font-size: 12px;
+    }
+    .body-15 {
+        font-size: 14px;
+    }
+
+    .heading-h8 {
+        font-size: 17px;
+    }
+
+    .regular-15 {
+        font-size: 10px;
+    }
+
+    .heading-h6 {
+        font-size: 22px;
+    }
+
+    .heading-h5 {
+        font-size: 25px;
+    }
+
+    .subtitle-14 {
+        font-size: 11px;
+    }
+
+    .body-19 {
+        font-size: 15px;
+    }
+}
+
+
 /* color */
 .color-white {
     color: rgb(255, 255, 255);
