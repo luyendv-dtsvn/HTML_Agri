@@ -776,7 +776,7 @@ button {
 
     .regular-16 {
         font-family: 'BT Grotesk Regular';
-        font-size: 16px;
+        font-size: 14px;
         line-height: 150%;
         letter-spacing: 1%;
     }
@@ -879,7 +879,7 @@ button {
     }
 
     .regular-15 {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .heading-h6 {

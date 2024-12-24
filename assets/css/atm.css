@@ -2,15 +2,72 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
     color: #333;
     width: 100%;
-  }
-  .top-atm{
+}
+
+.top-atm {
     width: 100%;
-    background: linear-gradient(115deg, #9E2B47 0.44%, #AF0B35 103.79%);  }
+    background: linear-gradient(115deg, #9E2B47 0.44%, #AF0B35 103.79%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3% 0;
+}
+
+.answer-header-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.answer-header-content-sub {
+    display: flex;
+    text-align: center;
+}
+
+.answer-header-content-title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 37px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search {
+    bottom: 37%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 16px;
+    background-color: #fff;
+    width: 30%;
+    border-radius: 4px;
+    gap: 12px;
+}
+
+.search input {
+    border: none;
+    width: 87%;
+}
+
+input::placeholder {
+    color: #000000B2;
+
+}
+
+.search input:focus {
+    outline: none;
+    /* Loại bỏ viền mặc định */
+    border: none;
+}
