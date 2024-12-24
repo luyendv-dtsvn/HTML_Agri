@@ -235,23 +235,22 @@ body {
     background-color: #AF0B35;
     /* Thay đổi màu nền khi hover */
     /* transform: scale(1.1);        Phóng to phần tử khi hover */
+    color: #ffffff;
 }
 
 /* Khi active (nhấn vào) */
 .stt:active {
-    background-color: #ddd;
+    background-color: #ffffff;
     /* Màu nền khi phần tử đang được nhấn */
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
     /* Thu nhỏ phần tử khi active */
+    border: 1px solid #AF0B35;
+    color: #333;
+    
 }
 
 /* Khi phần tử có lớp 'active' thì giữ màu nền khi được nhấn */
-.stt.active {
-    background-color: #AF0B35;
-    /* Màu nền khi thẻ đã được nhấn và giữ lại */
-    color: white;
-    /* Màu chữ khi active */
-}
+
 
 @media (max-width:1366px) {
     .content-top-menu svg {
