@@ -238,12 +238,6 @@
 }
 
 
-.community-stats {
-    flex-direction: column;
-    margin: 20px 5%;
-    gap: 44px;
-}
-
 .banking-finance-title {
     display: flex;
     align-items: flex-end;
@@ -319,18 +313,28 @@
     }
 }
 
-.home-redit-rating {
-    width: 100%;
-    height: 100%;
-    background:
-    url('../images/vanhoa-vaylist-vaydetail/111111.png') no-repeat bottom center;
-    /* Ảnh nền */
-    background-size: 100% 66%;
-    /* Ảnh chiếm 2/3 chiều cao phần tử */
-    background-position: bottom center;
-    /* Ảnh căn ở phía dưới */
+ .home-credit-rating-content {
+    padding: 40px 5%;
 }
 
-.banking-finance-content {
-    gap: 6%;
+.home-credit-rating-brand {
+    padding-left: 50px;
+    gap: 11px;
+}
+
+.home-credit-rating-brand-item {
+    position: relative;
+    gap: 26px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    padding-right: 10%;
+    justify-content: space-between;
+    width: 212px;
+}
+
+.home-credit-rating-brand img{
+    position: static;
 }
