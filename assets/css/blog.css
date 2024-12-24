@@ -210,11 +210,6 @@ body {
     /* Tự động căn giữa phần tử cha (nếu cần) */
 }
 
-.turn-page a {
-    font-size: 18px;
-    font-weight: 500;
-}
-
 .stt {
     color: #333;
     text-decoration: none;
@@ -229,6 +224,7 @@ body {
     transition: background-color 0.3s, transform 0.2s;
     /* Thêm hiệu ứng chuyển màu nền và chuyển động */
 }
+
 
 /* Khi hover */
 .stt:hover {
