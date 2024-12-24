@@ -220,3 +220,15 @@ rubyMenu = function()
 }
 
 rubyMenu();
+$('.btn-extend').on('click', function () {
+    // const content = button.nextElementSibling; // Lấy phần tử accordion-content liên quan
+    const contentBody = $(".accordion-body");
+    const button = $('.btn-text-extend')
+    // Thay đổi văn bản của nút accordion
+    if (contentBody.hasClass('show')) {
+      $('.btn-text-extend').text('Mở rộng trang'); // Văn bản khi mở
+    } else {
+      $('.btn-text-extend').text('Thu gọn trang'); // Văn bản khi đóng
+      
+    }
+  });
