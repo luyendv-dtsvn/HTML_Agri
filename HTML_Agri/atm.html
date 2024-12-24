@@ -1,20 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATM</title>
-    <link rel="stylesheet" href="../assets/css/atm.css">
-    <link rel="stylesheet" href="../assets/css/common.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/css/atm.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+  </head>
+  <body>
     <div class="main">
-        <section class="top-atm">
-            
-        </section>
-        <section class="atm-map">
+      <section class="top-atm">
+        <div class="answer-header-content-sub">
+          <div
+            class="personal-loan-breadcrumb regular-13 color-white"
+            style="width: 100%"
+          >
+            Trang chủ
+            <span class="personal-loan-breadcrumb-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="9"
+                viewBox="0 0 8 9"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_1_6132)">
+                  <path
+                    d="M6.22076 4.18784L2.66066 0.627804C2.57832 0.545398 2.4684 0.5 2.3512 0.5C2.23399 0.5 2.12408 0.545398 2.04174 0.627804L1.77956 0.889915C1.60896 1.06071 1.60896 1.3383 1.77956 1.50884L4.76906 4.49834L1.77624 7.49116C1.6939 7.57357 1.64844 7.68342 1.64844 7.80056C1.64844 7.91782 1.6939 8.02768 1.77624 8.11015L2.03842 8.3722C2.12082 8.4546 2.23068 8.5 2.34788 8.5C2.46508 8.5 2.575 8.4546 2.65734 8.3722L6.22076 4.80891C6.30329 4.72624 6.34863 4.61587 6.34837 4.49854C6.34863 4.38075 6.30329 4.27044 6.22076 4.18784Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_6132">
+                    <rect
+                      width="8"
+                      height="8"
+                      fill="white"
+                      transform="translate(0 0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <span>Chi nhánh</span>
+          </div>
+        </div>
+        <div class="answer-header-content-title">
+          <h2 class="heading-h4 color-white">ATM chi nhánh</h2>
+          <form class="search" action="/search" method="GET">
+            <div class="icon-search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M21.5318 20.4686L16.8378 15.7755C18.1983 14.1421 18.8767 12.047 18.7319 9.92618C18.5871 7.80531 17.6302 5.82191 16.0603 4.38859C14.4904 2.95526 12.4284 2.18235 10.3031 2.23065C8.17785 2.27895 6.15303 3.14474 4.64986 4.64791C3.14669 6.15108 2.2809 8.1759 2.2326 10.3012C2.1843 12.4264 2.95721 14.4885 4.39054 16.0584C5.82387 17.6283 7.80726 18.5852 9.92813 18.73C12.049 18.8748 14.144 18.1963 15.7774 16.8358L20.4706 21.5299C20.5403 21.5995 20.623 21.6548 20.714 21.6925C20.8051 21.7302 20.9026 21.7497 21.0012 21.7497C21.0997 21.7497 21.1973 21.7302 21.2884 21.6925C21.3794 21.6548 21.4621 21.5995 21.5318 21.5299C21.6015 21.4602 21.6568 21.3775 21.6945 21.2864C21.7322 21.1954 21.7516 21.0978 21.7516 20.9992C21.7516 20.9007 21.7322 20.8031 21.6945 20.7121C21.6568 20.621 21.6015 20.5383 21.5318 20.4686ZM3.75119 10.4992C3.75119 9.16421 4.14707 7.85917 4.88877 6.74914C5.63047 5.63911 6.68468 4.77394 7.91808 4.26305C9.15148 3.75216 10.5087 3.61849 11.8181 3.87894C13.1274 4.13939 14.3302 4.78226 15.2742 5.72627C16.2182 6.67027 16.861 7.87301 17.1215 9.18238C17.3819 10.4917 17.2483 11.849 16.7374 13.0824C16.2265 14.3158 15.3613 15.37 14.2513 16.1117C13.1413 16.8534 11.8362 17.2492 10.5012 17.2492C8.71159 17.2473 6.99585 16.5355 5.73041 15.27C4.46497 14.0046 3.75318 12.2888 3.75119 10.4992Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              name="query"
+              placeholder="Bạn cần tìm kiếm gì?"
+            />
+            <div class="icon-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M20.7806 12.531L14.0306 19.281C13.8899 19.4218 13.699 19.5008 13.5 19.5008C13.301 19.5008 13.1101 19.4218 12.9694 19.281C12.8286 19.1403 12.7496 18.9494 12.7496 18.7504C12.7496 18.5514 12.8286 18.3605 12.9694 18.2198L18.4397 12.7504H3.75C3.55109 12.7504 3.36032 12.6714 3.21967 12.5307C3.07902 12.3901 3 12.1993 3 12.0004C3 11.8015 3.07902 11.6107 3.21967 11.4701C3.36032 11.3294 3.55109 11.2504 3.75 11.2504H18.4397L12.9694 5.78104C12.8286 5.64031 12.7496 5.44944 12.7496 5.25042C12.7496 5.05139 12.8286 4.86052 12.9694 4.71979C13.1101 4.57906 13.301 4.5 13.5 4.5C13.699 4.5 13.8899 4.57906 14.0306 4.71979L20.7806 11.4698C20.8504 11.5394 20.9057 11.6222 20.9434 11.7132C20.9812 11.8043 21.0006 11.9019 21.0006 12.0004C21.0006 12.099 20.9812 12.1966 20.9434 12.2876C20.9057 12.3787 20.8504 12.4614 20.7806 12.531Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </form>
+          <div class="address">
+            <div class="province">
+                <select name="" id="">
+                    <option value="0">Thành Phố</option>
+                    <option value="1">Hà Nội</option>
+                    <option value="2">Thành Phố Hồ Chí Minh</option>
+                </select>
+            </div>
 
-        </section>
-    </div>    
-</body>
+
+            <div class="district">
+                
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="atm-map"></section>
+    </div>
+  </body>
 </html>
