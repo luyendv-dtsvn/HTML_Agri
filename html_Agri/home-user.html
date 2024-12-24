@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cá Nhân</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/css/dashlite.css" />
   <link rel="stylesheet" href="../assets/css/home-user.css" />
   <link rel="stylesheet" href="../assets/css/common.css" />
@@ -1534,7 +1536,7 @@
           </div>
         </div>
       </div>
-      <div class="slider owl-carousel ">
+      <div class="slider owl-carousel slider-blog">
         <div class="list  ">
           <img src="../HTML_Agri/image/Web+Mobile 2.png" alt="">
           <span class="subtitle-12">ƯU ĐÃI VAY</span>
@@ -1589,7 +1591,7 @@
           <div class=" community-stats-left col-lg-6  col-xxl-5 col-12  pl-0 pr-0 pl-50-mobile pt-2r-mobile">
             <div class="col-12 pl-0">
               <div class="community-stats-left-1">
-                <div class="div-image-recent block-img-hover">
+                <div class="div-image-recent">
                   <img src="../assets/images/home/blog1.png" alt="" />
                 </div>
                 <div class="community-stats-right-title justify-center">
@@ -1618,6 +1620,136 @@
                 class="icon ni ni-chevron-right regular-18 color-red-1"></em>
             </div>
 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-exchange row-ct">
+      <div class="col-xl-7 col-12 home-table-exchange">
+        <div class="nk-block-head-content col-12">
+          <h2 class="nk-block-title heading-h7">Bảng tỷ giá</h2>
+        </div>
+        <div class=" col-12 pt-4 row-ct justify-between">
+          <div>
+            <ul class="custom-control-group radio-rate">
+              <li>
+                <div class="custom-control custom-radio custom-control-pro no-control checked">
+                  <input type="radio" class="custom-control-input checked" name="btnRadioNc" id="btnRadioNc1">
+                  <label class="custom-control-label body-14" for="btnRadioNc1">Tỉ giá</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-radio custom-control-pro no-control">
+                  <input type="radio" class="custom-control-input" name="btnRadioNc" id="btnRadioNc2">
+                  <label class="custom-control-label body-14" for="btnRadioNc2">Lãi suất</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-radio custom-control-pro no-control">
+                  <input type="radio" class="custom-control-input" name="btnRadioNc" id="btnRadioNc3">
+                  <label class="custom-control-label body-14" for="btnRadioNc3">Giá vàng</label>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <div class="current-time align-center d-flex"><span class="body-14">*Cập nhật ngày 23/12/2024</span></div>
+        </div>
+        <div class="col-12 pt-4">
+          <div class="card card-preview table-rate">
+            <div class=" table-responsive">
+              <table class="table">
+                <thead class="">
+                  <tr>
+                    <th scope="col " class="body-14">Mã ngoại tệ</th>
+                    <th scope="col " class="body-14">Tên ngoại tệ</th>
+                    <th scope="col " class="body-14 text-align-right">Mua tiền măt</th>
+                    <th scope="col " class="body-14 text-align-right">Mua chuyển khoản</th>
+                    <th scope="col" class="body-14 text-align-right">Bán chuyển khoản</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <div class="user-card card-rate">
+                        <div class="user-avatar sm bg-purple-dim">
+                          <img src="../assets/images/rate/usd.svg" alt="">
+                        </div>
+                        <div class="user-name">
+                          <span class="tb-lead body-15" style="line-height: 136%;">USD</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="vertical-mid">US Dollar</td>
+                    <td class="vertical-mid text-align-right">25,100</td>
+                    <td class="vertical-mid text-align-right">-</td>
+                    <td class="vertical-mid text-align-right">25,100</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="user-card card-rate">
+                        <div class="user-avatar sm bg-purple-dim">
+                          <img src="../assets/images/rate/eur.svg" alt="">
+                        </div>
+                        <div class="user-name">
+                          <span class="tb-lead body-15" style="line-height: 136%;">EUR</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="vertical-mid">Euro</td>
+                    <td class="vertical-mid text-align-right">-</td>
+                    <td class="vertical-mid text-align-right">25,100</td>
+                    <td class="vertical-mid text-align-right">25,100</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="user-card card-rate">
+                        <div class="user-avatar sm bg-purple-dim">
+                          <img src="../assets/images/rate/jpy.svg" alt="">
+                        </div>
+                        <div class="user-name">
+                          <span class="tb-lead body-15" style="line-height: 136%;">JPY</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="vertical-mid">Japanese Yen</td>
+                    <td class="vertical-mid text-align-right">25,100</td>
+                    <td class="vertical-mid text-align-right">-</td>
+                    <td class="vertical-mid text-align-right">25,100</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div><!-- .card-preview -->
+          <div class="col-12 div-show-more pt-4 justify-center">
+            <a href="#" class="regular-18 color-red-1">Xem thêm </a><em
+              class="icon ni ni-chevron-right regular-18 color-red-1"></em>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3  col-12 home-exchange-contact">
+        <div class="exchange-title">
+          <span class="heading-h7 color-dark-2">Liên hệ với <span class="color-red-1">Agribank</span></span>
+          <span class="regular-15 color-dark-1 col-12 col-xl-9 pl-0 pr-0">Liên hệ trực tiếp tổng đài để nhận được hỗ trợ nhanh chóng</span>
+        </div>
+        <div class="exchange-contact pt-5">
+          <div class="line-h"></div>
+          <div class="link-icon">
+            <span class="body-16 color-red-1" >Hotline chi nhánh</span>
+            <em class="color-red-1 icon ni ni-chevron-right"></em>
+          </div>
+          <div class="line-h"></div>
+          <div class="link-icon">
+            <span class="body-16 color-red-1" >Agribank thông báo</span>
+            <em class="color-red-1 icon ni ni-chevron-right"></em>
+          </div>
+          <div class="line-h"></div>
+          <div class="link-icon">
+            <span class="body-16 color-red-1" >Chi nhánh và ATM</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M9 4.5C8.44374 4.5 7.89997 4.66495 7.43746 4.97399C6.97495 5.28303 6.61446 5.72229 6.40159 6.2362C6.18872 6.75012 6.13302 7.31562 6.24154 7.86119C6.35006 8.40676 6.61793 8.9079 7.01126 9.30124C7.4046 9.69457 7.90574 9.96244 8.45131 10.071C8.99688 10.1795 9.56238 10.1238 10.0763 9.91091C10.5902 9.69804 11.0295 9.33755 11.3385 8.87504C11.6475 8.41253 11.8125 7.86876 11.8125 7.3125C11.8125 6.56658 11.5162 5.85121 10.9887 5.32376C10.4613 4.79632 9.74592 4.5 9 4.5ZM9 9C8.66624 9 8.33998 8.90103 8.06248 8.7156C7.78497 8.53018 7.56868 8.26663 7.44095 7.95828C7.31323 7.64993 7.27981 7.31063 7.34492 6.98328C7.41004 6.65594 7.57076 6.35526 7.80676 6.11926C8.04276 5.88326 8.34344 5.72254 8.67078 5.65742C8.99813 5.59231 9.33743 5.62573 9.64578 5.75345C9.95413 5.88118 10.2177 6.09747 10.4031 6.37498C10.5885 6.65248 10.6875 6.97874 10.6875 7.3125C10.6875 7.76005 10.5097 8.18928 10.1932 8.50574C9.87678 8.82221 9.44755 9 9 9ZM9 1.125C7.35954 1.12686 5.78681 1.77935 4.62683 2.93933C3.46685 4.09931 2.81436 5.67204 2.8125 7.3125C2.8125 9.52031 3.83273 11.8603 5.76562 14.0801C6.63414 15.0831 7.61165 15.9864 8.68008 16.773C8.77466 16.8393 8.88734 16.8748 9.00281 16.8748C9.11829 16.8748 9.23097 16.8393 9.32555 16.773C10.392 15.986 11.3676 15.0828 12.2344 14.0801C14.1645 11.8603 15.1875 9.52031 15.1875 7.3125C15.1856 5.67204 14.5331 4.09931 13.3732 2.93933C12.2132 1.77935 10.6405 1.12686 9 1.125ZM9 15.6094C7.83773 14.6953 3.9375 11.3379 3.9375 7.3125C3.9375 5.96984 4.47087 4.68217 5.42027 3.73277C6.36967 2.78337 7.65734 2.25 9 2.25C10.3427 2.25 11.6303 2.78337 12.5797 3.73277C13.5291 4.68217 14.0625 5.96984 14.0625 7.3125C14.0625 11.3365 10.1623 14.6953 9 15.6094Z" fill="#9D1D26"/>
+            </svg>
           </div>
         </div>
       </div>
@@ -1697,7 +1829,8 @@
                       <a href="javascript:void(0)"
                         class="pl-3 pr-3 accordion-head btn-extend text-center d-flex justify-center"
                         data-toggle="collapse" data-target="#accordion-item-1">
-                        <h6 class="regular-14 color-white btn-text-extend"> <em class="icon ni ni-chevron-down" style="font-size: 20px;"></em>Mở rộng trang</h6>
+                        <h6 class="regular-14 color-white btn-text-extend"> <em class="icon ni ni-chevron-down"
+                            style="font-size: 20px;"></em>Mở rộng trang</h6>
                       </a>
                     </div>
                   </div>
@@ -1932,15 +2065,13 @@
   </div>
 </body>
 
-<script src="../assets/js/bundle.js" ></script>
-<script src="../assets/js/home.js" ></script>
-<script src="../assets/js/scripts.js" ></script>
+<script src="../assets/js/bundle.js"></script>
+<script src="../assets/js/home.js"></script>
+<script src="../assets/js/scripts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
   integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-  integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
   integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>

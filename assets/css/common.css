@@ -694,7 +694,7 @@ button {
 
     .heading-h8 {
         font-family: 'BT Grotesk Medium';
-        font-size:15px;
+        font-size: 15px;
         line-height: 139.9999976158142%;
         letter-spacing: 0%;
     }
@@ -835,6 +835,7 @@ button {
         line-height: 129.99999523162842%;
         letter-spacing: -1%;
     }
+
     .heading-h2 {
         font-family: 'BT Grotesk Regular';
         font-size: 25px;
@@ -849,6 +850,7 @@ button {
     .body-16 {
         font-size: 13px;
     }
+
     .body-17 {
         font-size: 15px;
     }
@@ -871,6 +873,7 @@ button {
     .regular-14 {
         font-size: 12px;
     }
+
     .body-15 {
         font-size: 14px;
     }
@@ -957,6 +960,13 @@ button {
 
 /* luyendv */
 .custom-radio.custom-control-pro.no-control .custom-control-input:checked~.custom-control-label {
+    border-color: var(--red-1);
+    z-index: 2;
+    background-color: var(--red-1);
+    color: #fff;
+}
+
+.custom-radio.custom-control-pro.no-control.checked .custom-control-label {
     border-color: var(--red-1);
     z-index: 2;
     background-color: var(--red-1);
@@ -1152,7 +1162,57 @@ button {
     right: 0 !important;
 }
 
-.footer .accordion-head {}
+.background-exchange {
+    background-image: url('../images/home/exchange_home.png');
+    background-size: cover;
+    gap: 20px;
+    justify-content: center;
+    padding: 135px;
+
+}
+
+.home-user .home-table-exchange {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: #FFF;
+    padding: 38px 42px;
+    border-radius: 4px;
+}
+
+.home-exchange-contact {
+    background-color: #FFF;
+    padding: 38px 40px;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-user .exchange-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+
+}
+
+.link-icon {
+    display: flex;
+    padding-right: 16px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.exchange-title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+
 
 .footer .btn-extend {
     border-radius: 4px;
@@ -1267,6 +1327,7 @@ button {
 
 .banner-header {
     background-image: url('../images/home/banner_user.png');
+    background-size: cover;
 }
 
 .footer .block-h-2 {
@@ -1308,6 +1369,8 @@ button {
     fill: #AF0B35;
 }
 
+
+
 .background-relative {
     position: relative;
     /* Đặt vị trí tương đối để quản lý phần tử con */
@@ -1327,7 +1390,7 @@ button {
 }
 
 .community {
-    height: 888px;
+    height: 887px;
     padding: 0 4.9%;
 }
 
@@ -1777,6 +1840,7 @@ button {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .footer .block-h-2 {
         gap: 28px;
         /* flex: 1 0 0; */
@@ -1789,9 +1853,11 @@ button {
     .footer .block-h {
         flex-direction: unset;
     }
-    .footer .accordion-body .block-h{
+
+    .footer .accordion-body .block-h {
         flex-direction: column;
     }
+
     .footer .block-h.div-appstore {
         flex-direction: column;
     }
@@ -2005,8 +2071,8 @@ button {
         padding-left: 16px;
     }
 
-    .home-user .owl-nav,
-    .home-user .owl-dots {
+    .home-user .slider-blog .owl-nav,
+    .home-user .slider-blog .owl-dots {
         display: none !important;
     }
 
