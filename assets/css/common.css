@@ -1636,7 +1636,80 @@ button {
 .home-table-exchange-576 .info-item-rate .rate-value {
     color: #28140C;
 }
+.input-search {
+    top: 77%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    border-radius: 4px;
+    background: linear-gradient(270deg, #af0b3591 0%, #c932598f 100%);
+    display: flex
+;
+    flex-direction: column;
+    gap: 20px;
+    padding: 8px 28px 28px 28px;
+}
 
+
+
+.form-search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 26px 16px 26px 8px;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.23);
+  }
+  
+  .form-search input {
+    width: 90%;
+    border: none;
+    background: transparent;
+    color: #FFF;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.80);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  /* List of search results */
+  .list-search {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    /* position: relative; */
+  }
+  .banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+ .owl-carousel-search .search-product a,
+.owl-carousel-search .calculation-tool a,
+.owl-carousel-search .find-branch a,
+.owl-carousel-search .fee-schedule a,
+.owl-carousel-search .interest-rate a,
+.owl-carousel-search .exchange-rate a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 4px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #fff !important;
+  border-radius: 4px;
+  background: #82283E;
+  position: relative;
+  align-items: center;
+}
 @media (max-width:1366px) {
     .category-future .title {
         padding-top: 35px;
