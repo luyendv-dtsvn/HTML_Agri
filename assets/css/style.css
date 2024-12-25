@@ -103,7 +103,10 @@
     text-align: center;
 }
 
-
+.card a{
+  width: 20px;
+  height: 20px;
+}
 
 .card+.card {
   margin-top: 0 !important;
@@ -148,7 +151,7 @@
 
 .card-link {
   position: absolute;
-  bottom: 23px;
+  bottom: 36px;
   right: 28px;
   color: white;
   text-decoration: none;
@@ -306,7 +309,7 @@
   width: 74%;
   position: relative;
   /* left: 3%; */
-  padding: 20px 3% 20px 5%;
+  padding: 0 3% 20px 5%;
 
 }
 
