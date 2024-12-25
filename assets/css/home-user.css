@@ -11,7 +11,6 @@ body {
     padding: 0;
     background-color: #ffffff;
     color: #333;
-    font-family: sans-serif;
     /* Set a default font */
 }
 
@@ -88,128 +87,6 @@ body {
     color: #FFF;
     text-align: center;
 }
-
-/* Search section */
-
-.input-search {
-    top: 77%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 45%;
-    border-radius: 4px;
-    background: linear-gradient(270deg, #af0b3591 0%, #c932598f 100%);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 8px 28px 28px 28px;
-}
-
-.form-search {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 26px 16px 26px 8px;
-    border-bottom: 1.5px solid rgba(255, 255, 255, 0.23);
-}
-
-.form-search input {
-    width: 90%;
-    border: none;
-    background: transparent;
-    color: #FFF;
-}
-
-input::placeholder {
-    color: rgba(255, 255, 255, 0.80);
-}
-
-input:focus {
-    outline: none;
-}
-
-/* List of search results */
-
-
-
-
-.search-product a,
-.calculation-tool a,
-.find-branch a,
-.fee-schedule a,
-.interest-rate a,
-.exchange-rate a {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 4px;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: #fff !important;
-    border-radius: 4px;
-    background: #82283E;
-    position: relative;
-    align-items: center;
-}
-
-/* .owl-prev, */
-.btn-prev {
-    display: none;
-}
-
-.btn-next {
-    width: 8%;
-    height: 24%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(270deg, #b00c3605 40%, rgba(158, 43, 71, 0.00) 100%);
-    position: absolute;
-    bottom: 16%;
-    right: 2%;
-    backdrop-filter: blur(1px);
-}
-
-.btn-next svg {
-    position: absolute;
-
-    width: 24px;
-    height: 24px;
-    border-radius: 100px;
-    padding: 4px;
-    background: #6F182D;
-    top: 23%;
-    right: 1%;
-}
-
-.pull-down {
-    position: absolute;
-    top: 94%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.pull-down-title {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #ffffff;
-    gap: 10px;
-}
-
-/* Outstanding Products */
-.outstanding-products {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 14px;
-    flex-direction: column;
-}
-
 /* About section */
 .about-title {
     line-height: 15.4px;
@@ -452,19 +329,7 @@ input:focus {
     flex-direction: column;
 }
 
-.slide {
-    display: flex;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    gap: 5px;
-}
 
-.prev,
-.next {
-    padding: 12px;
-    border-radius: 100px;
-    border: 1px solid #DEDEDE;
-}
 
 .slider {
     /* margin: 0 104px; */
@@ -480,19 +345,6 @@ input:focus {
     gap: 15px;
     padding: 0 7px 0 7px;
 }
-
-.owl-stage {
-    display: flex;
-    gap: 6px;
-}
-
-/* .list-search span{
-    margin-top: 2%;
-} */
-
-
-
-
 p {
     margin-bottom: 0px !important;
 }
@@ -607,79 +459,11 @@ p {
 /* responsive */
 
 @media (max-width: 1366px) {
-    .top-user a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    .top-user-right,
-    .top-user-left {
-        display: flex;
-    }
-
-    .top-user-right div,
-    .top-user-left div {
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Individual section */
-    .individual {
-        padding: 10px;
-        border-bottom: 3px solid #701029;
-        background: rgba(66, 9, 24, 0.25);
-    }
-
-    .top-menu-left {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        color: rgba(0, 0, 0, 0.80);
-    }
-
-    .content {
-        position: absolute;
-        /* top: 25%;
-        left: 30%; */
-        text-align: center;
-        color: #FFF;
-    }
+    
 }
 
-.footer {
-    width: 100%;
-    padding-top: 48px;
-    height: auto;
-    position: relative;
-    background: linear-gradient(270deg, #AF0B35 0%, #99193A 100%);
-    box-shadow: 0px -12px 36px 0px rgba(0, 0, 0, 0.00);
-    /* padding-top: ; */
-}
 
-.footer-top {
-    display: flex;
-}
 
-.logo-agr {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin: 58px 104 0 104px;
 
-    color: rgba(255, 255, 255, 0.90);
-}
-
-.customer-care {
-    display: flex;
-}
-
-/* luyendv */
-.div-image-recent {}
-
-.logo-agr img {
-    width: 251px;
-}
 
 /* end luyendv  */

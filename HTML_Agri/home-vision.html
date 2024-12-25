@@ -7,11 +7,11 @@
   <title>Home định hướng</title>
   
   <link rel="stylesheet" href="../assets/css/dashlite.css" />
+  <link rel="stylesheet" href="../assets/css/home-user.css" />
   <link rel="stylesheet" href="../assets/css/common.css" />
-
+  
   <link rel="stylesheet" href="../assets/css/navmenu.css" />
   <link rel="stylesheet" href="../assets/css/home-vision.css" />
-  <link rel="stylesheet" href="../assets/css/home-user.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <style>
     @media (min-width: 992px) {
@@ -28,7 +28,7 @@
 </head>
 
 <body class="home-vision no-touch nk-nio-theme has-aside as-mobile">
-  <section class="home-vision-header">
+  <section class="home-vision-header d-none-992">
     <div class="home-vision-header-left">
       <svg xmlns="http://www.w3.org/2000/svg" width="189" height="34" viewBox="0 0 189 34" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M116.472 18.679C117.764 18.9266 118.73 19.3222 119.37 19.8657C120.257 20.6229 120.701 21.5508 120.701 22.6457C120.701 23.4775 120.409 24.2759 119.823 25.0379C119.236 25.7987 118.434 26.3553 117.414 26.7056C116.392 27.0559 114.836 27.2313 112.738 27.2313H103.953V26.7736H104.654C105.431 26.7736 105.99 26.5506 106.328 26.1072C106.538 25.8178 106.643 25.2031 106.643 24.2646V13.438C106.643 12.401 106.511 11.7445 106.246 11.4743C105.888 11.1098 105.359 10.9295 104.654 10.9295H103.953V10.4724H111.998C113.497 10.4724 114.702 10.5704 115.609 10.7696C116.981 11.0661 118.029 11.5895 118.751 12.346C119.475 13.0991 119.834 13.9655 119.834 14.9453C119.834 15.786 119.552 16.5398 118.985 17.2003C118.418 17.8643 117.579 18.3572 116.472 18.679ZM109.28 18.0111C109.618 18.0697 110.005 18.1131 110.439 18.14C110.875 18.1705 111.351 18.1837 111.875 18.1837C113.208 18.1837 114.214 18.0536 114.889 17.7952C115.561 17.5355 116.074 17.1376 116.431 16.6024C116.789 16.0677 116.967 15.4823 116.967 14.848C116.967 13.866 116.522 13.0305 115.635 12.3408C114.748 11.6468 113.453 11.3007 111.749 11.3007C110.835 11.3007 110.011 11.3902 109.28 11.5722V18.0111ZM109.28 26.0194C110.339 26.2427 111.39 26.3542 112.423 26.3542C114.08 26.3542 115.343 26.0171 116.212 25.3446C117.081 24.6746 117.516 23.8451 117.516 22.8558C117.516 22.203 117.319 21.5801 116.926 20.9786C116.531 20.3764 115.891 19.9015 115.003 19.5559C114.117 19.2087 113.017 19.0363 111.711 19.0363C111.141 19.0363 110.657 19.0458 110.254 19.0625C109.852 19.0781 109.527 19.1074 109.28 19.1496V26.0194Z" fill="white" stroke="#9D1D26" stroke-width="0.0531427"/>
@@ -91,19 +91,30 @@
       </svg>
     </div>
   </section>
-  <div class="mobile">
+  <div class="mobile home-vision-header-mobile">
     <div class="header-mobile nk-header is-light">
       <div class="header-mobile-menu">
-        <a href="#" class="toggle nk-quick-nav-icon mr-n1" data-target="sideNav"><em
-            class="icon ni ni-menu"></em></a>
-        <div class="line-v" style="background-color: #F2F2F2; height: 30px;"></div>
-        <img src="../assets/images/logo-color.png">
+        <a href="#" class="toggle nk-quick-nav-icon mr-n1" data-target="sideNav"><em class="icon ni ni-menu"></em></a>
+        <div class="line-v" style="background: rgba(255, 255, 255, 0.20); height: 30px;"></div>
+        <img src="../assets/images/logo-white.png">
       </div>
-      <div class="btn-login-mobile">
-        <span class="body-regular-14 color-white" type="button">
-          Đăng nhập
-          <em class="icon ni ni-chevron-down" style="font-size: 16px;"></em>
-        </span>
+      <div class="dropdown div-login">
+        <button id="tab-select-answer" class="btn body-14 color-dark-1 home-vision-header-button"
+          data-toggle="dropdown">
+          <span class="body-14 color-red-1">Đăng nhập</span><em class="ni ni-chevron-down color-red-1"></em></button>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-auto mt-1">
+          <ul class="link-list-plain">
+            <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                data-tab="tab-agribank-plus">Agribank Plus</a><span class="subtitle-12 color-dark-3">khách hàng
+                cá nhân</span></li>
+            <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                data-tab="tab-agribank-retail">Agribank Retail</a><span class="subtitle-12 color-dark-3">khách
+                hàng cá nhân</span></li>
+            <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                data-tab="tab-agribank-orporate">Agribank Corporate</a><span class="subtitle-12 color-dark-3">khách
+                hàng doanh nghiêp</span></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="nk-content menu-mobile">
@@ -161,8 +172,7 @@
                             <ul class="nk-menu-sub">
                               <li class="nk-menu-item">
                                 <a href="#" data-target="submenu-mobile-tg"
-                                  class="nk-menu-link toggle nk-quick-nav-icon mr-n1" data-original-title=""
-                                  title="">
+                                  class="nk-menu-link toggle nk-quick-nav-icon mr-n1" data-original-title="" title="">
                                   <span class="nk-menu-text">Gửi tiền</span>
                                 </a>
                                 <div class="nk-aside submenu-mobile mobile-menu " data-content="submenu-mobile-tg"
@@ -289,8 +299,8 @@
                                                   <div class="lv2-des">
                                                     <div class="lv2-des-content">
                                                       <a class="div-link-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                          height="25" viewBox="0 0 24 25" fill="none">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                          viewBox="0 0 24 25" fill="none">
                                                           <path d="M16.5 6.5H7.5V11H16.5V6.5Z" stroke="#9E2B47"
                                                             stroke-width="1.25" stroke-miterlimit="10"></path>
                                                           <path d="M19.5 21.5V3.5L4.5 3.5L4.5 21.5H19.5Z"
@@ -320,8 +330,8 @@
                                                         <em class="icon ni ni-chevron-right color-dark-2"></em>
                                                       </a>
                                                       <a class="div-link-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                          height="25" viewBox="0 0 24 25" fill="none">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                          viewBox="0 0 24 25" fill="none">
                                                           <path
                                                             d="M15.5844 7.71496C19.1218 8.2638 21.6002 11.2974 21.6002 14.9574C21.6002 17.4087 20.3861 19.5786 18.5215 20.9097V23.2984H15.1435V21.8803C11.6168 23.2426 8.92638 21.8719 8.92638 21.8719L8.9266 23.2984H5.50021V20.8784C4.69691 20.3079 3.57309 19.2477 3.1202 17.5765C2.05981 17.5765 1.2002 16.7248 1.2002 15.6742V13.8138C1.2002 12.7314 2.08587 11.8538 3.17837 11.8538C3.50353 11.2275 4.19389 9.99513 5.02334 9.34315V5.89905H5.11565C6.43605 5.8759 7.43581 6.51423 8.11557 7.62639H9.55664"
                                                             stroke="#9E2B47" stroke-width="1.25"
@@ -339,8 +349,8 @@
                                                         <em class="icon ni ni-chevron-right color-dark-2"></em>
                                                       </a>
                                                       <a class="div-link-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                          height="25" viewBox="0 0 24 25" fill="none">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                          viewBox="0 0 24 25" fill="none">
                                                           <path d="M19.5 21.5H4.5V3.5H14.25L19.5 8.75V21.5Z"
                                                             stroke="#9E2B47" stroke-width="1.25"
                                                             stroke-miterlimit="10"></path>
@@ -408,8 +418,8 @@
                                   class="nk-menu-link toggle nk-quick-nav-icon mr-n1" data-original-title=""
                                   title=""><span class="nk-menu-text">Khác</span></a>
                                 <div class="nk-aside toggle-screen-lg submenu-mobile mobile-menu"
-                                  data-content="submenu-mobile" data-toggle-overlay-lv2="true"
-                                  data-toggle-screen="lg" data-toggle-body="true">
+                                  data-content="submenu-mobile" data-toggle-overlay-lv2="true" data-toggle-screen="lg"
+                                  data-toggle-body="true">
                                   <div class="nk-sidebar-menu content-menu-lv2" data-simplebar="init">
                                     <div class="simplebar-wrapper" style="margin: 0px 0px -40px;">
                                       <div class="simplebar-height-auto-observer-wrapper">
@@ -486,8 +496,8 @@
                                                   <div class="lv2-des">
                                                     <div class="lv2-des-content">
                                                       <a class="div-link-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                          height="24" viewBox="0 0 24 24" fill="none">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                          viewBox="0 0 24 24" fill="none">
                                                           <path
                                                             d="M5.10562 18.8944C4.24312 18.0319 4.815 16.2197 4.37625 15.1584C3.92063 14.0625 2.25 13.1719 2.25 12C2.25 10.8281 3.92063 9.9375 4.37625 8.84156C4.815 7.78125 4.24312 5.96812 5.10562 5.10562C5.96812 4.24312 7.78125 4.815 8.84156 4.37625C9.94219 3.92063 10.8281 2.25 12 2.25C13.1719 2.25 14.0625 3.92063 15.1584 4.37625C16.2197 4.815 18.0319 4.24312 18.8944 5.10562C19.7569 5.96812 19.185 7.78031 19.6238 8.84156C20.0794 9.94219 21.75 10.8281 21.75 12C21.75 13.1719 20.0794 14.0625 19.6238 15.1584C19.185 16.2197 19.7569 18.0319 18.8944 18.8944C18.0319 19.7569 16.2197 19.185 15.1584 19.6238C14.0625 20.0794 13.1719 21.75 12 21.75C10.8281 21.75 9.9375 20.0794 8.84156 19.6238C7.78125 19.185 5.96812 19.7569 5.10562 18.8944Z"
                                                             stroke="#9E2B47" stroke-width="1.25"
@@ -504,8 +514,8 @@
                                                         <em class="icon ni ni-chevron-right color-dark-2"></em>
                                                       </a>
                                                       <a class="div-link-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                          height="25" viewBox="0 0 24 25" fill="none">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                          viewBox="0 0 24 25" fill="none">
                                                           <path d="M19.5 21.5H4.5V3.5H14.25L19.5 8.75V21.5Z"
                                                             stroke="#9E2B47" stroke-width="1.25"
                                                             stroke-miterlimit="10"></path>
@@ -675,19 +685,19 @@
     </div>
   </div>
   <section class="home-vision-content">
-    <div class="col-12 col-md-10 home-vision-content-text">
-      <div class="col-12 col-md-35 form-control-wrap input-search-ct home-vision-content-search-input pl-0">
+    <div class="col-lg-10 home-vision-content-text">
+      <div class="col-12 col-md-35 form-control-wrap input-search-ct pl-0">
         <div class="form-icon form-icon-left home-vision-content-icon-search">
           <em class="ni ni-search color-white"></em>
         </div>
-        <input type="text" class="form-control home-vision-content-search" id="default-04"
+        <input type="text" class="form-control home-vision-content-search home-vision-content-search-input body-15 color-white" id="default-04"
           placeholder="Nhập từ khóa cần tìm kiếm...">
         <div class="form-icon form-icon-right home-vision-content-icon-right">
           <em class="ni ni-chevron-right color-white"></em>
         </div>
       </div>
-      <div class="line-h home-vision-content-text-line"></div>
-      <div class="col-12 home-vision-content-list pl-0 pr-0 row-ct">
+      <div class="line-h home-vision-content-text-line d-none-992"></div>
+      <div class="col-12 home-vision-content-list pl-0 pr-0 row-ct d-none-992">
         <a href="#" class="col-12 col-md-35 home-vision-content-item">
           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
             <path d="M11.4844 21.875C15.4108 21.875 18.5938 18.692 18.5938 14.7656C18.5938 10.8392 15.4108 7.65625 11.4844 7.65625C7.55798 7.65625 4.375 10.8392 4.375 14.7656C4.375 18.692 7.55798 21.875 11.4844 21.875Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
@@ -741,7 +751,46 @@
         </a>
       </div>
     </div>
-
+    <div class="home-vision-content-list-mobile">
+      <a class="home-vision-content-item-mobile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+          <path d="M10.3438 18.75C13.7092 18.75 16.4375 16.0217 16.4375 12.6562C16.4375 9.29076 13.7092 6.5625 10.3438 6.5625C6.97826 6.5625 4.25 9.29076 4.25 12.6562C4.25 16.0217 6.97826 18.75 10.3438 18.75Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M1.69824 23.438C2.63468 21.9982 3.91589 20.8151 5.42558 19.9961C6.93527 19.177 8.62562 18.748 10.3432 18.748C12.0607 18.748 13.7511 19.177 15.2607 19.9961C16.7704 20.8151 18.0517 21.9982 18.9881 23.438" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M20.6562 18.75C22.3737 18.749 24.0642 19.1773 25.574 19.9959C27.0838 20.8146 28.365 21.9976 29.3012 23.4375" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M18.3936 6.99609C19.2271 6.66363 20.1238 6.51938 21.0196 6.57366C21.9154 6.62793 22.7882 6.8794 23.5755 7.31008C24.3628 7.74076 25.0453 8.34002 25.5742 9.06505C26.1031 9.79008 26.4653 10.623 26.6349 11.5042C26.8046 12.3855 26.7775 13.2933 26.5556 14.1629C26.3338 15.0324 25.9225 15.8423 25.3514 16.5345C24.7802 17.2267 24.0633 17.7842 23.2517 18.1672C22.44 18.5502 21.5539 18.7492 20.6564 18.75" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+        </svg>
+        <span class="body-14 color-white">Khách hàng Cá nhân</span>
+      </a>
+      <div class="line-v home-vision-content-line-mobile"></div>
+      <a class="home-vision-content-item-mobile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+          <path d="M2.375 25.3125H28.625" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M11.75 25.3125V4.6875H4.25V25.3125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M26.75 25.3125V10.3125H19.25V25.3125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M19.25 15.9375H11.75" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M8 8.4375V10.3125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M8 14.0625V15.9375" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M8 19.6875V21.5625" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M15.5 19.6875V21.5625" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M23 19.6875V21.5625" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M23 14.0625V15.9375" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+        </svg>
+        <span class="body-14 color-white">Khách hàng doanh nghiệp</span>
+      </a>
+      <div class="line-v home-vision-content-line-mobile"></div>
+      <a class="home-vision-content-item-mobile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+          <path d="M3.3125 11.25H27.6875L15.5 3.75L3.3125 11.25Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M7.0625 11.25V20.625" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M12.6875 11.25V20.625" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M18.3125 11.25V20.625" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M23.9375 11.25V20.625" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M4.25 20.625H26.75" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+          <path d="M2.375 24.375H28.625" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+        </svg>
+        <span class="body-14 color-white">Định chế tài chính</span>
+      </a>
+    </div>
   </section>
 </body>
 
