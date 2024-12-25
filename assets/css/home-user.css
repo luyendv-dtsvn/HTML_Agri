@@ -124,6 +124,7 @@ body {
     text-align: center;
     padding-bottom: 1%;
     position: relative;
+    min-width: 100px;
 }
 
 .content-top-menu.underline::before {
@@ -172,7 +173,6 @@ body {
 
 .content-top-menu div {
     color: #5A5A5A;
-    font-size: 14px;
     font-weight: 500;
 }
 

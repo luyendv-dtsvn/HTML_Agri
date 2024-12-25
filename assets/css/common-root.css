@@ -842,16 +842,12 @@ button {
 }
 
 @media (max-width: 375px) {
-
-    .Heading-H5 {
-        font-size: 16px;
-        line-height: 120.00000476837158%;
-        letter-spacing: -1%;
+    .regular-16 {
+        font-family: 'BT Grotesk Regular';
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 1%;
     }
-}
-
-@media (max-width: 375px) {
-
     .heading-h4 {
         font-family: 'BT Grotesk Regular';
         font-size: 25px;
@@ -877,7 +873,6 @@ button {
     .body-17 {
         font-size: 15px;
     }
-
     .heading-h7 {
         font-family: 'BT Grotesk Regular';
         font-size: 19px;
