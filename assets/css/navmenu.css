@@ -38,12 +38,30 @@
   display: flex;
 }
 
+.div-pre-h-right {
+  display: flex;
+  padding-right: 8px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+.div-pre-h-right .line-v{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.50) 50%, rgba(255, 255, 255, 0.00) 100%);
+  height: 17px;
+}
+
 .top-user-right div,
 .top-user-left div {
-  margin: 10px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.top-user-right div.active,
+.top-user-left div.active {
+  border-bottom: 3px solid #701029;
+  background: rgba(66, 9, 24, 0.25);
 }
 
 /* Individual section */
@@ -919,9 +937,10 @@ span.ruby-c-content {
     align-self: stretch;
     background: linear-gradient(0deg, rgba(157, 29, 38, 0.00) 0%, #9D1D26 100%) !important;
   }
+
   .nk-header {
     border-bottom: none !important;
-}
+  }
 
   .header-mobile-menu {
     display: flex;
@@ -1423,6 +1442,7 @@ a.footer-mega-map:hover {
   gap: 8px;
   align-self: stretch;
 }
+
 .banner .gradient-background {
   /* position: relative;
   display: flex;
