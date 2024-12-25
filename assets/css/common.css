@@ -1156,6 +1156,10 @@ button {
 .footer {
     color: rgba(255, 255, 255, 0.80);
 }
+.footer-pre .div-content{
+    flex-direction: column;
+}
+
 
 .footer .accordion-icon {
     left: -1rem !important;
@@ -1257,7 +1261,7 @@ button {
 
 .footer .contact-now {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 8px;
 }
