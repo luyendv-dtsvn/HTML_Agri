@@ -121,26 +121,13 @@
     background: rgba(255, 255, 255, 0.20);
 }
 
-.home-vision-button-dropdown {
-    padding: .5rem 1.25rem;
-}
 
-.home-vision-button-dropdown a {
-    padding: 0;
-    color: black;
-}
-
-.home-vision-button-dropdown a:hover {
-    color: var(--red-1);
-}
 
 .home-vision-content-search::placeholder {
     color: #FFF;
 }
 
-.home-vision-header-button:hover {
-    background: #FFF;
-}
+
 
 @media (max-width: 1366px) {
     .home-vision-header-left, .home-vision-header-right, .home-vision-header-tab {

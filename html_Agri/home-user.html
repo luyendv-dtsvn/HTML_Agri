@@ -5,13 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cá Nhân</title>
+  <link rel="stylesheet" href="../assets/css/libs/font-awesome.min.css" />
     <link rel="stylesheet" href="../assets/css/libs/owl.carousel.css" />
   <link rel="stylesheet" href="../assets/css/dashlite.css" />
   <link rel="stylesheet" href="../assets/css/home-user.css" />
   <link rel="stylesheet" href="../assets/css/common.css" />
 
   <link rel="stylesheet" href="../assets/css/navmenu.css" />
-  <link rel="stylesheet" href="../assets/css/libs/font-awesome.min.css" />
+  
   <style>
 
   </style>
@@ -392,10 +393,15 @@
                   02432053205</span>
               </div>
               <div class="line-v" style="height: 36px;background: rgba(255, 255, 255, 0.20);"></div>
-              <div class="login body-regular-14" type="button">
-                Đăng nhập
-                <div class="icon-selection">
-                  <em class="icon ni ni-chevron-down regular-17"></em>
+              <div class="dropdown div-login">
+                <button id="tab-select-answer" class="btn body-14 color-dark-1 home-vision-header-button" data-toggle="dropdown">
+                    <span class="body-14 color-red-1">Đăng nhập</span><em class="ni ni-chevron-down color-red-1"></em></button>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-auto mt-1">
+                    <ul class="link-list-plain">
+                        <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 " data-tab="tab-agribank-plus">Agribank Plus</a><span class="subtitle-12 color-dark-3">khách hàng cá nhân</span></li>
+                        <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 " data-tab="tab-agribank-retail">Agribank Retail</a><span class="subtitle-12 color-dark-3">khách hàng cá nhân</span></li>
+                        <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 " data-tab="tab-agribank-orporate">Agribank Corporate</a><span class="subtitle-12 color-dark-3">khách hàng doanh nghiêp</span></li>
+                    </ul>
                 </div>
               </div>
             </div>
@@ -2296,15 +2302,11 @@
 <script src="../assets/js/bundle.js"></script>
 <script src="../assets/js/home.js"></script>
 <script src="../assets/js/scripts.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
-  integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="../assets/css/libs/aos.css" />
+<script src="../assets/js/libs/aos.js"></script>
 <script>
   $(document).ready(function () {
     $(".owl-carousel").owlCarousel({

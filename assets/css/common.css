@@ -1566,6 +1566,44 @@ button {
     flex-direction: column;
 }
 
+.div-login .dropdown-menu {
+    min-width: max-content;
+}
+
+.home-vision-header-button:hover {
+    background: var(--red-1);
+    color: white;
+}
+
+.home-vision-header-button:hover span,
+.home-vision-header-button:hover em {
+    color: white;
+}
+
+.home-vision-header-button {
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 4px;
+    background: var(--white, #FFF);
+    border: #FFF;
+}
+
+.home-vision-button-dropdown {
+    padding: .5rem 1.25rem;
+}
+
+.home-vision-button-dropdown a {
+    padding: 0;
+    color: black;
+}
+
+.home-vision-button-dropdown a:hover {
+    color: var(--red-1);
+}
+
 .card-rate .user-avatar {
     width: 36.457px;
     height: 38px;
