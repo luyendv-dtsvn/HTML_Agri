@@ -204,7 +204,7 @@ input:focus {
   position: relative;
     margin-bottom: 56px;
     display: inline-block;
-    width: 37%;
+    width: 100%;
     text-align: center;
 }
 
@@ -287,7 +287,6 @@ input:focus {
   position: relative;
   margin-bottom: 1%;
   display: inline-block;
-  width: 37.5%;
   text-align: center;
 }
 
@@ -310,6 +309,12 @@ input:focus {
   margin-bottom: 3%;
   padding-left: 0;
 
+
+}
+.info-card img{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 
@@ -508,7 +513,6 @@ input:focus {
   position: relative;
   margin-bottom: 56px;
   display: inline-block;
-  width: 30.5%;
   text-align: center;
   margin-bottom: 56px;
   color: #ffffff;
@@ -569,6 +573,7 @@ input:focus {
 }
 
 .community-stats-left-subtitle {
+  width:100% ;
   display: flex;
   margin: 30px 0;
   gap: 6%;
@@ -616,6 +621,7 @@ input:focus {
 
 .community-stats-left-title {
   display: block;
+
 }
 .background-top{
   background:
@@ -658,11 +664,17 @@ input:focus {
   box-sizing: border-box;
   /* Đảm bảo padding không làm thay đổi kích thước */
 }
+.div-show-more{
+  margin-bottom: 20px;
+}
+.community_slider{
+  padding-left: 4%;
+}
 
 
 @media (max-width: 1366px) {
   .about-subtitle,.announcement-subtitle,.reports-subtitle{
-    width: 53%;
+    width: 100%;
   }
   .info-overlay{
     width: 100%;
@@ -688,7 +700,7 @@ input:focus {
 
 @media (max-width: 1024px) {
   .about-subtitle,.announcement-subtitle,.reports-subtitle{
-    width: 68%;
+    width: 100%;
   }
   .about-us {
     margin: 121px 4% 0 4%;
@@ -734,6 +746,15 @@ input:focus {
 }
 
 @media (max-width: 768px) {
+  .img img {
+    width: 57%;
+  }
+  .report-left-title {
+    width: 100%;
+  }
+  .report-left-title-b {
+    width: 100%;
+}
   .about-subtitle,.announcement-subtitle,.reports-subtitle{
     width: 100%;
   }
@@ -752,7 +773,7 @@ input:focus {
     padding-right: 0;
   }
   .img{
-    padding-left:8%;
+    padding-left:5%;
 
   }
   .report-left img{
@@ -771,7 +792,11 @@ input:focus {
     gap: 20px;
 
   }
-
+  .info-card{
+    padding-right: 0;
+    padding-right: 0;
+  
+  }
   
   .content {
     padding: 0;
@@ -813,11 +838,9 @@ input:focus {
 }
 
 @media (max-width: 375px) {
-  .reports-subtitle,
-  .announcement-subtitle,
-  .about-subtitle{
+  .about-subtitle, .announcement-subtitle, .reports-subtitle {
     width: 100%;
-  }
+}
   .content {
     padding: 0;
   }
@@ -839,6 +862,8 @@ input:focus {
 }
 .info-card{
   padding-right: 0;
+  padding-right: 0;
+
 }
 .community-stats-left{
   padding-left: 0 !important;
