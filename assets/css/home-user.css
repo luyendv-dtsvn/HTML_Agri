@@ -57,6 +57,7 @@ body {
     background: #fff;
     border: 1px solid var(--Linear-1, #9E2B47);
 }
+
 /* Horizontal lines */
 .hrr {
     width: 1px;
@@ -360,14 +361,7 @@ input:focus {
 
 }
 
-.title {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+
 
 .title-bottom {
     position: absolute;
@@ -678,13 +672,14 @@ p {
         color: #FFF;
     }
 }
+
 .footer {
     width: 100%;
     padding-top: 48px;
     height: auto;
     position: relative;
     background: linear-gradient(270deg, #AF0B35 0%, #99193A 100%);
-box-shadow: 0px -12px 36px 0px rgba(0, 0, 0, 0.00);
+    box-shadow: 0px -12px 36px 0px rgba(0, 0, 0, 0.00);
     /* padding-top: ; */
 }
 
@@ -700,12 +695,14 @@ box-shadow: 0px -12px 36px 0px rgba(0, 0, 0, 0.00);
 
     color: rgba(255, 255, 255, 0.90);
 }
+
 .customer-care {
     display: flex;
 }
+
 /* luyendv */
-.div-image-recent {
-}
+.div-image-recent {}
+
 .logo-agr img {
     width: 251px;
 }
