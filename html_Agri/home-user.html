@@ -421,14 +421,27 @@
           <div class="header-mobile-menu">
             <a href="#" class="toggle nk-quick-nav-icon mr-n1" data-target="sideNav"><em
                 class="icon ni ni-menu"></em></a>
-            <div class="line-v" style="background-color: #F2F2F2; height: 30px;"></div>
-            <img src="../assets/images/logo-color.png">
+            <div class="line-v" style="background: rgba(255, 255, 255, 0.20); height: 30px;"></div>
+            <img src="../assets/images/logo-white.png">
           </div>
-          <div class="btn-login-mobile">
-            <span class="body-regular-14 color-white" type="button">
-              Đăng nhập
-              <em class="icon ni ni-chevron-down" style="font-size: 16px;"></em>
-            </span>
+          <div class="dropdown div-login">
+            <button id="tab-select-answer" class="btn body-14 color-dark-1 home-vision-header-button"
+              data-toggle="dropdown">
+              <span class="body-14 color-red-1">Đăng nhập</span><em
+                class="ni ni-chevron-down color-red-1"></em></button>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-auto mt-1">
+              <ul class="link-list-plain">
+                <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                    data-tab="tab-agribank-plus">Agribank Plus</a><span class="subtitle-12 color-dark-3">khách hàng
+                    cá nhân</span></li>
+                <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                    data-tab="tab-agribank-retail">Agribank Retail</a><span class="subtitle-12 color-dark-3">khách
+                    hàng cá nhân</span></li>
+                <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                    data-tab="tab-agribank-orporate">Agribank Corporate</a><span
+                    class="subtitle-12 color-dark-3">khách hàng doanh nghiêp</span></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="nk-content menu-mobile">
@@ -1144,7 +1157,7 @@
       <div>
         <div>
 
-          <div class="content-betwent active" data-content="tab1">
+          <div class="content-betwent active category-future" data-content="tab1">
             <div class="row-ct">
               <div class="col-12 col-lg-6 block-img-hover pl-0 pr-0">
                 <img src="../assets/images/home/tab1.png" alt="Cho vay ưu đãi">
@@ -2180,7 +2193,7 @@
               </div>
               <div class="line-h mt-5" style="background: rgba(255, 255, 255, 0.08);"></div>
               <div class="">
-                <div class="accordion-body footer-extend collapse pt-5" id="accordion-item-1" data-parent="#accordion">
+                <div class="accordion-body accordion-body-footer  footer-extend collapse pt-5" id="accordion-item-1" data-parent="#accordion">
                   <div class="accordion-inner p-0 row-ct">
                     <div class="col-6 col-sm-6 col-md-6 col-lg-3 block-h-2 pl-0 pb-5">
                       <div class="block-h">
@@ -2369,7 +2382,7 @@
     });
   });
 </script>
-<script src="../assets/js/libs/gsap.min.js" defer></script>
+<script src="../assets/js/libs/gsap.min.js" ></script>
 <script>
   gsap.to(".explore-btn", {
     y: 10,       // Di chuyển xuống 10px
@@ -2384,6 +2397,7 @@
     }, 800); // 800ms để scroll
   });
 </script>
+
 <script src="../assets/js/navmenu.js" defer></script>
 
 </html>

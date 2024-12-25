@@ -7,7 +7,6 @@
   /* Đảm bảo phần header chiếm toàn bộ chiều rộng */
   height: auto;
   /* Chiều cao tự động theo kích thước của ảnh */
-  background-image: url('/images/avatar/hoach-le-dinh-PeRt3uMmjYM-unsplash 1.png');
   background-size: cover;
   /* Đảm bảo ảnh phủ hết phần tử */
   background-position: center;
@@ -918,7 +917,11 @@ span.ruby-c-content {
     align-items: center;
     gap: 16px;
     align-self: stretch;
+    background: linear-gradient(0deg, rgba(157, 29, 38, 0.00) 0%, #9D1D26 100%) !important;
   }
+  .nk-header {
+    border-bottom: none !important;
+}
 
   .header-mobile-menu {
     display: flex;
@@ -932,7 +935,7 @@ span.ruby-c-content {
   }
 
   .header-mobile .nk-quick-nav-icon {
-    color: #AF0B35;
+    color: #fff;
   }
 
   .header-mobile .nk-header-fixed+.nk-content {

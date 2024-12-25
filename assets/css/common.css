@@ -1407,7 +1407,9 @@ button {
 }
 
 
-
+.header-mobile-menu a.active em{
+    color: var(--red-1);
+}
 .background-relative {
     position: relative;
     /* Đặt vị trí tương đối để quản lý phần tử con */
@@ -1574,7 +1576,7 @@ button {
     background: var(--red-1);
     color: white;
 }
-.home-user .title {
+.category-future .title {
     position: absolute;
     top: 0;
     left: 0;
@@ -1636,6 +1638,10 @@ button {
 }
 
 @media (max-width:1366px) {
+    .category-future .title {
+        padding-top: 35px;
+        padding-left: 35px;
+    }
     .heading-h1 {
         font-family: 'BT Grotesk Regular';
         /* font-size: 64px; */
@@ -1813,7 +1819,10 @@ button {
 }
 
 @media (max-width:1024px) {
-
+    .category-future .title {
+        padding-top: 25px;
+        padding-left: 25px;
+    }
     .home-user .custom-next,
     .home-user .custom-prev {
         width: 30px;
@@ -2019,6 +2028,10 @@ button {
 }
 
 @media (max-width:992px) {
+    .d-none-992{
+        display: none !important;
+    }
+    
     .pl-0-992 {
         padding-left: 0px !important;
     }
