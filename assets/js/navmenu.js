@@ -221,11 +221,9 @@ rubyMenu = function()
 
 rubyMenu();
 $(document).ready(function () {
-
-
 $('.btn-extend').on('click', function () {
     // const content = button.nextElementSibling; // Lấy phần tử accordion-content liên quan
-    const contentBody = $(".accordion-body");
+    const contentBody = $(".accordion-body-footer");
     const button = $('.btn-text-extend')
     // Thay đổi văn bản của nút accordion
       if (contentBody.hasClass('show')) {
