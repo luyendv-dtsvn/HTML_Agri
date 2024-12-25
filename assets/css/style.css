@@ -20,6 +20,155 @@ body {
   width: 100%;
   background-color: red;
 }
+.banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* Đảm bảo không có phần thừa */
+  height: 100vh;
+  /* Đặt chiều cao banner toàn màn hình */
+}
+.banner-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Đặt video vào giữa */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Đảm bảo video phủ toàn bộ khu vực mà không bị méo */
+}
+
+.input-search {
+  top: 77%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  border-radius: 4px;
+  background: linear-gradient(270deg, #af0b3591 0%, #c932598f 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 8px 28px 28px 28px;
+}
+
+.form-search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 26px 16px 26px 8px;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.23);
+}
+
+.form-search input {
+  width: 90%;
+  border: none;
+  background: transparent;
+  color: #FFF;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.80);
+}
+
+input:focus {
+  outline: none;
+}
+
+/* List of search results */
+.list-search {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+  /* position: relative; */
+}
+
+
+
+
+.search-product a,
+.calculation-tool a,
+.find-branch a,
+.fee-schedule a,
+.interest-rate a,
+.exchange-rate a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 4px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #fff !important;
+  border-radius: 4px;
+  background: #82283E;
+  position: relative;
+  align-items: center;
+}
+
+/* .owl-prev, */
+.btn-prev {
+  display: none;
+}
+
+.btn-next {
+  width: 8%;
+  height: 24%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(270deg, #b00c3605 40%, rgba(158, 43, 71, 0.00) 100%);
+  position: absolute;
+  bottom: 16%;
+  right: 2%;
+  backdrop-filter: blur(1px);
+}
+
+.btn-next svg {
+  position: absolute;
+
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  padding: 4px;
+  background: #6F182D;
+  top: 23%;
+  right: 1%;
+}
+
+.pull-down {
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pull-down-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  gap: 10px;
+}
+
+.hrr {
+  width: 1px;
+  height: 17px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.50) 50%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.hr {
+  width: 1px;
+  height: 36px;
+  background: #F2F2F2;
+  margin: 0 16px;
+}
 
 .content {
   padding: 0 5%;
@@ -55,7 +204,7 @@ body {
   position: relative;
     margin-bottom: 56px;
     display: inline-block;
-    width: 37%;
+    width: 100%;
     text-align: center;
 }
 
@@ -138,7 +287,6 @@ body {
   position: relative;
   margin-bottom: 1%;
   display: inline-block;
-  width: 37.5%;
   text-align: center;
 }
 
@@ -161,6 +309,12 @@ body {
   margin-bottom: 3%;
   padding-left: 0;
 
+
+}
+.info-card img{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 
@@ -214,7 +368,7 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   /* background: #f7f7f7; */
-  margin: 257px 0px 0 0px;
+  margin: 48px 0px 0 0px;
 }
 
 .reports-titles {
@@ -343,8 +497,9 @@ body {
 
 
 .img img{
-  width: 240px;
-  height: 336px;
+  width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 .reports-title {
   
@@ -358,7 +513,6 @@ body {
   position: relative;
   margin-bottom: 56px;
   display: inline-block;
-  width: 30.5%;
   text-align: center;
   margin-bottom: 56px;
   color: #ffffff;
@@ -381,6 +535,7 @@ body {
   gap: 50px;
   margin: 20px 0;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .community-stats-left-subtitle-a{
@@ -418,6 +573,7 @@ body {
 }
 
 .community-stats-left-subtitle {
+  width:100% ;
   display: flex;
   margin: 30px 0;
   gap: 6%;
@@ -465,6 +621,7 @@ body {
 
 .community-stats-left-title {
   display: block;
+
 }
 .background-top{
   background:
@@ -478,7 +635,7 @@ body {
   background:
     url('../images/home/Mask\ group1.png') no-repeat bottom center;
   background-position: bottom center;
- 
+  background-size: 100% 66%;
 }
 
 .cards-container {
@@ -507,8 +664,18 @@ body {
   box-sizing: border-box;
   /* Đảm bảo padding không làm thay đổi kích thước */
 }
+.div-show-more{
+  margin-bottom: 20px;
+}
+.community_slider{
+  padding-left: 4%;
+}
+
 
 @media (max-width: 1366px) {
+  .about-subtitle,.announcement-subtitle,.reports-subtitle{
+    width: 100%;
+  }
   .info-overlay{
     width: 100%;
     left: 0;
@@ -532,6 +699,9 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .about-subtitle,.announcement-subtitle,.reports-subtitle{
+    width: 100%;
+  }
   .about-us {
     margin: 121px 4% 0 4%;
     text-align: center;
@@ -576,6 +746,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .img img {
+    width: 57%;
+  }
+  .report-left-title {
+    width: 100%;
+  }
+  .report-left-title-b {
+    width: 100%;
+}
   .about-subtitle,.announcement-subtitle,.reports-subtitle{
     width: 100%;
   }
@@ -594,7 +773,7 @@ body {
     padding-right: 0;
   }
   .img{
-    padding-left:8%;
+    padding-left:5%;
 
   }
   .report-left img{
@@ -613,7 +792,11 @@ body {
     gap: 20px;
 
   }
-
+  .info-card{
+    padding-right: 0;
+    padding-right: 0;
+  
+  }
   
   .content {
     padding: 0;
@@ -655,11 +838,9 @@ body {
 }
 
 @media (max-width: 375px) {
-  .reports-subtitle,
-  .announcement-subtitle,
-  .about-subtitle{
+  .about-subtitle, .announcement-subtitle, .reports-subtitle {
     width: 100%;
-  }
+}
   .content {
     padding: 0;
   }
@@ -681,8 +862,50 @@ body {
 }
 .info-card{
   padding-right: 0;
+  padding-right: 0;
+
 }
 .community-stats-left{
   padding-left: 0 !important;
 }
+}
+
+.footer {
+    width: 100%;
+    padding-top: 48px;
+    height: auto;
+    position: relative;
+    background: linear-gradient(270deg, #AF0B35 0%, #99193A 100%);
+box-shadow: 0px -12px 36px 0px rgba(0, 0, 0, 0.00);
+    /* padding-top: ; */
+}
+
+.footer-top {
+    display: flex;
+}
+
+.logo-agr {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 58px 104 0 104px;
+
+    color: rgba(255, 255, 255, 0.90);
+}
+.customer-care {
+    display: flex;
+}
+/* luyendv */
+.div-image-recent {
+    /* width: 269px;
+    height: 168px;
+    overflow: hidden;
+    border-radius: 5px; */
+}
+
+.community-stats-right-title span {
+    text-transform: uppercase;
+}
+.logo-agr img {
+    width: 251px;
 }

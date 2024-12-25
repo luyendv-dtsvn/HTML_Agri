@@ -104,7 +104,7 @@ button {
 
 .heading-h1 {
     font-family: 'BT Grotesk Regular';
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 120.00000476837158%;
     letter-spacing: -1%;
 }
@@ -143,14 +143,14 @@ button {
 
 .heading-h5 {
     font-family: 'BT Grotesk Regular';
-    font-size: 37px;
+    font-size: 2.313rem;
     line-height: 129.99999523162842%;
     letter-spacing: -1%;
 }
 
 .heading-h6 {
     font-family: 'BT Grotesk Regular';
-    font-size: 33px;
+    font-size: 2.063rem;
     line-height: 120.00000476837158%;
     letter-spacing: -1%;
 }
@@ -1673,7 +1673,7 @@ button {
     .heading-h5 {
         font-family: 'BT Grotesk Regular';
         line-height: 129.99999523162842%;
-        font-size: 2rem;
+        font-size: 1.56rem;
         letter-spacing: -1%;
     }
 
