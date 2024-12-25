@@ -88,7 +88,8 @@
     border: rgba(255, 255, 255, 0.20);
 }
 
-.home-vision-content-search-input:before {
+.home-vision-content-search-input::before {
+    color: var(--white);
     content: "";
     position: absolute;
     top: 0;
@@ -97,7 +98,7 @@
     height: 100%;
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.20);
-    filter: blur(3.5px); /* Điều chỉnh giá trị mờ /
+    backdrop-filter: blur(3.5px); /* Điều chỉnh giá trị mờ /
     z-index: 1; / Đặt phía sau nội dung */
 }
 
@@ -107,6 +108,11 @@
 
 .home-vision-content-search:active {
     background: rgba(255, 255, 255, 0.20);
+}
+
+.home-vision-content-search:focus {
+    background: rgba(255, 255, 255, 0.20);
+    color: var(--white);
 }
 
 .home-vision-content-icon-search {
