@@ -389,6 +389,9 @@
   color: white;
   font-weight: 400;
 }
+.div-show-more{
+  display: none;
+}
 
 
 .img img{
@@ -594,6 +597,12 @@
 }
 
 @media (max-width: 1024px) {
+  .div-show-more{
+    display: block;
+  }
+  .div-show-more-1{
+    display: none;
+  }
   .about-subtitle,.announcement-subtitle,.reports-subtitle{
     width: 100%;
   }
