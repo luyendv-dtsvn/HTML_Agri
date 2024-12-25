@@ -88,19 +88,27 @@
     border: rgba(255, 255, 255, 0.20);
 }
 
+
+
+.home-vision-content-search-input {
+    position: relative; /* Đặt vị trí để ::before hoạt động đúng */
+    z-index: 2; /* Đặt lớp nội dung nằm trên */
+}
+
 .home-vision-content-search-input::before {
-    color: var(--white);
-    content: "";
+    content: ""; /* Đảm bảo nội dung giả được tạo */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.20);
-    backdrop-filter: blur(3.5px); /* Điều chỉnh giá trị mờ /
-    z-index: 1; / Đặt phía sau nội dung */
+    background: rgba(255, 255, 255, 0.2); /* Hiệu ứng mờ */
+    backdrop-filter: blur(3.5px); /* Tạo hiệu ứng mờ */
+    z-index: 1; /* Đặt phía sau nội dung */
+    pointer-events: none; /* Đảm bảo không can thiệp với sự tương tác */
 }
+
 
 .home-vision-content-search:hover {
     background: rgba(255, 255, 255, 0.20);
@@ -125,6 +133,11 @@
 
 .home-vision-content-text-line {
     background: rgba(255, 255, 255, 0.20);
+}
+
+.home-vision-content-search-blur {
+    position: relative; 
+    backdrop-filter: blur(3.5px);
 }
 
 
