@@ -71,3 +71,12 @@ input::placeholder {
     /* Loại bỏ viền mặc định */
     border: none;
 }
+.address{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.address select{
+    padding: 25%;
+}
+
