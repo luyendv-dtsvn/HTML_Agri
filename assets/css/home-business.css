@@ -1,46 +1,61 @@
 .home-business-background-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
     position: relative;
+  overflow: hidden; /* Đảm bảo không có phần thừa */
+  height: 100%; /* Chiều cao fix cứng theo viewport */
+  display: flex;
+}
+
+.home-financial-institution-section {
+    position: relative;
+  overflow: hidden; /* Đảm bảo không có phần thừa */
+  height: 100%; /* Chiều cao fix cứng theo viewport */
+  display: flex;
 }
 
 .home-business-background-containers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    position: relative;
+  z-index: 2; /* Để đảm bảo nội dung hiển thị trên background */
+  padding: 5%;
+  color: white;
 }
 
 .home-business-background {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .home-business-background img {
+    width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo ảnh hiển thị toàn bộ */
+}
+
+/* .home-business-background::before {
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
+    background-color: rgba(0, 0, 0, 0.5); 
+  } */
 
 .home-business-background-text {
-    position: absolute;
+    gap: 90px;
     width: 100%;
     height: 100%;
-    padding: 80px 5%;
+    display: flex;
+    flex-direction: column;
 }
 
 .home-business-background-content {
     display: flex;
-    height: 536px;
     flex-direction: column;
     align-items: flex-start;
     background: #fff;
@@ -61,6 +76,15 @@
     align-items: center;
     gap: 10px;
 }
+
+.home-business-background-mobile {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 14px;
+}
+
+
 
 .home-business-background-heading-tab span {
     padding-right: 10px;
@@ -105,7 +129,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    background: url(../images/vanhoa-vaylist-vaydetail/background-title-business.png);
+    border-right: 1px solid #eaeaea;
 }
 
 .home-business-background-titlte button {
@@ -118,11 +142,74 @@
     background: rgba(175, 11, 53, 0.06);
 }
 
+.home-business-item-card {
+    padding: 16px;
+    border-left: 1px solid #EBEBEB;
+    flex: 1;
+}
 
+.home-business-item-content {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
 
+.home-business-item-text {
+    display: flex;
+    padding: 4px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    padding-bottom: 60px;
+}
 
+.custom-next-business,
+.custom-prev-business {
+    border: 1px solid #DEDEDE;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+.custom-next-business:hover,
+.custom-prev-business:hover {
+    /* fill: #fff; */
+    background: var(--red-1, #AF0B35);
+}
+
+.custom-next-business:hover path,
+.custom-prev-business:hover path {
+    fill: #fff;
+}
+
+.custom-next-business:active,
+.custom-prev-business:active {
+    background: #fff;
+    border: 1px solid var(--Linear-1, #9E2B47);
+}
+
+.home-business-list-arrow-button {
+    display: none;
+    width: 100%;
+    height: 76px;
+    border-top: 1px solid #eaeaea;
+}
+
+.home-business-background-titlte img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
 /* home financial institution page */
+.home-financial-institution-text {
+    padding-bottom: 32px;
+}
+
 .provided-services-section {
     width: 100%;
     padding: 50px 5%;
@@ -150,13 +237,21 @@
 }
 
 .provided-services-item {
-    padding: 5px;
+    padding: 10px;
     overflow: hidden;
+}
+
+.provided-services-item:first-child {
+    padding-left: 0;
+}
+
+.provided-services-item:last-child {
+    padding-right: 0;
 }
 
 .provided-services-item img {
     width: 100%;
-  height: fix;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -168,15 +263,9 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
 }
 
-
-.community-stats {
-    flex-direction: column;
-    margin: 20px 5%;
-    gap: 44px;
-}
 
 .banking-finance-title {
     display: flex;
@@ -184,26 +273,197 @@
     justify-content: space-between;
     padding-bottom: 30px;
     border-bottom: 1px solid #eaeaea;
+    padding-top: 50px;
 }
 
-.banking-finance-title-main {
-    gap: 22px;
-}
 
-.banking-finance-title-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
-.banking-finance-card {
-    gap: 20px;
-}
 
 .banking-finance-card {
     align-self: stretch;
     gap: 34px;
     /* padding-right: 20px;
     padding-bottom: 20px; */
+    padding-bottom: 10px;
 }
+
+.home-financial-institution-content {
+    width: fit-content;
+    gap: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    padding: 24px 0px;
+    padding-right: 48px;
+}
+
+.home-financial-institution-line-pc {
+    display: flex;
+}
+
+.home-financial-institution-line-mobile {
+    display: none;
+}
+
+.home-business-background-img-pc {
+    display: flex;
+}
+
+.home-business-background-img-mobile {
+    display: none;
+}
+
+.home-financial-institution-item {
+    min-width: 140px;
+}
+
+.home-credit-rating-content {
+    padding: 40px 5%;
+}
+
+.home-credit-rating-brand {
+    padding-left: 50px;
+    gap: 11px;
+}
+
+.home-credit-rating-brand-item {
+    position: relative;
+    gap: 26px;
+    width: 212px;
+}
+
+.home-credit-rating-brand img{
+    position: static;
+}
+
+.line-v {
+    height: auto;
+}
+
+.line-h {
+    background: rgba(255, 255, 255, 0.13);
+}
+
+
+@media (max-width: 1024px) {
+    .home-business-background-heading-tab {
+        gap: 5px;
+        padding-left: 14px;
+    }
+
+    .home-business-background-heading-tab span {
+        padding-right: 5px;
+    }
+
+    .home-business-background-tab {
+        gap: 5px;
+    }
+
+    .home-business-background-tab button {
+        padding: 8px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .home-business-background-titlte {
+        padding: 24px;
+    }
+
+    .home-business-list-arrow-button {
+        display: flex;
+    }
+
+
+    .home-financial-institution-line-pc {
+        display: none;
+    }
+    
+    .home-financial-institution-line-mobile {
+        display: flex;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .provided-services-item {
+        padding: 10px 0px;
+    }
+
+    .home-financial-institution-section {
+        height: 100vh;
+    }
+
+    .home-business-background-containers {
+        padding: 35px 5%;
+    }
+
+    .home-business-background-text {
+        gap: 24px;
+    }
+
+    .home-business-background-heading-tab {
+        display: none;
+    }
+
+    .home-business-background-mobile {
+        display: flex;
+    }
+
+    .home-financial-institution-line-pc {
+        display: none;
+    }
+
+    .home-business-background-img-pc {
+        display: none;
+    }
+    
+    .home-business-background-img-mobile {
+        display: flex;
+    }
+    
+
+    .custom-next-business,
+    .custom-prev-business {
+        border: 1px solid #DEDEDE;
+        position: absolute;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .home-business-list-arrow-button {
+        height: 53px;
+    }
+
+    .home-business-background-titlte {
+        padding: 14px;
+        gap: 6em;
+        border-bottom: 1px solid #eaeaea;
+        border-right: none;
+    }
+
+    .home-financial-institution-content {
+        padding-right: 0;
+        gap: 20px;
+    }
+
+    .home-credit-rating-brand-item {
+        width: 150px;
+    }
+}
+
+@media (max-width: 375px) {
+    .home-financial-institution-content {
+        gap: 15px;
+    }
+
+    .home-credit-rating-brand {
+        gap: 8px;
+    }
+
+    .home-credit-rating-brand-item {
+        width: 110px;
+    }
+}
+

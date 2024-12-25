@@ -23,10 +23,18 @@ body {
 
 .content {
   padding: 0 5%;
-  background: url(../images/home/Mask\ group3.png) no-repeat bottom center;
-  background-size: 100% 66%;
   background-position: bottom center;
 }
+.community-stats {
+  display: flex;
+  margin: 20px 0;
+  justify-content: flex-start;
+}
+
+.div-image-recent {
+  border-radius: 5px;
+}
+
 
 .about-us {
   overflow: hidden;
@@ -152,6 +160,7 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
   background-size: 100% 100%;
   margin-bottom: 3%;
+  padding-left: 0;
 
 }
 
@@ -353,9 +362,10 @@ body {
 }
 
 .community {
-  margin: 121px 5% 0 5%;
+  margin: 121px 0% 0 0%;
   /* padding: 0 6 0 0; */
   padding-bottom: 45%;
+  height: auto;
 }
 
 .community-stats-left{
@@ -370,7 +380,9 @@ body {
   justify-content: space-between;
 }
 
-
+.community-stats-left-subtitle-a{
+  padding-left: 4%;
+}
 .community-stats-left-subtitle-a hr {
   border: 1px solid #EAEAEA;
 
@@ -410,8 +422,9 @@ body {
 }
 
 .community-stats-right-title {
-  margin-bottom: 40px;
-  margin-top: 30px;
+  display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .community-stats-left .stats div {
@@ -435,9 +448,11 @@ body {
 }
 
 .community-stats-left-1 {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
+  display: flex
+  ;
+      gap: 1rem;
+      margin-bottom: 20px;
+      overflow: hidden;
 }
 
 .community-stats-left-1:hover {
@@ -448,17 +463,19 @@ body {
 .community-stats-left-title {
   display: block;
 }
-
-.background-bottom {
-  width: 100%;
-  height: 100%;
+.background-top{
   background:
-    url('../images/home/Mask\ group1.png') no-repeat bottom center;
+    url('../images/home/Mask\ group3.png') no-repeat bottom center;
   /* Ảnh nền */
   background-size: 100% 66%;
-  /* Ảnh chiếm 2/3 chiều cao phần tử */
+  /* background-size: cover; */
+}
+
+.background-bottom {
+  background:
+    url('../images/home/Mask\ group1.png') no-repeat bottom center;
   background-position: bottom center;
-  /* Ảnh căn ở phía dưới */
+ 
 }
 
 .cards-container {
@@ -654,5 +671,11 @@ body {
 ;
     margin: 30px 0;
     gap: 3%;
+}
+.info-card{
+  padding-right: 0;
+}
+.community-stats-left{
+  padding-left: 0 !important;
 }
 }

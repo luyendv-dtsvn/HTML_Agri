@@ -220,3 +220,18 @@ rubyMenu = function()
 }
 
 rubyMenu();
+$(document).ready(function () {
+
+
+$('.btn-extend').on('click', function () {
+    // const content = button.nextElementSibling; // Lấy phần tử accordion-content liên quan
+    const contentBody = $(".accordion-body");
+    const button = $('.btn-text-extend')
+    // Thay đổi văn bản của nút accordion
+      if (contentBody.hasClass('show')) {
+        $('.btn-text-extend').html('<em class="icon ni ni-chevron-down" style="font-size: 20px;"></em> Mở rộng trang'); // Văn bản khi đóng
+      } else {
+        $('.btn-text-extend').html('<em class="icon ni ni-chevron-up" style="font-size: 20px;"></em> Thu gọn trang');
+        
+      }
+  });});
