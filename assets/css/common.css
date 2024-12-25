@@ -721,6 +721,7 @@ input:focus {
     overflow: hidden;
     height: 100vh;
 }
+
 /* .owl-prev, */
 .btn-prev {
     display: none;
@@ -767,10 +768,12 @@ input:focus {
     color: #ffffff;
     gap: 10px;
 }
+
 .owl-stage {
     display: flex;
     gap: 6px;
 }
+
 .slide {
     display: flex;
     margin-top: 5%;
@@ -784,6 +787,7 @@ input:focus {
     border-radius: 100px;
     border: 1px solid #DEDEDE;
 }
+
 /* Outstanding Products */
 .outstanding-products {
     position: relative;
@@ -793,6 +797,7 @@ input:focus {
     gap: 14px;
     flex-direction: column;
 }
+
 .owl-carousel-search .search-product a,
 .owl-carousel-search .calculation-tool a,
 .owl-carousel-search .find-branch a,
@@ -811,10 +816,12 @@ input:focus {
     position: relative;
     align-items: center;
 }
+
 /* luyendv */
 .logo-agr img {
     width: 251px;
 }
+
 .footer {
     width: 100%;
     padding-top: 48px;
@@ -841,7 +848,13 @@ input:focus {
 .customer-care {
     display: flex;
 }
+#community_slider_new .owl-nav.disabled, #community_slider_new .owl-dots.disabled {
+    display: none !important;
+}
 @media (max-width:1366px) {
+    .div-image-recent img {
+        max-width: 100%
+    }
     .top-user a {
         text-decoration: none;
         color: #fff;
@@ -859,6 +872,7 @@ input:focus {
         justify-content: center;
         align-items: center;
     }
+
     .top-menu-left {
         display: flex;
         align-items: center;
@@ -866,11 +880,6 @@ input:focus {
         color: rgba(0, 0, 0, 0.80);
     }
 
-    .content {
-        /* position: absolute;
-        text-align: center;
-        color: #FFF; */
-    }
     .category-future .title {
         padding-top: 35px;
         padding-left: 35px;
@@ -1053,6 +1062,12 @@ input:focus {
 }
 
 @media (max-width:1024px) {
+    .community-stats-left-1 {
+        display: flex;
+        flex-direction: column;
+        padding-right: 4%;
+    }
+
     .category-future .title {
         padding-top: 25px;
         padding-left: 25px;
