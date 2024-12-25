@@ -111,28 +111,32 @@ button {
 
 .heading-h2 {
     font-family: 'BT Grotesk Regular';
-    font-size: 3.438rem; /* 55px to rem */
+    font-size: 3.438rem;
+    /* 55px to rem */
     line-height: 89.99999761581421%;
     letter-spacing: 0%;
 }
 
 .heading-h3 {
     font-family: 'BT Grotesk Regular';
-    font-size: 3.25rem; /* 52px to rem */
+    font-size: 3.25rem;
+    /* 52px to rem */
     line-height: 120.00000476837158%;
     letter-spacing: -1%;
 }
 
 .heading-h4 {
     font-family: 'BT Grotesk Regular';
-    font-size: 2.875rem; /* 46px to rem */
+    font-size: 2.875rem;
+    /* 46px to rem */
     line-height: 129.99999523162842%;
     letter-spacing: -1%;
 }
 
 .heading-h4-5 {
     font-family: 'BT Grotesk Regular';
-    font-size: 2.5rem; /* 40px to rem */
+    font-size: 2.5rem;
+    /* 40px to rem */
     line-height: 129.99999523162842%;
     letter-spacing: -1%;
 }
@@ -153,133 +157,152 @@ button {
 
 .heading-h7 {
     font-family: 'BT Grotesk Regular';
-    font-size: 1.5625rem; /* 25px to rem */
+    font-size: 1.5625rem;
+    /* 25px to rem */
     line-height: 129.99999523162842%;
     letter-spacing: -1%;
 }
 
 .heading-h8 {
     font-family: 'BT Grotesk Medium';
-    font-size: 1.25rem; /* 20px to rem */
+    font-size: 1.25rem;
+    /* 20px to rem */
     line-height: 139.9999976158142%;
     letter-spacing: 0%;
 }
 
 .body-19 {
     font-family: 'BT Grotesk Medium';
-    font-size: 1.1875rem; /* 19px to rem */
+    font-size: 1.1875rem;
+    /* 19px to rem */
     line-height: 139.9999976158142%;
     letter-spacing: 0%;
 }
 
 .body-17 {
     font-family: 'BT Grotesk Medium';
-    font-size: 1.0625rem; /* 17px to rem */
+    font-size: 1.0625rem;
+    /* 17px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: -1%;
 }
 
 .body-18 {
     font-family: 'BT Grotesk Medium';
-    font-size: 1.125rem; /* 18px to rem */
+    font-size: 1.125rem;
+    /* 18px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 0%;
 }
 
 .body-16 {
     font-family: 'BT Grotesk Medium';
-    font-size: 1rem; /* 16px to rem */
+    font-size: 1rem;
+    /* 16px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: -1%;
 }
 
 .body-15 {
     font-family: 'BT Grotesk Medium';
-    font-size: 0.9375rem; /* 15px to rem */
+    font-size: 0.9375rem;
+    /* 15px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 1%;
 }
 
 .body-14 {
     font-family: 'BT Grotesk Medium';
-    font-size: 0.875rem; /* 14px to rem */
+    font-size: 0.875rem;
+    /* 14px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 0%;
 }
 
 .body-13 {
     font-family: 'BT Grotesk Medium';
-    font-size: 0.8125rem; /* 13px to rem */
+    font-size: 0.8125rem;
+    /* 13px to rem */
     line-height: 160.0000023841858%;
     letter-spacing: -1%;
 }
 
 .body-12 {
     font-family: 'BT Grotesk Medium';
-    font-size: 0.75rem; /* 12px to rem */
+    font-size: 0.75rem;
+    /* 12px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 2%;
 }
 
 .regular-18 {
     font-family: 'BT Grotesk Regular';
-    font-size: 1.125rem; /* 18px to rem */
+    font-size: 1.125rem;
+    /* 18px to rem */
     line-height: 150%;
     letter-spacing: -1%;
 }
 
 .regular-17 {
     font-family: 'BT Grotesk Regular';
-    font-size: 1.0625rem; /* 17px to rem */
+    font-size: 1.0625rem;
+    /* 17px to rem */
     line-height: 29px;
     letter-spacing: -2%;
 }
 
 .regular-16 {
     font-family: 'BT Grotesk Regular';
-    font-size: 1rem; /* 16px to rem */
+    font-size: 1rem;
+    /* 16px to rem */
     line-height: 150%;
     letter-spacing: 1%;
 }
 
 .regular-15 {
     font-family: 'BT Grotesk Regular';
-    font-size: 0.9375rem; /* 15px to rem */
+    font-size: 0.9375rem;
+    /* 15px to rem */
     line-height: 150%;
     letter-spacing: 1%;
 }
 
 .regular-14 {
     font-family: 'BT Grotesk Regular';
-    font-size: 0.875rem; /* 14px to rem */
+    font-size: 0.875rem;
+    /* 14px to rem */
     line-height: 139.9999976158142%;
     letter-spacing: 2%;
 }
 
 .regular-13 {
     font-family: 'BT Grotesk Regular';
-    font-size: 0.8125rem; /* 13px to rem */
+    font-size: 0.8125rem;
+    /* 13px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 2%;
 }
 
 .regular-12 {
     font-family: 'BT Grotesk Regular';
-    font-size: 0.75rem; /* 12px to rem */
+    font-size: 0.75rem;
+    /* 12px to rem */
     line-height: 139.9999976158142%;
     letter-spacing: 0%;
 }
 
 .subtitle-12 {
     font-family: 'BT Grotesk Regular';
-    font-size: 0.75rem; /* 12px to rem */
+    font-size: 0.75rem;
+    /* 12px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 4%;
 }
 
 .subtitle-14 {
     font-family: 'BT Grotesk Medium';
-    font-size: 0.875rem; /* 14px to rem */
+    font-size: 0.875rem;
+    /* 14px to rem */
     line-height: 139.9999976158142%;
     letter-spacing: 4%;
 }
@@ -1156,7 +1179,8 @@ button {
 .footer {
     color: rgba(255, 255, 255, 0.80);
 }
-.footer-pre .div-content{
+
+.footer-pre .div-content {
     flex-direction: column;
 }
 
@@ -1171,7 +1195,7 @@ button {
     background-size: cover;
     gap: 20px;
     justify-content: center;
-    padding: 135px;
+    padding: 5%;
 
 }
 
@@ -1334,6 +1358,15 @@ button {
     background-size: cover;
 }
 
+.hot-line {
+    opacity: 0.9;
+    color: #FFF;
+}
+
+.hot-line .txt-hl {
+    color: rgba(255, 255, 255, 0.60)
+}
+
 .footer .block-h-2 {
     display: flex;
     flex-direction: column;
@@ -1471,6 +1504,7 @@ button {
 .community-stats-left-title p {
     font-size: 20px;
 }
+
 .community {
     height: 887px;
     padding: 0 4.9%;
@@ -1481,6 +1515,7 @@ button {
 .community-stats-right-title span {
     text-transform: uppercase;
 }
+
 .community-stats-left-subtitle-a {
     padding-left: 50px;
 }
@@ -1498,6 +1533,7 @@ button {
 
 
 }
+
 .community-stats {
     display: flex;
     margin: 20px 0;
@@ -1507,9 +1543,51 @@ button {
 .div-image-recent {
     border-radius: 5px;
 }
+
 .div-image-recent img {
     max-width: fit-content;
 }
+
+.home-table-exchange-576 {
+    display: none;
+}
+
+.rate-item {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: #28140C;
+}
+
+.rate-accordions {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-rate .user-avatar {
+    width: 36.457px;
+    height: 38px;
+}
+
+.home-table-exchange-576 .info-item-rate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    min-width: 120px;
+
+}
+
+.home-table-exchange-576 .info-item-rate .rate-title {
+    color: #494949;
+}
+
+.home-table-exchange-576 .info-item-rate .rate-value {
+    color: #28140C;
+}
+
 @media (max-width:1366px) {
     .heading-h1 {
         font-family: 'BT Grotesk Regular';
@@ -1950,6 +2028,18 @@ button {
 
 
 @media (max-width:768px) {
+    .home-user .home-table-exchange {
+        padding: 28px 10px;
+    }
+
+    .home-user .home-table-exchange-576 {
+        padding: 28px 10px;
+    }
+
+    .d-none-768 {
+        display: none !important;
+    }
+
     .footer .block-h {
         flex-direction: unset;
     }
@@ -2166,6 +2256,19 @@ button {
 }
 
 @media (max-width: 576px) {
+    .home-table-exchange {
+        display: none;
+    }
+
+    .home-table-exchange-576 {
+        display: block;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        background: #FFF;
+        padding: 38px 42px;
+        border-radius: 4px;
+    }
+
     .nk-content {
         padding-right: 16px;
         padding-left: 16px;

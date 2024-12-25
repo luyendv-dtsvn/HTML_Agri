@@ -295,7 +295,6 @@ ul.ruby-menu>li>a {
   padding: 0 25px 0 15px;
   color: #FFF;
   text-decoration: none;
-  font-weight: 700;
 }
 
 ul.ruby-menu>li>a:only-child {
@@ -376,7 +375,6 @@ ul.ruby-menu.ruby-menu-dividers>li.ruby-menu-social.ruby-menu-search>a>span inpu
   color: #efefef;
   border: none;
   font-size: 14px;
-  font-weight: 700;
   text-transform: uppercase;
   max-width: 0;
   transform: scaleY(0);
@@ -601,7 +599,6 @@ ul.ruby-menu>li.ruby-menu-mega-shop>div>ul>li>a {
   display: block;
   padding: 20px 15px;
   text-transform: uppercase;
-  font-weight: 700;
   font-size: 14px;
   font-stretch: expanded;
   color: #666
@@ -761,7 +758,6 @@ div.ruby-grid img {
 h3.ruby-list-heading {
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
   margin: 0
 }
 
@@ -834,7 +830,6 @@ span.ruby-c-date a {
 span.ruby-c-title,
 span.ruby-c-title a {
   font-size: 14px;
-  font-weight: 700;
   text-transform: capitalize;
   line-height: 20px;
   margin-top: -5px;
