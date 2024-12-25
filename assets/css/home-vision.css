@@ -1,0 +1,172 @@
+@import url(common.css);
+.home-vision-header {
+    width: 100%;
+    display: flex;
+    padding: 20px 5%;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #AF0B35 0%, #8F1030 86%);
+}
+
+.home-vision-header-left {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.home-vision-header-tab {
+    display: flex;
+}
+
+.home-vision-header-tab span, .home-vision-header-hotline {
+    padding: 9px 10px;
+}
+
+.home-vision-header-right {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.home-vision-header-button {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 4px;
+    background: var(--white, #FFF);
+    border: #FFF;
+}
+
+.home-vision-header-line {
+    height: 36px;
+}
+
+.home-vision-content {
+    position: relative;
+    overflow: hidden; /* Đảm bảo không có phần thừa */
+    height: 100vh; /* Chiều cao fix cứng theo viewport */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url('../images/home/homerg.png') no-repeat center ;
+    background-size: cover;
+}
+
+.home-vision-content-text {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 5%;
+    gap: 20px;
+}
+
+.home-vision-content-list {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-vision-content-item {
+    min-height: 140px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    justify-content: space-between;
+    background: linear-gradient(270deg, rgba(175, 11, 53, 0.85) 0%, rgba(201, 50, 89, 0.85) 100%);
+}
+
+.home-vision-content-item-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-vision-content-search {
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.20);
+    border: rgba(255, 255, 255, 0.20);
+}
+
+.home-vision-content-search::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.20);
+    filter: blur(3.5px); /* Điều chỉnh giá trị mờ /
+    z-index: 1; / Đặt phía sau nội dung */
+}
+
+.home-vision-content-search:hover {
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.home-vision-content-search:active {
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.home-vision-content-icon-search {
+    left: 13px;
+}
+
+.home-vision-content-icon-right {
+    right: 13px;
+}
+
+.home-vision-content-text-line {
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.home-vision-button-dropdown {
+    padding: .5rem 1.25rem;
+}
+
+.home-vision-button-dropdown a {
+    padding: 0;
+    color: black;
+}
+
+.home-vision-button-dropdown a:hover {
+    color: var(--red-1);
+}
+
+.home-vision-content-search::placeholder {
+    color: #FFF;
+}
+
+.home-vision-header-button:hover {
+    background: #FFF;
+}
+
+@media (max-width: 1366px) {
+    .home-vision-header-left, .home-vision-header-right, .home-vision-header-tab {
+        gap: 9px;
+    }
+
+    .home-vision-header-tab span, .home-vision-header-hotline {
+        padding: 0;
+        padding-top: 2px;
+    }
+
+    .home-vision-header {
+        padding: 15px 2%;
+    }
+}
+
+@media (max-width: 992px) {
+    .home-vision-content {
+        align-items: center;
+    } 
+
+    .home-vision-content-list {
+        gap: 15px;
+    }
+
+    .home-vision-content-search-input {
+        padding-right: 0%;
+    }
+}
