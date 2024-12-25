@@ -46,7 +46,7 @@
 .home-vision-content {
     position: relative;
     overflow: hidden; /* Đảm bảo không có phần thừa */
-    height: 100vh; /* Chiều cao fix cứng theo viewport */
+    height: calc(100vh - 87px);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -197,6 +197,7 @@
         align-items: center;
         justify-content: flex-end;
         flex-direction: column;
+        height: 100vh;
     }
 
     .home-vision-content-list {

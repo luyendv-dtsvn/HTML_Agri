@@ -991,6 +991,19 @@ input:focus {
 
 
 @media (max-width:768px) {
+    .content-top-menu.underline::before {
+        width: 100%;
+    }
+    .content-top {
+        justify-content: flex-start;
+    }
+    .content-top-menu {
+        padding-bottom: 20px;
+    }
+    .content-top-menu svg {
+        margin-bottom: 10px;
+        /* Hiệu ứng chuyển màu mượt */
+    }
     .home-user .home-table-exchange {
         padding: 28px 10px;
     }
