@@ -49,22 +49,146 @@
 }
 
 .blog-title-main-content {
-    padding: 0px 5%;
+    padding: 0px 5.5%;
 }
 
 .background-center {
     display: flex;
     justify-content: center;
-}
+}  
 
 .blog-top-news-item {
-    flex: 1;
+    overflow: hidden;
+    justify-content: center;
+}
+.blog-top-news-item-title{
+    width: 50%;
+    bottom: 38px;
+    margin-left: 31px;
+    position: absolute;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+
+}
+.blog-top-news-item-slide{
     position: relative;
-    overflow: hidden; /* Đảm bảo không có phần thừa */
+}
+.slick-dots li button {
+    height:2px ;
+    width: 42px;
+}
+.content-betwent {
+margin-top: 58px;
+}
+.content-betwent-title {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 16px;
+}
+
+.content-betwent-subtitle {
+    flex: 1 1 calc(25% - 16px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: hidden;
+    border-radius: 4px;
+
+}
+.content-betwent-subtitle a {
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+
+}
+
+
+.content-betwent-subtitle img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.content-betwent-subtitle:hover img {
+    transform: scale(1.1);
+}
+.cate {
+    color: #494949;
+}
+.subtitle{
+    color: #393939;
+}
+.notification-slide,
+.tab{
+    padding: 0 5.5%;
+}
+.turn-page {
+
     display: flex;
     justify-content: center;
-    background: url('../images/top-new-1.png') no-repeat center ;
-    background-size: cover;
+   
+    align-items: center;
+ 
+    flex-wrap: wrap;
+   
+    margin: 30px auto 91px auto;
+ 
+}
+
+.stt {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+
+}
+.notification-slide-new{
+    
+}
+
+
+
+.stt:hover {
+    background-color: #AF0B35;
+    
+    color: #ffffff;
+}
+
+
+.stt:active {
+    background-color: #ffffff;
+   
+    border: 1px solid #AF0B35;
+    color: #333;
+    
+}
+.notification{
+    text-align: center;
+}
+.notification-slide-new-title{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.see-more a{
+   display: flex;
+   justify-content: center;
+    gap: 8px;
+}
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+    display: flex;
+    gap: 10px;
 }
 
 @media (max-width: 992px) {
@@ -263,6 +387,7 @@ body {
     border-radius: 4px;
 
 }
+
 
 .content-betwent-subtitle img {
     width: 100%;
