@@ -1,8 +1,12 @@
 .home-business-background-section {
     position: relative;
-  overflow: hidden; /* Đảm bảo không có phần thừa */
-  height: 100%; /* Chiều cao fix cứng theo viewport */
-  display: flex;
+    overflow: hidden; /* Đảm bảo không có phần thừa */
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: url('../images/vanhoa-vaylist-vaydetail/home-business-background.png') lightgray 50% / cover no-repeat;
+    background-size: cover;
 }
 
 .home-financial-institution-section {
@@ -17,8 +21,9 @@
 }
 
 .home-business-background-containers {
-  padding: 5%;
-  color: white;
+    width: 100%;
+    padding: 5%;
+    color: white;
 }
 
 .home-business-background {
