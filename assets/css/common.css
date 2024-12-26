@@ -867,7 +867,7 @@ input:focus {
 
     .top-user-right div,
     .top-user-left div {
-        margin: 10px;
+        /* margin: 10px; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -884,6 +884,7 @@ input:focus {
         padding-top: 35px;
         padding-left: 35px;
     }
+
 }
 
 @media (max-width:1024px) {
@@ -1057,6 +1058,9 @@ input:focus {
 }
 
 @media (max-width: 576px) {
+    .header-mobile-menu img{
+        width: 160px;
+    }
     .home-table-exchange {
         display: none;
     }
