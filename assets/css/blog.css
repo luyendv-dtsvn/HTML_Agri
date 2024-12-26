@@ -1,4 +1,103 @@
-* {
+@import url(common.css);
+/* viet file common */
+.background-white {
+    background: #fff;
+}
+
+.button-login-red {
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 4px;
+    background: var(--red-1);
+    border: var(--red-1);
+}
+
+/* end common */
+
+.blog-title-section {
+    position: relative;
+    overflow: hidden; /* Đảm bảo không có phần thừa */
+    height: 583px;
+    display: flex;
+    justify-content: center;
+    background: url('../images/background-title-blog.png') no-repeat center ;
+    background-size: cover;
+}
+
+.blog-title-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 5%;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.blog-title-sub {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.blog-title-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.blog-title-main-content {
+    padding: 0px 5%;
+}
+
+.background-center {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-top-news-item {
+    flex: 1;
+    position: relative;
+    overflow: hidden; /* Đảm bảo không có phần thừa */
+    display: flex;
+    justify-content: center;
+    background: url('../images/top-new-1.png') no-repeat center ;
+    background-size: cover;
+}
+
+@media (max-width: 992px) {
+    .blog-title-section {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-title-section {
+        height: 425px;
+    }
+
+    .blog-title-text {
+        padding: 27px 5%;
+    }
+}
+
+@media (max-width: 375px) {
+    .blog-title-section {
+        height: 363px;
+    }
+
+    .blog-title-text {
+        padding: 18px 5%;
+    }
+}
+
+
+
+
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,23 +110,23 @@ body {
     width: 100%;
     background-color: #ffffff;
     color: #333;
-    /* width: 100%; */
+
 }
 
 .content {
-    /* width: 100% ; */
+
     margin: 0 6.5%;
 }
 
 .content-top {
     margin-top: 30px;
     display: flex;
-    /* gap: 20px; */
+
     text-align: center;
     justify-content: center;
     margin: 38px 50px 0 50px;
     justify-content: space-between;
-    /* white-space: nowrap; */
+
 
 
 
@@ -41,7 +140,6 @@ body {
     color: #9E2B47;
 }
 
-/* Ẩn menu mobile và desktop mặc định */
 .menu-top-mobile {
     display: none;
 }
@@ -54,12 +152,11 @@ body {
 .content-top-menu {
     display: inline-block;
     cursor: pointer;
-    /* width: 16%; */
     text-align: center;
     padding-bottom: 1%;
     position: relative;
     flex: 1;
-    /* text-align: center; */
+
     padding:0 2% 1% 2%;
     box-sizing: border-box;
 }
@@ -82,13 +179,11 @@ body {
     margin-bottom: 16px;
 }
 
-/* Menu mobile */
-/* Thiết lập cho menu top mobile */
 .menu-top-mobile {
     width: 100%;
 }
 
-/* Button menu mobile */
+
 .menu-top-mobile button {
     width: 100%;
     border: none;
@@ -97,13 +192,13 @@ body {
     text-align: center;
     color: #AF0B35;
     background-color: transparent;
-    /* Nền trong suốt */
+ 
     padding: 10px 15px;
-    /* Khoảng cách cho button */
+  
     font-size: 16px;
-    /* Đảm bảo text dễ đọc */
+   
     cursor: pointer;
-    /* Đổi con trỏ khi hover */
+   
 }
 
 .dropdown-menu {
@@ -116,7 +211,7 @@ body {
 
 
 .content-betwent {
-    /* margin: 0 0 0 104px; */
+ 
     display: none;
 
 
@@ -126,7 +221,7 @@ body {
 
 .content-betwent.active {
     display: block;
-    /* Tab hiện tại sẽ hiển thị */
+  
 }
 
 
@@ -134,12 +229,12 @@ body {
 .content-top-menu svg {
     transition: stroke 0.3s ease;
     margin-bottom: 6.5%;
-    /* Hiệu ứng chuyển màu mượt */
+
 }
 
 .content-top-menu.active svg path {
     stroke: #9E2B47;
-    /* Màu đỏ khi được click */
+  
 }
 
 .content-top-menu div {
@@ -159,7 +254,7 @@ body {
 
 .content-betwent-subtitle {
     flex: 1 1 calc(25% - 16px);
-    /* width: 80%; */
+   
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -201,13 +296,13 @@ body {
 
     display: flex;
     justify-content: center;
-    /* Căn giữa các phần tử con theo chiều ngang */
+   
     align-items: center;
-    /* Căn giữa các phần tử con theo chiều dọc nếu cần */
+ 
     flex-wrap: wrap;
-    /* Nếu cần thiết, cho phép các phần tử con xuống dòng */
+   
     margin: 30px auto 50px auto;
-    /* Tự động căn giữa phần tử cha (nếu cần) */
+ 
 }
 
 .stt {
@@ -218,34 +313,29 @@ body {
     align-items: center;
     width: 35px;
     height: 35px;
-    /* border: 1px solid black; */
+
     border-radius: 4px;
     text-align: center;
     transition: background-color 0.3s, transform 0.2s;
-    /* Thêm hiệu ứng chuyển màu nền và chuyển động */
+
 }
 
 
-/* Khi hover */
+
 .stt:hover {
     background-color: #AF0B35;
-    /* Thay đổi màu nền khi hover */
-    /* transform: scale(1.1);        Phóng to phần tử khi hover */
+    
     color: #ffffff;
 }
 
-/* Khi active (nhấn vào) */
+
 .stt:active {
     background-color: #ffffff;
-    /* Màu nền khi phần tử đang được nhấn */
-    /* transform: scale(0.9); */
-    /* Thu nhỏ phần tử khi active */
+   
     border: 1px solid #AF0B35;
     color: #333;
     
 }
-
-/* Khi phần tử có lớp 'active' thì giữ màu nền khi được nhấn */
 
 
 @media (max-width:1366px) {
@@ -256,7 +346,7 @@ body {
 
     .content-betwent-subtitle {
         flex: 1 1 calc(25% - 16px);
-        /* Mỗi hàng hiển thị 2 phần tử */
+      
     }
 
     .content-top {
@@ -274,7 +364,7 @@ body {
 
     .content-betwent-subtitle {
         flex: 1 1 calc(50% - 16px);
-        /* Mỗi hàng hiển thị 2 phần tử */
+      
     }
 
 
@@ -285,12 +375,11 @@ body {
 @media (min-width: 769px) {
     .content-top {
         display: block;
-        /* Hiển thị menu desktop */
     }
 
     .menu-top-mobile {
         display: none;
-        /* Ẩn menu mobile */
+       
     }
 }
 
@@ -310,12 +399,12 @@ body {
 
     .content-top {
         display: none;
-        /* Ẩn menu desktop */
+       
     }
 
     .menu-top-mobile {
         display: block;
-        /* Hiển thị menu mobile */
+       
     }
 
     .content-top-menu svg {
@@ -325,7 +414,7 @@ body {
 
     .content-betwent-subtitle {
         flex: 1 1 calc(100% - 16px);
-        /* Mỗi hàng hiển thị 2 phần tử */
+       
     }
 
     .content-top {
@@ -350,14 +439,13 @@ body {
 
     .content-top-menu {
         width: 100%;
-        /* Mỗi menu sẽ chiếm 100% chiều rộng */
+      
         margin-bottom: 10px;
-        /* Khoảng cách giữa các menu */
-    }
+       
 
     .content-betwent-subtitle {
         flex: 1 1 calc(100% - 16px);
-        /* Mỗi hàng hiển thị 2 phần tử */
+       
     }
 
     .content {
@@ -366,32 +454,32 @@ body {
 
     .content-top-menu {
         display: block;
-        /* Mỗi menu chiếm một dòng */
+       
         width: 100%;
-        /* Đảm bảo menu chiếm hết chiều rộng */
+       
         text-align: center;
-        /* Căn giữa nội dung */
+        
     }
 
     .content-top {
         display: block;
     }
 
-    /* Tạo hiệu ứng dropdown cho menu */
+   
     .content-top-menu {
         position: relative;
     }
 
     .content-top-menu .body-16 {
         display: inline-block;
-        /* Đảm bảo nội dung hiển thị cùng icon */
+       
         margin-left: 10px;
     }
 
-    /* SVG mũi tên */
+
     .content-top-menu::after {
         content: '';
-        /* Xóa nội dung ký tự */
+      
         position: absolute;
         right: 10px;
         top: 50%;
@@ -401,15 +489,15 @@ body {
     }
 
     .content-top-menu::after {
-        /* Thêm SVG vào ::after */
+        
         background: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22 fill=%22none%22%3E%3Cpath d=%22M16.25 7.5L10 13.75L3.75 7.5%22 stroke=%22%239E2B47%22 stroke-width=%221.42857%22 stroke-linecap=%22square%22/%3E%3C/svg%3E') no-repeat center center;
         background-size: contain;
-        /* Đảm bảo SVG không bị co giãn */
+       
     }
 
     .content-top-menu:hover .body-16 {
         color: #007bff;
-        /* Chuyển màu khi hover */
+       
     }
 
-}
+} */
