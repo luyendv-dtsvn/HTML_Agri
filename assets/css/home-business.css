@@ -7,15 +7,16 @@
 
 .home-financial-institution-section {
     position: relative;
-  overflow: hidden; /* Đảm bảo không có phần thừa */
-  height: 100%; /* Chiều cao fix cứng theo viewport */
-  display: flex;
+    overflow: hidden; /* Đảm bảo không có phần thừa */
+    height: calc(100vh - 87px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: url('../images/vanhoa-vaylist-vaydetail/financial-institution-backgroun-1.png') lightgray 50% / cover no-repeat;
+    background-size: cover;
 }
 
 .home-business-background-containers {
-    height: 100%;
-    position: relative;
-  z-index: 2; /* Để đảm bảo nội dung hiển thị trên background */
   padding: 5%;
   color: white;
 }
@@ -207,7 +208,10 @@
 
 /* home financial institution page */
 .home-financial-institution-text {
+    display: flex;
+    gap: 20px;
     padding-bottom: 32px;
+    flex-direction: column;
 }
 
 .provided-services-section {
@@ -221,6 +225,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    align-items: center;
 }
 
 .provided-services-title {
@@ -228,6 +233,7 @@
     flex-direction: column;
     align-items: center;
     gap: 14px;
+    max-width: 381px;
 }
 
 .provided-services-title h2 {
@@ -239,6 +245,7 @@
 .provided-services-item {
     padding: 10px;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .provided-services-item:first-child {
@@ -253,6 +260,16 @@
     width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 4px;
+}
+
+.provided-services-item-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 14px;
 }
 
 .provided-services-item-text {
@@ -263,7 +280,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 48px;
 }
 
 
@@ -320,6 +337,7 @@
 }
 
 .home-credit-rating-brand {
+    display: flex;
     padding-left: 50px;
     gap: 11px;
 }
@@ -332,6 +350,16 @@
 
 .home-credit-rating-brand img{
     position: static;
+}
+
+
+.home-business-background-text-title::before {
+    width: 964px;
+    height: 483px;
+    flex-shrink: 0;
+    border-radius: 964px;
+    background: rgba(0, 0, 0, 0.60);
+    filter: blur(52px);
 }
 
 .line-v {
@@ -361,6 +389,10 @@
         padding: 8px;
     }
 
+    .provided-services-item-text {
+        padding: 38px;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -379,6 +411,10 @@
     
     .home-financial-institution-line-mobile {
         display: flex;
+    }
+
+    .provided-services-item-text {
+        padding: 35px;
     }
 }
 
@@ -451,6 +487,10 @@
     .home-credit-rating-brand-item {
         width: 150px;
     }
+
+    .provided-services-item-text {
+        padding: 48px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -464,6 +504,10 @@
 
     .home-credit-rating-brand-item {
         width: 110px;
+    }
+
+    .provided-services-item-text {
+        padding: 32px;
     }
 }
 
