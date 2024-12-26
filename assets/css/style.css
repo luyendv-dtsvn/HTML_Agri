@@ -3,7 +3,10 @@
 
 
 
-
+.banner-header {
+  background-image: url('../images/home/image\ 6422.png');
+  background-size: cover;
+}
 
 /* .owl-prev, */
 .btn-prev {
@@ -91,13 +94,11 @@
 
   color: #494949;
   margin-bottom: 5px;
-  margin-top: 51px;
 }
 
 .about-subtitle {
-  margin-bottom: 56px;
   position: relative;
-    margin-bottom: 56px;
+    margin-bottom: 46px;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -143,7 +144,7 @@
 
 .card-title {
   position: absolute;
-
+color: #5A5A5A;
   bottom: 24px;
   left: 27px;
 
@@ -171,7 +172,7 @@
 }
 .announcement {
   text-align: center;
-  margin: 121px 0px 0 0px;
+  margin: 153px 0px 0 0px;
 }
 
 .announcement-title {
@@ -200,12 +201,13 @@
 }
 
 .info-card {
+  height: 100%;
   border-radius: 4px;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
   background-size: 100% 100%;
-  margin-bottom: 3%;
-  padding-left: 0;
+  padding-left: 10px;
+padding-right: 10px;
 
 
 }
@@ -225,6 +227,7 @@
   color: white;
   left: 8%;
   /* top: 50%; */
+  white-space: nowrap;
 
 }
 
@@ -259,7 +262,9 @@
   color: #ffffffb9;
   text-align: center;
 }
-
+.report{
+  padding-right: 20px;
+}
 
 .reports {
   display: block;
@@ -271,13 +276,14 @@
 
 .reports-titles {
   text-align: center;
+  margin-top:193px ;
 }
 
 .reports-lefts {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 5%;
+  padding-bottom: 3.5%;
 
 }
 
@@ -309,7 +315,7 @@
   width: 74%;
   position: relative;
   /* left: 3%; */
-  padding: 0 3% 20px 5%;
+  padding: 34px 3% 20px 4.85%;
 
 }
 
@@ -318,10 +324,7 @@
   margin: 23% 2% 4% 0;
 }
 
-.report-left-title-b {
-  margin-top: 30px;
 
-}
 
 .report-left-title-b p {
 
@@ -340,6 +343,12 @@
   position: absolute;
 }
 
+.linklink:hover{
+  color: #99193A;
+}
+.linklink:hover svg path{
+  fill: #99193A;
+}
 .report-rights,
 .other-report {
   position: relative;
@@ -347,7 +356,7 @@
   height: 100%;
   background: #AF0B35E5;
   color: white;
-  padding: 20px 3% 20px 7%;
+  padding: 34px 3% 20px 6.65%;
   border-radius: 4px;
   /* left: 30px; */
 }
@@ -355,7 +364,6 @@
 .financial-report-a,
 .other-report-b {
   position: relative;
-  margin-top: 1%;
 
 
 }
@@ -372,8 +380,7 @@
 }
 
 .report-left-title-a p {
-  /* margin: 30px 0px; */
-  font-weight: 400;
+ margin-bottom: 0;
 }
 
 .report-left-title a {
@@ -412,18 +419,16 @@
 .reports-subtitle {
  
   position: relative;
-  margin-bottom: 56px;
+  margin-bottom: 41px;
   display: inline-block;
   text-align: center;
-  margin-bottom: 56px;
   color: #ffffff;
 }
 
 .community {
-  margin: 121px 0% 0 0%;
+  margin: 141px 0% 0 0%;
   /* padding: 0 6 0 0; */
   padding-bottom: 10%;
-  height: auto;
 }
 
 .community-stats-left{
@@ -440,7 +445,8 @@
 }
 
 .community-stats-left-subtitle-a{
-  padding-left: 4%;
+  width: 100%;
+  padding-left: 6%;
 }
 .community-stats-left-subtitle-a hr {
   border: 1px solid #EAEAEA;
@@ -454,7 +460,12 @@
   top: 30px;
 
 
+
 }
+.community-title{
+  color: #494949;
+}
+
 .img{
   display: flex
 ;
@@ -479,6 +490,9 @@
   margin: 30px 0;
   gap: 6%;
   ;
+}
+.community-stats-left-subtitle p{
+  margin-bottom: 0;
 }
 
 .community-stats-right-title {
@@ -543,7 +557,6 @@
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
   gap: 20px;
   /* Khoảng cách giữa các card */
   /* justify-content: center; */
@@ -653,6 +666,8 @@
 }
 
 @media (max-width: 768px) {
+  .community-stats-left-subtitle-a {
+    width: 100%;}
   .img img {
     width: 57%;
   }
