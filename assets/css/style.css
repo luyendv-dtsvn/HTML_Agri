@@ -3,7 +3,10 @@
 
 
 
-
+.banner-header {
+  background-image: url('../images/home/image\ 6422.png');
+  background-size: cover;
+}
 
 /* .owl-prev, */
 .btn-prev {
@@ -143,7 +146,7 @@
 
 .card-title {
   position: absolute;
-
+color: #5A5A5A;
   bottom: 24px;
   left: 27px;
 
@@ -225,6 +228,7 @@
   color: white;
   left: 8%;
   /* top: 50%; */
+  white-space: nowrap;
 
 }
 
@@ -340,6 +344,12 @@
   position: absolute;
 }
 
+.linklink:hover{
+  color: #99193A;
+}
+.linklink:hover svg path{
+  fill: #99193A;
+}
 .report-rights,
 .other-report {
   position: relative;
@@ -372,8 +382,7 @@
 }
 
 .report-left-title-a p {
-  /* margin: 30px 0px; */
-  font-weight: 400;
+ margin-bottom: 0;
 }
 
 .report-left-title a {
@@ -423,7 +432,6 @@
   margin: 121px 0% 0 0%;
   /* padding: 0 6 0 0; */
   padding-bottom: 10%;
-  height: auto;
 }
 
 .community-stats-left{
@@ -440,7 +448,8 @@
 }
 
 .community-stats-left-subtitle-a{
-  padding-left: 4%;
+  width: 87%;
+  padding-left: 6%;
 }
 .community-stats-left-subtitle-a hr {
   border: 1px solid #EAEAEA;
@@ -454,7 +463,12 @@
   top: 30px;
 
 
+
 }
+.community-title{
+  color: #494949;
+}
+
 .img{
   display: flex
 ;
@@ -479,6 +493,9 @@
   margin: 30px 0;
   gap: 6%;
   ;
+}
+.community-stats-left-subtitle p{
+  margin-bottom: 0;
 }
 
 .community-stats-right-title {
@@ -653,6 +670,8 @@
 }
 
 @media (max-width: 768px) {
+  .community-stats-left-subtitle-a {
+    width: 100%;}
   .img img {
     width: 57%;
   }
