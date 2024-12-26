@@ -23,6 +23,27 @@
 .home-vision-header-hotline {
     padding: 9px 10px;
 }
+/* @media (min-width: 992px) { */
+.col-md-35 {
+    flex: 0 0 32.33333%;
+    max-width: 33.33333%;
+/* } */
+}
+@media (max-width: 1500px) {
+    .col-6-1500 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width: 992px) {
+    .col-12-992 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+
 
 .home-vision-header-right {
     display: flex;
@@ -71,7 +92,7 @@
 
 .home-vision-content-item {
     min-height: 140px;
-    padding: 28px;
+    padding: 22px 28px;
     display: flex;
     flex-direction: column;
     border-radius: 6px;
