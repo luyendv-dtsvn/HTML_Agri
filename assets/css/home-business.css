@@ -173,12 +173,12 @@
 
 .custom-next-business,
 .custom-prev-business {
-    border: 1px solid #DEDEDE;
+    border-left: 1px solid #DEDEDE;
     position: absolute;
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 24px;
+    padding: 27px 24px;
 }
 
 .custom-next-business:hover,
@@ -424,6 +424,9 @@
 
 
 @media (max-width: 767px) {
+    .home-business-item-card {
+        border-left: none;
+    }
     .provided-services-item {
         padding: 10px 0px;
     }

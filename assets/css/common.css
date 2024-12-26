@@ -878,6 +878,10 @@ input:focus {
     width: 116%;
 }
 
+.content-top-menu img {
+    transition: stroke 0.3s ease;
+    margin-bottom: 10.5%;
+}
 @media (max-width:1366px) {
     .img-quote {
         max-width: 30px;
