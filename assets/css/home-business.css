@@ -12,7 +12,7 @@
 .home-financial-institution-section {
     position: relative;
     overflow: hidden; /* Đảm bảo không có phần thừa */
-    height: calc(100vh - 87px);
+    height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -311,9 +311,8 @@
 .home-financial-institution-content {
     width: fit-content;
     gap: 40px;
-    border-top: 1px solid rgba(255, 255, 255, 0.13);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
-    padding: 24px 0px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     padding-right: 48px;
 }
 
@@ -343,7 +342,6 @@
 
 .home-credit-rating-brand {
     display: flex;
-    padding-left: 50px;
     gap: 11px;
 }
 
@@ -425,7 +423,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .provided-services-item {
         padding: 10px 0px;
     }
