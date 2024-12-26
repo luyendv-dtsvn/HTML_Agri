@@ -380,8 +380,11 @@
 
 .banner-header {
     background-image: url('../images/home/banner_user.png');
-    background-size: cover;
+    background-repeat: no-repeat; /* Đảm bảo không lặp lại ảnh */
+    background-position: center; /* Căn giữa ảnh trong khung */
+    background-size: contain; /* Đảm bảo ảnh giữ đúng tỷ lệ gốc */
 }
+
 
 .hot-line {
     opacity: 0.9;
