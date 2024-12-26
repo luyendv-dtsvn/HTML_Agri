@@ -81,7 +81,12 @@ body {
     height: 40px;
     margin-bottom: 16px;
 }
-
+.content-top-menu:hover svg path {
+    stroke: #AF0B35;
+}
+.content-top-menu:hover div{
+    color: #AF0B35;
+}
 /* Menu mobile */
 /* Thiết lập cho menu top mobile */
 .menu-top-mobile {
@@ -146,7 +151,6 @@ body {
     color: #5A5A5A;
 
 }
-
 .content-top-menu.active div {
     color: #9E2B47;
 }
