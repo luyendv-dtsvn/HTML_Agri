@@ -371,6 +371,11 @@
     gap: 5px;
 }
 
+.high {
+    color: var(--red-2, #9E2B47);
+
+}
+
 .footer-bottom {
     background: rgba(0, 0, 0, 0.12);
     padding-top: 1rem;
@@ -381,7 +386,7 @@
 .banner-header {
     background-image: url('../images/home/banner_user.png');
     background-position: center;
-    /* Căn giữa ảnh trong khung */
+    background-size: cover;
 }
 
 
@@ -482,10 +487,12 @@
 }
 
 .community-stats-right-title {
-    display: flex;
-    flex-direction: column;
     padding-left: 1px;
     gap: 12px;
+    display: flex;
+    padding-right: 24px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .community-stats-left .stats div {
@@ -511,12 +518,16 @@
     display: block;
     gap: 20px;
 }
-
+.community_slider .owl-stage{
+    gap:0px;
+}
 .community-stats-left-1 {
-    display: flex;
-    gap: 1rem;
     margin-bottom: 20px;
-    overflow: hidden;
+    display: flex;
+    /* align-items: center; */
+    gap: 1rem;
+    align-self: stretch;
+
 }
 
 .community-stats-left-1 img:hover {
@@ -545,7 +556,8 @@
     text-transform: uppercase;
 }
 
-.community-stats-left-subtitle-a, .community_slider {
+.community-stats-left-subtitle-a,
+.community_slider {
     padding-left: 50px;
 }
 
@@ -859,15 +871,22 @@ input:focus {
     display: flex;
     gap: 20px
 }
+
 .nk-quick-nav-icon:not(.active):before {
     opacity: 0;
     height: 116%;
     width: 116%;
 }
+
 @media (max-width:1366px) {
-    .d-none-1366{
+    .img-quote {
+        max-width: 30px;
+    }
+
+    .d-none-1366 {
         display: none;
     }
+
     .div-image-recent img {
         max-width: 100%
     }
@@ -905,9 +924,12 @@ input:focus {
 }
 
 @media (max-width:1024px) {
-    .community-stats-left-subtitle-a , .community_slider{
+
+    .community-stats-left-subtitle-a,
+    .community_slider {
         padding-left: 40px;
     }
+
     .img-quote {
         max-width: 20px;
     }
@@ -959,6 +981,9 @@ input:focus {
 }
 
 @media (max-width:992px) {
+    .community {
+        height: 1000px;
+    }
     .d-none-992 {
         display: none !important;
     }
@@ -1019,7 +1044,10 @@ input:focus {
 
 
 @media (max-width:768px) {
-    
+    .background-relative {
+        background-size: 190%;
+        background-position: center bottom;
+    }
     .content-top-menu.underline::before {
         width: 100%;
     }
@@ -1072,6 +1100,7 @@ input:focus {
     .footer .btn-extend {
         width: 100%;
     }
+
     .home-user .owl-carousel .owl-nav,
     .owl-carousel .owl-dots {
         right: 5%;
@@ -1088,12 +1117,18 @@ input:focus {
 }
 
 @media (max-width: 576px) {
-    .community-stats-left-subtitle-a, .community_slider {
+    .community-stats-left-subtitle {
+        gap: 17px;
+    }
+    .community-stats-left-subtitle-a,
+    .community_slider {
         padding-left: 30px;
     }
+
     .community-stats-left-des {
         gap: 10px;
     }
+
     .header-mobile-menu img {
         width: 160px;
     }
