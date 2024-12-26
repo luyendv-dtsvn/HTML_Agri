@@ -205,9 +205,6 @@ color: #5A5A5A;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
   background-size: 100% 100%;
-  padding-left: 10px !important;
-padding-right: 10px !important;
-margin-bottom: 20px;
 
 .g-gs{
   padding-left: 14px !important;
@@ -262,8 +259,7 @@ margin-bottom: 20px;
 
 .info-description {
   padding: 0 4%;
-  color: rgba(255, 255, 255, 0.70);
-
+  color: #ffffffb9;
   text-align: center;
 }
 .report{
@@ -542,19 +538,21 @@ margin-bottom: 20px;
   display: block;
 
 }
-.background-top {
-  background-image: url('../images/home/Mask group3.png');
-  background-repeat: no-repeat; /* Không lặp lại ảnh */
-  background-size: auto 100%; /* Giữ chiều cao 100% và co chiều rộng theo tỷ lệ gốc */
-  background-position: center; /* Đặt ảnh ở giữa */
+.background-top{
+  background:
+    url('../images/home/Mask\ group3.png') no-repeat bottom center;
+  /* Ảnh nền */
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
 }
 
 .background-bottom {
   background:
     url('../images/home/Mask\ group1.png') no-repeat bottom center;
-    background-repeat: no-repeat; /* Đảm bảo không lặp lại ảnh */
-    background-position: bottom center; /* Căn giữa ảnh trong khung */
-    background-size: contain;
+        background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain
 }
 
 .cards-container {
@@ -591,6 +589,9 @@ margin-bottom: 20px;
 
 
 @media (max-width: 1366px) {
+  .report-left-title-b {
+    width: 80%;
+    }
   .about-subtitle,.announcement-subtitle,.reports-subtitle{
     width: 100%;
   }
@@ -617,6 +618,9 @@ margin-bottom: 20px;
 }
 
 @media (max-width: 1024px) {
+  .report-left-title-b {
+  width: 100%;
+  }
   .div-show-more{
     display: block;
   }
