@@ -1396,19 +1396,22 @@
           <div>
             <ul class="custom-control-group radio-rate nav nav-tabs nav-tabs-s2">
               <li class="nav-item pl-0 pr-1">
-                <a class="custom-control custom-radio custom-control-pro no-control nav-link active" data-toggle="tab" href="#tabRate1">
+                <a class="custom-control custom-radio custom-control-pro no-control nav-link active" data-toggle="tab"
+                  href="#tabRate1">
                   <input type="radio" class="custom-control-input" name="btnRadioNc" id="btnRadioNc1">
                   <label class="custom-control-label body-14" for="btnRadioNc1">Tỷ giá</label>
                 </a>
               </li>
               <li class="nav-item pl-0 pr-1">
-                <a class="custom-control custom-radio custom-control-pro no-control nav-link" data-toggle="tab" href="#tabRate2">
+                <a class="custom-control custom-radio custom-control-pro no-control nav-link" data-toggle="tab"
+                  href="#tabRate2">
                   <input type="radio" class="custom-control-input" name="btnRadioNc" id="btnRadioNc2">
                   <label class="custom-control-label body-14" for="btnRadioNc2">Lãi suất</label>
                 </a>
               </li>
               <li class="nav-item pl-0 pr-1">
-                <a class="custom-control custom-radio custom-control-pro no-control nav-link" data-toggle="tab" href="#tabRate3">
+                <a class="custom-control custom-radio custom-control-pro no-control nav-link" data-toggle="tab"
+                  href="#tabRate3">
                   <input type="radio" class="custom-control-input" name="btnRadioNc" id="btnRadioNc3">
                   <label class="custom-control-label body-14" for="btnRadioNc3">Giá vàng</label>
                 </a>
@@ -1419,7 +1422,7 @@
           <div class="current-time align-center d-flex d-none-768"><span class="body-14">*Cập nhật ngày
               23/12/2024</span></div>
         </div>
-        <div class="col-12 pt-4 tab-content" >
+        <div class="col-12 pt-4 tab-content">
           <div class="table-rate tab-pane active" id="tabRate1">
             <div class=" table-responsive">
               <table class="table">
@@ -1564,214 +1567,406 @@
         </div>
         <div class=" col-12 pt-4 row-ct justify-between">
           <div>
-            <ul class="custom-control-group radio-rate">
-              <li>
-                <div class="custom-control custom-radio custom-control-pro no-control checked">
-                  <input type="radio" class="custom-control-input checked" name="btnRadioNc" id="btnRadioNc1">
-                  <label class="custom-control-label body-14" for="btnRadioNc1">Tỉ giá</label>
-                </div>
+            <ul class="custom-control-group radio-rate nav nav-tabs nav-tabs-s2">
+              <li class="nav-item pl-0 pr-1">
+                <a class="custom-control custom-radio custom-control-pro no-control nav-link active" data-toggle="tab"
+                  href="#mbtabRate1">
+                  <input type="radio" class="custom-control-input" name="mbbtnRadioNc" id="mbbtnRadioNc1">
+                  <label class="custom-control-label body-14" for="mbbtnRadioNc1">Tỷ giá</label>
+                </a>
               </li>
-              <li>
-                <div class="custom-control custom-radio custom-control-pro no-control">
-                  <input type="radio" class="custom-control-input" name="btnRadioNc" id="btnRadioNc2">
-                  <label class="custom-control-label body-14" for="btnRadioNc2">Lãi suất</label>
-                </div>
+              <li class="nav-item pl-0 pr-1">
+                <a class="custom-control custom-radio custom-control-pro no-control nav-link" data-toggle="tab"
+                  href="#mbtabRate2">
+                  <input type="radio" class="custom-control-input" name="mbbtnRadioNc" id="mbbtnRadioNc2">
+                  <label class="custom-control-label body-14" for="mbbtnRadioNc2">Lãi suất</label>
+                </a>
               </li>
-              <li>
-                <div class="custom-control custom-radio custom-control-pro no-control">
-                  <input type="radio" class="custom-control-input" name="btnRadioNc" id="btnRadioNc3">
-                  <label class="custom-control-label body-14" for="btnRadioNc3">Giá vàng</label>
-                </div>
+              <li class="nav-item pl-0 pr-1">
+                <a class="custom-control custom-radio custom-control-pro no-control nav-link" data-toggle="tab"
+                  href="#mbtabRate3">
+                  <input type="radio" class="custom-control-input" name="mbbtnRadioNc" id="mbbtnRadioNc3">
+                  <label class="custom-control-label body-14" for="mbbtnRadioNc">Giá vàng</label>
+                </a>
               </li>
 
             </ul>
           </div>
         </div>
-        <div class="col-12 pt-4 rate-accordions">
-          <div id="accordion-rate" class="accordion">
-            <div class="accordion-item">
-              <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-1">
-                <div class="user-card card-rate">
-                  <div class="user-avatar sm bg-purple-dim">
-                    <img src="../assets/images/rate/USD_mobile.svg" alt="">
+        <div class="tab-content">
+          <div class="col-12 pt-4 rate-accordions tab-pane active" id="mbtabRate1">
+            <div id="accordion-rate" class="accordion mb-2">
+              <div class="accordion-item">
+                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-1">
+                  <div class="user-card card-rate">
+                    <div class="user-avatar sm bg-purple-dim">
+                      <img src="../assets/images/rate/USD_mobile.svg" alt="">
+                    </div>
+                    <div class="rate-item">
+                      <span class="tb-lead body-14">USD ≥ 50</span>
+                      <span class="body-13">US Dollar</span>
+                    </div>
                   </div>
-                  <div class="rate-item">
-                    <span class="tb-lead body-14">USD ≥ 50</span>
-                    <span class="body-13">US Dollar</span>
-                  </div>
-                </div>
-                <span class="accordion-icon"></span>
-              </a>
-              <div class="accordion-body collapse show" id="accordion-item-1" data-parent="#accordion">
-                <div class="accordion-inner row-ct pt-0">
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Mua tiền mặt</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Mua chuyển khoản</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Bán tiền mặt</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Bán chuyển khoản</span>
-                    <span class="body-13 rate-value">25,100</span>
+                  <span class="accordion-icon"></span>
+                </a>
+                <div class="accordion-body collapse show" id="accordion-item-1" data-parent="#accordion">
+                  <div class="accordion-inner row-ct pt-0">
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div id="accordion-rate-usd2" class="accordion">
-            <div class="accordion-item">
-              <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-2">
-                <div class="user-card card-rate">
-                  <div class="user-avatar sm bg-purple-dim">
-                    <img src="../assets/images/rate/USD_mobile.svg" alt="">
-                  </div>
-                  <div class="rate-item">
-                    <span class="tb-lead body-14">USD ≥ 5050</span>
-                    <span class="body-13">US Dollar</span>
+            <div id="accordion-rate-usd2" class="accordion mb-2">
+              <div class="accordion-item">
+                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-2">
+                  <div class="user-card card-rate">
+                    <div class="user-avatar sm bg-purple-dim">
+                      <img src="../assets/images/rate/USD_mobile.svg" alt="">
+                    </div>
+                    <div class="rate-item">
+                      <span class="tb-lead body-14">USD ≥ 5050</span>
+                      <span class="body-13">US Dollar</span>
 
+                    </div>
                   </div>
-                </div>
-                <span class="accordion-icon"></span>
-              </a>
-              <div class="accordion-body collapse" id="accordion-item-2" data-parent="#accordion-rate-usd2">
-                <div class="accordion-inner row-ct pt-0">
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Mua tiền mặt</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Mua chuyển khoản</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Bán tiền mặt</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Bán chuyển khoản</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="accordion-rate-eur" class="accordion">
-            <div class="accordion-item">
-              <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-3">
-                <div class="user-card card-rate">
-                  <div class="user-avatar sm bg-purple-dim">
-                    <img src="../assets/images/rate/EUR_mobile.svg" alt="">
-                  </div>
-                  <div class="rate-item">
-                    <span class="tb-lead body-14">EUR</span>
-                    <span class="body-13">Euro</span>
-                  </div>
-                </div>
-                <span class="accordion-icon"></span>
-              </a>
-              <div class="accordion-body collapse" id="accordion-item-3" data-parent="#accordion-rate-eur">
-                <div class="accordion-inner row-ct pt-0">
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Mua tiền mặt</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Mua chuyển khoản</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Bán tiền mặt</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Bán chuyển khoản</span>
-                    <span class="body-13 rate-value">25,100</span>
+                  <span class="accordion-icon"></span>
+                </a>
+                <div class="accordion-body collapse" id="accordion-item-2" data-parent="#accordion-rate-usd2">
+                  <div class="accordion-inner row-ct pt-0">
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div id="accordion-rate-jpy" class="accordion">
-            <div class="accordion-item">
-              <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-4">
-                <div class="user-card card-rate">
-                  <div class="user-avatar sm bg-purple-dim">
-                    <img src="../assets/images/rate/JPY_mobile.svg" alt="">
+            <div id="accordion-rate-eur" class="accordion mb-2">
+              <div class="accordion-item">
+                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-3">
+                  <div class="user-card card-rate">
+                    <div class="user-avatar sm bg-purple-dim">
+                      <img src="../assets/images/rate/EUR_mobile.svg" alt="">
+                    </div>
+                    <div class="rate-item">
+                      <span class="tb-lead body-14">EUR</span>
+                      <span class="body-13">Euro</span>
+                    </div>
                   </div>
-                  <div class="rate-item">
-                    <span class="tb-lead body-14">JPY</span>
-                    <span class="body-13">Japanese Yen</span>
-                  </div>
-                </div>
-                <span class="accordion-icon"></span>
-              </a>
-              <div class="accordion-body collapse" id="accordion-item-4" data-parent="#accordion-rate-jpy">
-                <div class="accordion-inner row-ct pt-0">
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Mua tiền mặt</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Mua chuyển khoản</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Bán tiền mặt</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Bán chuyển khoản</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="accordion-rate-aud" class="accordion">
-            <div class="accordion-item">
-              <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-5">
-                <div class="user-card card-rate">
-                  <div class="user-avatar sm bg-purple-dim">
-                    <img src="../assets/images/rate/AUD_mobile.svg" alt="">
-                  </div>
-                  <div class="rate-item">
-                    <span class="tb-lead body-14">AUD</span>
-                    <span class="body-13">Australian Dollar</span>
-                  </div>
-                </div>
-                <span class="accordion-icon"></span>
-              </a>
-              <div class="accordion-body collapse" id="accordion-item-5" data-parent="#accordion-rate-aud">
-                <div class="accordion-inner row-ct pt-0">
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Mua tiền mặt</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Mua chuyển khoản</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Bán tiền mặt</span>
-                    <span class="body-13 rate-value">25,100</span>
-                  </div>
-                  <div class="col-6 pl-0 info-item-rate pt-3">
-                    <span class="body-13 rate-title">Bán chuyển khoản</span>
-                    <span class="body-13 rate-value">25,100</span>
+                  <span class="accordion-icon"></span>
+                </a>
+                <div class="accordion-body collapse" id="accordion-item-3" data-parent="#accordion-rate-eur">
+                  <div class="accordion-inner row-ct pt-0">
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div id="accordion-rate-jpy" class="accordion mb-2">
+              <div class="accordion-item">
+                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-4">
+                  <div class="user-card card-rate">
+                    <div class="user-avatar sm bg-purple-dim">
+                      <img src="../assets/images/rate/JPY_mobile.svg" alt="">
+                    </div>
+                    <div class="rate-item">
+                      <span class="tb-lead body-14">JPY</span>
+                      <span class="body-13">Japanese Yen</span>
+                    </div>
+                  </div>
+                  <span class="accordion-icon"></span>
+                </a>
+                <div class="accordion-body collapse" id="accordion-item-4" data-parent="#accordion-rate-jpy">
+                  <div class="accordion-inner row-ct pt-0">
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accordion-rate-aud" class="accordion mb-2">
+              <div class="accordion-item">
+                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-5">
+                  <div class="user-card card-rate">
+                    <div class="user-avatar sm bg-purple-dim">
+                      <img src="../assets/images/rate/AUD_mobile.svg" alt="">
+                    </div>
+                    <div class="rate-item">
+                      <span class="tb-lead body-14">AUD</span>
+                      <span class="body-13">Australian Dollar</span>
+                    </div>
+                  </div>
+                  <span class="accordion-icon"></span>
+                </a>
+                <div class="accordion-body collapse" id="accordion-item-5" data-parent="#accordion-rate-aud">
+                  <div class="accordion-inner row-ct pt-0">
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 div-show-more pt-4 justify-center">
+              <a href="#" class="body-15 color-red-1">Xem thêm </a><em
+                class="icon ni ni-chevron-right regular-18 color-red-1"></em>
+            </div>
           </div>
-          <div class="col-12 div-show-more pt-4 justify-center">
-            <a href="#" class="body-15 color-red-1">Xem thêm </a><em
-              class="icon ni ni-chevron-right regular-18 color-red-1"></em>
+          <div class="col-12 pt-4 rate-accordions tab-pane" id="mbtabRate2">
+            <div id="accordion-rate" class="accordion mb-2">
+              <div class="accordion-item">
+                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-1">
+                  <div class="user-card card-rate">
+                    <div class="user-avatar sm bg-purple-dim">
+                      <img src="../assets/images/rate/USD_mobile.svg" alt="">
+                    </div>
+                    <div class="rate-item">
+                      <span class="tb-lead body-14">USD ≥ 60</span>
+                      <span class="body-13">US Dollar</span>
+                    </div>
+                  </div>
+                  <span class="accordion-icon"></span>
+                </a>
+                <div class="accordion-body collapse show" id="accordion-item-1" data-parent="#accordion">
+                  <div class="accordion-inner row-ct pt-0">
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accordion-rate-usd2" class="accordion mb-2">
+              <div class="accordion-item">
+                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-2">
+                  <div class="user-card card-rate">
+                    <div class="user-avatar sm bg-purple-dim">
+                      <img src="../assets/images/rate/USD_mobile.svg" alt="">
+                    </div>
+                    <div class="rate-item">
+                      <span class="tb-lead body-14">USD ≥ 5050</span>
+                      <span class="body-13">US Dollar</span>
+
+                    </div>
+                  </div>
+                  <span class="accordion-icon"></span>
+                </a>
+                <div class="accordion-body collapse" id="accordion-item-2" data-parent="#accordion-rate-usd2">
+                  <div class="accordion-inner row-ct pt-0">
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accordion-rate-eur" class="accordion mb-2">
+              <div class="accordion-item">
+                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-3">
+                  <div class="user-card card-rate">
+                    <div class="user-avatar sm bg-purple-dim">
+                      <img src="../assets/images/rate/EUR_mobile.svg" alt="">
+                    </div>
+                    <div class="rate-item">
+                      <span class="tb-lead body-14">EUR</span>
+                      <span class="body-13">Euro</span>
+                    </div>
+                  </div>
+                  <span class="accordion-icon"></span>
+                </a>
+                <div class="accordion-body collapse" id="accordion-item-3" data-parent="#accordion-rate-eur">
+                  <div class="accordion-inner row-ct pt-0">
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accordion-rate-jpy" class="accordion mb-2">
+              <div class="accordion-item">
+                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-4">
+                  <div class="user-card card-rate">
+                    <div class="user-avatar sm bg-purple-dim">
+                      <img src="../assets/images/rate/JPY_mobile.svg" alt="">
+                    </div>
+                    <div class="rate-item">
+                      <span class="tb-lead body-14">JPY</span>
+                      <span class="body-13">Japanese Yen</span>
+                    </div>
+                  </div>
+                  <span class="accordion-icon"></span>
+                </a>
+                <div class="accordion-body collapse" id="accordion-item-4" data-parent="#accordion-rate-jpy">
+                  <div class="accordion-inner row-ct pt-0">
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accordion-rate-aud" class="accordion mb-2">
+              <div class="accordion-item">
+                <a href="#" class="accordion-head" data-toggle="collapse" data-target="#accordion-item-5">
+                  <div class="user-card card-rate">
+                    <div class="user-avatar sm bg-purple-dim">
+                      <img src="../assets/images/rate/AUD_mobile.svg" alt="">
+                    </div>
+                    <div class="rate-item">
+                      <span class="tb-lead body-14">AUD</span>
+                      <span class="body-13">Australian Dollar</span>
+                    </div>
+                  </div>
+                  <span class="accordion-icon"></span>
+                </a>
+                <div class="accordion-body collapse" id="accordion-item-5" data-parent="#accordion-rate-aud">
+                  <div class="accordion-inner row-ct pt-0">
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Mua chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán tiền mặt</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                    <div class="col-6 pl-0 info-item-rate pt-3">
+                      <span class="body-13 rate-title">Bán chuyển khoản</span>
+                      <span class="body-13 rate-value">25,100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 div-show-more pt-4 justify-center">
+              <a href="#" class="body-15 color-red-1">Xem thêm </a><em
+                class="icon ni ni-chevron-right regular-18 color-red-1"></em>
+            </div>
           </div>
         </div>
       </div>
