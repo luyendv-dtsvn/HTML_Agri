@@ -1,6 +1,7 @@
 .home-business-background-section {
     position: relative;
-    overflow: hidden; /* Đảm bảo không có phần thừa */
+    overflow: hidden;
+    /* Đảm bảo không có phần thừa */
     height: 100%;
     display: flex;
     align-items: flex-start;
@@ -11,7 +12,8 @@
 
 .home-financial-institution-section {
     position: relative;
-    overflow: hidden; /* Đảm bảo không có phần thừa */
+    overflow: hidden;
+    /* Đảm bảo không có phần thừa */
     height: 100vh;
     display: flex;
     align-items: flex-start;
@@ -28,18 +30,19 @@
 
 .home-business-background {
     position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .home-business-background img {
     width: 100%;
-  height: 100%;
-  object-fit: cover; /* Đảm bảo ảnh hiển thị toàn bộ */
+    height: 100%;
+    object-fit: cover;
+    /* Đảm bảo ảnh hiển thị toàn bộ */
 }
 
 /* .home-business-background::before {
@@ -99,25 +102,8 @@
 
 .home-business-background-tab {
     display: flex;
-    align-items: flex-start;
-    gap: 8px;
-}
-
-.home-business-background-tab button {
-    padding: 12px;
-    justify-content: center;
     align-items: center;
-    border-radius: 4px;
-    border: rgba(0, 0, 0, 0.04);;
-    background: rgba(0, 0, 0, 0.04);
-}
-
-.home-business-background-tab button:hover {
-    color: var(--red-1, #AF0B35);
-}
-
-.home-business-background-tab button.active {
-    border: 2px solid rgba(0, 0, 0, 0.34);
+    gap: 8px;
 }
 
 .home-business-background-heading-right {
@@ -178,7 +164,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 27px 24px;
+    padding: 29px 24px;
 }
 
 .custom-next-business:hover,
@@ -201,7 +187,7 @@
 .home-business-list-arrow-button {
     display: none;
     width: 100%;
-    height: 76px;
+    height: 78px;
     border-top: 1px solid #eaeaea;
 }
 
@@ -263,9 +249,9 @@
 
 .provided-services-item img {
     width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .provided-services-item-content {
@@ -351,7 +337,7 @@
     width: 212px;
 }
 
-.home-credit-rating-brand img{
+.home-credit-rating-brand img {
     position: static;
 }
 
@@ -379,7 +365,36 @@
         display: flex;
     }
 }
+.section-agri-start .mt-n2, .my-n2 {
+    margin-top: 0 !important;
+}
 
+.section-agri-start .nav-tabs .nav-link {
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.section-agri-start .nav-tabs .nav-link.active {
+    color: #fff;
+    background: var(--Linear-2, linear-gradient(270deg, #AF0B35 0%, #C93259 100%));
+}
+
+.section-agri-start .nav-tabs .nav-link.active svg path {
+    stroke: #fff;
+}
+
+.section-agri-start .nav-tabs .nav-item {
+    padding-right: 0;
+}
+
+.section-agri-start .nav-tabs .nav-link:after {
+    background: none;
+}
 
 @media (max-width: 1024px) {
     .home-business-background-heading-tab {
@@ -395,9 +410,7 @@
         gap: 5px;
     }
 
-    .home-business-background-tab button {
-        padding: 8px;
-    }
+
 
     .provided-services-item-text {
         padding: 38px;
@@ -413,7 +426,7 @@
     .home-financial-institution-line-pc {
         display: none;
     }
-    
+
     .home-financial-institution-line-mobile {
         display: flex;
     }
@@ -429,6 +442,7 @@
     .home-business-item-card {
         border-left: none;
     }
+
     .provided-services-item {
         padding: 10px 0px;
     }
@@ -460,11 +474,11 @@
     .home-business-background-img-pc {
         display: none;
     }
-    
+
     .home-business-background-img-mobile {
         display: flex;
     }
-    
+
 
     .custom-next-business,
     .custom-prev-business {
@@ -477,7 +491,7 @@
     }
 
     .home-business-list-arrow-button {
-        height: 53px;
+        height: 50px;
     }
 
     .home-business-background-titlte {
@@ -518,4 +532,3 @@
         padding: 32px;
     }
 }
-
