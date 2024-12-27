@@ -920,7 +920,7 @@ input:focus {
     }
 
     .d-none-1366 {
-        display: none;
+        display: none !important;
     }
 
     .div-image-recent img {

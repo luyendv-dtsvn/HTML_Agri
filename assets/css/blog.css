@@ -14,7 +14,12 @@
     background: var(--red-1);
     border: var(--red-1);
 }
-
+.slick-dots li button {
+    background-color: #8094ae;
+}
+.slick-dots li.slick-active button {
+    background-color: #AF0B35;
+}
 /* end common */
 
 .blog-title-section {
