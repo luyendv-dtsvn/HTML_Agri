@@ -1,0 +1,93 @@
+/*!
+* Template Name: Agribank
+* Author: DTSVN LuyenDV
+* Version: 2.6.0
+* Description : event css
+**/
+@import url('./common-root.css');
+
+.footer a {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.footer a:hover {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.zoom-img:hover .image-zoom img {
+    transform: scale(1.2);
+}
+
+.btn-show-more:hover {
+    background: var(--red-3);
+    color: #fff;
+}
+
+.icon-change-rate:hover {
+    background: var(--red-1)
+}
+
+.icon-change-rate:hover em {
+    color: #fff;
+}
+
+.community-stats-left-1 img:hover {
+    transform: scale(0.9);
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-vision-header-button:hover {
+    background: var(--red-1);
+    color: white;
+}
+
+.home-vision-header-button:hover span,
+.home-vision-header-button:hover em {
+    color: white;
+}
+
+.home-vision-button-dropdown a:hover {
+    color: var(--red-1);
+}
+
+.menu-tab-ct a:hover span {
+    color: var(--red-1);
+
+}
+
+.menu-tab-ct a:hover svg path {
+    stroke: var(--red-1);
+
+}
+
+.block-img-hover img:hover {
+    transform: scale(1.1);
+}
+
+.block-img-hover {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.block-img-hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.slider-blog a:hover {
+    opacity: 1;
+}
+
+a.color-hover:hover {
+    opacity: 1;
+}
+a:hover {
+    opacity: 0.6;
+}
+a:hover span, a:hover p {
+    color: var(--red-1);
+}
