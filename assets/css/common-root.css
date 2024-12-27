@@ -30,14 +30,14 @@
 /* Bold */
 @font-face {
     font-family: 'BT Grotesk bold';
-    src: url('../fonts/BTGrotesk-Bold.otf') format('truetype');
+    src: url('../fonts/BTGrotesk-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BT Grotesk bold-italic';
-    src: url('../fonts/BTGrotesk-BoldItalic.otf') format('truetype');
+    src: url('../fonts/BTGrotesk-BoldItalic.otf') format('opentype');
     font-weight: bold;
     font-style: italic;
 }
@@ -45,14 +45,14 @@
 /* ExtraBold */
 @font-face {
     font-family: 'BT Grotesk ExtraBold';
-    src: url('../fonts/BTGrotesk-ExtraBold.otf') format('truetype');
+    src: url('../fonts/BTGrotesk-ExtraBold.otf') format('opentype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BT Grotesk ExtraBold-italic';
-    src: url('../fonts/BTGrotesk-ExtraBoldItalic.otf') format('truetype');
+    src: url('../fonts/BTGrotesk-ExtraBoldItalic.otf') format('opentype');
     font-weight: 800;
     font-style: italic;
 }
@@ -60,7 +60,7 @@
 /* Italic */
 @font-face {
     font-family: 'BT Grotesk Italic';
-    src: url('../fonts/BTGrotesk-Italic.otf') format('truetype');
+    src: url('../fonts/BTGrotesk-Italic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
@@ -68,14 +68,14 @@
 /* Medium */
 @font-face {
     font-family: 'BT Grotesk Medium';
-    src: url('../fonts/BTGrotesk-Medium.otf') format('truetype');
+    src: url('../fonts/BTGrotesk-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BT Grotesk Medium-italic';
-    src: url('../fonts/BTGrotesk-MediumItalic.otf') format('truetype');
+    src: url('../fonts/BTGrotesk-MediumItalic.otf') format('opentype');
     font-weight: 500;
     font-style: italic;
 }
@@ -83,14 +83,14 @@
 /* SemiBold */
 @font-face {
     font-family: 'BT Grotesk SemiBold';
-    src: url('../fonts/BTGrotesk-SemiBold.otf') format('truetype');
+    src: url('../fonts/BTGrotesk-SemiBold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BT Grotesk SemiBold-Italic';
-    src: url('../fonts/BTGrotesk-SemiBoldItalic.otf') format('truetype');
+    src: url('../fonts/BTGrotesk-SemiBoldItalic.otf') format('opentype');
     font-weight: bold;
     font-style: italic;
 }
@@ -154,7 +154,7 @@ button {
     font-size: 2.313rem;
     font-weight: 400;
     line-height: 129.99999523162842%;
-    letter-spacing: -1%;
+    letter-spacing: -0.37px;
     font-weight: 400;
 }
 
@@ -225,7 +225,7 @@ button {
     font-size: 0.9375rem;
     /* 15px to rem */
     line-height: 110.00000238418579%;
-    letter-spacing: 1%;
+    letter-spacing: 0.15px;
     font-weight: 400;
 }
 
@@ -252,7 +252,7 @@ button {
     font-size: 0.75rem;
     /* 12px to rem */
     line-height: 110.00000238418579%;
-    letter-spacing: 2%;
+    letter-spacing: 0.24px;
     font-weight: 400;
 }
 
@@ -279,7 +279,7 @@ button {
     font-size: 1rem;
     /* 16px to rem */
     line-height: 150%;
-    letter-spacing: 1%;
+    letter-spacing: 0.16px;
     font-weight: 400;
 }
 
@@ -297,8 +297,8 @@ button {
     font-size: 0.875rem;
     /* 14px to rem */
     line-height: 139.9999976158142%;
-    letter-spacing: 2%;
     font-weight: 400;
+    letter-spacing: 0.56px;
 }
 
 .regular-13 {
@@ -308,6 +308,7 @@ button {
     line-height: 110.00000238418579%;
     letter-spacing: 2%;
     font-weight: 400;
+    letter-spacing: 0.26px;
 }
 
 .regular-12 {
@@ -315,7 +316,7 @@ button {
     font-size: 0.75rem;
     /* 12px to rem */
     line-height: 139.9999976158142%;
-    letter-spacing: 0%;
+    
     font-weight: 400;
 }
 
@@ -324,7 +325,7 @@ button {
     font-size: 0.75rem;
     /* 12px to rem */
     line-height: 110.00000238418579%;
-    letter-spacing: 4%;
+    letter-spacing: 0.48px;
     font-weight: 400;
 }
 
@@ -333,7 +334,7 @@ button {
     font-size: 0.875rem;
     /* 14px to rem */
     line-height: 139.9999976158142%;
-    letter-spacing: 4%;
+    letter-spacing: 0.56px;
     font-weight: 400;
 }
 
@@ -421,7 +422,7 @@ button {
         font-family: 'BT Grotesk Medium';
         font-size: 15px;
         line-height: 110.00000238418579%;
-        letter-spacing: -1%;
+        letter-spacing: -0.16px;
     }
 
     .body-15 {
