@@ -88,6 +88,9 @@ a.color-hover:hover {
 a:hover {
     opacity: 0.6;
 }
+.footer a:hover span,.footer  a:hover p {
+    color: white;
+}
 a:hover span, a:hover p {
     color: var(--red-1);
 }

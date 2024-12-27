@@ -9,7 +9,71 @@
 
 /* luyendv */
 
+/* hover image show button */
+.img-hover-btn {
+    position: relative;
+    /* Để đặt lớp phủ overlay */
+    overflow: hidden;
+}
 
+.img-hover-btn img {
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s ease;
+    object-fit: fill;;
+}
+.text-trans-8{
+    color: rgba(255, 255, 255, 0.80) !important;
+}
+.text-trans-9{
+    color: rgba(255, 255, 255, 0.90) !important;
+}
+.img-hover-btn .btn-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    display: flex;
+    /* Dùng flex để căn giữa nội dung */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    opacity: 0;
+    /* Mặc định ẩn */
+    transition: opacity 0.3s ease;
+    /* Hiệu ứng mượt khi hiển thị */
+}
+
+.img-hover-btn .btn-img {
+    display: flex;
+    width: 153px;
+    height: 48px;
+    padding: 16px 20px;
+    justify-content: center;
+    border-radius: 4px;
+    background: var(--red-21, #AA1D40);
+    align-items: center;
+}
+
+.img-hover-btn .btn-img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Hover vào vùng ảnh */
+.img-hover-btn:hover img {
+    /* filter: blur(5px);         */
+}
+
+.img-hover-btn:hover .btn-overlay {
+    opacity: 1;
+    /* Hiển thị lớp overlay */
+}
+
+/* end hover image  */
 .custom-radio.custom-control-pro.no-control .custom-control-input:checked~.custom-control-label {
     border-color: var(--red-1);
     z-index: 2;
@@ -142,16 +206,21 @@
     align-items: unset;
 }
 
-.home-table-exchange-576 .nav-tabs .nav-link, .home-table-exchange .nav-tabs .nav-link {
+.home-table-exchange-576 .nav-tabs .nav-link,
+.home-table-exchange .nav-tabs .nav-link {
     padding: 0px;
 }
-.home-table-exchange-576 .nav-tabs .nav-link:hover, .home-table-exchange .nav-tabs .nav-link:hover {
+
+.home-table-exchange-576 .nav-tabs .nav-link:hover,
+.home-table-exchange .nav-tabs .nav-link:hover {
     background: var(--red-1, #AF0B35);
     color: white;
     opacity: 1;
     border-radius: 4px;
 }
-.home-table-exchange-576 .nav-tabs .nav-link.active, .home-table-exchange .nav-tabs .nav-link.active {
+
+.home-table-exchange-576 .nav-tabs .nav-link.active,
+.home-table-exchange .nav-tabs .nav-link.active {
     border-radius: 4px;
     background: var(--red-1, #AF0B35);
     color: white;
@@ -160,15 +229,20 @@
 .home-table-exchange .custom-control-pro .custom-control-label {
     line-height: 110%;
 }
-.home-table-exchange-576 .nav-tabs .nav-link:after, .home-table-exchange .nav-tabs .nav-link:after {
+
+.home-table-exchange-576 .nav-tabs .nav-link:after,
+.home-table-exchange .nav-tabs .nav-link:after {
     background: none;
 }
+
 .home-table-exchange .custom-control-pro.no-control .custom-control-label {
     padding: 9px 23px;
 }
+
 .text-align-right {
     text-align: right;
 }
+
 .btn-show-more {
     border-radius: 4px;
     background: var(--red-21);
@@ -914,13 +988,46 @@ input:focus {
     margin-bottom: 10.5%;
 }
 
+.txt-one-line {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.owl-center.owl-carousel .owl-nav,
+.owl-center.owl-carousel .owl-dots {
+    display: flex;
+    gap: 54px;
+    position: absolute;
+    right: 50%;
+    bottom: 200%;
+}
+
+.owl-center.owl-carousel .owl-nav.disabled,
+.owl-center.owl-carousel .owl-dots.disabled {
+    gap: 50px;
+}
+
+.ct-next-outline,
+.ct-pre-outline {
+    border-radius: 100px;
+    border: 1px solid #DEDEDE;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width:1366px) {
     .img-quote {
         max-width: 30px;
     }
 
     .d-none-1366 {
-        display: none;
+        display: none !important;
     }
 
     .div-image-recent img {
