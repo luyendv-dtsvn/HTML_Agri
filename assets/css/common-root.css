@@ -22,7 +22,7 @@
 /* Regular */
 @font-face {
     font-family: 'BT Grotesk Regular';
-    src: url('../fonts/BTGrotesk-Regular.otf') format('truetype');
+    src: url('../fonts/BTGrotesk-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -99,7 +99,10 @@ body,
 button {
     font-family: 'BT Grotesk Regular';
     background: #fff;
+    font-weight: 400;
     margin: 0;
+    letter-spacing: -0.64px;
+    font-style: normal;
 }
 
 .heading-h1 {
@@ -107,6 +110,7 @@ button {
     font-size: 4rem;
     line-height: 120.00000476837158%;
     letter-spacing: -1%;
+    font-weight: 400;
 }
 
 .heading-h2 {
@@ -115,6 +119,7 @@ button {
     /* 55px to rem */
     line-height: 89.99999761581421%;
     letter-spacing: 0%;
+    font-weight: 400;
 }
 
 .heading-h3 {
@@ -123,6 +128,7 @@ button {
     /* 52px to rem */
     line-height: 120.00000476837158%;
     letter-spacing: -1%;
+    font-weight: 400;
 }
 
 .heading-h4 {
@@ -131,6 +137,7 @@ button {
     /* 46px to rem */
     line-height: 129.99999523162842%;
     letter-spacing: -1%;
+    font-weight: 400;
 }
 
 .heading-h4-5 {
@@ -139,13 +146,16 @@ button {
     /* 40px to rem */
     line-height: 129.99999523162842%;
     letter-spacing: -1%;
+    font-weight: 400;
 }
 
 .heading-h5 {
     font-family: 'BT Grotesk Regular';
     font-size: 2.313rem;
+    font-weight: 400;
     line-height: 129.99999523162842%;
     letter-spacing: -1%;
+    font-weight: 400;
 }
 
 .heading-h6 {
@@ -153,11 +163,13 @@ button {
     font-size: 2.063rem;
     line-height: 120.00000476837158%;
     letter-spacing: -1%;
+    font-weight: 400;
 }
 
 .heading-h7 {
     font-family: 'BT Grotesk Regular';
     font-size: 1.5625rem;
+    font-weight: 400;
     /* 25px to rem */
     line-height: 129.99999523162842%;
     letter-spacing: -1%;
@@ -169,6 +181,7 @@ button {
     /* 20px to rem */
     line-height: 139.9999976158142%;
     letter-spacing: 0%;
+    font-weight: 400;
 }
 
 .body-19 {
@@ -177,6 +190,7 @@ button {
     /* 19px to rem */
     line-height: 139.9999976158142%;
     letter-spacing: 0%;
+    font-weight: 400;
 }
 
 .body-17 {
@@ -185,6 +199,7 @@ button {
     /* 17px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: -1%;
+    font-weight: 400;
 }
 
 .body-18 {
@@ -193,6 +208,7 @@ button {
     /* 18px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 0%;
+    font-weight: 400;
 }
 
 .body-16 {
@@ -201,6 +217,7 @@ button {
     /* 16px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: -1%;
+    font-weight: 400;
 }
 
 .body-15 {
@@ -209,6 +226,7 @@ button {
     /* 15px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 1%;
+    font-weight: 400;
 }
 
 .body-14 {
@@ -217,6 +235,7 @@ button {
     /* 14px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 0%;
+    font-weight: 400;
 }
 
 .body-13 {
@@ -225,6 +244,7 @@ button {
     /* 13px to rem */
     line-height: 160.0000023841858%;
     letter-spacing: -1%;
+    font-weight: 400;
 }
 
 .body-12 {
@@ -233,6 +253,7 @@ button {
     /* 12px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 2%;
+    font-weight: 400;
 }
 
 .regular-18 {
@@ -241,6 +262,7 @@ button {
     /* 18px to rem */
     line-height: 150%;
     letter-spacing: -1%;
+    font-weight: 400;
 }
 
 .regular-17 {
@@ -249,6 +271,7 @@ button {
     /* 17px to rem */
     line-height: 29px;
     letter-spacing: -2%;
+    font-weight: 400;
 }
 
 .regular-16 {
@@ -257,6 +280,7 @@ button {
     /* 16px to rem */
     line-height: 150%;
     letter-spacing: 1%;
+    font-weight: 400;
 }
 
 .regular-15 {
@@ -264,7 +288,8 @@ button {
     font-size: 0.9375rem;
     /* 15px to rem */
     line-height: 150%;
-    letter-spacing: 1%;
+    letter-spacing: 0.15px;
+    font-weight: 400;
 }
 
 .regular-14 {
@@ -273,6 +298,7 @@ button {
     /* 14px to rem */
     line-height: 139.9999976158142%;
     letter-spacing: 2%;
+    font-weight: 400;
 }
 
 .regular-13 {
@@ -281,6 +307,7 @@ button {
     /* 13px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 2%;
+    font-weight: 400;
 }
 
 .regular-12 {
@@ -289,6 +316,7 @@ button {
     /* 12px to rem */
     line-height: 139.9999976158142%;
     letter-spacing: 0%;
+    font-weight: 400;
 }
 
 .subtitle-12 {
@@ -297,6 +325,7 @@ button {
     /* 12px to rem */
     line-height: 110.00000238418579%;
     letter-spacing: 4%;
+    font-weight: 400;
 }
 
 .subtitle-14 {
@@ -305,6 +334,7 @@ button {
     /* 14px to rem */
     line-height: 139.9999976158142%;
     letter-spacing: 4%;
+    font-weight: 400;
 }
 
 
