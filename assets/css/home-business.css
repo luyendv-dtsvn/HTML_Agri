@@ -374,6 +374,13 @@
 }
 
 
+@media (max-width: 1100px) {
+    .home-business-list-arrow-button {
+        display: flex;
+    }
+}
+
+
 @media (max-width: 1024px) {
     .home-business-background-heading-tab {
         gap: 5px;
@@ -402,11 +409,6 @@
     .home-business-background-titlte {
         padding: 24px;
     }
-
-    .home-business-list-arrow-button {
-        display: flex;
-    }
-
 
     .home-financial-institution-line-pc {
         display: none;
