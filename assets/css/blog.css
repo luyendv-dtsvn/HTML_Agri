@@ -3,7 +3,13 @@
 .background-white {
     background: #fff;
 }
-
+.content-top-menu:hover div{
+    color: #AF0B35;
+}
+.content-top-menu:hover svg path
+{
+    stroke: #AF0B35;
+}
 .button-login-red {
     padding: 14px;
     display: flex;
@@ -116,9 +122,6 @@ margin-top: 58px;
     transition: transform 0.3s ease;
 }
 
-.content-betwent-subtitle:hover img {
-    transform: scale(1.1);
-}
 .cate {
     color: #494949;
 }
@@ -196,6 +199,9 @@ margin-top: 58px;
 }
 .owl-center.owl-carousel .owl-nav, .owl-center.owl-carousel .owl-dots {
     bottom: calc(100% + 130px);
+}
+.content-betwent-subtitle a div{
+
 }
 
 @media (max-width: 1024px) {
