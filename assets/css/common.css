@@ -1065,7 +1065,11 @@ input:focus {
     }
 
 }
-
+.blog .select2-container--default .select2-selection--single:focus {
+    box-shadow: none;
+    border-color: #6576ff;
+    outline: none;
+}
 @media (max-width:1024px) {
 
     .community-stats-left-subtitle-a,
