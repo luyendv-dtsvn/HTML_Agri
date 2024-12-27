@@ -1,4 +1,4 @@
-//----------------------Bản sắc phần 1 trang văn hóa-------------------------
+
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".agribank-culture-identity-card");
 
@@ -111,80 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Các thông tin trên trang chi tiết sản phẩm 
 
 
-//-------------------phần chuyển tab product-detail------------------------------
-// Lấy tất cả các nút tab và nội dung tab
-const tabButtons = document.querySelectorAll('.tab-button');
-const tabContents = document.querySelectorAll('.tab-content-info');
 
-// Hàm ẩn tất cả nội dung tab
-function hideAllTabs() {
-tabContents.forEach(content => {
-  content.classList.remove('active');
-  content.hidden = true; // Ẩn nội dung
-});
-}
-
-// Hàm xóa trạng thái active khỏi tất cả các nút
-function deactivateAllButtons() {
-tabButtons.forEach(button => button.classList.remove('active'));
-}
-
-// Lắng nghe sự kiện click trên mỗi nút tab
-tabButtons.forEach(button => {
-button.addEventListener('click', () => {
-  // Ẩn tất cả nội dung và nút không cần thiết
-  hideAllTabs();
-  deactivateAllButtons();
-
-  // Kích hoạt nút và hiển thị tab tương ứng
-  button.classList.add('active');
-  const tabId = button.getAttribute('data-tab');
-  const activeTabContent = document.getElementById(tabId);
-  if (activeTabContent) {
-    activeTabContent.hidden = false; // Hiển thị nội dung
-    activeTabContent.classList.add('active');
-  }
-});
-});
-
-// Khởi tạo trạng thái hiển thị tab đầu tiên
-window.addEventListener('DOMContentLoaded', () => {
-const defaultButton = document.querySelector('.tab-button.active');
-if (defaultButton) {
-  const defaultTabId = defaultButton.getAttribute('data-tab');
-  const defaultContent = document.getElementById(defaultTabId);
-
-  if (defaultContent) {
-    defaultContent.hidden = false; // Hiển thị tab đầu tiên
-    defaultContent.classList.add('active');
-  }
-} else {
-  hideAllTabs(); // Nếu không có nút active mặc định, ẩn tất cả tab
-}
-});
-
-
-// Lấy các phần tử liên quan
-const selectButton = document.getElementById('tab-select');
-const tabOptions = document.querySelectorAll('.tab-option-info');
-
-// Xử lý khi chọn một tùy chọn từ menu
-tabOptions.forEach(option => {
-option.addEventListener('click', () => {
-
-  // Đổi nội dung nút select thành tên tab đã chọn
-  selectButton.textContent = option.textContent;
-
-  // Kích hoạt tab tương ứng
-  const tabId = option.getAttribute('data-tab');
-  const activeTabButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
-
-  if (activeTabButton) {
-    activeTabButton.click(); // Kích hoạt tab thông qua JS
-  }
-
-});
-});
 
 
 // -------------------- Thanh menu bên trong answer page ------------
