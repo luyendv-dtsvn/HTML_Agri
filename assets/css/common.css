@@ -5,8 +5,11 @@
  * Version	 :	1.0.0
 **/
 @import url('./common-root.css');
+@import url('./event.css');
 
 /* luyendv */
+
+
 .custom-radio.custom-control-pro.no-control .custom-control-input:checked~.custom-control-label {
     border-color: var(--red-1);
     z-index: 2;
@@ -20,6 +23,21 @@
     background-color: var(--red-1);
     color: #fff;
 }
+
+.image-zoom {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+.image-zoom img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
 
 .custom-input-group input {
     background: #F4F4F4;
@@ -101,7 +119,9 @@
 
 .table-rate {
     border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    border-left: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .table-rate .table th,
@@ -120,6 +140,36 @@
 .table-rate .user-avatar,
 [class^="user-avatar"]:not([class*="-group"]) {
     align-items: unset;
+}
+
+.home-table-exchange .nav-tabs .nav-link {
+    padding: 0px;
+}
+.home-table-exchange .nav-tabs .nav-link:hover {
+    background: var(--red-1, #AF0B35);
+    color: white;
+    opacity: 1;
+    border-radius: 4px;
+}
+.home-table-exchange .nav-tabs .nav-link.active {
+    border-radius: 4px;
+    /* border: 2px solid var(--red-1, #AF0B35); */
+    background: var(--red-1, #AF0B35);
+    color: white;
+}
+
+.home-table-exchange .custom-control-pro .custom-control-label {
+    line-height: 110%;
+}
+
+
+
+.home-table-exchange .nav-tabs .nav-link:after {
+    background: none;
+}
+
+.home-table-exchange .custom-control-pro.no-control .custom-control-label {
+    padding: 9px 23px;
 }
 
 .text-align-right {
@@ -142,10 +192,7 @@
     gap: 8px;
 }
 
-.btn-show-more:hover {
-    background: var(--red-3);
-    color: #fff;
-}
+
 
 .row-ct {
     display: flex;
@@ -155,23 +202,23 @@
 .radio-rate .custom-radio label {
     border: unset;
     background: rgba(0, 0, 0, 0.04);
+
+
 }
+
+
+
 
 .exchange-rate input.date-picker {
     min-width: 150px;
 }
 
-.icon-change-rate:hover {
-    background: var(--red-1)
-}
 
 .icon-change-rate em {
     font-size: 16px;
 }
 
-.icon-change-rate:hover em {
-    color: #fff;
-}
+
 
 
 
@@ -518,9 +565,11 @@
     display: block;
     gap: 20px;
 }
-.community_slider .owl-stage{
-    gap:0px;
+
+.community_slider .owl-stage {
+    gap: 0px;
 }
+
 .community-stats-left-1 {
     margin-bottom: 20px;
     display: flex;
@@ -530,12 +579,7 @@
 
 }
 
-.community-stats-left-1 img:hover {
-    transform: scale(0.9);
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
 
-}
 
 .community-stats-left-title {
     display: block;
@@ -611,10 +655,7 @@
     min-width: max-content;
 }
 
-.home-vision-header-button:hover {
-    background: var(--red-1);
-    color: white;
-}
+
 
 .category-future .title {
     position: absolute;
@@ -627,10 +668,7 @@
     padding-left: 48px;
 }
 
-.home-vision-header-button:hover span,
-.home-vision-header-button:hover em {
-    color: white;
-}
+
 
 .home-vision-header-button {
     padding: 14px;
@@ -652,9 +690,7 @@
     color: black;
 }
 
-.home-vision-button-dropdown a:hover {
-    color: var(--red-1);
-}
+
 
 .card-rate .user-avatar {
     width: 36.457px;
@@ -878,10 +914,13 @@ input:focus {
     width: 116%;
 }
 
+
+
 .content-top-menu img {
     transition: stroke 0.3s ease;
     margin-bottom: 10.5%;
 }
+
 @media (max-width:1366px) {
     .img-quote {
         max-width: 30px;
@@ -988,6 +1027,7 @@ input:focus {
     .community {
         height: 1000px;
     }
+
     .d-none-992 {
         display: none !important;
     }
@@ -1052,6 +1092,7 @@ input:focus {
         background-size: 190%;
         background-position: center bottom;
     }
+
     .content-top-menu.underline::before {
         width: 100%;
     }
@@ -1124,6 +1165,7 @@ input:focus {
     .community-stats-left-subtitle {
         gap: 17px;
     }
+
     .community-stats-left-subtitle-a,
     .community_slider {
         padding-left: 30px;
@@ -1164,7 +1206,6 @@ input:focus {
         width: 28px;
         height: 28px;
     }
-
 }
 
 @media (max-width: 375px) {}
@@ -1178,25 +1219,9 @@ input:focus {
         width: 90%;
     }
 
-
 }
 
-.block-img-hover img:hover {
-    transform: scale(1.1);
-}
 
-.block-img-hover {
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-}
-
-.block-img-hover img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
 
 .gap20 {
     gap: 20px;
