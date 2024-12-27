@@ -31,7 +31,7 @@
       display: flex !important;
       gap: 68px;
       position: absolute;
-      right: 10px;
+      padding-right: 41px;
       bottom: calc(100% + 74px);
       justify-content: flex-end;
     }
@@ -42,7 +42,6 @@
       bottom: 7%;
       display: flex;
       gap: 70px;
-      left: 78%;
       padding-right: 5%;
     }
 
@@ -62,20 +61,18 @@
 
     @media (max-width: 1366px) {
 
-      .owl-carousel-agri .owl-nav.disabled,
-      .owl-carousel-agri .owl-dots.disabled {
-        right: 5%;
-        bottom: 117%;
+      .home-user .owl-carousel .owl-nav, .home-user .owl-carousel .owl-dots {
+        right: 32px;
+        bottom: calc(100% + 74px);
         gap: 69px;
       }
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1100px) {
 
-      .owl-carousel-agri .owl-nav.disabled,
-      .owl-carousel-agri .owl-dots.disabled {
-        right: 6%;
-        bottom: 116%;
+      .home-user .owl-carousel .owl-nav, .home-user .owl-carousel .owl-dots {
+        right: 41px;
+        bottom: 0%;
       }
     }
 
@@ -1619,14 +1616,14 @@
               <div class="home-business-background-heading-tab">
                 <span class="body-14 color-dark-1">Chọn nhóm sản phẩm</span>
                 <div class="home-business-background-tab">
-                  <button class="regular-14 color-dark-2">
+                  <button class="regular-14 color-dark-2 tab-button" data-tab="tab-khoi-nghiep">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
                       <path d="M4.5 12C9.55241 10.2426 11.8226 9.06986 16.875 7.3125L3.9375 2.8125V15.1875"
                         stroke="#343330" stroke-width="0.75" stroke-linecap="square" />
                     </svg>
                     <span>Khởi nghiệp</span>
                   </button>
-                  <button class="regular-14 color-dark-2">
+                  <button class="regular-14 color-dark-2 tab-button" data-tab="tab-phat-trien">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path d="M19 17H1V3" stroke="#343330" stroke-width="0.75" stroke-linecap="square"
                         stroke-linejoin="round" />
@@ -1636,7 +1633,7 @@
                     </svg>
                     <span>Phát triển</span>
                   </button>
-                  <button class="regular-14 color-dark-2">
+                  <button class="regular-14 color-dark-2 tab-button" data-tab="tab-toi-uu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path
                         d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z"
@@ -1647,7 +1644,7 @@
                     </svg>
                     <span>Tối ưu & kiểm soát</span>
                   </button>
-                  <button class="regular-14 color-dark-2">
+                  <button class="regular-14 color-dark-2 tab-button active" data-tab="tab-mo">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path d="M15.25 2.5H19V6.25" stroke="#343330" stroke-width="0.75" />
                       <path d="M4.75 17.5H1V13.75" stroke="#343330" stroke-width="0.75" />
@@ -1721,8 +1718,8 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-12 home-business-background-content-text row pr-0 pl-0">
+            <!-- nọi dung phần mở rộng quy mô -->
+            <div class="col-12 home-business-background-content-text row pr-0 pl-0 tab-content-info active" id="tab-quy-mo">
               <div class="col-12 col-md-4 home-business-background-titlte">
                 <img src="../assets/images/vanhoa-vaylist-vaydetail/background-title-business.png" alt="">
                 <h3 class="heading-h7 color-dark-1">Mở rộng quy mô cùng Agribank với các giải pháp tài chính linh
@@ -1793,6 +1790,18 @@
               </div>
               <!-- thanh arrow mobile -->
               <div class="col-12 home-business-list-arrow-button"></div>
+            </div>
+            <!-- nội dung phần phát triển -->
+            <div class="col-12 home-business-background-content-text row pr-0 pl-0 tab-content-info" id="tab-phat-trien">
+              <span>hfsjdgfjsdhfjsdfhjsdfhsjdkfhsdjkfsdhjfgsdhjdfgasdhjasgdhjagsdhjadgsahjdgahjdaghjdgashjdgashjdgasjh</span>
+            </div>
+            <!-- nội dung phần tối ưu và kiểm soát -->
+            <div class="col-12 home-business-background-content-text row pr-0 pl-0 tab-content-info" id="tab-toi-uu">
+              <span>test test test test test test test test test test test test test test test test test test test test</span>
+            </div>
+            <!-- nội dung phần khởi nghiệp -->
+            <div class="col-12 home-business-background-content-text row pr-0 pl-0 tab-content-info" id="khoi nghiep">
+              <span>426472354672354673254672354236745236745236475236742354672354672345264526734526734526745263</span>
             </div>
           </div>
         </div>
@@ -2152,7 +2161,7 @@
     </div>
   </section>
 </body>
-
+<script src="../assets/js/agri.js"></script>
 <script src="../assets/js/bundle.js"></script>
 <script src="../assets/js/home.js"></script>
 <script src="../assets/js/scripts.js"></script>
@@ -2278,7 +2287,7 @@
           items: 1,
         },
         575: {
-          items: 1,
+          items: 1.2,
         },
         768: {
           items: 1.5,
@@ -2294,6 +2303,7 @@
   });
 
 </script>
+
 <script src="../assets/js/libs/gsap.min.js"></script>
 <script src="../assets/js/navmenu.js" defer></script>
 
