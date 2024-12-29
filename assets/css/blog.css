@@ -117,7 +117,6 @@ margin-top: 58px;
 .content-betwent-subtitle img {
     width: 100%;
     height: auto;
-    margin-bottom: 8px;
     border-radius: 4px;
     transition: transform 0.3s ease;
 }
@@ -202,6 +201,11 @@ margin-top: 58px;
 }
 .content-betwent-subtitle a div{
 
+}
+
+.active-stt{
+    background-color:#AF0B35;
+    color: #fff;
 }
 
 @media (max-width: 1024px) {
