@@ -396,6 +396,10 @@
     background: none;
 }
 
+.section-agri-start .nav-tabs .nav-link.active svg {
+    fill: none;
+}
+
 @media (max-width: 1024px) {
     .home-business-background-heading-tab {
         gap: 5px;
