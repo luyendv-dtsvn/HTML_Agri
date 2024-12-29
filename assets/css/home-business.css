@@ -400,6 +400,18 @@
     fill: none;
 }
 
+.home-business-background-mobile .tabs-mobile-answer-button span {
+    gap: 5px;
+}
+
+.home-business-background-mobile .tabs-mobile-answer-button span svg path {
+    stroke: #AF0B35;
+}
+
+.home-business-background-mobile ul li a {
+    gap: 5px;
+}
+
 @media (max-width: 1024px) {
     .home-business-background-heading-tab {
         gap: 5px;

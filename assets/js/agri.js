@@ -112,46 +112,46 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
 // -------------------- Thanh menu bên trong answer page ------------
 
-// Lấy các phần tử liên quan
-const selectButtonAnswer = document.getElementById('tab-select-answer');
+document.addEventListener('DOMContentLoaded', () => {
+  // Lấy các phần tử liên quan
+  const selectButtonAnswerNew = document.getElementById('tab-select-answer'); // Đổi tên biến để tránh xung đột
 
-if (selectButtonAnswer) { // Kiểm tra phần tử tồn tại
-  const dropdownMenu = selectButtonAnswer.nextElementSibling; // Dropdown menu
-  const tabOptionsAnswer = document.querySelectorAll('.tab-pane-answer');
+  if (selectButtonAnswerNew) { // Kiểm tra phần tử tồn tại
+    const dropdownMenu = selectButtonAnswerNew.nextElementSibling; // Dropdown menu
+    const tabOptionsAnswer = document.querySelectorAll('.tab-pane-answer');
 
-  // Xử lý khi nhấn nút select để mở menu
-  selectButtonAnswer.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('show');
-  });
+    // Xử lý khi nhấn nút select để mở menu
+    selectButtonAnswerNew.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('show');
+    });
 
-  // Xử lý khi chọn một tùy chọn từ menu
-  tabOptionsAnswer.forEach(option => {
-    option.addEventListener('click', (e) => {
-      e.preventDefault();
-      const tabName = option.textContent;
-      selectButtonAnswer.querySelector('span').textContent = tabName;
+    // Xử lý khi chọn một tùy chọn từ menu
+    tabOptionsAnswer.forEach(option => {
+      option.addEventListener('click', (e) => {
+        e.preventDefault();
+        const tabName = option.textContent;
+        selectButtonAnswerNew.querySelector('span').textContent = tabName;
 
-      dropdownMenu.classList.remove('show');
+        dropdownMenu.classList.remove('show');
 
-      const tabId = option.getAttribute('data-tab');
-      const allTabs = document.querySelectorAll('.tab-pane');
-      const activeTab = document.getElementById(tabId);
+        const tabId = option.getAttribute('data-tab');
+        const allTabs = document.querySelectorAll('.tab-pane');
+        const activeTab = document.getElementById(tabId);
 
-      if (activeTab) {
-        allTabs.forEach(tab => tab.classList.remove('active'));
-        activeTab.classList.add('active');
+        if (activeTab) {
+          allTabs.forEach(tab => tab.classList.remove('active'));
+          activeTab.classList.add('active');
+        }
+      });
+    });
+
+    // Đóng menu khi nhấp bên ngoài
+    document.addEventListener('click', (e) => {
+      if (!selectButtonAnswerNew.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.remove('show');
       }
     });
-  });
-
-  // Đóng menu khi nhấp bên ngoài
-  document.addEventListener('click', (e) => {
-    if (!selectButtonAnswer.contains(e.target) && !dropdownMenu.contains(e.target)) {
-      dropdownMenu.classList.remove('show');
-    }
-  });
-} 
+  }
+});
