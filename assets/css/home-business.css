@@ -132,6 +132,7 @@
     border: 1px solid rgba(170, 29, 64, 0.12);
     background: rgba(175, 11, 53, 0.06);
     gap: 6px;
+    z-index: 9999;
 }
 
 .home-business-item-card {
