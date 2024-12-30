@@ -8,19 +8,6 @@
   display: none;
 }
 
-.btn-next {
-  width: 8%;
-  height: 24%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(270deg, #b00c3605 40%, rgba(158, 43, 71, 0.00) 100%);
-  position: absolute;
-  bottom: 16%;
-  right: 2%;
-  backdrop-filter: blur(1px);
-}
 
 .btn-next svg {
   position: absolute;
@@ -32,22 +19,6 @@
   background: #6F182D;
   top: 23%;
   right: 1%;
-}
-
-.pull-down {
-  position: absolute;
-  top: 94%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.pull-down-title {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: #ffffff;
-  gap: 10px;
 }
 
 .hrr {

@@ -240,9 +240,9 @@ $(document).ready(function () {
   
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   AOS.init({
-//     offset: 100, // Khoảng cách trước khi hiệu ứng bắt đầu
-//     delay: 1000,    // Thời gian delay trước khi chạy
-//   });
-// });
+document.addEventListener("DOMContentLoaded", () => {
+  AOS.init({
+    duration: 1000, // Thời gian hiệu ứng (ms)
+    offset: 100,    // Khoảng cách từ đáy màn hình để kích hoạt (px)
+  });
+});

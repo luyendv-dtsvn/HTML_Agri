@@ -31,9 +31,11 @@
 .text-trans-9 {
     color: rgba(255, 255, 255, 0.90) !important;
 }
-.pl-20px{
+
+.pl-20px {
     padding-left: 20px;
 }
+
 .img-hover-btn .btn-overlay {
     position: absolute;
     top: 0;
@@ -773,12 +775,15 @@
     min-width: 120px;
 
 }
+
 .home-table-exchange-576 .info-item-rate .rate-title {
     color: #494949;
 }
+
 .home-table-exchange-576 .info-item-rate .rate-value {
     color: #28140C;
 }
+
 .input-search {
     bottom: 15%;
     position: absolute;
@@ -792,6 +797,7 @@
     gap: 20px;
     padding: 8px 28px 28px 28px;
 }
+
 .form-search {
     position: relative;
     display: flex;
@@ -800,18 +806,22 @@
     padding: 26px 16px 26px 8px;
     border-bottom: 1.5px solid rgb(255 255 255 / 16%);
 }
+
 .form-search input {
     width: 90%;
     border: none;
     background: transparent;
     color: #FFF;
 }
+
 input::placeholder {
     color: rgba(255, 255, 255, 0.80);
 }
+
 input:focus {
     outline: none;
 }
+
 /* List of search results */
 .list-search {
     overflow: hidden;
@@ -848,23 +858,36 @@ input:focus {
     height: 100%;
     z-index: 0;
 }
+
 .slider-banner .owl-stage {
     gap: 0px;
 }
+
 .banner-header {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
-[data-aos^=fade][data-aos^=fade].input-search.aos-animate {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
 
-  [data-aos=fade-up].input-search {
-    transform: translate3d(-50%, 500px, 0);
-  }
+[data-aos^=fade][data-aos^=fade].input-search.aos-animate {
+    /* opacity: 1; */
+    transform: translate(-50%, -50%);
+}
+
+[data-aos=fade-up].input-search {
+    transform: translate3d(-50%, 300px, 0);
+}
+
+[data-aos^=fade][data-aos^=fade].text-banner.aos-animate {
+    /* opacity: 1; */
+    transform: translate(-50%, -50%);
+}
+
+[data-aos=fade-up].text-banner {
+    transform: translate3d(-50%, 300px, 0);
+}
+
 /* .owl-prev, */
 .btn-prev {
     display: none;
@@ -1048,10 +1071,14 @@ input:focus {
     display: flex;
     justify-content: center;
 }
-
+.img-quote {
+    max-width: 28px;
+    padding-top: 7px;
+}
 @media (max-width:1366px) {
     .img-quote {
-        max-width: 30px;
+        max-width: 25px;
+        padding-top: 5px;
     }
 
     .d-none-1366 {
@@ -1109,6 +1136,7 @@ input:focus {
 
     .img-quote {
         max-width: 20px;
+        padding-top: 5px;
     }
 
     .d-none-1024 {
