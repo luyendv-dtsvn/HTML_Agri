@@ -324,7 +324,7 @@ ul.ruby-menu>li:hover>a,
 ul.ruby-menu>li.ruby-active-menu-item>a:hover,
 ul.ruby-menu>li.ruby-active-menu-item:hover>a {
   /* background: #19ad86 */
-  color: #AF0B35;
+  color: #fff;
 }
 
 ul.ruby-menu>li>a:only-child:after,

@@ -19,6 +19,11 @@
   <div class="main">
     <!-- Header -->
     <div class="banner-header">
+      <div class="slider-banner owl-carousel owl-theme">
+        <div class="slider-banner-item" style="background-image: url('../assets/images/home/banner_user.png');"></div> -->
+        <div class="slider-banner-item" style="width:100vw;height: 100vh;background-image: url('../assets/images/home/banner_user.png');"></div>
+        <div class="slider-banner-item" style="width:100vw;height: 100vh;background-image: url('../assets/images/home/background-home-33.png');"></div>
+      </div>
       <div class="header header-pc ">
         <div class="top">
           <div class="top-user">
@@ -29,8 +34,7 @@
             </div>
             <div class="div-pre-h-right">
               <div class="top-user-right body-12">
-
-                <div class=" active body-12"> <a href="#">Về Agribank</a></div>
+                <div class="body-12 active"> <a href="#">Về Agribank</a></div>
                 <div class="body-12"><a href="#">Tin tức</a></div>
                 <div class="body-12"><a href="#">Tuyển dụng</a></div>
                 <div class="body-12"><a href="#">Hỗ trợ</a></div>
@@ -90,12 +94,12 @@
                 <div class="ruby-menu-demo-header h-100">
                   <div class="ruby-wrapper h-100">
                     <ul class="ruby-menu">
-                      <li class="ruby-menu-mega-blog "><a href="#" class="body-15">Về chúng tôi</a></li>
+                      <li class="ruby-menu-mega-blog "><a href="#" class="body-15">Về chính tôi</a>
+                      </li>
                       <li class="ruby-menu-mega-blog "><a href="#" class="body-15">Công bố thông tin</a></li>
                       <li class="ruby-menu-mega-blog "><a href="#" class="body-15">Thư viện Agribank</a></li>
                       <li class="ruby-menu-mega-blog "><a href="#" class="body-15">Tin tức</a></li>
                       <li class="ruby-menu-mega-blog "><a href="#" class="body-15">Sản phẩm đấu giá</a></li>
-
                     </ul>
                   </div>
 
@@ -109,8 +113,9 @@
             </div>
             <div class="top-menu-right">
               <div class="hot-line">
-                <span class="regular-15 color-white"><span class="txt-hl">Hotline:</span> 1900558818 /
-                  02432053205</span>
+                <a href="tel:+1900558818" class="regular-15 color-white color-hover-w"><span
+                    class="txt-hl">Hotline:</span> 1900558818 /
+                  02432053205</a>
               </div>
               <div class="line-v" style="height: 36px;background: rgba(255, 255, 255, 0.20);"></div>
               <div class="dropdown div-login">
@@ -634,7 +639,7 @@
                                 <div class="line-h"></div>
                               </li><!-- .nk-menu-item -->
                               <li class="nk-menu-item">
-                                <a href="#" class="nk-menu-link" data-original-title="" title="">
+                                <a href="#" class="nk-menu-link " data-original-title="" title="">
                                   <span class="nk-menu-text body-13 color-dark-2">Về Agribank</span>
                                 </a>
                               </li><!-- .nk-menu-item -->
@@ -733,16 +738,9 @@
         </div>
       </div>
 
-      <div class="banner">
-        <!-- <video class="banner-video" autoplay muted loop>
-        <source src="../assets/images/home/-6d89-4278-af99-959203b48a4e.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video> -->
-        <!-- <div class="content heading-h1">
-          Mang phồn thịnh <br> đến với khách hàng
-        </div> -->
+      <div class="banner-search">
         <div class="search gradient-background">
-          <div class="input-search">
+          <div class="input-search" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out">
             <form class="form-search" action="/search" method="GET">
               <div class="icon-search">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -765,7 +763,7 @@
             <div>
               <div class="list-search owl-carousel-search">
                 <div class="search-product">
-                  <a href="#">
+                  <a href="#" class="color-hover-w">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path d="M15.25 2.5H19V6.25" stroke="white" stroke-width="0.75" />
                       <path d="M4.75 17.5H1V13.75" stroke="white" stroke-width="0.75" />
@@ -775,12 +773,12 @@
                       <path d="M4.75 7L10 10L15.25 7" stroke="white" stroke-width="0.75" />
                       <path d="M10 10V16" stroke="white" stroke-width="0.75" />
                     </svg>
-                    <span class="regular-13">Phát triển bền vững</span>
+                    <span class="regular-13">Tìm sản phẩm</span>
                   </a>
                 </div>
                 <div class="calculation-tool">
-                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                      fill="none">
+                  <a href="#" class="color-hover-w"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none">
                       <path d="M13.75 5H6.25V8.75H13.75V5Z" stroke="white" stroke-width="0.75" />
                       <path d="M16.25 17.5V2.5L3.75 2.5L3.75 17.5H16.25Z" stroke="white" stroke-width="0.75" />
                       <path
@@ -802,12 +800,12 @@
                         d="M13.125 15.625C13.6428 15.625 14.0625 15.2053 14.0625 14.6875C14.0625 14.1697 13.6428 13.75 13.125 13.75C12.6072 13.75 12.1875 14.1697 12.1875 14.6875C12.1875 15.2053 12.6072 15.625 13.125 15.625Z"
                         fill="white" />
                     </svg>
-                    <span class="regular-13">báo cáo tài chính</span></a>
+                    <span class="regular-13">Công cụ tính</span></a>
                 </div>
 
                 <div class="find-branch">
-                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                      fill="none">
+                  <a href="#" class="color-hover-w"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none">
                       <path
                         d="M10 10.625C11.3807 10.625 12.5 9.50571 12.5 8.125C12.5 6.74429 11.3807 5.625 10 5.625C8.61929 5.625 7.5 6.74429 7.5 8.125C7.5 9.50571 8.61929 10.625 10 10.625Z"
                         stroke="white" stroke-width="0.75" />
@@ -815,29 +813,29 @@
                         d="M16.25 8.125C16.25 13.75 10 18.125 10 18.125C10 18.125 3.75 13.75 3.75 8.125C3.75 6.4674 4.40848 4.87769 5.58058 3.70558C6.75269 2.53348 8.3424 1.875 10 1.875C11.6576 1.875 13.2473 2.53348 14.4194 3.70558C15.5915 4.87769 16.25 6.4674 16.25 8.125Z"
                         stroke="white" stroke-width="0.75" />
                     </svg>
-                    <span class="regular-13">Báo cáo thường niên</span></a>
+                    <span class="regular-13">Tìm chi nhánh</span></a>
                 </div>
                 <div class="find-branch">
-                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                      fill="none">
+                  <a href="#" class="color-hover-w"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none">
                       <path d="M17.5 16.25H2.5V3.75" stroke="white" stroke-width="0.75" />
                       <path d="M17.5 7.5L12.5 11.875L7.5 8.125L2.8125 12.5" stroke="white" stroke-width="0.75" />
                     </svg>
-                    <span class="regular-13">Công bố thông tin</span></a>
+                    <span class="regular-13">Tỷ giá</span></a>
                 </div>
                 <div class="fee-schedule">
-                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                      fill="none">
+                  <a href="#" class="color-hover-w"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none">
                       <path d="M16.25 17.5H3.75V2.5H11.875L16.25 6.875V17.5Z" stroke="white" stroke-width="0.75" />
                       <path d="M11.875 2.5V6.875H16" stroke="white" stroke-width="0.75" />
                       <path d="M7.5 10.625H12.5" stroke="white" stroke-width="0.75" />
                       <path d="M7.5 13.125H12.5" stroke="white" stroke-width="0.75" />
                     </svg>
-                    <span class="regular-13">Phòng thông tin</span></a>
+                    <span class="regular-13">Biểu phí</span></a>
                 </div>
                 <div class="interest-rate">
-                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                      fill="none">
+                  <a href="#" class="color-hover-w"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none">
                       <path d="M15.625 4.375L4.375 15.625" stroke="white" stroke-width="0.75" />
                       <path
                         d="M5.9375 8.125C7.14562 8.125 8.125 7.14562 8.125 5.9375C8.125 4.72938 7.14562 3.75 5.9375 3.75C4.72938 3.75 3.75 4.72938 3.75 5.9375C3.75 7.14562 4.72938 8.125 5.9375 8.125Z"
@@ -865,11 +863,12 @@
         </div>
       </div>
     </div>
+    
 
     <!--End Header -->
 
     <!-- Content -->
-    <div class="about-us">
+    <div class="about-us" id="div-first" data-aos="fade-up">
       <div class="about-title subtitle-14">VỀ CHÚNG TÔI</div>
       <div class="about-subtitle heading-h4">
         <span class="color-dark-1">Agribank đã và đang khẳng <br />
@@ -1009,7 +1008,7 @@
         </div>
       </div>
     </div>
-    <div class="background-top">
+    <div class="background-top" data-aos="fade-up">
       <div class="content">
         <div class="banner-content">
           <div class="announcement">
@@ -1062,7 +1061,7 @@
             </div>
           </div>
 
-          <div class="reports">
+          <div class="reports" data-aos="fade-up">
             <div class="reports-titles">
               <div class="reports-title subtitle-14">BÁO CÁO SỐ</div>
               <div class="reports-subtitle heading-h4">
@@ -1185,38 +1184,42 @@
             </div>
           </div>
           <div class="community_slider community-stats-left col-lg-6  col-xxl-6 col-12 pt-2r-mobile">
-            <div class="">
-              <div id="community_slider_new" class=" col-12 pl-0 pr-0">
-                <div class="col-12 pl-0">
-                  <div class="community-stats-left-1">
-                    <div class="div-image-recent">
-                      <img src="../assets/images/vanhoa-vaylist-vaydetail/finance-card-1.png" alt="" />
-                    </div>
-                    <div class="community-stats-right-title justify-center">
-                      <span class="subtitle-12" style="color: #494949">Hoạt động cộng đồng</span>
-                      <a href="#" class="color-dark-2 heading-h8">
-                        Agribank đồng hành cùng chương trình  "Giữ biển trời quê hương" - Bất khuất tinh thần Việt Nam
-                      </a>
+            <div id="community_slider_new" class=" col-12 pl-0 pr-0">
+              <div class="col-12 pl-0">
+                <a href="#" class="community-stats-left-1 zoom-img color-hover">
+                  <div class="div-image-recent">
+                    <div class="image-zoom">
+                      <img src="../assets/images/home/blog1.png" alt="" />
                     </div>
                   </div>
-                </div>
-                <div class="col-12 pl-0">
-                  <div class="community-stats-left-1">
-                    <div class="div-image-recent">
-                      <img src="../assets/images/vanhoa-vaylist-vaydetail/finance-card-2.png" alt="" />
-                    </div>
-                    <div class="community-stats-right-title justify-center">
-                      <span class="subtitle-12" style="color: #494949">Hoạt động cộng đồng</span>
-                      <a href="#" class="color-dark-2 heading-h8">Agribank cùng cả nước hướng tới kỷ niệm 70 năm Chiến thắng Điện Biên Phủ
-                      </a>
+                  <div class="community-stats-right-title justify-center">
+                    <span class="subtitle-12" style="color: #494949">Giải thưởng</span>
+                    <p class="color-dark-2 heading-h8">
+                      Agribank được vinh danh 3 giải thưởng Ngân hàng Việt Nam tiêuải thưởng Ngân hàng Việt Nam tiêu
+                      biểu 2024
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 pl-0">
+                <a href="#" class="community-stats-left-1 zoom-img color-hover">
+                  <div class="div-image-recent">
+                    <div class="div-image-recent image-zoom">
+                      <img src="../assets/images/home/blog2.png" alt="" />
                     </div>
                   </div>
-                </div>
+                  <div class="community-stats-right-title justify-center">
+                    <span class="subtitle-12" style="color: #494949">Giải thưởng</span>
+                    <p class="color-dark-2 heading-h8">Agribank vinh dự đạt Giải thưởng Chất lượng Quốc gia
+                      năm 2022 và 2023
+                    </p>
+                  </div>
+                </a>
               </div>
-              <div class="col-12 pl-0 div-show-more-1">
-                <a href="#"><span class="regular-18 color-red-1">Xem thêm </span><em
-                    class="icon ni ni-chevron-right regular-18 color-red-1"></em></a>
-              </div>
+            </div>
+            <div class="col-12 pl-0 div-show-more-1">
+              <a href="#"><span class="regular-18 color-red-1">Xem thêm </span><em
+                  class="icon ni ni-chevron-right regular-18 color-red-1"></em></a>
             </div>
           </div>
         </div>
@@ -1484,7 +1487,7 @@
 <script src="../assets/js/libs/jquery-3.7.1.js"></script>
 <link rel="stylesheet" href="../assets/css/libs/owl.carousel.css" />
 <script src="../assets/js/libs/owl.carousel.min.js"></script>
-
+<script src="../assets/js/libs/gsap.min.js"></script>
 
 <script>
   $(document).ready(function () {
@@ -1563,8 +1566,18 @@
         },
       },
     });
+    
   });
+    gsap.to(".explore-btn", {
+      y: 10,       // Di chuyển xuống 10px
+      opacity: 0,  // Mờ dần
+      duration: 1, // Thời gian 1 giây
+      repeat: -1,  // Lặp vô hạn
+      yoyo: true,  // Quay lại trạng thái ban đầu
+    });
 
 </script>
 
+<link rel="stylesheet" href="../assets/css/libs/aos.css" />
+<script src="../assets/js/libs/aos.js"></script>
 </html>
