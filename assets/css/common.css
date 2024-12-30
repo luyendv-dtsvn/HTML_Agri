@@ -31,8 +31,8 @@
 .text-trans-9 {
     color: rgba(255, 255, 255, 0.90) !important;
 }
-.pl-24px{
-    padding-left: 24px;
+.pl-20px{
+    padding-left: 20px;
 }
 .img-hover-btn .btn-overlay {
     position: absolute;
