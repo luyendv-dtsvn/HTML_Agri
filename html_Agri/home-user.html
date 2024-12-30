@@ -20,11 +20,12 @@
 <body class="home-user no-touch nk-nio-theme has-aside as-mobile">
   <div class="main">
     <div class="banner-header">
-      <div class="slider-banner ">
+      <div class="slider-banner owl-carousel owl-theme">
         <!-- <div class="slider-banner-item" style="background-image: url('../assets/images/home/background-home-33.png');">
         </div>
         <div class="slider-banner-item" style="background-image: url('../assets/images/home/banner_user.png');"></div> -->
-        <div class="slider-banner-item" style="background-image: url('../assets/images/home/banner_user_bk.png');"></div>
+        <div class="slider-banner-item" style="width:100vw;height: 100vh;background-image: url('../assets/images/home/banner_user.png');"></div>
+        <div class="slider-banner-item" style="width:100vw;height: 100vh;background-image: url('../assets/images/home/background-home-33.png');"></div>
       </div>
       <div class="header header-pc ">
         <div class="top">
@@ -1623,7 +1624,7 @@
         </div>
       </div>
 
-      <div class="banner">
+      <div class="banner-search">
         <div class="search gradient-background">
           <div class="input-search" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out">
             <form class="form-search" action="/search" method="GET">
@@ -2952,13 +2953,23 @@
   // $(".slider-banner").owlCarousel({
   //   items: 1,               // Show one slide at a time
   //   loop: true,             // Infinite loop
-  //   autoplay: true,         // Auto-slide
-  //   autoplayTimeout: 6000,  // 3 seconds per slide
-  //   animateOut: 'fadeOut',  // Fade-out effect
-  //   animateIn: 'fadeIn',    // Fade-in effect
+  //   // autoplay: true,         // Auto-slide
+  //   // autoplayTimeout: 6000,  // 3 seconds per slide
+  //   // animateOut: 'fadeOut',  // Fade-out effect
+  //   // animateIn: 'fadeIn',    // Fade-in effect
   //   dots: false,            // No dots for navigation
   //   nav: false              // No next/prev buttons
   // });
+  $(document).ready(function(){
+      $(".slider-banner").owlCarousel({
+        items: 2,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: false,
+        smartSpeed: 1500,
+      });
+    });
 
 </script>
 <script src="../assets/js/libs/gsap.min.js"></script>

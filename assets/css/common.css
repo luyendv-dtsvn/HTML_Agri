@@ -31,7 +31,9 @@
 .text-trans-9 {
     color: rgba(255, 255, 255, 0.90) !important;
 }
-
+.pl-24px{
+    padding-left: 24px;
+}
 .img-hover-btn .btn-overlay {
     position: absolute;
     top: 0;
@@ -419,7 +421,7 @@
 
 .footer .block-h .desf {
     display: flex;
-    padding-top: 8px;
+    /* padding-top: 8px; */
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
@@ -771,33 +773,25 @@
     min-width: 120px;
 
 }
-
 .home-table-exchange-576 .info-item-rate .rate-title {
     color: #494949;
 }
-
 .home-table-exchange-576 .info-item-rate .rate-value {
     color: #28140C;
 }
-
 .input-search {
-    /* top: 77%; */
     bottom: 15%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 45%;
+    width: 100%;
     border-radius: 4px;
     background: linear-gradient(270deg, #af0b3591 0%, #c93259d4 100%);
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 8px 28px 28px 28px;
-
-
-
 }
-
 .form-search {
     position: relative;
     display: flex;
@@ -806,22 +800,18 @@
     padding: 26px 16px 26px 8px;
     border-bottom: 1.5px solid rgb(255 255 255 / 16%);
 }
-
 .form-search input {
     width: 90%;
     border: none;
     background: transparent;
     color: #FFF;
 }
-
 input::placeholder {
     color: rgba(255, 255, 255, 0.80);
 }
-
 input:focus {
     outline: none;
 }
-
 /* List of search results */
 .list-search {
     overflow: hidden;
@@ -832,11 +822,14 @@ input:focus {
     /* position: relative; */
 }
 
-.banner {
-    width: 100%;
-    position: relative;
+.banner-search {
+    width: 45%;
+    position: absolute;
     overflow: hidden;
-    height: 100vh;
+    height: 300px;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 .slider-banner .slider-banner-item {
@@ -855,7 +848,9 @@ input:focus {
     height: 100%;
     z-index: 0;
 }
-
+.slider-banner .owl-stage {
+    gap: 0px;
+}
 .banner-header {
     position: relative;
     width: 100%;
@@ -1201,7 +1196,7 @@ input:focus {
         padding-left: 50px !important;
     }
 
-    .input-search {
+    .banner-search {
         width: 70%;
     }
 
@@ -1290,7 +1285,7 @@ input:focus {
         right: 5%;
     }
 
-    .input-search {
+    .banner-search {
         width: 80%;
     }
 
@@ -1354,7 +1349,7 @@ input:focus {
         width: 55% !important;
     }
 
-    .input-search {
+    .banner-search {
         width: 90%;
     }
 
