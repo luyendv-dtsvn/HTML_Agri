@@ -31,7 +31,9 @@
 .text-trans-9 {
     color: rgba(255, 255, 255, 0.90) !important;
 }
-
+.pl-24px{
+    padding-left: 24px;
+}
 .img-hover-btn .btn-overlay {
     position: absolute;
     top: 0;
@@ -419,7 +421,7 @@
 
 .footer .block-h .desf {
     display: flex;
-    padding-top: 8px;
+    /* padding-top: 8px; */
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
@@ -778,7 +780,6 @@
     color: #28140C;
 }
 .input-search {
-    /* top: 77%; */
     bottom: 15%;
     position: absolute;
     left: 50%;
