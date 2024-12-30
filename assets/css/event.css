@@ -81,9 +81,14 @@
 .slider-blog a:hover {
     opacity: 1;
 }
-
+a:hover span, a:hover p {
+    color: var(--red-1);
+}
 a.color-hover:hover {
     opacity: 1;
+}
+a.color-hover-w:hover, .color-hover-w:hover span, .color-hover-w:hover p{
+    color: white;
 }
 a:hover {
     opacity: 0.6;
@@ -91,6 +96,4 @@ a:hover {
 .footer a:hover span,.footer  a:hover p {
     color: white;
 }
-a:hover span, a:hover p {
-    color: var(--red-1);
-}
+
