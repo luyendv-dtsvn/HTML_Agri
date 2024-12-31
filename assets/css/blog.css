@@ -223,6 +223,9 @@ margin-top: 58px;
     color: rgba(0, 0, 0, 0.60);
 
 }
+.nk-menu-main .nk-menu-item .nk-menu-toggle:after {
+    display: none;
+}
 .blog .home-header-slim-button{
     background: #AF0B35;
 }
