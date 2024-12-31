@@ -1,0 +1,85 @@
+@import url(common.css);
+.home-header-slim {
+    width: 100%;
+    display: flex;
+    padding: 14px 5%;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #AF0B35 0%, #8F1030 86%);
+}
+
+.home-header-slim-left {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.home-header-slim-tab {
+    display: flex;
+}
+
+.home-header-slim-tab span,
+.home-header-slim-hotline {
+    padding: 9px 10px;
+}
+
+.home-header-slim-right {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.home-header-slim-button {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 4px;
+    background: var(--white, #FFF);
+    border: #FFF;
+}
+
+.home-header-slim-line {
+    height: 36px;
+}
+
+.home-header-slim-mobile {
+    position: absolute;
+    width: 100%;
+}
+
+
+
+.home-header-slim {
+    padding: 10px 5%;
+}
+
+.home-header-slim .nk-menu-main .nk-menu-item .nk-menu-toggle:after {
+    position: fixed;
+}
+.home-header-slim-tab {
+    display: block;
+}
+
+.home-tab-heading-slim {
+    display: none !important;
+}
+
+@media (max-width:1552px) {
+    .home-header-slim {
+        padding: 0px 5%;
+    }
+
+    .home-header-slim .home-header-slim-tab {
+        display: none;
+    }
+
+    .home-header-slim .home-tab-heading-slim {
+        display: block !important;
+    }
+}
+
+ 
+
+

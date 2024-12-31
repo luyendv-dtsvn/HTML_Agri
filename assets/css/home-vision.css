@@ -1,28 +1,5 @@
 @import url(common.css);
 
-.home-vision-header {
-    width: 100%;
-    display: flex;
-    padding: 14px 5%;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(90deg, #AF0B35 0%, #8F1030 86%);
-}
-
-.home-vision-header-left {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-}
-
-.home-vision-header-tab {
-    display: flex;
-}
-
-.home-vision-header-tab span,
-.home-vision-header-hotline {
-    padding: 9px 10px;
-}
 /* @media (min-width: 992px) { */
 .col-md-35 {
     flex: 0 0 32.33333%;
@@ -45,26 +22,6 @@
 
 
 
-.home-vision-header-right {
-    display: flex;
-    gap: 18px;
-    align-items: center;
-}
-
-.home-vision-header-button {
-    padding: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    border-radius: 4px;
-    background: var(--white, #FFF);
-    border: #FFF;
-}
-
-.home-vision-header-line {
-    height: 36px;
-}
 
 .home-vision-content {
     position: relative;
@@ -190,10 +147,6 @@
     /* 16.5px */
 }
 
-.home-vision-header-mobile {
-    position: absolute;
-    width: 100%;
-}
 
 .home-vision-content-list-mobile {
     display: none;
@@ -220,25 +173,6 @@
 
 .home-vision-content-item-mobile span {
     text-align: center;
-}
-
-@media (max-width: 1366px) {
-
-    .home-vision-header-left,
-    .home-vision-header-right,
-    .home-vision-header-tab {
-        gap: 9px;
-    }
-
-    .home-vision-header-tab span,
-    .home-vision-header-hotline {
-        padding: 0;
-        padding-top: 2px;
-    }
-
-    .home-vision-header {
-        padding: 15px 2%;
-    }
 }
 
 
