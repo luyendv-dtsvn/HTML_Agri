@@ -231,6 +231,9 @@ margin-top: 58px;
     color: #333;
     
 }
+.blog .content-top:hover svg path{
+    stroke: #fff;
+}
 .notification-slide-new-title span{
     display: -webkit-box;
     -webkit-line-clamp: 2;
