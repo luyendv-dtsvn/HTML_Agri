@@ -22,7 +22,9 @@
 /* Regular */
 @font-face {
     font-family: 'BT Grotesk Regular';
-    src: url('../fonts/BTGrotesk-Regular.otf') format('opentype');
+    src: url('../fonts/BTGrotesk-Regular.woff2') format('woff2'),
+        url('../fonts/BTGrotesk-Regular.woff') format('woff'),
+        url('../fonts/BTGrotesk-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -30,7 +32,9 @@
 /* Bold */
 @font-face {
     font-family: 'BT Grotesk bold';
-    src: url('../fonts/BTGrotesk-Bold.otf') format('opentype');
+    src: url('../fonts/BTGrotesk-Bold.woff2') format('woff2'),
+        url('../fonts/BTGrotesk-Bold.woff') format('woff'),
+        url('../fonts/BTGrotesk-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
@@ -68,7 +72,9 @@
 /* Medium */
 @font-face {
     font-family: 'BT Grotesk Medium';
-    src: url('../fonts/BTGrotesk-Medium.otf') format('opentype');
+    src: url('../fonts/BTGrotesk-Medium.woff2') format('woff2'),
+        url('../fonts/BTGrotesk-Medium.woff') format('woff'),
+        url('../fonts/BTGrotesk-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
@@ -318,7 +324,7 @@ button {
     font-size: 0.75rem;
     /* 12px to rem */
     line-height: 139.9999976158142%;
-    
+
     font-weight: 400;
 }
 
