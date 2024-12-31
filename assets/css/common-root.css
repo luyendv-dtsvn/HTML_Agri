@@ -101,9 +101,10 @@ button {
     background: #fff;
     font-weight: 400;
     margin: 0;
-    /* letter-spacing: -0.64px; */
+    letter-spacing: normal;
     font-style: normal;
     font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
 }
 
 .heading-h1 {
