@@ -10,6 +10,10 @@
 {
     stroke: #AF0B35;
 }
+.blog .content-top-menu img{
+    width: 100%;
+    height: 100%;
+}
 .button-login-red {
     padding: 14px;
     display: flex;
@@ -20,6 +24,17 @@
     background: var(--red-1);
     border: var(--red-1);
 }
+.blog .content-top-menu.underline::before{
+    display: none;
+}
+.blog .image-cate{
+    position: relative;
+}
+.blog .title-cate{
+    position: absolute;
+    bottom: 23px;
+    left: 20px;
+}
 .slick-dots li button {
     background-color: #8094ae;
 }
@@ -27,15 +42,32 @@
     background-color: #AF0B35;
 }
 /* end common */
-
-.blog-title-section {
-    position: relative;
-    overflow: hidden; /* Đảm bảo không có phần thừa */
-    height: 583px;
+.social-network{
     display: flex;
-    justify-content: center;
-    background: url('../images/background-title-blog.png') no-repeat center ;
-    background-size: cover;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 100%;
+    height: 100%;
+    
+}
+.social-network-center{
+    background: linear-gradient(270deg, #AF0B35 0%, #99193A 100%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+.social-network-center .line-h{
+    width: auto;
+}
+.social-network-text{
+    position: relative;
+    left: 22%;
+    text-align: center;
+}
+.icon-social-network {
+    display: flex;
+    justify-content: center; /* Căn giữa các icon */
+    gap: 16px; /* Khoảng cách giữa các icon */
 }
 
 .blog-title-text {
@@ -208,6 +240,16 @@ margin-top: 58px;
     color: #fff;
 }
 
+.title{
+    position: absolute;
+    bottom: 31px;
+    left: 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+
+}
 @media (max-width: 1024px) {
     
 }
