@@ -2012,13 +2012,13 @@ input[type="range"]::-webkit-slider-thumb {
   
   /* css history page */
 
-  .accordion-inner {
+  /* .accordion-inner {
     padding: 0px;
     display: flex;
     gap: 13px;
     flex-direction: column;
-  }
-
+  } */
+/* 
   .accordion-inner p {
     margin-bottom: 0px;
   }
@@ -2054,7 +2054,7 @@ input[type="range"]::-webkit-slider-thumb {
 
   .accordion-head.collapsed .title {
     color: var(--red-21, #AA1D40);
-  }
+  } */
 
   .a {
     color: inherit !important; /* Kế thừa màu từ phần tử cha */
