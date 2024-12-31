@@ -89,6 +89,7 @@ a.color-hover:hover {
 }
 a.color-hover-w:hover, .color-hover-w:hover span, .color-hover-w:hover p{
     color: white;
+    opacity: 1;
 }
 a:hover {
     opacity: 0.6;
