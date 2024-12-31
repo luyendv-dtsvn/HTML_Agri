@@ -101,7 +101,7 @@ button {
     background: #fff;
     font-weight: 400;
     margin: 0;
-    letter-spacing: -0.64px;
+    /* letter-spacing: -0.64px; */
     font-style: normal;
     font-kerning: normal;
 }
