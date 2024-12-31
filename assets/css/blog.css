@@ -215,10 +215,19 @@ margin-top: 58px;
     
     color: #ffffff;
 }
+.blog .home-header-slim{
+    background: #ffffff !important;
+}
 
 .blog .top-menu-right .hot-line span{
     color: rgba(0, 0, 0, 0.60);
 
+}
+.blog .home-header-slim-button{
+    background: #AF0B35;
+}
+.blog .home-header-slim-line{
+    background: #F2F2F2;
 }
 .blog .top-menu-right .hot-line a{
     color: #000;
