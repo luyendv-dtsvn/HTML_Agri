@@ -103,6 +103,7 @@ button {
     margin: 0;
     letter-spacing: -0.64px;
     font-style: normal;
+    font-kerning: normal;
 }
 
 .heading-h1 {
