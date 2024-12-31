@@ -56,7 +56,7 @@
   } */
 
 .home-business-background-text {
-    gap: 90px;
+    gap: 149px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -97,13 +97,12 @@
 
 .home-business-background-heading-tab span {
     padding-right: 10px;
-    border-right: 1px solid #eaeaea;
 }
 
 .home-business-background-tab {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 
 .home-business-background-heading-right {
@@ -133,6 +132,7 @@
     border: 1px solid rgba(170, 29, 64, 0.12);
     background: rgba(175, 11, 53, 0.06);
     gap: 6px;
+    z-index: 9999;
 }
 
 .home-business-item-card {
@@ -355,6 +355,10 @@
     filter: blur(52px);
 }
 
+.home-business-background-text-title span {
+    margin-bottom: 14px;
+}
+
 .line-v {
     height: auto;
 }
@@ -386,6 +390,10 @@
     border: 1px solid var(--red-1, #AF0B35);
 }
 
+.section-agri-start .line-v {
+    height: 44px;
+    background: #EBEBEB;
+}
 
 @media (max-width: 1100px) {
     .home-business-list-arrow-button {

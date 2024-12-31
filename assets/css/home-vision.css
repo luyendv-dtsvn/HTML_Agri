@@ -70,7 +70,7 @@
     position: relative;
     overflow: hidden;
     /* Đảm bảo không có phần thừa */
-    height: calc(100vh - 87px);
+    height: calc(100vh - 75px);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -161,7 +161,7 @@
 }
 
 .home-vision-content-icon-right {
-    right: 27px;
+    right: 10px;
     height: 100%;
 }
 
