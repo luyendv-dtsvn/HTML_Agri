@@ -841,7 +841,7 @@ input:focus {
     position: absolute;
     overflow: hidden;
     height: 265px;
-    bottom: -5%;
+    bottom: -7%;
     transform: translateX(-50%);
     left: 50%;
 }
@@ -928,7 +928,7 @@ input:focus {
 .pull-down {
     position: absolute;
     /* top: 94%; */
-    bottom: 21%;
+    bottom: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -1332,6 +1332,9 @@ input:focus {
 }
 
 @media (max-width: 576px) {
+    .pull-down-title span{
+        font-size: 0.6375rem;
+    }
     .d-none-576{
         display: none;
     }

@@ -77,7 +77,10 @@
     object-fit: cover;
     transition: transform 0.3s ease;
 }
-
+.home-vision-content-item:hover{
+    background: var(--red-1);
+    opacity: 1;
+}
 .slider-blog a:hover {
     opacity: 1;
 }
