@@ -245,6 +245,9 @@
 
 @media (max-width: 992px) {
     .home-vision-content {
+        background: url('../images/home/homerg_bk.png') no-repeat center;
+    }
+    .home-vision-content {
         align-items: center;
         justify-content: flex-end;
         flex-direction: column;
