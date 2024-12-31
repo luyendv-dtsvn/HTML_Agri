@@ -90,7 +90,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 40px 5%;
+    padding: 40px 6%;
     gap: 20px;
     justify-content: space-between;
 }
@@ -268,7 +268,7 @@ margin-top: 58px;
 @media (max-width: 768px) {
 
     .blog-title-text {
-        padding: 27px 5%;
+        padding: 27px 6%;
     }
     .nk-menu-heading{
         padding: 14px;
@@ -307,7 +307,7 @@ margin-top: 58px;
 @media (max-width: 375px) {
 
     .blog-title-text {
-        padding: 18px 5%;
+        padding: 18px 6%;
     }
     .owl-center.owl-carousel .owl-nav, .owl-center.owl-carousel .owl-dots {
         
