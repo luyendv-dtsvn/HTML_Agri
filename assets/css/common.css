@@ -1332,6 +1332,12 @@ input:focus {
 }
 
 @media (max-width: 576px) {
+    .input-search {
+        padding: 0px 10px 10px 10px;
+    }
+    .form-search {
+        padding: 15px 16px 15px 8px;
+    }
     .pull-down-title span{
         font-size: 0.6375rem;
     }
