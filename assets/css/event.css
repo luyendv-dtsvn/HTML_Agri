@@ -87,9 +87,11 @@ a:hover span, a:hover p {
 a.color-hover:hover {
     opacity: 1;
 }
+a.block-img-hover.color-hover-w:hover, a.zoom-img.color-hover-w:hover {
+    opacity: 1;
+}
 a.color-hover-w:hover, .color-hover-w:hover span, .color-hover-w:hover p{
     color: white;
-    opacity: 1;
 }
 a:hover {
     opacity: 0.6;
