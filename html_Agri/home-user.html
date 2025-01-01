@@ -13,22 +13,33 @@
   <link rel="stylesheet" href="../assets/css/navmenu.css" />
 
   <style>
+    #banner1 {
+      background-image: url('../assets/images/home/pc_user.jpg');
+    }
+    @media (max-width:1024px) {
+      #banner1 {
+        background-image: url('../assets/images/home/tablet.png');
+      }
+    }
+    @media (max-width:992px) {
+      #banner1 {
+        background-image: url('../assets/images/home/mobile.png');
+      }
+    }
 
+    
   </style>
 </head>
 
 <body class="home-user no-touch nk-nio-theme has-aside as-mobile">
   <div class="main">
     <div class="banner-header">
-      <div class="slider-banner owl-carousel owl-theme">
-        <!-- <div class="slider-banner-item" style="background-image: url('../assets/images/home/background-home-33.png');">
-        </div>
-        <div class="slider-banner-item" style="background-image: url('../assets/images/home/banner_user.png');"></div> -->
-        <div class="slider-banner-item"
-          style="width:100vw;height: 100svh;background-image: url('../assets/images/home/banner_user.png');"></div>
-        <div class="slider-banner-item"
+      <div class="slider-banner ">
+        <!-- owl-carousel owl-theme -->
+        <div class="slider-banner-item" id="banner1" style="width:100vw;height: 100svh;"></div>
+        <!-- <div class="slider-banner-item" id="banner2"
           style="width:100vw;height: 100svh;background-image: url('../assets/images/home/background-home-33.png');">
-        </div>
+        </div> -->
       </div>
       <div class="header header-pc ">
         <div class="top">
@@ -1979,8 +1990,7 @@
                   <div class="community-stats-right-title justify-center">
                     <span class="subtitle-12" style="color: #494949">Giải thưởng</span>
                     <p class="color-dark-2 heading-h8">
-                      Agribank được vinh danh 3 giải thưởng Ngân hàng Việt Nam tiêuải thưởng Ngân hàng Việt Nam tiêu
-                      biểu 2024
+                      Agribank
                     </p>
                   </div>
                 </a>
@@ -2956,16 +2966,16 @@
   //   dots: false,            // No dots for navigation
   //   nav: false              // No next/prev buttons
   // });
-  $(document).ready(function () {
-    $(".slider-banner").owlCarousel({
-      items: 2,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 6000,
-      autoplayHoverPause: false,
-      smartSpeed: 1500,
-    });
-  });
+  // $(document).ready(function () {
+  //   $(".slider-banner").owlCarousel({
+  //     items: 2,
+  //     loop: true,
+  //     autoplay: true,
+  //     autoplayTimeout: 6000,
+  //     autoplayHoverPause: false,
+  //     smartSpeed: 1500,
+  //   });
+  // });
 
 </script>
 <script src="../assets/js/libs/gsap.min.js"></script>

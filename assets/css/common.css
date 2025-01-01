@@ -16,6 +16,13 @@
     overflow: hidden;
 }
 
+.about .home-header-slim {
+    background: linear-gradient(180deg, #AE0C35 0%, rgba(175, 11, 53, 0.00) 100%);
+}
+
+.home-financial .banner-header{
+    background-image: url('../images/home/background-home-33.png');
+}
 .img-hover-btn img {
     width: 100%;
     height: 100%;
@@ -1092,7 +1099,14 @@ input:focus {
     max-width: 28px;
     padding-top: 7px;
 }
-
+@media (max-width: 1366px) and (min-width: 1000px) {
+    .community_slider .image-zoom{
+        width: 200px;
+    } 
+    .community_slider .image-zoom img{
+        max-width: -webkit-fill-available;
+    } 
+}
 @media (max-width:1366px) {
     .img-quote {
         max-width: 25px;
@@ -1256,7 +1270,9 @@ input:focus {
     .pt-2r-mobile {
         padding-top: 2rem !important;
     }
-
+    .home-financial .banner-header{
+        /* background-image: url('../images/home/mobile.png'); */
+    }
     .div-image-recent img {
         max-width: 100%;
     }
@@ -1270,6 +1286,7 @@ input:focus {
         gap: 28px;
         /* flex: 1 0 0; */
     }
+
 }
 
 
