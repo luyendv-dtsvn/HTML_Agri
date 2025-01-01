@@ -1339,6 +1339,11 @@ input:focus {
 }
 
 @media (max-width: 576px) {
+    .btn-next {
+        bottom: 19%;}
+    .category-future .borrow-titler  {
+        font-size: 1.1025rem;
+     }
     .community-stats-left-title {
         padding-right: 0px !important;
         margin-right: 0px !important;

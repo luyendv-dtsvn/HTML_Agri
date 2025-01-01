@@ -19,6 +19,9 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .home-vision-content {
+        height: calc(100vh - 63px);
+    }
 }
 
 

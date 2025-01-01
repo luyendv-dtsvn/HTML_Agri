@@ -240,7 +240,7 @@ button {
     font-size: 0.875rem;
     /* 14px to rem */
     line-height: 110.00000238418579%;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.3px;
     font-weight: 400;
 }
 
@@ -294,7 +294,7 @@ button {
     font-size: 0.9375rem;
     /* 15px to rem */
     line-height: 150%;
-    letter-spacing: 0.25px;
+    letter-spacing: 0.35px;
     font-weight: 400;
 }
 
@@ -322,7 +322,7 @@ button {
     font-size: 0.75rem;
     /* 12px to rem */
     line-height: 139.9999976158142%;
-    letter-spacing: 0.25px;
+    letter-spacing: 0.35px;
     font-weight: 400;
 }
 
