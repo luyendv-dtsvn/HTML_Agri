@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home doanh nghiệp</title>
   <link rel="stylesheet" href="../assets/css/font-awesome.css" />
+  <link rel="stylesheet" href="../assets/css/libs/owl.carousel.min.css" />
   <link rel="stylesheet" href="../assets/css/dashlite.css" />
   <link rel="stylesheet" href="../assets/css/home-user.css" />
   <link rel="stylesheet" href="../assets/css/common.css" />
@@ -15,7 +16,7 @@
   <link rel="stylesheet" href="../assets/css/home-business.css" />
   <!-- <link rel="stylesheet" href="/assets/css/bld.css"> -->
   <style>
-    .owl-carousel .owl-nav.disabled,
+    /* .owl-carousel .owl-nav.disabled,
     .owl-carousel .owl-dots.disabled {
       display: flex !important;
       gap: 54px;
@@ -26,7 +27,7 @@
 
     .owl-carousel-agri .owl-stage {
       gap: 0px;
-    }
+    } */
 
     .owl-carousel-agri .owl-nav.disabled,
     .owl-carousel-agri .owl-dots.disabled {
@@ -59,35 +60,39 @@
     .owl-item {
       width: 80%;
     }
-
-
+    .home-business .section-agri-start .owl-carousel .owl-nav, .home-business .section-agri-start .owl-carousel .owl-dots {
+        float: right;
+        position: absolute;
+    }
+    
     @media (max-width: 1366px) {
 
-      /* .home-user .owl-carousel .owl-nav,
-      .home-user .owl-carousel .owl-dots {
+       .home-business .section-agri-start .owl-carousel .owl-nav,
+      .home-business .section-agri-start .owl-carousel .owl-dots {
         right: 32px;
         bottom: calc(100% + 77px);
         gap: 69px;
-      } */
+      } 
     }
 
     @media (max-width: 1100px) {
-
-      /* .home-user .owl-carousel .owl-nav,
-      .home-user .owl-carousel .owl-dots {
+      
+     
+       .home-business .section-agri-start .owl-carousel .owl-nav,
+      .home-business .section-agri-start .owl-carousel .owl-dots {
         right: 41px;
         bottom: 0%;
-      } */
+      } 
     }
 
     @media (max-width: 900px) {
 
-      /* .home-user .owl-carousel .owl-nav,
-      .home-user .owl-carousel .owl-dots {
+       .home-business .section-agri-start .owl-carousel .owl-nav,
+      .home-business .section-agri-start .owl-carousel .owl-dots {
         right: 41px;
         bottom: 0%;
         gap: 69px;
-      } */
+      } 
     }
 
     @media (max-width: 768px) {
@@ -98,22 +103,22 @@
         border-left: 1px solid #DEDEDE;
       }
 
-      /* .home-user .owl-carousel .owl-nav,
-      .home-user .owl-carousel .owl-dots {
+       .home-business .section-agri-start .owl-carousel .owl-nav,
+       .home-business .section-agri-start .owl-carousel .owl-dots {
         padding-right: 2.1%;
         bottom: 0%;
         gap: 51px;
-      } */
+      } 
     }
 
     @media (max-width: 375px) {
 
-      /* .home-user .owl-carousel .owl-nav,
-      .home-user .owl-carousel .owl-dots {
+      .home-business .section-agri-start .owl-carousel .owl-nav,
+      .home-business .section-agri-start .owl-carousel .owl-dots {
         padding-right: 2.9%;
         bottom: 0%;
         gap: 51px;
-      } */
+      }
     }
   </style>
 </head>
@@ -1101,8 +1106,8 @@
             <div class="top-menu-right">
               <div class="hot-line">
                 <a href="tel:+1900558818" class="regular-15 color-white color-hover-w"><span
-                    class="txt-hl">Hotline:</span> 1900558818 /
-                  02432053205</a>
+                    class="txt-hl">Hotline:</span> 1900558818 / 02432053205</a>
+                    
               </div>
               <div class="line-v" style="height: 36px;background: rgba(255, 255, 255, 0.20);"></div>
               <div class="dropdown div-login">
@@ -2803,7 +2808,7 @@
 <script src="../assets/js/bundle.js"></script>
 <script src="../assets/js/home.js"></script>
 <script src="../assets/js/scripts.js"></script>
-<link rel="stylesheet" href="../assets/css/libs/owl.carousel.min.css" />
+
 <script src="../assets/js/libs/jquery.min.js"></script>
 <script src="../assets/js/libs/owl.carousel.min.js"></script>
 <link rel="stylesheet" href="../assets/css/libs/aos.css" />
@@ -2925,10 +2930,10 @@
           items: 1,
         },
         575: {
-          items: 1.2,
+          items: 1,
         },
         768: {
-          items: 1.5,
+          items: 2,
         },
         1024: {
           items: 2,

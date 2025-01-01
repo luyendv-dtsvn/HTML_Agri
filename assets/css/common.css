@@ -275,13 +275,10 @@
 .radio-rate .custom-radio label {
     border: unset;
     background: rgba(0, 0, 0, 0.04);
-
-
 }
-
-
-
-
+.home-user .category-future .borrow-titler {
+    /* color: #050505d4; */
+}
 .exchange-rate input.date-picker {
     min-width: 150px;
 }
@@ -1339,6 +1336,9 @@ input:focus {
 }
 
 @media (max-width: 576px) {
+    .slider-blog.owl-carousel .owl-nav, .slider-blog.owl-carousel .owl-dots {
+        right: 8%;
+    }
     .banner-search {
         height: 142px;
     }
@@ -1348,7 +1348,7 @@ input:focus {
     }
 
     .category-future .borrow-titler {
-        font-size: 1.1025rem;
+        font-size: 1.025rem;
     }
 
     .community-stats-left-title {
