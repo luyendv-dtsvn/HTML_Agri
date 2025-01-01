@@ -20,7 +20,7 @@
         max-width: 100%;
     }
     .home-vision-content {
-        height: calc(100vh - 63px);
+        height: calc(100svh - 63px);
     }
 }
 
@@ -32,7 +32,7 @@
     position: relative;
     overflow: hidden;
     /* Đảm bảo không có phần thừa */
-    height: calc(100vh - 75px);
+    height: calc(100svh - 75px);
     display: flex;
     align-items: flex-end;
     justify-content: center;
