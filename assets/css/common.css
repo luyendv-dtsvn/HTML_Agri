@@ -621,7 +621,9 @@
     gap: 20px;
     margin-top: 20px;
 }
-
+.saler {
+    padding-bottom: 1rem;
+}
 .community-images img {
     width: 100px;
     height: 100px;
@@ -1338,8 +1340,16 @@ input:focus {
 }
 
 @media (max-width: 576px) {
+    .community-stats-left-title
+    {
+        padding-right: 0px !important;
+        margin-right: 0px !important;
+    }
+    .category-future .borrow-subtitle{
+        display: none;
+    }
     .home-user .owl-carousel .owl-nav, .home-user .owl-carousel .owl-dots {
-        bottom: 110%;
+        bottom: 114%;
     }
     .slider-blog .owl-stage {
         gap: 0px;
