@@ -534,7 +534,7 @@
     -webkit-animation: fadeIn .3s;
     animation: fadeIn .3s;
     z-index: 12;
-    max-height: calc(100vh - 115px);
+    max-height: calc(100svh - 115px);
     overflow-y: visible;
     overflow-x: hidden;
     right: 0;
@@ -796,7 +796,7 @@
 }
 
 .input-search {
-    bottom: 15%;
+    bottom: 20%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -877,7 +877,7 @@ input:focus {
 .banner-header {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -1339,11 +1339,18 @@ input:focus {
 }
 
 @media (max-width: 576px) {
+    .banner-search {
+        height: 142px;
+    }
+
     .btn-next {
-        bottom: 19%;}
-    .category-future .borrow-titler  {
+        bottom: 19%;
+    }
+
+    .category-future .borrow-titler {
         font-size: 1.1025rem;
-     }
+    }
+
     .community-stats-left-title {
         padding-right: 0px !important;
         margin-right: 0px !important;

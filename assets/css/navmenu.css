@@ -919,7 +919,7 @@ span.ruby-c-content {
 
 @media(max-width: 992px) {
   .submenu-mobile .nk-menu-main.nk-menu {
-    max-height: calc(100vh - 100px);
+    max-height: calc(100svh - 100px);
   }
 
   .header-pc {
@@ -1392,7 +1392,7 @@ a.footer-mega-map:hover {
 }
 
 .mobile .content-menu-lv2 {
-  height: 100vh;
+  height: 100svh;
 }
 
 .content-menu-lv2 li.nk-menu-item {

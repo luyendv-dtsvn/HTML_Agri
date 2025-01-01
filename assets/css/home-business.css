@@ -14,7 +14,7 @@
     position: relative;
     overflow: hidden;
     /* Đảm bảo không có phần thừa */
-    height: 100vh;
+    height: 100svh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -499,7 +499,7 @@
     }
 
     .home-financial-institution-section {
-        height: 100vh;
+        height: 100svh;
     }
 
     .home-business-background-containers {
