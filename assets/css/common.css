@@ -646,7 +646,11 @@
 
 }
 
-
+.about .info-cards .info-overlay span,.about .info-cards .info-overlay p {
+    display: block;
+    z-index: 9999;
+    position: relative;
+}
 
 .community-stats-left-title {
     display: block;
@@ -1200,6 +1204,9 @@ input:focus {
 }
 
 @media (max-width:992px) {
+    .report-left-title-b {
+        width: 100%;
+    }
     .provided-services-content .heading-h7 {
         font-size: 18px;
     }
