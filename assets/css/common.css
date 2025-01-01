@@ -728,7 +728,13 @@
 .div-login .dropdown-menu {
     min-width: max-content;
 }
-
+.community-stats-right-title p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 
 .category-future .title {
@@ -799,15 +805,15 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 0px 21px 21px 21px;
+    padding: 0px 15px 15px 15px;
 }
 
 .form-search {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 12px;
-    padding: 26px 16px 26px 8px;
+    padding: 15px 0px 15px 8px;
     border-bottom: 1.5px solid rgb(255 255 255 / 16%);
 }
 
@@ -840,8 +846,8 @@ input:focus {
     width: 45%;
     position: absolute;
     overflow: hidden;
-    height: 265px;
-    bottom: -7%;
+    height: 200px;
+    bottom: 0%;
     transform: translateX(-50%);
     left: 50%;
 }
@@ -878,7 +884,7 @@ input:focus {
 
 [data-aos^=fade][data-aos^=fade].input-search.aos-animate {
     /* opacity: 1; */
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
 }
 
 [data-aos=fade-up].input-search {
@@ -921,14 +927,14 @@ input:focus {
     border-radius: 100px;
     padding: 4px;
     background: #6F182D;
-    top: 23%;
-    right: 1%;
+    top: 10%;
+    right: 0%;
 }
 
 .pull-down {
     position: absolute;
     /* top: 94%; */
-    bottom: 27%;
+    bottom: 5px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -1332,11 +1338,22 @@ input:focus {
 }
 
 @media (max-width: 576px) {
+    .home-user .owl-carousel .owl-nav, .home-user .owl-carousel .owl-dots {
+        bottom: 110%;
+    }
+    .slider-blog .owl-stage {
+        gap: 0px;
+    }
+    .slider-blog .heading-h8, .community_slider .heading-h8 {
+        font-size: 1.05rem;
+    }
+    
     .input-search {
         padding: 0px 10px 10px 10px;
+        gap: 10px;
     }
     .form-search {
-        padding: 15px 16px 15px 8px;
+        padding:10px 0px 10px 8px;
     }
     .pull-down-title span{
         font-size: 0.6375rem;
@@ -1385,7 +1402,7 @@ input:focus {
 
     .home-user .slider-blog .owl-nav,
     .home-user .slider-blog .owl-dots {
-        display: none !important;
+        /* display: none !important; */
     }
 
     .content-top-menu svg {

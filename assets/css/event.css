@@ -22,6 +22,10 @@
     background: var(--red-3);
     color: #fff;
 }
+.owl-carousel-search .owl-item a:hover {
+    opacity: 1;
+    background: #ce0f3d;
+}
 
 .icon-change-rate:hover {
     background: var(--red-1)
