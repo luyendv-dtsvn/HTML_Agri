@@ -164,7 +164,29 @@ ul.ruby-menu>li.ruby-menu-mega-blog:hover>div>ul.ruby-menu-mega-blog-nav>li.ruby
 span.ruby-dropdown-toggle:after {
   transition: transform .3s ease
 }
-
+/* active menu */
+.active-menu{
+  background: #fff;
+}
+ .active-menu a span, .active-menu .hot-line a,.active-menu .hot-line a span{
+  color: #080808;
+ }
+ .active-menu .home-vision-header-button{
+  background-color: #AF0B35;
+ }
+ .active-menu .home-vision-header-button span{
+  color: #fff;
+ }
+ .active-menu .home-vision-header-button em{
+  color: #fff;
+ }
+ .active-menu .line-v{
+  background-color: #F2F2F2;
+ }
+ .active-menu ul.ruby-menu>li>a{
+  color: #080808;
+ }
+ /* end active menu  */
 @media(min-width:767px) {
   ul.ruby-menu>li>a:after {
     transition: all .3s ease
@@ -1447,7 +1469,10 @@ a.footer-mega-map:hover {
   gap: 16px;
   align-self: stretch;
 }
-
+.div-footer-mega{
+  position: absolute !important;
+  bottom: 0;
+}
 .content-menu-lv2 .lv2-category-item {
   display: flex;
   padding-right: 16px;
@@ -1455,7 +1480,9 @@ a.footer-mega-map:hover {
   gap: 8px;
   align-self: stretch;
 }
-
+.div-des-title  br{
+  display: none;
+}
 .banner .gradient-background {
   /* position: relative;
   display: flex;
@@ -1530,7 +1557,28 @@ a.footer-mega-map:hover {
     padding-right: 0px;
   }
 }
+@media (min-width:1366px) {
+  .menu ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>div {
+    left: calc(100% + 2vw);
+  }
 
+  .menu .div-content-img {
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+  .menu .div-content-mega {
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .menu div.ruby-grid>div.ruby-row div.ruby-col-4 {
+    padding: 0;
+    padding-left: 14px;
+    padding-top: 2.75rem;
+  }
+
+}
 @media (min-width:992px) and (max-width:1200px) {
   .menu ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>div {
     left: calc(100%);

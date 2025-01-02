@@ -258,3 +258,18 @@ document.addEventListener("DOMContentLoaded", () => {
     offset: 100,    // Khoảng cách từ đáy màn hình để kích hoạt (px)
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const serviceLink = document.getElementById('service-link');
+  const mainLogo = document.getElementById('main-logo');
+
+  // Sự kiện hover
+  serviceLink.addEventListener('mouseenter', () => {
+    mainLogo.src = '../assets/images/svg8.png'; // Đổi ảnh khi hover
+  });
+
+  // Sự kiện rời chuột
+  serviceLink.addEventListener('mouseleave', () => {
+    mainLogo.src = '../assets/images/logo-white.png'; // Trả về ảnh gốc
+  });
+});
