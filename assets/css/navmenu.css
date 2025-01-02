@@ -1487,41 +1487,50 @@ a.footer-mega-map:hover {
 }
 
 @media (max-width: 1366px) {
-  .div-des-title span:nth-of-type(2){
+  .div-des-title span:nth-of-type(2) {
     display: none;
   }
+
   .div-category-icon span {
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
   }
+
   ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>a {
     line-height: 30px;
   }
+
   ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav {
     padding-left: 3%;
     padding-right: 1.5%;
   }
+
   .ruby-menu-mega-blog-nav,
   .div-content-title {
     padding-top: 1.75rem !important;
     padding-bottom: 1.75rem !important;
   }
+
   .ruby-menu-mega-blog-nav {
     max-width: 20%;
   }
+
   ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>div {
     left: calc(100% + 1vw);
   }
+
   ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>div {
     left: calc(100% + 1vw);
     padding-right: 5vw;
   }
+
   .div-content-mega {
     padding-right: 0px;
   }
 }
+
 @media (min-width:992px) and (max-width:1200px) {
   .menu ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>div {
     left: calc(100%);
@@ -1533,15 +1542,18 @@ a.footer-mega-map:hover {
     padding-bottom: 0px;
   }
 
-  .menu .ruby-menu-mega-blog-nav, .div-content-title {
+  .menu .ruby-menu-mega-blog-nav,
+  .div-content-title {
     padding-bottom: 10px !important;
 
   }
+
   .menu .footer-mega-link {
     gap: 10px;
   }
 
-  .menu .body-15,.menu .regular-15  {
+  .menu .body-15,
+  .menu .regular-15 {
     font-size: 14px;
   }
 
@@ -1570,15 +1582,21 @@ a.footer-mega-map:hover {
     height: auto;
   }
 
-  .menu div.ruby-grid>div.ruby-row div.ruby-col-4  {
+  .menu div.ruby-grid>div.ruby-row div.ruby-col-4 {
     padding: 0;
     padding-top: 1.75rem
   }
 
-  .menu  .ruby-grid-lined .div-content-img {
+  .menu .ruby-grid-lined .div-content-img {
     padding: 0%;
   }
+
+  .menu .top-menu-left,
+  .menu .top-menu-right {
+    gap: 12px;
+  }
 }
+
 /* customer nav menu  */
 @media (min-width: 992px) {
   .nk-aside {

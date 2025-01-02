@@ -183,15 +183,8 @@ rubyMenu = function () {
       var m = $(this).find("> div > ul > li");
       $(m).each(function () {
         var sum = -1;
-        var firstDiv = $(this).find("> div > ul > li > div > div").eq(0).height();
-        var secondDiv = $(this).find("> div > ul > li > div > div").eq(1).height();
-        var thirdDiv = $(this).find("> div > ul > li > div > div").eq(2).height();
-        var tabMaxHeight = firstDiv > secondDiv ? firstDiv : secondDiv;
-
-
-
-        // var h = $(this).find("> div").height();
-        // tabMaxHeight = h > tabMaxHeight ? h : tabMaxHeight;
+        var h = $(this).find("> div").height();
+        tabMaxHeight = h > tabMaxHeight ? h : tabMaxHeight;
       });
       $(rubyMenuMegaBlog).find(">div").css("height", tabMaxHeight + 5);
       $(rubyMenuMegaBlog).find(">div > ul > li > div").css("height", tabMaxHeight);
