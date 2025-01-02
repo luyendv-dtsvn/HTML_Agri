@@ -258,18 +258,39 @@ document.addEventListener("DOMContentLoaded", () => {
     offset: 100,    // Khoảng cách từ đáy màn hình để kích hoạt (px)
   });
 });
-
 document.addEventListener('DOMContentLoaded', function () {
-  const serviceLink = document.getElementById('service-link');
-  const mainLogo = document.getElementById('main-logo');
+  // Chọn tất cả các phần tử có id 'service-link' và 'main-logo'
+  const serviceLinks = document.querySelectorAll('#service-link');
+  const mainLogo = document.querySelector('#main-logo');
 
-  // Sự kiện hover
-  serviceLink.addEventListener('mouseenter', () => {
-    mainLogo.src = '../assets/images/svg8.png'; // Đổi ảnh khi hover
-  });
+  // Kiểm tra nếu phần tử logo tồn tại
+  if (mainLogo) {
+    // Lặp qua tất cả các liên kết 'service-link' và gán sự kiện hover
+    serviceLinks.forEach(serviceLink => {
+      serviceLink.addEventListener('mouseenter', () => {
+        mainLogo.src = '../assets/images/svg8.png'; // Đổi ảnh khi hover
+      });
 
-  // Sự kiện rời chuột
-  serviceLink.addEventListener('mouseleave', () => {
-    mainLogo.src = '../assets/images/logo-white.png'; // Trả về ảnh gốc
-  });
+      serviceLink.addEventListener('mouseleave', () => {
+        mainLogo.src = '../assets/images/logo-white.png'; // Trả về ảnh gốc
+      });
+    });
+  }
+});
+
+$(document).ready(function () {
+  $(".ruby-menu-mega-blog").hover(
+      function () {
+          // Khi chuột vào
+          $(this).find("a").first().css("color", "#AF0B35");
+          $(this).find("a").first().css("opacity", "1");
+          $(".icon-agri img").attr("src", "../assets/images/svg8.png");
+          $('.menu .top-menu').addClass("active-menu");
+      },
+      function () {
+        $(this).find("a").first().css("color", "white");
+        $(".icon-agri img").attr("src", "../assets/images/logo-white.png");
+        $('.menu .top-menu').removeClass("active-menu");
+      }
+  );
 });
