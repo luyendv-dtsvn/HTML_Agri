@@ -1314,7 +1314,8 @@ span.ruby-c-content {
 .div-content-img .div-img {
   display: flex;
   width: 388px;
-  height: 500px;
+  /* height: 500px; */
+  height: auto;
   /* padding: 0px 32px; */
   flex-direction: column;
   align-items: center;
@@ -1502,31 +1503,83 @@ a.footer-mega-map:hover {
     padding-left: 3%;
     padding-right: 1.5%;
   }
-
   .ruby-menu-mega-blog-nav,
   .div-content-title {
     padding-top: 1.75rem !important;
     padding-bottom: 1.75rem !important;
   }
-
   .ruby-menu-mega-blog-nav {
     max-width: 20%;
   }
-
   ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>div {
     left: calc(100% + 1vw);
   }
-
   ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>div {
     left: calc(100% + 1vw);
     padding-right: 5vw;
   }
-
   .div-content-mega {
     padding-right: 0px;
   }
 }
+@media (min-width:992px) and (max-width:1200px) {
+  .menu ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>div {
+    left: calc(100%);
+    padding-right: 3vw;
+  }
 
+  .menu .div-content-mega {
+    gap: 15px;
+    padding-bottom: 0px;
+  }
+
+  .menu .ruby-menu-mega-blog-nav, .div-content-title {
+    padding-bottom: 10px !important;
+
+  }
+  .menu .footer-mega-link {
+    gap: 10px;
+  }
+
+  .menu .body-15,.menu .regular-15  {
+    font-size: 14px;
+  }
+
+  .menu .subtitle-12 {
+    font-size: 11px;
+  }
+
+  .menu .div-des-title .heading-h8 {
+    font-size: 17px;
+  }
+
+  .menu .div-content-title .div-title-icon .heading-h7 {
+    font-size: 23px;
+  }
+
+  .menu .div-content-title .div-title-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .menu .ruby-menu-mega-blog-nav {
+    max-width: 23%;
+  }
+
+  .menu .div-content-img .div-img {
+    height: auto;
+  }
+
+  .menu div.ruby-grid>div.ruby-row>[class^="ruby-col"] {
+    padding: 0;
+    padding-left: 14px;
+    padding-top: 1.75rem
+  }
+
+  .menu  .ruby-grid-lined .div-content-img {
+    padding: 0%;
+  }
+}
 /* customer nav menu  */
 @media (min-width: 992px) {
   .nk-aside {

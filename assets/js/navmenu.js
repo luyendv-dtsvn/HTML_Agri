@@ -98,23 +98,22 @@ rubyMenu = function () {
 
   var rubyMenuMegaBlog = "ul.ruby-menu > li.ruby-menu-mega-blog";
   var tabMaxHeight = -1;
-  var $rubyMenuMainToggle = $(".c-hamburger");
+  // var $rubyMenuMainToggle = $(".c-hamburger");
 
-  var rubyMenuMegaShopListHeight = $("ul.ruby-menu > li.ruby-menu-mega-shop > div").height();
-  var rubyMenuMegaShopActiveContentHeight = $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li.ruby-active-menu-item > div").height();
-  var rubyMenuMegaShopHeight = rubyMenuMegaShopListHeight + rubyMenuMegaShopActiveContentHeight;
+  // var rubyMenuMegaShopListHeight = $("ul.ruby-menu > li.ruby-menu-mega-shop > div").height();
+  // var rubyMenuMegaShopActiveContentHeight = $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li.ruby-active-menu-item > div").height();
+  // var rubyMenuMegaShopHeight = rubyMenuMegaShopListHeight + rubyMenuMegaShopActiveContentHeight;
 
   // Ruby Mobile Main Level Toggle
-  $rubyMenuMainToggle.on("click", function (e) {
-    e.preventDefault;
-    $rubyMenuMainToggle.toggleClass("is-active");
-    $("ul.ruby-menu").toggleClass("ruby-mobile-sublevel-show")
-    // Do something else, like open/close menu
-  });
+  // $rubyMenuMainToggle.on("click", function (e) {
+  //   e.preventDefault;
+  //   $rubyMenuMainToggle.toggleClass("is-active");
+  //   $("ul.ruby-menu").toggleClass("ruby-mobile-sublevel-show")
+  //   // Do something else, like open/close menu
+  // });
 
   // PAGE LOAD FUNCTION
-  $(window).bind("load resize", function () {
-
+  // $(window).bind("load", function () {
     var rubyWindowWidth = $(window).width();
 
     if (rubyWindowWidth <= 768) {
@@ -190,33 +189,35 @@ rubyMenu = function () {
       });
 
       // RUBY MEGA MENU - SHOP --> SET HEIGHT OF THE CONTAINER EQUALS TO THE HEIGHT OF THE MAXIMUM CONTENT HEIGHT
-      $("ul.ruby-menu > li.ruby-menu-mega-shop > div").css("height", rubyMenuMegaShopHeight);
+      // $("ul.ruby-menu > li.ruby-menu-mega-shop > div").css("height", rubyMenuMegaShopHeight);
 
-      $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li").mouseover(function () {
-        var updatedHeight = $(this).find("> div").height() + rubyMenuMegaShopListHeight;
-        $("ul.ruby-menu > li.ruby-menu-mega-shop > div").css("height", updatedHeight);
-      });
+      // $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li").mouseover(function () {
+      //   var updatedHeight = $(this).find("> div").height() + rubyMenuMegaShopListHeight;
+      //   $("ul.ruby-menu > li.ruby-menu-mega-shop > div").css("height", updatedHeight);
+      // });
 
-      $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li").mouseout(function () {
-        $("ul.ruby-menu > li.ruby-menu-mega-shop > div").css("height", rubyMenuMegaShopHeight);
-      });
+      // $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li").mouseout(function () {
+      //   $("ul.ruby-menu > li.ruby-menu-mega-shop > div").css("height", rubyMenuMegaShopHeight);
+      // });
 
       // RUBY MEGA MENU - SHOP --> RETURN TO ACTIVE TAB ALWAYS WHEN MOUSEOUT
-      $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li").mouseover(function () {
-        if (!$(this).is(":first-child")) {
-          $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li:first-child").removeClass("ruby-active-menu-item");
-        }
-      });
+      // $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li").mouseover(function () {
+      //   if (!$(this).is(":first-child")) {
+      //     $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li:first-child").removeClass("ruby-active-menu-item");
+      //   }
+      // });
 
-      $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li").mouseleave(function () {
-        $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li:first-child").addClass("ruby-active-menu-item");
-      });
+      // $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li").mouseleave(function () {
+      //   $("ul.ruby-menu > li.ruby-menu-mega-shop > div > ul > li:first-child").addClass("ruby-active-menu-item");
+      // });
 
     }
-  });
+  // });
 
 }
-
+$(window).on("resize", function () {
+  rubyMenu();
+});
 rubyMenu();
 $(document).ready(function () {
   $('.btn-extend').on('click', function () {
