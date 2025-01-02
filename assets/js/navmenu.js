@@ -246,3 +246,22 @@ document.addEventListener("DOMContentLoaded", () => {
     offset: 100,    // Khoảng cách từ đáy màn hình để kích hoạt (px)
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  // Chọn tất cả các phần tử có id 'service-link' và 'main-logo'
+  const serviceLinks = document.querySelectorAll('#service-link');
+  const mainLogo = document.querySelector('#main-logo');
+
+  // Kiểm tra nếu phần tử logo tồn tại
+  if (mainLogo) {
+    // Lặp qua tất cả các liên kết 'service-link' và gán sự kiện hover
+    serviceLinks.forEach(serviceLink => {
+      serviceLink.addEventListener('mouseenter', () => {
+        mainLogo.src = '../assets/images/svg8.png'; // Đổi ảnh khi hover
+      });
+
+      serviceLink.addEventListener('mouseleave', () => {
+        mainLogo.src = '../assets/images/logo-white.png'; // Trả về ảnh gốc
+      });
+    });
+  }
+});

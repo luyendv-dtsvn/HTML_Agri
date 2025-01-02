@@ -16,39 +16,55 @@
     #banner1 {
       background-image: url('../assets/images/home/pc_user.jpg');
     }
+
     @media (max-width:1024px) {
       #banner1 {
         background-image: url('../assets/images/home/tablet.png');
       }
     }
+
     @media (max-width:992px) {
       #banner1 {
         background-image: url('../assets/images/home/mobile.png');
       }
     }
-    .active-menu{
+
+    .active-menu {
       background: #fff;
     }
-     .active-menu a span, .active-menu .hot-line a,.active-menu .hot-line a span{
-      color: #080808;
-     }
-     .active-menu .home-vision-header-button{
-      background-color: #AF0B35;
-     }
-     .active-menu .home-vision-header-button span{
-      color: #fff;
-     }
-     .active-menu .home-vision-header-button em{
-      color: #fff;
-     }
-     .active-menu .line-v{
-      background-color: #F2F2F2;
-     }
-     .active-menu ul.ruby-menu>li>a{
-      color: #080808;
-     }
-    
 
+    .active-menu a span,
+    .active-menu .hot-line a,
+    .active-menu .hot-line a span {
+      color: #080808;
+
+    }
+
+    .active-menu a span:hover,
+    .active-menu .hot-line a:hover,
+    .active-menu .hot-line a span:hover {
+      color: #AF0B35;
+    }
+
+    .active-menu .home-vision-header-button {
+      background-color: #AF0B35;
+    }
+
+    .active-menu .home-vision-header-button span {
+      color: #fff;
+    }
+
+    .active-menu .home-vision-header-button em {
+      color: #fff;
+    }
+
+    .active-menu .line-v {
+      background-color: #F2F2F2;
+    }
+
+    .active-menu ul.ruby-menu>li>a {
+      color: #080808;
+    }
   </style>
 </head>
 
@@ -115,7 +131,7 @@
             </div>
           </div>
         </div>
-        
+
 
 
         <div class="line-h" style="background: #af1f43;"></div>
@@ -127,13 +143,14 @@
                   <img id="main-logo" src="../assets/images/logo-white.png" alt="">
                 </a>
               </div>
-              <div class="line-v" ></div>
+              <div class="line-v"></div>
               <!-- mega menu -->
               <div class="mega-menu h-100">
                 <div class="ruby-menu-demo-header h-100">
                   <div class="ruby-wrapper h-100">
                     <ul class="ruby-menu">
-                      <li class="ruby-menu-mega-blog "><a href="#" class="body-15" id="service-link"><span>Sản phẩm dịch vụ</span></a>
+                      <li class="ruby-menu-mega-blog "><a href="#" class="body-15" id="service-link"><span>Sản phẩm dịch
+                            vụ</span></a>
                         <div style="" class="">
                           <ul class="ruby-menu-mega-blog-nav pt-5 pb-4 col-3">
                             <li class="ruby-active-menu-item active "><a href="#" class="pb-2"><span>Gửi tiền</span></a>
@@ -1034,9 +1051,10 @@
             </div>
             <div class="top-menu-right">
               <div class="hot-line">
-                <a href="tel:+1900558818" class="regular-15 color-white color-hover-w"><span class="txt-hl">Hotline:</span> 1900558818 / 02432053205</a>
+                <a href="tel:+1900558818" class="regular-15 color-white color-hover-w"><span
+                    class="txt-hl">Hotline:</span> 1900558818 / 02432053205</a>
               </div>
-              <div class="line-v" ></div>
+              <div class="line-v"></div>
               <div class="dropdown div-login">
                 <button id="tab-select-answer" class="btn body-14 color-dark-1 home-vision-header-button"
                   data-toggle="dropdown">
@@ -2996,20 +3014,11 @@
   //     smartSpeed: 1500,
   //   });
   // });
-  document.addEventListener('DOMContentLoaded', function () {
-  const serviceLink = document.getElementById('service-link');
-  const mainLogo = document.getElementById('main-logo');
+  
 
-  // Sự kiện hover
-  serviceLink.addEventListener('mouseenter', () => {
-    mainLogo.src = '../assets/images/svg8.png'; // Đổi ảnh khi hover
-  });
 
-  // Sự kiện rời chuột
-  serviceLink.addEventListener('mouseleave', () => {
-    mainLogo.src = '../assets/images/logo-white.png'; // Trả về ảnh gốc
-  });
-});
+
+
 </script>
 <script src="../assets/js/libs/gsap.min.js"></script>
 
