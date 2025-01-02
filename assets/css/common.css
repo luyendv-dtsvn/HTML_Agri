@@ -1316,12 +1316,12 @@ input:focus {
 
 }
 
-
-
 @media (max-width:768px) {
     .home-business-item-card img{
-        height: 300px;
+        height: 100%;
+        aspect-ratio: 369/234;
     }
+    
     .background-relative {
         background-size: 190%;
         background-position: center bottom;
