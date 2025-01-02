@@ -1570,9 +1570,8 @@ a.footer-mega-map:hover {
     height: auto;
   }
 
-  .menu div.ruby-grid>div.ruby-row>[class^="ruby-col"] {
+  .menu div.ruby-grid>div.ruby-row div.ruby-col-4  {
     padding: 0;
-    padding-left: 14px;
     padding-top: 1.75rem
   }
 
