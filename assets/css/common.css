@@ -15,16 +15,19 @@
     /* Để đặt lớp phủ overlay */
     overflow: hidden;
 }
+
 .home-vision-content-item-mobile span br {
-    display :none;
+    display: none;
 }
+
 .about .home-header-slim {
     background: linear-gradient(180deg, #AE0C35 0%, rgba(175, 11, 53, 0.00) 100%);
 }
 
-.home-financial .banner-header{
+.home-financial .banner-header {
     background-image: url('../images/home/background-home-33.png');
 }
+
 .img-hover-btn img {
     width: 100%;
     height: 100%;
@@ -655,7 +658,8 @@
 
 }
 
-.about .info-cards .info-overlay span,.about .info-cards .info-overlay p {
+.about .info-cards .info-overlay span,
+.about .info-cards .info-overlay p {
     display: block;
     z-index: 9999;
     position: relative;
@@ -1101,14 +1105,17 @@ input:focus {
     max-width: 28px;
     padding-top: 7px;
 }
+
 @media (max-width: 1366px) and (min-width: 1000px) {
-    .community_slider .image-zoom{
+    .community_slider .image-zoom {
         width: 200px;
-    } 
-    .community_slider .image-zoom img{
+    }
+
+    .community_slider .image-zoom img {
         max-width: -webkit-fill-available;
-    } 
+    }
 }
+
 @media (max-width:1366px) {
     .img-quote {
         max-width: 25px;
@@ -1152,6 +1159,7 @@ input:focus {
         padding-top: 35px;
         padding-left: 35px;
     }
+
     .community {
         height: 700px;
     }
@@ -1164,10 +1172,13 @@ input:focus {
     outline: none;
 }
 
+
+
 @media (max-width:1024px) {
     .community {
         height: 700px;
     }
+
     .community-stats-left-subtitle-a,
     .community_slider {
         padding-left: 40px;
@@ -1211,7 +1222,11 @@ input:focus {
     }
 
 }
-
+@media (max-width: 1025px) and (min-width: 992px) {
+    .community {
+        height: 799px;
+    }
+}
 @media (min-width:992px) {
 
     .footer .block-h,
@@ -1228,12 +1243,13 @@ input:focus {
     .report-left-title-b {
         width: 100%;
     }
+
     .provided-services-content .heading-h7 {
         font-size: 18px;
     }
 
     .community {
-        height: 1000px;
+        height: 927px;
     }
 
     .d-none-992 {
@@ -1277,9 +1293,11 @@ input:focus {
     .pt-2r-mobile {
         padding-top: 2rem !important;
     }
-    .home-financial .banner-header{
+
+    .home-financial .banner-header {
         /* background-image: url('../images/home/mobile.png'); */
     }
+
     .div-image-recent img {
         max-width: 100%;
     }
@@ -1373,9 +1391,10 @@ input:focus {
 }
 
 @media (max-width: 576px) {
-    .d-block-576{
+    .d-block-576 {
         display: block !important;
     }
+
     .slider-blog.owl-carousel .owl-nav,
     .slider-blog.owl-carousel .owl-dots {
         right: 8%;
