@@ -770,6 +770,7 @@ div.ruby-grid img {
   position: relative;
   max-width: 100%;
   height: 100%;
+  border-radius: 5px;
   display: block
 }
 
@@ -1302,7 +1303,7 @@ span.ruby-c-content {
 
 .div-content-img .div-img {
   display: flex;
-  width: 401px;
+  width: 388px;
   height: 500px;
   /* padding: 0px 32px; */
   flex-direction: column;
