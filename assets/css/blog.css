@@ -44,6 +44,16 @@
 .slick-dots li.slick-active button {
     background-color: #AF0B35;
 }
+
+.blog .home-vision-header-button {
+    background: var(--red-1);
+}
+
+.blog .home-vision-header-button a {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
 /* end common */
 .social-network{
     display: flex;
