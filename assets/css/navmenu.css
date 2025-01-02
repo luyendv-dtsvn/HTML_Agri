@@ -1486,6 +1486,15 @@ a.footer-mega-map:hover {
 }
 
 @media (max-width: 1366px) {
+  .div-des-title span:nth-of-type(2){
+    display: none;
+  }
+  .div-category-icon span {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
   ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>a {
     line-height: 30px;
   }
