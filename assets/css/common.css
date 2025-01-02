@@ -1152,6 +1152,9 @@ input:focus {
         padding-top: 35px;
         padding-left: 35px;
     }
+    .community {
+        height: 700px;
+    }
 
 }
 
@@ -1162,7 +1165,9 @@ input:focus {
 }
 
 @media (max-width:1024px) {
-
+    .community {
+        height: 700px;
+    }
     .community-stats-left-subtitle-a,
     .community_slider {
         padding-left: 40px;
