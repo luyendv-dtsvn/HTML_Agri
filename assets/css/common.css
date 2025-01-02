@@ -391,7 +391,9 @@
     gap: 12px;
 
 }
-
+.home-business-item-card img{
+    height: 200px;
+}
 
 
 .footer .btn-extend {
@@ -1317,6 +1319,9 @@ input:focus {
 
 
 @media (max-width:768px) {
+    .home-business-item-card img{
+        height: 300px;
+    }
     .background-relative {
         background-size: 190%;
         background-position: center bottom;
