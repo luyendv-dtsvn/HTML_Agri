@@ -182,16 +182,14 @@ rubyMenu = function () {
     $(rubyMenuMegaBlog).each(function () {
       var m = $(this).find("> div > ul > li");
       $(m).each(function () {
-        var sum = -1;
-        var firstDiv = $(this).find("> div > ul > li > div > div").eq(0).height();
-        var secondDiv = $(this).find("> div > ul > li > div > div").eq(1).height();
-        var thirdDiv = $(this).find("> div > ul > li > div > div").eq(2).height();
-        var tabMaxHeight = firstDiv > secondDiv ? firstDiv : secondDiv;
-
-
-
+        console.log($(this).find("> div > div > div").length);
+        var firstDiv = $(this).find("> div > div > div").eq(0).outerHeight(true);
+        var secondDiv = $(this).find("> div > div > div").eq(1).outerHeight(true);
+        var thirdDiv = $(this).find("> div > div > div").eq(2).outerHeight(true);
+        var bigDiv = firstDiv > secondDiv ? firstDiv : secondDiv;
+        var h = bigDiv + thirdDiv;
         // var h = $(this).find("> div").height();
-        // tabMaxHeight = h > tabMaxHeight ? h : tabMaxHeight;
+        tabMaxHeight = h > tabMaxHeight ? h : tabMaxHeight;
       });
       $(rubyMenuMegaBlog).find(">div").css("height", tabMaxHeight + 5);
       $(rubyMenuMegaBlog).find(">div > ul > li > div").css("height", tabMaxHeight);
