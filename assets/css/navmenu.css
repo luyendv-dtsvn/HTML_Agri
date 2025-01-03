@@ -1638,7 +1638,24 @@ a.footer-mega-map:hover {
     padding-left: 5%;
   }
 }
+@media (max-height:664px) {
+  .menu .ruby-menu-mega-blog-nav, .div-content-title {
+padding-top: 1.75rem !important;
+padding-bottom: 1.75rem !important;
+}
 
+  .menu .div-content-mega {
+    gap: 25px;
+  }
+
+  .menu .div-des-category {
+    gap: 15px;
+  }
+
+  .menu .div-content-mega {
+    padding-bottom: 20px;
+  }
+}
 @media (max-height: 620px) {
   ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>div {
     padding-right: 4vw;
