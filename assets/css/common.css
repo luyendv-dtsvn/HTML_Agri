@@ -391,17 +391,37 @@
     gap: 12px;
 
 }
-.home-business-item-card img{
+
+.home-business-item-card img {
     height: 100%;
     aspect-ratio: 369/234;
 }
+
 .blog .content-betwent-subtitle img {
     height: 100%;
     aspect-ratio: 369 / 234;
     width: 100%;
     border-radius: 4px;
     transition: transform 0.3s ease;
+}
+.home-business .home-business-background-tab-button:hover {
+    color: #fff !important;
+    background: var(--Linear-2, linear-gradient(270deg, #AF0B35 0%, #C93259 100%)) !important;
+    opacity: 1;
   }
+
+  .home-business .home-business-background-tab-button:hover p {
+    color: #fff;
+  } 
+
+  .home-business .home-business-background-tab-button:hover svg path {
+    stroke: #fff;
+  }
+.blog .content-top-menu img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 268 / 168;
+}
 
 .footer .btn-extend {
     border-radius: 4px;
@@ -1231,11 +1251,13 @@ input:focus {
     }
 
 }
+
 @media (max-width: 1025px) and (min-width: 992px) {
     .community {
         height: 799px;
     }
 }
+
 @media (min-width:992px) {
 
     .footer .block-h,
@@ -1324,8 +1346,8 @@ input:focus {
 }
 
 @media (max-width:768px) {
-    
-    
+
+
     .background-relative {
         background-size: 190%;
         background-position: center bottom;
