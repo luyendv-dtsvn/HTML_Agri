@@ -348,6 +348,11 @@ ul.ruby-menu>li.ruby-active-menu-item:hover>a {
   /* background: #19ad86 */
   color: #fff;
 }
+.top-menu.active-menu ul.ruby-menu>li>a:hover, ul.ruby-menu>li:hover>a, ul.ruby-menu>li.ruby-active-menu-item>a:hover, ul.ruby-menu>li.ruby-active-menu-item:hover>a {
+  /* background: #19ad86; */
+  color: #AE0C35;
+  opacity: 1;
+}
 
 ul.ruby-menu>li>a:only-child:after,
 ul.ruby-menu>li:hover>a:only-child:after {
@@ -613,6 +618,7 @@ ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li>div {
 ul.ruby-menu>li.ruby-menu-mega-blog>div>ul.ruby-menu-mega-blog-nav>li:hover>a {
   /* background: #ddd */
   color: #AF0B35;
+  opacity: 1;
 }
 
 ul.ruby-menu>li.ruby-menu-mega-shop>div {
@@ -1383,13 +1389,18 @@ div.ruby-grid.ruby-grid-lined>div.ruby-row>div[class^="ruby-col"]:after {
 }
 
 a.div-category-icon:hover,
-a.div-link-icon:hover span {
+a.div-link-icon:hover span,
+a.div-category-icon:hover span,
+a.div-link-icon {
   color: #AF0B35;
+  opacity: 1;
 }
 
 .div-category-more:hover,
+.div-category-more:hover span,
 a.footer-mega-map:hover {
-  opacity: 0.8;
+  opacity: 1;
+  color: #AF0B35;
 }
 
 .div-other-des {

@@ -278,19 +278,34 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+// $(document).ready(function () {
+//   $(".ruby-menu-mega-blog").hover(
+//     function () {
+//       // Khi chuột vào
+//       $(this).find("a").css("color", "#080808");
+//       $(this).find("a").first().css("color", "#AF0B35");
+//       $(this).find("a").first().css("opacity", "1");
+//       $(".icon-agri img").attr("src", "../assets/images/svg8.png");
+//       $('.menu .top-menu').addClass("active-menu");
+
+//     },
+//     function () {
+//       // $(this).find("a").first().css("color", "white");
+//       $(".icon-agri img").attr("src", "../assets/images/logo-white.png");
+//       $('.menu .top-menu').removeClass("active-menu");
+//     }
+//   );
+// });
+
 $(document).ready(function () {
-  $(".ruby-menu-mega-blog").hover(
-      function () {
-          // Khi chuột vào
-          $(this).find("a").first().css("color", "#AF0B35");
-          $(this).find("a").first().css("opacity", "1");
-          $(".icon-agri img").attr("src", "../assets/images/svg8.png");
-          $('.menu .top-menu').addClass("active-menu");
-      },
-      function () {
-        $(this).find("a").first().css("color", "white");
-        $(".icon-agri img").attr("src", "../assets/images/logo-white.png");
-        $('.menu .top-menu').removeClass("active-menu");
-      }
-  );
+  $(".ruby-menu-mega-blog").on("mouseenter", function () {
+    $(".ruby-menu-mega-blog").removeClass("hover");
+    $(".icon-agri img").attr("src", "../assets/images/svg8.png");
+    $(".menu .top-menu").addClass("active-menu");
+  });
+  $(".ruby-menu-mega-blog").on("mouseleave", function () {
+    $(this).removeClass("hover");
+    $(".icon-agri img").attr("src", "../assets/images/logo-white.png");
+    $(".menu .top-menu").removeClass("active-menu");
+  });
 });

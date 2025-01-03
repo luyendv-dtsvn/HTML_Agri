@@ -418,7 +418,10 @@
 .home-business .home-business-background-tab-button:hover svg path {
     stroke: #fff;
 }
-
+/* .top-menu.active-menu .ruby-menu-mega-blog a:first-of-type:hover {
+    opacity: 1;
+    color: #AF0B35;
+} */
 .slider-blog .owl-carousel .owl-item img {
     height: 100%;
     display: block;
