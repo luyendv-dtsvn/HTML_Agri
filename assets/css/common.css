@@ -392,9 +392,16 @@
 
 }
 .home-business-item-card img{
-    height: 200px;
+    height: 100%;
+    aspect-ratio: 369/234;
 }
-
+.blog .content-betwent-subtitle img {
+    height: 100%;
+    aspect-ratio: 369 / 234;
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
 
 .footer .btn-extend {
     border-radius: 4px;
@@ -1317,10 +1324,7 @@ input:focus {
 }
 
 @media (max-width:768px) {
-    .home-business-item-card img{
-        height: 100%;
-        aspect-ratio: 369/234;
-    }
+    
     
     .background-relative {
         background-size: 190%;
