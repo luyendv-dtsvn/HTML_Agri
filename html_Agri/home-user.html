@@ -34,12 +34,18 @@
 <body class="home-user no-touch nk-nio-theme has-aside as-mobile">
   <div class="main">
     <div class="banner-header">
-      <div class="slider-banner ">
+      <div class="slider-banner owl-carousel owl-them">
         <!-- owl-carousel owl-theme -->
-        <div class="slider-banner-item" id="banner1" style="width:100vw;height: 100svh;"></div>
-        <!-- <div class="slider-banner-item" id="banner2"
+        <!-- <div class="slider-banner-item" id="banner1" style="width:100vw;height: 100svh;"></div> -->
+        <div class="slider-banner-item" id="banner2"
+          style="width:100vw;height: 100svh;background-image: url('../assets/images/home/banner_user_bk.png');">
+        </div>
+        <div class="slider-banner-item" id="banner2"
+          style="width:100vw;height: 100svh;background-image: url('../assets/images/home/banner_user_bk2.png');">
+        </div>
+        <div class="slider-banner-item" id="banner2"
           style="width:100vw;height: 100svh;background-image: url('../assets/images/home/background-home-33.png');">
-        </div> -->
+        </div>
       </div>
       <div class="header header-pc ">
         <div class="top">
@@ -2966,16 +2972,16 @@
   //   dots: false,            // No dots for navigation
   //   nav: false              // No next/prev buttons
   // });
-  // $(document).ready(function () {
-  //   $(".slider-banner").owlCarousel({
-  //     items: 2,
-  //     loop: true,
-  //     autoplay: true,
-  //     autoplayTimeout: 6000,
-  //     autoplayHoverPause: false,
-  //     smartSpeed: 1500,
-  //   });
-  // });
+  $(document).ready(function () {
+    $(".slider-banner").owlCarousel({
+      items: 3,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 6000,
+      autoplayHoverPause: false,
+      smartSpeed: 1500,
+    });
+  });
 
 </script>
 <script src="../assets/js/libs/gsap.min.js"></script>
