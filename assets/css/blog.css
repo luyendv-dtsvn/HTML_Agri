@@ -1,5 +1,37 @@
 @import url(common.css);
 /* viet file common */
+.blog-title-section {
+    height: 573px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: url('../images/background-title-blog.png') no-repeat center;
+    background-size: cover;
+    padding: 40px 5%;
+}
+
+.content-top-menu.underline::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    height: 3px;
+    background-color: #9E2B47;
+    transform: translateX(-50%);
+}
+
+.blog .content-top .content-top-menu.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    height: 3px;
+    background-color: #9E2B47;
+    transform: translateX(-50%);
+}
+
 .background-white {
     background: #fff;
 }
@@ -49,13 +81,40 @@
     background: var(--red-1);
 }
 
+.blog .blog-agri-notification-containers {
+    display: flex;
+    justify-content: space-between;
+}
+
 .blog .home-vision-header-button a {
     gap: 6px;
     display: flex;
     align-items: center;
 }
+
+.blog .blog-agri-notification a {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.blog .blog-agri-notification {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog .blog-agri-notification-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.blog .blog-agri-notification-right {
+    border-left: 1px solid #F2F2F2;
+}
 /* end common */
-.social-network{
+.social-network, .agri-notification-section {
     display: flex;
     justify-content: center; /* Căn giữa theo chiều ngang */
     align-items: center; /* Căn giữa theo chiều dọc */
@@ -64,12 +123,12 @@
     padding: 20px 5%;   
 }
 .social-network-center{
+    width: 100%;
     background: #F2F2F2;
     display: flex;
-    flex-direction: column;
     border-radius: 4px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 27px;
 }
 
@@ -81,26 +140,28 @@
 .icon-social-network {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
+    gap: 16px;
 }
 
 .icon-social-network-item {
+    height: 63px;
     display: flex;
     border-radius: 4px;
-    border: 1px solid rgba(204, 204, 204, 0.40);
-    min-height: 123px;
+    background: var(--red-1, #AF0B35);
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 10px;
+    padding: 11px 18px;
+    aspect-ratio: 1;
 }
 
 
 .blog-title-text {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 40px 6%;
     gap: 20px;
     justify-content: space-between;
 }
@@ -118,7 +179,7 @@
 }
 
 .blog-title-main-content {
-    padding: 0px 5.5%;
+    padding: 0px 5%;
 }
 
 .background-center {
@@ -217,14 +278,6 @@ margin-top: 58px;
 
 }
 
-
-
-
-.stt:hover {
-    background-color: #AF0B35;
-    
-    color: #ffffff;
-}
 .blog .home-header-slim{
     background: #ffffff !important;
 }
@@ -246,16 +299,13 @@ margin-top: 58px;
     color: #000;
 
 }
-.stt:active {
+/* .stt:active {
     background-color: #ffffff;
    
     border: 1px solid #AF0B35;
     color: #333;
     
-}
-.blog .content-top:hover svg path{
-    stroke: #fff;
-}
+} */
 .notification-slide-new-title span{
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -299,7 +349,28 @@ margin-top: 58px;
     flex-direction: column;
     gap: 12px;
 }
+@media (max-width: 992px) {
+    .blog .blog-agri-notification-containers {
+        gap: 20px;
+    }
 
+    .blog .blog-agri-notification br  {
+        display: none;
+    }
+
+    .blog .blog-agri-notification-right {
+        border-left: none;
+        border-top: 1px solid #F2F2F2;
+    }
+
+    .blog .blog-agri-notification {
+        gap: 15px;
+    }
+
+    .blog .blog-agri-notification-content {
+        padding: 0;
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -340,8 +411,19 @@ margin-top: 58px;
     .select2-results__option{
         padding-left: 0%;
     }
+
+    .blog-title-section {
+        height: 450px;
+    }
+
+    .social-network-center {
+        flex-direction: column;
+    }
 }
 @media (max-width: 375px) {
+    .blog-title-section {
+        height: 375px;
+    }
 
     .blog-title-text {
         padding: 18px 6%;
