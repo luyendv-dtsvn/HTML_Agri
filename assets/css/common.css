@@ -1273,7 +1273,30 @@ div {
     background-color: var(--red-1);
     color: #fff;
 }
-
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link{
+    flex-direction: column;
+    gap: 16px;
+}
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active{
+    color: var(--red-1) ;
+}
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active svg path{
+    stroke: var(--red-1) ;
+}
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active::after{
+    stroke: var(--red-1) ;
+}
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--red-1);
+    border-radius: 3px 3px 0 0;
+    opacity: 1;
+}
 .custom-radio.custom-control-pro.no-control.checked .custom-control-label {
     border-color: var(--red-1);
     z-index: 2;
