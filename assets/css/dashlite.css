@@ -31748,7 +31748,7 @@ body.nav-shown {
 .nk-menu-main .nk-menu-item.active>.nk-menu-link,
 .nk-menu-main .nk-menu-item.current-menu>.nk-menu-link,
 .nk-menu-main .nk-menu-item:hover>.nk-menu-link {
-  color: #7f8dff;
+  color: #AF0B35;
 }
 
 .nk-menu-main .nk-menu-heading {
@@ -31805,7 +31805,7 @@ body.nav-shown {
     left: 0;
     right: 0;
     height: 3px;
-    background: #7f8dff;
+    background: #AF0B35;
     border-radius: 3px 3px 0 0;
     opacity: 0;
   }

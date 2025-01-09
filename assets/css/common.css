@@ -19,6 +19,7 @@
     /* Màu chính */
 
 }
+
 body,
 button {
     font-family: 'BT Grotesk Regular';
@@ -1141,15 +1142,18 @@ button {
             rgba(175, 11, 53, 1) 0%,
             rgba(201, 50, 89, 1) 100%);
 }
+
 div {
     overflow-anchor: none;
-  }
+}
+
 /* hover image show button */
 .img-hover-btn {
     position: relative;
     /* Để đặt lớp phủ overlay */
     overflow: hidden;
 }
+
 .background-relative .community-stats-left .community-stats-left-1 .div-image-recent img {
     height: 100%;
     display: block;
@@ -1173,6 +1177,7 @@ div {
 .provided-services-item:hover .image-zoom img {
     transform: scale(1.2);
 }
+
 .home-financial .provided-services-content {
     padding: 0;
 }
@@ -1181,7 +1186,8 @@ div {
     z-index: 9999;
 }
 
-.about .menu .home-header-slim-left .home-header-slim-tab a:hover span,.about .menu .home-header-slim-left .home-header-slim-tab a:hover p {
+.about .menu .home-header-slim-left .home-header-slim-tab a:hover span,
+.about .menu .home-header-slim-left .home-header-slim-tab a:hover p {
     color: #fff;
 }
 
@@ -1273,19 +1279,106 @@ div {
     background-color: var(--red-1);
     color: #fff;
 }
-.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link{
+
+.tab-dropdown {
+    padding-top: 1rem;
+}
+
+.tab-dropdown .nk-menu-main {
+    justify-content: center;
+    display: flex;
+    /* overflow-x: auto;
+    overflow-y: hidden; */
+}
+
+.tab-dropdown.nk-header,
+.tab-dropdown .container-lg {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link {
     flex-direction: column;
     gap: 16px;
 }
-.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active{
-    color: var(--red-1) ;
+
+.tab-dropdown .nk-header-menu {
+    position: static !important;
+    background: transparent;
+    height: auto;
+    max-height: auto;
+    border-right: none;
+    width: auto;
+    padding: 0;
+    overflow: visible;
+    transform: translateX(0) !important;
 }
-.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active svg path{
-    stroke: var(--red-1) ;
+
+.tab-dropdown .nk-menu-main>li {
+    display: inline-block;
+    min-width: 180px;
 }
-.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active::after{
-    stroke: var(--red-1) ;
+
+.tab-dropdown .nk-menu-main .nk-menu-sub {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #e5e9f2;
+    box-shadow: 0 0.125rem 0.25rem rgba(43, 55, 72, 0.15);
+    border-radius: 4px;
+    padding: .5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 6px;
+    transition: opacity .4s, margin .2s;
+    display: block !important;
 }
+.tab-dropdown .nk-menu-main .nk-menu-item:hover>.nk-menu-sub {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+    z-index: 999;
+}
+.tab-dropdown .nk-menu-main>li>.nk-menu-link:hover::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #AF0B35;
+    border-radius: 3px 3px 0 0;
+    opacity: 1;
+}
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active {
+    color: var(--red-1);
+}
+
+.tab-dropdown .nk-header-wrap {
+    justify-content: space-around;
+}
+.tab-dropdown .nk-menu-item.has-sub span.title-li::before{
+    font-family: "FontAwesome";
+        text-decoration: none;
+        content: '\f107';
+        position: absolute;
+        margin-left: 8px;
+    right: 5px;
+}
+
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active svg path,
+.tab-dropdown .nk-menu-main>li.nk-menu-item:hover svg path,
+.tab-dropdown .nk-menu-main>li.nk-menu-item:hover a {
+    stroke: var(--red-1);
+    opacity: 1 !important;
+}
+
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active::after {
+    stroke: var(--red-1);
+}
+
 .tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active:before {
     position: absolute;
     content: '';
@@ -1297,6 +1390,7 @@ div {
     border-radius: 3px 3px 0 0;
     opacity: 1;
 }
+
 .custom-radio.custom-control-pro.no-control.checked .custom-control-label {
     border-color: var(--red-1);
     z-index: 2;
@@ -1614,6 +1708,7 @@ div {
 .home-business .home-business-background-tab-button:hover svg path {
     stroke: #fff;
 }
+
 /* .top-menu.active-menu .ruby-menu-mega-blog a:first-of-type:hover {
     opacity: 1;
     color: #AF0B35;
@@ -2443,8 +2538,8 @@ input:focus {
 
     .home-user .custom-next,
     .home-user .custom-prev {
-        width: 30px!important;
-        height: 30px!important;
+        width: 30px !important;
+        height: 30px !important;
     }
 
     .home-user .custom-next svg,
@@ -2465,6 +2560,7 @@ input:focus {
         height: 799px;
     }
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
     .about .info-cards .info-overlay .heading-h7 {
         font-size: 17px;
@@ -2487,7 +2583,30 @@ input:focus {
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:991.98px) {
+    .tab-dropdown .nk-menu-link {
+        font-size: 14px;
+    }
+    .tab-dropdown .nk-menu-main>li {
+        min-width: 160px;
+    }
+    .tab-dropdown .nk-menu-item.has-sub span.title-li::before{
+        right: 20px;
+    }
+    .nk-menu-main.nk-menu {
+        /* overflow-x: auto;
+        overflow-y: hidden; */
+        overflow: unset;
+    }
+    .tab-dropdown .nk-menu-main {
+        justify-content: center;
+    ;
+    }
+    .tab-dropdown .nk-menu-main .nk-menu-link {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
     .report-left-title-b {
         width: 100%;
     }
@@ -2637,6 +2756,7 @@ input:focus {
         padding: 24px;
     }
 }
+
 @media (min-width: 576px) and (max-width: 768px) {
     .about .info-cards .info-overlay .heading-h7 {
         font-size: 2.7625rem;
@@ -2646,12 +2766,27 @@ input:focus {
         font-size: 1.7625rem;
     }
 }
+
 @media (max-width: 576px) {
-    .home-business-header-pay .content-top-menu img, .home-business-header-pay .content-top-menu svg{
+    .tab-dropdown .nk-menu-link {
+        font-size: 13px;
+    }
+    .tab-dropdown .nk-menu-main .nk-menu-sub{
+        width: 160px;
+    }
+    .tab-dropdown .nk-menu-main>li {
+        min-width: 130px;
+    }
+    .tab-dropdown .nk-menu-item.has-sub span.title-li::before{
+        right: 7px;
+    }
+    .home-business-header-pay .content-top-menu img,
+    .home-business-header-pay .content-top-menu svg {
         width: 28px;
         height: 28px;
         margin-bottom: 10px;
     }
+
     .d-block-576 {
         display: block !important;
     }
@@ -2766,6 +2901,18 @@ input:focus {
 }
 
 @media (max-width: 375px) {
+    .tab-dropdown .nk-menu-link {
+        font-size: 12px;
+    }
+    .tab-dropdown .nk-menu-main .nk-menu-sub{
+        width: 130px;
+    }
+    .tab-dropdown .nk-menu-main>li {
+        min-width: 120px;
+    }
+    .tab-dropdown .nk-menu-item.has-sub span.title-li::before{
+        right: 5px;
+    }
     .w-55-375 {
         width: 55% !important;
     }

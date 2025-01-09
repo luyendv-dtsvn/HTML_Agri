@@ -134,7 +134,7 @@
 
 .social-network-text {
     max-width: 366px;
-    text-align: center;
+    text-align: left;
 }
 
 .icon-social-network {
@@ -349,6 +349,11 @@ margin-top: 58px;
     flex-direction: column;
     gap: 12px;
 }
+@media (max-width: 1200px) and (min-width: 991.98px) {
+     .advantage-card-asked-questions-selects .heading-h8{
+        font-size: 14px;
+     }
+}
 @media (max-width: 992px) {
     .blog .blog-agri-notification-containers {
         gap: 20px;
@@ -382,10 +387,6 @@ margin-top: 58px;
         padding: 14px;
         color: #AF0B35;
     }
-    .text-center{
-        text-align: left !important;
-        padding-bottom: 0 !important;
-    }
     .select2-container--default .select2-selection--single .select2-selection__rendered{
         padding-left: 0;
     }
@@ -418,6 +419,9 @@ margin-top: 58px;
 
     .social-network-center {
         flex-direction: column;
+    }
+    .social-network-text {
+        text-align: center;
     }
 }
 @media (max-width: 375px) {
