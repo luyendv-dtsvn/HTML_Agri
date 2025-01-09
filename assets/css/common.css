@@ -1301,7 +1301,9 @@ div {
     flex-direction: column;
     gap: 16px;
 }
-
+.tab-dropdown.nk-header {
+    z-index: 699;
+}
 .tab-dropdown .nk-header-menu {
     position: static !important;
     background: transparent;
