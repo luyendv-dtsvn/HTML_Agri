@@ -765,17 +765,46 @@
     </div>
   </div>
   <section class="home-vision-content">
-    <div class="slider-banner owl-carousel owl-them">
+    <!-- banner PC -->
+    <div class="slider-banner owl-carousel owl-them d-none-992">
       <!-- owl-carousel owl-theme -->
       <!-- <div class="slider-banner-item" id="banner1" style="width:100vw;height: 100svh;"></div> -->
-      <div class="slider-banner-item" id="banner2"
+      <div class="slider-banner-item" id="banner1"
         style="width:100vw;height: 100svh;background-image: url('../assets/images/home/banner_user_bk.png');">
       </div>
       <div class="slider-banner-item" id="banner2"
         style="width:100vw;height: 100svh;background-image: url('../assets/images/home/homerg.jpeg');">
       </div>
-      <div class="slider-banner-item" id="banner2"
+      <div class="slider-banner-item" id="banner3"
         style="width:100vw;height: 100svh;background-image: url('../assets/images/home/background-home-33.png');">
+      </div>
+    </div>
+    <!-- banner tablet -->
+    <div class="slider-banner owl-carousel owl-them d-block-992 d-none-576" style="display: none;">
+      <!-- owl-carousel owl-theme -->
+      <!-- <div class="slider-banner-item" id="banner1" style="width:100vw;height: 100svh;"></div> -->
+      <div class="slider-banner-item" id="banner1"
+        style="width:100vw;height: 100svh;background-image: url('../assets/images/home/tablet.png');">
+      </div>
+      <div class="slider-banner-item" id="banner2"
+        style="width:100vw;height: 100svh;background-image: url('../assets/images/home/tab1.png');">
+      </div>
+      <div class="slider-banner-item" id="banner3"
+        style="width:100vw;height: 100svh;background-image: url('../assets/images/home/hoach-le-dinh-PeRt3uMmjYM-unsplash\ 1.png');">
+      </div>
+    </div>
+    <!-- banner mobile -->
+    <div class="slider-banner owl-carousel owl-them d-block-576" style="display: none;">
+      <!-- owl-carousel owl-theme -->
+      <!-- <div class="slider-banner-item" id="banner1" style="width:100vw;height: 100svh;"></div> -->
+      <div class="slider-banner-item" id="banner1"
+        style="width:100vw;height: 100svh;background-image: url('../assets/images/home/Frame\ 2071857410.png');">
+      </div>
+      <div class="slider-banner-item" id="banner2"
+        style="width:100vw;height: 100svh;background-image: url('../assets/images/home/mobile.png');">
+      </div>
+      <div class="slider-banner-item" id="banner3"
+        style="width:100vw;height: 100svh;background-image: url('../assets/images/home/home-mobile.png');">
       </div>
     </div>
     <div class="col-12 p-0 home-vision-content-container">
@@ -800,7 +829,7 @@
             </svg>
           </div>
         </div>
-  
+
         <div class="line-h home-vision-content-text-line d-none-992"></div>
         <div class="col-12 home-vision-content-list pl-0 pr-0 row-ct d-none-992">
           <a href="#" class="col-12 col-md-35 home-vision-content-item color-hover-w">
@@ -831,10 +860,10 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
               <path d="M2.52084 29.5312H33.1458" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
                 stroke-linecap="square" />
-              <path d="M13.4583 29.5312V5.46875H4.70834V29.5312" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
-                stroke-linecap="square" />
-              <path d="M30.9583 29.5312V12.0312H22.2083V29.5312" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
-                stroke-linecap="square" />
+              <path d="M13.4583 29.5312V5.46875H4.70834V29.5312" stroke="white" stroke-width="1.5"
+                stroke-miterlimit="10" stroke-linecap="square" />
+              <path d="M30.9583 29.5312V12.0312H22.2083V29.5312" stroke="white" stroke-width="1.5"
+                stroke-miterlimit="10" stroke-linecap="square" />
               <path d="M22.2083 18.5938H13.4583" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
                 stroke-linecap="square" />
               <path d="M9.08334 9.84375V12.0312" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
@@ -851,7 +880,8 @@
                 stroke-linecap="square" />
             </svg>
             <div class="home-vision-content-item-title">
-              <span class="body-18 color-white">Khách hàng <span style="display: inline-block;">doanh nghiệp</span></span>
+              <span class="body-18 color-white">Khách hàng <span style="display: inline-block;">doanh
+                  nghiệp</span></span>
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                 <path
                   d="M21.114 12.531L14.364 19.281C14.2232 19.4218 14.0324 19.5008 13.8333 19.5008C13.6343 19.5008 13.4434 19.4218 13.3027 19.281C13.162 19.1403 13.0829 18.9494 13.0829 18.7504C13.0829 18.5514 13.162 18.3605 13.3027 18.2198L18.773 12.7504H4.08334C3.88443 12.7504 3.69367 12.6714 3.55301 12.5307C3.41236 12.3901 3.33334 12.1993 3.33334 12.0004C3.33334 11.8015 3.41236 11.6107 3.55301 11.4701C3.69367 11.3294 3.88443 11.2504 4.08334 11.2504H18.773L13.3027 5.78104C13.162 5.64031 13.0829 5.44944 13.0829 5.25042C13.0829 5.05139 13.162 4.86052 13.3027 4.71979C13.4434 4.57906 13.6343 4.5 13.8333 4.5C14.0324 4.5 14.2232 4.57906 14.364 4.71979L21.114 11.4698C21.1837 11.5394 21.239 11.6222 21.2768 11.7132C21.3145 11.8043 21.3339 11.9019 21.3339 12.0004C21.3339 12.099 21.3145 12.1966 21.2768 12.2876C21.239 12.3787 21.1837 12.4614 21.114 12.531Z"

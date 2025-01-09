@@ -2625,6 +2625,10 @@ input:focus {
         display: none !important;
     }
 
+    .d-block-992 {
+        display: block !important;
+    }
+
     .pl-0-992 {
         padding-left: 0px !important;
     }
