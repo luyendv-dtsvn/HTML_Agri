@@ -1154,10 +1154,9 @@ div {
     overflow: hidden;
 }
 
-.background-relative .community-stats-left .community-stats-left-1 .div-image-recent img {
+.background-relative .community_slider .div-image-recent img {
     height: 100%;
     display: block;
-    width: 100%;
     aspect-ratio: 269 / 168;
 }
 
