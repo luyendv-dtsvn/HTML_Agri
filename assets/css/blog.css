@@ -349,6 +349,17 @@ margin-top: 58px;
     flex-direction: column;
     gap: 12px;
 }
+
+.blog-top-news .title {
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 0px 4px 4px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    padding-left: 31px;
+    padding-bottom: 31px;
+    padding-top: 68px;
+    width: 100%;
+  }
 @media (max-width: 1200px) and (min-width: 991.98px) {
      .advantage-card-asked-questions-selects .heading-h8{
         font-size: 14px;
@@ -444,6 +455,8 @@ margin-top: 58px;
     
     
 }
+
+
 
 
 
