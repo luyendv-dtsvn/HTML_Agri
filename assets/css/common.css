@@ -2439,6 +2439,10 @@ input:focus {
     padding-top: 7px;
 }
 
+a.color-hover-b:hover, .color-hover-b:hover span, .color-hover-b:hover p, .color-hover-b:hover h1, .color-hover-b:hover h2, .color-hover-b:hover h3, .color-hover-b:hover h4, .color-hover-b:hover h5, .color-hover-b:hover h6{
+    color: #130C07 !important; /* Màu chữ khi hover */
+}
+
 @media (max-width: 1366px) and (min-width: 1000px) {
     .community_slider .image-zoom {
         width: 200px;
