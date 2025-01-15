@@ -257,6 +257,18 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1000, // Thời gian hiệu ứng (ms)
     offset: 100,    // Khoảng cách từ đáy màn hình để kích hoạt (px)
   });
+
+//   if (window.innerWidth > 992) {
+//     AOS.init({
+//          duration: 1000, // Thời gian hiệu ứng (ms)
+//     offset: 100,    // Khoảng cách từ đáy màn hình để kích hoạt (px)
+//     });
+// } else {
+//     // Hủy các hiệu ứng AOS
+//     AOS.refreshHard();
+//     const aosElements = document.querySelectorAll('[data-aos]');
+//     aosElements.forEach(el => el.removeAttribute('data-aos'));
+// }
 });
 document.addEventListener('DOMContentLoaded', function () {
   // Chọn tất cả các phần tử có id 'service-link' và 'main-logo'
