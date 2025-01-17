@@ -1873,7 +1873,12 @@ div {
     padding-left: 4.9%;
     padding-right: 4.9%;
 }
+.content-top {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 
+}
 .home-header-slim .nk-menu-main .nk-menu-item .nk-menu-toggle:after {
     display: none
 }

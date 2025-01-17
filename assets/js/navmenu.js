@@ -252,47 +252,21 @@ $(document).ready(function () {
 
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  AOS.init({
-    duration: 1000, // Thời gian chạy animation
-    offset: 100     // Chạy animation một lần khi cuộn qua
+if ($(window).width() < 992) {
+  // AOS.refreshHard();
+  $(document).ready(function () {
+    $('[data-aos]').each(function () {
+      if (!$(this).hasClass('input-search')) {
+        $(this).removeAttr('data-aos');
+      }
+    });
   });
+  AOS.init({
+    duration: 1000,
+    offset: 100
+  });
+}
 
-
-  // if (window.innerWidth > 992) {
-  //   // AOS.init({
-  //   //     duration: 1000, // Thời gian chạy animation
-  //   //     offset: 100     // Chạy animation một lần khi cuộn qua
-  //   // });
-  // } else {
-  //   // Hủy các hiệu ứng AOS
-  //   // AOS.refreshHard();
-  //   document.addEventListener('DOMContentLoaded', () => {
-  //     document.querySelectorAll('[data-aos]').forEach((element) => {
-  //       if (!element.classList.contains('banner-search')) {
-  //         element.removeAttribute('data-aos');
-  //       }
-  //     });
-  //   });
-
-  // }
-  // AOS.init({
-  //   duration: 1000, // Thời gian hiệu ứng (ms)
-  //   offset: 100,    // Khoảng cách từ đáy màn hình để kích hoạt (px)
-  // })
-
-  //   if (window.innerWidth > 992) {
-  //     AOS.init({
-  //          duration: 1000, // Thời gian hiệu ứng (ms)
-  //     offset: 100,    // Khoảng cách từ đáy màn hình để kích hoạt (px)
-  //     });
-  // } else {
-  //     // Hủy các hiệu ứng AOS
-  //     AOS.refreshHard();
-  //     const aosElements = document.querySelectorAll('[data-aos]');
-  //     aosElements.forEach(el => el.removeAttribute('data-aos'));
-  // }
-});
 document.addEventListener('DOMContentLoaded', function () {
   // Chọn tất cả các phần tử có id 'service-link' và 'main-logo'
   const serviceLinks = document.querySelectorAll('#service-link');
