@@ -251,9 +251,7 @@ $(document).ready(function () {
   });
 
 });
-
 if ($(window).width() < 992) {
-  // AOS.refreshHard();
   $(document).ready(function () {
     $('[data-aos]').each(function () {
       if (!$(this).hasClass('input-search')) {
@@ -265,8 +263,12 @@ if ($(window).width() < 992) {
     duration: 1000,
     offset: 100
   });
+} else {
+  AOS.init({
+    duration: 1000,
+    offset: 100
+  });
 }
-
 document.addEventListener('DOMContentLoaded', function () {
   // Chọn tất cả các phần tử có id 'service-link' và 'main-logo'
   const serviceLinks = document.querySelectorAll('#service-link');

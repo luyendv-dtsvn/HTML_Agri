@@ -1024,5 +1024,83 @@
 </script>
 <script src="../assets/js/libs/gsap.min.js"></script>
 <script src="../assets/js/navmenu.js" defer></script>
+<script>
 
+  // Configs
+  let liveChatBaseUrl   = 'https://' + 'livechat.fpt.ai/v36/src'
+  let LiveChatSocketUrl = 'livechat.fpt.ai:443'
+  let FptAppCode        = '5f85abe948c4d891de4481592b1d0ed6'
+  let FptAppName        = 'Chat với Agribank'
+  // Define custom styles
+  let CustomStyles = {
+      // header
+      headerBackground: 'linear-gradient(86.7deg, #AE1C3EFF 0.85%, #AE1C3E72 98.94%)',
+      headerTextColor: '#ffffffff',
+      headerLogoEnable: false,
+      headerLogoLink: '',
+      headerText: 'Chat với Agribank',
+      // main
+      primaryColor: '#AE1C3EFF',
+      secondaryColor: '#F0E5E7FF',
+      primaryTextColor: '#ffffffff',
+      secondaryTextColor: '#000000DE',
+      buttonColor: '#AE1C3E50',
+      buttonTextColor: '#191818FF',
+      bodyBackgroundEnable: false,
+      bodyBackgroundLink: '',
+      avatarBot: 'https://cdn-static-v3.fpt.ai/upload/5f85abe948c4d891de4481592b1d0ed6/37cdf6c0f02635df66b856505442696a.jpg',
+      sendMessagePlaceholder: 'Nhập câu hỏi',
+      // float button
+      floatButtonLogo: 'https://cdn-static-v3.fpt.ai/upload/5f85abe948c4d891de4481592b1d0ed6/37cdf6c0f02635df66b856505442696a.jpg',
+      floatButtonTooltip: 'Quý khách cần hỗ trợ gì ạ?',
+      floatButtonTooltipEnable: true,
+      // start screen
+      customerLogo: 'https://cdn-static-v3.fpt.ai/upload/5f85abe948c4d891de4481592b1d0ed6/37cdf6c0f02635df66b856505442696a.jpg',
+      customerWelcomeText: 'Vui lòng nhập tên của Quý khách',
+      customerButtonText: 'Bắt đầu',
+      prefixEnable: false,
+      prefixType: 'radio',
+      prefixOptions: ["Anh","Chị"],
+      prefixPlaceholder: 'Danh xưng',
+      // custom css
+      css: ''
+  }
+  // Get bot code from url if FptAppCode is empty
+  if (!FptAppCode) {
+      let appCodeFromHash = window.location.hash.substr(1)
+      if (appCodeFromHash.length === 32) {
+          FptAppCode = appCodeFromHash
+      }
+  }
+  // Set Configs
+  let FptLiveChatConfigs = {
+      appName: FptAppName,
+      appCode: FptAppCode,
+      themes : '',
+      styles : CustomStyles
+  }
+  const targetElement = document.querySelector('.home-vision .home-header-slim');
+  // Append Script
+  let FptLiveChatScript  = document.createElement('script')
+  FptLiveChatScript.id   = 'fpt_ai_livechat_script'
+  FptLiveChatScript.src  = liveChatBaseUrl + '/static/fptai-livechat.js'
+  // document.body.appendChild(FptLiveChatScript)
+  targetElement.appendChild(FptLiveChatScript);
+  // Append Stylesheet
+  let FptLiveChatStyles  = document.createElement('link')
+  FptLiveChatStyles.id   = 'fpt_ai_livechat_script'
+  FptLiveChatStyles.rel  = 'stylesheet'
+  FptLiveChatStyles.href = liveChatBaseUrl + '/static/fptai-livechat.css'
+  // document.body.appendChild(FptLiveChatStyles)
+  targetElement.appendChild(FptLiveChatStyles);
+  
+  // Init
+  FptLiveChatScript.onload = function () {
+      fpt_ai_render_chatbox(FptLiveChatConfigs, liveChatBaseUrl, LiveChatSocketUrl)
+  }
+</script>
+<style>
+  
+</style>
 </html>
+home-vision  home-header-slim
