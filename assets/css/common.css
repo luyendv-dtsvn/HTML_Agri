@@ -1866,12 +1866,17 @@ div {
 .banner-header .banner-search .search .owl-carousel-search .owl-dots.disabled button {
     all: unset;
 }
-
+.home-business .nk-content .content-top-menu img {
+    margin-bottom: 10px;
+}
 .footer-bottom {
     background: rgba(0, 0, 0, 0.12);
     padding-top: 1rem;
     padding-left: 4.9%;
     padding-right: 4.9%;
+}
+.color-hover-img-tab:hover img{
+
 }
 .content-top {
     display: flex;
