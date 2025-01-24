@@ -2079,7 +2079,13 @@ div {
     border: 1px solid #eaeaeab5;
 
 }
-
+.blog .borrow-subtitle{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .community-stats-left-subtitle-a a {
     position: relative;
     text-decoration: none;
