@@ -2600,6 +2600,8 @@ input:focus {
 
 
 .content-top-menu img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
     transition: stroke 0.3s ease;
     margin-bottom: 10.5%;
 }
@@ -2654,7 +2656,20 @@ a.color-hover-b:hover,
     color: #130C07 !important;
     /* Màu chữ khi hover */
 }
-
+/* --------------------------------------------------- Page Ban lãnh đạo ------------------------------------------ */
+.bld .nav-link{
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+}
+.tab-content{
+    margin-top: 57px;
+}
+.nav-link:hover,
+.content-top-menu:hover img{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
 @media (max-width: 1366px) and (min-width: 1000px) {
     .community_slider .image-zoom {
         width: 200px;
