@@ -66,15 +66,15 @@
     display: none !important;
 }
 @media (max-width:1552px) {
-    .home-vision .home-header-slim {
+ .home-header-slim {
         padding: 0px 5%;
     }
 
-    .home-vision .home-header-slim .home-header-slim-tab {
+ .home-header-slim .home-header-slim-tab {
         display: none;
     }
 
-    .home-vision .home-header-slim .home-tab-heading-slim {
+ .home-header-slim .home-tab-heading-slim {
         display: block !important;
     }
 }
@@ -107,6 +107,81 @@
 }
 
 
- 
+ /* background white */
+ .header-slim-white-mobile {
+    position: static;
+ }
 
+ .header-slim-white-pc {
+    background: none !important;
+    background-color: #FFF;
+ }
+
+ .header-slim-white-pc .home-tab-heading-slim .nk-menu-toggle span,.header-slim-white-pc .home-header-slim-tab a span {
+    color: rgba(0, 0, 0, 0.80);
+ }
+
+ .header-slim-white-pc .home-header-slim-line {
+    background-color: #F2F2F2;
+ }
+
+ .header-slim-white-pc .home-tab-heading-slim a em {
+    color: #080808;
+ }
+
+ .header-slim-white-pc .home-tab-heading-slim a.color-hover-w:hover, .header-slim-white-pc .home-tab-heading-slim .color-hover-w:hover span, .header-slim-white-pc .home-tab-heading-slim .color-hover-w:hover p {
+    color: #080808;
+ }
+
+ .header-slim-white-pc .home-header-slim-right .home-header-slim-button {
+    background-color: #7D0926;
+ }
+
+ .header-slim-white-pc .home-header-slim-right .home-header-slim-button span, .header-slim-white-pc .home-header-slim-right .home-header-slim-button em {
+    color: #FFF;
+ }
+
+ .header-slim-white-pc .home-header-slim-right .dropdown-menu {
+    min-width: max-content;
+ }
+
+ .header-slim-white-pc .home-header-slim-hotline {
+    color: #080808;
+ }
+
+ .header-slim-white-pc .home-header-slim-hotline span {
+    opacity: 0.9;
+    color: rgba(0, 0, 0, 0.60);
+ }
+
+ .header-slim-white-pc a.color-hover-w:hover, .header-slim-white-pc .color-hover-w:hover span, .header-slim-white-pc .color-hover-w:hover p {
+    color: #080808;
+ }
+ @media (max-width: 992px) {
+    .header-slim-white-mobile .header-mobile {
+        background: none !important;
+        background-color: #FFF;
+    }
+
+    .header-slim-white-mobile .header-mobile .header-mobile-menu em {
+        color: #7D0926;
+    }
+
+    .header-slim-white-mobile .header-mobile .home-vision-header-button  {
+        background-color: #7D0926;
+    }
+
+    .header-slim-white-mobile .header-mobile .home-vision-header-button span, .header-slim-white-mobile .header-mobile .home-vision-header-button em {
+        color: #FFF;
+    }
+
+    .header-slim-white-mobile .header-mobile .header-mobile-menu .line-v {
+        background: #F2F2F2;
+    }
+
+    .header-slim-white-mobile .header-mobile .nk-quick-nav-icon:before {
+        background-color: #F2F2F2;
+    }
+ }
+ 
 
