@@ -2073,23 +2073,15 @@ input[type="range"]::-webkit-slider-thumb {
 .Agribank-related-info {
     width: 100%;
     display: flex;
-    padding: 83px 0px;
+    padding: 0px 5%;
     padding-bottom: 100px;
     justify-content: center;
   }
   
   .Agribank-related-info-container {
-    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 32px;
-  }
-  
-  /* Grid các card */
-  .Agribank-related-info-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cột đều nhau */
-    gap: 20px; /* Khoảng cách giữa các card */
   }
   
   /* Card */
@@ -2100,7 +2092,19 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
+  @media (min-width: 769px) {
+
+  .Agribank-related-card:first-child {
+    padding-left: 0px;
+  }
   
+  .Agribank-related-card:last-child {
+    padding-right: 0px;
+  }
+
+}
+
   .Agribank-related-info-card:hover {
     transform: scale(1.05); /* Phóng to nhẹ khi hover */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -2674,24 +2678,17 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
     }
 
+
+
     .Agribank-all-awards-card-text {
         padding-right: 0;
     }
 
     .Agribank-related-info {
-        padding: 0%;
         padding-bottom: 60px;
         padding-top: 20px;
     }
 
-    .Agribank-related-info-container {
-        gap: 13px;
-    }
-
-    .Agribank-related-info-content {
-        grid-template-columns:none;
-        gap: 12px;
-    }
     
     .Agribank-all-awards-text {
         width: 100%;
