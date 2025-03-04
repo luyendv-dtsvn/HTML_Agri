@@ -2663,13 +2663,17 @@ a.color-hover-b:hover,
     opacity: 1;
 }
 .tab-content{
-    margin-top: 57px;
+    margin-top: 57px;   
 }
 .nav-link:hover,
 .content-top-menu:hover img{
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
+.agribank-culture{
+    background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
+}
+/* --------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
 @media (max-width: 1366px) and (min-width: 1000px) {
     .community_slider .image-zoom {
         width: 200px;
