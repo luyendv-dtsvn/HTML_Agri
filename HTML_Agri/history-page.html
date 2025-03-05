@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/font-awesome.css" />
     <link rel="stylesheet" href="../assets/css/libs/owl.carousel.css" />
+    <link rel="stylesheet" href="../assets/css/libs/carousel-vertical.css" />
     <link rel="stylesheet" href="../assets/css/dashlite.css" />
     <!-- <link rel="stylesheet" href="../assets/css/home-user.css" /> -->
     <link rel="stylesheet" href="../assets/css/agri.css">
@@ -67,6 +68,16 @@
         transform: scale(1.05);
         /* Phóng to nhẹ khi di chuột vào */
     }
+   
+
+    .cv-carousel .item {
+				padding: 1rem;
+			}
+			.cv-item {
+				background: #4B8AD6;
+				color: #fff;
+				text-align: center;
+			}
 </style>
 
 <body class="history">
@@ -1317,10 +1328,15 @@
         </div>
     </section>
     <section class="timeline-history-section">
+        <div class="col-12 col-md-5 timeline-history-title pt-5 pb-4">
+            <span class="subtitle-14 color-dark-2">LỊCH SỬ HÌNH THÀNH</span>
+            <span class="heading-h5 color-dark-1">Agribank đã không ngừng lớn mạnh và trở thành một trong những <span class="color-red-1">ngân hàng thương mại hàng đầu Việt Nam.</span> </span>
+        </div>
+        <div class="col-12 line-h d-none-768"></div>
         <div class="col-12 timeline-history-container row">
             <!-- hiển thị year-list trên mobile -->
             <div class="col-12 timeline-history-years-mobile">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme mb-3">
                     <div class="item">
                         <a href="#2022" class="scroll-year body-16 color-dark-3">2022</a>
                     </div>
@@ -1372,55 +1388,55 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-1 timeline-history-years">
-                <!-- <div class="timeline-navigation">
-                    <button class="history-scroll-button" id="history-scroll-up" disabled>
+            <div class="col-12 col-md-1 timeline-history-years d-none-768">
+                <div class="timeline-navigation">
+                    <!-- <button class="history-scroll-button" id="history-scroll-up" disabled>
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                             <path d="M10.25 8L6.625 4.375L3 8" stroke="white" stroke-linecap="square"/>
                         </svg>
-                    </button>
-                    <ul id="year-list">
-                        <li class="Body-16 color-dark-3"><a href="#2022" class="scroll-year">2022</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2021" class="scroll-year">2021</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2020" class="scroll-year">2020</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2019" class="scroll-year">2019</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2018" class="scroll-year">2018</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2017" class="scroll-year">2017</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2016" class="scroll-year">2016</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2015" class="scroll-year">2015</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2014" class="scroll-year">2014</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2013" class="scroll-year">2013</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2012" class="scroll-year">2012</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2011" class="scroll-year">2011</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2010" class="scroll-year">2010</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2009" class="scroll-year">2009</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2008" class="scroll-year">2008</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2007" class="scroll-year">2007</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2006" class="scroll-year">2006</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2005" class="scroll-year">2005</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2004" class="scroll-year">2004</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2003" class="scroll-year">2003</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2002" class="scroll-year">2002</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2001" class="scroll-year">2001</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#2000" class="scroll-year">2000</a></li>
-                        <li class="Body-16 color-dark-3"><a href="#1999" class="scroll-year">1999</a></li>
+                    </button> -->
+                    <ul class="cv-carousel" id="year-list">
+                        <li class="Body-16 color-dark-3 item"><a href="#2022" class="scroll-year">2022</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2021" class="scroll-year">2021</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2020" class="scroll-year">2020</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2019" class="scroll-year">2019</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2018" class="scroll-year">2018</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2017" class="scroll-year">2017</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2016" class="scroll-year">2016</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2015" class="scroll-year">2015</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2014" class="scroll-year">2014</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2013" class="scroll-year">2013</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2012" class="scroll-year">2012</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2011" class="scroll-year">2011</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2010" class="scroll-year">2010</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2009" class="scroll-year">2009</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2008" class="scroll-year">2008</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2007" class="scroll-year">2007</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2006" class="scroll-year">2006</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2005" class="scroll-year">2005</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2004" class="scroll-year">2004</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2003" class="scroll-year">2003</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2002" class="scroll-year">2002</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2001" class="scroll-year">2001</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#2000" class="scroll-year">2000</a></li>
+                        <li class="Body-16 color-dark-3 item"><a href="#1999" class="scroll-year">1999</a></li>
                     </ul>
-                    <button class="history-scroll-button" id="history-scroll-down">
+                    <!-- <button class="history-scroll-button" id="history-scroll-down">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                             <path d="M10.25 6L6.625 9.625L3 6" stroke="white" stroke-linecap="square"/>
                         </svg>
-                    </button>
-                </div> -->
+                    </button> -->
+                </div>
             </div>
             <div class="col-12 col-md-11 timeline-history-content">
                 <!-- item 2022 -->
-                <div class="col-12 history-year-content" id="2022">
-                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
-                        <div class="col-12 col-lg-5 history-year-conten-text">
+                <div class="col-12 history-year-content pt-4 zoom-img" id="2022">
+                    <div class="col-12 history-year-content-card-text row pl-0 pr-0">
+                        <div class="col-12 col-lg-5 history-year-conten-text pl-0 pr-0">
                             <div class="accordion-body collapse show" data-parent="#accordion">
-                                <div class="accordion-inner">
-                                    <span class="heading-h2 color-dark-1">2022</span>
-                                    <p class="regular-15">Đến cuối năm 2022, tổng tài sản của Agribank đạt 1,82 triệu tỷ
+                                <div class="accordion-inner pl-0 pr-0">
+                                    <span class="heading-h2 color-red-1">2022</span>
+                                    <p class="regular-15 pt-2">Đến cuối năm 2022, tổng tài sản của Agribank đạt 1,82 triệu tỷ
                                         đồng; nguồn vốn đạt trên 1,63 triệu tỷ đồng; tổng dư nợ cho vay nền kinh tế đạt
                                         trên 1,44 triệu tỷ đồng, trong đó khoảng 65% dư nợ cho vay phục vụ phát triển
                                         nông nghiệp, nông dân và nông thôn, chiếm tỷ trọng lớn nhất trong dư nợ tín dụng
@@ -1431,7 +1447,7 @@
                                 <div class="accordion-item">
                                     <div class="accordion-body collapse " id="accordion-item-1"
                                         data-parent="#accordion">
-                                        <div class="accordion-inner">
+                                        <div class="accordion-inner pl-0 pr-0">
                                             <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế
                                                 của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với
                                                 giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ
@@ -1456,7 +1472,7 @@
                                                 xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse"
+                                    <a href="#" class="accordion-head collapsed p-0" data-toggle="collapse"
                                         data-target="#accordion-item-1">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
@@ -1464,18 +1480,21 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="col-12 col-lg-5 history-year-content-img"
+                        <div class="image-zoom col-12 col-lg-5">
+                            <img class="history-year-content-img"
                             src="../assets/images/vanhoa-vaylist-vaydetail/history-2022.png" alt="" />
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- item 2021 -->
-                <div class="col-12 history-year-content" id="2021">
-                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
-                        <div class="col-12 col-lg-5 history-year-conten-text">
+                <div class="col-12 history-year-content pt-4 zoom-img" id="2021">
+                    <div class="col-12 history-year-content-card-text row pl-0 pr-0">
+                        <div class="col-12 col-lg-5 history-year-conten-text pl-0 pr-0">
                             <div class="accordion-body collapse show" data-parent="#accordion">
-                                <div class="accordion-inner">
-                                    <span class="heading-h2 color-dark-1">2021</span>
-                                    <p class="regular-15">Đến 31/12/2021, tổng tài sản của Agribank đạt 1,68 triệu tỷ
+                                <div class="accordion-inner pl-0 pr-0">
+                                    <span class="heading-h2 color-red-1">2021</span>
+                                    <p class="regular-15 pt-2">Đến 31/12/2021, tổng tài sản của Agribank đạt 1,68 triệu tỷ
                                         đồng; nguồn vốn đạt trên 1,58 triệu tỷ đồng; tổng dư nợ cho vay nền kinh tế đạt
                                         trên 1,31 triệu tỷ đồng, trong đó gần 70% dư nợ cho vay phục vụ phát triển nông
                                         nghiệp, nông dân và nông thôn, chiếm tỷ trọng lớn nhất trong dư nợ tín dụng “Tam
@@ -1486,7 +1505,7 @@
                                 <div class="accordion-item">
                                     <div class="accordion-body collapse " id="accordion-item-2"
                                         data-parent="#accordion">
-                                        <div class="accordion-inner">
+                                        <div class="accordion-inner pl-0 pr-0">
                                             <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế
                                                 của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với
                                                 giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ
@@ -1511,7 +1530,7 @@
                                                 xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse"
+                                    <a href="#" class="accordion-head collapsed p-0" data-toggle="collapse"
                                         data-target="#accordion-item-2">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
@@ -1519,18 +1538,21 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="col-12 col-lg-5 history-year-content-img"
+                        <div class="image-zoom col-12 col-lg-5">
+                            <img class="history-year-content-img"
                             src="../assets/images/vanhoa-vaylist-vaydetail/history-2021.png" alt="" />
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- item 2020 -->
-                <div class="col-12 history-year-content" id="2020">
-                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
-                        <div class="col-12 col-lg-5 history-year-conten-text">
+                <div class="col-12 history-year-content pt-4 zoom-img" id="2020">
+                    <div class="col-12 history-year-content-card-text row pl-0 pr-0">
+                        <div class="col-12 col-lg-5 history-year-conten-text pl-0 pr-0">
                             <div class="accordion-body collapse show" data-parent="#accordion">
-                                <div class="accordion-inner">
-                                    <span class="heading-h2 color-dark-1">2020</span>
-                                    <p class="regular-15">Đến 31/12/2020, tổng tài sản đạt trên 1,57 triệu tỷ đồng;
+                                <div class="accordion-inner pl-0 pr-0">
+                                    <span class="heading-h2 color-red-1">2020</span>
+                                    <p class="regular-15 pt-2">Đến 31/12/2020, tổng tài sản đạt trên 1,57 triệu tỷ đồng;
                                         nguồn vốn đạt trên 1,45 triệu tỷ đồng; tổng dư nợ cho vay nền kinh tế đạt trên
                                         1,21 triệu tỷ đồng, trong đó gần 70% dư nợ dành cho đầu tư phát triển nông
                                         nghiệp, nông thôn.
@@ -1542,7 +1564,7 @@
                                 <div class="accordion-item">
                                     <div class="accordion-body collapse " id="accordion-item-3"
                                         data-parent="#accordion">
-                                        <div class="accordion-inner">
+                                        <div class="accordion-inner pl-0 pr-0">
                                             <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế
                                                 của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với
                                                 giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ
@@ -1567,7 +1589,7 @@
                                                 xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse"
+                                    <a href="#" class="accordion-head collapsed p-0" data-toggle="collapse"
                                         data-target="#accordion-item-3">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
@@ -1575,18 +1597,21 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="col-12 col-lg-5 history-year-content-img"
+                        <div class="image-zoom col-12 col-lg-5">
+                            <img class="history-year-content-img"
                             src="../assets/images/vanhoa-vaylist-vaydetail/history-2020.png" alt="" />
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- item 2019 -->
-                <div class="col-12 history-year-content" id="2019">
-                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
-                        <div class="col-12 col-lg-5 history-year-conten-text">
+                <div class="col-12 history-year-content pt-4 zoom-img" id="2019">
+                    <div class="col-12 history-year-content-card-text row pl-0 pr-0">
+                        <div class="col-12 col-lg-5 history-year-conten-text pl-0 pr-0">
                             <div class="accordion-body collapse show" data-parent="#accordion">
-                                <div class="accordion-inner">
-                                    <span class="heading-h2 color-dark-1">2019</span>
-                                    <p class="regular-15">Tổng tài sản đạt trên 1,45 triệu tỷ đồng; Nguồn vốn đạt trên
+                                <div class="accordion-inner pl-0 pr-0">
+                                    <span class="heading-h2 color-red-1">2019</span>
+                                    <p class="regular-15 pt-2">Tổng tài sản đạt trên 1,45 triệu tỷ đồng; Nguồn vốn đạt trên
                                         1,34 triệu tỷ đồng; Tổng dư nợ và đầu tư đạt trên 1,3 triệu tỷ đồng, trong đó
                                         cho vay nền kinh tế đạt trên 1,12 triệu tỷ đồng. Dư nợ trong lĩnh vực nông
                                         nghiệp, nông thôn luôn chiếm tỷ trọng trên 70%/tổng dư nợ.</p>
@@ -1597,7 +1622,7 @@
                                 <div class="accordion-item">
                                     <div class="accordion-body collapse " id="accordion-item-4"
                                         data-parent="#accordion">
-                                        <div class="accordion-inner">
+                                        <div class="accordion-inner pl-0 pr-0">
                                             <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế
                                                 của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với
                                                 giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ
@@ -1622,7 +1647,7 @@
                                                 xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse"
+                                    <a href="#" class="accordion-head collapsed p-0" data-toggle="collapse"
                                         data-target="#accordion-item-4">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
@@ -1630,18 +1655,21 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="col-12 col-lg-5 history-year-content-img"
+                        <div class="image-zoom col-12 col-lg-5">
+                            <img class="history-year-content-img"
                             src="../assets/images/vanhoa-vaylist-vaydetail/history-2019.png" alt="" />
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- item 2018 -->
-                <div class="col-12 history-year-content" id="2018">
-                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
-                        <div class="col-12 col-lg-5 history-year-conten-text">
+                <div class="col-12 history-year-content pt-4 zoom-img" id="2018">
+                    <div class="col-12 history-year-content-card-text row pl-0 pr-0">
+                        <div class="col-12 col-lg-5 history-year-conten-text pl-0 pr-0">
                             <div class="accordion-body collapse show" data-parent="#accordion">
-                                <div class="accordion-inner">
-                                    <span class="heading-h2 color-dark-1">2018</span>
-                                    <p class="regular-15">Tổng tài sản đạt gần 1,3 triệu tỷ đồng, nguồn vốn huy đạt trên
+                                <div class="accordion-inner pl-0 pr-0">
+                                    <span class="heading-h2 color-red-1">2018</span>
+                                    <p class="regular-15 pt-2">Tổng tài sản đạt gần 1,3 triệu tỷ đồng, nguồn vốn huy đạt trên
                                         1,2 triệu tỷ đồng, tổng dư nợ tín dụng và đầu tư đạt trên 1,1 triệu tỷ đồng,
                                         trong đó dư nợ nông nghiệp, nông thôn chiếm 73,6%/tổng dư nợ và chiếm 51% thị
                                         phần tín dụng của ngành Ngân hàng đầu tư lĩnh vực này.
@@ -1652,7 +1680,7 @@
                                 <div class="accordion-item">
                                     <div class="accordion-body collapse " id="accordion-item-5"
                                         data-parent="#accordion">
-                                        <div class="accordion-inner">
+                                        <div class="accordion-inner pl-0 pr-0">
                                             <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế
                                                 của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với
                                                 giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ
@@ -1677,7 +1705,7 @@
                                                 xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse"
+                                    <a href="#" class="accordion-head collapsed p-0" data-toggle="collapse"
                                         data-target="#accordion-item-5">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
@@ -1685,18 +1713,21 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="col-12 col-lg-5 history-year-content-img"
+                        <div class="image-zoom col-12 col-lg-5">
+                            <img class="history-year-content-img"
                             src="../assets/images/vanhoa-vaylist-vaydetail/history-2018.png" alt="" />
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- item 2017 -->
-                <div class="col-12 history-year-content" id="2017">
-                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
-                        <div class="col-12 col-lg-5 history-year-conten-text">
+                <div class="col-12 history-year-content pt-4 zoom-img" id="2017">
+                    <div class="col-12 history-year-content-card-text row pl-0 pr-0">
+                        <div class="col-12 col-lg-5 history-year-conten-text pl-0 pr-0">
                             <div class="accordion-body collapse show" data-parent="#accordion">
-                                <div class="accordion-inner">
-                                    <span class="heading-h2 color-dark-1">2017</span>
-                                    <p class="regular-15">Tập trung đẩy mạnh việc triển khai dự án E-Banking để xây dựng
+                                <div class="accordion-inner pl-0 pr-0">
+                                    <span class="heading-h2 color-red-1">2017</span>
+                                    <p class="regular-15 pt-2">Tập trung đẩy mạnh việc triển khai dự án E-Banking để xây dựng
                                         nền tảng dịch vụ đa kênh hoàn chỉnh, giúp khách hàng có thể sử dụng dịch vụ ngân
                                         hàng qua nhiều kênh khác nhau, đặc biệt là Internet Banking và Mobile Banking.
                                         Thực hiện Nghị quyết số 30/2017/NQ-CP của Chính phủ về gói tín dụng 100.000 tỷ
@@ -1707,7 +1738,7 @@
                                 <div class="accordion-item">
                                     <div class="accordion-body collapse " id="accordion-item-6"
                                         data-parent="#accordion">
-                                        <div class="accordion-inner">
+                                        <div class="accordion-inner pl-0 pr-0">
                                             <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế
                                                 của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với
                                                 giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ
@@ -1732,7 +1763,7 @@
                                                 xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse"
+                                    <a href="#" class="accordion-head collapsed p-0" data-toggle="collapse"
                                         data-target="#accordion-item-6">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
@@ -1740,19 +1771,22 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="col-12 col-lg-5 history-year-content-img"
+                        <div class="image-zoom col-12 col-lg-5">
+                            <img class="history-year-content-img"
                             src="../assets/images/vanhoa-vaylist-vaydetail/history-2017.png" alt="" />
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- item 2016 -->
-                <div class="col-12 history-year-content" id="2016">
-                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
-                        <div class="col-12 col-lg-5 history-year-conten-text">
+                <div class="col-12 history-year-content pt-4 zoom-img" id="2016">
+                    <div class="col-12  history-year-content-card-text row pl-0 pr-0">
+                        <div class="col-12 col-lg-5 history-year-conten-text pl-0 pr-0">
                             <div class="accordion-body collapse show" data-parent="#accordion">
-                                <div class="accordion-inner">
-                                    <span class="heading-h2 color-dark-1">2016</span>
-                                    <p class="regular-15">Tháng 8</p>
-                                    <p class="regular-15">Agribank ký thỏa thuận với Văn phòng điều phối Nông thôn mới
+                                <div class="accordion-inner pl-0 pr-0">
+                                    <span class="heading-h2 color-red-1">2016</span>
+                                    <p class="regular-15 pt-2">Tháng 8</p>
+                                    <p class="regular-15 pt-2">Agribank ký thỏa thuận với Văn phòng điều phối Nông thôn mới
                                         Trung ương về việc hợp tác trong xây dựng nông thôn mới giai đoạn 2016-2020.</p>
                                 </div>
                             </div>
@@ -1760,7 +1794,7 @@
                                 <div class="accordion-item">
                                     <div class="accordion-body collapse " id="accordion-item-7"
                                         data-parent="#accordion">
-                                        <div class="accordion-inner">
+                                        <div class="accordion-inner pl-0 pr-0">
                                             <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế
                                                 của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với
                                                 giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ
@@ -1785,7 +1819,7 @@
                                                 xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse"
+                                    <a href="#" class="accordion-head collapsed p-0" data-toggle="collapse"
                                         data-target="#accordion-item-7">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
@@ -1793,19 +1827,22 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="col-12 col-lg-5 history-year-content-img"
+                        <div class="image-zoom col-12 col-lg-5">
+                            <img class="history-year-content-img"
                             src="../assets/images/vanhoa-vaylist-vaydetail/history-2016.png" alt="" />
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- item 2015 -->
-                <div class="col-12 history-year-content" id="2015">
-                    <div class="col-12 col-xxl-9 history-year-content-card-text row">
-                        <div class="col-12 col-lg-5 history-year-conten-text">
+                <div class="col-12 history-year-content pt-4 zoom-img" id="2015">
+                    <div class="col-12 history-year-content-card-text row pl-0 pr-0">
+                        <div class="col-12 col-lg-5 history-year-conten-text pl-0 pr-0">
                             <div class="accordion-body collapse show" data-parent="#accordion">
-                                <div class="accordion-inner">
-                                    <span class="heading-h2 color-dark-1">2015</span>
-                                    <p class="regular-15">Tháng 8</p>
-                                    <p class="regular-15">Agribank đã hoàn thành mục tiêu giảm nợ xấu về mức dưới 3% sớm
+                                <div class="accordion-inner pl-0 pr-0">
+                                    <span class="heading-h2 color-red-1">2015</span>
+                                    <p class="regular-15 pt-2">Tháng 8</p>
+                                    <p class="regular-15 pt-2">Agribank đã hoàn thành mục tiêu giảm nợ xấu về mức dưới 3% sớm
                                         hơn 4 tháng theo phê duyệt của NHNN và tiếp tục nỗ lực giảm nợ xấu về 1,89% tại
                                         thời điểm 31/12/2016.</p>
                                 </div>
@@ -1814,7 +1851,7 @@
                                 <div class="accordion-item">
                                     <div class="accordion-body collapse " id="accordion-item-8"
                                         data-parent="#accordion">
-                                        <div class="accordion-inner">
+                                        <div class="accordion-inner pl-0 pr-0">
                                             <p class="regular-15">Trong năm 2022 Agribank một lần nữa khẳng định vị thế
                                                 của mình bằng việc đạt nhiều giải thưởng trong nước và quốc tế. Đối với
                                                 giải thưởng trong nước: Agribank tiếp tục là ngân hàng dẫn đầu về tốc độ
@@ -1839,7 +1876,7 @@
                                                 xếp hạng toàn cầu năm 2022. </p>
                                         </div>
                                     </div>
-                                    <a href="#" class="accordion-head collapsed" data-toggle="collapse"
+                                    <a href="#" class="accordion-head collapsed p-0" data-toggle="collapse"
                                         data-target="#accordion-item-8">
                                         <h6 class="title regular-16">Đọc tiếp</h6>
                                         <span class="accordion-icon"></span>
@@ -1847,21 +1884,25 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="col-12 col-lg-5 history-year-content-img"
+                        <div class="col-12 col-lg-5 image-zoom">
+                            <img class="history-year-content-img"
                             src="../assets/images/vanhoa-vaylist-vaydetail/history-2015.png" alt="" />
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="Agribank-related-info">
-        <div class="Agribank-related-info-container">
+    <section class="Agribank-related-info pt-lg-5 pt-md-3">
+        <div class="Agribank-related-info-container col-12">
             <span class="heading-h6 color-dark-1">Thông tin liên quan</span>
             <div class="Agribank-related-info-content col-12 row-ct pl-0 pr-0">
                 <a href="#" class="Agribank-related-card col-12 col-md-6 zoom-img color-hover-w">
                     <div class="image-zoom">
                         <img src="../assets/images/vanhoa-vaylist-vaydetail/related-info-1.png" alt="Ban lãnh đạo"
                         class="Agribank-related-info-card-image">
+                        <div class="Agribank-related-card-blue-background"></div>
                         <div class="Agribank-related-card-overlay">
                             <p class="heading-h8 color-white">Ban lãnh đạo</p>
                         </div>
@@ -1871,6 +1912,7 @@
                     <div class="image-zoom">
                         <img src="../assets/images/vanhoa-vaylist-vaydetail/related-info-2.png" alt="Giải thưởng"
                         class="Agribank-related-info-card-image">
+                        <div class="Agribank-related-card-blue-background"></div>
                         <div class="Agribank-related-card-overlay">
                             <p class="heading-h8 color-white">Giải thưởng</p>
                         </div>
@@ -2133,6 +2175,7 @@
       <script src="../assets/js/scripts.js"></script>
       <script src="../assets/js/libs/jquery.min.js"></script>
       <script src="../assets/js/libs/owl.carousel.min.js"></script>
+      <script src="../assets/js/libs/carousel-vertical.js"></script>
       <link rel="stylesheet" href="../assets/css/libs/aos.css" />
       <script src="../assets/js/libs/aos.js"></script>
     <script>
@@ -2140,46 +2183,7 @@
         document.addEventListener("DOMContentLoaded", () => {
             // Lấy các phần tử cần thiết
             const yearList = document.getElementById("year-list");
-            const scrollUpButton = document.getElementById("history-scroll-up");
-            const scrollDownButton = document.getElementById("history-scroll-down");
             const scrollItems = document.querySelectorAll(".scroll-year"); // Link các năm
-            const itemHeight = 24; // Chiều cao mỗi mục (bao gồm khoảng cách)
-            const visibleItems = 10; // Số mục hiển thị cùng lúc
-            let currentIndex = 0;
-
-            // Hàm cập nhật trạng thái của các nút cuộn
-            function updateButtons() {
-                scrollUpButton.disabled = currentIndex === 0;
-                scrollDownButton.disabled =
-                    currentIndex + visibleItems >= yearList.children.length;
-            }
-
-            // Hàm cuộn danh sách lên hoặc xuống
-            function scrollList(direction) {
-                if (direction === "up" && currentIndex > 0) {
-                    currentIndex--;
-                } else if (
-                    direction === "down" &&
-                    currentIndex + visibleItems < yearList.children.length
-                ) {
-                    currentIndex++;
-                }
-                yearList.style.transform = `translateY(-${currentIndex * itemHeight}px)`;
-                updateButtons();
-            }
-
-            // Sự kiện click nút cuộn lên và xuống
-            scrollUpButton.addEventListener("click", () => scrollList("up"));
-            scrollDownButton.addEventListener("click", () => scrollList("down"));
-
-            // Sự kiện cuộn chuột
-            document.addEventListener("wheel", (event) => {
-                if (event.deltaY > 0) {
-                    scrollList("down");
-                } else {
-                    scrollList("up");
-                }
-            });
 
             // Sự kiện click vào các năm để cuộn đến nội dung tương ứng
             scrollItems.forEach((item) => {
@@ -2220,6 +2224,30 @@
                 },
             });
         });
+    </script>
+    <script type="text/javascript">
+        (function($){
+            $(document).ready(function(){
+                // init
+                $('.cv-carousel').carouselVertical({
+                    nav:true,
+                    navText: [
+                        '<button class="custom-prev1"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.25 8L6.625 4.375L3 8" stroke="white" stroke-linecap="square"/></svg></button>', // Tùy chỉnh nút "Prev"
+                        '<button class="custom-next1"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.25 6L6.625 9.625L3 6" stroke="white" stroke-linecap="square"/></svg></button>', // Tùy chỉnh nút "Next"
+                    ],
+                    responsive: {
+                        992: {
+                            items: 6,
+                            margin: 2,
+                        }
+                    },
+                    items: 11
+                });
+                $('.cv-carousel').carouselVertical().trigger('goTo', [1]);
+                
+                
+            });
+        })(jQuery);
     </script>
     <script src="../assets/js/libs/gsap.min.js"></script>
     <script src="../assets/js/navmenu.js" defer></script>

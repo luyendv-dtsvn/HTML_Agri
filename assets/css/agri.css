@@ -1881,10 +1881,6 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .timeline-history-section {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
     padding: 0px 5%;
   }
   
@@ -1997,13 +1993,12 @@ input[type="range"]::-webkit-slider-thumb {
   .history-year-conten-text {
     display: flex;
     flex-direction: column;
-    padding-top: 21px;
     gap: 20px;
   }
 
   .history-year-content-img {
-    max-width: 100%; /* Đảm bảo ảnh không vượt quá container */
-    height: auto; /* Giữ tỷ lệ gốc của ảnh */
+    width: 100%;
+    aspect-ratio: 409 / 285;
     border-radius: 8px; /* Bo góc ảnh */
     display: block; /* Loại bỏ khoảng trắng thừa */
     object-fit: contain; /* Đảm bảo ảnh hiển thị đầy đủ */
@@ -2093,6 +2088,13 @@ input[type="range"]::-webkit-slider-thumb {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
+  .Agribank-related-card {
+    height: max-content;
+  }
+  .Agribank-related-info-container .Agribank-related-card .image-zoom {
+    border-radius: 4px;
+}
+
   @media (min-width: 769px) {
 
   .Agribank-related-card:first-child {
@@ -2117,13 +2119,32 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
   }
   
+  .Agribank-related-card-blue-background {
+    align-content: center;
+    bottom: -83%;
+    left: -32%;
+    position: absolute;
+    width: 43vw;
+    height: 20vw;
+    border-radius: 745.631px;
+    background: #9E2B47;
+    filter: blur(47px);
+  }
+  @media (max-width: 768px) {
+    .Agribank-related-card-blue-background {
+        left: -5%;
+        bottom: -30%;
+        width: 100vw;
+        height: 21vw;
+    }
+  }
+
   /* Overlay */
   .Agribank-related-card-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(170, 29, 64, 0.9), rgba(170, 29, 64, 0.2));
     padding: 20px;
     text-align: left;
   }
@@ -2975,4 +2996,96 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
     }
 
+
 }
+
+.timeline-history-section .timeline-history-content .history-year-content .history-year-content-card-text .history-year-conten-text {
+    text-align: justify;
+}
+
+.timeline-history-section .timeline-history-content .history-year-content .history-year-conten-text .accordion {
+    border: none;
+}
+
+.timeline-history-section .timeline-history-content .history-year-content .history-year-conten-text .accordion .accordion-head {
+    width: max-content;
+}
+
+.timeline-history-section .timeline-history-content .history-year-content .history-year-conten-text .accordion .accordion-head .accordion-icon {
+    right: 2%;
+}
+
+.timeline-history-section .timeline-history-content .history-year-content .history-year-conten-text .accordion .accordion-item:last-child .accordion-inner {
+    border-top: none;
+}
+
+.timeline-history-section .timeline-history-content .history-year-content .history-year-conten-text {
+    gap: 0;
+}
+
+.timeline-history-section .timeline-history-content .history-year-content .history-year-conten-text .accordion .title, .timeline-history-section .timeline-history-content .history-year-content .history-year-conten-text .accordion .accordion-icon {
+    color: #9D1D26;
+}
+
+.timeline-history-title {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.timeline-history-section .timeline-history-years .timeline-navigation .cv-carousel .cv-nav .cv-prev, .timeline-history-section .timeline-history-years .timeline-navigation .cv-carousel .cv-nav .cv-next {
+    background: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-history-section .timeline-history-years .timeline-navigation .cv-carousel {
+    align-items: center;
+}
+
+.timeline-history-section .timeline-history-years .timeline-navigation .cv-carousel .cv-item {
+    background: none !important;
+}
+.timeline-history-section .timeline-history-years .timeline-navigation .cv-carousel .cv-nav {
+    top: auto;
+    margin-right: 0;
+    -webkit-transform: none !important;
+    transform: none !important;
+    position: absolute;
+    /* z-index: 2; */
+    top: 0;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.timeline-history-section .timeline-history-years .timeline-navigation .cv-carousel .cv-stage-outer {
+    height: 93%;
+    margin-top: 13px;
+}
+
+.timeline-history-section .timeline-history-years-mobile .owl-carousel .owl-next {
+    margin-left: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .timeline-history-container {
+        border-top: none;
+    }
+
+    .timeline-history-years-mobile {
+        border-bottom: 1px solid #aeaeae;
+    }
+
+    .timeline-history-content {
+        padding-right: 0;
+    }
+
+    /* .timeline-history-section .history-year-content-card-text,.timeline-history-section .history-year-conten-text,.timeline-history-section .accordion-inner {
+        padding-right: 0;
+        padding-left: 0;
+    } */
+}
+
