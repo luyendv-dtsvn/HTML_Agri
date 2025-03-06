@@ -2651,13 +2651,8 @@ a.color-hover-b:hover,
     flex-direction: column;
     opacity: 1;
 }
-<<<<<<< HEAD
 .tab-content {
     margin-top: 57px;
-=======
-.tab-content{
-    margin-top: 57px;   
->>>>>>> 5269e8fd4befa34346de71a3e11d47a2ce7e60fb
 }
 .nav-link:hover,
 .content-top-menu:hover img {

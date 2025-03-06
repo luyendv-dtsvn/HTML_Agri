@@ -3123,4 +3123,16 @@ input[type="range"]::-webkit-slider-thumb {
     color: #AF0B35;
 }
 
+.Agribank-all-awards-content  .Agribank-all-awards-content-card:hover .Agribank-all-awards-card-content svg path {
+    fill: #9D1D26;
+}
+
+.Agribank-all-awards-content  .Agribank-all-awards-content-card:hover {
+    opacity: 1;
+}
+
+.Agribank-all-awards-content  .Agribank-all-awards-content-card:hover .Agribank-all-awards-card-stt, .Agribank-all-awards-content  .Agribank-all-awards-content-card:hover .Agribank-all-awards-card-content span {
+    color: #9D1D26 !important;
+}
+
 
