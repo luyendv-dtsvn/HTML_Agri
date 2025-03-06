@@ -1101,7 +1101,7 @@ justify-content: space-between;
     color: var(--red-1, #AF0B35);
 }
 
-.loan-tabs-filter button.active {
+.loan-tabs-filter li.active {
     border: 2px solid rgba(0, 0, 0, 0.34);
 }
 
@@ -1143,7 +1143,7 @@ justify-content: space-between;
     align-self: stretch;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #EAEAEA;
+    /* border-bottom: 1px solid #EAEAEA; */
     position: relative; /* Đảm bảo rằng các phần tử con có thể sử dụng position: absolute */
     overflow: hidden; /* Ẩn phần ảnh vượt khỏi khung */
 }
