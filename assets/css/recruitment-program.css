@@ -363,6 +363,9 @@ margin-top: 58px;
   .card-bordered {
     border: none;
 }
+.table-rate thead {
+    background: no-repeat!important;
+}
 @media (max-width: 1200px) and (min-width: 991.98px) {
      .advantage-card-asked-questions-selects .heading-h8{
         font-size: 14px;
