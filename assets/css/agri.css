@@ -2234,24 +2234,23 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .Agribank-all-awards-section {
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.Agribank-all-awards-container {
+/* .Agribank-all-awards-container {
     width: 90%;
     padding: 96px 0px;
     border-bottom: 1px solid #EAEAEA;
     display: flex;
     gap: 20px;
     justify-content: space-between;
-}
+} */
 
 .Agribank-all-awards-text {
     display: flex;
     flex-direction: column;
-    gap: 37px;
+    align-items: center;
 }
 
 .Agribank-all-awards-text-title {
@@ -3088,4 +3087,52 @@ input[type="range"]::-webkit-slider-thumb {
         padding-left: 0;
     } */
 }
+
+
+.Agribank-all-awards-section {
+    padding: 0 5%;
+}
+
+
+.Agribank-all-awards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Agribank-all-awards-content-card {
+    display: flex;
+    flex-direction: row;
+    gap: 49px;
+}
+
+.Agribank-all-awards-text p, .Agribank-all-awards-text span {
+    text-align: center;
+}
+
+.Agribank-all-awards-card-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.live a {
+    color: #AF0B35;
+}
+
+.Agribank-all-awards-content  .Agribank-all-awards-content-card:hover .Agribank-all-awards-card-content svg path {
+    fill: #9D1D26;
+}
+
+.Agribank-all-awards-content  .Agribank-all-awards-content-card:hover {
+    opacity: 1;
+}
+
+.Agribank-all-awards-content  .Agribank-all-awards-content-card:hover .Agribank-all-awards-card-stt, .Agribank-all-awards-content  .Agribank-all-awards-content-card:hover .Agribank-all-awards-card-content span {
+    color: #9D1D26 !important;
+}
+
 
