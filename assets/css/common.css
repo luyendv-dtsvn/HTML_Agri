@@ -2774,13 +2774,16 @@ background-image: url(../images/image.png);
 .input-rise{
     height: 2px !important;
 }
-.no-pabding{
+/* .no-pabding{
     padding-left: 0;
     padding-right: 0;
-}
+} */
 .calcuate .loan-tool-tabs{
     background: #fff;
     border: none;
+}
+.calcuate .loan-result a {
+display: block;
 }
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
 
