@@ -3011,7 +3011,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .timeline-history-section .timeline-history-content .history-year-content .history-year-conten-text .accordion .accordion-head .accordion-icon {
-    right: 2%;
+    right: -19px;
 }
 
 .timeline-history-section .timeline-history-content .history-year-content .history-year-conten-text .accordion .accordion-item:last-child .accordion-inner {
@@ -3136,3 +3136,22 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
+@media (max-width: 768px) {
+    .Agribank-all-awards-container {
+        display: block;
+        flex-direction: initial;
+        align-items: initial;
+    }
+
+    .Agribank-all-awards-content-card {
+        gap: 3vw;
+    }
+
+    .Agribank-all-awards-text p, .Agribank-all-awards-text span {
+        text-align: start;
+    }
+
+    .Agribank-all-awards-content  .Agribank-all-awards-content-card.Agribank-all-awards-card-content svg {
+        display: none;
+    }
+}
