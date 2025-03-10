@@ -180,6 +180,19 @@ button {
     font-weight: 400;
 }
 
+.title-table {
+    color: #494949;
+
+    /* Desktop/Subtitle/12 */
+    font-family: "BT Grotesk Medium";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+}
+
 .regular-18 {
     font-family: "BT Grotesk Regular";
     font-size: 1.125rem;
@@ -2027,8 +2040,6 @@ div {
     padding-left: 4.9%;
     padding-right: 4.9%;
 }
-.color-hover-img-tab:hover img {
-}
 .content-top {
     display: flex;
     text-align: center;
@@ -2659,7 +2670,7 @@ a.color-hover-b:hover,
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
-.agribank-culture{
+.agribank-culture {
     background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
 }
 /* --------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
@@ -2779,14 +2790,14 @@ a.color-hover-b:hover,
 }
 .news-main-content {
     display: flex;
-    
+
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
 }
 .content-title-1 {
     display: flex;
-    
+
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -2863,7 +2874,7 @@ a.color-hover-b:hover,
 }
 .news-title-mid {
     display: flex;
-    
+
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
@@ -2880,7 +2891,7 @@ a.color-hover-b:hover,
 
 .news-content-b {
     display: flex;
-    
+
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
@@ -3359,5 +3370,9 @@ a.color-hover-b:hover,
 .gap20 {
     gap: 20px;
 }
+.gap22 {
+    padding: 1.375rem 0 ;
+}
+
 
 /* end luyendv */
