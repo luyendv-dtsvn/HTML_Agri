@@ -387,15 +387,20 @@
     letter-spacing: 0.48px;
     font-weight: 400;
 }
-.title-bottom {
+/* .title-bottom {
     display: flex;
     justify-content: space-between;
     margin-bottom: 36px;
+    padding: 40px 0 40px 0;
 }
 .title-bottom-left {
     position: relative;
     display: flex;
     gap: 10px;
+} */
+.title-content-bottom {
+    display: flex;
+    justify-content: space-between;
 }
 .regular-12 {
     font-size: 0.75rem;
