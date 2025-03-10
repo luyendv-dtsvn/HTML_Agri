@@ -166,9 +166,6 @@
     gap: 22px;
 }
 
-.agribank-culture-identity-title-sub {
-    color: #494949;
-}
 
 .agribank-culture-identity-title-main {
     /* Hiển thị tiêu đề */
@@ -309,39 +306,15 @@
 }
 /* Section Tổng */
 .featured-culture-agribank {
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-top: 80px;
+    padding: 0px 5%;
 
 }
-/* Container */
-.featured-culture-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    width: 100%;
-    width: 100%;
-}
-.featured-culture-agribank-title {
-    width: 100%;
-    text-align: left; /* Hiển thị nội dung ở đầu dòng */
-    margin-bottom: 30px; /* Tạo khoảng cách dưới tiêu đề */
-}
-/* Hình ảnh */
-.featured-culture-image {
-    border-radius: 8px; /* Bo góc hình ảnh */
-    width: 50%;
-    overflow: hidden;
-    background-color: #D9D9D9; /* Màu nền mặc định */
-}
+
 
 .featured-culture-image img {
     width: 100%;
-    height: 100%;
     object-fit: cover; /* Đảm bảo ảnh lấp đầy và giữ tỷ lệ */
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
 /* Nội dung */
@@ -449,78 +422,6 @@
     height: 100%;
     object-fit: cover; /* Cắt hoặc thu phóng ảnh phù hợp với khung */
     z-index: -1; /* Đưa hình nền ra phía sau nội dung */
-}
-
-/* Nội dung Section */
-.why-agribank-culture {
-    position: relative;
-    width: 100%;
-    height: 782px;
-    display: flex;
-    align-items: center; /* Căn giữa nội dung theo chiều dọc */
-    justify-content: center; /* Căn nội dung về phía trái */
-    background-image: url('../images/vanhoa-vaylist-vaydetail/background-why.png'); /* Thay bằng đường dẫn đến ảnh của bạn */
-    background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ */
-    background-position: center; /* Đảm bảo ảnh căn giữa */
-    background-repeat: no-repeat; /* Không lặp lại ảnh */
-    margin-top: 80px;
-}
-
-.why-agribank-culture-content {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; /* Nội dung sắp xếp dọc */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Đổ bóng chữ */
-    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước */
-}
-
-.why-agribank-culture-content-sub {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column; /* Nội dung sắp xếp dọc */
-    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước */
-}
-
-/* Tiêu đề */
-.why-agribank-culture-title {
-    width: 70%;
-    color: var(--white, #FFF);
-    font-family: "SVN-Helvetica Now";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 48px */
-    letter-spacing: -0.4px;
-}
-
-/* Mô tả */
-.why-agribank-culture-description {
-    width: 70%;
-    color: var(--white, #FFF);
-    font-family: "SVN-Helvetica Now";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 22.5px */
-    letter-spacing: -0.15px;
-}
-
-@media (max-width: 768px) {
-    .why-agribank-culture-content {
-        margin-left: 20px;
-    }
-
-    .why-agribank-culture-title {
-        font-size: 28px;
-    }
-
-    .why-agribank-culture-description {
-        font-size: 14px;
-    }
 }
 
 /* Section Tổng */
@@ -718,10 +619,10 @@
 
 .agribank-quote-images-background {
     position: absolute;
-    margin-left: 300px;
+    margin-left: 15%;
     bottom: 0%;
-    width: 479.803px;
-    height: 596.015px;
+    width: 20%;
+    aspect-ratio: 1 / 1;
     flex-shrink: 0;
 
 }
@@ -877,89 +778,42 @@
 
 /* Section Tổng */
 .culture-agribank-download {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    box-sizing: border-box;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    padding: 0 5%;
 }
+
 
 .culture-agribank-download-inner {
-    width: 100%;
-    border-radius: 8px; /* Bo góc cho phần bên trong */
-    background: linear-gradient(115deg, #9E2B47 0.44%, #761930 103.79%);
-    box-sizing: border-box;
-    padding: 20px;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-/* Container */
-.culture-agribank-download-container {
-    display: flex;
-    justify-content: space-between; /* Căn chỉnh đều giữa các phần */
-    align-items: center;
-    padding: 67px 48px;
-    color: #FFFFFF;
-    box-sizing: border-box;
-}
-
-/* Nội dung bên trái */
-.culture-agribank-download-text {
     display: flex;
     align-items: center;
-    gap: 34px; /* Khoảng cách giữa icon và text */
-    flex: 1;
+    border-radius: 4px;
+    background: var(--Linear-1, linear-gradient(115deg, #9E2B47 0.44%, #761930 103.79%));
 }
 
-.culture-agribank-download-text p {
-    color: #FFFFFF;
-    font-family: "SVN-Helvetica Now", sans-serif;
-    font-size: 20px; /* Kích thước chữ vừa phải */
-    font-weight: 500;
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* Icon */
-.download-icon {
+.culture-agribank-download-icon img {
     width: 62px;
-    height: 62px;
-    flex-shrink: 0; /* Đảm bảo icon không bị co lại */
+    aspect-ratio: 1 / 1;
 }
 
-/* Nút tải xuống */
+.culture-agribank-download-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .culture-agribank-download-button {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-end; /* Căn nút về sát bên phải */
-}
-
-.culture-agribank-download-button .btn-download {
-    background-color: var(--red-3, #C33C5E);;
-    color: #FFFFFF;
-    font-family: "SVN-Helvetica Now", sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 16px 16px; /* Kích thước nút */
-    text-decoration: none;
+    gap: 6px;
     border-radius: 4px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    transition: background-color 0.3s ease;
-    white-space: nowrap; /* Không cho text xuống dòng */
+    background: var(--red-3, #C33C5E);
 }
 
-.culture-agribank-download-button .btn-download:hover {
-    background-color: #AA1D40;
+.culture-agribank-download-button img {
+    width: 20px;
+    aspect-ratio: 1 / 1;
 }
-
-
 
 
 
@@ -3153,5 +3007,196 @@ input[type="range"]::-webkit-slider-thumb {
 
     .Agribank-all-awards-content  .Agribank-all-awards-content-card .Agribank-all-awards-card-content svg {
         display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* page văn hóa agribank */
+/* section "bản sắc văn hóa agribank" */
+.Agribank-identity-list-section {
+    padding: 0px 5%;
+}
+
+.Agribank-identity-list-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.Agribank-identity-list-card {
+    border-radius: 4px;
+    border: 1px solid #E1E1E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 301px;
+    aspect-ratio: 269 / 301;
+
+}
+
+.Agribank-identity-list-section .Agribank-identity-list-content .col:hover {
+    /* width: auto;
+    min-height: 301px; */
+    aspect-ratio: 557 / 301;
+}
+@media (min-width: 1023px) {
+    .Agribank-identity-list-section .Agribank-identity-list-content .Agribank-identity-list-card:hover {
+        width: auto;
+        aspect-ratio: 557 / 301;
+        border: 1px solid var(--red-1, #AF0B35);
+    }
+
+    .Agribank-identity-list-section .Agribank-identity-list-content .Agribank-identity-list-card .Agribank-identity-list-card-text {
+        display: none;
+    }
+    
+    .Agribank-identity-list-section .Agribank-identity-list-content .Agribank-identity-list-card:hover .Agribank-identity-list-card-text {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Agribank-identity-list-card {
+        border-radius: 4px;
+        background: #AF0B35;
+        aspect-ratio: 343 / 333;
+    }
+
+    .Agribank-identity-list-card span , .Agribank-identity-list-card-content span {
+        color: #FFF !important;
+    }
+
+    .Agribank-identity-list-card-content svg path {
+        stroke: #FFF;
+    }
+
+    .Agribank-identity-list-card img {
+        filter: grayscale(100%) brightness(500%);
+    }
+}
+
+.Agribank-identity-list-card img {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 991px) {
+    .Agribank-identity-list-section .Agribank-identity-list-content .slick-slider .slick-dots {
+        display: none;
+    }
+}
+
+
+
+.featured-culture-agribank .featured-culture-container .featured-culture-content .accordion {
+    border-left: none;
+    border-right: none;
+}
+
+.featured-culture-agribank .featured-culture-container .featured-culture-content .accordion .accordion-head {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.featured-culture-agribank .featured-culture-container .featured-culture-content .accordion .collapsed .featured-culture-content-item-text {
+    opacity: 0.4;
+}
+
+
+@media (max-width: 992px) {
+    .culture-agribank-download-title br {
+        display: none;
+    }
+
+    .culture-agribank-download-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .culture-agribank-download-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .culture-agribank-download-button {
+        justify-content: center;
+    }
+}
+
+
+.Agribank-identity-list-section .owl-theme .owl-dots .owl-dot span {
+    width: auto;
+    height: auto; 
+    min-height: 3px;
+    border-radius: 0;
+    aspect-ratio: 25 / 3;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.Agribank-identity-list-section .owl-theme .owl-dots .owl-dot.active span {
+    background: #AF0B35;
+}
+
+.why-agribank-culture-background {
+    width: 100%;
+    min-height: 395px;
+    aspect-ratio: 1920 / 924;
+    background: url(../images/Why-12.png) lightgray 80% / cover no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.why-agribank-culture-content {
+    width: 48%;
+    height: 100%;
+    background: linear-gradient(90deg, #AF0B35 14.84%, rgba(175, 11, 53, 0.00) 100%);
+    padding: 0 5%;
+    
+}
+
+.why-agribank-culture-text {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.why-agribank-culture-text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1128px) {
+    .why-agribank-culture-content {
+        width: 68%;
+        padding: 0 0 0 5%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .why-agribank-culture {
+        min-height: 695px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .why-agribank-culture-content {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        transform: translate(0, -75%);
+        background: linear-gradient(180deg, #AF0B35 14.84%, rgba(175, 11, 53, 0.00) 100%);
+        padding: 36px 5%;
     }
 }
