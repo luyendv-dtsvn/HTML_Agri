@@ -452,6 +452,7 @@
     flex-direction: row;
     gap: 30px;
     text-align: left;
+    justify-content: center;
 }
 
 .agribank-quote-image img {
@@ -469,50 +470,7 @@
     fill: rgba(74, 74, 74, 0.50);
 }
 
-.agribank-quote-text {
-    max-width: 700px;
-}
 
-.agribank-quote-text p {
-    margin-top: 0px;
-    color: var(--dark-1, #080808);
-    font-family: "SVN-Helvetica Now";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 48px */
-    letter-spacing: -0.4px;
-}
-
-.agribank-quote-text .highlight {
-    color: var(--red-1, #AF0B35);
-    font-family: "SVN-Helvetica Now";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-    letter-spacing: -0.4px;
-}
-
-.agribank-quote-text cite {
-    color: var(--dark-1, #080808);
-    font-family: "SVN-Helvetica Now";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 17.6px */
-    letter-spacing: -0.32px;
-}
-
-.agribank-quote-text .star {
-    color: var(--dark-3, #606060);
-    font-family: "SVN-Helvetica Now";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    letter-spacing: -0.32px;
-}
 
 /* Các hình ảnh phụ */
 .agribank-quote-images {
@@ -630,7 +588,7 @@
 @media (max-width: 768px) {
     .agribank-quote-main {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
     .agribank-quote-image img {
@@ -3200,3 +3158,4 @@ input[type="range"]::-webkit-slider-thumb {
         padding: 36px 5%;
     }
 }
+

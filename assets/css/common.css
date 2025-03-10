@@ -3361,3 +3361,19 @@ a.color-hover-b:hover,
 }
 
 /* end luyendv */
+
+
+.list-product-detail-section {
+    padding: 0 5%;
+}
+
+
+.list-product-detail-section .product-detail-card-button {
+    border-radius: 4px;
+    background: #9E2B47;
+}
+
+.list-product-detail-section .product-detail-card-img img {
+    aspect-ratio: 702 / 417;
+    width: 100%;
+}
