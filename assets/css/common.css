@@ -2662,6 +2662,8 @@ a.color-hover-b:hover,
     flex-direction: column;
     opacity: 1;
 }
+
+
 .tab-content {
     margin-top: 57px;
 }
@@ -2673,7 +2675,127 @@ a.color-hover-b:hover,
 .agribank-culture {
     background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
 }
-/* --------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
+/* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
+/* 
+
+
+
+*/
+/* --------------------------------------------------- Page Product List ------------------------------------------ */
+.product-list .nav-tabs{
+    border-bottom: none;
+    gap: 8px;
+}
+.product-list .nav-item{
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    text-align: center;
+}
+.product-list .nav-item:hover{
+    border: 2px solid rgba(0, 0, 0, 0.34);
+}
+.product-list .nav-item.active{
+    border: 2px solid rgba(0, 0, 0, 0.34);
+}
+.product-list .nav-tabs .nav-link:after{
+    border-radius: 4px;
+}
+.product-list .nav-tabs .nav-link.active:after{
+    opacity: 0;
+}
+
+.product-list .nav-link{
+    margin: 0 1.75rem;
+}
+.product-list .nav-tabs .nav-link{
+    color: #000;
+}
+
+@media (min-width: 1200px) {
+    .product-list .nav-tabs .nav-item {
+        padding-right: 00;
+    }
+}
+
+@media (min-width: 992px) {
+    .product-list .nav-tabs .nav-item {
+        padding-right: 00;
+    }
+}
+@media (min-width: 768px) {
+    .product-list .nav-tabs .nav-item {
+        padding-right: 00;
+    }
+}
+.product-list .nav-tabs .nav-item:last-child {
+    padding-right: 0;
+}
+
+/* ---------------------------------------------------End Page Product List ------------------------------------------ */
+
+
+/* ---------------------------------------------------Page Calcuate Tool ------------------------------------------ */
+
+
+.calcuate .personal-loan-section{
+background-image: url(../images/image.png);
+}
+
+.calcuate .money-time-loan-calculator-input{
+    background:#F4F4F4;
+}
+.calcuate input[type="number"],.form-text-hint,
+.calcuate .input-slider-wrapper input[type="number"]{
+    background:#F4F4F4;
+}
+.calcuate .form-label{
+    margin-bottom: 12px;
+}
+.calcuate .form-control{
+    border-radius:0px;
+}
+.calculate-utilities{
+    padding: 0 5%;
+}
+.calcuate .loan-result-content p{
+    border-bottom: none;
+}
+.calcuate .tab-pane{
+    padding: 110px 0;
+}
+.calcuate .loan-calculator-button,
+.calcuate .form-control,
+.calcuate .money-time-loan-calculator-input{
+    height: 3.563rem;
+}
+.calcuate .loan-calculator-button{ 
+    margin-top: 1.9rem;
+}
+.calcuate .overline-title{
+    margin-top: 1.5rem;
+}
+.input-rise{
+    height: 2px !important;
+}
+.no-pabding{
+    padding-left: 0;
+    /* padding-right: 0; */
+}
+.calcuate .loan-tool-tabs{
+    background: #fff;
+    border: none;
+}
+.calcuate .loan-result a {
+display: block;
+}
+.calcuate .money-time-loan-calculator-group{
+    gap:0;
+}
+.calcuate .loan-calculator-radio-form{
+    gap: 0;
+}
+/* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
+
 @media (max-width: 1366px) and (min-width: 1000px) {
     .community_slider .image-zoom {
         width: 200px;
