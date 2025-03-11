@@ -2765,7 +2765,7 @@ background-image: url(../images/image.png);
 .calcuate .money-time-loan-calculator-input{
     height: 3.563rem;
 }
-.calcuate .loan-calculator-button{
+.calcuate .loan-calculator-button{ 
     margin-top: 1.9rem;
 }
 .calcuate .overline-title{
@@ -2774,16 +2774,22 @@ background-image: url(../images/image.png);
 .input-rise{
     height: 2px !important;
 }
-/* .no-pabding{
+.no-pabding{
     padding-left: 0;
-    padding-right: 0;
-} */
+    /* padding-right: 0; */
+}
 .calcuate .loan-tool-tabs{
     background: #fff;
     border: none;
 }
 .calcuate .loan-result a {
 display: block;
+}
+.calcuate .money-time-loan-calculator-group{
+    gap:0;
+}
+.calcuate .loan-calculator-radio-form{
+    gap: 0;
 }
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
 
