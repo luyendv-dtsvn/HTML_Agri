@@ -417,6 +417,24 @@
     border: 1px solid #e1e1e1;
     display: flex;
     flex-direction: column;
+    padding: 27px;
+}
+.title-box-contact {
+    padding-top: 56px;
+    padding-bottom: 11px;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+}
+.content-box-contact {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.16px;
 }
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
