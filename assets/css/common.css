@@ -2662,6 +2662,8 @@ a.color-hover-b:hover,
     flex-direction: column;
     opacity: 1;
 }
+
+
 .tab-content {
     margin-top: 57px;
 }
@@ -2673,7 +2675,127 @@ a.color-hover-b:hover,
 .agribank-culture {
     background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
 }
-/* --------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
+/* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
+/* 
+
+
+
+*/
+/* --------------------------------------------------- Page Product List ------------------------------------------ */
+.product-list .nav-tabs{
+    border-bottom: none;
+    gap: 8px;
+}
+.product-list .nav-item{
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    text-align: center;
+}
+.product-list .nav-item:hover{
+    border: 2px solid rgba(0, 0, 0, 0.34);
+}
+.product-list .nav-item.active{
+    border: 2px solid rgba(0, 0, 0, 0.34);
+}
+.product-list .nav-tabs .nav-link:after{
+    border-radius: 4px;
+}
+.product-list .nav-tabs .nav-link.active:after{
+    opacity: 0;
+}
+
+.product-list .nav-link{
+    margin: 0 1.75rem;
+}
+.product-list .nav-tabs .nav-link{
+    color: #000;
+}
+
+@media (min-width: 1200px) {
+    .product-list .nav-tabs .nav-item {
+        padding-right: 00;
+    }
+}
+
+@media (min-width: 992px) {
+    .product-list .nav-tabs .nav-item {
+        padding-right: 00;
+    }
+}
+@media (min-width: 768px) {
+    .product-list .nav-tabs .nav-item {
+        padding-right: 00;
+    }
+}
+.product-list .nav-tabs .nav-item:last-child {
+    padding-right: 0;
+}
+
+/* ---------------------------------------------------End Page Product List ------------------------------------------ */
+
+
+/* ---------------------------------------------------Page Calcuate Tool ------------------------------------------ */
+
+
+.calcuate .personal-loan-section{
+background-image: url(../images/image.png);
+}
+
+.calcuate .money-time-loan-calculator-input{
+    background:#F4F4F4;
+}
+.calcuate input[type="number"],.form-text-hint,
+.calcuate .input-slider-wrapper input[type="number"]{
+    background:#F4F4F4;
+}
+.calcuate .form-label{
+    margin-bottom: 12px;
+}
+.calcuate .form-control{
+    border-radius:0px;
+}
+.calculate-utilities{
+    padding: 0 5%;
+}
+.calcuate .loan-result-content p{
+    border-bottom: none;
+}
+.calcuate .tab-pane{
+    padding: 110px 0;
+}
+.calcuate .loan-calculator-button,
+.calcuate .form-control,
+.calcuate .money-time-loan-calculator-input{
+    height: 3.563rem;
+}
+.calcuate .loan-calculator-button{ 
+    margin-top: 1.9rem;
+}
+.calcuate .overline-title{
+    margin-top: 1.5rem;
+}
+.input-rise{
+    height: 2px !important;
+}
+.no-pabding{
+    padding-left: 0;
+    /* padding-right: 0; */
+}
+.calcuate .loan-tool-tabs{
+    background: #fff;
+    border: none;
+}
+.calcuate .loan-result a {
+display: block;
+}
+.calcuate .money-time-loan-calculator-group{
+    gap:0;
+}
+.calcuate .loan-calculator-radio-form{
+    gap: 0;
+}
+/* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
+
 @media (max-width: 1366px) and (min-width: 1000px) {
     .community_slider .image-zoom {
         width: 200px;
@@ -3376,3 +3498,124 @@ a.color-hover-b:hover,
 
 
 /* end luyendv */
+
+
+
+
+/* section list-product trongpd */
+.list-product-detail-section {
+    padding: 0 5%;
+}
+
+
+.list-product-detail-section .product-detail-card-button {
+    border-radius: 4px;
+    background: #9E2B47;
+}
+
+.list-product-detail-section .product-detail-card-img img {
+    aspect-ratio: 702 / 417;
+    width: 100%;
+}
+
+.list-product-detail-section .product-detail-card-content .product-detail-card-text div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.list-product-detail-section .product-detail-card-content .product-detail-card-text div img {
+    width: 20px;
+    aspect-ratio: 1 / 1;
+}
+
+@media (max-width: 768px) {
+    .list-product-detail-section .product-detail-card {
+        border: 1px solid #aeaeae;
+        border-radius: 8px;
+    }
+
+    .list-product-detail-section .product-detail-card .product-detail-card-list-button {
+        display: flex;
+        border-top: 1px solid #aeaeae;
+    }
+
+    .list-product-detail-section .product-detail-card .product-detail-card-button {
+        text-align: center;
+        border-radius: 0 0 0 8px;
+        border-right: 1px solid #aeaeae;
+    }
+
+    .list-product-detail-section .product-detail-card .product-detail-card-list-button .product-detail-card-button-detail {
+        text-align: center;
+        align-content: center;
+    }
+
+    .list-product-detail-section .product-detail-card .product-detail-card-title {
+        border-bottom: 1px solid #aeaeae;
+    }
+
+    .list-product-detail-section .product-detail-card-img {
+        border-radius: 8px 8px 0 0;
+    }
+
+}
+
+/* end section trongpd */
+
+/* section yêu cầu tư vấn trongpd */
+
+.consultation-request-section {
+    padding: 0 5%;
+}
+
+.consultation-request-button {
+    border-radius: 4px;
+    border: 1px dashed #DCDCDC;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* end section */
+
+.product-advisory-section {
+    padding: 0 5%;
+    background: #7B0D29;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-advisory-section .product-advisory-button {
+    border-radius: 4px;
+    background: #650D23;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.product-advisory-list-button {
+    display: flex;
+    flex-direction: row;
+}
+
+/* .product-advisory-card .product-advisory-title {
+    max-width: 4901px;
+} */
+
+.product-advisory-section .line-h {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .product-advisory-section {
+        flex-direction: column;
+    }
+
+    .product-advisory-section .line-h {
+        display: block;
+    }
+}
