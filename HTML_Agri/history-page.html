@@ -1334,13 +1334,13 @@
 
             <div class="col-12 col-md-1 timeline-history-years d-none-768">
                 <div class="timeline-navigation">
-                    <!-- <button class="history-scroll-button" id="history-scroll-up" disabled>
+                    <button class="history-scroll-button" id="history-scroll-up">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                            <path d="M10.25 8L6.625 4.375L3 8" stroke="white" stroke-linecap="square"/>
+                            <path d="M10.25 8L6.625 4.375L3 8" stroke="white" stroke-linecap="square" />
                         </svg>
-                    </button> -->
+                    </button>
                     <ul class="cv-carousel" id="year-list">
-                        <li class="Body-16 color-dark-3 item"><a href="#2022" class="scroll-year">2022</a></li>
+                        <li class="Body-16 color-dark-3 item live"><a href="#2022" class="scroll-year">2022</a></li>
                         <li class="Body-16 color-dark-3 item"><a href="#2021" class="scroll-year">2021</a></li>
                         <li class="Body-16 color-dark-3 item"><a href="#2020" class="scroll-year">2020</a></li>
                         <li class="Body-16 color-dark-3 item"><a href="#2019" class="scroll-year">2019</a></li>
@@ -1365,11 +1365,11 @@
                         <li class="Body-16 color-dark-3 item"><a href="#2000" class="scroll-year">2000</a></li>
                         <li class="Body-16 color-dark-3 item"><a href="#1999" class="scroll-year">1999</a></li>
                     </ul>
-                    <!-- <button class="history-scroll-button" id="history-scroll-down">
+                    <button class="history-scroll-button" id="history-scroll-down">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                            <path d="M10.25 6L6.625 9.625L3 6" stroke="white" stroke-linecap="square"/>
+                            <path d="M10.25 6L6.625 9.625L3 6" stroke="white" stroke-linecap="square" />
                         </svg>
-                    </button> -->
+                    </button>
                 </div>
             </div>
             <div class="col-12 col-md-11 timeline-history-content">
@@ -2169,7 +2169,7 @@
             $(document).ready(function () {
                 // init
                 $('.cv-carousel').carouselVertical({
-                    nav: true,
+                    nav: false,
                     navText: [
                         '<button class="custom-prev1"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.25 8L6.625 4.375L3 8" stroke="white" stroke-linecap="square"/></svg></button>', // Tùy chỉnh nút "Prev"
                         '<button class="custom-next1"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.25 6L6.625 9.625L3 6" stroke="white" stroke-linecap="square"/></svg></button>', // Tùy chỉnh nút "Next"
@@ -2188,91 +2188,108 @@
             });
         })(jQuery);
     </script>
+    <script src="../assets/js/libs/gsap.min.js"></script>
+    <script src="../assets/js/navmenu.js" defer></script>
     <script>
-        //------Phần timeline trên trang history page ---------------
-        document.addEventListener("DOMContentLoaded", () => {
-            // Lấy các phần tử cần thiết
-            const yearList = document.getElementById("year-list");
-            const scrollItems = document.querySelectorAll(".scroll-year"); // Link các năm
+        document.addEventListener("DOMContentLoaded", function () {
+            // Hàm xử lý chuyển trạng thái cho nút up/down (vanilla JS)
+            function toggleLive(direction) {
+                const items = document.querySelectorAll(".cv-item");
+                const itemsArray = Array.from(items);
+                // Tìm phần tử <li> có class "live"
+                const currentIndex = itemsArray.findIndex(item => {
+                    const li = item.querySelector(".item");
+                    return li && li.classList.contains("live");
+                });
 
-            // Sự kiện click vào các năm để cuộn đến nội dung tương ứng
+                if (direction === "up") {
+                    if (currentIndex <= 0) return;
+                    // Loại bỏ class "live" khỏi phần tử hiện tại
+                    const currentLi = itemsArray[currentIndex].querySelector(".item");
+                    if (currentLi) currentLi.classList.remove("live");
+                    // Thêm class "live" cho phần tử trước đó
+                    const prevLi = itemsArray[currentIndex - 1].querySelector(".item");
+                    if (prevLi) prevLi.classList.add("live");
+                    // Nếu phần tử cha (.cv-item) trước đó chưa có class "active", thêm nó
+                    if (!itemsArray[currentIndex - 1].classList.contains("active")) {
+                        itemsArray[currentIndex - 1].classList.add("active");
+                    }
+                } else if (direction === "down") {
+                    if (currentIndex === -1 || currentIndex >= itemsArray.length - 1) return;
+                    // Loại bỏ class "live" khỏi phần tử hiện tại
+                    const currentLi = itemsArray[currentIndex].querySelector(".item");
+                    if (currentLi) currentLi.classList.remove("live");
+                    // Thêm class "live" cho phần tử kế tiếp
+                    const nextLi = itemsArray[currentIndex + 1].querySelector(".item");
+                    if (nextLi) nextLi.classList.add("live");
+                    // Nếu phần tử cha (.cv-item) kế tiếp chưa có class "active", thêm nó
+                    if (!itemsArray[currentIndex + 1].classList.contains("active")) {
+                        itemsArray[currentIndex + 1].classList.add("active");
+                    }
+                }
+            }
+
+            // Gán sự kiện cho nút điều hướng lên và xuống (vanilla JS)
+            const upButton = document.getElementById("history-scroll-up");
+            if (upButton) {
+                upButton.addEventListener("click", function () {
+                    toggleLive("up");
+                });
+            }
+            const downButton = document.getElementById("history-scroll-down");
+            if (downButton) {
+                downButton.addEventListener("click", function () {
+                    toggleLive("down");
+                });
+            }
+
+            // Phần timeline: xử lý click vào link năm
+            const yearList = document.getElementById("year-list");
+            const scrollItems = document.querySelectorAll(".scroll-year");
             scrollItems.forEach((item) => {
                 item.addEventListener("click", (e) => {
                     e.preventDefault();
-                    const targetId = item.getAttribute("href").substring(1); // Lấy ID của mục được cuộn
+                    const targetId = item.getAttribute("href").substring(1);
                     const targetElement = document.getElementById(targetId);
-
                     if (targetElement) {
                         targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
                     }
                 });
             });
 
-    //        // Lấy danh sách các item <li>
-    //   const items = document.querySelectorAll('#year-list li.item');
-    //   const btnUp = document.getElementById('history-scroll-up');
-    //   const btnDown = document.getElementById('history-scroll-down');
-
-    //   // Tìm index của item hiện đang có 'active'
-    //   let currentIndex = Array.from(items).findIndex(item => item.classList.contains('active'));
-
-    //   // Nếu không có item nào có 'active', ta set mặc định item đầu tiên
-    //   if (currentIndex === -1 && items.length > 0) {
-    //     currentIndex = 0;
-    //     items[0].classList.add('active', 'live');
-    //   }
-
-    //   // Hàm bật/tắt nút UP/DOWN khi đã cuộn tới đầu/cuối
-    //   function updateButtonState() {
-    //     // Nếu đang ở đầu danh sách -> disable nút UP
-    //     btnUp.disabled = (currentIndex <= 0);
-
-    //     // Nếu đang ở cuối danh sách -> disable nút DOWN
-    //     btnDown.disabled = (currentIndex >= items.length - 1);
-    //   }
-
-    //   // Lần đầu gọi để trạng thái nút được cập nhật
-    //   updateButtonState();
-
-    //   // Gỡ bỏ "active live" khỏi item hiện tại
-    //   function removeActiveClasses(index) {
-    //     items[index].classList.remove('active', 'live');
-    //   }
-
-    //   // Thêm "active live" hoặc chỉ "live" nếu item đã có "active"
-    //   function addActiveClasses(index) {
-    //     if (items[index].classList.contains('active')) {
-    //       items[index].classList.add('live');
-    //     } else {
-    //       items[index].classList.add('active', 'live');
-    //     }
-    //   }
-
-    //   // Xử lý sự kiện bấm nút cuộn lên
-    //   btnUp.addEventListener('click', function() {
-    //     if (currentIndex > 0) {
-    //       removeActiveClasses(currentIndex);
-    //       currentIndex--;
-    //       addActiveClasses(currentIndex);
-    //       updateButtonState();
-    //     }
-    //   });
-
-    //   // Xử lý sự kiện bấm nút cuộn xuống
-    //   btnDown.addEventListener('click', function() {
-    //     if (currentIndex < items.length - 1) {
-    //       removeActiveClasses(currentIndex);
-    //       currentIndex++;
-    //       addActiveClasses(currentIndex);
-    //       updateButtonState();
-    //     }
-    //   });
-            // Khởi tạo trạng thái ban đầu
+            // Khởi tạo trạng thái ban đầu (giả sử updateButtons() được định nghĩa ở nơi khác)
             updateButtons();
         });
+
+        // Phần xử lý carousel bằng jQuery
+        $(document).ready(function () {
+            // Xử lý nút điều hướng lên (Scroll Up)
+            $("#history-scroll-up").click(function () {
+                var $carousel = $("#year-list");
+                var $items = $carousel.find(".cv-item");
+                var $active = $carousel.find(".cv-item.active").first();
+                var currentIndex = $items.index($active);
+                if (currentIndex <= 0) return;
+                var newIndex = currentIndex - 1;
+                // Plugin sử dụng goTo(n) chuyển đến moveTo(n-1)
+                $carousel.trigger("goTo", [newIndex + 1]);
+            });
+            // Xử lý nút điều hướng xuống (Scroll Down)
+            $("#history-scroll-down").click(function () {
+                var $carousel = $("#year-list");
+                var $items = $carousel.find(".cv-item");
+                var $active = $carousel.find(".cv-item.active").first();
+                var currentIndex = $items.index($active);
+                var totalItems = $items.length;
+                var visibleCount = 4; // số lượng item hiển thị mặc định
+                if (currentIndex >= totalItems - visibleCount) return;
+                var newIndex = currentIndex + 1;
+                $carousel.trigger("goTo", [newIndex + 1]);
+            });
+        });
     </script>
-    <script src="../assets/js/libs/gsap.min.js"></script>
-    <script src="../assets/js/navmenu.js" defer></script>
+
 </body>
 
 </html>
+
