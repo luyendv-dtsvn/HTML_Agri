@@ -1726,10 +1726,8 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* position: sticky; */
-    top: 20px;
     overflow: hidden; /* Ẩn nội dung vượt quá */
-    gap: 24px;
+    gap: 10px;
   }
   
   
@@ -2871,10 +2869,10 @@ input[type="range"]::-webkit-slider-thumb {
     justify-content: space-between;
 }
 
-.timeline-history-section .timeline-history-years .timeline-navigation .cv-carousel .cv-stage-outer {
+/* .timeline-history-section .timeline-history-years .timeline-navigation .cv-carousel .cv-stage-outer {
     height: 93%;
     margin-top: 13px;
-}
+} */
 
 .timeline-history-section .timeline-history-years-mobile .owl-carousel .owl-next {
     margin-left: 5px;
