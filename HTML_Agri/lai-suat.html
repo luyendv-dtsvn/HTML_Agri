@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculate Tool</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lãi Xuất</title>
     <link rel="stylesheet" href="../assets/css/agri.css" />
     <link rel="stylesheet" href="../assets/css/font-awesome.css" />
     <link rel="stylesheet" href="../assets/css/libs/owl.carousel.css" />
@@ -15,8 +14,7 @@
     <link rel="stylesheet" href="../assets/css/main-info-section.css" />
     <link rel="stylesheet" href="../assets/css/navmenu.css" />
 </head>
-
-<body class="calcuate">
+<body class="interestRate">
     <section>
         <div class="d-none-992 top">
             <div class="top-user">
@@ -1276,8 +1274,7 @@
         <div class="personal-loan-container">
             <div class="personal-loan-text">
                 <div class="col-12 col-lg-4 col-md-5 personal-loan-text-sub">
-                    <div class="personal-loan-breadcrumb regular-13 color-white">
-                        <a href="#" class="color-white">Công cụ tiện ích</a>
+                    <div class="personal-loan-breadcrumb regular-13 color-white">Trang chủ
                         <span class="personal-loan-breadcrumb-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
                                 <g clip-path="url(#clip0_1_6132)">
@@ -1292,239 +1289,198 @@
                                 </defs>
                             </svg>
                         </span>
-                        <!-- <a href="#" class=" color-white">Cá nhân</a>
-                        <span class="personal-loan-breadcrumb-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
-                                <g clip-path="url(#clip0_1_6132)">
-                                    <path
-                                        d="M6.22076 4.18784L2.66066 0.627804C2.57832 0.545398 2.4684 0.5 2.3512 0.5C2.23399 0.5 2.12408 0.545398 2.04174 0.627804L1.77956 0.889915C1.60896 1.06071 1.60896 1.3383 1.77956 1.50884L4.76906 4.49834L1.77624 7.49116C1.6939 7.57357 1.64844 7.68342 1.64844 7.80056C1.64844 7.91782 1.6939 8.02768 1.77624 8.11015L2.03842 8.3722C2.12082 8.4546 2.23068 8.5 2.34788 8.5C2.46508 8.5 2.575 8.4546 2.65734 8.3722L6.22076 4.80891C6.30329 4.72624 6.34863 4.61587 6.34837 4.49854C6.34863 4.38075 6.30329 4.27044 6.22076 4.18784Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1_6132">
-                                        <rect width="8" height="8" fill="white" transform="translate(0 0.5)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </span> -->
-                        <a href="#"><span>Công cụ tính toán</span></a>
+                        
+                        <span>Lãi xuất</span>
                     </div>
                     <div class="personal-loan-text-title">
-                        <h2 class="personal-loan-title heading-h2 color-white">
-                            Công cụ tính toán
-                        </h2>
-                        <p class="personal-loan-description regular-18 color-white-1">
-                            Cập nhật liên tục các thông tin quan trọng của Agribank
-                        </p>
+                        <h2 class="personal-loan-title heading-h2 color-white">Lãi xuất</h2>
+                        <p class="personal-loan-description regular-18 color-white-1">Cập nhật liên tục các thông tin quan trọng của Agribank</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="calculate-utilities">
-        <div class="calculate-utilities-loan">
-            <ul class="nav nav-tabs">
+    </section>   
+    <section class="statistics-table">
+        <div class="content">
+            <div class="main-header">
+              <ul class="nav nav-tabs nav-tabs-s2">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#tabItem5">Tính lãi tiền gửi</a>
+                    <a class="nav-link active" data-toggle="tab" href="#tabItem9">
+                      <div class="content-top-menu" >
+                       <img src="../assets/images/bld/bld-menuicon3.svg" alt="" style="width: 40px; height: 40px;">
+      
+                      </div>
+                      <span class="body-16">Cá nhân</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tabItem6">Tính toán khoản vay</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tabItem7">Quy đổi giá</a>
+                    <a class="nav-link" data-toggle="tab" href="#tabItem10">
+                      <div class="content-top-menu" >
+                        <img src="../assets/images/bld/bld-menuicon2.svg" alt="">
+                      </div>
+                      <span class="body-16">Doanh Nghiệp</span>
+                    </a>
                 </li>
             </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="tabItem5">
-                    <h3 class="heading-h7 mb-4">Tính lãi tiền gửi</h3>
-                    <div class="row-ct">
-                        <div class="money-time-loan-calculator-form col-3 no-pabding">
-                            <label class="body-14" for="loan-amount">Số tiền vay</label>
-                            <div class="money-time-loan-calculator-input">
-                                <div class="input-slider-wrapper">
-                                    <input type="number" id="loan-amount-input" value="810000" min="0" max="10000000"
-                                        step="1"
-                                        oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
-                                        class="input-number Body-Regular-15" />
-                                    <span class="currency-unit body-13">VNĐ</span>
-                                </div>
-                                <input class="input-rise" type="range" id="loan-amount" min="0" max="10000000"
-                                    step="1000" value="810000" />
-                            </div>
-                            <div class="range-display body-12">
-                                <span class="range-min">0</span>
-                                <span class="range-max">10,000,000</span>
-                            </div>
-                        </div>
-
-                        <div class="money-time-loan-calculator-form col-3 no-pabding">
-                            <label class="body-14" for="loan-duration">Thời hạn vay</label>
-                            <div class="money-time-loan-calculator-input">
-                                <div class="input-slider-wrapper">
-                                    <input type="number" id="loan-duration-display" value="12" min="1" max="120"
-                                        step="1"
-                                        oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
-                                        class="input-number Body-Regular-15" />
-                                    <span class="currency-unit body-13">Tháng</span>
-                                </div>
-                                <input class="input-rise" type="range" id="loan-duration" min="1" max="120" step="1"
-                                    value="12" />
-                            </div>
-                            <div class="range-display body-12">
-                                <span class="range-min">1</span>
-                                <span class="range-max">120</span>
-                            </div>
-                        </div>
-                        <div class="col-3 no-pabding">
-                            <div class="form-group">
-                                <label class="form-label body-14" for="interest-rate">Lãi suất cho vay</label>
-                                <div class="form-control-wrap">
-                                    <div class="form-text-hint">
-                                        <span
-                                            class="overline-title money-time-loan-calculator-year body-13">%/năm</span>
-                                    </div>
-                                    <input type="number" id="interest-rate" value="12" step="0.1"
-                                        class="form-control regular-15" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 no-pabding"><button class="loan-calculator-button Body-16 color-white " id="calculate-button">
-                            Tính khoản vay
-                        </button></div>
-                    </div>
-                    <div class="line-h mt-5 mb-5 col-12" style="background: #F2F2F2;"></div>
-
-                    <div class="loan-result-content">
-                        <p class="body-14">Số tiền gốc và lãi phải trả: <span class="heading-h7"
-                                id="total-payment">8,626,500,000 <cite class="body-13">VNĐ</cite></span></p>
-                    </div>
-                    <span style="color:#AF0B35 ;">Lưu ý: Bảng tính chỉ mang tính chất tham khảo và áp dụng cho hình thức trả lãi cuối kỳ</span>
+            <div class="line-h"></div>
+            <div class="profit-table">
+                <div>
+                    <span class="heading-h5 color-dark-1">Bảng lãi xuất tiền gửi cho</span>
+                <span class="heading-h6 color-red-1">khách hàng cá nhân</span>
                 </div>
-                <div class="tab-pane" id="tabItem6">
-                    <div class="col-12 loan-tool-tabs row">
-                        <div class="col-12 col-md-7 loan-calculator">
-                            <h3 class="heading-h7">Tính toán khoản vay</h3>
-                            <div class="loan-calculator-group">
-                                <div class="loan-calculator-radio">
-                                    <label class="body-14">Phương thức tính</label>
-                                    <div class="loan-calculator-radio-form ">
-                                        <label class="body-15 col-6 no-pabding no-">
-                                            <input type="radio" name="method" value="reducing" checked> Trả trên dư nợ
-                                            giảm dần
-                                        </label>
-                                        <label class="body-15 col-6">
-                                            <input type="radio" name="method" value="equal"> Trả trên dư nợ gốc
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="money-time-loan-calculator-group">
-                                    <div class="money-time-loan-calculator-form col-6 no-pabding">
-                                        <label class="body-14" for="loan-amount">Số tiền vay</label>
-                                        <div class="money-time-loan-calculator-input">
-                                            <div class="input-slider-wrapper">
-                                                <input type="number" id="loan-amount-input" value="810000" min="0"
-                                                    max="10000000" step="1"
-                                                    oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
-                                                    class="input-number Body-Regular-15" />
-                                                <span class="currency-unit body-13">VNĐ</span>
-                                            </div>
-                                            <input class="input-rise" type="range" id="loan-amount" min="0"
-                                                max="10000000" step="1000" value="810000" />
-                                        </div>
-                                        <div class="range-display body-12">
-                                            <span class="range-min">0</span>
-                                            <span class="range-max">10,000,000</span>
-                                        </div>
-                                    </div>
-                                    <div class="money-time-loan-calculator-form col-6">
-                                        <label class="body-14" for="loan-duration">Thời hạn vay</label>
-                                        <div class="money-time-loan-calculator-input">
-                                            <div class="input-slider-wrapper">
-                                                <input type="number" id="loan-duration-display" value="12" min="1"
-                                                    max="120" step="1"
-                                                    oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
-                                                    class="input-number Body-Regular-15" />
-                                                <span class="currency-unit body-13">Tháng</span>
-                                            </div>
-                                            <input class="input-rise" type="range" id="loan-duration" min="1" max="120"
-                                                step="1" value="12" />
-                                        </div>
-                                        <div class="range-display body-12">
-                                            <span class="range-min">1</span>
-                                            <span class="range-max">120</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="money-time-loan-calculator-group">
-                                    <div class="col-sm-6 no-pabding">
-                                        <div class="form-group">
-                                            <label class="form-label body-14" for="interest-rate">Lãi suất cho
-                                                vay</label>
-                                            <div class="form-control-wrap">
-                                                <div class="form-text-hint">
-                                                    <span
-                                                        class="overline-title money-time-loan-calculator-year body-13">%/năm</span>
-                                                </div>
-                                                <input type="number" id="interest-rate" value="12" step="0.1"
-                                                    class="form-control regular-15">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label class="form-label body-14" for="start-date">Ngày giải ngân</label>
-                                            <div class="form-control-wrap">
-                                                <div class="form-icon form-icon-right">
-                                                    <em class="icon ni ni-calendar-alt"></em>
-                                                </div>
-                                                <input type="text" id="start-date" value="2024-02-09"
-                                                    class="form-control date-picker regular-15">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 no-pabding"><button class="loan-calculator-button Body-16 color-white" id="calculate-button">Tính
-                                    khoản vay</button></div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-4 loan-result">
-                            <h3 class="body-16">Phương án trả nợ</h3>
-                            <div class="loan-result-content">
-                                <p class="body-14">Số tiền gốc và lãi phải trả: <span class="heading-h7"
-                                        id="total-payment">8,626,500,000 <cite class="body-13">VNĐ</cite></span></p>
-                        <div class="line-h mt-3 mb-3" style="background: #F2F2F2"></div>
-
-                                <p class="body-14">Số tiền trả hàng tháng: <span class="heading-h7"
-                                        id="monthly-payment">526,500,000 <cite class="body-13">VNĐ</cite></span></p>
-                        <div class="line-h mt-3 mb-3" style="background: #F2F2F2"></div>
-
-                                <p class="body-14">Ngày trả nợ cuối cùng: <span class="heading-h7"
-                                        id="end-payment-date">22/08/2025</span></p>
-                        <div class="line-h mt-3 mb-3" style="background: #F2F2F2"></div>
-
-                            </div>
-                            <a class="regular-16" href="#">Chi tiết số tiền trả hàng kỳ
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-                                        fill="none">
-                                        <path
-                                            d="M4.78434 3.08957L4.74899 3.12492C4.61633 2.99226 4.5418 2.81233 4.5418 2.62472C4.5418 2.43711 4.61632 2.25718 4.74899 2.12452C4.88165 1.99186 5.06157 1.91733 5.24919 1.91733C5.4368 1.91733 5.61672 1.99186 5.74938 2.12452L5.75512 2.13026L5.75567 2.13135L10.1249 6.50055L4.78434 3.08957ZM4.78434 3.08957L4.74899 3.12492L8.62488 7.00027M4.78434 3.08957L8.62488 7.00027M8.62488 7.00027L4.74953 10.8756C4.61687 11.0083 4.54234 11.1882 4.54234 11.3758C4.54234 11.5634 4.61687 11.7434 4.74953 11.876C4.88219 12.0087 5.06212 12.0832 5.24973 12.0832C5.43734 12.0832 5.61727 12.0087 5.74993 11.876L10.1249 7.50108L8.62488 7.00027ZM10.2786 6.72998C10.243 6.64416 10.1907 6.56622 10.1249 6.50061L10.1249 7.50101C10.1907 7.43541 10.243 7.35747 10.2786 7.27165C10.3142 7.18581 10.3326 7.09377 10.3326 7.00081C10.3326 6.90786 10.3142 6.81582 10.2786 6.72998Z"
-                                            fill="#AF0B35" stroke="#AF0B35" stroke-width="0.1" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane" id="tabItem7">
-                   div.
-                </div>
+                <span class="regular-15 color-dark-2">Thông tin mang tính tham khảo. Để có thông tin cụ thể, quý khách vui lòng liên hệ với Chi nhánh/Phòng giao dịch của Agribank trên toàn quốc</span>
             </div>
-        </div>
-    </section>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabItem9">
+                    <div class="card card-preview table-rate">
+                        <div class="card-inner table-responsive">
+                            <table class="table">
+                                <thead class="">
+                                    <tr>
+                                        <th scope="col " class="body-14">Kì hạn</th>
+                                        <th scope="col " class="body-14  text-align-right">VND <img src="../assets/images/rate/VND.svg" alt=""></th>
+                                        <th scope="col " class="body-14 text-align-right">USD <img src="../assets/images/rate/usd.svg" alt=""></th>
+                                        <th scope="col " class="body-14 text-align-right">EUR <img src="../assets/images/rate/eur.svg" alt=""></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody">
+                                    <tr>
+                                        <td>Không giới hạn</td>
+                                        <td class="vertical-mid  text-align-right">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 Tháng</td>
+                                        <td class="vertical-mid  text-align-right">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 Tháng</td>
+                                        <td class="vertical-mid  text-align-right">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 Tháng</td>
+                                        <td class="vertical-mid text-align-right">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 Tháng</td>
+                                        <td class="vertical-mid text-align-right">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 Tháng</td>
+                                        <td class="vertical-mid text-align-right">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6 Tháng</td>
+                                        <td class="vertical-mid text-align-right">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7 Tháng</td>
+                                        <td class="vertical-mid text-align-right">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8 Tháng</td>
+                                        <td class="vertical-mid text-align-right">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
+                    </div><!-- .card-preview -->
+                </div>
+                <div class="tab-pane" id="tabItem10">
+                    <div class="card card-preview table-rate">
+                        <div class="card-inner table-responsive">
+                            <table class="table">
+                                <thead class="">
+                                    <tr>
+                                        <th scope="col " class="body-14">Kì hạn</th>
+                                        <th scope="col " class="body-14">VND <img src="../assets/images/rate/VND.svg" alt=""></th>
+                                        <th scope="col " class="body-14 text-align-right">USD <img src="../assets/images/rate/usd.svg" alt=""></th>
+                                        <th scope="col " class="body-14 text-align-right">EUR <img src="../assets/images/rate/eur.svg" alt=""></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody">
+                                    <tr>
+                                        <td>Không giới hạn</td>
+                                        <td class="vertical-mid">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 Tháng</td>
+                                        <td class="vertical-mid">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 Tháng</td>
+                                        <td class="vertical-mid">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 Tháng</td>
+                                        <td class="vertical-mid">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 Tháng</td>
+                                        <td class="vertical-mid">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 Tháng</td>
+                                        <td class="vertical-mid">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6 Tháng</td>
+                                        <td class="vertical-mid">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7 Tháng</td>
+                                        <td class="vertical-mid">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8 Tháng</td>
+                                        <td class="vertical-mid">0.2%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                        <td class="vertical-mid text-align-right">0%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div><!-- .card-preview -->
+                </div>
+                
+                
+            </div>
+    </section>
     <div class="footer">
         <div class="nk-content pb-0">
             <div id="collapse-footer" class="collapse-footer">
@@ -1788,11 +1744,9 @@
             <span class="regular-12 pb-3">Hội sở: Số 2 Láng Hạ, phường Thành Công, quận Ba Đình, Hà Nội</span>
         </div>
     </div>
-    <script src="../assets/js/agri.js"></script>
+</body>
+<script src="../assets/js/agri.js"></script>
     <script src="../assets/js/bundle.js"></script>
     <script src="../assets/js/scripts.js"></script>
-
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </html>
