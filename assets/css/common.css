@@ -2657,7 +2657,7 @@ a.color-hover-b:hover,
     /* Màu chữ khi hover */
 }
 /* --------------------------------------------------- Page Ban lãnh đạo ------------------------------------------ */
-.bld .nav-link {
+.nav-link {
     display: flex;
     flex-direction: column;
     opacity: 1;
@@ -2793,6 +2793,124 @@ display: block;
 }
 .calcuate .loan-calculator-radio-form{
     gap: 0;
+}
+.calcuate .loan-calculator{
+    padding: 0;
+}
+.calcuate .loan-tool-tabs{
+padding-top: 0;
+}
+.convert{
+    display: flex;
+    gap: 20px;
+}
+.icon-change img {
+    margin-top:120%;
+}
+.calcuate .money-time-loan-calculator-form{
+    width: 100%;
+}
+.amount-exchange{
+    width: 100%;
+}
+.calcuate .loan-calculator h3{
+    padding-bottom: 0;
+}
+.calcuate .currency-unit{
+    display: flex;
+}
+.calcuate select {
+    border: none;
+    outline: none; /* Loại bỏ viền khi focus */
+    background: transparent; /* Bỏ nền nếu cần */
+    appearance: none; /* Loại bỏ kiểu mặc định của trình duyệt */
+}
+
+.exchange-rate {
+   
+    color: #000;
+}
+
+.amount-vnd {
+   margin-bottom: 5px;
+}
+
+.red-text {
+    color: #C3002F; /* Màu đỏ */
+}
+
+.amount-usd {
+    
+    margin: 5px 0;
+}
+.update-time {
+    color: #666;
+}
+.need-conversion,
+.receive{
+    width: 45%;
+}
+.rate_conversion{
+    display: flex;
+    gap: 50px;
+}
+.change{width: 90%;}
+.chart{width: 100%;}
+.stage{
+    display: flex;
+        gap: 32px;
+}
+.stage button{
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+
+}
+.stage button:hover{
+    background:#EDF1F0 ;
+    border-radius: 4px;
+}
+.stage button.active{
+    background:#EDF1F0 ;
+    border-radius: 4px;
+    border: none;
+}
+
+/* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
+.exchange-rate .personal-loan-section{
+    background-image: url(../images/banner-ti-gia-ngoai-te.png);
+}
+/* ---------------------------------------------------Page Calcuate Tool ------------------------------------------ */
+
+.interestRate .card-preview {
+    border: none;
+}
+.interestRate .card-inner{
+    padding: 0 20%;
+}
+.interestRate .profit-table{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4%;
+    gap: 18px;
+}
+.interestRate .profit-table span:last-child {
+    display: block; /* Để nó có thể nhận width */
+    width: 23%;
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+    text-align: center; /* Căn giữa nội dung văn bản */
+}
+.interestRate .interestRate .personal-loan-section{
+background-image: url(../images/banner-interestRate.png);
+}
+.interestRate .statistics-table{
+    margin-bottom: 4.5%;
+}
+.table{
+    border: 1px solid #f4f0f0;
+    /* opacity: 6; */
+    border-radius: 4px;
 }
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
 
