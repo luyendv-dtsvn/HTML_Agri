@@ -1276,11 +1276,11 @@ background-color: #f91212; /* Màu nền nút khi hover */
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 54px 5%;
+    padding: 0px 5%;
+    flex-direction: column;
 }
 
 .asked-questions {
-    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -3067,7 +3067,7 @@ input[type="range"]::-webkit-slider-thumb {
     margin-right: 0;
 }
 
-.loan-calculator-group .input-slider-wrapper input[type="number"]:focus {
+.loan-calculator-group .input-slider-wrapper input[type="number"]:focus, .loan-calculator-group .input-slider-wrapper input[type="text"]:focus {
     box-shadow: none;
 }
 
