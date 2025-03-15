@@ -2879,6 +2879,1861 @@ padding-top: 0;
 }
 /* ---------------------------------------------------Page Calcuate Tool ------------------------------------------ */
 
+/* ------------------------------- Page Hỏi Đáp ----------------------------------------------------- */
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* Tổng thể */
+.agribank-culture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Chiều rộng bằng toàn bộ màn hình */
+    height: 583px;
+    /* Chiều cao bằng toàn bộ màn hình */
+    overflow: hidden;
+    position: relative;
+    /* Đặt vị trí tương đối */
+}
+
+/* Container */
+.agribank-culture-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Đảm bảo hoạt động tốt trên màn hình nhỏ */
+    width: 100%;
+    /* Chiều rộng đầy đủ */
+    height: 100%;
+    /* Đảm bảo bao phủ toàn màn hình */
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.agribank-culture-background {
+    width: 100%;
+    /* Chiều rộng đầy đủ */
+    height: 100%;
+    /* Đảm bảo bao phủ toàn màn hình */
+    background: linear-gradient(115deg, #9E2B47 0.44%, #AF0B35 103.79%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agribank-culture-image {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+    right: 0;
+}
+
+.agribank-culture-image-content {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+}
+
+.agribank-culture-image-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.agribank-culture-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Tràn chiều ngang */
+    height: 100%;
+    /* Tràn chiều dọc */
+    object-fit: cover;
+    /* Đảm bảo ảnh bao phủ toàn bộ */
+}
+
+
+/* Cột trái (nền đỏ) */
+.agribank-culture-text {
+    position: absolute;
+    color: #ffffff;
+    width: 90%;
+    height: 100%;
+    /* text-align: center; */
+    flex-direction: column;
+    /* Nội dung sắp xếp dọc */
+    box-sizing: border-box;
+    /* Đảm bảo padding không ảnh hưởng đến kích thước */
+}
+
+.agribank-culture-text-sub {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.agribank-culture-breadcrumb {
+    width: 50%;
+    color: var(--white, #FFF);
+    font-family: "SVN-Helvetica Now";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    /* 176.923% */
+    margin-top: 20px;
+}
+
+.agribank-culture-breadcrumb-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.agribank-culture-breadcrumb span {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.agribank-culture-text-title {
+    width: 60%;
+    gap: 16px;
+    margin-bottom: 70px;
+}
+
+.agribank-culture-title {
+    color: #FFF;
+    font-family: "SVN-Helvetica Now";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 52px */
+    letter-spacing: -0.4px;
+}
+
+.agribank-culture-description {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "SVN-Helvetica Now";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 25.6px */
+    letter-spacing: -0.16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .agribank-culture-container {
+        flex-direction: column;
+    }
+
+    .agribank-culture-text {
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+
+/* Container chính */
+
+
+/* Tiêu đề */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Tổng */
+.featured-culture-agribank {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 80px;
+
+}
+
+/* Container */
+.featured-culture-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    width: 100%;
+}
+
+.featured-culture-agribank-title {
+    width: 100%;
+    text-align: left;
+    /* Hiển thị nội dung ở đầu dòng */
+    margin-bottom: 30px;
+    /* Tạo khoảng cách dưới tiêu đề */
+}
+
+/* Hình ảnh */
+.featured-culture-image {
+    border-radius: 8px;
+    /* Bo góc hình ảnh */
+    width: 50%;
+    overflow: hidden;
+    background-color: #D9D9D9;
+    /* Màu nền mặc định */
+}
+
+.featured-culture-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Đảm bảo ảnh lấp đầy và giữ tỷ lệ */
+}
+
+/* Nội dung */
+.featured-culture-content {
+    width: 50%;
+    /* Chiếm 50% không gian */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* Tiêu đề chính */
+.featured-culture-title {
+    font-family: 'SVN-Helvetica Now', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--dark-2, #393939);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Danh sách */
+.featured-culture-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* Các mục xếp theo cột */
+}
+
+/* Mục con */
+.featured-culture-item {
+    padding: 22px 0px;
+    border-top: 1px solid #E1E1E1;
+    /* Chỉ hiển thị đường viền trên */
+    border-left: none;
+    /* Xóa viền trái */
+    border-right: none;
+    /* Xóa viền phải */
+    border-radius: 0;
+    /* Loại bỏ bo góc */
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.featured-culture-list li:last-child {
+    border-bottom: 1px solid #E1E1E1;
+    /* Chỉ hiển thị đường viền trên */
+}
+
+
+.featured-culture-item.active {
+    padding: 10px 0px;
+    /* Tăng thêm khoảng cách khi chọn */
+    border-left: none;
+    border-right: none;
+}
+
+/* Tiêu đề Mục Con */
+.featured-culture-heading {
+    width: 757px;
+    height: 36px;
+    color: #7f7f7f;
+    font-family: "SVN-Helvetica Now";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 36px */
+    letter-spacing: -0.3px;
+}
+
+/* Mô tả */
+.featured-culture-description {
+    display: none;
+    /* Ẩn nội dung mô tả */
+    gap: 23px;
+}
+
+.featured-culture-item.active .featured-culture-description {
+    display: block;
+    /* Hiển thị mô tả khi mục được chọn */
+}
+
+.featured-culture-item.active .featured-culture-heading {
+    color: var(--dark-2, #393939);
+}
+
+/* Icon toggle */
+.featured-culture-item .featured-culture-icon {
+    font-size: 16px;
+    font-weight: bold;
+    color: #D00027;
+    transition: transform 0.3s ease;
+}
+
+.featured-culture-icon img {
+    max-width: unset !important;
+}
+
+
+.featured-culture-item.active .featured-culture-icon {
+    transform: rotate(180deg);
+    /* Chuyển thành dấu "-" */
+}
+
+/* Hình nền */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cắt hoặc thu phóng ảnh phù hợp với khung */
+    z-index: -1;
+    /* Đưa hình nền ra phía sau nội dung */
+}
+
+
+
+
+.nav-btn {
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    color: #000000;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #d00027;
+    color: #ffffff;
+}
+
+
+
+.primary-btn {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--red-2, #9E2B47);
+    border: none;
+}
+
+.primary-btn span {
+    display: flex;
+    padding: 0px 6px 2px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.primary-btn:hover {
+    background-color: #900022;
+}
+
+.secondary-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+}
+
+.secondary-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+.button-product-detail {
+    display: flex;
+    height: 52px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--red-3, #C33C5E);
+    border: none;
+}
+
+.button-product-detail-text {
+    display: flex;
+    padding: 0px 6px 2px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.advantage-product-detail {
+    position: relative;
+    display: flex;
+    padding: 55px 5%;
+}
+
+.advantage-product-detail-containers {
+    width: 100%;
+    display: flex;
+}
+
+.advantage-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding-right: 10px;
+}
+
+.advantage-card-content {
+    display: flex;
+    padding: 6px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+
+.advantage-card-question {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 99px;
+}
+
+.advantage-card-question-containers {
+    width: 90%;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0px;
+    background: var(--Linear-1, linear-gradient(115deg, #9E2B47 0.44%, #761930 103.79%));
+}
+
+.advantage-card-question-text {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantage-card-question-content {
+    display: flex;
+    gap: 20px;
+}
+
+.advantage-card-question-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+
+.col {
+    margin-right: 10px;
+}
+
+.product-info-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F6F6F6;
+    padding: 0px 5%;
+}
+
+.product-info-container {
+    margin-top: 71px;
+    margin-bottom: 54px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.product-info-title-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 15px;
+}
+
+.product-info-title h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.product-info-tabs {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    border-radius: 4px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+}
+
+.tabs-header {
+    display: flex;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid #E8E8E8;
+    background: linear-gradient(92deg, #F7F7F7 0%, #FAF8F8 100.37%);
+}
+
+
+
+.product-info-tabs-mobile {
+    display: none;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.tab-button {
+    display: flex;
+    height: 44px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border: none;
+    border-right: 1px solid #E8E8E8;
+}
+
+.tabs-header:last-child {
+    border-right: none;
+}
+
+.tab-button.active {
+    background: var(--red-2, #9E2B47);
+    color: #FFF;
+}
+
+.tab-button:hover {
+    background-color: #eee;
+}
+
+
+.tab-content-info {
+    display: none;
+
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.tab-content-info.active {
+    display: flex;
+}
+
+
+.tab-content {
+    display: block;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    align-self: stretch;
+}
+
+
+.tab-content.active {
+
+    display: block;
+
+    display: flex;
+
+}
+
+.tab-content-table {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.tab-content-table table {
+    width: 100%;
+    margin: 20px 0px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.tab-content-table tr {
+    width: 100%;
+    display: flex;
+    padding: 16px 0px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.tab-content-table th {
+    width: 30%;
+    display: flex;
+    padding-left: 16px;
+}
+
+.tab-content-table td {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-content-table tr:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.tab-content-table ul li {
+    list-style: url("../images/vanhoa-vaylist-vaydetail/CheckCircle.svg");
+}
+
+.tab-content-table ul {
+    padding-left: 22px;
+}
+
+
+.tab-content-table-button {
+    display: flex;
+    align-items: center;
+    gap: 8xp;
+    color: #AF0B35;
+    text-decoration: none;
+}
+
+
+.input-slider-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 16px 16px 0px 16px;
+    align-items: center;
+}
+
+.input-slider-wrapper input[type="number"] {
+    width: 80%;
+    border: 1px #FFF;
+    border-right: 1px solid #F2F2F2;
+}
+
+.input-slider-wrapper .currency-unit {
+    color: #333;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #aa1d40;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-display {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+}
+
+
+.col-sm-6 {
+    width: 100%;
+    padding-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.a {
+    color: inherit !important;
+    /* Kế thừa màu từ phần tử cha */
+}
+
+
+
+
+
+
+/* Section tổng quan */
+.Agribank-related-info {
+    width: 100%;
+    display: flex;
+    padding: 83px 0px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+
+.Agribank-related-info-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Grid các card */
+.Agribank-related-info-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 cột đều nhau */
+    gap: 20px;
+    /* Khoảng cách giữa các card */
+}
+
+/* Card */
+.Agribank-related-info-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Agribank-related-info-card:hover {
+    transform: scale(1.05);
+    /* Phóng to nhẹ khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ảnh trong card */
+.Agribank-related-info-card-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* Overlay */
+.Agribank-related-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(170, 29, 64, 0.9), rgba(170, 29, 64, 0.2));
+    padding: 20px;
+    text-align: left;
+}
+
+
+.Agribank-award-section {
+    width: 100%;
+    padding: 85px 5%;
+}
+
+.Agribank-award-container {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+}
+
+.Agribank-award-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+}
+
+.Agribank-award-header p {
+    margin-bottom: 0px;
+}
+
+.Agribank-award-header span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* css prize page */
+
+
+.card-inner {
+    padding: 0px;
+}
+
+.card-preview {
+    border: none;
+}
+
+
+.card {
+    flex: 1 1 auto;
+}
+
+/* end css prize page */
+
+.Agribank-award-card-img {
+    display: flex;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.Agribank-award-card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+    gap: 8px;
+}
+
+.Agribank-all-awards-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Agribank-all-awards-container {
+    width: 90%;
+    padding: 96px 0px;
+    border-bottom: 1px solid #EAEAEA;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.Agribank-all-awards-text {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.Agribank-all-awards-text-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 22px;
+}
+
+.Agribank-all-awards-main {
+    width: 100%;
+    border-bottom: 1px solid #EAEAEA;
+    border-top: 1px solid #EAEAEA;
+    padding: 20px 0px;
+    display: flex;
+}
+
+.Agribank-all-awards-main-1 {
+    width: 40%;
+    border-right: 1px solid #EAEAEA;
+    padding-right: 40px;
+}
+
+.Agribank-all-awards-main-2 {
+    padding-left: 40px;
+}
+
+.featured-culture-card-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.featured-culture-card-title h3 {
+    margin-bottom: 0px;
+}
+
+.Agribank-all-awards-card-text {
+    margin-top: 20px;
+    padding-right: 20%;
+}
+
+.answer-tab-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-item {
+    padding-right: 0px;
+}
+
+.tab-pane {
+    display: flex;
+    width: 100%;
+}
+
+.answer-tab-content {
+    width: 100%;
+    display: flex;
+    padding: 81px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-tab-content-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.answer-tab-content-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: unset !important;
+}
+
+.answer-tab-content-text-question {
+    width: 100%;
+}
+
+.answer-tab-content-text-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.Answer-content-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.Answer-content-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.answer-header-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.answer-header-content-sub {
+    display: flex;
+}
+
+.answer-header-content-title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 37px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.answer-header-content-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    gap: 15px;
+}
+
+.answer-header-content-search-input {
+    flex: 1;
+}
+
+.answer-header-content-search-list {
+    background: #FFF;
+    color: #080808;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    /* page product-list */
+
+
+
+
+
+
+
+
+
+
+    /* page product detail */
+    .agribank-culture {
+        height: 500px;
+    }
+
+    .product-info-tabs {
+        padding: 20px;
+    }
+
+    .tab-content-table {
+        margin-top: 10px;
+    }
+
+    .advantage-card-question-text {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .advantage-card-question-buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .advantage-card-question-buttons .button-product-detail.Body-15.color-white {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    /* page product detail */
+
+
+    .advantage-card {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: row;
+        padding-right: 0;
+        gap: 10px;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .advantage-card:first-child {
+        padding-top: 0;
+    }
+
+    .advantage-card:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .tabs-header {
+        display: none;
+    }
+
+    .product-info-tabs-mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .product-info-tabs-mobile-dropdown {
+        width: 100%;
+    }
+
+    .product-info-tabs-mobile-button {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: #650D23;
+    }
+
+    .advantage-card-question-content {
+        flex-direction: column;
+    }
+
+    .button-product-detail {
+        padding: 10px;
+    }
+
+
+    .product-info-title-content {
+        padding-top: 0;
+    }
+
+
+    /* answer page */
+    .answer-header-content {
+        width: 90%;
+    }
+
+    .answer-header-content-search {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .answer-header-content-search-list {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        background: #FFF;
+    }
+
+    .Answer-content-tab-text {
+        display: none;
+    }
+
+    .answer-tab-content {
+        padding: 0px;
+        width: 100%;
+    }
+
+    .tabs-mobile-answer {
+        padding-bottom: 5px;
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .tabs-mobile-answer-button {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        background-color: unset;
+        border: none;
+        color: #080808;
+    }
+
+    .tabs-mobile-answer-button span {
+        color: #AF0B35;
+    }
+
+    .answer-tab-content-text {
+        width: 100%;
+    }
+
+    .Agribank-all-awards-card-text {
+        padding-right: 0;
+    }
+
+    .Agribank-related-info {
+        padding: 0%;
+        padding-bottom: 60px;
+        padding-top: 20px;
+    }
+
+    .Agribank-related-info-container {
+        gap: 13px;
+    }
+
+    .Agribank-related-info-content {
+        grid-template-columns: none;
+        gap: 12px;
+    }
+
+    .Agribank-all-awards-text {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .Agribank-all-awards-main {
+        padding: 17px 0px;
+    }
+
+    .Agribank-all-awards-main-2 {
+        padding-left: 16px;
+    }
+
+    .Agribank-all-awards-container {
+        padding: 20px 0px;
+    }
+
+    .Agribank-award-section {
+        padding: 30px 5%;
+    }
+
+    
+
+}
+
+@media (max-width: 375px) {
+
+    /* Trang product-list */
+
+    /* page product-detail */
+    .agribank-culture {
+        height: 365px;
+    }
+
+    .agribank-culture-image-content {
+        width: 100%;
+    }
+
+    .advantage-product-detail {
+        padding: 20px 5%;
+    }
+
+    .advantage-card-text svg {
+        max-width: none;
+    }
+
+    .product-info-container {
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .product-info-title {
+        width: 100%;
+    }
+
+    .product-info-title-content {
+        width: 100%;
+    }
+
+    .product-info-tabs {
+        width: 100%;
+    }
+
+    .tab-content-table {
+        margin-top: 0%;
+    }
+
+    .tab-content-table tr {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .tab-content-table th {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .tab-content-table td {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .tab-content-table tr:first-child {
+        padding-top: 0px;
+    }
+
+    /* sửa tại button downlist */
+    .btn-round {
+        border-radius: 4px;
+    }
+
+    /* end */
+    .advantage-card-question-text {
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+        align-items: unset;
+    }
+
+    .advantage-card-question-content {
+        flex-direction: column;
+    }
+
+    .advantage-card-question-buttons-card {
+        display: none;
+    }
+
+    .advantage-card-question {
+        margin-bottom: 60px;
+    }
+
+    .advantage-card-question-containers {
+        padding: 24px;
+    }
+
+
+
+    /* page answer */
+
+    .agribank-culture-background {
+        align-items: stretch;
+    }
+
+    .answer-header-content {
+        width: 90%;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .answer-header-content-title {
+        gap: 12px;
+        align-items: stretch;
+        padding-bottom: 40px;
+    }
+
+
+    /* page văn hóa */
+    .featured-culture-container {
+        flex-direction: column;
+    }
+
+    .featured-culture-image {
+        width: 100%;
+    }
+
+    .featured-culture-content {
+        width: 100%;
+    }
+}
+/* -----------section idk------------ */
+.advantage-card-question-content {
+    display: flex;
+    gap: 34px;
+    width: 100%;
+}
+
+a.Body-14 {
+    color: rgba(0, 0, 0, 0.70);
+}
+
+.regular-16 {
+    color: #FFF;
+}
+
+.regular-14 {
+    color: #FFF;
+}
+
+.subtitle-12 {
+    color: #fff;
+}
+
+.Heading-h7.color-white {
+    font-size: 25px;
+}
+
+.question-breadcrumb {
+    display: flex;
+    padding-top: 78px;
+    justify-content: center;
+}
+
+.question-title {
+    color: #fff;
+    display: flex;
+    padding-top: 8px;
+    justify-content: center;
+}
+
+
+.question-background {
+    width: auto;
+    height: 344px;
+    background: linear-gradient(115deg, #9E2B47 0.44%, #AF0B35 103.79%);
+}
+
+.question-dropdown-searchbox {
+    display: flex;
+    padding-top: 37px;
+    justify-content: center;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.question-searchbox {
+
+    border-radius: 6px;
+    background: #FFF;
+    display: flex;
+    width: 521px;
+    height: 56px;
+    padding: 16px 24px 24px 24px;
+    justify-content: right;
+}
+
+.searchbox {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 22.5px */
+    letter-spacing: -0.15px;
+    border: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+    outline: none;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 0.5;
+}
+
+.featured-culture-icon {
+    display: flex;
+    position: absolute right;
+    left: 0;
+    width: 16px;
+    height: 16px;
+
+}
+
+.featured-culture-card-title {
+    display: flex;
+}
+
+.featured-culture-card-title .Body-19.color-dark-2 {
+    max-width: 699px;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: white;
+    border-color: white;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #fff;
+    background-color: white;
+    border-color: white;
+    box-shadow: none;
+}
+
+/*  */
+.nav-tabs .nav-link img {
+    filter: grayscale(100%);
+}
+
+.nav-tabs .nav-link.active img {
+    filter: grayscale(0%);
+}
+
+.nav-tabs .nav-link span {
+    color: #5A5A5A;
+}
+
+.nav-tabs .nav-link.active span {
+    color: #AF0B35;
+}
+
+.Body-14.link-list-opt {
+    width: 233px;
+}
+
+.regular-15.btn.btn-primary.dropdown-toggle {
+    color: rgba(0, 0, 0, 0.70);
+    border: none;
+    width: 234px;
+    height: 56px;
+    background-color: #FFF;
+    outline: none;
+}
+
+/*  */
+
+.nav-tabs .nav-link.active .Body-16 {
+    color: #AF0B35;
+}
+
+.link-list-opt a:hover {
+    color: #AF0B35;
+}
+
+.link-list-plain a:hover {
+    color: #AF0B35;
+}
+
+.nav-item .nav-link:after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: #AF0B35;
+    opacity: 0;
+    width: 100%;
+}
+
+.nav-item {
+    min-width: 166px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #fff;
+    border-color: #ffff;
+}
+
+.page-link:hover {
+    color: #AF0B35;
+}
+
+@media (max-width: 820px) and (min-width: 600px) {
+    .question-searchbox {
+        width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .question-dropdown-searchbox {
+        flex-direction: column;
+        padding-top: 12px;
+        justify-content: flex-start;
+    }
+
+    .question-searchbox {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .question-breadcrumb {
+        justify-content: flex-start;
+        padding-left: 16px;
+        padding-top: 18px;
+    }
+
+    .question-title {
+        justify-content: flex-start;
+        padding-top: 130px;
+        padding-left: 16px;
+    }
+
+    .question-background {
+        width: auto;
+        height: 421px;
+    }
+
+    .question-dropdown .dropdown {
+        display: flex;
+        width: 100%;
+    }
+
+    .regular-15.btn.btn-primary.dropdown-toggle {
+        display: flex;
+        width: 100%;
+        
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    .regular-15.btn.btn-primary.dropdown-toggle span {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .Body-14.link-list-opt {
+        width: 560px;
+    }
+
+    .Body-14.link-list-opt li {
+        width: 560px;
+    }
+
+}
+
+@media (max-width: 3755px) {
+    .regular-15 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* .advantage-card-question {} */
+
+    .advantage-card-question-containers {
+        /* display: block; */
+        padding: 24px 22px;
+    }
+
+    /* .advantage-card-quesion-text {} */
+
+    .advantage-card-quesion-content {
+        gap: 44px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .advantage-card-question-icon {} */
+
+    .Heading-h7.color-white {
+        font-size: 19px;
+    }
+}
+
+.Body-14.link-list-opt {
+    width: 233px;
+    color: #000000;
+}
+
+.nav-item .nav-link.active {
+    display: inline-block;
+    width: 166px;
+}
+
+.home-header-slim {
+    background: #FFF;
+}
+
+.color-hover-w.p-2 {
+    background: #AF0B35;
+    border-radius: 5px;
+}
+
+.btn.body-14.color-dark-1.button-login-red {
+    background: #AF0B35;
+    border-radius: 5px;
+    height: 40px;
+    width: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  */
+.content-top {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.content-top a {
+    text-decoration: none;
+    color: #5A5A5A;
+}
+
+.content-top-menu {
+    display: inline-block;
+    cursor: pointer;
+    width: 15%;
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.content-top-menu.underline::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    height: 3px;
+    background-color: #9E2B47;
+    transform: translateX(-50%);
+}
+
+.content-top-menu svg {
+    transition: stroke 0.3s ease;
+    /* Hiệu ứng chuyển màu mượt */
+}
+
+.content-top-menu.active svg path {
+    stroke: #9E2B47;
+    /* Màu đỏ khi được click */
+}
+
+.content-top-menu div {
+    color: #5A5A5A;
+}
+
+.content-top-menu.active div {
+    color: #9E2B47;
+}
+
+.nav-tabs .nav-item {
+    padding-right: 0;
+}
+
+.nav-tabs .nav-item {
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.Body-14.link-list-opt li a .Body-14 {
+    color: rgba(0, 0, 0, 0.70);
+}
+
+.tab {
+    padding: 0 5.5%;
+}
+
+.turn-page {
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    margin: 30px auto 91px auto;
+
+}
+
+.stt {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+
+}
+
+.active-stt {
+    background-color: #AF0B35;
+    color: #fff;
+}
+
+.button-product-detail.Body-15.color-white {
+    min-width: 144px;
+    outline: none;
+}
+
+@media (max-width: 1024px) {
+    .button-product-detail.Body-15.color-white {
+        min-width: 8.438rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .nk-content.menu-mobile {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 410px) {
+    .home-header-slim-left.nk-menu.nk-menu-main.pl-0 svg {
+        width: 175px;
+        height: 32px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .body-15.nav.nav-tabs.nav-tabs-s2.mt-n2.Answer-content-tab-text .nav-link{
+        font-size: 13px;
+    }
+}
+
+.answer-tab-title span {
+    padding-top: 8px;
+    font-weight: 100;
+}
+.dropdown .regular-15.btn.btn-primary.dropdown-toggle{
+    display: flex; 
+    justify-content: space-between;
+}
+.Body-14.link-list-opt .dropdown-item{
+    color: #000000;
+}
+
+@media (max-width: 992px) {
+    .answer-tab-content-text {
+        width: 90%;
+    }
+    /* .header-mobile {
+        background: #fff !important;
+    } */
+}
+@media (max-width: 1553px) and (min-width: 992px) {
+    .d-none-992.home-header-slim.header-slim-white-pc{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media (width:992px) {
+    .mobile{
+        display: none;
+    }
+}
+/* -----------------------------------End Page Hỏi Đáp */
 .interestRate .card-preview {
     border: none;
 }
