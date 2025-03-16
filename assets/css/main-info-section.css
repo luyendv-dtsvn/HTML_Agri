@@ -88,3 +88,22 @@
     align-items: center;
 }
 
+.main-info-2 .main-info-title-content {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .main-info-2 .main-info-content {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .main-info-2 .main-info-title-content-text {
+        align-items: flex-start;
+    }
+
+    .main-info-2 .main-info-title-content {
+        gap: 12px;
+    }
+}
