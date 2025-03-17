@@ -3639,7 +3639,7 @@ background-image: url(../images/banner-interestRate.png);
 
 /* end luyendv */
 
-
+/* section list product - ngan-hang-so trongpd */
 .list-product-detail-section {
     padding: 0 5%;
 }
@@ -3653,6 +3653,14 @@ background-image: url(../images/banner-interestRate.png);
 .list-product-detail-section .product-detail-card-img img {
     aspect-ratio: 702 / 417;
     width: 100%;
+    object-fit: fill;
+    border-radius: 8px;
+}
+
+.list-product-detail-section .product-detail-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .list-product-detail-section .product-detail-card-content .product-detail-card-text div {
@@ -3668,35 +3676,19 @@ background-image: url(../images/banner-interestRate.png);
 }
 
 @media (max-width: 768px) {
-    .list-product-detail-section .product-detail-card {
-        border: 1px solid #aeaeae;
-        border-radius: 8px;
-    }
 
-    .list-product-detail-section .product-detail-card .product-detail-card-list-button {
+    .list-product-detail-section .product-detail-card-list-button {
         display: flex;
-        border-top: 1px solid #aeaeae;
+        flex-direction: column;
     }
 
-    .list-product-detail-section .product-detail-card .product-detail-card-button {
-        text-align: center;
-        border-radius: 0 0 0 8px;
-        border-right: 1px solid #aeaeae;
-    }
-
-    .list-product-detail-section .product-detail-card .product-detail-card-list-button .product-detail-card-button-detail {
+    .list-product-detail-section .product-detail-card .product-detail-card-list-button .product-detail-card-button-detail, .list-product-detail-section .product-detail-card-list-button .product-detail-card-button {
         text-align: center;
         align-content: center;
     }
-
-    .list-product-detail-section .product-detail-card .product-detail-card-title {
-        border-bottom: 1px solid #aeaeae;
+    .list-product-detail-section .product-detail-card-list-button .product-detail-card-button, .list-product-detail-section .product-detail-card-list-button .product-detail-card-button-detail {
+        min-width: 100%;
     }
-
-    .list-product-detail-section .product-detail-card-img {
-        border-radius: 8px 8px 0 0;
-    }
-
 }
 
 /* end section trongpd */
