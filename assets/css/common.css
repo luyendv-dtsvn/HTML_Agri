@@ -2662,6 +2662,8 @@ a.color-hover-b:hover,
     flex-direction: column;
     opacity: 1;
 }
+
+
 .tab-content {
     margin-top: 57px;
 }
@@ -2670,9 +2672,8 @@ a.color-hover-b:hover,
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
-
-.bld .agribank-culture-background{
-    background-image:url(../images/bld/gettyimages_medium_1392049391\ 1.png)
+.agribank-culture {
+    background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
 }
 .bld .Agribank-related-card-blue-background {
     align-content: center;
@@ -2703,11 +2704,14 @@ a.color-hover-b:hover,
     text-align: center;
 }
 .product-list .nav-item:hover{
-    border: 2px solid rgba(0, 0, 0, 0.34);
+    
+    outline: 2px solid rgba(0, 0, 0, 0.34);
 }
 .product-list .nav-item.active{
-    border: 2px solid rgba(0, 0, 0, 0.34);
+    outline: 2px solid rgba(0, 0, 0, 0.34);
 }
+
+
 .product-list .nav-tabs .nav-link:after{
     border-radius: 4px;
 }
