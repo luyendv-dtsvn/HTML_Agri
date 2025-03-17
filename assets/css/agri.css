@@ -865,9 +865,6 @@
 }
 
 
-.advantage-product-detail {
-    
-}
 
 
 
@@ -1238,33 +1235,6 @@ background-color: #f91212; /* Màu nền nút khi hover */
     gap: 8px;
 }
 
-.advantage-product-detail {
-    position: relative;
-    display: flex;
-    padding: 55px 5%;
-}
-
-.advantage-product-detail-containers {
-    width: 100%;
-    display: flex;
-}
-
-.advantage-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    padding-right: 10px;
-}
-
-.advantage-card-content {
-    display: flex;
-    padding: 6px 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    align-self: stretch;
-}
 
 
 .advantage-card-question {
@@ -1306,11 +1276,11 @@ background-color: #f91212; /* Màu nền nút khi hover */
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 54px 5%;
+    padding: 0px 5%;
+    flex-direction: column;
 }
 
 .asked-questions {
-    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1335,18 +1305,11 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 .product-info-section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: #F6F6F6;
     padding: 0px 5%;
 }
 
 .product-info-container {
-    margin-top: 71px;
-    margin-bottom: 54px;
-    display: flex;
     justify-content: space-between;
     gap: 20px;
 }
@@ -1355,18 +1318,11 @@ background-color: #f91212; /* Màu nền nút khi hover */
 .product-info-title-content {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
-    gap: 15px;
 }
 
-.product-info-title h2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 
 .product-info-tabs {
     display: flex;
-    padding: 40px;
     flex-direction: column;
     border-radius: 4px;
     border: 1px solid #EDEDED;
@@ -1386,7 +1342,6 @@ background-color: #f91212; /* Màu nền nút khi hover */
 .product-info-tabs-mobile {
     display: none;
     width: 100%;
-    padding-bottom: 20px;
 }
 
 .tab-button {   
@@ -1447,7 +1402,6 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 .tab-content-table {
     width: 100%;
-    margin-top: 32px;
 }
 
 .tab-content-table table {
@@ -1510,11 +1464,7 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 .loan-tool-container {
-    width: 100%;
-    padding: 54px 0px;
-    display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #E8E8E8;
     gap: 20px;
 }
 
@@ -1536,19 +1486,13 @@ background-color: #f91212; /* Màu nền nút khi hover */
     padding: 32px 0px 32px 32px;
     flex-direction: column;
     justify-content: space-between;
-    gap: auto;
-}
-
-.loan-calculator h3 {
-    padding-bottom: 30px;
 }
 
 .loan-calculator-group {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 32px;
-
+    gap: 20px;
 }
 
 .loan-calculator-radio {
@@ -1596,19 +1540,13 @@ background-color: #f91212; /* Màu nền nút khi hover */
     justify-content: space-between;
 }
 
-.money-time-loan-calculator-input {
-    width: 100%;
-    background: #FFF;
-
-}
-
 .input-slider-wrapper {
-    width: 100%;
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    padding: 16px 16px 0px 16px;
+    padding: 16px;
     align-items: center;
+    background: #fff;
 }
 
 .input-slider-wrapper input[type="number"] {
@@ -1624,15 +1562,16 @@ background-color: #f91212; /* Màu nền nút khi hover */
 input[type="range"] {
     -webkit-appearance: none;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background: #ddd;
     border-radius: 5px;
     outline: none;
+    transform: translate3d(0px, -16px, 10px);
 }
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    appearance: none;
+    appearance: blue;
     width: 16px;
     height: 16px;
     background: #aa1d40;
@@ -1678,15 +1617,14 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding-bottom: 32px;
+    gap: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #EAEAEA;
 }
 
 .loan-result a {
     display: flex;
     padding-bottom: 16px;
-    justify-content: center;
     align-items: center;
     gap: 8px;
     color: #AF0B35;
@@ -2318,10 +2256,6 @@ input[type="range"]::-webkit-slider-thumb {
         height: 500px;
     }
 
-    .product-info-tabs {
-        padding: 20px;
-    }
-
     .tab-content-table {
         margin-top: 10px;
     }
@@ -2389,30 +2323,9 @@ input[type="range"]::-webkit-slider-thumb {
     .agribank-culture {
         height: 400px;
     }
-    .advantage-product-detail {
-        padding: 30px 0px;
-    }
 
-    .advantage-product-detail-containers {
-        flex-wrap: wrap;
-    }
-
-    .advantage-card {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        flex-direction: row;
-        padding-right: 0;
-        gap: 10px;
-        border-bottom: 1px solid #EAEAEA;
-    }
-
-    .advantage-card:first-child {
-        padding-top: 0;
-    }
-
-    .advantage-card:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
+    .loan-result {
+        gap: 20px;
     }
 
     .tabs-header {
@@ -2422,7 +2335,6 @@ input[type="range"]::-webkit-slider-thumb {
     .product-info-tabs-mobile {
         display: flex;
         justify-content: center;
-        width: 100%;
     }
 
     .product-info-tabs-mobile-dropdown {
@@ -2632,14 +2544,6 @@ input[type="range"]::-webkit-slider-thumb {
     .agribank-culture-image-content {
         width: 100%;
     }
-
-    .advantage-product-detail {
-        padding: 20px 5%;
-    }
-
-    .advantage-card-text svg {
-        max-width: none;
-    }
     
     .product-info-container {
         flex-direction: column;
@@ -2729,14 +2633,6 @@ input[type="range"]::-webkit-slider-thumb {
         gap: 16px;
     }
 
-    .loan-calculator-group {
-        gap: 20px;
-    }
-
-    .loan-calculator h3 {
-        padding-bottom: 0;
-    }
-
     .loan-calculator-radio-form {
         flex-direction: column;
         gap: 8px;
@@ -2758,10 +2654,6 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
         gap: 16px;
         padding: 16px;
-    }
-
-    .loan-result-content p {
-        padding-bottom: 16px;
     }
 
     .loan-result a {
@@ -2805,7 +2697,9 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
     }
 
-
+    .money-time-loan-calculator-group {
+        gap: 0;
+    }
 }
 
 .timeline-history-section .timeline-history-content .history-year-content .history-year-content-card-text .history-year-conten-text {
@@ -3157,3 +3051,39 @@ input[type="range"]::-webkit-slider-thumb {
     }
 }
 
+@media (min-width: 992px) {
+.advantage-card-asked-questions .card-inner .slick-dots {
+    display: none;
+}
+}
+
+.product-info-section .tab-content-info .tab-content-table tr:first-child {
+    padding-top: 0;
+}
+
+.loan-calculator-group .range-display {
+    transform: translateY(-16px);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.loan-calculator-group .input-slider-wrapper input[type="number"]:focus, .loan-calculator-group .input-slider-wrapper input[type="text"]:focus {
+    box-shadow: none;
+}
+
+.loan-calculator-group .input-slider-wrapper input[type="number"] {
+    padding: 0;
+    height: auto;
+}
+
+.loan-calculator-group .input-slider-wrapper input[type="text"] {
+    padding: 0;
+    border: none;
+    height: auto;
+    border-right: 1px solid #eaeaea;
+    border-radius: 0;
+}
+
+.loan-calculator-group input[type="radio"] {
+    accent-color: #9E2B47;
+}

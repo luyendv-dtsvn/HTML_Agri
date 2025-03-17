@@ -183,5 +183,11 @@
         background-color: #F2F2F2;
     }
  }
+
+ @media (max-width: 768px) {
+    .main-info-content .main-info-title-sub {
+        display: block;
+    }
+ }
  
 
