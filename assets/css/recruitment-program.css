@@ -389,6 +389,9 @@
     text-transform: uppercase;
 }
 
+.table-mobile {
+    display: none ;
+}
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
@@ -414,6 +417,12 @@
 
     .recruitment-program .recruitment-program-agri-notification-content {
         padding: 0;
+    }
+    .table-pc{
+        display: none;
+    }
+    .table-mobile {
+        display: block ;
     }
 }
 
