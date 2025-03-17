@@ -2675,6 +2675,17 @@ a.color-hover-b:hover,
 .agribank-culture {
     background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
 }
+.bld .Agribank-related-card-blue-background {
+    align-content: center;
+    bottom: -129%;
+    left: -45%;
+    position: absolute;
+    width: 43vw;
+    height: 20vw;
+    border-radius: 745.631px;
+    background: #9E2B47;
+    filter: blur(47px);
+}
 /* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
 /* 
 
