@@ -360,7 +360,7 @@
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-.table-block:hover > .btn-detail {
+.table-block:hover > .btn-button .btn-detail {
     opacity: 1;
 }
 .table-title {
@@ -388,6 +388,7 @@
     letter-spacing: 0.48px;
     text-transform: uppercase;
 }
+
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
