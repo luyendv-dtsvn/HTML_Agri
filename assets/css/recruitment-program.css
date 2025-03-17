@@ -370,6 +370,38 @@ margin-top: 58px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
+.table-block:hover > .btn-button .btn-detail {
+    opacity: 1;
+}
+.table-title {
+    max-width: 413px;
+}
+.recruitment-program .nk-tb-list .table-l,
+.nk-tb-list .tb-amount-sm {
+    font-size: 1.125rem;
+}
+.recruitment-program .nk-tb-list .tb-sub,
+.nk-tb-list .tb-amount-sm {
+    font-size: 0.9375rem;
+    color: #28140c;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 16.5px */
+    letter-spacing: 0.15px;
+}
+.table-h {
+    color: #494949;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+}
+
+.table-mobile {
+    display: none ;
+}
 .table-block:hover>.btn-detail{
     opacity: 1;
 }
@@ -398,6 +430,12 @@ margin-top: 58px;
 
     .recruitment-program .recruitment-program-agri-notification-content {
         padding: 0;
+    }
+    .table-pc{
+        display: none;
+    }
+    .table-mobile {
+        display: block ;
     }
 }
 
