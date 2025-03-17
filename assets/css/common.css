@@ -16,6 +16,7 @@
     --dark-1: #080808;
     --red-21: #aa1d40;
     --red-3: #c33c5e;
+    --Text-NomalText-2: #54433B;
     /* Màu chính */
 }
 
@@ -1148,6 +1149,18 @@ button {
     color: linear-gradient(270deg,
             rgba(175, 11, 53, 1) 0%,
             rgba(201, 50, 89, 1) 100%);
+}
+
+.color-Text-NomalText-2 {
+    color: #54433B;
+}
+
+.color-Text-NomalText-3 {
+    color: #594B45;
+}
+
+.color-text-1 {
+    color: #28140C;
 }
 
 div {
@@ -5664,3 +5677,121 @@ background-image: url(../images/banner-interestRate.png);
         flex-direction: row;
     }
 }
+
+
+/* section atm-google-map trong-pd */
+.atm-map-background {
+    max-height: 828px;
+    background-size: cover;
+    width: 100%;
+}
+
+.atm-map-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.atm-infomation {
+    border-radius: 4px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.atm-infomation-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.atm-infomation {
+    position: absolute;
+    bottom: 0;
+    height: -webkit-fill-available;
+}
+
+.atm-google-map-section {
+
+    position: relative;
+
+    button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+        border: none;
+    }
+    .owl-carousel-search .search-product a, .owl-carousel-search .calculation-tool a, .owl-carousel-search .find-branch a, .owl-carousel-search .fee-schedule a, .owl-carousel-search .interest-rate a, .owl-carousel-search .exchange-rate a {
+        background: #FCFCFC;
+        border: var(--spacing-border_weight-default-border, 1px) solid rgba(0, 0, 0, 0.06);
+    }
+    .owl-carousel-search .search-product a:hover, .owl-carousel-search .calculation-tool a:hover, .owl-carousel-search .find-branch a:hover, .owl-carousel-search .fee-schedule a:hover, .owl-carousel-search .interest-rate a:hover, .owl-carousel-search .exchange-rate a:hover,
+    .owl-carousel-search .search-product a.active, .owl-carousel-search .calculation-tool a.active, .owl-carousel-search .find-branch a.active, .owl-carousel-search .fee-schedule a.active, .owl-carousel-search .interest-rate a.active, .owl-carousel-search .exchange-rate a.active {
+        background: #AF0B35;
+        span {
+            color: #fff;
+        };
+        img {
+            filter: grayscale(100%) brightness(500%);
+        }
+    }
+    .calculation-tool {
+        height: 100%;
+        a {
+            height: 100%;
+        }
+    }
+    .owl-carousel-search span {
+        color: #54433B;
+    }
+}
+
+.atm-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    border: 1px solid #F2F2F2;
+}
+
+.atm-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-atm-card {
+    overflow: auto;
+}
+
+.atm-google-map-section .list-search {
+    position: relative;
+}
+
+.atm-google-map-section .btn-next svg {
+    bottom: 10%;
+    right: 0%;
+    top: unset;
+    border: 1px solid #CACACA;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(10px);
+}
+
+.atm-google-map-section .btn-next svg path {
+    stroke: #54433B;
+}
+
+@media (max-width: 768px) {
+    .atm-google-map-section {
+        padding: 0 5%;
+    }
+
+    .atm-map-background {
+        min-height: 350px;
+    }
+
+    .atm-infomation {
+        position: static;
+    }
+
+    .atm-map-background img {
+        aspect-ratio: 1/1;
+    }
+}
+/* end atm-google-map */
