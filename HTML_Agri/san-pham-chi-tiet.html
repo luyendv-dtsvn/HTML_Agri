@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lãi Xuất</title>
-    <link rel="stylesheet" href="../assets/css/agri.css" />
+    <title>Product Detail</title>
     <link rel="stylesheet" href="../assets/css/font-awesome.css" />
     <link rel="stylesheet" href="../assets/css/libs/owl.carousel.css" />
+    <link rel="stylesheet" href="../assets/css/libs/carousel-vertical.css" />
+    <link rel="stylesheet" href="../assets/css/libs/owl.theme.default.min.css" />
     <link rel="stylesheet" href="../assets/css/dashlite.css" />
     <!-- <link rel="stylesheet" href="../assets/css/home-user.css" /> -->
+    <link rel="stylesheet" href="../assets/css/agri.css" />
     <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/navmenu.css" />
     <link rel="stylesheet" href="../assets/css/home-tab-heading-slim.css" />
     <link rel="stylesheet" href="../assets/css/main-info-section.css" />
-    <link rel="stylesheet" href="../assets/css/navmenu.css" />
 </head>
-<body class="interestRate">
+<style>
+    @media (min-width: 576px) {
+        .col-sm-6 {
+            flex: 0 1 auto;
+            max-width: none;
+        }
+    }
+</style>
+
+<body class="product-detail">
     <section>
         <div class="d-none-992 top">
             <div class="top-user">
-                <div class="top-user-left">
+                <div class="top-user-left ">
                     <div class="body-12"><a href="#">Cá nhân</a></div>
                     <div class="body-12"><a href="#">Doanh nghiệp</a></div>
                     <div class="body-12"><a href="#">Định chế tài chính</a></div>
                 </div>
                 <div class="div-pre-h-right">
                     <div class="top-user-right body-12">
-                        <div class="body-12 active"><a href="#">Về Agribank</a></div>
+                        <div class="body-12 active"> <a href="#">Về Agribank</a></div>
                         <div class="body-12"><a href="#">Tin tức</a></div>
                         <div class="body-12"><a href="#">Tuyển dụng</a></div>
                         <div class="body-12"><a href="#">Hỗ trợ</a></div>
@@ -34,8 +46,7 @@
                     </div>
                     <div class="line-v"></div>
                     <div>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                 fill="none">
                                 <g opacity="0.9">
                                     <path
@@ -49,8 +60,7 @@
                     </div>
                     <div class="line-v"></div>
                     <div>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                 fill="none">
                                 <g clip-path="url(#clip0_3008_7415)">
                                     <path
@@ -151,7 +161,7 @@
                         <span class="nk-menu-text body-15 color-white mr-1">Về Agribank</span>
                         <em class="ni ni-chevron-down color-white"></em>
                     </a>
-                    <ul class="nk-menu-sub p-0" style="z-index: 9999">
+                    <ul class="nk-menu-sub p-0" style="z-index: 9999;">
                         <li class="nk-menu-item">
                             <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Về
                                     Agribank</span></a>
@@ -174,37 +184,37 @@
                         </li>
                         <li class="nk-menu-item">
                             <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Phát triển
-                                    bền vững</span></a>
+                                    bền
+                                    vững</span></a>
                         </li>
+
                     </ul>
                 </li>
             </div>
             <div class="home-header-slim-right">
                 <a href="#" class="home-header-slim-hotline body-15 color-white color-hover-w">
-                    <span class="color-white-1">Hotline: </span> 1900558818 /
-                    02432053205
+                    <img src="../assets/images/icon-svg/MagnifyingGlass.svg" alt="">
                 </a>
                 <div class="line-v home-header-slim-line"></div>
                 <div class="dropdown">
                     <button id="tab-select-answer" class="btn body-14 color-dark-1 home-header-slim-button"
                         data-toggle="dropdown">
                         <span class="body-14 color-red-1">Đăng nhập</span><em
-                            class="ni ni-chevron-down color-red-1"></em>
-                    </button>
+                            class="ni ni-chevron-down color-red-1"></em></button>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-auto mt-1">
                         <ul class="link-list-plain">
-                            <li class="home-vision-button-dropdown">
-                                <a class="tab-pane-answer body-14" data-tab="tab-agribank-plus">Agribank Plus</a><span
-                                    class="subtitle-12 color-dark-3">khách hàng cá nhân</span>
-                            </li>
-                            <li class="home-vision-button-dropdown">
-                                <a class="tab-pane-answer body-14" data-tab="tab-agribank-retail">Agribank
-                                    Retail</a><span class="subtitle-12 color-dark-3">khách hàng cá nhân</span>
-                            </li>
-                            <li class="home-vision-button-dropdown">
-                                <a class="tab-pane-answer body-14" data-tab="tab-agribank-orporate">Agribank
-                                    Corporate</a><span class="subtitle-12 color-dark-3">khách hàng doanh nghiêp</span>
-                            </li>
+                            <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                                    data-tab="tab-agribank-plus">Agribank Plus</a><span
+                                    class="subtitle-12 color-dark-3">khách hàng cá
+                                    nhân</span></li>
+                            <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                                    data-tab="tab-agribank-retail">Agribank Retail</a><span
+                                    class="subtitle-12 color-dark-3">khách hàng cá
+                                    nhân</span></li>
+                            <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                                    data-tab="tab-agribank-orporate">Agribank Corporate</a><span
+                                    class="subtitle-12 color-dark-3">khách hàng
+                                    doanh nghiêp</span></li>
                         </ul>
                     </div>
                 </div>
@@ -215,29 +225,28 @@
                 <div class="header-mobile-menu">
                     <a href="#" class="toggle nk-quick-nav-icon mr-n1" data-target="sideNav"><em
                             class="icon ni ni-menu"></em></a>
-                    <div class="line-v" style="background: #f2f2f2; height: 30px"></div>
-                    <img src="../assets/images/svg8.png" />
+                    <div class="line-v" style="background: #F2F2F2; height: 30px;"></div>
+                    <img src="../assets/images/svg8.png">
                 </div>
                 <div class="dropdown div-login">
                     <button id="tab-select-answer" class="btn body-14 color-dark-1 home-vision-header-button"
                         data-toggle="dropdown">
                         <span class="body-14 color-red-1">Đăng nhập</span><em
-                            class="ni ni-chevron-down color-red-1"></em>
-                    </button>
+                            class="ni ni-chevron-down color-red-1"></em></button>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-auto mt-1">
                         <ul class="link-list-plain">
-                            <li class="home-vision-button-dropdown">
-                                <a class="tab-pane-answer body-14" data-tab="tab-agribank-plus">Agribank Plus</a><span
-                                    class="subtitle-12 color-dark-3">khách hàng cá nhân</span>
-                            </li>
-                            <li class="home-vision-button-dropdown">
-                                <a class="tab-pane-answer body-14" data-tab="tab-agribank-retail">Agribank
-                                    Retail</a><span class="subtitle-12 color-dark-3">khách hàng cá nhân</span>
-                            </li>
-                            <li class="home-vision-button-dropdown">
-                                <a class="tab-pane-answer body-14" data-tab="tab-agribank-orporate">Agribank
-                                    Corporate</a><span class="subtitle-12 color-dark-3">khách hàng doanh nghiêp</span>
-                            </li>
+                            <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                                    data-tab="tab-agribank-plus">Agribank Plus</a><span
+                                    class="subtitle-12 color-dark-3">khách hàng
+                                    cá nhân</span></li>
+                            <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                                    data-tab="tab-agribank-retail">Agribank Retail</a><span
+                                    class="subtitle-12 color-dark-3">khách
+                                    hàng cá nhân</span></li>
+                            <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
+                                    data-tab="tab-agribank-orporate">Agribank Corporate</a><span
+                                    class="subtitle-12 color-dark-3">khách
+                                    hàng doanh nghiêp</span></li>
                         </ul>
                     </div>
                 </div>
@@ -248,15 +257,15 @@
                         <div class="nk-aside toggle-screen-lg mobile-menu" data-content="sideNav"
                             data-toggle-overlay="true" data-toggle-screen="lg" data-toggle-body="true">
                             <div class="nk-sidebar-menu" data-simplebar="init">
-                                <div class="simplebar-wrapper" style="margin: 0px 0px -40px">
+                                <div class="simplebar-wrapper" style="margin: 0px 0px -40px;">
                                     <div class="simplebar-height-auto-observer-wrapper">
                                         <div class="simplebar-height-auto-observer"></div>
                                     </div>
                                     <div class="simplebar-mask">
-                                        <div class="simplebar-offset" style="right: 0px; bottom: 0px">
+                                        <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
                                             <div class="simplebar-content-wrapper"
-                                                style="height: auto; overflow: scroll">
-                                                <div class="simplebar-content" style="padding: 0px 0px 40px">
+                                                style="height: auto; overflow: scroll;">
+                                                <div class="simplebar-content" style="padding: 0px 0px 40px;">
                                                     <ul class="nk-menu nk-menu-main">
                                                         <li class="nk-menu-heading">
                                                             <div class="form-control-wrap input-search-ct">
@@ -264,7 +273,7 @@
                                                                     <em class="icon ni ni-search"></em>
                                                                 </div>
                                                                 <input type="text" class="form-control" id="default-04"
-                                                                    placeholder="Nhập từ khóa cần tìm kiếm..." />
+                                                                    placeholder="Nhập từ khóa cần tìm kiếm...">
                                                                 <div class="form-icon form-icon-right">
                                                                     <em class="icon ni ni-chevron-right"></em>
                                                                 </div>
@@ -276,10 +285,8 @@
                                                         <li class="nk-menu-heading">
                                                             <h6
                                                                 class="overline-title text-primary-alt regular-12 color-dark-2">
-                                                                Bạn đang ở đâu
-                                                            </h6>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                                Bạn đang ở đâu</h6>
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-heading">
                                                             <div class="form-group">
                                                                 <div class="form-control-wrap">
@@ -288,28 +295,22 @@
                                                                         data-select2-id="1" tabindex="-1"
                                                                         aria-hidden="true">
                                                                         <option value="default_option"
-                                                                            data-select2-id="3">
-                                                                            Cá Nhân
+                                                                            data-select2-id="3">Cá Nhân</option>
+                                                                        <option value="option_select_name">Doanh nghiệp
                                                                         </option>
-                                                                        <option value="option_select_name">
-                                                                            Doanh nghiệp
-                                                                        </option>
-                                                                        <option value="option_select_name">
-                                                                            Định chế tài chính
-                                                                        </option>
+                                                                        <option value="option_select_name">Định chế tài
+                                                                            chính</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-heading pb-3 pt-3">
                                                             <div class="line-h"></div>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-item has-sub">
                                                             <a href="#" class="nk-menu-link nk-menu-toggle"
                                                                 data-original-title="" title="">
-                                                                <span class="nk-menu-text body-18 color-black">Sản phẩm
+                                                                <span class="nk-menu-text body-18  color-black">Sản phẩm
                                                                     dịch vụ</span>
                                                             </a>
                                                             <ul class="nk-menu-sub">
@@ -319,14 +320,14 @@
                                                                         data-original-title="" title="">
                                                                         <span class="nk-menu-text">Gửi tiền</span>
                                                                     </a>
-                                                                    <div class="nk-aside submenu-mobile mobile-menu"
+                                                                    <div class="nk-aside submenu-mobile mobile-menu "
                                                                         data-content="submenu-mobile-tg"
                                                                         data-toggle-overlay-lv2="true"
                                                                         data-toggle-screen="lg" data-toggle-body="true">
                                                                         <div class="nk-sidebar-menu content-menu-lv2"
                                                                             data-simplebar="init">
                                                                             <div class="simplebar-wrapper"
-                                                                                style="margin: 0px 0px -40px">
+                                                                                style="margin: 0px 0px -40px;">
                                                                                 <div
                                                                                     class="simplebar-height-auto-observer-wrapper">
                                                                                     <div
@@ -335,14 +336,11 @@
                                                                                 </div>
                                                                                 <div class="simplebar-mask">
                                                                                     <div class="simplebar-offset"
-                                                                                        style="right: 0px; bottom: 0px">
+                                                                                        style="right: 0px; bottom: 0px;">
                                                                                         <div class="simplebar-content-wrapper"
-                                                                                            style="
-                                                  height: auto;
-                                                  overflow: hidden;
-                                                ">
+                                                                                            style="height: auto; overflow: hidden;">
                                                                                             <div class="simplebar-content"
-                                                                                                style="padding: 0px 0px 40px">
+                                                                                                style="padding: 0px 0px 40px;">
                                                                                                 <ul
                                                                                                     class="nk-menu nk-menu-main">
                                                                                                     <li
@@ -389,7 +387,7 @@
                                                                                                                         thức
                                                                                                                         lãi
                                                                                                                         cho
-                                                                                                                        <br />khách
+                                                                                                                        <br>khách
                                                                                                                         hàng
                                                                                                                         lựa
                                                                                                                         chọn
@@ -403,9 +401,9 @@
                                                                                                                     class="lv2-category">
                                                                                                                     <span
                                                                                                                         class="subtitle-12"
-                                                                                                                        style="
-                                                                text-transform: uppercase;
-                                                              ">Sản phẩm nổi
+                                                                                                                        style="text-transform: uppercase;">Sản
+                                                                                                                        phẩm
+                                                                                                                        nổi
                                                                                                                         bật</span>
                                                                                                                     <div
                                                                                                                         class="line-h">
@@ -482,7 +480,7 @@
                                                                                                                         với
                                                                                                                         lãi
                                                                                                                         suất
-                                                                                                                        <br />hấp
+                                                                                                                        <br>hấp
                                                                                                                         dẫn.
                                                                                                                         Hãy
                                                                                                                         để
@@ -498,9 +496,9 @@
                                                                                                                     class="lv2-category">
                                                                                                                     <span
                                                                                                                         class="subtitle-12"
-                                                                                                                        style="
-                                                                text-transform: uppercase;
-                                                              ">Sản phẩm nổi
+                                                                                                                        style="text-transform: uppercase;">Sản
+                                                                                                                        phẩm
+                                                                                                                        nổi
                                                                                                                         bật</span>
                                                                                                                     <div
                                                                                                                         class="line-h">
@@ -585,8 +583,9 @@
                                                                                                                 <div
                                                                                                                     class="lv2-des-content-title">
                                                                                                                     <img src="../assets/images/megamenu-img.png"
-                                                                                                                        alt="" />
+                                                                                                                        alt="">
                                                                                                                 </div>
+
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </li>
@@ -753,6 +752,7 @@
                                                                                                                             class="icon ni ni-arrow-right color-red-1"></em>
                                                                                                                     </a>
                                                                                                                 </div>
+
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </li>
@@ -763,24 +763,24 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="simplebar-placeholder"
-                                                                                    style="width: 0px; height: 0px">
+                                                                                    style="width: 0px; height: 0px;">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="simplebar-track simplebar-horizontal"
-                                                                                style="visibility: hidden">
+                                                                                style="visibility: hidden;">
                                                                                 <div class="simplebar-scrollbar"
-                                                                                    style="width: 0px; display: none">
+                                                                                    style="width: 0px; display: none;">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="simplebar-track simplebar-vertical"
-                                                                                style="visibility: hidden">
+                                                                                style="visibility: hidden;">
                                                                                 <div class="simplebar-scrollbar"
-                                                                                    style="height: 0px; display: none">
+                                                                                    style="height: 0px; display: none;">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="toggle-overlay-lv2"
+                                                                    <div class="toggle-overlay-lv2 "
                                                                         data-target="submenu-mobile-tg"></div>
                                                                 </li>
                                                                 <li class="nk-menu-item">
@@ -811,7 +811,7 @@
                                                                         <div class="nk-sidebar-menu content-menu-lv2"
                                                                             data-simplebar="init">
                                                                             <div class="simplebar-wrapper"
-                                                                                style="margin: 0px 0px -40px">
+                                                                                style="margin: 0px 0px -40px;">
                                                                                 <div
                                                                                     class="simplebar-height-auto-observer-wrapper">
                                                                                     <div
@@ -820,14 +820,11 @@
                                                                                 </div>
                                                                                 <div class="simplebar-mask">
                                                                                     <div class="simplebar-offset"
-                                                                                        style="right: 0px; bottom: 0px">
+                                                                                        style="right: 0px; bottom: 0px;">
                                                                                         <div class="simplebar-content-wrapper"
-                                                                                            style="
-                                                  height: auto;
-                                                  overflow: hidden;
-                                                ">
+                                                                                            style="height: auto; overflow: hidden;">
                                                                                             <div class="simplebar-content"
-                                                                                                style="padding: 0px 0px 40px">
+                                                                                                style="padding: 0px 0px 40px;">
                                                                                                 <ul
                                                                                                     class="nk-menu nk-menu-main">
                                                                                                     <li
@@ -968,8 +965,9 @@
                                                                                                                 <div
                                                                                                                     class="lv2-des-content-title">
                                                                                                                     <img src="../assets/images/megamenu-img.png"
-                                                                                                                        alt="" />
+                                                                                                                        alt="">
                                                                                                                 </div>
+
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </li>
@@ -1079,6 +1077,7 @@
                                                                                                                             class="icon ni ni-arrow-right color-red-1"></em>
                                                                                                                     </a>
                                                                                                                 </div>
+
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </li>
@@ -1089,19 +1088,19 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="simplebar-placeholder"
-                                                                                    style="width: 0px; height: 0px">
+                                                                                    style="width: 0px; height: 0px;">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="simplebar-track simplebar-horizontal"
-                                                                                style="visibility: hidden">
+                                                                                style="visibility: hidden;">
                                                                                 <div class="simplebar-scrollbar"
-                                                                                    style="width: 0px; display: none">
+                                                                                    style="width: 0px; display: none;">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="simplebar-track simplebar-vertical"
-                                                                                style="visibility: hidden">
+                                                                                style="visibility: hidden;">
                                                                                 <div class="simplebar-scrollbar"
-                                                                                    style="height: 0px; display: none">
+                                                                                    style="height: 0px; display: none;">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -1109,80 +1108,69 @@
                                                                     <div class="toggle-overlay-lv2"
                                                                         data-target="submenu-mobile"></div>
                                                                 </li>
-                                                            </ul>
-                                                            <!-- .nk-menu-sub -->
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                            </ul><!-- .nk-menu-sub -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-heading pb-3 pt-3">
                                                             <div class="line-h"></div>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-item">
                                                             <a class="nk-menu-link body-18 color-black"
-                                                                data-original-title="" title="">Ngân hàng số</a>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                                data-original-title="" title="">Ngân hàng
+                                                                số</a>
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-heading pb-3 pt-3">
                                                             <div class="line-h"></div>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-item">
                                                             <a class="nk-menu-link body-18 color-black"
-                                                                data-original-title="" title="">Khuyến mãi</a>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                                data-original-title="" title="">Khuyến
+                                                                mãi</a>
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-heading pb-3 pt-3">
                                                             <div class="line-h"></div>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-item">
                                                             <a href="#" class="nk-menu-link" data-original-title=""
                                                                 title="">
                                                                 <span class="nk-menu-text body-13 color-dark-2">Về
                                                                     Agribank</span>
                                                             </a>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-item">
                                                             <a href="#" class="nk-menu-link" data-original-title=""
                                                                 title="">
                                                                 <span class="nk-menu-text body-13 color-dark-2">Tin
                                                                     tức</span>
                                                             </a>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-item">
                                                             <a href="#" class="nk-menu-link" data-original-title=""
                                                                 title="">
                                                                 <span class="nk-menu-text body-13 color-dark-2">Tuyển
                                                                     dụng</span>
                                                             </a>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-item">
                                                             <a href="#" class="nk-menu-link" data-original-title=""
                                                                 title="">
                                                                 <span class="nk-menu-text body-13 color-dark-2">Hỗ
                                                                     trợ</span>
                                                             </a>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-item">
                                                             <a href="#" class="nk-menu-link" data-original-title=""
                                                                 title="">
                                                                 <span class="nk-menu-text body-13 color-dark-2">Công cụ
                                                                     tiện ích</span>
                                                             </a>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-item">
                                                             <a href="#" class="nk-menu-link" data-original-title=""
                                                                 title="">
                                                                 <span class="nk-menu-text body-13 color-dark-2">Liên
                                                                     hệ</span>
                                                             </a>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
+                                                        </li><!-- .nk-menu-item -->
                                                         <li class="nk-menu-item">
                                                             <div class="row-ct">
                                                                 <a href="#" class="nk-menu-link pr-1"
@@ -1232,36 +1220,28 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </li>
-                                                        <!-- .nk-menu-item -->
-                                                    </ul>
-                                                    <!-- .nk-menu -->
+                                                        </li><!-- .nk-menu-item -->
+                                                    </ul><!-- .nk-menu -->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="simplebar-placeholder" style="width: auto; height: 1001px"></div>
+                                    <div class="simplebar-placeholder" style="width: auto; height: 1001px;"></div>
                                 </div>
-                                <div class="simplebar-track simplebar-horizontal" style="visibility: visible">
-                                    <div class="simplebar-scrollbar" style="
-                        width: 344px;
-                        display: block;
-                        transform: translate3d(0px, 0px, 0px);
-                      "></div>
+                                <div class="simplebar-track simplebar-horizontal" style="visibility: visible;">
+                                    <div class="simplebar-scrollbar"
+                                        style="width: 344px; display: block; transform: translate3d(0px, 0px, 0px);">
+                                    </div>
                                 </div>
-                                <div class="simplebar-track simplebar-vertical" style="visibility: visible">
-                                    <div class="simplebar-scrollbar" style="
-                        height: 539px;
-                        display: block;
-                        transform: translate3d(0px, 0px, 0px);
-                      "></div>
+                                <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                                    <div class="simplebar-scrollbar"
+                                        style="height: 539px; display: block; transform: translate3d(0px, 0px, 0px);">
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- .nk-sidebar-menu -->
+                            </div><!-- .nk-sidebar-menu -->
                             <div class="nk-aside-close">
                                 <a href="#" class="toggle" data-target="sideNav"><em class="icon ni ni-cross"></em></a>
-                            </div>
-                            <!-- .nk-aside-close -->
+                            </div><!-- .nk-aside-close -->
                         </div>
                         <!-- <div class="toggle-overlay" data-target="sideNav"></div> -->
                         <!-- .nk-aside -->
@@ -1270,218 +1250,480 @@
             </div>
         </div>
     </section>
-    <section class="personal-loan-section">
-        <div class="personal-loan-container">
-            <div class="personal-loan-text">
-                <div class="col-12 col-lg-4 col-md-5 personal-loan-text-sub">
-                    <div class="personal-loan-breadcrumb regular-13 color-white">Trang chủ
-                        <span class="personal-loan-breadcrumb-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
-                                <g clip-path="url(#clip0_1_6132)">
-                                    <path
-                                        d="M6.22076 4.18784L2.66066 0.627804C2.57832 0.545398 2.4684 0.5 2.3512 0.5C2.23399 0.5 2.12408 0.545398 2.04174 0.627804L1.77956 0.889915C1.60896 1.06071 1.60896 1.3383 1.77956 1.50884L4.76906 4.49834L1.77624 7.49116C1.6939 7.57357 1.64844 7.68342 1.64844 7.80056C1.64844 7.91782 1.6939 8.02768 1.77624 8.11015L2.03842 8.3722C2.12082 8.4546 2.23068 8.5 2.34788 8.5C2.46508 8.5 2.575 8.4546 2.65734 8.3722L6.22076 4.80891C6.30329 4.72624 6.34863 4.61587 6.34837 4.49854C6.34863 4.38075 6.30329 4.27044 6.22076 4.18784Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1_6132">
-                                        <rect width="8" height="8" fill="white" transform="translate(0 0.5)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
-                        
-                        <span>Lãi xuất</span>
+    <section class="main-info"
+        style="background: url(../assets/images/Mask\ group-7.png) lightgray 50% / cover no-repeat ; background-size: cover;">
+        <div class="main-info-content">
+            <div class="main-info-title-sub">
+                <a href="#" class="color-hover-w"><span class="regular-13 color-white">Trang chủ</span></a>
+                <span class="pl-1 pr-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                        <path
+                            d="M6.22076 3.68784L2.66066 0.127804C2.57832 0.045398 2.4684 0 2.3512 0C2.23399 0 2.12408 0.045398 2.04174 0.127804L1.77956 0.389915C1.60896 0.560711 1.60896 0.838302 1.77956 1.00884L4.76906 3.99834L1.77624 6.99116C1.6939 7.07357 1.64844 7.18342 1.64844 7.30056C1.64844 7.41782 1.6939 7.52768 1.77624 7.61015L2.03842 7.8722C2.12082 7.9546 2.23068 8 2.34788 8C2.46508 8 2.575 7.9546 2.65734 7.8722L6.22076 4.30891C6.30329 4.22624 6.34863 4.11587 6.34837 3.99854C6.34863 3.88075 6.30329 3.77044 6.22076 3.68784Z"
+                            fill="white" />
+                    </svg>
+                </span>
+                <a href="#" class="color-hover-w"><span class="regular-13 color-white">Cá nhân</span></a>
+                <span class="pl-1 pr-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                        <path
+                            d="M6.22076 3.68784L2.66066 0.127804C2.57832 0.045398 2.4684 0 2.3512 0C2.23399 0 2.12408 0.045398 2.04174 0.127804L1.77956 0.389915C1.60896 0.560711 1.60896 0.838302 1.77956 1.00884L4.76906 3.99834L1.77624 6.99116C1.6939 7.07357 1.64844 7.18342 1.64844 7.30056C1.64844 7.41782 1.6939 7.52768 1.77624 7.61015L2.03842 7.8722C2.12082 7.9546 2.23068 8 2.34788 8C2.46508 8 2.575 7.9546 2.65734 7.8722L6.22076 4.30891C6.30329 4.22624 6.34863 4.11587 6.34837 3.99854C6.34863 3.88075 6.30329 3.77044 6.22076 3.68784Z"
+                            fill="white" />
+                    </svg>
+                </span>
+                <a href="#" class="color-hover-w"><span class="regular-13 color-white">Vay cá nhân</span></a>
+                <span class="pl-1 pr-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                        <path
+                            d="M6.22076 3.68784L2.66066 0.127804C2.57832 0.045398 2.4684 0 2.3512 0C2.23399 0 2.12408 0.045398 2.04174 0.127804L1.77956 0.389915C1.60896 0.560711 1.60896 0.838302 1.77956 1.00884L4.76906 3.99834L1.77624 6.99116C1.6939 7.07357 1.64844 7.18342 1.64844 7.30056C1.64844 7.41782 1.6939 7.52768 1.77624 7.61015L2.03842 7.8722C2.12082 7.9546 2.23068 8 2.34788 8C2.46508 8 2.575 7.9546 2.65734 7.8722L6.22076 4.30891C6.30329 4.22624 6.34863 4.11587 6.34837 3.99854C6.34863 3.88075 6.30329 3.77044 6.22076 3.68784Z"
+                            fill="white" />
+                    </svg>
+                </span>
+                <a href="#" class="color-hover-w"><span class="regular-13 color-white-1">Cho vay tín dụng tiêu dùng</span></a>
+            </div>
+            <div class="main-info-title-content col-md-4 pl-0 pr-0">
+                <div class="main-info-title-content-text">
+                    <span class="heading-h5 color-white">Vay tín dụng tiêu dùng</span>
+                    <span class="regular-16 color-white-1 pt-1">Agribank luôn đồng hành cùng bạn trên hành trình theo đuổi giấc mơ. Khám phá các khoản vay với ưu đãi lớn đang chờ bạn</span>
+                </div>
+                <div class="main-info-title-content-button">
+                    <a href="#" class="button-main-info color-hover-w">
+                        <span class="body-15 color-white">Đặt lịch hẹn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantage-product-detail pt-4 pb-4 pt-md-5 pb-md-5">
+        <div class="advantage-product-detail-containers col-12 pl-0 pr-0 row-ct">
+            <!-- item-1 -->
+            <div class="col-12 col-md-4 advantage-card pl-0 pr-0 pr-md-2">
+                <div class="advantage-card-content pr-0 pr-md-5">
+                    <div class="advantage-card-img">
+                        <img src="../assets/images/icon-svg/Timer.svg" alt="">
                     </div>
-                    <div class="personal-loan-text-title">
-                        <h2 class="personal-loan-title heading-h2 color-white">Lãi xuất</h2>
-                        <p class="personal-loan-description regular-18 color-white-1">Cập nhật liên tục các thông tin quan trọng của Agribank</p>
+                    <div class="advantage-card-text pt-1 pb-1">
+                        <span class="heading-h8 color-dark-1">Tiếp cận nguồn vốn nhanh chóng</span>
+                        <span class="regular-15 color-dark-2 pt-1">2.300 điểm giao dịch của Agribank phủ sóng khắp mọi
+                            miền tổ quốc, mang đến cho khách hàng cơ hội tiếp cận các dịch vụ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="line-h mt-3 mb-3"></div>
+            <!-- item-2 -->
+            <div class="col-12 col-md-4 advantage-card pl-0 pr-0 pl-md-2 pr-md-2">
+                <div class="advantage-card-content pr-0 pr-md-5">
+                    <div class="advantage-card-img">
+                        <img src="../assets/images/icon-svg/Scroll.svg" alt="">
+                    </div>
+                    <div class="advantage-card-text pt-1 pb-1">
+                        <span class="heading-h8 color-dark-1">Đáp ứng nhu cầu vốn đa dạng</span>
+                        <span class="regular-15 color-dark-2 pt-1">Đáp ứng những khoản vay vốn nhỏ, cấp bách, phục vụ
+                            nhu cầu đời sống, tiêu dùng hợp pháp của khoản vay</span>
+                    </div>
+                </div>
+            </div>
+            <div class="line-h mt-3 mb-3"></div>
+            <!-- item-3 -->
+            <div class="col-12 col-md-4 advantage-card pl-0 pr-0 pl-md-2">
+                <div class="advantage-card-content pr-0 pr-md-5">
+                    <div class="advantage-card-img">
+                        <img src="../assets/images/icon-svg/Money.svg" alt="">
+                    </div>
+                    <div class="advantage-card-text pt-1 pb-1">
+                        <span class="heading-h8 color-dark-1">Thủ tục, hồ sơ vay vốn giải quyết nhanh gọn </span>
+                        <span class="regular-15 color-dark-2 pt-1">Thủ tục, hồ sơ vay vốn giải quyết nhanh gọn và ưu
+                            tiên thực hiện xét duyệt, giải ngân ngay trong ngày cho khách hàng khi Ngân hàng nhận được
+                            đầy đủ bộ hồ sơ hợp lệ</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>   
-    <section class="statistics-table">
-        <div class="content">
-            <div class="main-header">
-              <ul class="nav nav-tabs nav-tabs-s2">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#tabItem9">
-                      <div class="content-top-menu" >
-                       <img src="../assets/images/bld/bld-menuicon3.svg" alt="" style="width: 40px; height: 40px;">
-      
-                      </div>
-                      <span class="body-16">Cá nhân</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tabItem10">
-                      <div class="content-top-menu" >
-                        <img src="../assets/images/bld/bld-menuicon2.svg" alt="">
-                      </div>
-                      <span class="body-16">Doanh Nghiệp</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="line-h"></div>
-            <div class="profit-table">
-                <div>
-                    <span class="heading-h5 color-dark-1">Bảng lãi xuất tiền gửi cho</span>
-                <span class="heading-h6 color-red-1">khách hàng cá nhân</span>
-                </div>
-                <span class="regular-15 color-dark-2">Thông tin mang tính tham khảo. Để có thông tin cụ thể, quý khách vui lòng liên hệ với Chi nhánh/Phòng giao dịch của Agribank trên toàn quốc</span>
-            </div>
-            <div class="tab-content">
-                <div class="tab-pane active" id="tabItem9">
-                    <div class="card card-preview table-rate">
-                        <div class="card-inner table-responsive">
-                            <table class="table">
-                                <thead class="">
-                                    <tr>
-                                        <th scope="col " class="body-14">Kì hạn</th>
-                                        <th scope="col " class="body-14  text-align-right">VND <img src="../assets/images/rate/VND.svg" alt=""></th>
-                                        <th scope="col " class="body-14 text-align-right">USD <img src="../assets/images/rate/usd.svg" alt=""></th>
-                                        <th scope="col " class="body-14 text-align-right">EUR <img src="../assets/images/rate/eur.svg" alt=""></th>
-                                    </tr>
-                                </thead>
-                                <tbody class="tbody">
-                                    <tr>
-                                        <td>Không giới hạn</td>
-                                        <td class="vertical-mid  text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1 Tháng</td>
-                                        <td class="vertical-mid  text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2 Tháng</td>
-                                        <td class="vertical-mid  text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                    </div><!-- .card-preview -->
-                </div>
-                <div class="tab-pane" id="tabItem10">
-                    <div class="card card-preview table-rate">
-                        <div class="card-inner table-responsive">
-                            <table class="table">
-                                <thead class="">
-                                    <tr>
-                                        <th scope="col " class="body-14">Kì hạn</th>
-                                        <th scope="col " class="body-14  text-align-right">VND <img src="../assets/images/rate/VND.svg" alt=""></th>
-                                        <th scope="col " class="body-14 text-align-right">USD <img src="../assets/images/rate/usd.svg" alt=""></th>
-                                        <th scope="col " class="body-14 text-align-right">EUR <img src="../assets/images/rate/eur.svg" alt=""></th>
-                                    </tr>
-                                </thead>
-                                <tbody class="tbody">
-                                    <tr>
-                                        <td>Không giới hạn</td>
-                                        <td class="vertical-mid  text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1 Tháng</td>
-                                        <td class="vertical-mid  text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2 Tháng</td>
-                                        <td class="vertical-mid  text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8 Tháng</td>
-                                        <td class="vertical-mid text-align-right">0.2%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                        <td class="vertical-mid text-align-right">0%</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                    </div><!-- .card-preview -->
-                </div>
-                
-                
-            </div>
     </section>
-    <div class="footer">
+    <section class="product-info-section pt-4 pt-md-5 pb-4">
+        <div class="col-12 product-info-container row pl-0 pr-0">
+            <div class="col-12 col-md-3 product-info-title pl-0 pr-0">
+                <div class="product-info-title-content pt-0 pt-md-3">
+                    <span class="heading-h6 color-dark-1">Thông tin sản phẩm</span>
+                    <p class="regular-16 color-dark-2 pt-2 pt-md-3 pr-0 pr-md-2">
+                        Khám phá các chi tiết về sản phẩm vay tín dụng như đối tượng áp dụng, hạn mức vay, lãi suất,
+                        điều kiện, và
+                        điểm nhấn nổi bật. Với thủ tục nhanh chóng, giúp bạn dễ dàng đáp ứng mọi nhu cầu chi tiêu cá
+                        nhân.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 product-info-tabs p-3 p-md-4">
+                <!-- tab list Desktop -->
+                <div class="tabs-header regular-14">
+                    <button class="regular-14 tab-button active" data-tab="general-info">Thông tin chung</button>
+                    <button class="regular-14 tab-button" data-tab="procedure">Quy trình thủ tục</button>
+                    <button class="regular-14 tab-button" data-tab="conditions">Điều kiện vay vốn</button>
+                    <button class="regular-14 tab-button" data-tab="fees">Hồ sơ & biểu phí</button>
+                </div>
+                <!-- tab-list-mobile -->
+                <div class="product-info-tabs-mobile">
+                    <div class="dropdown product-info-tabs-mobile-dropdown">
+                        <button class="btn btn-primary body-15 color-white product-info-tabs-mobile-button"
+                            data-toggle="dropdown" id="tab-select">
+                            <span class="body-15 color-white">Thông tin chung</span><em
+                                class="icon ni ni-chevron-down"></em></button>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-auto mt-1">
+                            <ul class="link-list-plain">
+                                <li><a class="tab-option-info body-15" data-tab="general-info">Thông tin chung</a></li>
+                                <li><a class="tab-option-info body-15" data-tab="procedure">Quy trình thủ tục</a></li>
+                                <li><a class="tab-option-info body-15" data-tab="conditions">Điều kiện vay vốn</a></li>
+                                <li><a class="tab-option-info body-15" data-tab="fees">Hồ sơ & biểu phí</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- tab-Thông tin chung -->
+                <div class="tab-content-info pt-4 active" id="general-info">
+                    <table class="tab-content-table">
+                        <tr>
+                            <th class="body-15">Đối tượng cho vay</th>
+                            <td class="regular-15">Khách hàng cá nhân</td>
+                        </tr>
+                        <tr>
+                            <th class="body-15">Hạn mức vay</th>
+                            <td class="regular-15">Tối đa 30 triệu đồng</td>
+                        </tr>
+                        <tr>
+                            <th class="body-15">Thời gian vay</th>
+                            <td class="regular-15">Tối đa 12 tháng</td>
+                        </tr>
+                        <tr>
+                            <th class="body-15">Lãi suất</th>
+                            <td class="regular-15">
+                                <span>Theo quy định của từng kỳ</span>
+                                <a class="tab-content-table-button" href="#">
+                                    <span>Lãi suất vay hiện tại</span>
+                                    <icon>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                            viewBox="0 0 14 15" fill="none">
+                                            <path
+                                                d="M4.78434 3.58957L4.74899 3.62492C4.61633 3.49226 4.5418 3.31233 4.5418 3.12472C4.5418 2.93711 4.61632 2.75718 4.74899 2.62452C4.88165 2.49186 5.06157 2.41733 5.24919 2.41733C5.4368 2.41733 5.61672 2.49186 5.74938 2.62452L5.75512 2.63026L5.75567 2.63135L10.1249 7.00055L4.78434 3.58957ZM4.78434 3.58957L4.74899 3.62492L8.62488 7.50027M4.78434 3.58957L8.62488 7.50027M8.62488 7.50027L4.74953 11.3756C4.61687 11.5083 4.54234 11.6882 4.54234 11.8758C4.54234 12.0634 4.61687 12.2434 4.74953 12.376C4.88219 12.5087 5.06212 12.5832 5.24973 12.5832C5.43734 12.5832 5.61727 12.5087 5.74993 12.376L10.1249 8.00108L8.62488 7.50027ZM10.2786 7.22998C10.243 7.14416 10.1907 7.06622 10.1249 7.00061L10.1249 8.00101C10.1907 7.93541 10.243 7.85747 10.2786 7.77165C10.3142 7.68581 10.3326 7.59377 10.3326 7.50081C10.3326 7.40786 10.3142 7.31582 10.2786 7.22998Z"
+                                                fill="#AF0B35" stroke="#AF0B35" stroke-width="0.1" />
+                                        </svg>
+                                    </icon>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="body-15">Mục đích vay</th>
+                            <td class="regular-15">Vay tiêu dùng (mua sắm đồ đạc, trang thiết bị gia đình, chi phí học
+                                tập, khám chữa bệnh...)</td>
+                        </tr>
+                        <tr>
+                            <th class="body-15">Phương thức cho vay</th>
+                            <td class="regular-15">
+                                <ul>
+                                    <li>Cho vay từng lần</li>
+                                    <li>Cho vay thấu chi hạn mức</li>
+                                    <li>Cho vay trả góp</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- tab-Quy trình thủ tục -->
+                <div class="tab-content-info pt-4" id="procedure">
+                    <p class="regular-15">Đến 31/12/2021, tổng tài sản của Agribank đạt 1,68 triệu tỷ đồng; nguồn vốn
+                        đạt trên 1,58 triệu tỷ đồng; tổng dư nợ cho vay nền kinh tế đạt trên 1,31 triệu tỷ đồng, trong
+                        đó gần 70% dư nợ cho vay phục vụ phát triển nông nghiệp, nông dân và nông thôn, chiếm tỷ trọng
+                        lớn nhất trong dư nợ tín dụng “Tam nông” tại Việt Nam.Năm 2021 Agribank..</p>
+                </div>
+                <!-- tab-Điều kiện vay vốn -->
+                <div class="tab-content-info pt-4" id="conditions">
+                    <p class="regular-15">Đến 31/12/2020, tổng tài sản đạt trên 1,57 triệu tỷ đồng; nguồn vốn đạt trên
+                        1,45 triệu tỷ đồng; tổng dư nợ cho vay nền kinh tế đạt trên 1,21 triệu tỷ đồng, trong đó gần 70%
+                        dư nợ dành cho đầu tư phát triển nông nghiệp, nông thôn.
+                        Năm 2020, Agribank tiếp tục được khẳng định là Quán quân các NHTM được vinh danh vị trí thứ 8
+                        trong Bảng xếp...</p>
+                </div>
+                <!-- tab-Hồ sơ & biểu phí -->
+                <div class="tab-content-info pt-4" id="fees">
+                    <p class="regular-15">Tổng tài sản đạt trên 1,45 triệu tỷ đồng; Nguồn vốn đạt trên 1,34 triệu tỷ
+                        đồng; Tổng dư nợ và đầu tư đạt trên 1,3 triệu tỷ đồng, trong đó cho vay nền kinh tế đạt trên
+                        1,12 triệu tỷ đồng. Dư nợ trong lĩnh vực nông nghiệp, nông thôn luôn chiếm tỷ trọng trên
+                        70%/tổng dư nợ.
+                        Năm 2019, Agribank tiếp tục được khẳng định là...</p>
+                </div>
+                <!-- Thêm các nội dung tab khác tại đây nếu cần -->
+            </div>
+        </div>
+    </section>
+    <section class="loan-tool-section pt-4 pt-md-5 pb-4">
+        <div class="col-12 loan-tool-container row pl-0 pr-0">
+            <div class="col-12 col-lg-3 product-info-title pl-0 pr-0">
+                <div class="product-info-title-content pt-0 pt-md-3">
+                    <span class="heading-h6 color-dark-1">Công cụ tính toán</span>
+                    <p class="regular-16 color-dark-2 pt-2 pt-md-3 pr-0 pr-md-2">Sử dụng công cụ tính toán của chúng tôi
+                        để ước tính khoản vay, lãi suất và thời hạn thanh toán. Dễ dàng tính toán các thông số tài
+                        chính, giúp bạn lên kế hoạch và quản lý tài chính hiệu quả hơn.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 loan-tool-tabs row">
+                <div class="col-12 col-md-7 loan-calculator">
+                    <h3 class="heading-h7 pb-md-3">Tính lãi phải trả</h3>
+                    <div class="loan-calculator-group">
+                        <div class="loan-calculator-radio">
+                            <label class="body-14">Phương thức tính</label>
+                            <div class="loan-calculator-radio-form ">
+                                <label class="body-15">
+                                    <input type="radio" name="method" value="reducing" checked> Trả trên dư nợ giảm dần
+                                </label>
+                                <label class="body-15">
+                                    <input type="radio" name="method" value="equal"> Trả trên dư nợ gốc
+                                </label>
+                            </div>
+                        </div>
+                        <div class="content-loan-calculator-group">
+                            <div class="money-time-loan-calculator-group">
+                                <div class="money-time-loan-calculator-form">
+                                    <label class="body-14" for="loan-amount">Số tiền vay</label>
+                                    <div class="money-time-loan-calculator-input">
+                                        <div class="input-slider-wrapper">
+                                            <input type="number" id="loan-amount-input" value="810000" min="0"
+                                                max="10000000" step="1"
+                                                oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
+                                                class="input-number Body-Regular-15" />
+                                            <span class="currency-unit body-13">VNĐ</span>
+                                        </div>
+                                        <input class="input-rise" type="range" id="loan-amount" min="0" max="10000000"
+                                            step="1000" value="810000" />
+                                        <div class="range-display body-12">
+                                            <span class="range-min">0</span>
+                                            <span class="range-max">10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="money-time-loan-calculator-form">
+                                    <label class="body-14" for="loan-duration">Thời hạn vay</label>
+                                    <div class="money-time-loan-calculator-input">
+                                        <div class="input-slider-wrapper">
+                                            <input type="number" id="loan-duration-display" value="12" min="1" max="120"
+                                                step="1"
+                                                oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
+                                                class="input-number Body-Regular-15" />
+                                            <span class="currency-unit body-13">Tháng</span>
+                                        </div>
+                                        <input class="input-rise" type="range" id="loan-duration" min="1" max="120" step="1"
+                                            value="12" />
+                                        <div class="range-display body-12">
+                                            <span class="range-min">1</span>
+                                            <span class="range-max">120</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="money-time-loan-calculator-group">
+                                <div class="money-time-loan-calculator-form pb-3 pb-md-0">
+                                    <label class="body-14" for="interest-rate">Lãi suất cho vay</label>
+                                    <div class="money-time-loan-calculator-input">
+                                        <div class="input-slider-wrapper">
+                                            <input type="number" id="interest-rate" value="12" step="0.1"
+                                                class="form-control regular-15">
+                                            <span class="currency-unit body-13">%/năm</span>
+                                        </div>
+                                        <div class="line-h" style="height: 3px; background: #ddd;"></div>
+                                    </div>
+                                </div>
+                                <div class="money-time-loan-calculator-form ">
+                                    <label class="body-14" for="start-date">Ngày giải ngân</label>
+                                    <div class="money-time-loan-calculator-input">
+                                        <div class="input-slider-wrapper">
+                                            <input type="text" id="start-date" value="2024-02-09"
+                                                class="form-control date-picker regular-15">
+                                            <em class="icon ni ni-calendar-alt"></em>
+                                        </div>
+                                        <div class="line-h" style="height: 3px; background: #ddd;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="loan-calculator-button Body-16 color-white" id="calculate-button">Tính khoản
+                            vay</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 loan-result">
+                    <h3 class="body-16 color-dark-2">Phương án trả nợ</h3>
+                    <div class="loan-result-content">
+                        <p class="body-14 color-dark-3">Số tiền gốc và lãi phải trả: <span class="heading-h7 color-dark-2"
+                                id="total-payment">8,626,500 <span class="body-13">VNĐ</span></span></p>
+                        <p class="body-14 color-dark-3">Số tiền trả hàng tháng: <span class="heading-h7 color-dark-2"
+                                id="monthly-payment">526,500 <span class="body-13">VNĐ</span></span></p>
+                        <p class="body-14 color-dark-3">Ngày trả nợ cuối cùng: <span class="heading-h7 color-dark-2"
+                                id="end-payment-date">22/08/2025</span></p>
+                    </div>
+                    <a class="regular-16" href="#">Chi tiết số tiền trả hàng kỳ
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M4.78434 3.08957L4.74899 3.12492C4.61633 2.99226 4.5418 2.81233 4.5418 2.62472C4.5418 2.43711 4.61632 2.25718 4.74899 2.12452C4.88165 1.99186 5.06157 1.91733 5.24919 1.91733C5.4368 1.91733 5.61672 1.99186 5.74938 2.12452L5.75512 2.13026L5.75567 2.13135L10.1249 6.50055L4.78434 3.08957ZM4.78434 3.08957L4.74899 3.12492L8.62488 7.00027M4.78434 3.08957L8.62488 7.00027M8.62488 7.00027L4.74953 10.8756C4.61687 11.0083 4.54234 11.1882 4.54234 11.3758C4.54234 11.5634 4.61687 11.7434 4.74953 11.876C4.88219 12.0087 5.06212 12.0832 5.24973 12.0832C5.43734 12.0832 5.61727 12.0087 5.74993 11.876L10.1249 7.50108L8.62488 7.00027ZM10.2786 6.72998C10.243 6.64416 10.1907 6.56622 10.1249 6.50061L10.1249 7.50101C10.1907 7.43541 10.243 7.35747 10.2786 7.27165C10.3142 7.18581 10.3326 7.09377 10.3326 7.00081C10.3326 6.90786 10.3142 6.81582 10.2786 6.72998Z"
+                                    fill="#AF0B35" stroke="#AF0B35" stroke-width="0.1" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantage-card-asked-questions mb-4 mb-md-5">
+        <div class="line-h mt-md-3 mb-4 mb-md-5"></div>
+        <div class="asked-questions">
+            <h3 class="heading-h7 color-dark-1">Câu hỏi thường gặp</h3>
+            <div class="card-inner">
+                <div class="py-2">
+                    <div class="slider-init advantage-card-asked-questions-selects"
+                        data-slick='{"arrows": false, "dots": true, "slidesToShow": 6, "slidesToScroll": 1, "infinite":false, "responsive":[ {"breakpoint": 992,"settings":{"slidesToShow": 4}}, {"breakpoint": 768,"settings":{"slidesToShow": 2}}, {"breakpoint": 375,"settings":{"slidesToShow": 1}} ]}'>
+                        <!-- item-1 -->
+                        <div class="col">
+                            <div class="card card-bordered">
+                                <div class="asked-questions-card">
+                                    <div class="asked-questions-card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 28 28" fill="none">
+                                            <path
+                                                d="M14.4375 23.625H5.25C5.01794 23.625 4.79538 23.5328 4.63128 23.3687C4.46719 23.2046 4.375 22.9821 4.375 22.75V13.5625C4.375 10.8938 5.43515 8.33432 7.32224 6.44724C9.20932 4.56015 11.7688 3.5 14.4375 3.5C15.7589 3.5 17.0674 3.76027 18.2883 4.26596C19.5091 4.77165 20.6184 5.51285 21.5528 6.44724C22.4872 7.38163 23.2283 8.49091 23.734 9.71175C24.2397 10.9326 24.5 12.2411 24.5 13.5625C24.5 14.8839 24.2397 16.1924 23.734 17.4133C23.2283 18.6341 22.4872 19.7434 21.5528 20.6778C20.6184 21.6122 19.5091 22.3533 18.2883 22.859C17.0674 23.3647 15.7589 23.625 14.4375 23.625Z"
+                                                stroke="#9E2B47" stroke-width="1.07692" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <span class="regular-16 color-dark-1">Làm thế nào để tôi có thể thanh toán khoản
+                                        vay?</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-2 -->
+                        <div class="col">
+                            <div class="card card-bordered">
+                                <div class="asked-questions-card">
+                                    <div class="asked-questions-card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 28 28" fill="none">
+                                            <path
+                                                d="M14.4375 23.625H5.25C5.01794 23.625 4.79538 23.5328 4.63128 23.3687C4.46719 23.2046 4.375 22.9821 4.375 22.75V13.5625C4.375 10.8938 5.43515 8.33432 7.32224 6.44724C9.20932 4.56015 11.7688 3.5 14.4375 3.5C15.7589 3.5 17.0674 3.76027 18.2883 4.26596C19.5091 4.77165 20.6184 5.51285 21.5528 6.44724C22.4872 7.38163 23.2283 8.49091 23.734 9.71175C24.2397 10.9326 24.5 12.2411 24.5 13.5625C24.5 14.8839 24.2397 16.1924 23.734 17.4133C23.2283 18.6341 22.4872 19.7434 21.5528 20.6778C20.6184 21.6122 19.5091 22.3533 18.2883 22.859C17.0674 23.3647 15.7589 23.625 14.4375 23.625Z"
+                                                stroke="#9E2B47" stroke-width="1.07692" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <span class="regular-16 color-dark-1">Có thể vay tiêu dùng online trên ứng dụng được
+                                        không?</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-3 -->
+                        <div class="col">
+                            <div class="card card-bordered">
+                                <div class="asked-questions-card">
+                                    <div class="asked-questions-card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 28 28" fill="none">
+                                            <path
+                                                d="M14.4375 23.625H5.25C5.01794 23.625 4.79538 23.5328 4.63128 23.3687C4.46719 23.2046 4.375 22.9821 4.375 22.75V13.5625C4.375 10.8938 5.43515 8.33432 7.32224 6.44724C9.20932 4.56015 11.7688 3.5 14.4375 3.5C15.7589 3.5 17.0674 3.76027 18.2883 4.26596C19.5091 4.77165 20.6184 5.51285 21.5528 6.44724C22.4872 7.38163 23.2283 8.49091 23.734 9.71175C24.2397 10.9326 24.5 12.2411 24.5 13.5625C24.5 14.8839 24.2397 16.1924 23.734 17.4133C23.2283 18.6341 22.4872 19.7434 21.5528 20.6778C20.6184 21.6122 19.5091 22.3533 18.2883 22.859C17.0674 23.3647 15.7589 23.625 14.4375 23.625Z"
+                                                stroke="#9E2B47" stroke-width="1.07692" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <span class="regular-16 color-dark-1">Nếu tôi không trả được nợ thì sẽ bị xử lý như
+                                        thế nào?</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-4 -->
+                        <div class="col">
+                            <div class="card card-bordered">
+                                <div class="asked-questions-card">
+                                    <div class="asked-questions-card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 28 28" fill="none">
+                                            <path
+                                                d="M14.4375 23.625H5.25C5.01794 23.625 4.79538 23.5328 4.63128 23.3687C4.46719 23.2046 4.375 22.9821 4.375 22.75V13.5625C4.375 10.8938 5.43515 8.33432 7.32224 6.44724C9.20932 4.56015 11.7688 3.5 14.4375 3.5C15.7589 3.5 17.0674 3.76027 18.2883 4.26596C19.5091 4.77165 20.6184 5.51285 21.5528 6.44724C22.4872 7.38163 23.2283 8.49091 23.734 9.71175C24.2397 10.9326 24.5 12.2411 24.5 13.5625C24.5 14.8839 24.2397 16.1924 23.734 17.4133C23.2283 18.6341 22.4872 19.7434 21.5528 20.6778C20.6184 21.6122 19.5091 22.3533 18.2883 22.859C17.0674 23.3647 15.7589 23.625 14.4375 23.625Z"
+                                                stroke="#9E2B47" stroke-width="1.07692" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <span class="regular-16 color-dark-1">Nếu tôi muốn trả nợ trước hạn thì có bị phạt
+                                        không?</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-5 -->
+                        <div class="col">
+                            <div class="card card-bordered">
+                                <div class="asked-questions-card">
+                                    <div class="asked-questions-card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 28 28" fill="none">
+                                            <path
+                                                d="M14.4375 23.625H5.25C5.01794 23.625 4.79538 23.5328 4.63128 23.3687C4.46719 23.2046 4.375 22.9821 4.375 22.75V13.5625C4.375 10.8938 5.43515 8.33432 7.32224 6.44724C9.20932 4.56015 11.7688 3.5 14.4375 3.5C15.7589 3.5 17.0674 3.76027 18.2883 4.26596C19.5091 4.77165 20.6184 5.51285 21.5528 6.44724C22.4872 7.38163 23.2283 8.49091 23.734 9.71175C24.2397 10.9326 24.5 12.2411 24.5 13.5625C24.5 14.8839 24.2397 16.1924 23.734 17.4133C23.2283 18.6341 22.4872 19.7434 21.5528 20.6778C20.6184 21.6122 19.5091 22.3533 18.2883 22.859C17.0674 23.3647 15.7589 23.625 14.4375 23.625Z"
+                                                stroke="#9E2B47" stroke-width="1.07692" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <span class="regular-16 color-dark-1">Nếu tôi muốn trả nợ trước hạn thì có bị phạt
+                                        không?</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-6 -->
+                        <div class="col">
+                            <div class="card card-bordered">
+                                <div class="asked-questions-card">
+                                    <div class="asked-questions-card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 28 28" fill="none">
+                                            <path
+                                                d="M14.4375 23.625H5.25C5.01794 23.625 4.79538 23.5328 4.63128 23.3687C4.46719 23.2046 4.375 22.9821 4.375 22.75V13.5625C4.375 10.8938 5.43515 8.33432 7.32224 6.44724C9.20932 4.56015 11.7688 3.5 14.4375 3.5C15.7589 3.5 17.0674 3.76027 18.2883 4.26596C19.5091 4.77165 20.6184 5.51285 21.5528 6.44724C22.4872 7.38163 23.2283 8.49091 23.734 9.71175C24.2397 10.9326 24.5 12.2411 24.5 13.5625C24.5 14.8839 24.2397 16.1924 23.734 17.4133C23.2283 18.6341 22.4872 19.7434 21.5528 20.6778C20.6184 21.6122 19.5091 22.3533 18.2883 22.859C17.0674 23.3647 15.7589 23.625 14.4375 23.625Z"
+                                                stroke="#9E2B47" stroke-width="1.07692" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <span class="regular-16 color-dark-1">Có thể vay thêm khi chưa trả hết khoản vay cũ
+                                        không?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantage-card-question">
+        <div class="advantage-card-question-containers">
+            <div class="advantage-card-question-text">
+                <!-- bên trái -->
+                <div class="advantage-card-question-content">
+                    <div class="advantage-card-question-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <path d="M52.7998 50V60H30.7998" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="square" />
+                            <path
+                                d="M52.7998 32H40.7998V50H52.7998V32ZM52.7998 32C52.7998 28.8483 52.179 25.7274 50.9729 22.8156C49.7668 19.9038 47.999 17.258 45.7704 15.0294C43.5418 12.8008 40.896 11.033 37.9842 9.82689C35.0724 8.62078 31.9515 8 28.7998 8C25.6481 8 22.5272 8.62078 19.6154 9.82689C16.7036 11.033 14.0578 12.8008 11.8292 15.0294C9.60064 17.258 7.83281 19.9038 6.6267 22.8156C5.42058 25.7274 4.7998 28.8483 4.7998 32M4.7998 32L4.7998 50H16.7998V32H4.7998Z"
+                                stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" />
+                        </svg>
+                    </div>
+                    <span class="heading-h7 color-white">Bạn cần tìm hiểu thêm? <br> Liên hệ ngay để nhận tư vấn</span>
+                </div>
+                <!-- bên phải  -->
+                <div class="advantage-card-question-buttons">
+                    <button class="button-product-detail body-15 color-white"><a class="button-product-detail-text">Liên
+                            hệ hỗ trợ</a></button>
+                    <button class="button-product-detail body-15 color-white"><a class="button-product-detail-text">Yêu
+                            cầu tư vấn</a></button>
+                    <div class="advantage-card-question-buttons-card">
+                        <button class="button-product-detail body-15 color-white"><a
+                                class="button-product-detail-text">Đặt lịch mở thẻ</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
         <div class="nk-content pb-0">
             <div id="collapse-footer" class="collapse-footer">
                 <div id="accordion" class="">
@@ -1489,30 +1731,26 @@
                         <div>
                             <div class="row-ct justify-between">
                                 <div class="col-12 logo-agr col-md-6 pl-0 pb-3">
-                                    <img src="../assets/images/logo.png" />
-                                    <span class="body-14" style="font-family: 'BT Grotesk Regular'">Ngân hàng Nông
-                                        nghiệp và Phát triển Nông thôn Việt
-                                        Nam</span>
+                                    <img src="../assets/images/logo.png">
+                                    <span class="body-14">Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam</span>
                                 </div>
                                 <div class="col-12 col-md-6 pr-0-1024 pl-0-1024">
                                     <div class="d-flex justify-content-end">
                                         <a href="javascript:void(0)"
                                             class="pl-3 pr-3 accordion-head btn-extend text-center d-flex justify-center"
                                             data-toggle="collapse" data-target="#accordion-item-1">
-                                            <h6 class="regular-14 color-white btn-text-extend">
-                                                <em class="icon ni ni-chevron-down" style="font-size: 20px"></em>Mở rộng
-                                                trang
-                                            </h6>
+                                            <h6 class="regular-14 color-white btn-text-extend"> <em
+                                                    class="icon ni ni-chevron-down" style="font-size: 20px;"></em>Mở
+                                                rộng trang</h6>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="line-h mt-5 mb-5" style="background: rgba(255, 255, 255, 0.08)"></div>
+                        <div class="line-h mt-5 mb-5" style="background: rgba(255, 255, 255, 0.08);"></div>
                         <div class="footer-pre">
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 block-h">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3  block-h">
+                                <div><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
                                         fill="none">
                                         <path d="M33 31.25V37.5H19.25" stroke="white" stroke-width="1.5"
                                             stroke-miterlimit="10" stroke-linecap="square" />
@@ -1520,18 +1758,14 @@
                                             d="M33 20H25.5V31.25H33V20ZM33 20C33 18.0302 32.612 16.0796 31.8582 14.2597C31.1044 12.4399 29.9995 10.7863 28.6066 9.3934C27.2137 8.00052 25.5601 6.89563 23.7403 6.14181C21.9204 5.38799 19.9698 5 18 5C16.0302 5 14.0796 5.38799 12.2597 6.14181C10.4399 6.89563 8.78628 8.00052 7.3934 9.3934C6.00052 10.7863 4.89563 12.4399 4.14181 14.2597C3.38799 16.0796 3 18.0302 3 20M3 20L3 31.25H10.5V20H3Z"
                                             stroke="white" stroke-width="1.5" stroke-miterlimit="10"
                                             stroke-linecap="square" />
-                                    </svg>
-                                </div>
+                                    </svg></div>
                                 <div class="gap16 row-ct div-content">
                                     <div class="desf">
                                         <span class="heading-h8">Tổng đài tư vấn</span>
-                                        <span class="regular-15"><span class="text-trans-8">Liên hệ đến hotline</span>
-                                            1900558818 / <br />+842432053205
-                                            <span class="text-trans">để nhận được hỗ trợ</span></span>
-                                        <span class="regular-15"><span class="text-trans-8">Email:</span>
-                                            cskh@agribank.com.vn</span>
+                                        <span class="">Liên hệ đến hotline 1900558818 / <br>+842432053205 để nhận được
+                                            hỗ trợ</span>
                                     </div>
-                                    <a href="#" class="contact-now text-trans-9">
+                                    <div class="contact-now">
                                         <span class="regular-16">Liên hệ ngay</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             viewBox="0 0 14 14" fill="none">
@@ -1542,10 +1776,10 @@
                                                 d="M4.78239 3.09152L4.74703 3.12687C4.61437 2.99421 4.53984 2.81429 4.53984 2.62667C4.53984 2.43906 4.61437 2.25914 4.74703 2.12648C4.87969 1.99381 5.05962 1.91928 5.24723 1.91928C5.43484 1.91928 5.61477 1.99381 5.74743 2.12648L5.75317 2.13221L5.75372 2.13331L10.1229 6.50251L4.78239 3.09152ZM4.78239 3.09152L4.74704 3.12688L8.62292 7.00222M4.78239 3.09152L8.62292 7.00222M8.62292 7.00222L4.74758 10.8776C4.61492 11.0102 4.54039 11.1902 4.54039 11.3778C4.54039 11.5654 4.61492 11.7453 4.74758 11.878C4.88024 12.0106 5.06017 12.0852 5.24778 12.0852C5.43539 12.0852 5.61532 12.0106 5.74798 11.878L10.1229 7.50303L8.62292 7.00222ZM10.2766 6.73193C10.241 6.64611 10.1888 6.56817 10.123 6.50257L10.123 7.50297C10.1888 7.43737 10.241 7.35942 10.2766 7.2736C10.3123 7.18776 10.3306 7.09572 10.3306 7.00277C10.3306 6.90982 10.3123 6.81778 10.2766 6.73193Z"
                                                 stroke="white" stroke-opacity="0.9" stroke-width="0.1" />
                                         </svg>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 block-h">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3  block-h">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44"
                                     fill="none">
                                     <path d="M34.5833 6.41797H2.5V37.5846H34.5833V6.41797Z" stroke="white"
@@ -1564,10 +1798,10 @@
                                 <div class="gap16 row-ct div-content">
                                     <div class="desf">
                                         <span class="heading-h8">Đặt lịch hẹn</span>
-                                        <span class="regular-15">Để lại nhu cầu của bạn và Agribank sẽ<br />
+                                        <span class="">Để lại nhu cầu của bạn và Agribank sẽ<br>
                                             liên hệ lại trong khoảng thời gian sớm nhất</span>
                                     </div>
-                                    <a href="#" class="contact-now">
+                                    <div class="contact-now">
                                         <span class="regular-16">Đặt lịch ngay</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             viewBox="0 0 14 14" fill="none">
@@ -1578,10 +1812,10 @@
                                                 d="M4.78239 3.09152L4.74703 3.12687C4.61437 2.99421 4.53984 2.81429 4.53984 2.62667C4.53984 2.43906 4.61437 2.25914 4.74703 2.12648C4.87969 1.99381 5.05962 1.91928 5.24723 1.91928C5.43484 1.91928 5.61477 1.99381 5.74743 2.12648L5.75317 2.13221L5.75372 2.13331L10.1229 6.50251L4.78239 3.09152ZM4.78239 3.09152L4.74704 3.12688L8.62292 7.00222M4.78239 3.09152L8.62292 7.00222M8.62292 7.00222L4.74758 10.8776C4.61492 11.0102 4.54039 11.1902 4.54039 11.3778C4.54039 11.5654 4.61492 11.7453 4.74758 11.878C4.88024 12.0106 5.06017 12.0852 5.24778 12.0852C5.43539 12.0852 5.61532 12.0106 5.74798 11.878L10.1229 7.50303L8.62292 7.00222ZM10.2766 6.73193C10.241 6.64611 10.1888 6.56817 10.123 6.50257L10.123 7.50297C10.1888 7.43737 10.241 7.35942 10.2766 7.2736C10.3123 7.18776 10.3306 7.09572 10.3306 7.00277C10.3306 6.90982 10.3123 6.81778 10.2766 6.73193Z"
                                                 stroke="white" stroke-opacity="0.9" stroke-width="0.1" />
                                         </svg>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 block-h">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3  block-h">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
                                     fill="none">
                                     <path d="M12.0859 19.25H24.0026" stroke="white" stroke-width="1.5"
@@ -1596,10 +1830,10 @@
                                 <div class="gap16 row-ct div-content">
                                     <div class="desf">
                                         <span class="heading-h8">Yêu cầu tư vấn</span>
-                                        <span class="regular-15">Để lại nhu cầu của bạn và Agribank sẽ<br />
+                                        <span class="">Để lại nhu cầu của bạn và Agribank sẽ<br>
                                             liên hệ lại trong khoảng thời gian sớm nhất</span>
                                     </div>
-                                    <a href="#" class="contact-now">
+                                    <div class="contact-now">
                                         <span class="regular-16">Yêu cầu tư vấn</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             viewBox="0 0 14 14" fill="none">
@@ -1610,55 +1844,55 @@
                                                 d="M4.78239 3.09152L4.74703 3.12687C4.61437 2.99421 4.53984 2.81429 4.53984 2.62667C4.53984 2.43906 4.61437 2.25914 4.74703 2.12648C4.87969 1.99381 5.05962 1.91928 5.24723 1.91928C5.43484 1.91928 5.61477 1.99381 5.74743 2.12648L5.75317 2.13221L5.75372 2.13331L10.1229 6.50251L4.78239 3.09152ZM4.78239 3.09152L4.74704 3.12688L8.62292 7.00222M4.78239 3.09152L8.62292 7.00222M8.62292 7.00222L4.74758 10.8776C4.61492 11.0102 4.54039 11.1902 4.54039 11.3778C4.54039 11.5654 4.61492 11.7453 4.74758 11.878C4.88024 12.0106 5.06017 12.0852 5.24778 12.0852C5.43539 12.0852 5.61532 12.0106 5.74798 11.878L10.1229 7.50303L8.62292 7.00222ZM10.2766 6.73193C10.241 6.64611 10.1888 6.56817 10.123 6.50257L10.123 7.50297C10.1888 7.43737 10.241 7.35942 10.2766 7.2736C10.3123 7.18776 10.3306 7.09572 10.3306 7.00277C10.3306 6.90982 10.3123 6.81778 10.2766 6.73193Z"
                                                 stroke="white" stroke-opacity="0.9" stroke-width="0.1" />
                                         </svg>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 block-h div-appstore">
-                                <span style="text-transform: uppercase">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3  block-h div-appstore">
+                                <span style="text-transform: uppercase;">
                                     tải Agribank Plus
                                 </span>
-                                <div class="gap16 row-ct">
+                                <div class="gap16 row-ct ">
                                     <div class="down-app">
-                                        <a href="#"><img src="../assets/images/appstore.png" alt="" /></a>
-                                        <a href="#"><img src="../assets/images/ggplay.png" alt="" /></a>
+                                        <img src="../assets/images/appstore.png" alt="">
+                                        <img src="../assets/images/ggplay.png" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="line-h mt-5" style="background: rgba(255, 255, 255, 0.08)"></div>
+                        <div class="line-h mt-5" style="background: rgba(255, 255, 255, 0.08);"></div>
                         <div class="">
-                            <div class="accordion-body accordion-body-footer footer-extend collapse pt-5"
+                            <div class="accordion-body accordion-body-footer  footer-extend collapse pt-5"
                                 id="accordion-item-1" data-parent="#accordion">
                                 <div class="accordion-inner p-0 row-ct">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-3 block-h-2 pl-0 pb-5">
                                         <div class="block-h">
                                             <span class="body-16">Khách hàng cá nhân</span>
                                             <div class="desf">
-                                                <a href="#" class="regular-14">Gửi tiền</a>
-                                                <a href="#" class="regular-14">Vay vốn</a>
-                                                <a href="#" class="regular-14">Thẻ</a>
-                                                <a href="#" class="regular-14">Bảo hiểm</a>
-                                                <a href="#" class="regular-14">Thanh toán & chuyển tiền</a>
-                                                <a href="#" class="regular-14">Điểm giao dịch lưu động</a>
-                                                <a href="#" class="regular-14">Ngân hàng số</a>
-                                                <a href="#" class="regular-14">Khuyến mãi</a>
+                                                <span class="regular-14">Gửi tiền</span>
+                                                <span class="regular-14">Vay vốn</span>
+                                                <span class="regular-14">Thẻ</span>
+                                                <span class="regular-14">Bảo hiểm</span>
+                                                <span class="regular-14">Thanh toán & chuyển tiền</span>
+                                                <span class="regular-14">Điểm giao dịch lưu động</span>
+                                                <span class="regular-14">Ngân hàng số</span>
+                                                <span class="regular-14">Khuyến mãi</span>
                                             </div>
                                         </div>
-                                        <a href="#" class="body-16">Khách hàng ưu tiên</a>
+                                        <span class="body-16">Khách hàng ưu tiên</span>
                                     </div>
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-3 block-h-2 pl-0 pb-5">
                                         <div class="block-h">
                                             <span class="body-16">Khách hàng doanh nghiệp</span>
                                             <div class="desf">
-                                                <a href="#" class="regular-14">Tài khoản & Tiền gửi</a>
-                                                <a href="#" class="regular-14">Tín dụng Doanh nghiệp</a>
-                                                <a href="#" class="regular-14">Thẻ</a>
-                                                <a href="#" class="regular-14">Bảo hiểm</a>
-                                                <a href="#" class="regular-14">Thanh toán trong nước</a>
-                                                <a href="#" class="regular-14">Thanh toán quốc tế</a>
-                                                <a href="#" class="regular-14">Bảo lãnh</a>
-                                                <a href="#" class="regular-14">Ngân hàng số</a>
-                                                <a href="#" class="regular-14">Khuyến mãi</a>
+                                                <span class="regular-14">Tài khoản & Tiền gửi</span>
+                                                <span class="regular-14">Tín dụng Doanh nghiệp</span>
+                                                <span class="regular-14">Thẻ</span>
+                                                <span class="regular-14">Bảo hiểm</span>
+                                                <span class="regular-14">Thanh toán trong nước</span>
+                                                <span class="regular-14">Thanh toán quốc tế</span>
+                                                <span class="regular-14">Bảo lãnh</span>
+                                                <span class="regular-14">Ngân hàng số</span>
+                                                <span class="regular-14">Khuyến mãi</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1666,19 +1900,19 @@
                                         <div class="block-h">
                                             <span class="body-16">Định chế tài chính</span>
                                             <div class="desf">
-                                                <a href="#" class="regular-14">Ngân hàng đại lý</a>
-                                                <a href="#" class="regular-14">Quản lý tiền tệ và thanh toán</a>
-                                                <a href="#" class="regular-14">Thị trường tiền tệ và thị trường vốn</a>
-                                                <a href="#" class="regular-14">Kinh doanh ngoại tệ</a>
+                                                <span class="regular-14">Ngân hàng đại lý</span>
+                                                <span class="regular-14">Quản lý tiền tệ và thanh toán</span>
+                                                <span class="regular-14">Thị trường tiền tệ và thị trường vốn</span>
+                                                <span class="regular-14">Kinh doanh ngoại tệ</span>
                                             </div>
                                         </div>
                                         <div class="block-h">
                                             <span class="body-16">Về Agribank</span>
                                             <div class="desf">
-                                                <a href="#" class="regular-14">Giới thiệu chung</a>
-                                                <a href="#" class="regular-14">Công bố thông tin</a>
-                                                <a href="#" class="regular-14">Thư viện</a>
-                                                <a href="#" class="regular-14">Tài sản bán đấu giá</a>
+                                                <span class="regular-14">Giới thiệu chung</span>
+                                                <span class="regular-14">Công bố thông tin</span>
+                                                <span class="regular-14">Thư viện</span>
+                                                <span class="regular-14">Tài sản bán đấu giá</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1686,26 +1920,27 @@
                                         <div class="block-h">
                                             <span class="body-16">Liên hệ và hỗ trợ</span>
                                             <div class="desf">
-                                                <a href="#" class="regular-14">Liên hệ và địa điểm
-                                                </a>
-                                                <a href="#" class="regular-14">Hỏi đáp</a>
-                                                <a href="#" class="regular-14">Công cụ tiện ích</a>
+                                                <span class="regular-14">Liên hệ và địa điểm </span>
+                                                <span class="regular-14">Hỏi đáp</span>
+                                                <span class="regular-14">Công cụ tiện ích</span>
                                             </div>
                                         </div>
                                         <div class="block-h">
                                             <span class="body-16">Tuyển dụng</span>
                                             <div class="desf">
-                                                <a href="#" class="regular-14">Chư ơng trình tuyển dụng</a>
-                                                <a href="#" class="regular-14">Thông báo thi tuyển</a>
-                                                <a href="#" class="regular-14">Kết quả tuyển dụng</a>
+                                                <span class="regular-14">Chư ơng trình tuyển dụng</span>
+                                                <span class="regular-14">Thông báo thi tuyển</span>
+                                                <span class="regular-14">Kết quả tuyển dụng</span>
                                             </div>
                                         </div>
-                                        <a href="#" class="body-16">Chứng khoán</a>
+                                        <span class="body-16">Chứng khoán</span>
                                     </div>
                                 </div>
-                                <div class="line-h mt-5" style="background: rgba(255, 255, 255, 0.08)"></div>
+                                <div class="line-h mt-5" style="background: rgba(255, 255, 255, 0.08);"></div>
                             </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -1713,40 +1948,246 @@
 
         <div class="nk-content ct-footer-copyright pt-4">
             <div class="clause pb-4">
-                <a href="#" class="regular-14">Điều khoản sử dụng</a>
+                <span class="regular-14">Điều khoản sử dụng</span>
                 <div class="line-v"></div>
-                <a href="#" class="regular-14">An toàn & Bảo mật</a>
+                <span class="regular-14">An toàn & Bảo mật</span>
                 <div class="line-v"></div>
-                <a href="#" class="regular-14">Sơ đồ trang</a>
+                <span class="regular-14">Sơ đồ trang</span>
                 <div class="line-v"></div>
-                <a href="#" class="regular-14">Đăng ký nhận tin</a>
+                <span class="regular-14">Đăng ký nhận tin</span>
             </div>
             <div class="follow pb-4">
-                <a href="#" class="subtitle-12" style="text-transform: uppercase">Theo dõi chúng tôi</a>
+                <span class="subtitle-12" style="text-transform: uppercase;">Theo dõi chúng tôi</span>
                 <div class="line-v"></div>
                 <div class="social">
-                    <a><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                            <path
-                                d="M12.5325 20.8986V11.8689H15.5622L16.0167 8.34882H12.5325V6.10177C12.5325 5.08294 12.8143 4.38863 14.2769 4.38863L16.1394 4.38786V1.23938C15.8173 1.19752 14.7117 1.10156 13.4249 1.10156C10.7378 1.10156 8.89824 2.74171 8.89824 5.75314V8.34882H5.85938V11.8689H8.89824V20.8986H12.5325Z"
-                                fill="white" />
-                        </svg></a>
-                    <a><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                            <path
-                                d="M21.3016 5.56041C21.0639 4.67682 20.3672 3.98031 19.4838 3.74238C17.8698 3.30078 11.4138 3.30078 11.4138 3.30078C11.4138 3.30078 4.95805 3.30078 3.34408 3.72566C2.4776 3.96333 1.76398 4.67698 1.52631 5.56041C1.10156 7.17425 1.10156 10.5212 1.10156 10.5212C1.10156 10.5212 1.10156 13.885 1.52631 15.4819C1.7642 16.3654 2.46062 17.0619 3.34421 17.2998C4.97503 17.7416 11.4141 17.7416 11.4141 17.7416C11.4141 17.7416 17.8698 17.7416 19.4838 17.3167C20.3674 17.0789 21.0639 16.3824 21.3018 15.4989C21.7264 13.8849 21.7264 10.5382 21.7264 10.5382C21.7264 10.5382 21.7434 7.17422 21.3016 5.56041ZM9.35833 13.6132V7.42913L14.7268 10.5211L9.35833 13.6132Z"
-                                fill="white" />
-                        </svg></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path
+                            d="M12.5325 20.8986V11.8689H15.5622L16.0167 8.34882H12.5325V6.10177C12.5325 5.08294 12.8143 4.38863 14.2769 4.38863L16.1394 4.38786V1.23938C15.8173 1.19752 14.7117 1.10156 13.4249 1.10156C10.7378 1.10156 8.89824 2.74171 8.89824 5.75314V8.34882H5.85938V11.8689H8.89824V20.8986H12.5325Z"
+                            fill="white" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path
+                            d="M21.3016 5.56041C21.0639 4.67682 20.3672 3.98031 19.4838 3.74238C17.8698 3.30078 11.4138 3.30078 11.4138 3.30078C11.4138 3.30078 4.95805 3.30078 3.34408 3.72566C2.4776 3.96333 1.76398 4.67698 1.52631 5.56041C1.10156 7.17425 1.10156 10.5212 1.10156 10.5212C1.10156 10.5212 1.10156 13.885 1.52631 15.4819C1.7642 16.3654 2.46062 17.0619 3.34421 17.2998C4.97503 17.7416 11.4141 17.7416 11.4141 17.7416C11.4141 17.7416 17.8698 17.7416 19.4838 17.3167C20.3674 17.0789 21.0639 16.3824 21.3018 15.4989C21.7264 13.8849 21.7264 10.5382 21.7264 10.5382C21.7264 10.5382 21.7434 7.17422 21.3016 5.56041ZM9.35833 13.6132V7.42913L14.7268 10.5211L9.35833 13.6132Z"
+                            fill="white" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path
+                            d="M17.3992 2.19922H4.59922C3.9627 2.19922 3.35225 2.45208 2.90216 2.90216C2.45208 3.35225 2.19922 3.9627 2.19922 4.59922L2.19922 17.3992C2.19922 18.0357 2.45208 18.6462 2.90216 19.0963C3.35225 19.5464 3.9627 19.7992 4.59922 19.7992H17.3992C18.0357 19.7992 18.6462 19.5464 19.0963 19.0963C19.5464 18.6462 19.7992 18.0357 19.7992 17.3992V4.59922C19.7992 3.9627 19.5464 3.35225 19.0963 2.90216C18.6462 2.45208 18.0357 2.19922 17.3992 2.19922ZM8.19922 16.1272C8.19935 16.176 8.18985 16.2244 8.17127 16.2695C8.15268 16.3146 8.12537 16.3556 8.09091 16.3902C8.05645 16.4248 8.0155 16.4522 7.97043 16.4709C7.92535 16.4896 7.87702 16.4992 7.82822 16.4992H6.24722C6.19833 16.4993 6.1499 16.4898 6.1047 16.4712C6.05951 16.4525 6.01845 16.4251 5.98388 16.3906C5.94931 16.356 5.92191 16.3149 5.90327 16.2697C5.88462 16.2245 5.87509 16.1761 5.87522 16.1272V9.49922C5.87522 9.40056 5.91441 9.30594 5.98417 9.23617C6.05394 9.16641 6.14856 9.12722 6.24722 9.12722H7.82822C7.92671 9.12748 8.02107 9.16679 8.09062 9.23653C8.16016 9.30626 8.19922 9.40073 8.19922 9.49922V16.1272ZM7.03722 8.49922C6.74055 8.49922 6.45054 8.41124 6.20386 8.24642C5.95719 8.0816 5.76493 7.84733 5.6514 7.57324C5.53787 7.29915 5.50816 6.99755 5.56604 6.70658C5.62392 6.41561 5.76678 6.14834 5.97656 5.93856C6.18634 5.72878 6.45361 5.58592 6.74458 5.52804C7.03555 5.47016 7.33715 5.49987 7.61124 5.6134C7.88533 5.72693 8.1196 5.91919 8.28442 6.16586C8.44924 6.41254 8.53722 6.70255 8.53722 6.99922C8.53722 7.39704 8.37918 7.77857 8.09788 8.05988C7.81657 8.34118 7.43504 8.49922 7.03722 8.49922ZM16.4632 16.1532C16.4634 16.1982 16.4546 16.2427 16.4375 16.2843C16.4203 16.3258 16.3951 16.3636 16.3633 16.3953C16.3316 16.4271 16.2938 16.4523 16.2523 16.4695C16.2107 16.4866 16.1662 16.4954 16.1212 16.4952H14.4212C14.3763 16.4954 14.3317 16.4866 14.2902 16.4695C14.2486 16.4523 14.2109 16.4271 14.1791 16.3953C14.1473 16.3636 14.1221 16.3258 14.105 16.2843C14.0878 16.2427 14.0791 16.1982 14.0792 16.1532V13.0482C14.0792 12.5842 14.2152 11.0162 12.8662 11.0162C11.8212 11.0162 11.6082 12.0892 11.5662 12.5712V16.1572C11.5662 16.2471 11.5309 16.3333 11.4678 16.3973C11.4048 16.4613 11.3191 16.4979 11.2292 16.4992H9.58722C9.54235 16.4992 9.49793 16.4904 9.45649 16.4732C9.41505 16.456 9.37742 16.4308 9.34574 16.399C9.31406 16.3672 9.28897 16.3295 9.27189 16.288C9.25481 16.2465 9.24609 16.2021 9.24622 16.1572V9.47022C9.24609 9.42535 9.25481 9.3809 9.27189 9.33942C9.28897 9.29793 9.31406 9.26022 9.34574 9.22845C9.37742 9.19668 9.41505 9.17147 9.45649 9.15427C9.49793 9.13707 9.54235 9.12822 9.58722 9.12822H11.2292C11.3199 9.12822 11.4069 9.16425 11.471 9.22839C11.5352 9.29253 11.5712 9.37951 11.5712 9.47022V10.0482C11.9592 9.46522 12.5342 9.01722 13.7612 9.01722C16.4792 9.01722 16.4612 11.5552 16.4612 12.9492L16.4632 16.1532Z"
+                            fill="white" />
+                    </svg>
                 </div>
             </div>
         </div>
         <div class="footer-bottom row-ct justify-between">
-            <span class="regular-12 pb-3">2024 | Bản quyền thuộc về Ngân hàng Nông nghiệp và Phát triển Nông
-                thôn Việt Nam</span>
+            <span class="regular-12 pb-3">2024 | Bản quyền thuộc về Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt
+                Nam</span>
             <span class="regular-12 pb-3">Hội sở: Số 2 Láng Hạ, phường Thành Công, quận Ba Đình, Hà Nội</span>
         </div>
-    </div>
-</body>
-<script src="../assets/js/agri.js"></script>
+    </section>
     <script src="../assets/js/bundle.js"></script>
+    <script src="../assets/js/home.js"></script>
     <script src="../assets/js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="../assets/js/libs/jquery.min.js"></script>
+    <script src="../assets/js/libs/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/libs/aos.css" />
+    <script src="../assets/js/libs/aos.js"></script>
+    <script src="../assets/js/libs/gsap.min.js"></script>
+    <script src="../assets/js/navmenu.js" defer></script>
+    <script>
+        // ---------------------- Phần tính toán khoản vay ----------------------
+
+        // Hàm cập nhật màu nền slider
+        function adjustSliderThumb(sliderId, value) {
+            const slider = document.getElementById(sliderId);
+            const min = parseInt(slider.min, 10);
+            const max = parseInt(slider.max, 10);
+            const percentage = ((value - min) / (max - min)) * 100;
+
+            // Cập nhật màu nền của slider để phản ánh vị trí thumb
+            slider.style.background = `linear-gradient(to right, #aa1d40 ${percentage}%, #ddd ${percentage}%)`;
+        }
+
+        // Xử lý nhập liệu từ ô input của khoản vay
+        document.getElementById('loan-amount-input').addEventListener('input', function () {
+            let inputValue = parseInt(this.value, 10);
+            const slider = document.getElementById('loan-amount');
+
+            // Giới hạn giá trị trong khoảng min và max
+            const min = parseInt(slider.min, 10);
+            const max = parseInt(slider.max, 10);
+            if (isNaN(inputValue)) {
+                inputValue = min;
+            }
+            inputValue = Math.max(min, Math.min(inputValue, max));
+
+            // Cập nhật slider và màu nền
+            slider.value = inputValue;
+            this.value = inputValue;
+            adjustSliderThumb('loan-amount', inputValue);
+        });
+
+        // Xử lý khi thay đổi slider khoản vay
+        document.getElementById('loan-amount').addEventListener('input', function () {
+            const sliderValue = parseInt(this.value, 10);
+            document.getElementById('loan-amount-input').value = sliderValue;
+            adjustSliderThumb('loan-amount', sliderValue);
+        });
+
+        // Xử lý nhập liệu từ ô input của thời gian vay
+        document.getElementById('loan-duration-display').addEventListener('input', function () {
+            let inputValue = parseInt(this.value, 10);
+            const slider = document.getElementById('loan-duration');
+
+            // Giới hạn giá trị trong khoảng min và max
+            const min = parseInt(slider.min, 10);
+            const max = parseInt(slider.max, 10);
+            if (isNaN(inputValue)) {
+                inputValue = min;
+            }
+            inputValue = Math.max(min, Math.min(inputValue, max));
+
+            // Cập nhật slider và màu nền
+            slider.value = inputValue;
+            this.value = inputValue;
+            adjustSliderThumb('loan-duration', inputValue);
+        });
+
+        // Xử lý khi thay đổi slider thời gian vay
+        document.getElementById('loan-duration').addEventListener('input', function () {
+            const sliderValue = parseInt(this.value, 10);
+            document.getElementById('loan-duration-display').value = sliderValue;
+            adjustSliderThumb('loan-duration', sliderValue);
+        });
+
+        // Khi tải trang, cập nhật màu nền cho cả hai thanh slider
+        window.onload = function () {
+            adjustSliderThumb('loan-amount', parseInt(document.getElementById('loan-amount').value, 10));
+            adjustSliderThumb('loan-duration', parseInt(document.getElementById('loan-duration').value, 10));
+        };
+
+        // ---------------------- Phần tính toán khoản vay ----------------------
+        document.getElementById('calculate-button').addEventListener('click', function () {
+            // Lấy giá trị từ các trường nhập liệu
+            const loanAmount = parseInt(document.getElementById('loan-amount').value, 10);
+            const duration = parseInt(document.getElementById('loan-duration').value, 10);
+            const interestRate = parseFloat(document.getElementById('interest-rate').value) / 100;
+            const method = document.querySelector('input[name="method"]:checked').value;
+            const startDate = new Date(document.getElementById('start-date').value);
+
+            // Kiểm tra dữ liệu nhập
+            if (isNaN(loanAmount) || isNaN(duration) || isNaN(interestRate) || !startDate) {
+                alert('Vui lòng kiểm tra và nhập đầy đủ thông tin chính xác!');
+                return;
+            }
+
+            let totalPayment = 0; // Tổng số tiền gốc và lãi phải trả
+            let monthlyPayment = 0; // Số tiền trả hàng tháng
+            const monthlyInterestRate = interestRate / 12; // Lãi suất hàng tháng
+
+            if (method === "reducing") {
+                // Tính toán trả trên dư nợ giảm dần
+                let remainingPrincipal = loanAmount;
+                for (let i = 0; i < duration; i++) {
+                    const interest = remainingPrincipal * monthlyInterestRate; // Tiền lãi tháng
+                    const principal = loanAmount / duration; // Tiền gốc mỗi tháng
+                    const payment = interest + principal; // Tổng tiền trả hàng tháng
+                    totalPayment += payment; // Cộng dồn tổng tiền
+                    remainingPrincipal -= principal; // Giảm số dư nợ gốc
+                }
+                monthlyPayment = Math.round((loanAmount / duration) + (loanAmount * monthlyInterestRate)); // Lấy số tiền tháng đầu tiên
+            } else if (method === "equal") {
+                // Tính toán trả trên dư nợ gốc
+                monthlyPayment = Math.round((loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -duration))); // Công thức trả đều
+                totalPayment = monthlyPayment * duration; // Tổng tiền
+            }
+
+            // Tính toán ngày trả nợ cuối cùng
+            const endDate = new Date(startDate);
+            endDate.setMonth(endDate.getMonth() + duration);
+
+            // Hiển thị kết quả
+            document.getElementById('total-payment').innerText = totalPayment.toLocaleString() + ' VNĐ';
+            document.getElementById('monthly-payment').innerText = monthlyPayment.toLocaleString() + ' VNĐ';
+            document.getElementById('end-payment-date').innerText = endDate.toLocaleDateString('vi-VN');
+        });
+
+
+        //-------------------phần chuyển tab product-detail------------------------------
+        // Lấy tất cả các nút tab và nội dung tab
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content-info');
+
+        // Hàm ẩn tất cả nội dung tab
+        function hideAllTabs() {
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+                content.hidden = true; // Ẩn nội dung
+            });
+        }
+
+        // Hàm xóa trạng thái active khỏi tất cả các nút
+        function deactivateAllButtons() {
+            tabButtons.forEach(button => button.classList.remove('active'));
+        }
+
+        // Lắng nghe sự kiện click trên mỗi nút tab
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Ẩn tất cả nội dung và nút không cần thiết
+                hideAllTabs();
+                deactivateAllButtons();
+
+                // Kích hoạt nút và hiển thị tab tương ứng
+                button.classList.add('active');
+                const tabId = button.getAttribute('data-tab');
+                const activeTabContent = document.getElementById(tabId);
+                if (activeTabContent) {
+                    activeTabContent.hidden = false; // Hiển thị nội dung
+                    activeTabContent.classList.add('active');
+                }
+            });
+        });
+
+        // Khởi tạo trạng thái hiển thị tab đầu tiên
+        window.addEventListener('DOMContentLoaded', () => {
+            const defaultButton = document.querySelector('.tab-button.active');
+            if (defaultButton) {
+                const defaultTabId = defaultButton.getAttribute('data-tab');
+                const defaultContent = document.getElementById(defaultTabId);
+
+                if (defaultContent) {
+                    defaultContent.hidden = false; // Hiển thị tab đầu tiên
+                    defaultContent.classList.add('active');
+                }
+            } else {
+                hideAllTabs(); // Nếu không có nút active mặc định, ẩn tất cả tab
+            }
+        });
+
+
+        // Lấy các phần tử liên quan
+        const selectButton = document.getElementById('tab-select');
+        const tabOptions = document.querySelectorAll('.tab-option-info');
+
+        // Xử lý khi chọn một tùy chọn từ menu
+        tabOptions.forEach(option => {
+            option.addEventListener('click', () => {
+
+                // Đổi nội dung nút select thành tên tab đã chọn
+                selectButton.textContent = option.textContent;
+
+                // Kích hoạt tab tương ứng
+                const tabId = option.getAttribute('data-tab');
+                const activeTabButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+
+                if (activeTabButton) {
+                    activeTabButton.click(); // Kích hoạt tab thông qua JS
+                }
+
+            });
+        });
+    </script>
+</body>
+
 </html>
