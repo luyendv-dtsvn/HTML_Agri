@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../assets/css/home-user.css" />
   <link rel="stylesheet" href="../assets/css/common.css" />
   <link rel="stylesheet" href="../assets/css/navmenu.css" />
-  <link rel="stylesheet" href="../assets/css/disclosure.css" />
+  <link rel="stylesheet" href="../assets/css/tai-san-ban-dau-gia.css" />
   <link rel="stylesheet" href="../assets/css/home-tab-heading-slim.css" />
 </head>
 <style>
@@ -827,10 +827,10 @@
             d="M6.22076 3.68784L2.66066 0.127804C2.57832 0.045398 2.4684 0 2.3512 0C2.23399 0 2.12408 0.045398 2.04174 0.127804L1.77956 0.389915C1.60896 0.560711 1.60896 0.838302 1.77956 1.00884L4.76906 3.99834L1.77624 6.99116C1.6939 7.07357 1.64844 7.18342 1.64844 7.30056C1.64844 7.41782 1.6939 7.52768 1.77624 7.61015L2.03842 7.8722C2.12082 7.9546 2.23068 8 2.34788 8C2.46508 8 2.575 7.9546 2.65734 7.8722L6.22076 4.30891C6.30329 4.22624 6.34863 4.11587 6.34837 3.99854C6.34863 3.88075 6.30329 3.77044 6.22076 3.68784Z"
             fill="white" />
         </svg>
-        <a href="#" class="color-hover-w"><span class="regular-13 color-white-1">Công bố thông tin</span></a>
+        <a href="#" class="color-hover-w"><span class="regular-13 color-white-1">Tài sản bán đấu giá</span></a>
       </div>
       <div class="disclosure-title-content">
-        <span class="heading-h5 color-white">Công bố thông tin</span>
+        <span class="heading-h5 color-white">Tài sản bán đấu giá</span>
         <span class="regular-16 color-white-1">Cập nhật liên tục các thông tin quan trọng của Agribank</span>
       </div>
     </div>
@@ -843,9 +843,9 @@
             <div class="form-control-wrap">
               <select class="form-select select2-hidden-accessible" data-select2-id="1" tabindex="-1"
                 aria-hidden="true">
-                <option value="city" disabled selected hidden>Thành phố</option>
-                <option value="hanoi">Tp Hà Nội</option>
-                <option value="hcmc">Tp Hồ Chí Minh</option>
+                <option class="body-14" value="city" disabled selected hidden>Thành phố</option>
+                <option class="body-14" value="hanoi">Tp Hà Nội</option>
+                <option class="body-14" value="hcmc">Tp Hồ Chí Minh</option>
               </select>
             </div>
           </div>
@@ -854,8 +854,8 @@
               <select class="form-select select2-hidden-accessible" data-select2-id="2" tabindex="-1"
                 aria-hidden="true">
                 <option value="city" disabled selected hidden>Quận, huyện</option>
-                <option value="hanoi">Tp Hà Nội</option>
-                <option value="hcmc">Tp Hồ Chí Minh</option>
+                <option value="hanoi">Hà Đông</option>
+                <option value="hcmc">Đống Đa</option>
               </select>
             </div>
           </div>
@@ -864,8 +864,8 @@
               <select class="form-select select2-hidden-accessible" data-select2-id="3" tabindex="-1"
                 aria-hidden="true">
                 <option value="city" disabled selected hidden>Đã bán</option>
-                <option value="hanoi">Chương Mỹ</option>
-                <option value="hcmc">Tp Hồ Chí Minh</option>
+                <option value="hanoi">Đã bán</option>
+                <option value="hcmc">Chưa bán</option>
               </select>
             </div>
           </div>
@@ -886,11 +886,10 @@
   </div>
   <section class="col-12 disclosure-title-main-content" style="margin-bottom: 107px;">
     <div class="content-betwent active" data-content="tab1">
-      
-      <div class="row-ct gap22">
-        <div class="col-md-6 m-auto row-ct">
-          <div class="col-md-10 row-ct">
-            <a href="" class="col-md-1">
+      <div class="row-ct gap22 justify-center">
+        <div class=" col-12 col-lg-6 item-disclosure p-0 row-ct">
+          <div class="row-ct w-100" style="justify-content: space-around;">
+            <a href="" class="col-1 pt-3 p-0 p-md-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M12 12H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
                 <path d="M12 16H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
@@ -901,17 +900,26 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-md-11">Thông báo thay đổi Chủ tịch Hội đồng thành viên và thành viên HĐTV phụ trách điều
+            <span class="col-10 w-content">Thông báo thay đổi Chủ tịch Hội đồng thành viên và thành viên HĐTV phụ trách điều
               hành hoạt động của HĐTV</span>
+            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" />
+                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
-          
         </div>
       </div>
-      <div class="line-h col-md-6 m-auto"></div>
-      <div class="row-ct gap22">
-        <div class="col-md-6 m-auto row-ct">
-          <div class="col-md-10 row-ct">
-            <a href="" class="col-md-1">
+      <div class="line-h col-12 col-lg-6 m-auto"></div>
+      <div class="row-ct gap22 justify-center">
+        <div class=" col-12 col-lg-6 item-disclosure p-0 row-ct">
+          <div class="row-ct w-100" style="justify-content: space-around;">
+            <a href="" class="col-1 pt-3 p-0 p-md-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M12 12H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
                 <path d="M12 16H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
@@ -922,16 +930,25 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-md-11">Thông báo thay đổi Thành viên Ban Kiểm soát và Phó Tổng Giám đốc</span>
+            <span class="col-10 w-content">Thông báo thay đổi Thành viên Ban Kiểm soát và Phó Tổng Giám đốc</span>
+            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" />
+                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
-          
         </div>
       </div>
-      <div class="line-h col-md-6 m-auto"></div>
-      <div class="row-ct gap22">
-        <div class="col-md-6 m-auto row-ct">
-          <div class="col-md-10 row-ct">
-            <a href="" class="col-md-1">
+      <div class="line-h col-12 col-lg-6 m-auto"></div>
+      <div class="row-ct gap22 justify-center">
+        <div class=" col-12 col-lg-6 item-disclosure p-0 row-ct">
+          <div class="row-ct w-100" style="justify-content: space-around;">
+            <a href="" class="col-1 pt-3 p-0 p-md-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M12 12H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
                 <path d="M12 16H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
@@ -942,17 +959,26 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-md-11">Sửa đổi nội dung Giấy phép thành lập và hoạt động của Ngân hàng Nông nghiệp và Phát
+            <span class="col-10 w-content">Sửa đổi nội dung Giấy phép thành lập và hoạt động của Ngân hàng Nông nghiệp và Phát
               triển nông thôn Việt Nam</span>
+            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" />
+                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
-          
         </div>
       </div>
-      <div class="line-h col-md-6 m-auto"></div>
-      <div class="row-ct gap22">
-        <div class="col-md-6 m-auto row-ct">
-          <div class="col-md-10 row-ct">
-            <a href="" class="col-md-1">
+      <div class="line-h col-12 col-lg-6 m-auto"></div>
+      <div class="row-ct gap22 justify-center">
+        <div class=" col-12 col-lg-6 item-disclosure p-0 row-ct">
+          <div class="row-ct w-100" style="justify-content: space-around;">
+            <a href="" class="col-1 pt-3 p-0 p-md-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M12 12H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
                 <path d="M12 16H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
@@ -963,16 +989,25 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-md-11">Thông báo thay đổi Phó Tổng Giám đốc</span>
+            <span class="col-10 w-content">Thông báo thay đổi Phó Tổng Giám đốc</span>
+            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" />
+                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
-          
         </div>
       </div>
-      <div class="line-h col-md-6 m-auto"></div>
-      <div class="row-ct gap22">
-        <div class="col-md-6 m-auto row-ct">
-          <div class="col-md-10 row-ct">
-            <a href="" class="col-md-1">
+      <div class="line-h col-12 col-lg-6 m-auto"></div>
+      <div class="row-ct gap22 justify-center">
+        <div class=" col-12 col-lg-6 item-disclosure p-0 row-ct">
+          <div class="row-ct w-100" style="justify-content: space-around;">
+            <a href="" class="col-1 pt-3 p-0 p-md-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M12 12H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
                 <path d="M12 16H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
@@ -983,15 +1018,25 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-md-11">Công bố thông tin tỷ lệ an toàn vốn kỳ 31/12/2023</span>
+            <span class="col-10 w-content">Công bố thông tin tỷ lệ an toàn vốn kỳ 31/12/2023</span>
+            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" />
+                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
-          
         </div>
       </div>
-      <div class="row-ct gap22">
-        <div class="col-md-6 m-auto row-ct">
-          <div class="col-md-10 row-ct">
-            <a href="" class="col-md-1">
+      <div class="line-h col-12 col-lg-6 m-auto"></div>
+      <div class="row-ct gap22 justify-center">
+        <div class=" col-12 col-lg-6 item-disclosure p-0 row-ct">
+          <div class="row-ct w-100" style="justify-content: space-around;">
+            <a href="" class="col-1 pt-3 p-0 p-md-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M12 12H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
                 <path d="M12 16H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
@@ -1002,15 +1047,25 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-md-11">Thông báo thay đổi Phó Tổng Giám đốc</span>
+            <span class="col-10 w-content">Thông báo thay đổi Phó Tổng Giám đốc</span>
+            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" />
+                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
-          
         </div>
       </div>
-      <div class="row-ct gap22">
-        <div class="col-md-6 m-auto row-ct">
-          <div class="col-md-10 row-ct">
-            <a href="" class="col-md-1">
+      <div class="line-h col-12 col-lg-6 m-auto"></div>
+      <div class="row-ct gap22 justify-center">
+        <div class=" col-12 col-lg-6 item-disclosure p-0 row-ct">
+          <div class="row-ct w-100" style="justify-content: space-around;">
+            <a href="" class="col-1 pt-3 p-0 p-md-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M12 12H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
                 <path d="M12 16H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
@@ -1021,15 +1076,25 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-md-11">Công bố thông tin tỷ lệ an toàn vốn kỳ 31/12/2023</span>
+            <span class="col-10 w-content">Công bố thông tin tỷ lệ an toàn vốn kỳ 31/12/2023</span>
+            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" />
+                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
-          
         </div>
       </div>
-      <div class="row-ct gap22">
-        <div class="col-md-6 m-auto row-ct">
-          <div class="col-md-10 row-ct">
-            <a href="" class="col-md-1">
+      <div class="line-h col-12 col-lg-6 m-auto"></div>
+      <div class="row-ct gap22 justify-center">
+        <div class=" col-12 col-lg-6 item-disclosure p-0 row-ct">
+          <div class="row-ct w-100" style="justify-content: space-around;">
+            <a href="" class="col-1 pt-3 p-0 p-md-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M12 12H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
                 <path d="M12 16H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
@@ -1040,15 +1105,25 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-md-11">Giấy ủy quyền công bố thông tin</span>
+            <span class="col-10 w-content">Giấy ủy quyền công bố thông tin</span>
+            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" />
+                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
-          
         </div>
       </div>
-      <div class="row-ct gap22">
-        <div class="col-md-6 m-auto row-ct">
-          <div class="col-md-10 row-ct">
-            <a href="" class="col-md-1">
+      <div class="line-h col-12 col-lg-6 m-auto"></div>
+      <div class="row-ct gap22 justify-center">
+        <div class=" col-12 col-lg-6 item-disclosure p-0 row-ct">
+          <div class="row-ct w-100" style="justify-content: space-around;">
+            <a href="" class="col-1 pt-3 p-0 p-md-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M12 12H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
                 <path d="M12 16H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
@@ -1059,16 +1134,26 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-md-11">Báo cáo thực trạng quản trị và cơ cấu tổ chức của Agribank 6 tháng đầu năm
+            <span class="col-10 w-content">Báo cáo thực trạng quản trị và cơ cấu tổ chức của Agribank 6 tháng đầu năm
               2024</span>
+            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" />
+                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
-          
         </div>
       </div>
-      <div class="row-ct gap22">
-        <div class="col-md-6 m-auto row-ct">
-          <div class="col-md-10 row-ct">
-            <a href="" class="col-md-1">
+      <div class="line-h col-12 col-lg-6 m-auto"></div>
+      <div class="row-ct gap22 justify-center">
+        <div class=" col-12 col-lg-6 item-disclosure p-0 row-ct">
+          <div class="row-ct w-100" style="justify-content: space-around;">
+            <a href="" class="col-1 pt-3 p-0 p-md-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M12 12H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
                 <path d="M12 16H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
@@ -1079,16 +1164,25 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-md-11">Báo cáo thực trạng quản trị và cơ cấu tổ chức doanh nghiệp năm 2023</span>
+            <span class="col-10 w-content">Báo cáo thực trạng quản trị và cơ cấu tổ chức doanh nghiệp năm 2023</span>
+            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" />
+                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
-          
         </div>
       </div>
-      <div class="line-h col-md-6 m-auto"></div>
-      <div class="row-ct gap22">
-        <div class="col-md-6 m-auto row-ct">
-          <div class="col-md-10 row-ct">
-            <a href="" class="col-md-1">
+      <div class="line-h col-12 col-lg-6 m-auto"></div>
+      <div class="row-ct gap22 justify-center">
+        <div class=" col-12 col-lg-6 item-disclosure p-0 row-ct">
+          <div class="row-ct w-100" style="justify-content: space-around;">
+            <a href="" class="col-1 pt-3 p-0 p-md-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M12 12H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
                 <path d="M12 16H20" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
@@ -1099,12 +1193,21 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-md-11">Thông báo thay đổi Thành viên Hội đồng thành viên</span>
+            <span class="col-10 w-content">Thông báo thay đổi Thành viên Hội đồng thành viên</span>
+            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" />
+                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
+                  stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
-          
         </div>
       </div>
-      <div class="line-h col-md-6 m-auto"></div>
+      <div class="line-h col-12 col-lg-6 m-auto"></div>
     </div>
     <section class="tab">
       <div class="turn-page">
