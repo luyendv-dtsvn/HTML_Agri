@@ -14,9 +14,11 @@
     --red-1: #af0b35;
     --dark-3: #606060;
     --dark-1: #080808;
+    --dark-2: rgb(57, 57, 57);
     --red-21: #aa1d40;
     --red-3: #c33c5e;
     --Text-NomalText-2: #54433B;
+    --color-49494949: #49494949;
     /* Màu chính */
 }
 
@@ -1095,6 +1097,9 @@ button {
 }
 
 /* color */
+.color-subtite {
+    color: var(--color-49494949);
+}
 .color-white {
     color: rgb(255, 255, 255);
 }
@@ -1133,7 +1138,7 @@ button {
 }
 
 .color-dark-2 {
-    color: rgb(57, 57, 57);
+    color: var(--dark-2)
 }
 
 .color-dark-3 {
@@ -3446,6 +3451,11 @@ background-image: url(../images/banner-interestRate.png);
     .network {
         padding: 24px;
     }
+
+    .d-block-768 {
+        display: block !important;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -3552,7 +3562,7 @@ background-image: url(../images/banner-interestRate.png);
     }
 
     .d-none-576 {
-        display: none;
+        display: none !important;
     }
 
     .home-business .home-business-header-pay .about-subtitle {
@@ -3913,3 +3923,10 @@ background-image: url(../images/banner-interestRate.png);
     }
 }
 /* end atm-google-map */
+
+
+@media (max-width: 992px) {
+    .history .main-info-s .main-info-content .main-info-title-content .main-info-title-content-text span br {
+        display: none;
+    }
+}
