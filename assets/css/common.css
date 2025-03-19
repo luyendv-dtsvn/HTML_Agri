@@ -14,9 +14,11 @@
     --red-1: #af0b35;
     --dark-3: #606060;
     --dark-1: #080808;
+    --dark-2: rgb(57, 57, 57);
     --red-21: #aa1d40;
     --red-3: #c33c5e;
-    --Text-NomalText-2: #54433b;
+    --Text-NomalText-2: #54433B;
+    --color-49494949: #49494949;
     /* Màu chính */
 }
 
@@ -1104,6 +1106,9 @@ button {
 }
 
 /* color */
+.color-subtite {
+    color: var(--color-49494949);
+}
 .color-white {
     color: rgb(255, 255, 255);
 }
@@ -1142,7 +1147,7 @@ button {
 }
 
 .color-dark-2 {
-    color: rgb(57, 57, 57);
+    color: var(--dark-2)
 }
 
 .color-dark-3 {
@@ -2620,10 +2625,22 @@ input:focus {
     height: 116%;
     width: 116%;
 }
-
-.content-top-menu img {
+.bld .nav-link{
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    color:#5a5a5a ;
+}
+.bld .nav-item .active {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.bld .nav-link:hover{
+-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.content-top-menu img {
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
     transition: stroke 0.3s ease;
     margin-bottom: 10.5%;
 }
@@ -2690,8 +2707,8 @@ a.color-hover-b:hover,
 }
 .nav-link:hover,
 .content-top-menu:hover img {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+    /* -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); */
 }
 .agribank-culture {
     background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
@@ -2707,7 +2724,42 @@ a.color-hover-b:hover,
     background: #9e2b47;
     filter: blur(47px);
 }
+.bld .nav-tabs .nav-link {
+    padding: 0.4rem 1.7rem;
+    /* color: #5a5a5a; */
+}
+.bld .content-betwent img{
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước gốc */
+    max-height: 100%;
+}
+.content-top-menu img {
+    width: 40px;  /* Điều chỉnh kích thước theo nhu cầu */
+    height: 40px; /* Đảm bảo tỉ lệ đồng nhất */
+    object-fit: contain; /* Giữ nguyên tỷ lệ ảnh, không bị méo */
+}
+.bld .agribank-culture-background {
+    background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bld .Agribank-related-info-content{
+    gap: 12px;
+}
 
+@media (max-width: 375px){
+    .bld .nav-tabs .nav-link{
+        padding: 0.4rem 0 ;
+    }
+}
+@media (max-width: 992px){
+    .bld .nav-tabs .nav-link{
+        padding: 0.4rem 0 ;
+    }
+    
+}
 /* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
 /* 
 
@@ -2744,13 +2796,33 @@ a.color-hover-b:hover,
 .product-list .nav-tabs .nav-link {
     color: #000;
 }
+.product-list .tab-content{
+    margin-top: 0;
+}
+/* .product-list .loan-card-title span{
+    width: 40%;
+} */
 
+
+@media (max-width: 1366px) {
+    .loan-card-content{
+        gap: 0;
+        padding: 40px 20px 40px 56px;
+    }
+}
 @media (min-width: 1200px) {
     .product-list .nav-tabs .nav-item {
         padding-right: 00;
     }
 }
 
+@media (max-width: 1024px) {
+    .loan-cards .tab-pane{
+        display: flex;
+    flex-direction: column;
+    gap: 16px;
+    }
+}
 @media (min-width: 992px) {
     .product-list .nav-tabs .nav-item {
         padding-right: 00;
@@ -2909,6 +2981,12 @@ a.color-hover-b:hover,
     border-radius: 4px;
     border: none;
 }
+@media (max-width:992px) {
+    .no-pabding{
+        padding-right: 0;
+    }
+}
+
 
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
 .exchange-rate .personal-loan-section {
@@ -3471,6 +3549,11 @@ a.color-hover-b:hover,
     .network {
         padding: 24px;
     }
+
+    .d-block-768 {
+        display: block !important;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -3577,7 +3660,7 @@ a.color-hover-b:hover,
     }
 
     .d-none-576 {
-        display: none;
+        display: none !important;
     }
 
     .home-business .home-business-header-pay .about-subtitle {
@@ -3969,3 +4052,10 @@ a.color-hover-b:hover,
     }
 }
 /* end atm-google-map */
+
+
+@media (max-width: 992px) {
+    .history .main-info-s .main-info-content .main-info-title-content .main-info-title-content-text span br {
+        display: none;
+    }
+}
