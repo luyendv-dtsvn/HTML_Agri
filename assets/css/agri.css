@@ -1713,12 +1713,17 @@ input[type="range"]::-webkit-slider-thumb {
     padding: 0px 5%;
   }
   
+.timeline-history-section-content {
+    border-top: 1px solid #F6F6F6;
+    border-bottom: 1px solid #F6F6F6;
+    display: flex;
+}
+
   .timeline-history-container {
     display: flex;
     width: 100%;
-    border-top: 1px solid #F6F6F6;
-    border-bottom: 1px solid #F6F6F6;
     padding: 45px 0px;
+    padding-top: 76px;
   }
 
   .timeline-history-years-mobile {
@@ -1758,6 +1763,7 @@ input[type="range"]::-webkit-slider-thumb {
     gap: 8px;
     border-radius: 100px;
     background: var(--red-3, #C33C5E);
+    border: none;
 }
 
 .history-scroll-button:disabled {
@@ -1810,9 +1816,13 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   .history-year-content-card-text {
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
     gap: 7%;
     padding-top: 30px;
+    justify-content: space-between;
+    padding-right: 5%;
+
   }
 
   .history-year-content-card-text:first-child {
@@ -3174,5 +3184,18 @@ input[type="range"]::-webkit-slider-thumb {
         background: linear-gradient(180deg, #AF0B35 14.84%, rgba(175, 11, 53, 0.00) 100%);
         padding: 36px 5%;
     }
-}
+
+    .history .Agribank-related-info .Agribank-related-card .Agribank-related-card-overlay span br {
+        display: none;
+    }
+
+    .history .timeline-history-section .timeline-history-title span br {
+        display: none;
+    }
+
+    .history-year-content-card-text {
+        padding-right: 0;
+    }
+}   
+
 

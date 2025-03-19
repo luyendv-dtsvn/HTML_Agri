@@ -383,7 +383,6 @@
     letter-spacing: 0.15px;
 }
 
-
 .btn-information {
     display: inline-flex;
     height: 44px;
@@ -400,8 +399,8 @@
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
 }
-.recuitment-block:hover>.btn-information {
-    opacity: 1!important;
+.recuitment-block:hover > .btn-information {
+    opacity: 1 !important;
 }
 
 .title-buttom {
@@ -412,6 +411,12 @@
     font-weight: 400;
     line-height: 140%; /* 19.6px */
     letter-spacing: 0.28px;
+}
+.disclosure .item-disclosure{
+    min-width: 48%;
+}
+.item-disclosure span.col-10{
+    width:50%
 }
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
@@ -504,5 +509,11 @@
     }
     .mobi {
         display: flex;
+    }
+    .w-content {
+        max-width: 80% !important;
+    }
+    .disclosure .icon-l {
+        margin-top: 30px !important;
     }
 }
