@@ -2795,12 +2795,26 @@ a.color-hover-b:hover,
     width: 40%;
 } */
 
+
+@media (max-width: 1366px) {
+    .loan-card-content{
+        gap: 0;
+        padding: 40px 20px 40px 56px;
+    }
+}
 @media (min-width: 1200px) {
     .product-list .nav-tabs .nav-item {
         padding-right: 00;
     }
 }
 
+@media (max-width: 1024px) {
+    .loan-cards .tab-pane{
+        display: flex;
+    flex-direction: column;
+    gap: 16px;
+    }
+}
 @media (min-width: 992px) {
     .product-list .nav-tabs .nav-item {
         padding-right: 00;
