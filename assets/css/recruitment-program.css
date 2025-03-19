@@ -379,6 +379,8 @@ margin-top: 58px;
 .recruitment-program .nk-tb-list .table-l,
 .nk-tb-list .tb-amount-sm {
     font-size: 1.125rem;
+    max-width: 413px;
+    display: block;
 }
 .recruitment-program .nk-tb-list .tb-sub,
 .nk-tb-list .tb-amount-sm {
