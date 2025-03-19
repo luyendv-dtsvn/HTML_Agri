@@ -2609,10 +2609,22 @@ input:focus {
     height: 116%;
     width: 116%;
 }
-
-.content-top-menu img {
+.bld .nav-link{
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    color:#5a5a5a ;
+}
+.bld .nav-item .active {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.bld .nav-link:hover{
+-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.content-top-menu img {
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
     transition: stroke 0.3s ease;
     margin-bottom: 10.5%;
 }
@@ -2680,8 +2692,8 @@ a.color-hover-b:hover,
 }
 .nav-link:hover,
 .content-top-menu:hover img {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+    /* -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); */
 }
 .agribank-culture {
     background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
@@ -2697,7 +2709,42 @@ a.color-hover-b:hover,
     background: #9E2B47;
     filter: blur(47px);
 }
+.bld .nav-tabs .nav-link {
+    padding: 0.4rem 1.7rem;
+    /* color: #5a5a5a; */
+}
+.bld .content-betwent img{
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước gốc */
+    max-height: 100%;
+}
+.content-top-menu img {
+    width: 40px;  /* Điều chỉnh kích thước theo nhu cầu */
+    height: 40px; /* Đảm bảo tỉ lệ đồng nhất */
+    object-fit: contain; /* Giữ nguyên tỷ lệ ảnh, không bị méo */
+}
+.bld .agribank-culture-background {
+    background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bld .Agribank-related-info-content{
+    gap: 12px;
+}
 
+@media (max-width: 375px){
+    .bld .nav-tabs .nav-link{
+        padding: 0.4rem 0 ;
+    }
+}
+@media (max-width: 992px){
+    .bld .nav-tabs .nav-link{
+        padding: 0.4rem 0 ;
+    }
+    
+}
 /* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
 /* 
 
@@ -2736,6 +2783,12 @@ a.color-hover-b:hover,
 .product-list .nav-tabs .nav-link{
     color: #000;
 }
+.product-list .tab-content{
+    margin-top: 0;
+}
+/* .product-list .loan-card-title span{
+    width: 40%;
+} */
 
 @media (min-width: 1200px) {
     .product-list .nav-tabs .nav-item {
@@ -2890,7 +2943,6 @@ padding-top: 0;
     padding: 4px 8px;
     border: none;
     border-radius: 4px;
-
 }
 .stage button:hover{
     background:#EDF1F0 ;
@@ -2901,6 +2953,12 @@ padding-top: 0;
     border-radius: 4px;
     border: none;
 }
+@media (max-width:992px) {
+    .no-pabding{
+        padding-right: 0;
+    }
+}
+
 
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
 .exchange-rate .personal-loan-section{
