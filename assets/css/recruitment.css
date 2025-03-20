@@ -363,6 +363,7 @@
         rgba(0, 0, 0, 0) 100%
     );
     position: absolute;
+    border-radius: 6px;
 }
 .title-pic-content {
     color: #fff;

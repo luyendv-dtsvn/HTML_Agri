@@ -268,6 +268,15 @@ button {
     letter-spacing: 0.48px;
     font-weight: 400;
 }
+.subtitle-h-table-12 {
+    font-family: "BT Grotesk Regular";
+    font-size: 0.75rem;
+    /* 12px to rem */
+    line-height: 110.00000238418579%;
+    letter-spacing: 0.48px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
 .subtitle-14 {
     font-family: "BT Grotesk Medium";
@@ -1154,21 +1163,23 @@ button {
 }
 
 .color-Linear-2 {
-    color: linear-gradient(270deg,
-            rgba(175, 11, 53, 1) 0%,
-            rgba(201, 50, 89, 1) 100%);
+    color: linear-gradient(
+        270deg,
+        rgba(175, 11, 53, 1) 0%,
+        rgba(201, 50, 89, 1) 100%
+    );
 }
 
 .color-Text-NomalText-2 {
-    color: #54433B;
+    color: #54433b;
 }
 
 .color-Text-NomalText-3 {
-    color: #594B45;
+    color: #594b45;
 }
 
 .color-text-1 {
-    color: #28140C;
+    color: #28140c;
 }
 
 div {
@@ -2614,10 +2625,22 @@ input:focus {
     height: 116%;
     width: 116%;
 }
-
-.content-top-menu img {
+.bld .nav-link{
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    color:#5a5a5a ;
+}
+.bld .nav-item .active {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.bld .nav-link:hover{
+-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.content-top-menu img {
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
     transition: stroke 0.3s ease;
     margin-bottom: 10.5%;
 }
@@ -2679,14 +2702,13 @@ a.color-hover-b:hover,
     opacity: 1;
 }
 
-
 .tab-content {
     margin-top: 57px;
 }
 .nav-link:hover,
 .content-top-menu:hover img {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+    /* -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); */
 }
 .agribank-culture {
     background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
@@ -2699,10 +2721,45 @@ a.color-hover-b:hover,
     width: 43vw;
     height: 20vw;
     border-radius: 745.631px;
-    background: #9E2B47;
+    background: #9e2b47;
     filter: blur(47px);
 }
+.bld .nav-tabs .nav-link {
+    padding: 0.4rem 1.7rem;
+    /* color: #5a5a5a; */
+}
+.bld .content-betwent img{
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước gốc */
+    max-height: 100%;
+}
+.content-top-menu img {
+    width: 40px;  /* Điều chỉnh kích thước theo nhu cầu */
+    height: 40px; /* Đảm bảo tỉ lệ đồng nhất */
+    object-fit: contain; /* Giữ nguyên tỷ lệ ảnh, không bị méo */
+}
+.bld .agribank-culture-background {
+    background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bld .Agribank-related-info-content{
+    gap: 12px;
+}
 
+@media (max-width: 375px){
+    .bld .nav-tabs .nav-link{
+        padding: 0.4rem 0 ;
+    }
+}
+@media (max-width: 992px){
+    .bld .nav-tabs .nav-link{
+        padding: 0.4rem 0 ;
+    }
+    
+}
 /* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
 /* 
 
@@ -2710,44 +2767,62 @@ a.color-hover-b:hover,
 
 */
 /* --------------------------------------------------- Page Product List ------------------------------------------ */
-.product-list .nav-tabs{
+.product-list .nav-tabs {
     border-bottom: none;
     gap: 8px;
 }
-.product-list .nav-item{
+.product-list .nav-item {
     background: rgba(0, 0, 0, 0.04);
     border-radius: 4px;
     text-align: center;
 }
-.product-list .nav-item:hover{
-    
+.product-list .nav-item:hover {
     outline: 2px solid rgba(0, 0, 0, 0.34);
 }
-.product-list .nav-item.active{
+.product-list .nav-item.active {
     outline: 2px solid rgba(0, 0, 0, 0.34);
 }
 
-
-.product-list .nav-tabs .nav-link:after{
+.product-list .nav-tabs .nav-link:after {
     border-radius: 4px;
 }
-.product-list .nav-tabs .nav-link.active:after{
+.product-list .nav-tabs .nav-link.active:after {
     opacity: 0;
 }
 
-.product-list .nav-link{
+.product-list .nav-link {
     margin: 0 1.75rem;
 }
-.product-list .nav-tabs .nav-link{
+.product-list .nav-tabs .nav-link {
     color: #000;
 }
+.product-list .tab-content{
+    margin-top: 0;
+}
+/* .product-list .loan-card-title span{
+    width: 40%;
+} */
 
+
+@media (max-width: 1366px) {
+    .loan-card-content{
+        gap: 0;
+        padding: 40px 20px 40px 56px;
+    }
+}
 @media (min-width: 1200px) {
     .product-list .nav-tabs .nav-item {
         padding-right: 00;
     }
 }
 
+@media (max-width: 1024px) {
+    .loan-cards .tab-pane{
+        display: flex;
+    flex-direction: column;
+    gap: 16px;
+    }
+}
 @media (min-width: 992px) {
     .product-list .nav-tabs .nav-item {
         padding-right: 00;
@@ -2764,90 +2839,89 @@ a.color-hover-b:hover,
 
 /* ---------------------------------------------------End Page Product List ------------------------------------------ */
 
-
 /* ---------------------------------------------------Page Calcuate Tool ------------------------------------------ */
 
-
-.calcuate .personal-loan-section{
-background-image: url(../images/image.png);
+.calcuate .personal-loan-section {
+    background-image: url(../images/image.png);
 }
 
-.calcuate .money-time-loan-calculator-input{
-    background:#F4F4F4;
+.calcuate .money-time-loan-calculator-input {
+    background: #f4f4f4;
 }
-.calcuate input[type="number"],.form-text-hint,
-.calcuate .input-slider-wrapper input[type="number"]{
-    background:#F4F4F4;
+.calcuate input[type="number"],
+.form-text-hint,
+.calcuate .input-slider-wrapper input[type="number"] {
+    background: #f4f4f4;
 }
-.calcuate .form-label{
+.calcuate .form-label {
     margin-bottom: 12px;
 }
-.calcuate .form-control{
-    border-radius:0px;
+.calcuate .form-control {
+    border-radius: 0px;
 }
-.calculate-utilities{
+.calculate-utilities {
     padding: 0 5%;
 }
-.calcuate .loan-result-content p{
+.calcuate .loan-result-content p {
     border-bottom: none;
 }
-.calcuate .tab-pane{
+.calcuate .tab-pane {
     padding: 110px 0;
 }
 .calcuate .loan-calculator-button,
 .calcuate .form-control,
-.calcuate .money-time-loan-calculator-input{
+.calcuate .money-time-loan-calculator-input {
     height: 3.563rem;
 }
-.calcuate .loan-calculator-button{ 
+.calcuate .loan-calculator-button {
     margin-top: 1.9rem;
 }
-.calcuate .overline-title{
+.calcuate .overline-title {
     margin-top: 1.5rem;
 }
-.input-rise{
+.input-rise {
     height: 2px !important;
 }
-.no-pabding{
+.no-pabding {
     padding-left: 0;
     /* padding-right: 0; */
 }
-.calcuate .loan-tool-tabs{
+.calcuate .loan-tool-tabs {
     background: #fff;
     border: none;
 }
 .calcuate .loan-result a {
-display: block;
+    display: block;
 }
-.calcuate .money-time-loan-calculator-group{
-    gap:0;
-}
-.calcuate .loan-calculator-radio-form{
+.calcuate .money-time-loan-calculator-group {
     gap: 0;
 }
-.calcuate .loan-calculator{
+.calcuate .loan-calculator-radio-form {
+    gap: 0;
+}
+.calcuate .loan-calculator {
     padding: 0;
 }
-.calcuate .loan-tool-tabs{
-padding-top: 0;
+.calcuate .loan-tool-tabs {
+    padding-top: 0;
 }
-.convert{
+.convert {
     display: flex;
     gap: 20px;
 }
 .icon-change img {
-    margin-top:120%;
+    margin-top: 120%;
 }
-.calcuate .money-time-loan-calculator-form{
+.calcuate .money-time-loan-calculator-form {
     width: 100%;
 }
-.amount-exchange{
+.amount-exchange {
     width: 100%;
 }
-.calcuate .loan-calculator h3{
+.calcuate .loan-calculator h3 {
     padding-bottom: 0;
 }
-.calcuate .currency-unit{
+.calcuate .currency-unit {
     display: flex;
 }
 .calcuate select {
@@ -2858,57 +2932,64 @@ padding-top: 0;
 }
 
 .exchange-rate {
-   
     color: #000;
 }
 
 .amount-vnd {
-   margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .red-text {
-    color: #C3002F; /* Màu đỏ */
+    color: #c3002f; /* Màu đỏ */
 }
 
 .amount-usd {
-    
     margin: 5px 0;
 }
 .update-time {
     color: #666;
 }
 .need-conversion,
-.receive{
+.receive {
     width: 45%;
 }
-.rate_conversion{
+.rate_conversion {
     display: flex;
     gap: 50px;
 }
-.change{width: 90%;}
-.chart{width: 100%;}
-.stage{
-    display: flex;
-        gap: 32px;
+.change {
+    width: 90%;
 }
-.stage button{
+.chart {
+    width: 100%;
+}
+.stage {
+    display: flex;
+    gap: 32px;
+}
+.stage button {
     padding: 4px 8px;
     border: none;
     border-radius: 4px;
-
 }
-.stage button:hover{
-    background:#EDF1F0 ;
+.stage button:hover {
+    background: #edf1f0;
     border-radius: 4px;
 }
-.stage button.active{
-    background:#EDF1F0 ;
+.stage button.active {
+    background: #edf1f0;
     border-radius: 4px;
     border: none;
 }
+@media (max-width:992px) {
+    .no-pabding{
+        padding-right: 0;
+    }
+}
+
 
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
-.exchange-rate .personal-loan-section{
+.exchange-rate .personal-loan-section {
     background-image: url(../images/banner-ti-gia-ngoai-te.png);
 }
 /* ---------------------------------------------------Page Calcuate Tool ------------------------------------------ */
@@ -2916,10 +2997,10 @@ padding-top: 0;
 .interestRate .card-preview {
     border: none;
 }
-.interestRate .card-inner{
+.interestRate .card-inner {
     padding: 0 20%;
 }
-.interestRate .profit-table{
+.interestRate .profit-table {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -2932,13 +3013,13 @@ padding-top: 0;
     margin: 0 auto; /* Căn giữa theo chiều ngang */
     text-align: center; /* Căn giữa nội dung văn bản */
 }
-.interestRate .interestRate .personal-loan-section{
-background-image: url(../images/banner-interestRate.png);
+.interestRate .interestRate .personal-loan-section {
+    background-image: url(../images/banner-interestRate.png);
 }
-.interestRate .statistics-table{
+.interestRate .statistics-table {
     margin-bottom: 4.5%;
 }
-.table{
+.table {
     border: 1px solid #f4f0f0;
     /* opacity: 6; */
     border-radius: 4px;
@@ -3198,6 +3279,23 @@ background-image: url(../images/banner-interestRate.png);
     font-weight: 400;
     line-height: 29px; /* 170.588% */
     letter-spacing: -0.34px;
+}
+.title-image-news {
+    color: #494949;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 12.1px */
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+}
+.title-title-content-image {
+    color: var(--dark-2, #393939);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 21px */
+    letter-spacing: 0.3px;
 }
 
 @media (max-width: 1024px) {
@@ -3647,9 +3745,8 @@ background-image: url(../images/banner-interestRate.png);
     gap: 20px;
 }
 .gap22 {
-    padding: 1.375rem 0 ;
+    padding: 1.375rem 0;
 }
-
 
 /* end luyendv */
 
@@ -3658,10 +3755,9 @@ background-image: url(../images/banner-interestRate.png);
     padding: 0 5%;
 }
 
-
 .list-product-detail-section .product-detail-card-button {
     border-radius: 4px;
-    background: #9E2B47;
+    background: #9e2b47;
 }
 
 .list-product-detail-section .product-detail-card-img img {
@@ -3677,30 +3773,47 @@ background-image: url(../images/banner-interestRate.png);
     justify-content: center;
 }
 
-.list-product-detail-section .product-detail-card-content .product-detail-card-text div {
+.list-product-detail-section
+    .product-detail-card-content
+    .product-detail-card-text
+    div {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 6px;
 }
 
-.list-product-detail-section .product-detail-card-content .product-detail-card-text div img {
+.list-product-detail-section
+    .product-detail-card-content
+    .product-detail-card-text
+    div
+    img {
     width: 20px;
     aspect-ratio: 1 / 1;
 }
 
 @media (max-width: 768px) {
-
     .list-product-detail-section .product-detail-card-list-button {
         display: flex;
         flex-direction: column;
     }
 
-    .list-product-detail-section .product-detail-card .product-detail-card-list-button .product-detail-card-button-detail, .list-product-detail-section .product-detail-card-list-button .product-detail-card-button {
+    .list-product-detail-section
+        .product-detail-card
+        .product-detail-card-list-button
+        .product-detail-card-button-detail,
+    .list-product-detail-section
+        .product-detail-card-list-button
+        .product-detail-card-button {
         text-align: center;
         align-content: center;
     }
-    .list-product-detail-section .product-detail-card-list-button .product-detail-card-button, .list-product-detail-section .product-detail-card-list-button .product-detail-card-button-detail {
+    .list-product-detail-section
+        .product-detail-card-list-button
+        .product-detail-card-button,
+    .list-product-detail-section
+        .product-detail-card-list-button
+        .product-detail-card-button-detail {
         min-width: 100%;
     }
 }
@@ -3715,7 +3828,7 @@ background-image: url(../images/banner-interestRate.png);
 
 .consultation-request-button {
     border-radius: 4px;
-    border: 1px dashed #DCDCDC;
+    border: 1px dashed #dcdcdc;
     display: flex;
     width: 100%;
     align-items: center;
@@ -3729,14 +3842,14 @@ background-image: url(../images/banner-interestRate.png);
 
 .product-advisory-section {
     padding: 0 5%;
-    background: #7B0D29;
+    background: #7b0d29;
     display: flex;
     flex-direction: row;
 }
 
 .product-advisory-section .product-advisory-button {
     border-radius: 4px;
-    background: #650D23;
+    background: #650d23;
     display: flex;
     gap: 6px;
     align-items: center;
@@ -3767,7 +3880,6 @@ background-image: url(../images/banner-interestRate.png);
 
 /* end section */
 
-
 /* section 3 ưu điểm chính trong product-detail-page trongpd */
 
 .advantage-product-detail {
@@ -3780,7 +3892,7 @@ background-image: url(../images/banner-interestRate.png);
     gap: 8px;
 }
 
- .advantage-card-text {
+.advantage-card-text {
     display: flex;
     flex-direction: column;
 }
@@ -3806,7 +3918,6 @@ background-image: url(../images/banner-interestRate.png);
     }
 }
 
-
 /* section atm-google-map trong-pd */
 .atm-map-background {
     max-height: 828px;
@@ -3823,7 +3934,7 @@ background-image: url(../images/banner-interestRate.png);
 
 .atm-infomation {
     border-radius: 4px;
-    background: #FFF;
+    background: #fff;
     display: flex;
     flex-direction: column;
 }
@@ -3841,22 +3952,40 @@ background-image: url(../images/banner-interestRate.png);
 }
 
 .atm-google-map-section {
-
     position: relative;
 
-    button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    button:not(:disabled),
+    [type="button"]:not(:disabled),
+    [type="reset"]:not(:disabled),
+    [type="submit"]:not(:disabled) {
         border: none;
     }
-    .owl-carousel-search .search-product a, .owl-carousel-search .calculation-tool a, .owl-carousel-search .find-branch a, .owl-carousel-search .fee-schedule a, .owl-carousel-search .interest-rate a, .owl-carousel-search .exchange-rate a {
-        background: #FCFCFC;
-        border: var(--spacing-border_weight-default-border, 1px) solid rgba(0, 0, 0, 0.06);
+    .owl-carousel-search .search-product a,
+    .owl-carousel-search .calculation-tool a,
+    .owl-carousel-search .find-branch a,
+    .owl-carousel-search .fee-schedule a,
+    .owl-carousel-search .interest-rate a,
+    .owl-carousel-search .exchange-rate a {
+        background: #fcfcfc;
+        border: var(--spacing-border_weight-default-border, 1px) solid
+            rgba(0, 0, 0, 0.06);
     }
-    .owl-carousel-search .search-product a:hover, .owl-carousel-search .calculation-tool a:hover, .owl-carousel-search .find-branch a:hover, .owl-carousel-search .fee-schedule a:hover, .owl-carousel-search .interest-rate a:hover, .owl-carousel-search .exchange-rate a:hover,
-    .owl-carousel-search .search-product a.active, .owl-carousel-search .calculation-tool a.active, .owl-carousel-search .find-branch a.active, .owl-carousel-search .fee-schedule a.active, .owl-carousel-search .interest-rate a.active, .owl-carousel-search .exchange-rate a.active {
-        background: #AF0B35;
+    .owl-carousel-search .search-product a:hover,
+    .owl-carousel-search .calculation-tool a:hover,
+    .owl-carousel-search .find-branch a:hover,
+    .owl-carousel-search .fee-schedule a:hover,
+    .owl-carousel-search .interest-rate a:hover,
+    .owl-carousel-search .exchange-rate a:hover,
+    .owl-carousel-search .search-product a.active,
+    .owl-carousel-search .calculation-tool a.active,
+    .owl-carousel-search .find-branch a.active,
+    .owl-carousel-search .fee-schedule a.active,
+    .owl-carousel-search .interest-rate a.active,
+    .owl-carousel-search .exchange-rate a.active {
+        background: #af0b35;
         span {
             color: #fff;
-        };
+        }
         img {
             filter: grayscale(100%) brightness(500%);
         }
@@ -3868,7 +3997,7 @@ background-image: url(../images/banner-interestRate.png);
         }
     }
     .owl-carousel-search span {
-        color: #54433B;
+        color: #54433b;
     }
 }
 
@@ -3876,7 +4005,7 @@ background-image: url(../images/banner-interestRate.png);
     display: flex;
     flex-direction: column;
     border-radius: 4px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #f2f2f2;
 }
 
 .atm-card-content {
@@ -3896,13 +4025,13 @@ background-image: url(../images/banner-interestRate.png);
     bottom: 10%;
     right: 0%;
     top: unset;
-    border: 1px solid #CACACA;
-    background: rgba(255, 255, 255, 0.50);
+    border: 1px solid #cacaca;
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
 }
 
 .atm-google-map-section .btn-next svg path {
-    stroke: #54433B;
+    stroke: #54433b;
 }
 
 @media (max-width: 768px) {
@@ -3928,167 +4057,5 @@ background-image: url(../images/banner-interestRate.png);
 @media (max-width: 992px) {
     .history .main-info-s .main-info-content .main-info-title-content .main-info-title-content-text span br {
         display: none;
-    }
-}
-/* end fix */
-
-/* fix page giải thưởng trongdp */
-.Agribank-award-section .Agribank-award-card-content {
-    height: 56px;
-}
-
-.Agribank-award-section .Agribank-award-card-content p {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.Agribank-award-section .Agribank-award-card-img {
-    height: 184px;
-    flex: unset;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-timeline {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    position: relative;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-year {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 11px;
-    filter: contrast(20%) brightness(180%);
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-year.live {
-    filter: none;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-year-content {
-    width: 29px;
-    aspect-ratio: 1/1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    background: #FFF;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-year .Agribank-all-awards-year-content-icon-1 {
-    display: block;
-    width: 9px;
-    aspect-ratio: 1/1;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-year .Agribank-all-awards-year-content-icon-2 {
-    display: none;
-    width: 13px;
-    aspect-ratio: 1/1;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-year.live .Agribank-all-awards-year-content-icon-1 {
-    display: none;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-year.live .Agribank-all-awards-year-content-icon-2 {
-    display: block;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-list-year {
-    position: relative;
-    width: 100%;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-timeline button {
-    padding: 12px;
-    border-radius: 100px;
-    border: 1px solid #DEDEDE;
-    background: #FFF;
-    position: absolute;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    bottom: -7px;
-    z-index: 5;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-list-year-timeline {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    margin-bottom: 14px;
-    display: flex;
-    justify-content: center;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-list-year-timeline-line {
-    width: 85%;
-    border-top: 1px dashed #eaeaea;
-}
-
-
-
-.Agribank-all-awards-section .Agribank-all-awards-list-year-content {
-    z-index: 3;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-content-year {
-    display: none;
-}
-
-.Agribank-all-awards-section .Agribank-all-awards-content-year.active {
-    display: block;
-}
-
-@media (max-width: 768px) {
-    .Agribank-all-awards-section .Agribank-all-awards-timeline button {
-        display: none;
-    }
-
-    .Agribank-all-awards-section .Agribank-all-awards-list-year-timeline-line {
-        width: 100%;
-    }
-
-    .Agribank-all-awards-section .Agribank-all-awards-text span, .Agribank-all-awards-section .Agribank-all-awards-text p {
-        max-width: fit-content !important;
-    }
-
-    .Agribank-all-awards-section .Agribank-all-awards-text {
-        align-items: flex-start;
-    }
-
-    .Agribank-award-section .Agribank-award-header,.Agribank-award-section .Agribank-award-header span {
-        align-items: flex-start;
-    }
-
-    .Agribank-award-section .Agribank-award-header {
-        gap: 14px;
-    }
-
-    .Agribank-award-section .Agribank-award-carousel .card-inner .slick-arrow {
-        display: none !important;
-    }
-
-    .Agribank-award-section .Agribank-award-container {
-        gap: 17px;
-    }
-
-    .Agribank-related-info .heading-h6 {
-        font-size: 22px;
-    }
-
-    .Agribank-related-info .Agribank-related-card .heading-h8 {
-        font-size: 17px;
-    }
-
-    .Agribank-all-awards-section .Agribank-all-awards-text .regular-15 {
-        font-size: 14px;
     }
 }

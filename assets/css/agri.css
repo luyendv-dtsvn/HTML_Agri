@@ -1035,9 +1035,26 @@ justify-content: space-between;
     padding-left: 30px;
 }
 
+.loan-card-content ul {
+    list-style: none; /* Ẩn dấu mặc định */
+    padding-left: 0;
+}
+
 .loan-card-content ul li {
-    flex: 1 0 0;
-    list-style: url("../images/vanhoa-vaylist-vaydetail/CheckCircle.svg");
+    position: relative;
+    padding-left: 30px; /* Đẩy nội dung qua phải để nhường chỗ cho icon */
+}
+
+.loan-card-content ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px; /* Điều chỉnh margin-top của icon */
+    width: 16px; /* Kích thước icon */
+    height: 16px;
+    background-image: url("../images/vanhoa-vaylist-vaydetail/CheckCircle.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
