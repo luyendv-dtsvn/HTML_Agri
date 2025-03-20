@@ -1857,6 +1857,23 @@
             <span class="regular-12 pb-3">Hội sở: Số 2 Láng Hạ, phường Thành Công, quận Ba Đình, Hà Nội</span>
         </div>
     </section>
+
+    <script src="../assets/js/libs/jquery.min.js"></script>
+    <!-- <script src="../assets/js/agri.js"></script> -->
+    <script src="../assets/js/bundle.js"></script>
+    <script src="../assets/js/home.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+
+    <script src="../assets/js/libs/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/libs/aos.css" />
+    <script src="../assets/js/libs/aos.js"></script>
+    <style>
+        .min-width-20 {
+            min-width: 25% !important
+        }
+    </style>
+
+     
     <script src="../assets/js/agri.js"></script>
     <script src="../assets/js/bundle.js"></script>
     <script src="../assets/js/home.js"></script>
@@ -1885,9 +1902,21 @@
                         items: 5,
                         autoWidth: true,
                         // mergeFit:true,
-                    },
+                    }
                 },
             });
+            $(".owl-carousel-dac-sac .owl-item.active").addClass("min-width-20");
+
+            $(".owl-carousel-dac-sac .owl-item.active").on("mouseenter", function () {
+                $(".owl-item.min-width-20.active").removeClass("min-width-20");
+                    $(this).addClass("w-auto");
+            });
+
+            $(".owl-carousel-dac-sac .owl-item.active").on("mouseleave", function () {
+                $(".owl-carousel-dac-sac .owl-item.active").addClass("min-width-20");
+            });
+
+
         });
         $(".owl-carousel-blog").owlCarousel({
             loop: true,
