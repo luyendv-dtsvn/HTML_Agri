@@ -445,11 +445,12 @@
         padding-bottom: 15px;
     }
     .recruitment-detail .head-title {
-        padding-bottom: 20px;
+        padding-bottom: 25px !important;
     }
     .flex-cover {
         display: block;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -502,7 +503,7 @@
         padding-bottom: 15px;
     }
     .recruitment-detail .head-title {
-        padding-bottom: 20px;
+        padding-bottom: 25px !important;
     }
 }
 @media (max-width: 375px) {
@@ -526,6 +527,6 @@
         padding-bottom: 15px;
     }
     .recruitment-detail .head-title {
-        padding-bottom: 20px;
+        padding-bottom: 25px !important;
     }
 }

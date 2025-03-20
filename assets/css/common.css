@@ -17,7 +17,7 @@
     --dark-2: rgb(57, 57, 57);
     --red-21: #aa1d40;
     --red-3: #c33c5e;
-    --Text-NomalText-2: #54433B;
+    --Text-NomalText-2: #54433b;
     --color-49494949: #49494949;
     /* Màu chính */
 }
@@ -1147,7 +1147,7 @@ button {
 }
 
 .color-dark-2 {
-    color: var(--dark-2)
+    color: var(--dark-2);
 }
 
 .color-dark-3 {
@@ -2625,17 +2625,17 @@ input:focus {
     height: 116%;
     width: 116%;
 }
-.bld .nav-link{
+.bld .nav-link {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    color:#5a5a5a ;
+    color: #5a5a5a;
 }
 .bld .nav-item .active {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
-.bld .nav-link:hover{
--webkit-filter: grayscale(0%);
+.bld .nav-link:hover {
+    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
 .content-top-menu img {
@@ -2728,14 +2728,14 @@ a.color-hover-b:hover,
     padding: 0.4rem 1.7rem;
     /* color: #5a5a5a; */
 }
-.bld .content-betwent img{
+.bld .content-betwent img {
     width: auto;
     height: auto;
     max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước gốc */
     max-height: 100%;
 }
 .content-top-menu img {
-    width: 40px;  /* Điều chỉnh kích thước theo nhu cầu */
+    width: 40px; /* Điều chỉnh kích thước theo nhu cầu */
     height: 40px; /* Đảm bảo tỉ lệ đồng nhất */
     object-fit: contain; /* Giữ nguyên tỷ lệ ảnh, không bị méo */
 }
@@ -2745,20 +2745,19 @@ a.color-hover-b:hover,
     background-position: center;
     background-repeat: no-repeat;
 }
-.bld .Agribank-related-info-content{
+.bld .Agribank-related-info-content {
     gap: 12px;
 }
 
-@media (max-width: 375px){
-    .bld .nav-tabs .nav-link{
-        padding: 0.4rem 0 ;
+@media (max-width: 375px) {
+    .bld .nav-tabs .nav-link {
+        padding: 0.4rem 0;
     }
 }
-@media (max-width: 992px){
-    .bld .nav-tabs .nav-link{
-        padding: 0.4rem 0 ;
+@media (max-width: 992px) {
+    .bld .nav-tabs .nav-link {
+        padding: 0.4rem 0;
     }
-    
 }
 /* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
 /* 
@@ -2796,16 +2795,15 @@ a.color-hover-b:hover,
 .product-list .nav-tabs .nav-link {
     color: #000;
 }
-.product-list .tab-content{
+.product-list .tab-content {
     margin-top: 0;
 }
 /* .product-list .loan-card-title span{
     width: 40%;
 } */
 
-
 @media (max-width: 1366px) {
-    .loan-card-content{
+    .loan-card-content {
         gap: 0;
         padding: 40px 20px 40px 56px;
     }
@@ -2817,10 +2815,10 @@ a.color-hover-b:hover,
 }
 
 @media (max-width: 1024px) {
-    .loan-cards .tab-pane{
+    .loan-cards .tab-pane {
         display: flex;
-    flex-direction: column;
-    gap: 16px;
+        flex-direction: column;
+        gap: 16px;
     }
 }
 @media (min-width: 992px) {
@@ -2981,12 +2979,11 @@ a.color-hover-b:hover,
     border-radius: 4px;
     border: none;
 }
-@media (max-width:992px) {
-    .no-pabding{
+@media (max-width: 992px) {
+    .no-pabding {
         padding-right: 0;
     }
 }
-
 
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
 .exchange-rate .personal-loan-section {
@@ -3297,6 +3294,17 @@ a.color-hover-b:hover,
     line-height: 140%; /* 21px */
     letter-spacing: 0.3px;
 }
+.subtitle-14-upercase {
+    color: #494949;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+
 
 @media (max-width: 1024px) {
     .community {
@@ -3553,7 +3561,6 @@ a.color-hover-b:hover,
     .d-block-768 {
         display: block !important;
     }
-
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -4055,7 +4062,13 @@ a.color-hover-b:hover,
 
 /* fix page lịch sử trongdp */
 @media (max-width: 992px) {
-    .history .main-info-s .main-info-content .main-info-title-content .main-info-title-content-text span br {
+    .history
+        .main-info-s
+        .main-info-content
+        .main-info-title-content
+        .main-info-title-content-text
+        span
+        br {
         display: none;
     }
 }
