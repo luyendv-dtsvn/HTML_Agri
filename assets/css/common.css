@@ -1107,7 +1107,7 @@ button {
 
 /* color */
 .color-subtite {
-    color: var(--color-49494949);
+    color: #494949;
 }
 .color-white {
     color: rgb(255, 255, 255);
@@ -4060,6 +4060,7 @@ a.color-hover-b:hover,
 }
 /* end atm-google-map */
 
+/* fix page lịch sử trongdp */
 @media (max-width: 992px) {
     .history
         .main-info-s
@@ -4071,3 +4072,170 @@ a.color-hover-b:hover,
         display: none;
     }
 }
+
+/* end fix */
+
+/* fix page giải thưởng trongdp */
+.Agribank-award-section .Agribank-award-card-content {
+    height: 56px;
+}
+
+.Agribank-award-section .Agribank-award-card-content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Agribank-award-section .Agribank-award-card-img {
+    height: 184px;
+    flex: unset;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-timeline {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    filter: contrast(20%) brightness(180%);
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year.live {
+    filter: none;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year-content {
+    width: 29px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background: #FFF;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year .Agribank-all-awards-year-content-icon-1 {
+    display: block;
+    width: 9px;
+    aspect-ratio: 1/1;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year .Agribank-all-awards-year-content-icon-2 {
+    display: none;
+    width: 13px;
+    aspect-ratio: 1/1;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year.live .Agribank-all-awards-year-content-icon-1 {
+    display: none;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year.live .Agribank-all-awards-year-content-icon-2 {
+    display: block;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-list-year {
+    position: relative;
+    width: 100%;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-timeline button {
+    padding: 12px;
+    border-radius: 100px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -7px;
+    z-index: 5;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-list-year-timeline {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-list-year-timeline-line {
+    width: 85%;
+    border-top: 1px dashed #eaeaea;
+}
+
+
+
+.Agribank-all-awards-section .Agribank-all-awards-list-year-content {
+    z-index: 3;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-content-year {
+    display: none;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-content-year.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .Agribank-all-awards-section .Agribank-all-awards-timeline button {
+        display: none;
+    }
+
+    .Agribank-all-awards-section .Agribank-all-awards-list-year-timeline-line {
+        width: 100%;
+    }
+
+    .Agribank-all-awards-section .Agribank-all-awards-text span, .Agribank-all-awards-section .Agribank-all-awards-text p {
+        max-width: fit-content !important;
+    }
+
+    .Agribank-all-awards-section .Agribank-all-awards-text {
+        align-items: flex-start;
+    }
+
+    .Agribank-award-section .Agribank-award-header,.Agribank-award-section .Agribank-award-header span {
+        align-items: flex-start;
+    }
+
+    .Agribank-award-section .Agribank-award-header {
+        gap: 14px;
+    }
+
+    .Agribank-award-section .Agribank-award-carousel .card-inner .slick-arrow {
+        display: none !important;
+    }
+
+    .Agribank-award-section .Agribank-award-container {
+        gap: 17px;
+    }
+
+    .Agribank-related-info .heading-h6 {
+        font-size: 22px;
+    }
+
+    .Agribank-related-info .Agribank-related-card .heading-h8 {
+        font-size: 17px;
+    }
+
+    .Agribank-all-awards-section .Agribank-all-awards-text .regular-15 {
+        font-size: 14px;
+    }
+
+    
+}
+
+/* end fix */
