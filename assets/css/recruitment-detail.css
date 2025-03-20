@@ -406,15 +406,19 @@
     line-height: 110%; /* 17.6px */
     letter-spacing: -0.16px;
 }
-.flex-cover{
+.flex-cover {
     display: none;
+}
+.recruitment-detail .flex-col-content {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 97px);
 }
 
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
     }
-    
 }
 @media (max-width: 992px) {
     .recruitment-detail .recruitment-detail-agri-notification-containers {
@@ -440,10 +444,10 @@
     .recruitment-detail .title-content-rd {
         padding-bottom: 15px;
     }
-    .recruitment-detail .head-title{
-        padding-bottom: 20px;
+    .recruitment-detail .head-title {
+        padding-bottom: 25px !important;
     }
-    .flex-cover{
+    .flex-cover {
         display: block;
     }
     
@@ -498,8 +502,8 @@
     .recruitment-detail .title-content-rd {
         padding-bottom: 15px;
     }
-    .recruitment-detail .head-title{
-        padding-bottom: 20px;
+    .recruitment-detail .head-title {
+        padding-bottom: 25px !important;
     }
 }
 @media (max-width: 375px) {
@@ -522,7 +526,7 @@
     .recruitment-detail .title-content-rd {
         padding-bottom: 15px;
     }
-    .recruitment-detail .head-title{
-        padding-bottom: 20px;
+    .recruitment-detail .head-title {
+        padding-bottom: 25px !important;
     }
 }

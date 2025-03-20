@@ -42,6 +42,7 @@
     flex-direction: column;
     gap: 20px;
     justify-content: space-between;
+    padding-bottom: 87px;
 }
 
 .main-info-title-sub {
@@ -118,6 +119,7 @@
     .main-info-2 .main-info-content {
         justify-content: space-between;
         align-items: flex-start;
+        padding-bottom: 40px;
     }
 
     .main-info-2 .main-info-title-content-text {
