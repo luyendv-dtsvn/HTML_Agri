@@ -18,10 +18,17 @@
     --red-21: #aa1d40;
     --red-3: #c33c5e;
     --Text-NomalText-2: #54433B;
-    --color-49494949: #49494949;
+    --color-49494949: #494949;
+    --color-393939: #393939;
+
     /* Màu chính */
 }
-
+.--color-393939{
+    color: var(--color-393939);
+}
+.--color-49494949{
+    color: var(--color-49494949);
+}
 body,
 button {
     font-family: "BT Grotesk Regular";
@@ -2795,12 +2802,26 @@ a.color-hover-b:hover,
     width: 40%;
 } */
 
+
+@media (max-width: 1366px) {
+    .loan-card-content{
+        gap: 0;
+        padding: 40px 20px 40px 36px;
+    }
+}
 @media (min-width: 1200px) {
     .product-list .nav-tabs .nav-item {
         padding-right: 00;
     }
 }
 
+@media (max-width: 1024px) {
+    .loan-cards .tab-pane{
+        display: flex;
+    flex-direction: column;
+    gap: 16px;
+    }
+}
 @media (min-width: 992px) {
     .product-list .nav-tabs .nav-item {
         padding-right: 00;
@@ -2824,7 +2845,11 @@ a.color-hover-b:hover,
 .calcuate .personal-loan-section{
 background-image: url(../images/image.png);
 }
-
+#tabDropdown {
+    
+    color: #AF0B35; /* Màu chữ */
+    background-color: #ffffff; /* Màu nền */
+}
 .calcuate .money-time-loan-calculator-input{
     background:#F4F4F4;
 }
@@ -2840,6 +2865,7 @@ background-image: url(../images/image.png);
 }
 .calculate-utilities{
     padding: 0 5%;
+    margin-bottom: 60px;
 }
 .calcuate .loan-result-content p{
     border-bottom: none;
@@ -2958,11 +2984,43 @@ padding-top: 0;
     border-radius: 4px;
     border: none;
 }
+.calcuate .form-control{
+    padding: 0;
+}
+.calculate-dropdown{
+    display: flex;
+    border-bottom: 1px solid #E7E7E7;
+}
+.calculate-dropdown img{
+    margin: 20px 10px 0 0 ;
+}
 @media (max-width:992px) {
+    .chart{
+        border-top: 1px solid #F2F2F2;
+        padding-top: 19px;
+    }
+}
+@media (max-width:578px) {
     .no-pabding{
         padding-right: 0;
     }
+    .calcuate .tab-pane{
+        padding: 0;
+    }
+    .calcuate .money-time-loan-calculator-group{
+        gap:20px;
+    }
+    .calcuate .loan-calculator-radio-form{
+        gap: 8px;
+    }
 }
+@media (max-width:375px) {
+.loan-tool-tabs{
+    gap: 30px;
+}
+
+}
+
 
 
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
