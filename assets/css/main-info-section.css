@@ -129,6 +129,10 @@
     .main-info-2 .main-info-title-content {
         gap: 12px;
     }
+
+    .main-info-content {
+        padding-bottom: 40px;
+    }
 }
 
 
