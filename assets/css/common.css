@@ -3081,6 +3081,21 @@ display: block;
 .calculate-dropdown img{
     margin: 20px 10px 0 0 ;
 }
+.icon-change-mobile{
+    
+    display: flex;
+}
+.icon-change-mobile img{
+    position: absolute;
+    top: 0;
+    right: 45%;
+}
+@media (max-width:1366px) {
+    .convert {
+       gap: 10px;
+
+    }
+}
 @media (max-width:992px) {
     .chart{
         border-top: 1px solid #F2F2F2;
@@ -3100,6 +3115,9 @@ display: block;
     }
     .calcuate .loan-calculator-radio-form{
         gap: 8px;
+    }
+    .stage {
+        gap: 0;
     }
 }
 @media (max-width:375px) {
