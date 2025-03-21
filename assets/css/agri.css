@@ -427,7 +427,6 @@
 /* Section Tổng */
 .agribank-quote-section {
     position: relative;
-    height: 940px;
 }
 
 /* Nội dung chính */
@@ -462,104 +461,26 @@
 
 /* Các hình ảnh phụ */
 
-.floating-image-1 {
-    position: absolute;
-    width: 95px;
-    height: 95px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 70%;
-    left: 18%;
-}
-
-.floating-image-2 {
-    position: absolute;
-    width: 84px;
-    height: 84px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 40%;
-    left: 40%;
-}
-
-.floating-image-3 {
-    position: absolute;
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 30%;
-    left: 35%;
-}
-
-.floating-image-4 {
-    position: absolute;
-    width: 136px;
-    height: 136px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 10%;
-    left: 45%;
-}
-
-.floating-image-5 {
-    position: absolute;
-    width: 84px;
-    height: 84px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 60%;
-    left: 55%;
-}
-
-.floating-image-6 {
-    position: absolute;
-    width: 106px;
-    height: 106px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 25%;
-    left: 60%;
-}
-
-.floating-image-7 {
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 40%;
-    left: 70%;
-}
-
-.floating-image-8 {
-    position: absolute;
-    width: 51px;
-    height: 51px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 20%;
-    left: 75%;
-}
-
-.floating-image-9 {
-    position: absolute;
-    width: 91px;
-    height: 91px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 65%;
-    left: 80%;
-}
-
 .agribank-quote-images {
-    padding: 0 5%;
+    margin: 0 5%;
     position: relative;
+    margin-top: 10px;
+    height: 545px;
 }
 
 .agribank-quote-images-background {
-    max-width: 480px;
-    aspect-ratio: 480 / 596;
+    max-width: 617px;
+    aspect-ratio: 617 / 596;
+    position: absolute;
+    top: 3%;
+}
+
+.floating-image {
+    position: absolute;
+    width: 95px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 @media (max-width: 992px) {
