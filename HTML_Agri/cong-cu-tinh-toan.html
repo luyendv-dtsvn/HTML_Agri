@@ -1310,10 +1310,10 @@
                         <a href="#"><span>Công cụ tính toán</span></a>
                     </div>
                     <div class="personal-loan-text-title">
-                        <h2 class="personal-loan-title heading-h2 color-white">
+                        <h2 class="personal-loan-title heading-h5 color-white">
                             Công cụ tính toán
                         </h2>
-                        <p class="personal-loan-description regular-18 color-white-1">
+                        <p class="personal-loan-description regular-16 color-white-1">
                             Cập nhật liên tục các thông tin quan trọng của Agribank
                         </p>
                     </div>
@@ -1324,30 +1324,78 @@
 
     <section class="calculate-utilities">
         <div class="calculate-utilities-loan">
+
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#tabItem5">Tính lãi tiền gửi</a>
+                    <a class="nav-link body-15 active" data-toggle="tab" href="#tabItem5">Tính lãi tiền gửi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tabItem6">Tính toán khoản vay</a>
+                    <a class="nav-link body-15" data-toggle="tab" href="#tabItem6">Tính toán khoản vay</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tabItem7">Quy đổi giá</a>
+                    <a class="nav-link body-15" data-toggle="tab" href="#tabItem7">Quy đổi giá</a>
                 </li>
             </ul>
+
+            <div class="calculate-dropdown">
+                <select id="tabDropdown" class="form-control d-md-none ">
+                    <option value="#tabItem5">Tính lãi tiền gửi</option>
+                    <option  value="#tabItem6">Tính toán khoản vay</option>
+                    <option  value="#tabItem7">Quy đổi giá</option>
+                </select>
+                <div>
+                    <img src="../assets/images/CaretRight.svg" alt="">
+                </div>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+    let ulTabs = document.querySelector(".calculate-utilities-loan ul");
+    let dropdownContainer = document.querySelector(".calculate-dropdown");
+    let selectDropdown = document.querySelector("#tabDropdown");
+
+    function toggleTabsAndDropdown() {
+        if (window.innerWidth <= 500) {
+            ulTabs.classList.add("d-none"); // Ẩn tabs khi màn hình nhỏ
+            dropdownContainer.classList.remove("d-none"); // Hiện dropdown
+        } else {
+            ulTabs.classList.remove("d-none"); // Hiện tabs khi lớn hơn 375px
+            dropdownContainer.classList.add("d-none"); // Ẩn dropdown
+        }
+    }
+
+    // Gọi hàm khi tải trang và khi resize
+    toggleTabsAndDropdown();
+    window.addEventListener("resize", toggleTabsAndDropdown);
+
+    // Chuyển tab khi chọn dropdown
+    selectDropdown.addEventListener("change", function () {
+        let selectedTab = this.value;
+
+        // Ẩn tất cả tab
+        document.querySelectorAll(".tab-pane").forEach(tab => {
+            tab.classList.remove("show", "active");
+        });
+
+        // Hiện tab được chọn
+        document.querySelector(selectedTab).classList.add("show", "active");
+    });
+});
+
+
+            </script>
             <div class="tab-content">
                 <div class="tab-pane active" id="tabItem5">
-                    <h3 class="heading-h7 mb-4">Tính lãi tiền gửi</h3>
+                    <h3 class="heading-h7 mb-4 --color-393939">Tính lãi tiền gửi</h3>
                     <div class="row-ct">
                         <div class="col-sm-9 col-lg-3 col-12 money-time-loan-calculator-form  no-pabding">
-                            <label class="body-14" for="loan-amount">Số tiền vay</label>
+                            <label class="body-14  --color-49494949" for="loan-amount">Số tiền vay</label>
                             <div class="money-time-loan-calculator-input">
                                 <div class="input-slider-wrapper">
                                     <input type="number" id="loan-amount-input" value="810000" min="0" max="10000000"
                                         step="1"
                                         oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
                                         class="input-number Body-Regular-15" />
-                                    <span class="currency-unit body-13">VNĐ</span>
+                                    <span class="currency-unit body-13 --color-49494949">VNĐ</span>
                                 </div>
                                 <input class="input-rise" type="range" id="loan-amount" min="0" max="10000000"
                                     step="1000" value="810000" />
@@ -1359,14 +1407,14 @@
                         </div>
 
                         <div class="col-sm-9 col-lg-3 col-12 money-time-loan-calculator-form no-pabding">
-                            <label class="body-14" for="loan-duration">Thời hạn vay</label>
+                            <label class="body-14 --color-49494949" for="loan-duration">Thời hạn vay</label>
                             <div class="money-time-loan-calculator-input">
                                 <div class="input-slider-wrapper">
                                     <input type="number" id="loan-duration-display" value="12" min="1" max="120"
                                         step="1"
                                         oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
                                         class="input-number Body-Regular-15" />
-                                    <span class="currency-unit body-13">Tháng</span>
+                                    <span class="currency-unit body-13 --color-49494949">tháng</span>
                                 </div>
                                 <input class="input-rise" type="range" id="loan-duration" min="1" max="120" step="1"
                                     value="12" />
@@ -1378,19 +1426,20 @@
                         </div>
                         <div class="col-sm-9 col-lg-3 col-12 no-pabding">
                             <div class="form-group">
-                                <label class="form-label body-14" for="interest-rate">Lãi suất cho vay</label>
+                                <label class="form-label body-14 --color-49494949" for="interest-rate">Lãi suất cho
+                                    vay</label>
                                 <div class="form-control-wrap">
                                     <div class="form-text-hint">
                                         <span
-                                            class="overline-title money-time-loan-calculator-year body-13">%/năm</span>
+                                            class="overline-title money-time-loan-calculator-year body-13 --color-49494949">%/năm</span>
                                     </div>
                                     <input type="number" id="interest-rate" value="12" step="0.1"
                                         class="form-control regular-15" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-9 col-lg-3 col-12 no-pabding"><button class="loan-calculator-button Body-16 color-white "
-                                id="calculate-button">
+                        <div class="col-sm-9 col-lg-3 col-12 no-pabding"><button
+                                class="loan-calculator-button Body-15 color-white " id="calculate-button">
                                 Tính khoản vay
                             </button></div>
                     </div>
@@ -1410,18 +1459,18 @@
                             <div class="loan-calculator-group">
                                 <div class="loan-calculator-radio">
                                     <label class="body-14">Phương thức tính</label>
-                                    <div class="loan-calculator-radio-form ">
-                                        <label class="body-15 col-6 no-pabding no-">
+                                    <div class="loan-calculator-radio-form row-ct ">
+                                        <label class="body-15 col-sm-6 col-12 no-pabding ">
                                             <input type="radio" name="method" value="reducing" checked> Trả trên dư nợ
                                             giảm dần
                                         </label>
-                                        <label class="body-15 col-6">
+                                        <label class="body-15 col-sm-6 col-12 no-pabding ">
                                             <input type="radio" name="method" value="equal"> Trả trên dư nợ gốc
                                         </label>
                                     </div>
                                 </div>
                                 <div class="money-time-loan-calculator-group row-ct">
-                                    <div class="money-time-loan-calculator-form col-6 no-pabding">
+                                    <div class="money-time-loan-calculator-form col-sm-6 col-12 no-pabding">
                                         <label class="body-14" for="loan-amount">Số tiền vay</label>
                                         <div class="money-time-loan-calculator-input">
                                             <div class="input-slider-wrapper">
@@ -1439,7 +1488,7 @@
                                             <span class="range-max">10,000,000</span>
                                         </div>
                                     </div>
-                                    <div class="money-time-loan-calculator-form col-6">
+                                    <div class="money-time-loan-calculator-form col-sm-6 col-12 no-pabding">
                                         <label class="body-14" for="loan-duration">Thời hạn vay</label>
                                         <div class="money-time-loan-calculator-input">
                                             <div class="input-slider-wrapper">
@@ -1473,7 +1522,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 col-12 no-pabding">
                                         <div class="form-group">
                                             <label class="form-label body-14" for="start-date">Ngày giải ngân</label>
                                             <div class="form-control-wrap">
@@ -1522,14 +1571,14 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="tabItem7">
-                    <div class="rate_conversion">
-                        <div class="change">
+                    <div class="rate_conversion row-ct ">
+                        <div class="change col-lg-5 col-12 no-pabding">
                             <h3 class="heading-h7 mb-4">Quy đổi tỉ giá</h3>
                             <div class="amount-exchange">
-                                <div class="money-time-loan-calculator-form ">
+                                <div class="money-time-loan-calculator-form  ">
 
-                                    <div class="convert">
-                                        <div class="need-conversion">
+                                    <div class="convert row-ct">
+                                        <div class="need-conversion col-lg-8 col-sm-5 col-12 no-pabding">
                                             <label class="body-14 ">Số tiền cần quy đổi</label>
                                             <div class="money-time-loan-calculator-input">
                                                 <div class="input-slider-wrapper">
@@ -1547,10 +1596,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="icon-change">
+                                        <div class="icon-change ">
                                             <img src="../assets/images/change.svg" alt="">
                                         </div>
-                                        <div class="receive">
+                                        <div class="receive col-lg-8 col-sm-5 col-12 no-pabding">
                                             <label class="body-14">Số tiền nhận được</label>
                                             <div class="money-time-loan-calculator-input">
                                                 <div class="input-slider-wrapper">
@@ -1587,7 +1636,7 @@
                             </div>
                         </div>
 
-                        <div class="chart">
+                        <div class="chart col-lg-6 col-12 no-pabding">
                             <span class="currency-unit body-13 mb-4">Bảng tỷ giá: <select>
                                     <option value="1">VND</option>
                                     <option value="2">USD</option>
@@ -1880,105 +1929,105 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         const logNumbers = (num) => {
-    const data = [];
-    for (let i = 0; i < num; ++i) {
-        data.push(Math.floor(Math.random() * 9000) + 20000); // Giá trị từ 20,000 đến 29,000
-    }
-    return data;
-};
-
-// Tạo nhãn ngày (30 ngày trong tháng)
-const labels = Array.from({ length: 30 }, (_, i) => new Date(2024, 10, i + 1)); // Tháng 11/2024
-
-const data = {
-    labels: labels.map(date => date.toISOString().split('T')[0]), // Format YYYY-MM-DD
-    datasets: [
-        {
-            data: logNumbers(30),
-            borderColor: 'red',
-            backgroundColor: 'red',
-            fill: false,
-            borderWidth: 0.3,
-            tension: 0.1,
-            pointRadius: 0,
-        },
-    ]
-};
-
-const config = {
-    type: 'line',
-    data: data,
-    options: {
-        responsive: true,
-        plugins: {
-            legend: { display: false }, // Ẩn ô chú thích
-            tooltip: {
-                enabled: true,
-                callbacks: {
-                    title: function (tooltipItems) {
-                        const date = new Date(tooltipItems[0].label);
-                        return `12:00 ${date.getDate()} tháng ${date.getMonth() + 1}, ${date.getFullYear()}`;
-                    },
-                    label: function (tooltipItem) {
-                        return `1 USD = ${tooltipItem.raw.toLocaleString('vi-VN')} VND`;
-                    }
-                }
-            },
-            annotation: {
-                annotations: {
-                    label1: {
-                        type: 'label',
-                        xValue: labels[0], // Gắn vào điểm đầu tiên trên trục X
-                        yValue: 20000, // Đặt tại giá trị thấp nhất của trục Y
-                        content: ['12:00 30 tháng 11, 2024'],
-                        font: { size: 12 },
-                        color: 'black',
-                        backgroundColor: 'transparent',
-                        textAlign: 'left'
-                    }
-                }
+            const data = [];
+            for (let i = 0; i < num; ++i) {
+                data.push(Math.floor(Math.random() * 9000) + 20000); // Giá trị từ 20,000 đến 29,000
             }
-        },
-        scales: {
-            x: {
-                display: true,
-                ticks: {
-                    callback: function (value, index) {
-                        const date = new Date(labels[index]);
-                        if (index === 0 || index === labels.length - 1) {
-                            return `${date.getDate()} tháng ${date.getMonth() + 1}`; // Chỉ hiện đầu và cuối
+            return data;
+        };
+
+        // Tạo nhãn ngày (30 ngày trong tháng)
+        const labels = Array.from({ length: 30 }, (_, i) => new Date(2024, 10, i + 1)); // Tháng 11/2024
+
+        const data = {
+            labels: labels.map(date => date.toISOString().split('T')[0]), // Format YYYY-MM-DD
+            datasets: [
+                {
+                    data: logNumbers(30),
+                    borderColor: 'red',
+                    backgroundColor: 'red',
+                    fill: false,
+                    borderWidth: 0.3,
+                    tension: 0.1,
+                    pointRadius: 0,
+                },
+            ]
+        };
+
+        const config = {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }, // Ẩn ô chú thích
+                    tooltip: {
+                        enabled: true,
+                        callbacks: {
+                            title: function (tooltipItems) {
+                                const date = new Date(tooltipItems[0].label);
+                                return `12:00 ${date.getDate()} tháng ${date.getMonth() + 1}, ${date.getFullYear()}`;
+                            },
+                            label: function (tooltipItem) {
+                                return `1 USD = ${tooltipItem.raw.toLocaleString('vi-VN')} VND`;
+                            }
                         }
-                        return ''; // Ẩn các giá trị khác
                     },
-                    maxRotation: 0,
-                    minRotation: 0
-                },
-                grid: {
-                    drawOnChartArea: false, // Ẩn đường kẻ dọc
-                    drawTicks: false
-                }
-            },
-            y: {
-                display: true,
-                type: 'linear',
-                position: 'right', // Chuyển trục Y sang phải
-                min: 20000,
-                max: 29000,
-                ticks: {
-                    callback: function (value) {
-                        return value.toLocaleString('vi-VN'); // Hiển thị số có dấu chấm phân cách
+                    annotation: {
+                        annotations: {
+                            label1: {
+                                type: 'label',
+                                xValue: labels[0], // Gắn vào điểm đầu tiên trên trục X
+                                yValue: 20000, // Đặt tại giá trị thấp nhất của trục Y
+                                content: ['12:00 30 tháng 11, 2024'],
+                                font: { size: 12 },
+                                color: 'black',
+                                backgroundColor: 'transparent',
+                                textAlign: 'left'
+                            }
+                        }
                     }
                 },
-                grid: {
-                    drawBorder: false
+                scales: {
+                    x: {
+                        display: true,
+                        ticks: {
+                            callback: function (value, index) {
+                                const date = new Date(labels[index]);
+                                if (index === 0 || index === labels.length - 1) {
+                                    return `${date.getDate()} tháng ${date.getMonth() + 1}`; // Chỉ hiện đầu và cuối
+                                }
+                                return ''; // Ẩn các giá trị khác
+                            },
+                            maxRotation: 0,
+                            minRotation: 0
+                        },
+                        grid: {
+                            drawOnChartArea: false, // Ẩn đường kẻ dọc
+                            drawTicks: false
+                        }
+                    },
+                    y: {
+                        display: true,
+                        type: 'linear',
+                        position: 'right', // Chuyển trục Y sang phải
+                        min: 20000,
+                        max: 29000,
+                        ticks: {
+                            callback: function (value) {
+                                return value.toLocaleString('vi-VN'); // Hiển thị số có dấu chấm phân cách
+                            }
+                        },
+                        grid: {
+                            drawBorder: false
+                        }
+                    }
                 }
             }
-        }
-    }
-};
+        };
 
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, config);
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, config);
 
 
     </script>
