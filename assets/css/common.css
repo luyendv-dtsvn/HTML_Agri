@@ -4384,6 +4384,59 @@ a.color-hover-b:hover,
     }
 }
 
+.van-hoa-agri-page .agribank-quote-section .floating-image-1 {
+    top: 0; 
+    left: 14%;
+}
+
+.van-hoa-agri-page .agribank-quote-section .floating-image-2 {
+    top: 17.3%; 
+    left: 31.25%; 
+    width: 84px;
+}
+
+.van-hoa-agri-page .agribank-quote-section .floating-image-3 {
+    top: 42%; 
+    left: 24.3%; 
+    width: 54px;
+}
+
+.van-hoa-agri-page .agribank-quote-section .floating-image-4 {
+    top: 45%; 
+    left: 39.3%; 
+    width: 136px;
+}
+
+.van-hoa-agri-page .agribank-quote-section .floating-image-5 {
+    top: 11%; 
+    left: 50%; 
+    width: 84px;
+}
+
+.van-hoa-agri-page .agribank-quote-section .floating-image-6 {
+    top: 42%; 
+    left: 60%; 
+    width: 106px;
+}
+
+.van-hoa-agri-page .agribank-quote-section .floating-image-7 {
+    top: 14%; 
+    left: 70%; 
+    width: 128px;
+}
+
+.van-hoa-agri-page .agribank-quote-section .floating-image-8 {
+    top: 44%; 
+    right: 18%; 
+    width: 51px;
+}
+
+.van-hoa-agri-page .agribank-quote-section .floating-image-9 {
+    top: 4%; 
+    right: 10%; 
+    width: 91px;
+}
+
 @media (max-width: 1024px) {
     .van-hoa-agri-page .slider-blog.owl-carousel .owl-nav, .van-hoa-agri-page .slider-blog.owl-carousel .owl-dots {
         gap: 48px;
@@ -4393,12 +4446,126 @@ a.color-hover-b:hover,
         right: 5%;
         top: -24%;
     }
+
+    .van-hoa-agri-page .agribank-quote-section .agribank-quote-images {
+        height: 329px;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .agribank-quote-images-background {
+        max-width: 380px;
+        top: 0%;
+        left: -4%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-1 {
+        left: 0%;
+        top: 9%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-3 {
+        left: 6%;
+        top: 68%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-2 {
+        left: 20%;
+        top: 30.3%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-4 {
+        width: 86px;
+        left: 44%;
+        top: 50%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-5 {
+        width: 62px;
+        left: 55%;
+        top: 23%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-6 {
+        width: 75px;
+        left: 64%;
+        top: 66%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-7 {
+        width: 69px;
+        top: 26%;
+        left: 72%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-8 {
+        top: 62%;
+        right: 10%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-9 {
+        width: 96px;
+        top: 7%;
+        right: 0;
+    }
 }
 
-@media (max-width: 992px) {
-    
-}
+@media (max-width: 600px) {
 
+    .van-hoa-agri-page .agribank-quote-section .agribank-quote-main-content {
+        padding-left: 24px;
+    }
+    .van-hoa-agri-page .agribank-quote-section .agribank-quote-icon {
+        width: 20px;
+        height: 20px;
+        display: flex;
+    }
+    .van-hoa-agri-page .agribank-quote-section .floating-image-9,
+    .van-hoa-agri-page .agribank-quote-section .floating-image-1,
+    .van-hoa-agri-page .agribank-quote-section .floating-image-8,
+    .van-hoa-agri-page .agribank-quote-section .floating-image-7 {
+        display: none;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .agribank-quote-images {
+        margin: 0;
+        margin-top: 30px;
+        height: 271px;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .agribank-quote-images-background {
+        width: 306px;
+        left: -11%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-4 {
+        width: 88px;
+        left: 37%;
+        top: 58%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-3 {
+        width: 35px;
+        left: -1%;
+        top: 55%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-2 {
+        width: 54px;
+        top: 18.3%;
+        left: 12%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-5 {
+        width: 54.4px;
+        left: 69%;
+        top: 10%;
+    }
+
+    .van-hoa-agri-page .agribank-quote-section .floating-image-6 {
+        width: 68.7px;
+        left: 79%;
+        top: 53%;
+    }
+}
 
 
 
