@@ -427,63 +427,40 @@
 /* Section Tổng */
 .agribank-quote-section {
     position: relative;
-    width: 100%;
     height: 940px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.agribank-quote-container {
-    width: 100%; /* Tăng chiều rộng tối đa của container */
-    height: 770px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
 }
 
 /* Nội dung chính */
 .agribank-quote-main {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    text-align: left;
     justify-content: center;
+    padding: 0 5%;
+}
+
+.agribank-quote-section .agribank-quote-main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.agribank-quote-section .agribank-quote-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .agribank-quote-image img {
-    width: 180px;
-    height: 180px;
+    width: 194.514px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .agribank-quote-icon {
-    margin-top: 10px;
     width: 31px;
     height: 30px;
-    flex-shrink: 0;
-    fill: rgba(74, 74, 74, 0.50);
 }
-
-
 
 /* Các hình ảnh phụ */
-.agribank-quote-images {
-    margin-top: 150px;
-    margin-bottom: 150px;
-    position: absolute;
-    top: 50%; /* Giữ ảnh phụ căn giữa */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%; /* Tăng kích thước tổng thể của các ảnh phụ */
-    height: 100%; /* Tăng chiều cao tổng thể của ảnh phụ */
-    pointer-events: none; /* Đảm bảo không tương tác được */
-}
 
 .floating-image-1 {
     position: absolute;
@@ -575,15 +552,26 @@
     left: 80%;
 }
 
-.agribank-quote-images-background {
-    position: absolute;
-    margin-left: 15%;
-    bottom: 0%;
-    width: 20%;
-    aspect-ratio: 1 / 1;
-    flex-shrink: 0;
-
+.agribank-quote-images {
+    padding: 0 5%;
+    position: relative;
 }
+
+.agribank-quote-images-background {
+    max-width: 480px;
+    aspect-ratio: 480 / 596;
+}
+
+@media (max-width: 992px) {
+    .agribank-quote-section .agribank-quote-main,.agribank-quote-section .agribank-quote-main-content {
+        flex-direction: column;
+    }
+
+    .agribank-quote-section .agribank-quote-main {
+        align-items: center;
+    }
+}
+
 
 @media (max-width: 768px) {
     .agribank-quote-main {
@@ -593,6 +581,12 @@
 
     .agribank-quote-image img {
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .agribank-quote-section .agribank-quote-text span br {
+        display: none !important;
     }
 }
 
@@ -2262,7 +2256,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023.9px) {
     /* page product-list */
     .personal-loan-section {
         height: 500px;
@@ -3032,7 +3026,7 @@ input[type="range"]::-webkit-slider-thumb {
     min-height: 301px; */
     aspect-ratio: 557 / 301;
 }
-@media (min-width: 1023px) {
+@media (min-width: 1023.9px) {
     .Agribank-identity-list-section .Agribank-identity-list-content .Agribank-identity-list-card:hover {
         width: auto;
         aspect-ratio: 557 / 301;
@@ -3048,7 +3042,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023.9px) {
     .Agribank-identity-list-card {
         border-radius: 4px;
         background: #AF0B35;
@@ -3176,14 +3170,15 @@ input[type="range"]::-webkit-slider-thumb {
         min-height: 695px;
         display: flex;
         align-items: flex-end;
+        position: relative;
     }
 
     .why-agribank-culture-content {
         position: absolute;
         width: 100%;
         height: auto;
-        transform: translate(0, -75%);
-        background: linear-gradient(180deg, #AF0B35 14.84%, rgba(175, 11, 53, 0.00) 100%);
+        top: 0;
+        background: linear-gradient(180deg, #AF0B35 63.57%, rgba(175, 11, 53, 0.00) 100%);
         padding: 36px 5%;
     }
 

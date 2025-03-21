@@ -198,7 +198,8 @@ button {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 110%; /* 13.2px */
+    line-height: 110%;
+    /* 13.2px */
     letter-spacing: 0.48px;
     text-transform: uppercase;
 }
@@ -276,6 +277,16 @@ button {
     font-weight: 400;
 }
 
+
+.subtitle-h-table-12 {
+    font-family: "BT Grotesk Regular";
+    font-size: 0.75rem;
+    /* 12px to rem */
+    line-height: 110.00000238418579%;
+    letter-spacing: 0.48px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 .subtitle-14 {
     font-family: "BT Grotesk Medium";
     font-size: 0.875rem;
@@ -1107,6 +1118,7 @@ button {
 .color-subtite {
     color: var(--color-49494949);
 }
+
 .color-white {
     color: rgb(255, 255, 255);
 }
@@ -1116,12 +1128,10 @@ button {
 }
 
 .color-Gradient-1 {
-    color: linear-gradient(
-        122deg,
-        #af0b35 19.31%,
-        #9d5165 38.51%,
-        #490516 71.05%
-    );
+    color: linear-gradient(122deg,
+            #af0b35 19.31%,
+            #9d5165 38.51%,
+            #490516 71.05%);
 }
 
 .color-red-1 {
@@ -1153,11 +1163,9 @@ button {
 }
 
 .color-Linear-1 {
-    color: linear-gradient(
-        115deg,
-        rgba(158, 43, 71, 1) 0%,
-        rgba(118, 25, 48, 1) 100%
-    );
+    color: linear-gradient(115deg,
+            rgba(158, 43, 71, 1) 0%,
+            rgba(118, 25, 48, 1) 100%);
 }
 
 .color-Linear-2 {
@@ -1305,9 +1313,7 @@ div {
 }
 
 /* end hover image  */
-.custom-radio.custom-control-pro.no-control
-    .custom-control-input:checked
-    ~ .custom-control-label {
+.custom-radio.custom-control-pro.no-control .custom-control-input:checked~.custom-control-label {
     border-color: var(--red-1);
     z-index: 2;
     background-color: var(--red-1);
@@ -1331,7 +1337,7 @@ div {
     padding-right: 0px;
 }
 
-.tab-dropdown .nk-menu-main > li.nk-menu-item > .nk-menu-link {
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link {
     flex-direction: column;
     gap: 16px;
 }
@@ -1352,7 +1358,7 @@ div {
     transform: translateX(0) !important;
 }
 
-.tab-dropdown .nk-menu-main > li {
+.tab-dropdown .nk-menu-main>li {
     display: inline-block;
     min-width: 180px;
 }
@@ -1374,14 +1380,14 @@ div {
     display: block !important;
 }
 
-.tab-dropdown .nk-menu-main .nk-menu-item:hover > .nk-menu-sub {
+.tab-dropdown .nk-menu-main .nk-menu-item:hover>.nk-menu-sub {
     opacity: 1;
     visibility: visible;
     margin-top: 0;
     z-index: 999;
 }
 
-.tab-dropdown .nk-menu-main > li > .nk-menu-link:hover::before {
+.tab-dropdown .nk-menu-main>li>.nk-menu-link:hover::before {
     position: absolute;
     content: "";
     bottom: 0;
@@ -1393,7 +1399,7 @@ div {
     opacity: 1;
 }
 
-.tab-dropdown .nk-menu-main > li.nk-menu-item > .nk-menu-link.active {
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active {
     color: var(--red-1);
 }
 
@@ -1410,18 +1416,18 @@ div {
     right: 5px;
 }
 
-.tab-dropdown .nk-menu-main > li.nk-menu-item > .nk-menu-link.active svg path,
-.tab-dropdown .nk-menu-main > li.nk-menu-item:hover svg path,
-.tab-dropdown .nk-menu-main > li.nk-menu-item:hover a {
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active svg path,
+.tab-dropdown .nk-menu-main>li.nk-menu-item:hover svg path,
+.tab-dropdown .nk-menu-main>li.nk-menu-item:hover a {
     stroke: var(--red-1);
     opacity: 1 !important;
 }
 
-.tab-dropdown .nk-menu-main > li.nk-menu-item > .nk-menu-link.active::after {
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active::after {
     stroke: var(--red-1);
 }
 
-.tab-dropdown .nk-menu-main > li.nk-menu-item > .nk-menu-link.active:before {
+.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active:before {
     position: absolute;
     content: "";
     bottom: 0;
@@ -1647,7 +1653,7 @@ div {
     width: 80%;
 }
 
-.mobile .menu-mobile .nk-aside + .toggle-overlay {
+.mobile .menu-mobile .nk-aside+.toggle-overlay {
     z-index: 700;
 }
 
@@ -1747,10 +1753,8 @@ div {
 
 .home-business .home-business-background-tab-button:hover {
     color: #fff !important;
-    background: var(
-        --Linear-2,
-        linear-gradient(270deg, #af0b35 0%, #c93259 100%)
-    ) !important;
+    background: var(--Linear-2,
+            linear-gradient(270deg, #af0b35 0%, #c93259 100%)) !important;
     opacity: 1;
 }
 
@@ -1886,6 +1890,7 @@ div {
 .high {
     color: var(--red-2, #9e2b47);
 }
+
 .content-top.menu-tab-ct .content-top a {
     text-decoration: none;
     color: #5a5a5a;
@@ -1923,10 +1928,12 @@ div {
     /* margin: 0 104px; */
     display: none;
 }
+
 .content-top.menu-tab-ct .content-betwent.active {
     display: block;
     /* Tab hiện tại sẽ hiển thị */
 }
+
 .content-top.menu-tab-ct .content-top-menu svg {
     transition: stroke 0.3s ease;
     margin-bottom: 10.5%;
@@ -1946,16 +1953,16 @@ div {
 .content-top.menu-tab-ct .content-top-menu.active div {
     color: #9e2b47;
 }
+
 .hrr {
     width: 1px;
     height: 17px;
-    background: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.5) 50%,
-        rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 100%);
 }
+
 .list-search .owl-item {
     margin-left: 0;
     /* Đảm bảo item đầu tiên không bị khuất */
@@ -1968,6 +1975,7 @@ div {
     background-size: cover;
     background-position: center;
 }
+
 .hr {
     width: 1px;
     height: 36px;
@@ -1990,16 +1998,19 @@ div {
     justify-content: space-between;
     margin-bottom: 2%;
 }
+
 .outstanding-products .about-title {
     margin-bottom: 5px;
     margin-top: 51px;
 }
+
 .slider-blog.slider {
     /* margin: 0 104px; */
     display: flex;
     gap: 20px;
     gap: 10px;
 }
+
 .slider-blog .list {
     width: 100%;
     display: flex;
@@ -2007,6 +2018,7 @@ div {
     gap: 15px;
     padding: 0 7px 0 7px;
 }
+
 .outstanding-products .about-subtitle {
     margin-bottom: 56px;
 }
@@ -2018,10 +2030,12 @@ div {
     background: #fff;
     border: 1px solid var(--Linear-1, #9e2b47);
 }
+
 .slider-blog .custom-next:hover path,
 .slider-blog .custom-prev:hover path {
     fill: #fff;
 }
+
 .slider-blog .custom-next:hover,
 .slider-blog .custom-prev:hover {
     padding: 12px;
@@ -2029,6 +2043,7 @@ div {
     border-radius: 100px;
     background: var(--red-1, #af0b35);
 }
+
 .slider-blog .custom-next,
 .slider-blog .custom-prev {
     border-radius: 100px;
@@ -2040,34 +2055,29 @@ div {
     display: flex;
     justify-content: center;
 }
-.banner-header
-    .banner-search
-    .search
-    .owl-carousel-search
-    .owl-nav.disabled
-    button,
-.banner-header
-    .banner-search
-    .search
-    .owl-carousel-search
-    .owl-dots.disabled
-    button {
+
+.banner-header .banner-search .search .owl-carousel-search .owl-nav.disabled button,
+.banner-header .banner-search .search .owl-carousel-search .owl-dots.disabled button {
     all: unset;
 }
+
 .home-business .nk-content .content-top-menu img {
     margin-bottom: 10px;
 }
+
 .footer-bottom {
     background: rgba(0, 0, 0, 0.12);
     padding-top: 1rem;
     padding-left: 4.9%;
     padding-right: 4.9%;
 }
+
 .content-top {
     display: flex;
     text-align: center;
     justify-content: center;
 }
+
 .home-header-slim .nk-menu-main .nk-menu-item .nk-menu-toggle:after {
     display: none;
 }
@@ -2238,11 +2248,7 @@ div {
     padding: 0 4.9%;
 }
 
-.home-business
-    .section-agri-start
-    .list.home-business-item-card
-    .home-business-item-text
-    span {
+.home-business .section-agri-start .list.home-business-item-card .home-business-item-text span {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -2262,6 +2268,7 @@ div {
 .community-stats-left-subtitle-a hr {
     border: 1px solid #eaeaeab5;
 }
+
 .blog .borrow-subtitle {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -2269,6 +2276,7 @@ div {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .community-stats-left-subtitle-a a {
     position: relative;
     text-decoration: none;
@@ -2621,19 +2629,26 @@ input:focus {
     height: 116%;
     width: 116%;
 }
-.bld .nav-link{
+
+
+.bld .nav-link {
+
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     color:#5a5a5a ;
 }
+
 .bld .nav-item .active {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
-.bld .nav-link:hover{
--webkit-filter: grayscale(0%);
+
+
+.bld .nav-link:hover {
+    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
+
 .content-top-menu img {
     /* -webkit-filter: grayscale(100%);
     filter: grayscale(100%); */
@@ -2691,6 +2706,7 @@ a.color-hover-b:hover,
     color: #130c07 !important;
     /* Màu chữ khi hover */
 }
+
 /* --------------------------------------------------- Page Ban lãnh đạo ------------------------------------------ */
 .nav-link {
     display: flex;
@@ -2702,14 +2718,17 @@ a.color-hover-b:hover,
 .tab-content {
     margin-top: 57px;
 }
+
 .nav-link:hover,
 .content-top-menu:hover img {
     /* -webkit-filter: grayscale(0%);
     filter: grayscale(0%); */
 }
+
 .agribank-culture {
     background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
 }
+
 .bld .Agribank-related-card-blue-background {
     align-content: center;
     bottom: -129%;
@@ -2721,28 +2740,38 @@ a.color-hover-b:hover,
     background: #9E2B47;
     filter: blur(47px);
 }
+
 .bld .nav-tabs .nav-link {
     padding: 0.4rem 1.7rem;
     /* color: #5a5a5a; */
 }
-.bld .content-betwent img{
+
+.bld .content-betwent img {
     width: auto;
     height: auto;
-    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước gốc */
+    max-width: 100%;
+    /* Đảm bảo ảnh không vượt quá kích thước gốc */
     max-height: 100%;
 }
+
 .content-top-menu img {
-    width: 40px;  /* Điều chỉnh kích thước theo nhu cầu */
-    height: 40px; /* Đảm bảo tỉ lệ đồng nhất */
-    object-fit: contain; /* Giữ nguyên tỷ lệ ảnh, không bị méo */
+    width: 40px;
+    /* Điều chỉnh kích thước theo nhu cầu */
+    height: 40px;
+    /* Đảm bảo tỉ lệ đồng nhất */
+    object-fit: contain;
+    /* Giữ nguyên tỷ lệ ảnh, không bị méo */
 }
+
 .bld .agribank-culture-background {
     background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.bld .Agribank-related-info-content{
+
+
+.bld .Agribank-related-info-content {
     gap: 12px;
 }
 
@@ -2751,12 +2780,13 @@ a.color-hover-b:hover,
         padding: 0.4rem 0 ;
     }
 }
-@media (max-width: 992px){
-    .bld .nav-tabs .nav-link{
-        padding: 0.4rem 0 ;
+@media (max-width: 992px) {
+    .bld .nav-tabs .nav-link {
+        padding: 0.4rem 0;
     }
     
 }
+
 /* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
 /* 
 
@@ -2768,16 +2798,19 @@ a.color-hover-b:hover,
     border-bottom: none;
     gap: 8px;
 }
-.product-list .nav-item{
+.product-list .nav-item {
+
     background: rgba(0, 0, 0, 0.04);
     border-radius: 4px;
     text-align: center;
 }
-.product-list .nav-item:hover{
-    
+
+
+.product-list .nav-item:hover {
     outline: 2px solid rgba(0, 0, 0, 0.34);
 }
-.product-list .nav-item.active{
+
+.product-list .nav-item.active {
     outline: 2px solid rgba(0, 0, 0, 0.34);
 }
 
@@ -2785,19 +2818,25 @@ a.color-hover-b:hover,
 .product-list .nav-tabs .nav-link:after{
     border-radius: 4px;
 }
-.product-list .nav-tabs .nav-link.active:after{
+
+
+.product-list .nav-tabs .nav-link.active:after {
     opacity: 0;
 }
 
 .product-list .nav-link{
     margin: 0 1.75rem;
 }
-.product-list .nav-tabs .nav-link{
+
+
+.product-list .nav-tabs .nav-link {
     color: #000;
 }
-.product-list .tab-content{
+
+.product-list .tab-content {
     margin-top: 0;
 }
+
 /* .product-list .loan-card-title span{
     width: 40%;
 } */
@@ -2809,6 +2848,7 @@ a.color-hover-b:hover,
         padding: 40px 20px 40px 36px;
     }
 }
+
 @media (min-width: 1200px) {
     .product-list .nav-tabs .nav-item {
         padding-right: 00;
@@ -2822,16 +2862,19 @@ a.color-hover-b:hover,
     gap: 16px;
     }
 }
+
 @media (min-width: 992px) {
     .product-list .nav-tabs .nav-item {
         padding-right: 00;
     }
 }
+
 @media (min-width: 768px) {
     .product-list .nav-tabs .nav-item {
         padding-right: 00;
     }
 }
+
 .product-list .nav-tabs .nav-item:last-child {
     padding-right: 0;
 }
@@ -2845,6 +2888,7 @@ a.color-hover-b:hover,
 .calcuate .personal-loan-section{
 background-image: url(../images/image.png);
 }
+
 #tabDropdown {
     
     color: #AF0B35; /* Màu chữ */
@@ -2853,26 +2897,36 @@ background-image: url(../images/image.png);
 .calcuate .money-time-loan-calculator-input{
     background:#F4F4F4;
 }
-.calcuate input[type="number"],.form-text-hint,
-.calcuate .input-slider-wrapper input[type="number"]{
-    background:#F4F4F4;
+
+
+.calcuate input[type="number"],
+.form-text-hint,
+.calcuate .input-slider-wrapper input[type="number"] {
+    background: #f4f4f4;
 }
-.calcuate .form-label{
+
+.calcuate .form-label {
     margin-bottom: 12px;
 }
-.calcuate .form-control{
-    border-radius:0px;
+
+.calcuate .form-control {
+    border-radius: 0px;
 }
-.calculate-utilities{
+
+.calculate-utilities {
     padding: 0 5%;
     margin-bottom: 60px;
 }
-.calcuate .loan-result-content p{
+
+
+.calcuate .loan-result-content p {
     border-bottom: none;
 }
-.calcuate .tab-pane{
+
+.calcuate .tab-pane {
     padding: 110px 0;
 }
+
 .calcuate .loan-calculator-button,
 .calcuate .form-control,
 .calcuate .money-time-loan-calculator-input{
@@ -2892,48 +2946,66 @@ background-image: url(../images/image.png);
     /* padding-right: 0; */
 }
 .calcuate .loan-tool-tabs{
+
     background: #fff;
     border: none;
 }
+
 .calcuate .loan-result a {
 display: block;
 }
-.calcuate .money-time-loan-calculator-group{
-    gap:0;
-}
-.calcuate .loan-calculator-radio-form{
+
+
+.calcuate .money-time-loan-calculator-group {
     gap: 0;
 }
-.calcuate .loan-calculator{
+
+.calcuate .loan-calculator-radio-form {
+    gap: 0;
+}
+
+.calcuate .loan-calculator {
     padding: 0;
 }
-.calcuate .loan-tool-tabs{
-padding-top: 0;
+
+.calcuate .loan-tool-tabs {
+    padding-top: 0;
 }
-.convert{
+
+.convert {
     display: flex;
     gap: 20px;
 }
+
 .icon-change img {
     margin-top:120%;
 }
-.calcuate .money-time-loan-calculator-form{
+
+
+.calcuate .money-time-loan-calculator-form {
     width: 100%;
 }
-.amount-exchange{
+
+.amount-exchange {
     width: 100%;
 }
-.calcuate .loan-calculator h3{
+
+.calcuate .loan-calculator h3 {
     padding-bottom: 0;
 }
-.calcuate .currency-unit{
+
+.calcuate .currency-unit {
     display: flex;
 }
+
 .calcuate select {
     border: none;
-    outline: none; /* Loại bỏ viền khi focus */
-    background: transparent; /* Bỏ nền nếu cần */
-    appearance: none; /* Loại bỏ kiểu mặc định của trình duyệt */
+    outline: none;
+    /* Loại bỏ viền khi focus */
+    background: transparent;
+    /* Bỏ nền nếu cần */
+    appearance: none;
+    /* Loại bỏ kiểu mặc định của trình duyệt */
 }
 
 .exchange-rate {
@@ -2946,31 +3018,46 @@ padding-top: 0;
 }
 
 .red-text {
-    color: #C3002F; /* Màu đỏ */
+
+    color: #c3002f;
+    /* Màu đỏ */
 }
 
 .amount-usd {
     
     margin: 5px 0;
 }
+
 .update-time {
     color: #666;
 }
+
 .need-conversion,
 .receive{
     width: 45%;
 }
-.rate_conversion{
+
+
+.rate_conversion {
     display: flex;
     gap: 50px;
 }
-.change{width: 90%;}
-.chart{width: 100%;}
-.stage{
+
+.change {
+    width: 90%;
+}
+
+.chart {
+    width: 100%;
+}
+
+.stage {
     display: flex;
         gap: 32px;
 }
-.stage button{
+
+
+.stage button {
     padding: 4px 8px;
     border: none;
     border-radius: 4px;
@@ -2998,6 +3085,7 @@ padding-top: 0;
     .chart{
         border-top: 1px solid #F2F2F2;
         padding-top: 19px;
+
     }
 }
 @media (max-width:578px) {
@@ -3027,38 +3115,51 @@ padding-top: 0;
 .exchange-rate .personal-loan-section{
     background-image: url(../images/banner-ti-gia-ngoai-te.png);
 }
+
 /* ---------------------------------------------------Page Calcuate Tool ------------------------------------------ */
 
 .interestRate .card-preview {
     border: none;
 }
-.interestRate .card-inner{
+
+
+.interestRate .card-inner {
     padding: 0 20%;
 }
-.interestRate .profit-table{
+
+.interestRate .profit-table {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 4%;
     gap: 18px;
 }
+
 .interestRate .profit-table span:last-child {
-    display: block; /* Để nó có thể nhận width */
+    display: block;
+    /* Để nó có thể nhận width */
     width: 23%;
-    margin: 0 auto; /* Căn giữa theo chiều ngang */
-    text-align: center; /* Căn giữa nội dung văn bản */
+    margin: 0 auto;
+    /* Căn giữa theo chiều ngang */
+    text-align: center;
+    /* Căn giữa nội dung văn bản */
 }
-.interestRate .interestRate .personal-loan-section{
-background-image: url(../images/banner-interestRate.png);
+
+
+.interestRate .interestRate .personal-loan-section {
+    background-image: url(../images/banner-interestRate.png);
 }
-.interestRate .statistics-table{
+
+.interestRate .statistics-table {
     margin-bottom: 4.5%;
 }
-.table{
+
+.table {
     border: 1px solid #f4f0f0;
     /* opacity: 6; */
     border-radius: 4px;
 }
+
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
 
 @media (max-width: 1366px) and (min-width: 1000px) {
@@ -3135,9 +3236,11 @@ background-image: url(../images/banner-interestRate.png);
     background-size: cover;
     padding: 40px 5%;
 }
+
 .blog .home-header-slim {
     background: #ffffff !important;
 }
+
 .blog-title-text {
     width: 100%;
     height: 100%;
@@ -3146,6 +3249,7 @@ background-image: url(../images/banner-interestRate.png);
     gap: 20px;
     justify-content: space-between;
 }
+
 .title-bottom {
     display: flex;
     justify-content: space-between;
@@ -3175,6 +3279,7 @@ background-image: url(../images/banner-interestRate.png);
     gap: 16px;
     margin-right: 24px;
 }
+
 .news-main-content {
     display: flex;
 
@@ -3182,6 +3287,7 @@ background-image: url(../images/banner-interestRate.png);
     align-items: flex-start;
     gap: 40px;
 }
+
 .content-title-1 {
     display: flex;
 
@@ -3189,13 +3295,15 @@ background-image: url(../images/banner-interestRate.png);
     align-items: flex-start;
     gap: 20px;
 }
+
 .news-title {
     color: rgba(27, 27, 27, 0.85);
 
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 32.5px */
+    line-height: 130%;
+    /* 32.5px */
     letter-spacing: -0.25px;
 }
 
@@ -3205,60 +3313,73 @@ background-image: url(../images/banner-interestRate.png);
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
-    line-height: 29px; /* 170.588% */
+    line-height: 29px;
+    /* 170.588% */
     letter-spacing: -0.34px;
 }
+
 .news-main-content-mid {
     color: rgba(27, 27, 27, 0.9);
 
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 32.5px */
+    line-height: 130%;
+    /* 32.5px */
     letter-spacing: -0.25px;
 }
+
 .news-title-1 {
     color: rgba(27, 27, 27, 0.85);
 
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 32.5px */
+    line-height: 130%;
+    /* 32.5px */
     letter-spacing: -0.25px;
 }
+
 .news-title-2 {
     color: rgba(27, 27, 27, 0.9);
 
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 32.5px */
+    line-height: 130%;
+    /* 32.5px */
     letter-spacing: -0.25px;
 }
+
 .content-detail-2 {
     color: var(--dark-3, #606060);
 
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
-    line-height: 29px; /* 170.588% */
+    line-height: 29px;
+    /* 170.588% */
     letter-spacing: -0.34px;
 }
+
 .news-detail-image-t {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
 }
+
 .title-mid {
     color: rgba(27, 27, 27, 0.9);
 
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 32.5px */
+    line-height: 130%;
+    /* 32.5px */
     letter-spacing: -0.25px;
 }
+
 .news-title-mid {
     display: flex;
 
@@ -3266,13 +3387,15 @@ background-image: url(../images/banner-interestRate.png);
     align-items: flex-start;
     gap: 12px;
 }
+
 .news-main-content-mid {
     color: var(--dark-3, #606060);
 
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
-    line-height: 29px; /* 170.588% */
+    line-height: 29px;
+    /* 170.588% */
     letter-spacing: -0.34px;
 }
 
@@ -3283,17 +3406,20 @@ background-image: url(../images/banner-interestRate.png);
     align-items: flex-start;
     gap: 15px;
 }
+
 .nav-list {
     list-style: disc;
     padding-left: 25px;
 }
+
 .main-content-b {
     color: var(--dark-3, #606060);
 
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
-    line-height: 29px; /* 170.588% */
+    line-height: 29px;
+    /* 170.588% */
     letter-spacing: -0.34px;
 }
 
@@ -3303,18 +3429,56 @@ background-image: url(../images/banner-interestRate.png);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 110%; /* 17.6px */
+    line-height: 110%;
+    /* 17.6px */
     letter-spacing: -0.16px;
 }
+
 .main-content-b {
     color: var(--dark-3, #606060);
 
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
-    line-height: 29px; /* 170.588% */
+    line-height: 29px;
+    /* 170.588% */
     letter-spacing: -0.34px;
 }
+
+
+.title-image-news {
+    color: #494949;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    /* 12.1px */
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+}
+
+.title-title-content-image {
+    color: var(--dark-2, #393939);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 21px */
+    letter-spacing: 0.3px;
+}
+
+.subtitle-14-upercase {
+    color: #494949;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 19.6px */
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+
 
 @media (max-width: 1024px) {
     .community {
@@ -3381,6 +3545,7 @@ background-image: url(../images/banner-interestRate.png);
 }
 
 @media (min-width: 992px) {
+
     .footer .block-h,
     .footer .block-h-2 {
         flex: 1 0 0;
@@ -3396,7 +3561,7 @@ background-image: url(../images/banner-interestRate.png);
         font-size: 14px;
     }
 
-    .tab-dropdown .nk-menu-main > li {
+    .tab-dropdown .nk-menu-main>li {
         min-width: 160px;
     }
 
@@ -3605,7 +3770,7 @@ background-image: url(../images/banner-interestRate.png);
         width: 160px;
     }
 
-    .tab-dropdown .nk-menu-main > li {
+    .tab-dropdown .nk-menu-main>li {
         min-width: 130px;
     }
 
@@ -3742,7 +3907,7 @@ background-image: url(../images/banner-interestRate.png);
         width: 130px;
     }
 
-    .tab-dropdown .nk-menu-main > li {
+    .tab-dropdown .nk-menu-main>li {
         min-width: 120px;
     }
 
@@ -3762,6 +3927,7 @@ background-image: url(../images/banner-interestRate.png);
 .gap20 {
     gap: 20px;
 }
+
 .gap22 {
     padding: 1.375rem 0 ;
 }
@@ -3812,11 +3978,15 @@ background-image: url(../images/banner-interestRate.png);
         flex-direction: column;
     }
 
-    .list-product-detail-section .product-detail-card .product-detail-card-list-button .product-detail-card-button-detail, .list-product-detail-section .product-detail-card-list-button .product-detail-card-button {
+
+    .list-product-detail-section .product-detail-card .product-detail-card-list-button .product-detail-card-button-detail,
+    .list-product-detail-section .product-detail-card-list-button .product-detail-card-button {
         text-align: center;
         align-content: center;
     }
-    .list-product-detail-section .product-detail-card-list-button .product-detail-card-button, .list-product-detail-section .product-detail-card-list-button .product-detail-card-button-detail {
+
+    .list-product-detail-section .product-detail-card-list-button .product-detail-card-button,
+    .list-product-detail-section .product-detail-card-list-button .product-detail-card-button-detail {
         min-width: 100%;
     }
 }
@@ -3963,26 +4133,49 @@ background-image: url(../images/banner-interestRate.png);
     button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
         border: none;
     }
-    .owl-carousel-search .search-product a, .owl-carousel-search .calculation-tool a, .owl-carousel-search .find-branch a, .owl-carousel-search .fee-schedule a, .owl-carousel-search .interest-rate a, .owl-carousel-search .exchange-rate a {
-        background: #FCFCFC;
+
+
+    .owl-carousel-search .search-product a,
+    .owl-carousel-search .calculation-tool a,
+    .owl-carousel-search .find-branch a,
+    .owl-carousel-search .fee-schedule a,
+    .owl-carousel-search .interest-rate a,
+    .owl-carousel-search .exchange-rate a {
+        background: #fcfcfc;
         border: var(--spacing-border_weight-default-border, 1px) solid rgba(0, 0, 0, 0.06);
     }
-    .owl-carousel-search .search-product a:hover, .owl-carousel-search .calculation-tool a:hover, .owl-carousel-search .find-branch a:hover, .owl-carousel-search .fee-schedule a:hover, .owl-carousel-search .interest-rate a:hover, .owl-carousel-search .exchange-rate a:hover,
-    .owl-carousel-search .search-product a.active, .owl-carousel-search .calculation-tool a.active, .owl-carousel-search .find-branch a.active, .owl-carousel-search .fee-schedule a.active, .owl-carousel-search .interest-rate a.active, .owl-carousel-search .exchange-rate a.active {
-        background: #AF0B35;
+
+    .owl-carousel-search .search-product a:hover,
+    .owl-carousel-search .calculation-tool a:hover,
+    .owl-carousel-search .find-branch a:hover,
+    .owl-carousel-search .fee-schedule a:hover,
+    .owl-carousel-search .interest-rate a:hover,
+    .owl-carousel-search .exchange-rate a:hover,
+    .owl-carousel-search .search-product a.active,
+    .owl-carousel-search .calculation-tool a.active,
+    .owl-carousel-search .find-branch a.active,
+    .owl-carousel-search .fee-schedule a.active,
+    .owl-carousel-search .interest-rate a.active,
+    .owl-carousel-search .exchange-rate a.active {
+        background: #af0b35;
+
         span {
             color: #fff;
-        };
+        }
+
         img {
             filter: grayscale(100%) brightness(500%);
         }
     }
+
     .calculation-tool {
         height: 100%;
+
         a {
             height: 100%;
         }
     }
+
     .owl-carousel-search span {
         color: #54433B;
     }
@@ -4038,6 +4231,7 @@ background-image: url(../images/banner-interestRate.png);
         aspect-ratio: 1/1;
     }
 }
+
 /* end atm-google-map */
 
 
@@ -4045,4 +4239,237 @@ background-image: url(../images/banner-interestRate.png);
     .history .main-info-s .main-info-content .main-info-title-content .main-info-title-content-text span br {
         display: none;
     }
+
 }
+
+/* end fix */
+
+/* fix page giải thưởng trongdp */
+.Agribank-award-section .Agribank-award-card-content {
+    height: 56px;
+}
+
+.Agribank-award-section .Agribank-award-card-content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Agribank-award-section .Agribank-award-card-img {
+    height: 184px;
+    flex: unset;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-timeline {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    filter: contrast(20%) brightness(180%);
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year.live {
+    filter: none;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year-content {
+    width: 29px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background: #FFF;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year .Agribank-all-awards-year-content-icon-1 {
+    display: block;
+    width: 9px;
+    aspect-ratio: 1/1;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year .Agribank-all-awards-year-content-icon-2 {
+    display: none;
+    width: 13px;
+    aspect-ratio: 1/1;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year.live .Agribank-all-awards-year-content-icon-1 {
+    display: none;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-year.live .Agribank-all-awards-year-content-icon-2 {
+    display: block;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-list-year {
+    position: relative;
+    width: 100%;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-timeline button {
+    padding: 12px;
+    border-radius: 100px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -7px;
+    z-index: 5;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-list-year-timeline {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-list-year-timeline-line {
+    width: 85%;
+    border-top: 1px dashed #eaeaea;
+}
+
+
+
+.Agribank-all-awards-section .Agribank-all-awards-list-year-content {
+    z-index: 3;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-content-year {
+    display: none;
+}
+
+.Agribank-all-awards-section .Agribank-all-awards-content-year.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .Agribank-all-awards-section .Agribank-all-awards-timeline button {
+        display: none;
+    }
+
+    .Agribank-all-awards-section .Agribank-all-awards-list-year-timeline-line {
+        width: 100%;
+    }
+
+    .Agribank-all-awards-section .Agribank-all-awards-text span,
+    .Agribank-all-awards-section .Agribank-all-awards-text p {
+        max-width: fit-content !important;
+    }
+
+    .Agribank-all-awards-section .Agribank-all-awards-text {
+        align-items: flex-start;
+    }
+
+    .Agribank-award-section .Agribank-award-header,
+    .Agribank-award-section .Agribank-award-header span {
+        align-items: flex-start;
+    }
+
+    .Agribank-award-section .Agribank-award-header {
+        gap: 14px;
+    }
+
+    .Agribank-award-section .Agribank-award-carousel .card-inner .slick-arrow {
+        display: none !important;
+    }
+
+    .Agribank-award-section .Agribank-award-container {
+        gap: 17px;
+    }
+
+    .Agribank-related-info .heading-h6 {
+        font-size: 22px;
+    }
+
+    .Agribank-related-info .Agribank-related-card .heading-h8 {
+        font-size: 17px;
+    }
+
+    .Agribank-all-awards-section .Agribank-all-awards-text .regular-15 {
+        font-size: 14px;
+    }
+
+
+}
+
+/* end fix */
+
+.Agribank-identity-list-section .Agribank-identity-list-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.van-hoa-agri-page .nk-content {
+    padding: 0 5%;
+}
+
+.van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-nav, .van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-dots {
+    right: 4%;
+    top: -26%;
+}
+
+@media (max-width: 768px) {
+    .featured-culture-agribank .featured-culture-content .heading-h7 {
+        font-size: 19px;
+    }
+
+    .featured-culture-agribank .featured-culture-content .regular-15 {
+        font-size: 13px;
+    }
+
+    .why-agribank-culture .why-agribank-culture-text-content .regular-15 {
+        font-size: 13px;
+    }
+
+    .van-hoa-agri-page .nk-content .owl-carousel-blog .owl-nav {
+        display: none;
+    }
+
+    .van-hoa-agri-page .nk-content .heading-h6 {
+        font-size: 22px;
+    }
+
+    .why-agribank-culture-background-mobile {
+        background: url(../images/vanhoa-vaylist-vaydetail/image\ 6378.png) lightgray 80% / cover no-repeat;
+    }
+
+    .featured-culture-agribank .featured-culture-image img {
+        aspect-ratio: 846 / 736;
+    }
+}
+
+@media (max-width: 1024px) {
+    .van-hoa-agri-page .slider-blog.owl-carousel .owl-nav, .van-hoa-agri-page .slider-blog.owl-carousel .owl-dots {
+        gap: 48px;
+    }
+
+    .van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-nav, .van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-dots {
+        right: 5%;
+        top: -24%;
+    }
+}
+
+@media (max-width: 992px) {
+    
+}
+
+
+
+
