@@ -17,11 +17,18 @@
     --dark-2: rgb(57, 57, 57);
     --red-21: #aa1d40;
     --red-3: #c33c5e;
-    --Text-NomalText-2: #54433b;
-    --color-49494949: #49494949;
+    --Text-NomalText-2: #54433B;
+    --color-49494949: #494949;
+    --color-393939: #393939;
+
     /* Màu chính */
 }
-
+.--color-393939{
+    color: var(--color-393939);
+}
+.--color-49494949{
+    color: var(--color-49494949);
+}
 body,
 button {
     font-family: "BT Grotesk Regular";
@@ -270,6 +277,7 @@ button {
     font-weight: 400;
 }
 
+
 .subtitle-h-table-12 {
     font-family: "BT Grotesk Regular";
     font-size: 0.75rem;
@@ -279,7 +287,6 @@ button {
     font-weight: 400;
     text-transform: uppercase;
 }
-
 .subtitle-14 {
     font-family: "BT Grotesk Medium";
     font-size: 0.875rem;
@@ -1109,7 +1116,7 @@ button {
 
 /* color */
 .color-subtite {
-    color: #494949;
+    color: var(--color-49494949);
 }
 
 .color-white {
@@ -1148,7 +1155,7 @@ button {
 }
 
 .color-dark-2 {
-    color: var(--dark-2);
+    color: var(--dark-2)
 }
 
 .color-dark-3 {
@@ -1168,15 +1175,15 @@ button {
 }
 
 .color-Text-NomalText-2 {
-    color: #54433b;
+    color: #54433B;
 }
 
 .color-Text-NomalText-3 {
-    color: #594b45;
+    color: #594B45;
 }
 
 .color-text-1 {
-    color: #28140c;
+    color: #28140C;
 }
 
 div {
@@ -2623,16 +2630,19 @@ input:focus {
     width: 116%;
 }
 
+
 .bld .nav-link {
+
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    color: #5a5a5a;
+    color:#5a5a5a ;
 }
 
 .bld .nav-item .active {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
+
 
 .bld .nav-link:hover {
     -webkit-filter: grayscale(0%);
@@ -2704,6 +2714,7 @@ a.color-hover-b:hover,
     opacity: 1;
 }
 
+
 .tab-content {
     margin-top: 57px;
 }
@@ -2726,7 +2737,7 @@ a.color-hover-b:hover,
     width: 43vw;
     height: 20vw;
     border-radius: 745.631px;
-    background: #9e2b47;
+    background: #9E2B47;
     filter: blur(47px);
 }
 
@@ -2759,20 +2770,21 @@ a.color-hover-b:hover,
     background-repeat: no-repeat;
 }
 
+
 .bld .Agribank-related-info-content {
     gap: 12px;
 }
 
-@media (max-width: 375px) {
-    .bld .nav-tabs .nav-link {
-        padding: 0.4rem 0;
+@media (max-width: 375px){
+    .bld .nav-tabs .nav-link{
+        padding: 0.4rem 0 ;
     }
 }
-
 @media (max-width: 992px) {
     .bld .nav-tabs .nav-link {
         padding: 0.4rem 0;
     }
+    
 }
 
 /* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
@@ -2782,16 +2794,17 @@ a.color-hover-b:hover,
 
 */
 /* --------------------------------------------------- Page Product List ------------------------------------------ */
-.product-list .nav-tabs {
+.product-list .nav-tabs{
     border-bottom: none;
     gap: 8px;
 }
-
 .product-list .nav-item {
+
     background: rgba(0, 0, 0, 0.04);
     border-radius: 4px;
     text-align: center;
 }
+
 
 .product-list .nav-item:hover {
     outline: 2px solid rgba(0, 0, 0, 0.34);
@@ -2801,17 +2814,20 @@ a.color-hover-b:hover,
     outline: 2px solid rgba(0, 0, 0, 0.34);
 }
 
-.product-list .nav-tabs .nav-link:after {
+
+.product-list .nav-tabs .nav-link:after{
     border-radius: 4px;
 }
+
 
 .product-list .nav-tabs .nav-link.active:after {
     opacity: 0;
 }
 
-.product-list .nav-link {
+.product-list .nav-link{
     margin: 0 1.75rem;
 }
+
 
 .product-list .nav-tabs .nav-link {
     color: #000;
@@ -2825,10 +2841,11 @@ a.color-hover-b:hover,
     width: 40%;
 } */
 
+
 @media (max-width: 1366px) {
-    .loan-card-content {
+    .loan-card-content{
         gap: 0;
-        padding: 40px 20px 40px 56px;
+        padding: 40px 20px 40px 36px;
     }
 }
 
@@ -2839,10 +2856,10 @@ a.color-hover-b:hover,
 }
 
 @media (max-width: 1024px) {
-    .loan-cards .tab-pane {
+    .loan-cards .tab-pane{
         display: flex;
-        flex-direction: column;
-        gap: 16px;
+    flex-direction: column;
+    gap: 16px;
     }
 }
 
@@ -2864,15 +2881,23 @@ a.color-hover-b:hover,
 
 /* ---------------------------------------------------End Page Product List ------------------------------------------ */
 
+
 /* ---------------------------------------------------Page Calcuate Tool ------------------------------------------ */
 
-.calcuate .personal-loan-section {
-    background-image: url(../images/image.png);
+
+.calcuate .personal-loan-section{
+background-image: url(../images/image.png);
 }
 
-.calcuate .money-time-loan-calculator-input {
-    background: #f4f4f4;
+#tabDropdown {
+    
+    color: #AF0B35; /* Màu chữ */
+    background-color: #ffffff; /* Màu nền */
 }
+.calcuate .money-time-loan-calculator-input{
+    background:#F4F4F4;
+}
+
 
 .calcuate input[type="number"],
 .form-text-hint,
@@ -2890,7 +2915,9 @@ a.color-hover-b:hover,
 
 .calculate-utilities {
     padding: 0 5%;
+    margin-bottom: 60px;
 }
+
 
 .calcuate .loan-result-content p {
     border-bottom: none;
@@ -2902,35 +2929,32 @@ a.color-hover-b:hover,
 
 .calcuate .loan-calculator-button,
 .calcuate .form-control,
-.calcuate .money-time-loan-calculator-input {
+.calcuate .money-time-loan-calculator-input{
     height: 3.563rem;
 }
-
-.calcuate .loan-calculator-button {
+.calcuate .loan-calculator-button{ 
     margin-top: 1.9rem;
 }
-
-.calcuate .overline-title {
+.calcuate .overline-title{
     margin-top: 1.5rem;
 }
-
-.input-rise {
+.input-rise{
     height: 2px !important;
 }
-
-.no-pabding {
+.no-pabding{
     padding-left: 0;
     /* padding-right: 0; */
 }
+.calcuate .loan-tool-tabs{
 
-.calcuate .loan-tool-tabs {
     background: #fff;
     border: none;
 }
 
 .calcuate .loan-result a {
-    display: block;
+display: block;
 }
+
 
 .calcuate .money-time-loan-calculator-group {
     gap: 0;
@@ -2954,8 +2978,9 @@ a.color-hover-b:hover,
 }
 
 .icon-change img {
-    margin-top: 120%;
+    margin-top:120%;
 }
+
 
 .calcuate .money-time-loan-calculator-form {
     width: 100%;
@@ -2984,19 +3009,22 @@ a.color-hover-b:hover,
 }
 
 .exchange-rate {
+   
     color: #000;
 }
 
 .amount-vnd {
-    margin-bottom: 5px;
+   margin-bottom: 5px;
 }
 
 .red-text {
+
     color: #c3002f;
     /* Màu đỏ */
 }
 
 .amount-usd {
+    
     margin: 5px 0;
 }
 
@@ -3005,9 +3033,10 @@ a.color-hover-b:hover,
 }
 
 .need-conversion,
-.receive {
+.receive{
     width: 45%;
 }
+
 
 .rate_conversion {
     display: flex;
@@ -3024,34 +3053,66 @@ a.color-hover-b:hover,
 
 .stage {
     display: flex;
-    gap: 32px;
+        gap: 32px;
 }
+
 
 .stage button {
     padding: 4px 8px;
     border: none;
     border-radius: 4px;
 }
-
-.stage button:hover {
-    background: #edf1f0;
+.stage button:hover{
+    background:#EDF1F0 ;
     border-radius: 4px;
 }
-
-.stage button.active {
-    background: #edf1f0;
+.stage button.active{
+    background:#EDF1F0 ;
     border-radius: 4px;
     border: none;
 }
+.calcuate .form-control{
+    padding: 0;
+}
+.calculate-dropdown{
+    display: flex;
+    border-bottom: 1px solid #E7E7E7;
+}
+.calculate-dropdown img{
+    margin: 20px 10px 0 0 ;
+}
+@media (max-width:992px) {
+    .chart{
+        border-top: 1px solid #F2F2F2;
+        padding-top: 19px;
 
-@media (max-width: 992px) {
-    .no-pabding {
-        padding-right: 0;
     }
 }
+@media (max-width:578px) {
+    .no-pabding{
+        padding-right: 0;
+    }
+    .calcuate .tab-pane{
+        padding: 0;
+    }
+    .calcuate .money-time-loan-calculator-group{
+        gap:20px;
+    }
+    .calcuate .loan-calculator-radio-form{
+        gap: 8px;
+    }
+}
+@media (max-width:375px) {
+.loan-tool-tabs{
+    gap: 30px;
+}
+
+}
+
+
 
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
-.exchange-rate .personal-loan-section {
+.exchange-rate .personal-loan-section{
     background-image: url(../images/banner-ti-gia-ngoai-te.png);
 }
 
@@ -3060,6 +3121,7 @@ a.color-hover-b:hover,
 .interestRate .card-preview {
     border: none;
 }
+
 
 .interestRate .card-inner {
     padding: 0 20%;
@@ -3082,6 +3144,7 @@ a.color-hover-b:hover,
     text-align: center;
     /* Căn giữa nội dung văn bản */
 }
+
 
 .interestRate .interestRate .personal-loan-section {
     background-image: url(../images/banner-interestRate.png);
@@ -3382,6 +3445,7 @@ a.color-hover-b:hover,
     letter-spacing: -0.34px;
 }
 
+
 .title-image-news {
     color: #494949;
     font-size: 11px;
@@ -3672,6 +3736,7 @@ a.color-hover-b:hover,
     .d-block-768 {
         display: block !important;
     }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -3864,8 +3929,9 @@ a.color-hover-b:hover,
 }
 
 .gap22 {
-    padding: 1.375rem 0;
+    padding: 1.375rem 0 ;
 }
+
 
 /* end luyendv */
 
@@ -3874,9 +3940,10 @@ a.color-hover-b:hover,
     padding: 0 5%;
 }
 
+
 .list-product-detail-section .product-detail-card-button {
     border-radius: 4px;
-    background: #9e2b47;
+    background: #9E2B47;
 }
 
 .list-product-detail-section .product-detail-card-img img {
@@ -3905,10 +3972,12 @@ a.color-hover-b:hover,
 }
 
 @media (max-width: 768px) {
+
     .list-product-detail-section .product-detail-card-list-button {
         display: flex;
         flex-direction: column;
     }
+
 
     .list-product-detail-section .product-detail-card .product-detail-card-list-button .product-detail-card-button-detail,
     .list-product-detail-section .product-detail-card-list-button .product-detail-card-button {
@@ -3932,7 +4001,7 @@ a.color-hover-b:hover,
 
 .consultation-request-button {
     border-radius: 4px;
-    border: 1px dashed #dcdcdc;
+    border: 1px dashed #DCDCDC;
     display: flex;
     width: 100%;
     align-items: center;
@@ -3946,14 +4015,14 @@ a.color-hover-b:hover,
 
 .product-advisory-section {
     padding: 0 5%;
-    background: #7b0d29;
+    background: #7B0D29;
     display: flex;
     flex-direction: row;
 }
 
 .product-advisory-section .product-advisory-button {
     border-radius: 4px;
-    background: #650d23;
+    background: #650D23;
     display: flex;
     gap: 6px;
     align-items: center;
@@ -3984,6 +4053,7 @@ a.color-hover-b:hover,
 
 /* end section */
 
+
 /* section 3 ưu điểm chính trong product-detail-page trongpd */
 
 .advantage-product-detail {
@@ -3996,7 +4066,7 @@ a.color-hover-b:hover,
     gap: 8px;
 }
 
-.advantage-card-text {
+ .advantage-card-text {
     display: flex;
     flex-direction: column;
 }
@@ -4022,6 +4092,7 @@ a.color-hover-b:hover,
     }
 }
 
+
 /* section atm-google-map trong-pd */
 .atm-map-background {
     max-height: 828px;
@@ -4038,7 +4109,7 @@ a.color-hover-b:hover,
 
 .atm-infomation {
     border-radius: 4px;
-    background: #fff;
+    background: #FFF;
     display: flex;
     flex-direction: column;
 }
@@ -4056,14 +4127,13 @@ a.color-hover-b:hover,
 }
 
 .atm-google-map-section {
+
     position: relative;
 
-    button:not(:disabled),
-    [type="button"]:not(:disabled),
-    [type="reset"]:not(:disabled),
-    [type="submit"]:not(:disabled) {
+    button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
         border: none;
     }
+
 
     .owl-carousel-search .search-product a,
     .owl-carousel-search .calculation-tool a,
@@ -4107,7 +4177,7 @@ a.color-hover-b:hover,
     }
 
     .owl-carousel-search span {
-        color: #54433b;
+        color: #54433B;
     }
 }
 
@@ -4115,7 +4185,7 @@ a.color-hover-b:hover,
     display: flex;
     flex-direction: column;
     border-radius: 4px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #F2F2F2;
 }
 
 .atm-card-content {
@@ -4135,13 +4205,13 @@ a.color-hover-b:hover,
     bottom: 10%;
     right: 0%;
     top: unset;
-    border: 1px solid #cacaca;
-    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #CACACA;
+    background: rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(10px);
 }
 
 .atm-google-map-section .btn-next svg path {
-    stroke: #54433b;
+    stroke: #54433B;
 }
 
 @media (max-width: 768px) {
@@ -4164,11 +4234,12 @@ a.color-hover-b:hover,
 
 /* end atm-google-map */
 
-/* fix page lịch sử trongdp */
+
 @media (max-width: 992px) {
     .history .main-info-s .main-info-content .main-info-title-content .main-info-title-content-text span br {
         display: none;
     }
+
 }
 
 /* end fix */

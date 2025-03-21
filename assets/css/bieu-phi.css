@@ -1,6 +1,6 @@
 @import url(common.css);
 /* viet file common */
-.application-form-title-section {
+.fee-schedule-title-section {
     height: 573px;
     display: flex;
     align-items: flex-start;
@@ -22,7 +22,7 @@
     transform: translateX(-50%);
 }
 
-.application-form .content-top .content-top-menu.active::after {
+.fee-schedule .content-top .content-top-menu.active::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -42,7 +42,7 @@
 .content-top-menu:hover svg path {
     stroke: #af0b35;
 }
-.application-form .content-top-menu img {
+.fee-schedule .content-top-menu img {
     width: 100%;
     height: 100%;
 }
@@ -56,13 +56,13 @@
     background: var(--red-1);
     border: var(--red-1);
 }
-.application-form .content-top-menu.underline::before {
+.fee-schedule .content-top-menu.underline::before {
     display: none;
 }
-.application-form .image-cate {
+.fee-schedule .image-cate {
     position: relative;
 }
-.application-form .title-cate {
+.fee-schedule .title-cate {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -77,40 +77,40 @@
     background-color: #af0b35;
 }
 
-.application-form .home-vision-header-button {
+.fee-schedule .home-vision-header-button {
     background: var(--red-1);
 }
 
-.application-form .application-form-agri-notification-containers {
+.fee-schedule .fee-schedule-agri-notification-containers {
     display: flex;
     justify-content: space-between;
 }
 
-.application-form .home-vision-header-button a {
+.fee-schedule .home-vision-header-button a {
     gap: 6px;
     display: flex;
     align-items: center;
 }
 
-.application-form .application-form-agri-notification a {
+.fee-schedule .fee-schedule-agri-notification a {
     display: flex;
     gap: 8px;
     align-items: center;
 }
 
-.application-form .application-form-agri-notification {
+.fee-schedule .fee-schedule-agri-notification {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.application-form .application-form-agri-notification-item {
+.fee-schedule .fee-schedule-agri-notification-item {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.application-form .application-form-agri-notification-right {
+.fee-schedule .fee-schedule-agri-notification-right {
     border-left: 1px solid #f2f2f2;
 }
 /* end common */
@@ -157,7 +157,7 @@
     aspect-ratio: 1;
 }
 
-.application-form-title-text {
+.fee-schedule-title-text {
     width: 100%;
     height: 100%;
     display: flex;
@@ -166,19 +166,19 @@
     justify-content: space-between;
 }
 
-.application-form-title-sub {
+.fee-schedule-title-sub {
     display: flex;
     gap: 6px;
     align-items: center;
 }
 
-.application-form-title-content {
+.fee-schedule-title-content {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.application-form-title-main-content {
+.fee-schedule-title-main-content {
     padding: 0px 5%;
 }
 
@@ -187,11 +187,11 @@
     justify-content: center;
 }
 
-.application-form-top-news-item {
+.fee-schedule-top-news-item {
     overflow: hidden;
     justify-content: center;
 }
-.application-form-top-news-item-title {
+.fee-schedule-top-news-item-title {
     width: 50%;
     bottom: 38px;
     margin-left: 31px;
@@ -200,7 +200,7 @@
     gap: 12px;
     flex-direction: column;
 }
-.application-form-top-news-item-slide {
+.fee-schedule-top-news-item-slide {
     position: relative;
 }
 .slick-dots li button {
@@ -271,23 +271,23 @@
     transition: background-color 0.3s, transform 0.2s;
 }
 
-.application-form .home-header-slim {
+.fee-schedule .home-header-slim {
     background: #ffffff !important;
 }
 
-.application-form .top-menu-right .hot-line span {
+.fee-schedule .top-menu-right .hot-line span {
     color: rgba(0, 0, 0, 0.6);
 }
 .nk-menu-main .nk-menu-item .nk-menu-toggle:after {
     display: none;
 }
-.application-form .home-header-slim-button {
+.fee-schedule .home-header-slim-button {
     background: #af0b35;
 }
-.application-form .home-header-slim-line {
+.fee-schedule .home-header-slim-line {
     background: #f2f2f2;
 }
-.application-form .top-menu-right .hot-line a {
+.fee-schedule .top-menu-right .hot-line a {
     color: #000;
 }
 /* .stt:active {
@@ -341,7 +341,7 @@
     gap: 12px;
 }
 
-.application-form-top-news .title {
+.fee-schedule-top-news .title {
     bottom: 0;
     left: 0;
     border-radius: 0px 0px 4px 4px;
@@ -413,16 +413,16 @@
     line-height: 140%; /* 19.6px */
     letter-spacing: 0.28px;
 }
-.application-form .content-top {
+.fee-schedule .content-top {
     width: 100%;
 }
-.application-form .content-top.menu-tab-ct .content-top-menu {
+.fee-schedule .content-top.menu-tab-ct .content-top-menu {
     width: 25%;
 }
 @media (max-width: 1366px) and (min-width: 1199.98px) {
-    .col-xl-3 {
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
+    .col-xl- {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
     }
 }
 @media (max-width: 1200px) and (min-width: 991.98px) {
@@ -431,36 +431,36 @@
     }
 }
 @media (max-width: 992px) {
-    .application-form .application-form-agri-notification-containers {
+    .fee-schedule .fee-schedule-agri-notification-containers {
         gap: 20px;
     }
 
-    .application-form .application-form-agri-notification br {
+    .fee-schedule .fee-schedule-agri-notification br {
         display: none;
     }
 
-    .application-form .application-form-agri-notification-right {
+    .fee-schedule .fee-schedule-agri-notification-right {
         border-left: none;
         border-top: 1px solid #f2f2f2;
     }
 
-    .application-form .application-form-agri-notification {
+    .fee-schedule .fee-schedule-agri-notification {
         gap: 15px;
     }
 
-    .application-form .application-form-agri-notification-content {
+    .fee-schedule .fee-schedule-agri-notification-content {
         padding: 0;
     }
 }
 
 @media (max-width: 768px) {
-    .application-form .content-top {
+    .fee-schedule .content-top {
         width: 100%;
     }
-    .application-form .content-top {
+    .fee-schedule .content-top {
         justify-content: space-around;
     }
-    .application-form-title-text {
+    .fee-schedule-title-text {
         padding: 27px 6%;
     }
     .nk-menu-heading {
@@ -495,7 +495,7 @@
         padding-left: 0%;
     }
 
-    .application-form-title-section {
+    .fee-schedule-title-section {
         height: 450px;
     }
 
@@ -507,17 +507,17 @@
     }
 }
 @media (max-width: 375px) {
-    .application-form .content-top {
+    .fee-schedule .content-top {
         width: 100%;
     }
-    .application-form .content-top {
+    .fee-schedule .content-top {
         justify-content: space-around;
     }
-    .application-form-title-section {
+    .fee-schedule-title-section {
         height: 375px;
     }
 
-    .application-form-title-text {
+    .fee-schedule-title-text {
         padding: 18px 6%;
     }
     .owl-center.owl-carousel .owl-nav,
