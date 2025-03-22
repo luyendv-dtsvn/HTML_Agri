@@ -3238,7 +3238,32 @@ display: block;
         height: 700px;
     }
 }
-
+/* Lãi Suất */
+    .interestRate  .nav-tabs .nav-link{
+        padding: 1rem 32px;
+    }
+    .interestRate .nav-link {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        color:#5a5a5a ;
+    }
+    .interestRate .nav-item .active {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+    @media (max-width: 992px) {
+        .interestRate .card-inner{
+            padding:0 15%;
+        }
+        .interestRate .profit-table span:last-child {
+            width: 80%;
+        }
+    }
+    @media (max-width: 578px) {
+        .interestRate .card-inner{
+            padding:0 10%;
+        }
+    }
 .blog .select2-container--default .select2-selection--single:focus {
     box-shadow: none;
     border-color: #6576ff;
