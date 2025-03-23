@@ -4122,19 +4122,123 @@ display: block;
 
 .advantage-card-img img {
     aspect-ratio: 1 / 1;
-    max-width: 56px;
+    width: 56px;
 }
 
 @media (max-width: 768px) {
     .advantage-card-img img {
-        width: 40px;
+        min-width: 40px;
     }
 
     .advantage-card-content {
         flex-direction: row;
+        gap: 12px;
     }
 }
 
+/* fix page product-detail-page trongpd */
+.product-info-tabs .tab-content-table-list-line {
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-info-tabs .tab-content-table-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-info-tabs .tab-content-table tr {
+    align-items: flex-start;
+}
+
+
+.product-detail .loan-tool-section {
+    input[type="radio"] {
+        accent-color: #9E2B47;
+    }
+
+    .input-slider-wrapper {
+        background: #FFF;
+    }
+
+    .money-time-loan-calculator-input {
+        position: relative;
+    }
+
+    input[type="range"] {
+        position: absolute;
+    }
+
+    .loan-calculator-radio label {
+        margin: 0;
+    }
+
+    .loan-result a {
+        justify-content: flex-start;
+    }
+
+    .input-slider-wrapper input[type="number"], .input-slider-wrapper input[type="text"] {
+        box-shadow: none;
+        padding: 0;
+        height: auto;
+    }
+}
+
+.advantage-card-asked-questions .asked-questions .slick-dots {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .advantage-card-asked-questions .asked-questions .slick-dots {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-detail .loan-tool-section .loan-calculator {
+        padding: 16px;
+        padding-bottom: 0px;
+    }
+
+    .product-detail .loan-tool-section .loan-tool-tabs {
+        gap: 24px;
+    }
+
+    .product-detail .loan-tool-section .loan-calculator {
+        height: auto;
+    }
+
+}
+
+@media (max-width: 376px) {
+    .advantage-product-detail .heading-h8 {
+        font-size: 17px;
+    }
+
+    .advantage-product-detail .regular-15 {
+        font-size: 14px;
+    }
+
+    .product-info-section .regular-15,.product-info-section .regular-14, .loan-tool-section .regular-15, .loan-tool-section .loan-result .body-16, .loan-tool-section .loan-result .regular-16  {
+        font-size: 14px;
+    }
+
+    .product-info-section .tab-content-info tr .body-15, .product-info-section .tab-content-info tr .regular-15 {
+        font-size: 13px;
+    }
+
+    .advantage-card-asked-questions .heading-h7 {
+        font-size: 25px;
+    }
+
+    .advantage-card-asked-questions .regular-16 {
+        font-size: 15px;
+    }
+}
+
+/* end fix */
 
 /* section atm-google-map trong-pd */
 .atm-map-background {
