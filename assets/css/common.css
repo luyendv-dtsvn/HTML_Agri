@@ -3010,6 +3010,7 @@ a.color-hover-b:hover,
 
 .calcuate .currency-unit {
     display: flex;
+    margin-left: 20px;
 }
 
 .calcuate select {
@@ -3054,7 +3055,7 @@ a.color-hover-b:hover,
 
 .rate_conversion {
     display: flex;
-    gap: 50px;
+    gap: 3%;
 }
 
 .change {
@@ -3063,6 +3064,7 @@ a.color-hover-b:hover,
 
 .chart {
     width: 100%;
+    padding-top: 20px;
 }
 
 .stage {
@@ -3115,6 +3117,15 @@ a.color-hover-b:hover,
     .calcuate .receive {
         width: 43%;
     }
+.calcuate .form-icon-right{
+    top: 10px;
+}
+.calcuate .date-picker {
+    text-indent: 15px; /* Đẩy nội dung sang trái */
+    background-color:#F4F4F4 ;
+    border: none;
+}
+
 @media (max-width:1366px) {
     .convert {
         gap: 5%;
@@ -3130,9 +3141,14 @@ a.color-hover-b:hover,
     .chart {
         border-top: 1px solid #F2F2F2;
         padding-top: 19px;
-
+margin-top: 2.75rem;
     }
-
+    .deposit-interest{
+        gap: 20px;
+    }
+    .calcuate .currency-unit{
+        margin-left:0;
+    }
     .calcuate .need-conversion,
     .calcuate .receive {
         width: 41%;
@@ -3170,6 +3186,9 @@ a.color-hover-b:hover,
     .loan-tool-tabs {
         gap: 30px;
     }
+    .tab-content {
+        margin-top: 24px;
+    }
 
 }
 
@@ -3180,7 +3199,7 @@ a.color-hover-b:hover,
     background-image: url(../images/banner-ti-gia-ngoai-te.png);
 }
 
-/* ---------------------------------------------------Page Calcuate Tool ------------------------------------------ */
+/* ---------------------------------------------------Page interestRate ------------------------------------------ */
 
 .interestRate .card-preview {
     border: none;
@@ -3218,12 +3237,53 @@ a.color-hover-b:hover,
     margin-bottom: 4.5%;
 }
 
-.table {
+.interestRate .table {
     border: 1px solid #f4f0f0;
     /* opacity: 6; */
     border-radius: 4px;
-}
 
+}
+.interestRate .table-mobile{
+    padding: 0 10%;
+}
+.interestRate .deadline{
+    display: flex; 
+    justify-content: flex-start; /* Canh trái */
+    width: 100%; /* Để nó luôn nằm giữa theo chiều dọc */
+    border-radius: 6px 6px 0px 0px;
+    background: rgba(195, 60, 94, 0.07);
+}
+.interestRate .percent,
+.interestRate .no-deadline span,
+.interestRate .deadline span{
+    padding: 16px ;
+}
+.interestRate .no-deadline,
+.interestRate .rate-item{
+    display: flex; 
+    justify-content: space-between; /* Canh trái */
+    width: 100%; 
+    flex-direction: row;
+}
+.interestRate .rate-items {
+    display: flex;
+    padding: 16px 0;
+    gap:10px ;
+    
+}
+.interestRate .rate-items span,.percent{
+    margin-top: 5px;
+}
+@media (min-width: 992px){
+    .interestRate .table-mobile{
+        display: none;
+    }
+}
+@media (max-width: 992px){
+    .interestRate .card-inner{
+        display: none;
+    }
+}
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
 
 @media (max-width: 1366px) and (min-width: 1000px) {
