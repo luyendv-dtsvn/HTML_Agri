@@ -9,6 +9,11 @@
     background-size: cover;
     padding: 40px 5%;
 }
+.contact-map {
+    background: url("../images/contact/image\ 2.svg");
+    height: 638px;
+    background-size: cover;
+}
 
 .content-top-menu.underline::before {
     content: "";
@@ -163,6 +168,13 @@
     flex-direction: column;
     gap: 20px;
     justify-content: space-between;
+}
+.contact-text-map {
+    background-color: #fff;
+    padding: 36px 48px;
+}
+.contact-maps-text {
+    padding-top: 113px;
 }
 
 .contact-title-sub {
@@ -422,6 +434,9 @@
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
     }
+    .contact .contact-box {
+        min-height: 235px !important;
+    }
 }
 @media (max-width: 992px) {
     .contact .contact-agri-notification-containers {
@@ -444,11 +459,17 @@
     .contact .contact-agri-notification-content {
         padding: 0;
     }
+    .contact .contact-maps-text {
+        padding-top: 12px;
+    }
+    .contact .contact-box {
+        min-height: 260px !important;
+    }
 }
 
 @media (max-width: 768px) {
-    .contact-title-text {
-        padding: 27px 6%;
+    .contact-text-map {
+        padding: 28px;
     }
     .nk-menu-heading {
         padding: 14px;
@@ -492,14 +513,27 @@
     .social-network-text {
         text-align: center;
     }
+    .contact .contact-maps-text {
+        padding-top: 12px;
+    }
+    .contact .title-maps {
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 27.6px */
+        letter-spacing: -0.23px;
+    }
+    .contact .contact-box {
+        min-height: 282px !important;
+    }
 }
 @media (max-width: 375px) {
     .contact-title-section {
         height: 375px;
     }
 
-    .contact-title-text {
-        padding: 18px 6%;
+    .contact .contact-text-map {
+        padding: 28px;
     }
     .owl-center.owl-carousel .owl-nav,
     .owl-center.owl-carousel .owl-dots {
@@ -509,5 +543,38 @@
     }
     .mobi {
         display: flex;
+    }
+    .contact .contact-maps-text {
+        padding-top: 12px;
+    }
+    .contact .title-maps {
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 27.6px */
+        letter-spacing: -0.23px;
+    }
+    .contact .text-b {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+        letter-spacing: 0.14px;
+    }
+    .contact .text-title-b {
+        /* Desktop/Body/15 */
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%; /* 16.5px */
+        letter-spacing: 0.15px;
+        padding-top: 24px;
+        
+    }
+    .contact .contact-block {
+        padding: 12px 0px !important;
+    }
+    .contact .contact-map {
+        margin: 12px 0px !important;
     }
 }

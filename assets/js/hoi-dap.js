@@ -1,21 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".agribank-culture-identity-card");
-  
-    cards.forEach((card) => {
-        card.addEventListener("mouseenter", () => {
-            cards.forEach((c) => c.classList.remove("active"));
-            card.classList.add("active");
-        });
-  
-        card.addEventListener("mouseleave", () => {
-            card.classList.remove("active");
-        });
-    });
-  });
-  
-  
-  
+    
   //------------------Nét đặc sắc ở phần trang văn hóa---------------------------
   document.addEventListener("DOMContentLoaded", () => {
     const items = document.querySelectorAll(".featured-culture-item");
@@ -35,48 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
   });
-  
-  
-  //-------------------Phần chuyển trang trong phần cuối trang văn hóa------------------------------
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    const newsList = document.querySelector(".agribank-news-list");
-    const newsItems = document.querySelectorAll(".agribank-news-item");
-    const prevBtn = document.querySelector(".prev-btn");
-    const nextBtn = document.querySelector(".next-btn");
-  
-    let currentStartIndex = 0;
-  
-    // Hàm cập nhật hiển thị sản phẩm
-    function updateVisibleItems() {
-        newsItems.forEach((item, index) => {
-            if (index >= currentStartIndex && index < currentStartIndex + 4) {
-                item.style.display = "flex"; // Hiển thị sản phẩm
-            } else {
-                item.style.display = "none"; // Ẩn sản phẩm
-            }
-        });
-    }
-  
-    // Sự kiện nút sang phải
-    // nextBtn.addEventListener("click", () => {
-    //     currentStartIndex = (currentStartIndex + 1) % newsItems.length;
-    //     updateVisibleItems();
-    // });
-  
-    // Sự kiện nút sang trái
-    // prevBtn.addEventListener("click", () => {
-    //     currentStartIndex =
-    //         (currentStartIndex - 1 + newsItems.length) % newsItems.length;
-    //     updateVisibleItems();
-    // });
-  
-    // Khởi tạo hiển thị ban đầu
-    updateVisibleItems();
-  });
-  
-  
-  
   
   
   //--------------------Phần chuyển tab trên trang danh sách sản phẩm----------------------------
@@ -156,45 +98,4 @@ document.addEventListener("DOMContentLoaded", () => {
   //   }
   // });
   
-  document.addEventListener('DOMContentLoaded', () => {
-    // Lấy các phần tử liên quan
-    const selectButtonAnswerNew = document.getElementById('tab-select-answer-navtab'); // Đổi tên biến để tránh xung đột
-    console.log(selectButtonAnswerNew);
-    if (selectButtonAnswerNew) { // Kiểm tra phần tử tồn tại
-      const dropdownMenu = selectButtonAnswerNew.nextElementSibling; // Dropdown menu
-      const tabOptionsAnswer = document.querySelectorAll('.tab-pane-answer');
-  
-      // Xử lý khi nhấn nút select để mở menu
-      selectButtonAnswerNew.addEventListener('click', () => {
-        dropdownMenu.classList.toggle('show');
-      });
-  
-      // Xử lý khi chọn một tùy chọn từ menu
-      tabOptionsAnswer.forEach(option => {
-        option.addEventListener('click', (e) => {
-          e.preventDefault();
-          const tabName = option.textContent;
-          selectButtonAnswerNew.querySelector('span').textContent = tabName;
-  
-          dropdownMenu.classList.remove('show');
-  
-          const tabId = option.getAttribute('data-tab');
-          const allTabs = document.querySelectorAll('.tab-pane');
-          const activeTab = document.getElementById(tabId);
-  
-          if (activeTab) {
-            allTabs.forEach(tab => tab.classList.remove('active'));
-            activeTab.classList.add('active');
-          }
-        });
-      });
-  
-      // Đóng menu khi nhấp bên ngoài
-      document.addEventListener('click', (e) => {
-        if (!selectButtonAnswerNew.contains(e.target) && !dropdownMenu.contains(e.target)) {
-          dropdownMenu.classList.remove('show');
-        }
-      });
-    }
-  });
   
