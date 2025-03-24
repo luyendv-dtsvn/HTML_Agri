@@ -23,12 +23,15 @@
 
     /* Màu chính */
 }
-.--color-393939{
+
+.--color-393939 {
     color: var(--color-393939);
 }
-.--color-49494949{
+
+.--color-49494949 {
     color: var(--color-49494949);
 }
+
 body,
 button {
     font-family: "BT Grotesk Regular";
@@ -287,6 +290,7 @@ button {
     font-weight: 400;
     text-transform: uppercase;
 }
+
 .subtitle-14 {
     font-family: "BT Grotesk Medium";
     font-size: 0.875rem;
@@ -2635,7 +2639,7 @@ input:focus {
 
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    color:#5a5a5a ;
+    color: #5a5a5a;
 }
 
 .bld .nav-item .active {
@@ -2775,16 +2779,17 @@ a.color-hover-b:hover,
     gap: 12px;
 }
 
-@media (max-width: 375px){
-    .bld .nav-tabs .nav-link{
-        padding: 0.4rem 0 ;
+@media (max-width: 375px) {
+    .bld .nav-tabs .nav-link {
+        padding: 0.4rem 0;
     }
 }
+
 @media (max-width: 992px) {
     .bld .nav-tabs .nav-link {
         padding: 0.4rem 0;
     }
-    
+
 }
 
 /* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
@@ -2794,10 +2799,11 @@ a.color-hover-b:hover,
 
 */
 /* --------------------------------------------------- Page Product List ------------------------------------------ */
-.product-list .nav-tabs{
+.product-list .nav-tabs {
     border-bottom: none;
     gap: 8px;
 }
+
 .product-list .nav-item {
 
     background: rgba(0, 0, 0, 0.04);
@@ -2815,7 +2821,7 @@ a.color-hover-b:hover,
 }
 
 
-.product-list .nav-tabs .nav-link:after{
+.product-list .nav-tabs .nav-link:after {
     border-radius: 4px;
 }
 
@@ -2824,7 +2830,7 @@ a.color-hover-b:hover,
     opacity: 0;
 }
 
-.product-list .nav-link{
+.product-list .nav-link {
     margin: 0 1.75rem;
 }
 
@@ -2843,7 +2849,7 @@ a.color-hover-b:hover,
 
 
 @media (max-width: 1366px) {
-    .loan-card-content{
+    .loan-card-content {
         gap: 0;
         padding: 40px 20px 40px 36px;
     }
@@ -2856,10 +2862,10 @@ a.color-hover-b:hover,
 }
 
 @media (max-width: 1024px) {
-    .loan-cards .tab-pane{
+    .loan-cards .tab-pane {
         display: flex;
-    flex-direction: column;
-    gap: 16px;
+        flex-direction: column;
+        gap: 16px;
     }
 }
 
@@ -2885,17 +2891,20 @@ a.color-hover-b:hover,
 /* ---------------------------------------------------Page Calcuate Tool ------------------------------------------ */
 
 
-.calcuate .personal-loan-section{
-background-image: url(../images/image.png);
+.calcuate .personal-loan-section {
+    background-image: url(../images/image.png);
 }
 
 #tabDropdown {
-    
-    color: #AF0B35; /* Màu chữ */
-    background-color: #ffffff; /* Màu nền */
+
+    color: #AF0B35;
+    /* Màu chữ */
+    background-color: #ffffff;
+    /* Màu nền */
 }
-.calcuate .money-time-loan-calculator-input{
-    background:#F4F4F4;
+
+.calcuate .money-time-loan-calculator-input {
+    background: #F4F4F4;
 }
 
 
@@ -2929,30 +2938,35 @@ background-image: url(../images/image.png);
 
 .calcuate .loan-calculator-button,
 .calcuate .form-control,
-.calcuate .money-time-loan-calculator-input{
+.calcuate .money-time-loan-calculator-input {
     height: 3.563rem;
 }
-.calcuate .loan-calculator-button{ 
+
+.calcuate .loan-calculator-button {
     margin-top: 1.9rem;
 }
-.calcuate .overline-title{
+
+.calcuate .overline-title {
     margin-top: 1.5rem;
 }
-.input-rise{
+
+.input-rise {
     height: 2px !important;
 }
-.no-pabding{
+
+.no-pabding {
     padding-left: 0;
     /* padding-right: 0; */
 }
-.calcuate .loan-tool-tabs{
+
+.calcuate .loan-tool-tabs {
 
     background: #fff;
     border: none;
 }
 
 .calcuate .loan-result a {
-display: block;
+    display: block;
 }
 
 
@@ -2978,7 +2992,7 @@ display: block;
 }
 
 .icon-change img {
-    margin-top:120%;
+    margin-top: 120%;
 }
 
 
@@ -3009,12 +3023,12 @@ display: block;
 }
 
 .exchange-rate {
-   
+
     color: #000;
 }
 
 .amount-vnd {
-   margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .red-text {
@@ -3024,7 +3038,7 @@ display: block;
 }
 
 .amount-usd {
-    
+
     margin: 5px 0;
 }
 
@@ -3033,7 +3047,7 @@ display: block;
 }
 
 .need-conversion,
-.receive{
+.receive {
     width: 45%;
 }
 
@@ -3053,7 +3067,7 @@ display: block;
 
 .stage {
     display: flex;
-        gap: 32px;
+    gap: 32px;
 }
 
 
@@ -3062,75 +3076,107 @@ display: block;
     border: none;
     border-radius: 4px;
 }
-.stage button:hover{
-    background:#EDF1F0 ;
+
+.stage button:hover {
+    background: #EDF1F0;
     border-radius: 4px;
 }
-.stage button.active{
-    background:#EDF1F0 ;
+
+.stage button.active {
+    background: #EDF1F0;
     border-radius: 4px;
     border: none;
 }
-.calcuate .form-control{
+
+.calcuate .form-control {
     padding: 0;
 }
-.calculate-dropdown{
+
+.calculate-dropdown {
     display: flex;
     border-bottom: 1px solid #E7E7E7;
 }
-.calculate-dropdown img{
-    margin: 20px 10px 0 0 ;
+
+.calculate-dropdown img {
+    margin: 20px 10px 0 0;
 }
-.icon-change-mobile{
-    
+
+.icon-change-mobile {
+
     display: flex;
 }
-.icon-change-mobile img{
+
+.icon-change-mobile img {
     position: absolute;
     top: 0;
     right: 45%;
 }
+.calcuate .need-conversion,
+    .calcuate .receive {
+        width: 43%;
+    }
 @media (max-width:1366px) {
     .convert {
-       gap: 10px;
+        gap: 5%;
 
     }
+    .calcuate .need-conversion,
+    .calcuate .receive {
+        width: 40%;
+    }
 }
+
 @media (max-width:992px) {
-    .chart{
+    .chart {
         border-top: 1px solid #F2F2F2;
         padding-top: 19px;
 
     }
+
+    .calcuate .need-conversion,
+    .calcuate .receive {
+        width: 41%;
+    }
 }
+
 @media (max-width:578px) {
-    .no-pabding{
+    .no-pabding {
         padding-right: 0;
     }
-    .calcuate .tab-pane{
+
+    .calcuate .tab-pane {
         padding: 0;
     }
-    .calcuate .money-time-loan-calculator-group{
-        gap:20px;
+
+    .calcuate .money-time-loan-calculator-group {
+        gap: 20px;
     }
-    .calcuate .loan-calculator-radio-form{
+
+    .calcuate .loan-calculator-radio-form {
         gap: 8px;
     }
+
     .stage {
         gap: 0;
     }
+
+    .calcuate .need-conversion,
+    .calcuate .receive {
+        width: 100%;
+    }
 }
+
 @media (max-width:375px) {
-.loan-tool-tabs{
-    gap: 30px;
-}
+    .loan-tool-tabs {
+        gap: 30px;
+    }
 
 }
 
 
 
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
-.exchange-rate .personal-loan-section{
+.exchange-rate .personal-loan-section {
     background-image: url(../images/banner-ti-gia-ngoai-te.png);
 }
 
@@ -3238,32 +3284,39 @@ display: block;
         height: 700px;
     }
 }
+
 /* Lãi Suất */
-    .interestRate  .nav-tabs .nav-link{
-        padding: 1rem 32px;
+.interestRate .nav-tabs .nav-link {
+    padding: 1rem 32px;
+}
+
+.interestRate .nav-link {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    color: #5a5a5a;
+}
+
+.interestRate .nav-item .active {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+@media (max-width: 992px) {
+    .interestRate .card-inner {
+        padding: 0 15%;
     }
-    .interestRate .nav-link {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        color:#5a5a5a ;
+
+    .interestRate .profit-table span:last-child {
+        width: 80%;
     }
-    .interestRate .nav-item .active {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
+}
+
+@media (max-width: 578px) {
+    .interestRate .card-inner {
+        padding: 0 10%;
     }
-    @media (max-width: 992px) {
-        .interestRate .card-inner{
-            padding:0 15%;
-        }
-        .interestRate .profit-table span:last-child {
-            width: 80%;
-        }
-    }
-    @media (max-width: 578px) {
-        .interestRate .card-inner{
-            padding:0 10%;
-        }
-    }
+}
+
 .blog .select2-container--default .select2-selection--single:focus {
     box-shadow: none;
     border-color: #6576ff;
@@ -3972,7 +4025,7 @@ display: block;
 }
 
 .gap22 {
-    padding: 1.375rem 0 ;
+    padding: 1.375rem 0;
 }
 
 
@@ -4109,7 +4162,7 @@ display: block;
     gap: 8px;
 }
 
- .advantage-card-text {
+.advantage-card-text {
     display: flex;
     flex-direction: column;
 }
@@ -4179,7 +4232,8 @@ display: block;
         justify-content: flex-start;
     }
 
-    .input-slider-wrapper input[type="number"], .input-slider-wrapper input[type="text"] {
+    .input-slider-wrapper input[type="number"],
+    .input-slider-wrapper input[type="text"] {
         box-shadow: none;
         padding: 0;
         height: auto;
@@ -4288,11 +4342,16 @@ display: block;
         font-size: 14px;
     }
 
-    .product-info-section .regular-15,.product-info-section .regular-14, .loan-tool-section .regular-15, .loan-tool-section .loan-result .body-16, .loan-tool-section .loan-result .regular-16  {
+    .product-info-section .regular-15,
+    .product-info-section .regular-14,
+    .loan-tool-section .regular-15,
+    .loan-tool-section .loan-result .body-16,
+    .loan-tool-section .loan-result .regular-16 {
         font-size: 14px;
     }
 
-    .product-info-section .tab-content-info tr .body-15, .product-info-section .tab-content-info tr .regular-15 {
+    .product-info-section .tab-content-info tr .body-15,
+    .product-info-section .tab-content-info tr .regular-15 {
         font-size: 13px;
     }
 
@@ -4348,7 +4407,10 @@ display: block;
 
     position: relative;
 
-    button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    button:not(:disabled),
+    [type="button"]:not(:disabled),
+    [type="reset"]:not(:disabled),
+    [type="submit"]:not(:disabled) {
         border: none;
     }
 
@@ -4638,7 +4700,8 @@ display: block;
     padding: 0 5%;
 }
 
-.van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-nav, .van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-dots {
+.van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-nav,
+.van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-dots {
     right: 4%;
     top: -26%;
 }
@@ -4674,64 +4737,67 @@ display: block;
 }
 
 .van-hoa-agri-page .agribank-quote-section .floating-image-1 {
-    top: 0; 
+    top: 0;
     left: 14%;
 }
 
 .van-hoa-agri-page .agribank-quote-section .floating-image-2 {
-    top: 17.3%; 
-    left: 31.25%; 
+    top: 17.3%;
+    left: 31.25%;
     width: 84px;
 }
 
 .van-hoa-agri-page .agribank-quote-section .floating-image-3 {
-    top: 42%; 
-    left: 24.3%; 
+    top: 42%;
+    left: 24.3%;
     width: 54px;
 }
 
 .van-hoa-agri-page .agribank-quote-section .floating-image-4 {
-    top: 45%; 
-    left: 39.3%; 
+    top: 45%;
+    left: 39.3%;
     width: 136px;
 }
 
 .van-hoa-agri-page .agribank-quote-section .floating-image-5 {
-    top: 11%; 
-    left: 50%; 
+    top: 11%;
+    left: 50%;
     width: 84px;
 }
 
 .van-hoa-agri-page .agribank-quote-section .floating-image-6 {
-    top: 42%; 
-    left: 60%; 
+    top: 42%;
+    left: 60%;
     width: 106px;
 }
 
 .van-hoa-agri-page .agribank-quote-section .floating-image-7 {
-    top: 14%; 
-    left: 70%; 
+    top: 14%;
+    left: 70%;
     width: 128px;
 }
 
 .van-hoa-agri-page .agribank-quote-section .floating-image-8 {
-    top: 44%; 
-    right: 18%; 
+    top: 44%;
+    right: 18%;
     width: 51px;
 }
 
 .van-hoa-agri-page .agribank-quote-section .floating-image-9 {
-    top: 4%; 
-    right: 10%; 
+    top: 4%;
+    right: 10%;
     width: 91px;
 }
 
 @media (max-width: 1024px) {
-    .van-hoa-agri-page .slider-blog.owl-carousel .owl-nav, .van-hoa-agri-page .slider-blog.owl-carousel .owl-dots {
+
+    .van-hoa-agri-page .slider-blog.owl-carousel .owl-nav,
+    .van-hoa-agri-page .slider-blog.owl-carousel .owl-dots {
         gap: 48px;
     }
 
-    .van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-nav, .van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-dots {
+    .van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-nav,
+    .van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-dots {
         right: 5%;
         top: -24%;
     }
@@ -4802,11 +4868,13 @@ display: block;
     .van-hoa-agri-page .agribank-quote-section .agribank-quote-main-content {
         padding-left: 24px;
     }
+
     .van-hoa-agri-page .agribank-quote-section .agribank-quote-icon {
         width: 20px;
         height: 20px;
         display: flex;
     }
+
     .van-hoa-agri-page .agribank-quote-section .floating-image-9,
     .van-hoa-agri-page .agribank-quote-section .floating-image-1,
     .van-hoa-agri-page .agribank-quote-section .floating-image-8,
@@ -4855,6 +4923,3 @@ display: block;
         top: 53%;
     }
 }
-
-
-
