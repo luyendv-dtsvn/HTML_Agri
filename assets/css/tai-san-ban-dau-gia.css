@@ -447,9 +447,7 @@
 }
 
 @media (max-width: 768px) {
-    .disclosure-title-text {
-        padding: 27px 6%;
-    }
+    
     .nk-menu-heading {
         padding: 14px;
         color: #af0b35;
@@ -498,9 +496,6 @@
         height: 375px;
     }
 
-    .disclosure-title-text {
-        padding: 18px 6%;
-    }
     .owl-center.owl-carousel .owl-nav,
     .owl-center.owl-carousel .owl-dots {
     }
