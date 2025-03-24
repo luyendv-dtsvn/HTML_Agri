@@ -1347,42 +1347,7 @@
                     <img src="../assets/images/CaretRight.svg" alt="">
                 </div>
             </div>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-    let ulTabs = document.querySelector(".calculate-utilities-loan ul");
-    let dropdownContainer = document.querySelector(".calculate-dropdown");
-    let selectDropdown = document.querySelector("#tabDropdown");
-
-    function toggleTabsAndDropdown() {
-        if (window.innerWidth <= 500) {
-            ulTabs.classList.add("d-none"); // Ẩn tabs khi màn hình nhỏ
-            dropdownContainer.classList.remove("d-none"); // Hiện dropdown
-        } else {
-            ulTabs.classList.remove("d-none"); // Hiện tabs khi lớn hơn 375px
-            dropdownContainer.classList.add("d-none"); // Ẩn dropdown
-        }
-    }
-
-    // Gọi hàm khi tải trang và khi resize
-    toggleTabsAndDropdown();
-    window.addEventListener("resize", toggleTabsAndDropdown);
-
-    // Chuyển tab khi chọn dropdown
-    selectDropdown.addEventListener("change", function () {
-        let selectedTab = this.value;
-
-        // Ẩn tất cả tab
-        document.querySelectorAll(".tab-pane").forEach(tab => {
-            tab.classList.remove("show", "active");
-        });
-
-        // Hiện tab được chọn
-        document.querySelector(selectedTab).classList.add("show", "active");
-    });
-});
-
-
-            </script>
+            
             <div class="tab-content">
                 <div class="tab-pane active" id="tabItem5">
                     <h3 class="heading-h7 mb-4 --color-393939">Tính lãi tiền gửi</h3>
@@ -1390,7 +1355,7 @@
                         <div class="col-sm-9 col-lg-3 col-12 money-time-loan-calculator-form  no-pabding">
                             <label class="body-14  --color-49494949" for="loan-amount">Số tiền vay</label>
                             <div class="money-time-loan-calculator-input">
-                                <div class="input-slider-wrapper">
+                                <div class="input-slider-wrapper pl-3 pr-3 pt-2">
                                     <input type="number" id="loan-amount-input" value="810000" min="0" max="10000000"
                                         step="1"
                                         oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
@@ -1409,7 +1374,7 @@
                         <div class="col-sm-9 col-lg-3 col-12 money-time-loan-calculator-form no-pabding">
                             <label class="body-14 --color-49494949" for="loan-duration">Thời hạn vay</label>
                             <div class="money-time-loan-calculator-input">
-                                <div class="input-slider-wrapper">
+                                <div class="input-slider-wrapper pl-3 pr-3 pt-2 ">
                                     <input type="number" id="loan-duration-display" value="12" min="1" max="120"
                                         step="1"
                                         oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
@@ -1453,7 +1418,7 @@
                         trả lãi cuối kỳ</span>
                 </div>
                 <div class="tab-pane" id="tabItem6">
-                    <div class="col-12 loan-tool-tabs row">
+                    <div class="col-12 loan-tool-tabs row-ct no-pabding">
                         <div class="col-12 col-md-7 loan-calculator">
                             <h3 class="heading-h7  mb-4">Tính toán khoản vay</h3>
                             <div class="loan-calculator-group">
@@ -1473,7 +1438,7 @@
                                     <div class="money-time-loan-calculator-form col-sm-6 col-12 no-pabding">
                                         <label class="body-14" for="loan-amount">Số tiền vay</label>
                                         <div class="money-time-loan-calculator-input">
-                                            <div class="input-slider-wrapper">
+                                            <div class="input-slider-wrapper pl-3 pr-3 pt-2">
                                                 <input type="number" id="loan-amount-input" value="810000" min="0"
                                                     max="10000000" step="1"
                                                     oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
@@ -1491,7 +1456,7 @@
                                     <div class="money-time-loan-calculator-form col-sm-6 col-12 no-pabding">
                                         <label class="body-14" for="loan-duration">Thời hạn vay</label>
                                         <div class="money-time-loan-calculator-input">
-                                            <div class="input-slider-wrapper">
+                                            <div class="input-slider-wrapper pl-3 pr-3 pt-2">
                                                 <input type="number" id="loan-duration-display" value="12" min="1"
                                                     max="120" step="1"
                                                     oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
@@ -1578,10 +1543,10 @@
                                 <div class="money-time-loan-calculator-form  ">
 
                                     <div class="convert row-ct">
-                                        <div class="need-conversion col-lg-8 col-sm-5 col-12 no-pabding">
+                                        <div class="need-conversion ">
                                             <label class="body-14 ">Số tiền cần quy đổi</label>
                                             <div class="money-time-loan-calculator-input">
-                                                <div class="input-slider-wrapper">
+                                                <div class="input-slider-wrapper pl-3 pr-3 pt-3 pb-3">
                                                     <input type="number" m step="1"
                                                         class="input-number Body-Regular-15" />
                                                     <div class="line-v"></div>
@@ -1596,13 +1561,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="icon-change ">
+                                        <div class="icon-change  ">
                                             <img src="../assets/images/change.svg" alt="">
                                         </div>
-                                        <div class="receive col-lg-8 col-sm-5 col-12 no-pabding">
+                                        <div class="icon-change-mobile col-12  no-pabding">
+                                            <hr style="border: 1px dashed #E7E7E7;">
+                                            <img src="../assets/images/Group 83.svg" alt=""> 
+                                        </div>
+                                        <div class="receive ">
                                             <label class="body-14">Số tiền nhận được</label>
                                             <div class="money-time-loan-calculator-input">
-                                                <div class="input-slider-wrapper">
+                                                <div class="input-slider-wrapper pl-3 pr-3 pt-3 pb-3">
                                                     <input type="number" m step="1"
                                                         class="input-number Body-Regular-15" />
                                                     <div class="line-v"></div>
@@ -1644,7 +1613,7 @@
                                 </select>
                                 <img src="../assets/images/ph_caret-down-bold.svg" alt="">
                             </span>
-                            <div class="stage mb-3">
+                            <div class="stage mb-3 col-12">
                                 <button>1 Ngày</button>
                                 <button>5 Ngày</button>
                                 <button>1 Tuần</button>
@@ -2031,6 +2000,60 @@
 
 
     </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+let ulTabs = document.querySelector(".calculate-utilities-loan ul");
+let dropdownContainer = document.querySelector(".calculate-dropdown");
+let selectDropdown = document.querySelector("#tabDropdown");
+
+function toggleTabsAndDropdown() {
+if (window.innerWidth <= 500) {
+ulTabs.classList.add("d-none"); // Ẩn tabs khi màn hình nhỏ
+dropdownContainer.classList.remove("d-none"); // Hiện dropdown
+} else {
+ulTabs.classList.remove("d-none"); // Hiện tabs khi lớn hơn 375px
+dropdownContainer.classList.add("d-none"); // Ẩn dropdown
+}
+}
+
+// Gọi hàm khi tải trang và khi resize
+toggleTabsAndDropdown();
+window.addEventListener("resize", toggleTabsAndDropdown);
+
+// Chuyển tab khi chọn dropdown
+selectDropdown.addEventListener("change", function () {
+let selectedTab = this.value;
+
+// Ẩn tất cả tab
+document.querySelectorAll(".tab-pane").forEach(tab => {
+tab.classList.remove("show", "active");
+});
+
+// Hiện tab được chọn
+document.querySelector(selectedTab).classList.add("show", "active");
+});
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    function toggleIcons() {
+        let iconChange = document.querySelector(".icon-change");
+        let iconChangeMobile = document.querySelector(".icon-change-mobile");
+
+        if (window.innerWidth < 576) {
+            iconChange.style.display = "none"; // Ẩn icon trên màn hình nhỏ
+            iconChangeMobile.style.display = "block"; // Hiện icon mobile
+        } else {
+            iconChange.style.display = "block"; // Hiện icon trên màn hình lớn
+            iconChangeMobile.style.display = "none"; // Ẩn icon mobile
+        }
+    }
+
+    // Gọi hàm khi tải trang và khi thay đổi kích thước
+    toggleIcons();
+    window.addEventListener("resize", toggleIcons);
+});
+
+</script>
 
 
 </body>

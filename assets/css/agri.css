@@ -427,7 +427,6 @@
 /* Section Tổng */
 .agribank-quote-section {
     position: relative;
-    height: 940px;
 }
 
 /* Nội dung chính */
@@ -462,104 +461,26 @@
 
 /* Các hình ảnh phụ */
 
-.floating-image-1 {
-    position: absolute;
-    width: 95px;
-    height: 95px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 70%;
-    left: 18%;
-}
-
-.floating-image-2 {
-    position: absolute;
-    width: 84px;
-    height: 84px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 40%;
-    left: 40%;
-}
-
-.floating-image-3 {
-    position: absolute;
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 30%;
-    left: 35%;
-}
-
-.floating-image-4 {
-    position: absolute;
-    width: 136px;
-    height: 136px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 10%;
-    left: 45%;
-}
-
-.floating-image-5 {
-    position: absolute;
-    width: 84px;
-    height: 84px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 60%;
-    left: 55%;
-}
-
-.floating-image-6 {
-    position: absolute;
-    width: 106px;
-    height: 106px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 25%;
-    left: 60%;
-}
-
-.floating-image-7 {
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 40%;
-    left: 70%;
-}
-
-.floating-image-8 {
-    position: absolute;
-    width: 51px;
-    height: 51px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 20%;
-    left: 75%;
-}
-
-.floating-image-9 {
-    position: absolute;
-    width: 91px;
-    height: 91px;
-    border-radius: 50%;
-    object-fit: cover;
-    bottom: 65%;
-    left: 80%;
-}
-
 .agribank-quote-images {
-    padding: 0 5%;
+    margin: 0 5%;
     position: relative;
+    margin-top: 10px;
+    height: 545px;
 }
 
 .agribank-quote-images-background {
-    max-width: 480px;
-    aspect-ratio: 480 / 596;
+    max-width: 617px;
+    aspect-ratio: 617 / 596;
+    position: absolute;
+    top: 3%;
+}
+
+.floating-image {
+    position: absolute;
+    width: 95px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 @media (max-width: 992px) {
@@ -858,10 +779,6 @@
     align-items: flex-start;
 }
 
-
-.advantage-product-detail {
-    
-}
 
 
 
@@ -1250,78 +1167,30 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 .advantage-product-detail {
-    position: relative;
-    display: flex;
-    padding: 55px 5%;
-}
-
-.advantage-product-detail-containers {
-    width: 100%;
-    display: flex;
+    padding: 0px 5%;
 }
 
 .advantage-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
-    padding-right: 10px;
 }
 
 .advantage-card-content {
     display: flex;
-    padding: 6px 0px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
     align-self: stretch;
 }
 
-
-.advantage-card-question {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 99px;
-}
-
-.advantage-card-question-containers {
-    width: 90%;
-    display: flex;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-    padding: 64px 0px;
-    background: var(--Linear-1, linear-gradient(115deg, #9E2B47 0.44%, #761930 103.79%));
-}
-
-.advantage-card-question-text {
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.advantage-card-question-content {
-    display: flex;
-    gap: 20px;
-}
-
-.advantage-card-question-buttons {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
 .advantage-card-asked-questions {
-    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 54px 5%;
+    padding: 0 5%;
 }
 
 .asked-questions {
-    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1355,8 +1224,6 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 .product-info-container {
-    margin-top: 71px;
-    margin-bottom: 54px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -1521,37 +1388,27 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 .loan-tool-container {
-    width: 100%;
-    padding: 54px 0px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #E8E8E8;
     gap: 20px;
 }
 
 .loan-tool-tabs {
-    width: 100%;
     display: flex;
-    padding: 12px;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 32px;
+    gap: 15px;
     border-radius: 4px;
     border: 1px solid #F1F1F1;
     background: linear-gradient(92deg, #F7F7F7 0%, #FAF8F8 100.37%);
 }
 
 .loan-calculator {
-    width: 100%;
     display: flex;
     padding: 32px 0px 32px 32px;
     flex-direction: column;
     justify-content: space-between;
-    gap: auto;
-}
-
-.loan-calculator h3 {
-    padding-bottom: 30px;
+    height: 100%;
 }
 
 .loan-calculator-group {
@@ -1575,10 +1432,6 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 .loan-calculator-radio-form label{
     width: 50%;
-}
-
-.loan-calculator-radio label{
-    margin-bottom: 0px;
 }
 
 .money-time-loan-calculator-group {
@@ -1609,7 +1462,6 @@ background-color: #f91212; /* Màu nền nút khi hover */
 
 .money-time-loan-calculator-input {
     width: 100%;
-    background: #FFF;
 
 }
 
@@ -1618,13 +1470,12 @@ background-color: #f91212; /* Màu nền nút khi hover */
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    padding: 16px 16px 0px 16px;
     align-items: center;
 }
 
 .input-slider-wrapper input[type="number"] {
     width: 80%;
-    border: 1px #FFF;
+    border: none;
     border-right: 1px solid  #F2F2F2;
 }
 
@@ -1652,25 +1503,18 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .range-display {
-    margin: 5px;
     display: flex;
     justify-content: space-between;
     color: #666;
 }
 
 .loan-calculator-button {
-    width: 100%;
     padding: 16px;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
     background: var(--red-2, #9E2B47);
     border: none;
-}
-
-.col-sm-6 {
-    width: 100%;
-    padding-left: 0px;
 }
 
 .money-time-loan-calculator-year {
@@ -2349,11 +2193,6 @@ input[type="range"]::-webkit-slider-thumb {
     .tab-content-table {
         margin-top: 10px;
     }
-
-    .advantage-card-question-text {
-        gap: 15px;
-        flex-direction: column;
-    }
     /* page history */
 
     .history-year-content-card-text {
@@ -2413,31 +2252,6 @@ input[type="range"]::-webkit-slider-thumb {
     .agribank-culture {
         height: 400px;
     }
-    .advantage-product-detail {
-        padding: 30px 0px;
-    }
-
-    .advantage-product-detail-containers {
-        flex-wrap: wrap;
-    }
-
-    .advantage-card {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        flex-direction: row;
-        padding-right: 0;
-        gap: 10px;
-        border-bottom: 1px solid #EAEAEA;
-    }
-
-    .advantage-card:first-child {
-        padding-top: 0;
-    }
-
-    .advantage-card:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-    }
 
     .tabs-header {
         display: none;
@@ -2460,20 +2274,8 @@ input[type="range"]::-webkit-slider-thumb {
         background: #650D23;
     }
 
-    .advantage-card-question-content {
-        flex-direction: column;
-    }
-
     .button-product-detail {
         padding: 10px;
-    }
-
-    .loan-calculator {
-        padding: 10px;
-    }
-
-    .loan-tool-container {
-        padding: 30px 0px;
     }
 
     .product-info-title-content {
@@ -2593,7 +2395,7 @@ input[type="range"]::-webkit-slider-thumb {
     
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376.1px) {
 
     /* Trang product-list */
     .personal-loan-section {
@@ -2656,18 +2458,10 @@ input[type="range"]::-webkit-slider-thumb {
     .agribank-culture-image-content {
         width: 100%;
     }
-
-    .advantage-product-detail {
-        padding: 20px 5%;
-    }
-
-    .advantage-card-text svg {
-        max-width: none;
-    }
     
     .product-info-container {
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 10px;
         gap: 20px;
     }
 
@@ -2715,50 +2509,22 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     /* end */
-    .advantage-card-question-text {
-        width: 100%;
-        flex-direction: column;
-        gap: 16px;
-        align-items: unset;
-    }
-
-    .advantage-card-question-content {
-        flex-direction: column;
-    }
-
-    .advantage-card-question-buttons-card {
-        display: none;
-    }
-
-    .advantage-card-question {
-        margin-bottom: 60px;
-    }
-
-    .advantage-card-question-containers {
-        padding: 24px;
-    }
 
     .loan-tool-container {
         flex-direction: column;
     }
 
     .loan-tool-tabs {
-        width: 100%;
         flex-direction: column;
         gap: 0;
     }
 
     .loan-calculator {
-        padding: 16px;
         gap: 16px;
     }
 
     .loan-calculator-group {
         gap: 20px;
-    }
-
-    .loan-calculator h3 {
-        padding-bottom: 0;
     }
 
     .loan-calculator-radio-form {
@@ -3088,6 +2854,7 @@ input[type="range"]::-webkit-slider-thumb {
 .featured-culture-agribank .featured-culture-container .featured-culture-content .accordion .collapsed .featured-culture-content-item-text {
     opacity: 0.4;
 }
+
 
 
 @media (max-width: 992px) {
