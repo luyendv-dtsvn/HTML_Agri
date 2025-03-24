@@ -1191,7 +1191,6 @@ background-color: #f91212; /* Màu nền nút khi hover */
 }
 
 .asked-questions {
-    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;

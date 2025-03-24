@@ -4190,13 +4190,56 @@ display: block;
     display: none;
 }
 
-@media (max-width: 992px) {
+
+.advantage-card-question {
+    padding: 0 5%;
+    margin-bottom: 98px;
+}
+
+.advantage-card-question-containers {
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+    padding: 64px 48px;
+    background: url(../images/icon-svg/Group\ 13.svg) no-repeat right top,
+            var(--Linear-1, linear-gradient(115deg, #9E2B47 0.44%, #761930 103.79%));
+
+}
+
+.advantage-card-question-text {
+    width: 100%;
+    display: flex;
+    z-index: 3;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.advantage-card-question-content {
+    display: flex;
+    gap: 20px;
+}
+
+.advantage-card-question-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+@media (max-width: 1025.1px) {
+    .advantage-card-question-text {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 993.1px) {
     .advantage-card-asked-questions .asked-questions .slick-dots {
         display: flex;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769.1px) {
     .product-detail .loan-tool-section .loan-calculator {
         padding: 16px;
         padding-bottom: 0px;
@@ -4210,9 +4253,33 @@ display: block;
         height: auto;
     }
 
+    .advantage-card-question {
+        margin-bottom: 60px;
+    }
+
 }
 
-@media (max-width: 376px) {
+@media (max-width: 576.1px) {
+    .advantage-card-question-containers {
+        padding: 24px;
+        padding-bottom: 22px;
+    }
+
+    .advantage-card-question-content {
+        flex-direction: column;
+        gap: 34px;
+    }
+
+    .advantage-card-asked-questions .asked-questions {
+        gap: 3px;
+    }
+
+    .advantage-card-question-text {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 376.1px) {
     .advantage-product-detail .heading-h8 {
         font-size: 17px;
     }
@@ -4235,6 +4302,10 @@ display: block;
 
     .advantage-card-asked-questions .regular-16 {
         font-size: 15px;
+    }
+
+    .advantage-card-question-buttons-card {
+        display: none;
     }
 }
 
