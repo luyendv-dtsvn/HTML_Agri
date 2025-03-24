@@ -412,11 +412,19 @@
     line-height: 140%; /* 19.6px */
     letter-spacing: 0.28px;
 }
-.disclosure .item-disclosure{
+.disclosure .item-disclosure {
     min-width: 48%;
 }
-.item-disclosure span.col-10{
-    width:50%
+.item-disclosure span.col-10 {
+    width: 50%;
+}
+.disclosure .w-content {
+    /* Desktop/Body/16 */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: -0.16px;
 }
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
@@ -447,9 +455,7 @@
 }
 
 @media (max-width: 768px) {
-    .disclosure-title-text {
-        padding: 27px 6%;
-    }
+    
     .nk-menu-heading {
         padding: 14px;
         color: #af0b35;
