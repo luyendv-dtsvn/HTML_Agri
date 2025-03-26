@@ -2775,9 +2775,9 @@ a.color-hover-b:hover,
 }
 
 
-.bld .Agribank-related-info-content {
+/* .bld .Agribank-related-info-content {
     gap: 12px;
-}
+} */
 
 @media (max-width: 375px) {
     .bld .nav-tabs .nav-link {
@@ -3221,7 +3221,7 @@ margin-top: 2.75rem;
 .interestRate .profit-table span:last-child {
     display: block;
     /* Để nó có thể nhận width */
-    width: 23%;
+    width: 30%;
     margin: 0 auto;
     /* Căn giữa theo chiều ngang */
     text-align: center;
@@ -3282,6 +3282,9 @@ margin-top: 2.75rem;
 @media (max-width: 992px){
     .interestRate .card-inner{
         display: none;
+    }
+    .interestRate .personal-loan-text{
+        width: 98%;
     }
 }
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
@@ -3345,15 +3348,19 @@ margin-top: 2.75rem;
     }
 }
 
-/* Lãi Suất */
+/* ------------------------------------------Lãi Suất-------------------------------------- */
+.interestRate .personal-loan-section{
+ background-image: url(../images/banner-interestRate.png);
+}
 .interestRate .nav-tabs .nav-link {
-    padding: 1rem 32px;
+    padding: 1rem 30px;
 }
 
 .interestRate .nav-link {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     color: #5a5a5a;
+    gap: 10px;
 }
 
 .interestRate .nav-item .active {
@@ -3367,13 +3374,19 @@ margin-top: 2.75rem;
     }
 
     .interestRate .profit-table span:last-child {
-        width: 80%;
+        width: 40%;
+    }
+    .interestRate .table-mobile {
+        padding: 0 4%;
     }
 }
 
 @media (max-width: 578px) {
     .interestRate .card-inner {
         padding: 0 10%;
+    }
+    .interestRate .profit-table span:last-child {
+        width: 80%;
     }
 }
 
