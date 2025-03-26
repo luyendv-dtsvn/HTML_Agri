@@ -1275,7 +1275,7 @@
     <section class="personal-loan-section">
         <div class="personal-loan-container">
             <div class="personal-loan-text">
-                <div class="col-12 col-lg-4 col-md-5 personal-loan-text-sub">
+                <div class="col-12 col-lg-4 col-md-5 personal-loan-text-sub no-pabding">
                     <div class="personal-loan-breadcrumb regular-13 color-white">
                         <a href="#" class="color-white">Công cụ tiện ích</a>
                         <span class="personal-loan-breadcrumb-icon">
@@ -1351,7 +1351,7 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="tabItem5">
                     <h3 class="heading-h7 mb-4 --color-393939">Tính lãi tiền gửi</h3>
-                    <div class="row-ct">
+                    <div class="row-ct deposit-interest">
                         <div class="col-sm-9 col-lg-3 col-12 money-time-loan-calculator-form  no-pabding">
                             <label class="body-14  --color-49494949" for="loan-amount">Số tiền vay</label>
                             <div class="money-time-loan-calculator-input">
@@ -1360,6 +1360,7 @@
                                         step="1"
                                         oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
                                         class="input-number Body-Regular-15" />
+                                        <div class="line-v" style="background-color: #E9E9E9;"></div>
                                     <span class="currency-unit body-13 --color-49494949">VNĐ</span>
                                 </div>
                                 <input class="input-rise" type="range" id="loan-amount" min="0" max="10000000"
@@ -1379,6 +1380,7 @@
                                         step="1"
                                         oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
                                         class="input-number Body-Regular-15" />
+                                        <div class="line-v" style="background-color: #E9E9E9;"></div>
                                     <span class="currency-unit body-13 --color-49494949">tháng</span>
                                 </div>
                                 <input class="input-rise" type="range" id="loan-duration" min="1" max="120" step="1"
@@ -1389,21 +1391,21 @@
                                 <span class="range-max">120</span>
                             </div>
                         </div>
-                        <div class="col-sm-9 col-lg-3 col-12 no-pabding">
-                            <div class="form-group">
-                                <label class="form-label body-14 --color-49494949" for="interest-rate">Lãi suất cho
-                                    vay</label>
-                                <div class="form-control-wrap">
-                                    <div class="form-text-hint">
-                                        <span
-                                            class="overline-title money-time-loan-calculator-year body-13 --color-49494949">%/năm</span>
-                                    </div>
-                                    <input type="number" id="interest-rate" value="12" step="0.1"
-                                        class="form-control regular-15" />
+                        <div class="col-sm-9 col-lg-3 col-12 money-time-loan-calculator-form no-pabding">
+                            <label class="body-14 --color-49494949" for="loan-duration">Lãi suất tiền gửi</label>
+                            <div class="money-time-loan-calculator-input">
+                                <div class="input-slider-wrapper pl-3 pr-3 pt-2 ">
+                                    <input type="number" id="loan-duration-display" value="12" min="1" max="120"
+                                        step="1"
+                                        oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
+                                        class="input-number Body-Regular-15" />
+                                        <div class="line-v" style="background-color: #E9E9E9;"></div>
+                                    <span class="currency-unit body-13 --color-49494949">%/năm</span>
                                 </div>
+                                
                             </div>
                         </div>
-                        <div class="col-sm-9 col-lg-3 col-12 no-pabding"><button
+                        <div class="col-sm-9 col-lg-3 col-12 money-time-loan-calculator-form no-pabding"><button
                                 class="loan-calculator-button Body-15 color-white " id="calculate-button">
                                 Tính khoản vay
                             </button></div>
@@ -1411,38 +1413,39 @@
                     <div class="line-h mt-5 mb-5 col-12" style="background: #F2F2F2;"></div>
 
                     <div class="loan-result-content">
-                        <p class="body-14">Số tiền gốc và lãi phải trả: <span class="heading-h7"
+                        <p class="body-14 --color-49494949">Số tiền gốc và lãi phải trả: <span class="heading-h4 --color-393939"
                                 id="total-payment">8,626,500,000 <cite class="body-13">VNĐ</cite></span></p>
                     </div>
-                    <span style="color:#AF0B35 ;">Lưu ý: Bảng tính chỉ mang tính chất tham khảo và áp dụng cho hình thức
+                    <span style="color:#AF0B35 ; "  class="body-13">Lưu ý: Bảng tính chỉ mang tính chất tham khảo và áp dụng cho hình thức
                         trả lãi cuối kỳ</span>
                 </div>
                 <div class="tab-pane" id="tabItem6">
                     <div class="col-12 loan-tool-tabs row-ct no-pabding">
                         <div class="col-12 col-md-7 loan-calculator">
-                            <h3 class="heading-h7  mb-4">Tính toán khoản vay</h3>
+                            <h3 class="heading-h7 --color-393939 mb-4">Tính toán khoản vay</h3>
                             <div class="loan-calculator-group">
-                                <div class="loan-calculator-radio">
+                                <div class="loan-calculator-radio --color-49494949">
                                     <label class="body-14">Phương thức tính</label>
                                     <div class="loan-calculator-radio-form row-ct ">
-                                        <label class="body-15 col-sm-6 col-12 no-pabding ">
+                                        <label class="body-15 col-sm-6 col-12 no-pabding --color-49494949">
                                             <input type="radio" name="method" value="reducing" checked> Trả trên dư nợ
                                             giảm dần
                                         </label>
                                         <label class="body-15 col-sm-6 col-12 no-pabding ">
-                                            <input type="radio" name="method" value="equal"> Trả trên dư nợ gốc
+                                            <input type="radio" name="method" value="equal"> Trả trên dư nợ ban đầu
                                         </label>
                                     </div>
                                 </div>
                                 <div class="money-time-loan-calculator-group row-ct">
                                     <div class="money-time-loan-calculator-form col-sm-6 col-12 no-pabding">
-                                        <label class="body-14" for="loan-amount">Số tiền vay</label>
+                                        <label class="body-14 --color-49494949" for="loan-amount">Số tiền vay</label>
                                         <div class="money-time-loan-calculator-input">
                                             <div class="input-slider-wrapper pl-3 pr-3 pt-2">
                                                 <input type="number" id="loan-amount-input" value="810000" min="0"
                                                     max="10000000" step="1"
                                                     oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
                                                     class="input-number Body-Regular-15" />
+                                                    <div class="line-v" style="background-color: #E9E9E9;"></div>
                                                 <span class="currency-unit body-13">VNĐ</span>
                                             </div>
                                             <input class="input-rise" type="range" id="loan-amount" min="0"
@@ -1454,13 +1457,14 @@
                                         </div>
                                     </div>
                                     <div class="money-time-loan-calculator-form col-sm-6 col-12 no-pabding">
-                                        <label class="body-14" for="loan-duration">Thời hạn vay</label>
+                                        <label class="body-14 --color-49494949" for="loan-duration">Thời hạn vay</label>
                                         <div class="money-time-loan-calculator-input">
                                             <div class="input-slider-wrapper pl-3 pr-3 pt-2">
                                                 <input type="number" id="loan-duration-display" value="12" min="1"
                                                     max="120" step="1"
                                                     oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
                                                     class="input-number Body-Regular-15" />
+                                                    <div class="line-v" style="background-color: #E9E9E9;"></div>
                                                 <span class="currency-unit body-13">Tháng</span>
                                             </div>
                                             <input class="input-rise" type="range" id="loan-duration" min="1" max="120"
@@ -1473,27 +1477,29 @@
                                     </div>
                                 </div>
                                 <div class="money-time-loan-calculator-group row-ct">
-                                    <div class="col-sm-6 no-pabding">
-                                        <div class="form-group">
-                                            <label class="form-label body-14" for="interest-rate">Lãi suất cho
-                                                vay</label>
-                                            <div class="form-control-wrap">
-                                                <div class="form-text-hint">
-                                                    <span
-                                                        class="overline-title money-time-loan-calculator-year body-13">%/năm</span>
-                                                </div>
-                                                <input type="number" id="interest-rate" value="12" step="0.1"
-                                                    class="form-control regular-15">
+                                    <div class="money-time-loan-calculator-form col-sm-6 col-12 no-pabding">
+                                        <label class="body-14 --color-49494949" for="loan-duration">Lãi suất cho vay</label>
+                                        <div class="money-time-loan-calculator-input">
+                                            <div class="input-slider-wrapper pl-3 pr-3 pt-2">
+                                                <input type="number" id="loan-duration-display" value="12" min="1"
+                                                    max="120" step="1"
+                                                    oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
+                                                    class="input-number Body-Regular-15" />
+                                                    <div class="line-v" style="background-color: #E9E9E9;"></div>
+                                                <span class="currency-unit body-13">%/năm</span>
                                             </div>
+                                           
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-12 no-pabding">
                                         <div class="form-group">
-                                            <label class="form-label body-14" for="start-date">Ngày giải ngân</label>
+                                            <label class="form-label --color-49494949 body-14" for="start-date">Ngày giải ngân</label>
                                             <div class="form-control-wrap">
                                                 <div class="form-icon form-icon-right">
-                                                    <em class="icon ni ni-calendar-alt"></em>
+                                                    <div class="line-v" style="background-color: #E9E9E9;"></div>
+                                                    <em class="icon ni ni-calendar-alt" style="margin:0  10px;"></em>
                                                 </div>
+                                                
                                                 <input type="text" id="start-date" value="2024-02-09"
                                                     class="form-control date-picker regular-15">
                                             </div>
@@ -1501,23 +1507,23 @@
                                     </div>
                                 </div>
                                 <div class="col-12 no-pabding"><button
-                                        class="loan-calculator-button Body-16 color-white" id="calculate-button">Tính
+                                        class="loan-calculator-button Body-16 color-white col-12" id="calculate-button">Tính
                                         khoản vay</button></div>
                             </div>
                         </div>
 
                         <div class="col-12 col-md-4 loan-result">
-                            <h3 class="body-16">Phương án trả nợ</h3>
+                            <h3 class="body-16 --color-49494949">Phương án trả nợ</h3>
                             <div class="loan-result-content">
-                                <p class="body-14">Số tiền gốc và lãi phải trả: <span class="heading-h7"
+                                <p class="body-14 --color-49494949">Số tiền gốc và lãi phải trả: <span class="heading-h7 --color-393939"
                                         id="total-payment">8,626,500,000 <cite class="body-13">VNĐ</cite></span></p>
                                 <div class="line-h mt-3 mb-3" style="background: #F2F2F2"></div>
 
-                                <p class="body-14">Số tiền trả hàng tháng: <span class="heading-h7"
+                                <p class="body-14 --color-49494949">Số tiền trả hàng tháng: <span class="heading-h7 --color-393939"
                                         id="monthly-payment">526,500,000 <cite class="body-13">VNĐ</cite></span></p>
                                 <div class="line-h mt-3 mb-3" style="background: #F2F2F2"></div>
 
-                                <p class="body-14">Ngày trả nợ cuối cùng: <span class="heading-h7"
+                                <p class="body-14 --color-49494949">Ngày trả nợ cuối cùng: <span class="heading-h7 --color-393939"
                                         id="end-payment-date">22/08/2025</span></p>
                                 <div class="line-h mt-3 mb-3" style="background: #F2F2F2"></div>
 
@@ -1538,19 +1544,20 @@
                 <div class="tab-pane" id="tabItem7">
                     <div class="rate_conversion row-ct ">
                         <div class="change col-lg-5 col-12 no-pabding">
-                            <h3 class="heading-h7 mb-4">Quy đổi tỉ giá</h3>
-                            <div class="amount-exchange">
+                            <h3 class="heading-h7 mb-4 --color-393939">Quy đổi tỉ giá</h3>
+                            <div class="amount-exchange --color-49494949">
                                 <div class="money-time-loan-calculator-form  ">
 
                                     <div class="convert row-ct">
                                         <div class="need-conversion ">
-                                            <label class="body-14 ">Số tiền cần quy đổi</label>
+                                            <label class="body-14 --color-393939">Số tiền cần quy đổi</label>
                                             <div class="money-time-loan-calculator-input">
                                                 <div class="input-slider-wrapper pl-3 pr-3 pt-3 pb-3">
                                                     <input type="number" m step="1"
-                                                        class="input-number Body-Regular-15" />
+                                                        class="input-number Body-Regular-15" id="number-input"/>
                                                     <div class="line-v"></div>
-                                                    <span class="currency-unit body-13 "><select>
+                                                    
+                                                    <span class="currency-unit body-13 --dark-3"><select>
                                                             <option value="1">VND</option>
                                                             <option value="2">USD</option>
                                                             <option value="3">EURO</option>
@@ -1576,9 +1583,9 @@
                                                         class="input-number Body-Regular-15" />
                                                     <div class="line-v"></div>
                                                     <span class="currency-unit body-13"><span
-                                                            class="currency-unit body-13"><select>
-                                                                <option value="1">VND</option>
-                                                                <option value="2">USD</option>
+                                                            class="currency-unit body-13 --dark-3"><select>
+                                                                <option value="1">USD</option>
+                                                                <option value="2">VND</option>
                                                                 <option value="3">EURO</option>
 
                                                             </select></span><img
@@ -1604,22 +1611,22 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="line-vf"></div>
                         <div class="chart col-lg-6 col-12 no-pabding">
-                            <span class="currency-unit body-13 mb-4">Bảng tỷ giá: <select>
+                            <span class="currency-unit  mb-4 body-14">Bảng tỷ giá: <select>
                                     <option value="1">VND</option>
                                     <option value="2">USD</option>
                                     <option value="3">EURO</option>
                                 </select>
                                 <img src="../assets/images/ph_caret-down-bold.svg" alt="">
                             </span>
-                            <div class="stage mb-3 col-12">
+                            <div class="stage Regular-12 --color-393939 mb-3 col-12">
                                 <button>1 Ngày</button>
                                 <button>5 Ngày</button>
                                 <button>1 Tuần</button>
                                 <button>1 Tháng</button>
                                 <button>1 Năm</button>
-
+                                <button>Tất cả</button>
                             </div>
                             <canvas id="myChart"></canvas>
                         </div>
