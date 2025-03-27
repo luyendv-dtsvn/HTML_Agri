@@ -65,6 +65,15 @@
 .home-tab-heading-slim {
     display: none !important;
 }
+
+.header-slim-white-pc .home-header-slim-left {
+    gap: 0;
+}
+
+.header-slim-white-pc .home-header-slim-left .home-tab-heading-slim {
+    display: block;
+}
+
 @media (max-width:1552px) {
  .home-header-slim {
         padding: 0px 5%;
@@ -77,6 +86,7 @@
  .home-header-slim .home-tab-heading-slim {
         display: block !important;
     }
+
 }
 
 @media (max-width:1552px) {

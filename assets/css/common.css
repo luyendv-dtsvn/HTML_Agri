@@ -4145,6 +4145,10 @@ margin-top: 2.75rem;
     .list-product-detail-section .product-detail-card-list-button .product-detail-card-button-detail {
         min-width: 100%;
     }
+
+    .list-product-detail-section .product-detail-card-title .heading-h7 {
+        font-size: 21px;
+    }
 }
 
 /* end section trongpd */
@@ -4398,8 +4402,12 @@ margin-top: 2.75rem;
         font-size: 17px;
     }
 
-    .advantage-product-detail .regular-15 {
-        font-size: 14px;
+    .advantage-product-detail .heading-h8 {
+        font-size: 17px;
+    }
+
+    .product-info-title-content .heading-h6 {
+        font-size: 22px;
     }
 
     .product-info-section .regular-15,
@@ -4599,6 +4607,9 @@ margin-top: 2.75rem;
         display: none;
     }
 
+    .history .timeline-history-section .timeline-history-years-mobile .item .body-16 {
+        font-size: 16px;
+    }
 }
 
 /* end fix */
