@@ -353,7 +353,7 @@
 .content-pic {
     display: flex;
     width: 95%;
-    padding: 48px;
+    padding: 36px;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
@@ -418,8 +418,38 @@
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
     }
+    .content-pic {
+        display: flex;
+        width: 95%;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        position: absolute;
+        border-radius: 6px;
+    }
 }
 @media (max-width: 992px) {
+    .content-pic {
+        display: flex;
+        width: 95%;
+        padding: 28px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        position: absolute;
+        border-radius: 6px;
+    }
     .recruitment .recruitment-agri-notification-containers {
         gap: 20px;
     }
@@ -443,6 +473,21 @@
 }
 
 @media (max-width: 768px) {
+    .content-pic {
+        display: flex;
+        width: 95%;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        position: absolute;
+        border-radius: 6px;
+    }
     .recruitment-title-text {
         padding: 27px 6%;
     }
@@ -490,6 +535,21 @@
     }
 }
 @media (max-width: 375px) {
+    .content-pic {
+        display: flex;
+        width: 95%;
+        padding: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        position: absolute;
+        border-radius: 6px;
+    }
     .recruitment-title-section {
         height: 375px;
     }

@@ -410,8 +410,7 @@
 .news-detail-title-content {
     padding: 65px 0px 35px 0px;
 }
-.list-ul > ol,
-ul {
+.news-detail-title-main-content .title-heade-f ul {
     list-style: disc;
     margin: 0;
     padding: 4% 0px 0px 32px;
@@ -463,10 +462,6 @@ ul {
 
     .news-detail .news-detail-agri-notification-content {
         padding: 0;
-    }
-    .return {
-        display: flex;
-        justify-content: center;
     }
     .news-detail-title-content {
         padding: 45px 0px 25px 0px;
@@ -526,15 +521,15 @@ ul {
         padding-bottom: 35px;
         padding-top: 65px;
     }
-    .return {
-        display: flex;
-        justify-content: center;
-    }
+    
     .news-detail .title-table-pc {
         display: none;
     }
     .news-detail .title-table-mobile {
         display: contents;
+    }
+    .news-detail .content-left {
+        padding: 0px;
     }
 }
 @media (max-width: 375px) {
@@ -560,5 +555,12 @@ ul {
     }
     .news-detail .title-table-mobile {
         display: contents;
+    }
+    .news-detail .content-left {
+        padding: 0px;
+    }
+    .news-detail .return-icon {
+        display: flex;
+        align-items: center;
     }
 }

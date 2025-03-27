@@ -414,11 +414,18 @@
     flex-direction: row;
     min-height: calc(100vh - 97px);
 }
+.recruitment-detail .subtitle-12 {
+    color: #494949 !important;
+}
+.recruitment-detail .nk-content {
+    padding: 32px 2%;
+}
 
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
     }
+    
 }
 @media (max-width: 992px) {
     .recruitment-detail .recruitment-detail-agri-notification-containers {

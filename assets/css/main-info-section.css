@@ -146,6 +146,27 @@
         min-height: 354px;
         display: grid;
     }
+    .recruitment-program .tab-content {
+        margin: 0px;
+    }
+    .recruitment-program .card + .card {
+        margin-top: 0px;
+    }
+    .recruitment-program .tab-content > .active {
+        display: block;
+        padding: 0px !important;
+    }
+    .recruitment-program .accordion-head {
+        padding: 1rem 0rem !important;
+    }
+    .recruitment-program .accordion-inner {
+        padding: 1rem 0rem 1.25rem;
+    }
+    .main-info-s .main-info-content {
+        padding-top: 18px;
+        padding-bottom: 37px !important;
+        padding-left: 18px;
+    }
 }
 
 @media (min-width: 768px) {
