@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../assets/css/navmenu.css" />
   <link rel="stylesheet" href="../assets/css/recruitment-detail.css" />
   <link rel="stylesheet" href="../assets/css/home-tab-heading-slim.css" />
+  <link rel="stylesheet" href="../assets/css/main-info-section.css" />
 </head>
 <style>
   @media (max-width: 992px) {
@@ -831,10 +832,19 @@
       </div>
     </div>
   </section>
-  <section class="recruitment-detail-title-section">
-    <div class="recruitment-detail-title-text  p-0">
-      <div class="recruitment-detail-title-sub">
-        <a href="#" class="color-hover-w"><span class="regular-13 color-white">Về Agribank</span></a>
+  <section class="main-info-s">
+    <div class="main-info-img-background">
+      <!-- background-PC -->
+      <img class="d-block d-none-992" src="../assets/images/news_detail/poster-pc.svg" alt="">
+      <!-- background-TABLE -->
+      <img class="d-none d-block-992 d-none-576" src="../assets/images/news_detail/poster-pc.svg" alt="">
+      <!-- background-MOBILE -->
+      <img class="d-none d-block-576" src="../assets/images/news_detail/poster-mobile.png" alt="">
+    </div>
+
+    <div class="main-info-content">
+      <div class="main-info-title-sub">
+        <a href="#" class="color-hover-w"><span class="regular-13 color-white">Trang chủ</span></a>
         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
           <path
             d="M6.22076 3.68784L2.66066 0.127804C2.57832 0.045398 2.4684 0 2.3512 0C2.23399 0 2.12408 0.045398 2.04174 0.127804L1.77956 0.389915C1.60896 0.560711 1.60896 0.838302 1.77956 1.00884L4.76906 3.99834L1.77624 6.99116C1.6939 7.07357 1.64844 7.18342 1.64844 7.30056C1.64844 7.41782 1.6939 7.52768 1.77624 7.61015L2.03842 7.8722C2.12082 7.9546 2.23068 8 2.34788 8C2.46508 8 2.575 7.9546 2.65734 7.8722L6.22076 4.30891C6.30329 4.22624 6.34863 4.11587 6.34837 3.99854C6.34863 3.88075 6.30329 3.77044 6.22076 3.68784Z"
@@ -842,9 +852,13 @@
         </svg>
         <a href="#" class="color-hover-w"><span class="regular-13 color-white-1">Tuyển dụng</span></a>
       </div>
-      <div class="recruitment-detail-title-content">
-        <span class="heading-h5 color-white">Chương trình tuyển dụng</span>
-        <span class="regular-16 color-white-1">Cập nhật liên tục các thông tin quan trọng của Agribank</span>
+      <!-- content pc-table -->
+      <div class="main-info-title-content">
+        <div class="main-info-title-content-text">
+          <span class="heading-h5 color-white">Chương trình dụng</span>
+          <span class="regular-16 color-white-1 pt-2">Cập nhật liên tục các thông tin quan trọng của
+            Agribank</span>
+        </div>
       </div>
     </div>
   </section>
@@ -854,12 +868,12 @@
     <div class="container-fluid p-0">
       <div class="nk-content-inner">
         <div class="nk-content-body row-ct col-12 flex-col-content p-0" style="justify-content: space-between;">
-          <div class="col-lg-4 col-12 head-title p-0">
+          <div class=" col-xl-4 col-12 px-5-1024 head-title p-0">
             <span class="title-body">
               Thông báo tuyển dụng nhân viên Lễ tân làm việc tại Văn phòng đại diện khu vực miền Nam
             </span>
           </div>
-          <div class="col-lg-6 col-12 p-0">
+          <div class="col-xl-7 col-12 px-5-1024">
             <div class="content-body-right">
               <div class="line-h" style="background: rgba(0, 0, 0, 0.10);"></div>
               <div class="row-ct pt-4 pb-3">
@@ -903,7 +917,7 @@
                 <span class="subtitle-12 col-4 pl-0" style="text-transform: uppercase;">mô tả công việc</span>
                 <span class="main-content col-6">Chi tiết các vị trí, mô tả công việc, yêu cầu chung và yêu cầu khác</span>
                 <div class="col-lg-4 col-4 flex-cover"></div>
-                <div class="col-lg-2 col-sm-6 col-4 pr-0 pt-1" style=" color: var(--red-1, #AF0B35);">
+                <div class="col-lg-2 col-sm-6 col-6 pr-0 pt-1" style=" color: var(--red-1, #AF0B35);">
                   <span class="pt-3">Xem tại đây</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M6 3L11 8L6 13" stroke="#AF0B35" stroke-width="1.42857" stroke-linecap="square" />
@@ -918,9 +932,9 @@
                 <div class="col-lg-6 col-sm-6 col-8 content-body-organize-entrance-examinations">
                   <div class="main-content">
                     <span>- Thi tuyển được thực hiện qua các vòng:</span>
-                    <span>Vòng 1: Sơ tuyển hồ sơ (ứng viên qua vòng 1 sẽ được tham gia vòng 2).</span>
+                    <span>Vòng 1:  Sơ tuyển hồ sơ (ứng viên qua vòng 1 sẽ được tham gia vòng 2).</span>
                     <span>
-                      Vòng 2: Thi phỏng vấn.
+                      Vòng 2:  Thi phỏng vấn.
                     </span>
                     <span>
                       Thời gian, địa điểm:

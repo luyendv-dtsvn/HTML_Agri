@@ -17,7 +17,7 @@
     --dark-2: rgb(57, 57, 57);
     --red-21: #aa1d40;
     --red-3: #c33c5e;
-    --Text-NomalText-2: #54433B;
+    --Text-NomalText-2: #54433b;
     --color-49494949: #494949;
     --color-393939: #393939;
 
@@ -279,7 +279,6 @@ button {
     letter-spacing: 0.48px;
     font-weight: 400;
 }
-
 
 .subtitle-h-table-12 {
     font-family: "BT Grotesk Regular";
@@ -1037,6 +1036,15 @@ button {
 }
 
 @media (max-width: 375px) {
+    .regular-17 {
+        font-family: "BT Grotesk Regular";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 22.5px */
+        letter-spacing: 0.15px;
+        color: #606060;
+    }
     .regular-16 {
         font-family: "BT Grotesk Regular";
         font-size: 12px;
@@ -1132,10 +1140,12 @@ button {
 }
 
 .color-Gradient-1 {
-    color: linear-gradient(122deg,
-            #af0b35 19.31%,
-            #9d5165 38.51%,
-            #490516 71.05%);
+    color: linear-gradient(
+        122deg,
+        #af0b35 19.31%,
+        #9d5165 38.51%,
+        #490516 71.05%
+    );
 }
 
 .color-red-1 {
@@ -1159,7 +1169,7 @@ button {
 }
 
 .color-dark-2 {
-    color: var(--dark-2)
+    color: var(--dark-2);
 }
 
 .color-dark-3 {
@@ -1167,27 +1177,38 @@ button {
 }
 
 .color-Linear-1 {
-    color: linear-gradient(115deg,
-            rgba(158, 43, 71, 1) 0%,
-            rgba(118, 25, 48, 1) 100%);
+    color: linear-gradient(
+        115deg,
+        rgba(158, 43, 71, 1) 0%,
+        rgba(118, 25, 48, 1) 100%
+    );
 }
 
 .color-Linear-2 {
-    color: linear-gradient(270deg,
-            rgba(175, 11, 53, 1) 0%,
-            rgba(201, 50, 89, 1) 100%);
+    color: linear-gradient(
+        270deg,
+        rgba(175, 11, 53, 1) 0%,
+        rgba(201, 50, 89, 1) 100%
+    );
 }
 
 .color-Text-NomalText-2 {
-    color: #54433B;
+    color: #54433b;
 }
 
 .color-Text-NomalText-3 {
-    color: #594B45;
+    color: #594b45;
 }
 
 .color-text-1 {
-    color: #28140C;
+    color: #28140c;
+}
+
+.color-dark-t-1 {
+    color: rgba(27, 27, 27, 0.9);
+}
+.color-dark-t-t-1 {
+    color: rgba(27, 27, 27, 0.85);
 }
 
 div {
@@ -1317,7 +1338,9 @@ div {
 }
 
 /* end hover image  */
-.custom-radio.custom-control-pro.no-control .custom-control-input:checked~.custom-control-label {
+.custom-radio.custom-control-pro.no-control
+    .custom-control-input:checked
+    ~ .custom-control-label {
     border-color: var(--red-1);
     z-index: 2;
     background-color: var(--red-1);
@@ -1341,7 +1364,7 @@ div {
     padding-right: 0px;
 }
 
-.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link {
+.tab-dropdown .nk-menu-main > li.nk-menu-item > .nk-menu-link {
     flex-direction: column;
     gap: 16px;
 }
@@ -1362,7 +1385,7 @@ div {
     transform: translateX(0) !important;
 }
 
-.tab-dropdown .nk-menu-main>li {
+.tab-dropdown .nk-menu-main > li {
     display: inline-block;
     min-width: 180px;
 }
@@ -1384,14 +1407,14 @@ div {
     display: block !important;
 }
 
-.tab-dropdown .nk-menu-main .nk-menu-item:hover>.nk-menu-sub {
+.tab-dropdown .nk-menu-main .nk-menu-item:hover > .nk-menu-sub {
     opacity: 1;
     visibility: visible;
     margin-top: 0;
     z-index: 999;
 }
 
-.tab-dropdown .nk-menu-main>li>.nk-menu-link:hover::before {
+.tab-dropdown .nk-menu-main > li > .nk-menu-link:hover::before {
     position: absolute;
     content: "";
     bottom: 0;
@@ -1403,7 +1426,7 @@ div {
     opacity: 1;
 }
 
-.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active {
+.tab-dropdown .nk-menu-main > li.nk-menu-item > .nk-menu-link.active {
     color: var(--red-1);
 }
 
@@ -1420,18 +1443,18 @@ div {
     right: 5px;
 }
 
-.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active svg path,
-.tab-dropdown .nk-menu-main>li.nk-menu-item:hover svg path,
-.tab-dropdown .nk-menu-main>li.nk-menu-item:hover a {
+.tab-dropdown .nk-menu-main > li.nk-menu-item > .nk-menu-link.active svg path,
+.tab-dropdown .nk-menu-main > li.nk-menu-item:hover svg path,
+.tab-dropdown .nk-menu-main > li.nk-menu-item:hover a {
     stroke: var(--red-1);
     opacity: 1 !important;
 }
 
-.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active::after {
+.tab-dropdown .nk-menu-main > li.nk-menu-item > .nk-menu-link.active::after {
     stroke: var(--red-1);
 }
 
-.tab-dropdown .nk-menu-main>li.nk-menu-item>.nk-menu-link.active:before {
+.tab-dropdown .nk-menu-main > li.nk-menu-item > .nk-menu-link.active:before {
     position: absolute;
     content: "";
     bottom: 0;
@@ -1657,7 +1680,7 @@ div {
     width: 80%;
 }
 
-.mobile .menu-mobile .nk-aside+.toggle-overlay {
+.mobile .menu-mobile .nk-aside + .toggle-overlay {
     z-index: 700;
 }
 
@@ -1757,8 +1780,10 @@ div {
 
 .home-business .home-business-background-tab-button:hover {
     color: #fff !important;
-    background: var(--Linear-2,
-            linear-gradient(270deg, #af0b35 0%, #c93259 100%)) !important;
+    background: var(
+        --Linear-2,
+        linear-gradient(270deg, #af0b35 0%, #c93259 100%)
+    ) !important;
     opacity: 1;
 }
 
@@ -1961,10 +1986,12 @@ div {
 .hrr {
     width: 1px;
     height: 17px;
-    background: linear-gradient(90deg,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 0.5) 50%,
-            rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 
 .list-search .owl-item {
@@ -2060,8 +2087,18 @@ div {
     justify-content: center;
 }
 
-.banner-header .banner-search .search .owl-carousel-search .owl-nav.disabled button,
-.banner-header .banner-search .search .owl-carousel-search .owl-dots.disabled button {
+.banner-header
+    .banner-search
+    .search
+    .owl-carousel-search
+    .owl-nav.disabled
+    button,
+.banner-header
+    .banner-search
+    .search
+    .owl-carousel-search
+    .owl-dots.disabled
+    button {
     all: unset;
 }
 
@@ -2252,7 +2289,11 @@ div {
     padding: 0 4.9%;
 }
 
-.home-business .section-agri-start .list.home-business-item-card .home-business-item-text span {
+.home-business
+    .section-agri-start
+    .list.home-business-item-card
+    .home-business-item-text
+    span {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -2634,9 +2675,7 @@ input:focus {
     width: 116%;
 }
 
-
 .bld .nav-link {
-
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     color: #5a5a5a;
@@ -2646,7 +2685,6 @@ input:focus {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
-
 
 .bld .nav-link:hover {
     -webkit-filter: grayscale(0%);
@@ -2718,7 +2756,6 @@ a.color-hover-b:hover,
     opacity: 1;
 }
 
-
 .tab-content {
     margin-top: 57px;
 }
@@ -2741,7 +2778,7 @@ a.color-hover-b:hover,
     width: 43vw;
     height: 20vw;
     border-radius: 745.631px;
-    background: #9E2B47;
+    background: #9e2b47;
     filter: blur(47px);
 }
 
@@ -2774,7 +2811,6 @@ a.color-hover-b:hover,
     background-repeat: no-repeat;
 }
 
-
 .bld .Agribank-related-info-content {
     gap: 12px;
 }
@@ -2789,7 +2825,6 @@ a.color-hover-b:hover,
     .bld .nav-tabs .nav-link {
         padding: 0.4rem 0;
     }
-
 }
 
 /* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
@@ -2805,12 +2840,10 @@ a.color-hover-b:hover,
 }
 
 .product-list .nav-item {
-
     background: rgba(0, 0, 0, 0.04);
     border-radius: 4px;
     text-align: center;
 }
-
 
 .product-list .nav-item:hover {
     outline: 2px solid rgba(0, 0, 0, 0.34);
@@ -2820,11 +2853,9 @@ a.color-hover-b:hover,
     outline: 2px solid rgba(0, 0, 0, 0.34);
 }
 
-
 .product-list .nav-tabs .nav-link:after {
     border-radius: 4px;
 }
-
 
 .product-list .nav-tabs .nav-link.active:after {
     opacity: 0;
@@ -2833,7 +2864,6 @@ a.color-hover-b:hover,
 .product-list .nav-link {
     margin: 0 1.75rem;
 }
-
 
 .product-list .nav-tabs .nav-link {
     color: #000;
@@ -2846,7 +2876,6 @@ a.color-hover-b:hover,
 /* .product-list .loan-card-title span{
     width: 40%;
 } */
-
 
 @media (max-width: 1366px) {
     .loan-card-content {
@@ -2887,26 +2916,22 @@ a.color-hover-b:hover,
 
 /* ---------------------------------------------------End Page Product List ------------------------------------------ */
 
-
 /* ---------------------------------------------------Page Calcuate Tool ------------------------------------------ */
-
 
 .calcuate .personal-loan-section {
     background-image: url(../images/image.png);
 }
 
 #tabDropdown {
-
-    color: #AF0B35;
+    color: #af0b35;
     /* Màu chữ */
     background-color: #ffffff;
     /* Màu nền */
 }
 
 .calcuate .money-time-loan-calculator-input {
-    background: #F4F4F4;
+    background: #f4f4f4;
 }
-
 
 .calcuate input[type="number"],
 .form-text-hint,
@@ -2926,7 +2951,6 @@ a.color-hover-b:hover,
     padding: 0 5%;
     margin-bottom: 60px;
 }
-
 
 .calcuate .loan-result-content p {
     border-bottom: none;
@@ -2960,7 +2984,6 @@ a.color-hover-b:hover,
 }
 
 .calcuate .loan-tool-tabs {
-
     background: #fff;
     border: none;
 }
@@ -2968,7 +2991,6 @@ a.color-hover-b:hover,
 .calcuate .loan-result a {
     display: block;
 }
-
 
 .calcuate .money-time-loan-calculator-group {
     gap: 0;
@@ -2994,7 +3016,6 @@ a.color-hover-b:hover,
 .icon-change img {
     margin-top: 120%;
 }
-
 
 .calcuate .money-time-loan-calculator-form {
     width: 100%;
@@ -3024,7 +3045,6 @@ a.color-hover-b:hover,
 }
 
 .exchange-rate {
-
     color: #000;
 }
 
@@ -3033,13 +3053,11 @@ a.color-hover-b:hover,
 }
 
 .red-text {
-
     color: #c3002f;
     /* Màu đỏ */
 }
 
 .amount-usd {
-
     margin: 5px 0;
 }
 
@@ -3051,7 +3069,6 @@ a.color-hover-b:hover,
 .receive {
     width: 45%;
 }
-
 
 .rate_conversion {
     display: flex;
@@ -3072,7 +3089,6 @@ a.color-hover-b:hover,
     gap: 32px;
 }
 
-
 .stage button {
     padding: 4px 8px;
     border: none;
@@ -3080,12 +3096,12 @@ a.color-hover-b:hover,
 }
 
 .stage button:hover {
-    background: #EDF1F0;
+    background: #edf1f0;
     border-radius: 4px;
 }
 
 .stage button.active {
-    background: #EDF1F0;
+    background: #edf1f0;
     border-radius: 4px;
     border: none;
 }
@@ -3096,7 +3112,7 @@ a.color-hover-b:hover,
 
 .calculate-dropdown {
     display: flex;
-    border-bottom: 1px solid #E7E7E7;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .calculate-dropdown img {
@@ -3104,7 +3120,6 @@ a.color-hover-b:hover,
 }
 
 .icon-change-mobile {
-
     display: flex;
 }
 
@@ -3114,22 +3129,21 @@ a.color-hover-b:hover,
     right: 45%;
 }
 .calcuate .need-conversion,
-    .calcuate .receive {
-        width: 43%;
-    }
-.calcuate .form-icon-right{
+.calcuate .receive {
+    width: 43%;
+}
+.calcuate .form-icon-right {
     top: 10px;
 }
 .calcuate .date-picker {
     text-indent: 15px; /* Đẩy nội dung sang trái */
-    background-color:#F4F4F4 ;
+    background-color: #f4f4f4;
     border: none;
 }
 
-@media (max-width:1366px) {
+@media (max-width: 1366px) {
     .convert {
         gap: 5%;
-
     }
     .calcuate .need-conversion,
     .calcuate .receive {
@@ -3137,17 +3151,17 @@ a.color-hover-b:hover,
     }
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
     .chart {
-        border-top: 1px solid #F2F2F2;
+        border-top: 1px solid #f2f2f2;
         padding-top: 19px;
-margin-top: 2.75rem;
+        margin-top: 2.75rem;
     }
-    .deposit-interest{
+    .deposit-interest {
         gap: 20px;
     }
-    .calcuate .currency-unit{
-        margin-left:0;
+    .calcuate .currency-unit {
+        margin-left: 0;
     }
     .calcuate .need-conversion,
     .calcuate .receive {
@@ -3155,7 +3169,7 @@ margin-top: 2.75rem;
     }
 }
 
-@media (max-width:578px) {
+@media (max-width: 578px) {
     .no-pabding {
         padding-right: 0;
     }
@@ -3182,17 +3196,14 @@ margin-top: 2.75rem;
     }
 }
 
-@media (max-width:375px) {
+@media (max-width: 375px) {
     .loan-tool-tabs {
         gap: 30px;
     }
     .tab-content {
         margin-top: 24px;
     }
-
 }
-
-
 
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
 .exchange-rate .personal-loan-section {
@@ -3204,7 +3215,6 @@ margin-top: 2.75rem;
 .interestRate .card-preview {
     border: none;
 }
-
 
 .interestRate .card-inner {
     padding: 0 20%;
@@ -3228,7 +3238,6 @@ margin-top: 2.75rem;
     /* Căn giữa nội dung văn bản */
 }
 
-
 .interestRate .interestRate .personal-loan-section {
     background-image: url(../images/banner-interestRate.png);
 }
@@ -3241,13 +3250,12 @@ margin-top: 2.75rem;
     border: 1px solid #f4f0f0;
     /* opacity: 6; */
     border-radius: 4px;
-
 }
-.interestRate .table-mobile{
+.interestRate .table-mobile {
     padding: 0 10%;
 }
-.interestRate .deadline{
-    display: flex; 
+.interestRate .deadline {
+    display: flex;
     justify-content: flex-start; /* Canh trái */
     width: 100%; /* Để nó luôn nằm giữa theo chiều dọc */
     border-radius: 6px 6px 0px 0px;
@@ -3255,32 +3263,32 @@ margin-top: 2.75rem;
 }
 .interestRate .percent,
 .interestRate .no-deadline span,
-.interestRate .deadline span{
-    padding: 16px ;
+.interestRate .deadline span {
+    padding: 16px;
 }
 .interestRate .no-deadline,
-.interestRate .rate-item{
-    display: flex; 
+.interestRate .rate-item {
+    display: flex;
     justify-content: space-between; /* Canh trái */
-    width: 100%; 
+    width: 100%;
     flex-direction: row;
 }
 .interestRate .rate-items {
     display: flex;
     padding: 16px 0;
-    gap:10px ;
-    
+    gap: 10px;
 }
-.interestRate .rate-items span,.percent{
+.interestRate .rate-items span,
+.percent {
     margin-top: 5px;
 }
-@media (min-width: 992px){
-    .interestRate .table-mobile{
+@media (min-width: 992px) {
+    .interestRate .table-mobile {
         display: none;
     }
 }
-@media (max-width: 992px){
-    .interestRate .card-inner{
+@media (max-width: 992px) {
+    .interestRate .card-inner {
         display: none;
     }
 }
@@ -3601,7 +3609,6 @@ margin-top: 2.75rem;
     letter-spacing: -0.34px;
 }
 
-
 .title-image-news {
     color: #494949;
     font-size: 11px;
@@ -3634,7 +3641,6 @@ margin-top: 2.75rem;
     letter-spacing: 0.56px;
     text-transform: uppercase;
 }
-
 
 @media (max-width: 1024px) {
     .community {
@@ -3682,6 +3688,9 @@ margin-top: 2.75rem;
     .slider-blog.owl-carousel .owl-dots {
         gap: 35px;
     }
+    .px-5-1024 {
+        padding: 0px 44px 25px !important;
+    }
 }
 
 @media (max-width: 1025px) and (min-width: 992px) {
@@ -3698,10 +3707,12 @@ margin-top: 2.75rem;
     .about .info-cards .info-overlay .regular-16 {
         font-size: 11px;
     }
+    .px-5-1024 {
+        padding: 0px 24px 25px !important;
+    }
 }
 
 @media (min-width: 992px) {
-
     .footer .block-h,
     .footer .block-h-2 {
         flex: 1 0 0;
@@ -3717,7 +3728,7 @@ margin-top: 2.75rem;
         font-size: 14px;
     }
 
-    .tab-dropdown .nk-menu-main>li {
+    .tab-dropdown .nk-menu-main > li {
         min-width: 160px;
     }
 
@@ -3815,6 +3826,9 @@ margin-top: 2.75rem;
         gap: 28px;
         /* flex: 1 0 0; */
     }
+    .px-5-1024 {
+        padding: 0px 16px 25px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -3892,7 +3906,6 @@ margin-top: 2.75rem;
     .d-block-768 {
         display: block !important;
     }
-
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -3926,7 +3939,7 @@ margin-top: 2.75rem;
         width: 160px;
     }
 
-    .tab-dropdown .nk-menu-main>li {
+    .tab-dropdown .nk-menu-main > li {
         min-width: 130px;
     }
 
@@ -4063,7 +4076,7 @@ margin-top: 2.75rem;
         width: 130px;
     }
 
-    .tab-dropdown .nk-menu-main>li {
+    .tab-dropdown .nk-menu-main > li {
         min-width: 120px;
     }
 
@@ -4088,7 +4101,6 @@ margin-top: 2.75rem;
     padding: 1.375rem 0;
 }
 
-
 /* end luyendv */
 
 /* section list product - ngan-hang-so trongpd */
@@ -4096,10 +4108,9 @@ margin-top: 2.75rem;
     padding: 0 5%;
 }
 
-
 .list-product-detail-section .product-detail-card-button {
     border-radius: 4px;
-    background: #9E2B47;
+    background: #9e2b47;
 }
 
 .list-product-detail-section .product-detail-card-img img {
@@ -4115,34 +4126,48 @@ margin-top: 2.75rem;
     justify-content: center;
 }
 
-.list-product-detail-section .product-detail-card-content .product-detail-card-text div {
+.list-product-detail-section
+    .product-detail-card-content
+    .product-detail-card-text
+    div {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 6px;
 }
 
-.list-product-detail-section .product-detail-card-content .product-detail-card-text div img {
+.list-product-detail-section
+    .product-detail-card-content
+    .product-detail-card-text
+    div
+    img {
     width: 20px;
     aspect-ratio: 1 / 1;
 }
 
 @media (max-width: 768px) {
-
     .list-product-detail-section .product-detail-card-list-button {
         display: flex;
         flex-direction: column;
     }
 
-
-    .list-product-detail-section .product-detail-card .product-detail-card-list-button .product-detail-card-button-detail,
-    .list-product-detail-section .product-detail-card-list-button .product-detail-card-button {
+    .list-product-detail-section
+        .product-detail-card
+        .product-detail-card-list-button
+        .product-detail-card-button-detail,
+    .list-product-detail-section
+        .product-detail-card-list-button
+        .product-detail-card-button {
         text-align: center;
         align-content: center;
     }
 
-    .list-product-detail-section .product-detail-card-list-button .product-detail-card-button,
-    .list-product-detail-section .product-detail-card-list-button .product-detail-card-button-detail {
+    .list-product-detail-section
+        .product-detail-card-list-button
+        .product-detail-card-button,
+    .list-product-detail-section
+        .product-detail-card-list-button
+        .product-detail-card-button-detail {
         min-width: 100%;
     }
 
@@ -4161,7 +4186,7 @@ margin-top: 2.75rem;
 
 .consultation-request-button {
     border-radius: 4px;
-    border: 1px dashed #DCDCDC;
+    border: 1px dashed #dcdcdc;
     display: flex;
     width: 100%;
     align-items: center;
@@ -4175,14 +4200,14 @@ margin-top: 2.75rem;
 
 .product-advisory-section {
     padding: 0 5%;
-    background: #7B0D29;
+    background: #7b0d29;
     display: flex;
     flex-direction: row;
 }
 
 .product-advisory-section .product-advisory-button {
     border-radius: 4px;
-    background: #650D23;
+    background: #650d23;
     display: flex;
     gap: 6px;
     align-items: center;
@@ -4212,7 +4237,6 @@ margin-top: 2.75rem;
 }
 
 /* end section */
-
 
 /* section 3 ưu điểm chính trong product-detail-page trongpd */
 
@@ -4270,14 +4294,13 @@ margin-top: 2.75rem;
     align-items: flex-start;
 }
 
-
 .product-detail .loan-tool-section {
     input[type="radio"] {
-        accent-color: #9E2B47;
+        accent-color: #9e2b47;
     }
 
     .input-slider-wrapper {
-        background: #FFF;
+        background: #fff;
     }
 
     .money-time-loan-calculator-input {
@@ -4308,7 +4331,6 @@ margin-top: 2.75rem;
     display: none;
 }
 
-
 .advantage-card-question {
     padding: 0 5%;
     margin-bottom: 98px;
@@ -4320,8 +4342,7 @@ margin-top: 2.75rem;
     border-radius: 4px;
     padding: 64px 48px;
     background: url(../images/icon-svg/Group\ 13.svg) no-repeat right top,
-            var(--Linear-1, linear-gradient(115deg, #9E2B47 0.44%, #761930 103.79%));
-
+        var(--Linear-1, linear-gradient(115deg, #9e2b47 0.44%, #761930 103.79%));
 }
 
 .advantage-card-question-text {
@@ -4343,7 +4364,6 @@ margin-top: 2.75rem;
     align-items: center;
     gap: 8px;
 }
-
 
 @media (max-width: 1025.1px) {
     .advantage-card-question-text {
@@ -4374,7 +4394,6 @@ margin-top: 2.75rem;
     .advantage-card-question {
         margin-bottom: 60px;
     }
-
 }
 
 @media (max-width: 576.1px) {
@@ -4454,7 +4473,7 @@ margin-top: 2.75rem;
 
 .atm-infomation {
     border-radius: 4px;
-    background: #FFF;
+    background: #fff;
     display: flex;
     flex-direction: column;
     min-width: 365px;
@@ -4473,7 +4492,6 @@ margin-top: 2.75rem;
 }
 
 .atm-google-map-section {
-
     position: relative;
 
     button:not(:disabled),
@@ -4483,7 +4501,6 @@ margin-top: 2.75rem;
         border: none;
     }
 
-
     .owl-carousel-search .search-product a,
     .owl-carousel-search .calculation-tool a,
     .owl-carousel-search .find-branch a,
@@ -4491,7 +4508,8 @@ margin-top: 2.75rem;
     .owl-carousel-search .interest-rate a,
     .owl-carousel-search .exchange-rate a {
         background: #fcfcfc;
-        border: var(--spacing-border_weight-default-border, 1px) solid rgba(0, 0, 0, 0.06);
+        border: var(--spacing-border_weight-default-border, 1px) solid
+            rgba(0, 0, 0, 0.06);
     }
 
     .owl-carousel-search .search-product a:hover,
@@ -4526,7 +4544,7 @@ margin-top: 2.75rem;
     }
 
     .owl-carousel-search span {
-        color: #54433B;
+        color: #54433b;
     }
 }
 
@@ -4534,7 +4552,7 @@ margin-top: 2.75rem;
     display: flex;
     flex-direction: column;
     border-radius: 4px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #f2f2f2;
 }
 
 .atm-card-content {
@@ -4554,20 +4572,18 @@ margin-top: 2.75rem;
     bottom: 10%;
     right: 0%;
     top: unset;
-    border: 1px solid #CACACA;
-    background: rgba(255, 255, 255, 0.50);
+    border: 1px solid #cacaca;
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
 }
 
 .atm-google-map-section .btn-next svg path {
-    stroke: #54433B;
+    stroke: #54433b;
 }
 
 .atm-google-map-section .owl-carousel-search .owl-stage {
     /* position: relative; */
 }
-
-
 
 @media (max-width: 767px) {
     .atm-google-map-section {
@@ -4594,16 +4610,21 @@ margin-top: 2.75rem;
         min-width: auto;
     }
 
-    .atm-google-map-section .atm-infomation  .owl-carousel-search a span {
-        font-size: 12PX;
+    .atm-google-map-section .atm-infomation .owl-carousel-search a span {
+        font-size: 12px;
     }
 }
 
 /* end atm-google-map */
 
-
 @media (max-width: 992px) {
-    .history .main-info-s .main-info-content .main-info-title-content .main-info-title-content-text span br {
+    .history
+        .main-info-s
+        .main-info-content
+        .main-info-title-content
+        .main-info-title-content-text
+        span
+        br {
         display: none;
     }
 
@@ -4658,26 +4679,34 @@ margin-top: 2.75rem;
     justify-content: center;
     align-items: center;
     padding: 8px;
-    background: #FFF;
+    background: #fff;
 }
 
-.Agribank-all-awards-section .Agribank-all-awards-year .Agribank-all-awards-year-content-icon-1 {
+.Agribank-all-awards-section
+    .Agribank-all-awards-year
+    .Agribank-all-awards-year-content-icon-1 {
     display: block;
     width: 9px;
     aspect-ratio: 1/1;
 }
 
-.Agribank-all-awards-section .Agribank-all-awards-year .Agribank-all-awards-year-content-icon-2 {
+.Agribank-all-awards-section
+    .Agribank-all-awards-year
+    .Agribank-all-awards-year-content-icon-2 {
     display: none;
     width: 13px;
     aspect-ratio: 1/1;
 }
 
-.Agribank-all-awards-section .Agribank-all-awards-year.live .Agribank-all-awards-year-content-icon-1 {
+.Agribank-all-awards-section
+    .Agribank-all-awards-year.live
+    .Agribank-all-awards-year-content-icon-1 {
     display: none;
 }
 
-.Agribank-all-awards-section .Agribank-all-awards-year.live .Agribank-all-awards-year-content-icon-2 {
+.Agribank-all-awards-section
+    .Agribank-all-awards-year.live
+    .Agribank-all-awards-year-content-icon-2 {
     display: block;
 }
 
@@ -4689,8 +4718,8 @@ margin-top: 2.75rem;
 .Agribank-all-awards-section .Agribank-all-awards-timeline button {
     padding: 12px;
     border-radius: 100px;
-    border: 1px solid #DEDEDE;
-    background: #FFF;
+    border: 1px solid #dedede;
+    background: #fff;
     position: absolute;
     display: inline-flex;
     align-items: center;
@@ -4714,8 +4743,6 @@ margin-top: 2.75rem;
     width: 85%;
     border-top: 1px dashed #eaeaea;
 }
-
-
 
 .Agribank-all-awards-section .Agribank-all-awards-list-year-content {
     z-index: 3;
@@ -4775,8 +4802,6 @@ margin-top: 2.75rem;
     .Agribank-all-awards-section .Agribank-all-awards-text .regular-15 {
         font-size: 14px;
     }
-
-
 }
 
 /* end fix */
@@ -4818,7 +4843,8 @@ margin-top: 2.75rem;
     }
 
     .why-agribank-culture-background-mobile {
-        background: url(../images/vanhoa-vaylist-vaydetail/image\ 6378.png) lightgray 80% / cover no-repeat;
+        background: url(../images/vanhoa-vaylist-vaydetail/image\ 6378.png)
+            lightgray 80% / cover no-repeat;
     }
 
     .featured-culture-agribank .featured-culture-image img {
@@ -4880,7 +4906,6 @@ margin-top: 2.75rem;
 }
 
 @media (max-width: 1024px) {
-
     .van-hoa-agri-page .slider-blog.owl-carousel .owl-nav,
     .van-hoa-agri-page .slider-blog.owl-carousel .owl-dots {
         gap: 48px;
@@ -4896,7 +4921,9 @@ margin-top: 2.75rem;
         height: 329px;
     }
 
-    .van-hoa-agri-page .agribank-quote-section .agribank-quote-images-background {
+    .van-hoa-agri-page
+        .agribank-quote-section
+        .agribank-quote-images-background {
         max-width: 380px;
         top: 0%;
         left: -4%;
@@ -4954,7 +4981,6 @@ margin-top: 2.75rem;
 }
 
 @media (max-width: 600px) {
-
     .van-hoa-agri-page .agribank-quote-section .agribank-quote-main-content {
         padding-left: 24px;
     }
@@ -4978,7 +5004,9 @@ margin-top: 2.75rem;
         height: 271px;
     }
 
-    .van-hoa-agri-page .agribank-quote-section .agribank-quote-images-background {
+    .van-hoa-agri-page
+        .agribank-quote-section
+        .agribank-quote-images-background {
         width: 306px;
         left: -11%;
     }
