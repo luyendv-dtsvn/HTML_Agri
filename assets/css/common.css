@@ -2716,6 +2716,7 @@ a.color-hover-b:hover,
     display: flex;
     flex-direction: column;
     opacity: 1;
+    width: 100%;
 }
 
 
@@ -2775,13 +2776,27 @@ a.color-hover-b:hover,
 }
 
 
-/* .bld .Agribank-related-info-content {
-    gap: 12px;
-} */
 
+.nav-tabs .nav-item,
+.padding-right{
+    padding-right: 0;
+}
 @media (max-width: 375px) {
-    .bld .nav-tabs .nav-link {
+    /* .bld .nav-tabs .nav-link {
         padding: 0.4rem 0;
+    } */
+    .content-top-menu span{
+        width: 70%;
+    }
+    .bld .nav-link span{
+        text-align: center;
+        width: 70%;
+    }
+    .nav-item{
+        flex: 1;
+    }
+    .bld .Agribank-related-info-content {
+        gap: 12px;
     }
 }
 
@@ -2789,7 +2804,9 @@ a.color-hover-b:hover,
     .bld .nav-tabs .nav-link {
         padding: 0.4rem 0;
     }
-
+    .nav-item{
+        flex: 1;
+    }
 }
 
 /* ---------------------------------------------------End Page Ban lãnh đạo ------------------------------------------ */
