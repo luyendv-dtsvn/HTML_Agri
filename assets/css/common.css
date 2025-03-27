@@ -1127,6 +1127,10 @@ button {
 }
 
 /* color */
+.color-000070 {
+    color: rgba(0, 0, 0, 0.70) !important;
+}
+
 .color-subtite {
     color: var(--color-49494949);
 }

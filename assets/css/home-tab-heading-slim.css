@@ -167,6 +167,13 @@
  .header-slim-white-pc a.color-hover-w:hover, .header-slim-white-pc .color-hover-w:hover span, .header-slim-white-pc .color-hover-w:hover p {
     color: #080808;
  }
+
+ @media (min-width: 992px) {
+    .header-slim-white-mobile {
+        display: none;
+    }
+ }
+ 
  @media (max-width: 992px) {
     .header-slim-white-mobile .header-mobile {
         background: none !important;
@@ -192,6 +199,20 @@
     .header-slim-white-mobile .header-mobile .nk-quick-nav-icon:before {
         background-color: #F2F2F2;
     }
+
+    .header-white .header-mobile {
+        background: #FFF !important;
+        border-bottom: 1px solid #F2F2F2 !important;
+    }
+
+    .header-white .header-mobile-menu a em {
+        color: #af0b35;
+    }
+
+    .header-white .home-vision-header-button {
+        background-color: #7D0926;
+    }
+
  }
  
  .mobile .header-mobile-menu .nk-quick-nav-icon {
@@ -232,20 +253,5 @@
     .top-menu .nk-menu-sub .nk-menu-link {
         width: initial;
         border-top: 1px solid;
-    }
-}
-
-@media (max-width: 992px) {
-    .header-white .header-mobile {
-        background: #FFF !important;
-        border-bottom: 1px solid #F2F2F2 !important;
-    }
-
-    .header-white .header-mobile-menu a em {
-        color: #af0b35;
-    }
-
-    .header-white .home-vision-header-button {
-        background-color: #7D0926;
     }
 }
