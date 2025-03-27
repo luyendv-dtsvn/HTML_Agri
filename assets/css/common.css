@@ -1127,6 +1127,10 @@ button {
 }
 
 /* color */
+.color-000070 {
+    color: rgba(0, 0, 0, 0.70) !important;
+}
+
 .color-subtite {
     color: var(--color-49494949);
 }
@@ -4204,6 +4208,10 @@ a.color-hover-b:hover,
         .product-detail-card-button-detail {
         min-width: 100%;
     }
+
+    .list-product-detail-section .product-detail-card-title .heading-h7 {
+        font-size: 21px;
+    }
 }
 
 /* end section trongpd */
@@ -4451,8 +4459,12 @@ a.color-hover-b:hover,
         font-size: 17px;
     }
 
-    .advantage-product-detail .regular-15 {
-        font-size: 14px;
+    .advantage-product-detail .heading-h8 {
+        font-size: 17px;
+    }
+
+    .product-info-title-content .heading-h6 {
+        font-size: 22px;
     }
 
     .product-info-section .regular-15,
@@ -4652,6 +4664,10 @@ a.color-hover-b:hover,
         span
         br {
         display: none;
+    }
+
+    .history .timeline-history-section .timeline-history-years-mobile .item .body-16 {
+        font-size: 16px;
     }
 }
 
