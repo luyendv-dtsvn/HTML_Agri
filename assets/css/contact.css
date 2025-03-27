@@ -429,14 +429,24 @@
     border: 1px solid #e1e1e1;
     display: flex;
     flex-direction: column;
+    min-height: 286px;
+}
+.contact .pb-6 {
+    padding-top: 56px;
+    padding-bottom: 11px;
+    color: #000;
+}
+.contact .regular-16 {
+    color: rgba(0, 0, 0, 0.80);
 }
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
     }
     .contact .contact-box {
-        min-height: 235px !important;
+        min-height: 286px !important;
     }
+    
 }
 @media (max-width: 992px) {
     .contact .contact-agri-notification-containers {
@@ -463,7 +473,10 @@
         padding-top: 12px;
     }
     .contact .contact-box {
-        min-height: 260px !important;
+        min-height: 286px !important;
+    }
+    .contact-title-main-content {
+        padding: 0px 2%;
     }
 }
 
@@ -524,7 +537,7 @@
         letter-spacing: -0.23px;
     }
     .contact .contact-box {
-        min-height: 282px !important;
+        min-height: 286px !important;
     }
 }
 @media (max-width: 375px) {

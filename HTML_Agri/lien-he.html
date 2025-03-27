@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../assets/css/navmenu.css" />
   <link rel="stylesheet" href="../assets/css/contact.css" />
   <link rel="stylesheet" href="../assets/css/home-tab-heading-slim.css" />
+  <link rel="stylesheet" href="../assets/css/main-info-section.css" />
 </head>
 <style>
   @media (max-width: 992px) {
@@ -167,29 +168,25 @@
             </div>
             <li class="nk-menu-item has-sub home-tab-heading-slim">
               <a href="#" class="nk-menu-link nk-menu-toggle color-hover">
-                <span class="nk-menu-text body-15 color-dark-1 mr-1">Về Agribank</span>
+                <span class="nk-menu-text body-15 color-dark-1 mr-1">Công cụ tính toán</span>
                 <em class="ni ni-chevron-down color-dark-1"></em>
               </a>
               <ul class="nk-menu-sub p-0" style="z-index: 9999;">
                 <li class="nk-menu-item ">
-                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Về Agribank</span></a>
+                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Công cụ tính toán</span></a>
                 </li>
                 <li class="nk-menu-item">
-                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Tin tức</span></a>
+                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Biểu mẫu đăng ký</span></a>
                 </li>
                 <li class="nk-menu-item">
-                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Tuyển dụng</span></a>
+                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Biểu phí dịch vụ</span></a>
                 </li>
                 <li class="nk-menu-item">
-                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Mạng lưới</span></a>
+                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Tỷ giá</span></a>
                 </li>
                 <li class="nk-menu-item">
-                  <a href="#" class="nk-menu-link"><span class="nk-menu-text body-14">Hỗ trợ</span></a>
+                  <a href="#" class="nk-menu-link"><span class="nk-menu-text body-14">Lãi suất</span></a>
                 </li>
-                <li class="nk-menu-item">
-                  <a href="#" class="nk-menu-link"><span class="nk-menu-text body-14">Phát triển bền vững</span></a>
-                </li>
-
               </ul>
             </li>
           </div>
@@ -819,9 +816,18 @@
       
     </div>
   </section>
-  <section class="contact-title-section">
-    <div class="contact-title-text ">
-      <div class="contact-title-sub">
+  <section class="main-info-s">
+    <div class="main-info-img-background">
+      <!-- background-PC -->
+      <img class="d-block d-none-992" src="../assets/images/lien-he/poster-pc.svg" alt="">
+      <!-- background-TABLE -->
+      <img class="d-none d-block-992 d-none-576" src="../assets/images/lien-he/poster-pc.svg" alt="">
+      <!-- background-MOBILE -->
+      <img class="d-none d-block-576" src="../assets/images/lien-he/poster-mobile.svg" alt="">
+    </div>
+
+    <div class="main-info-content">
+      <div class="main-info-title-sub">
         <a href="#" class="color-hover-w"><span class="regular-13 color-white">Trang chủ</span></a>
         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
           <path
@@ -830,18 +836,22 @@
         </svg>
         <a href="#" class="color-hover-w"><span class="regular-13 color-white-1">Liên hệ</span></a>
       </div>
-      <div class="contact-title-content">
-        <span class="heading-h5 color-white">Thông tin liên hệ</span>
-        <span class="regular-16 color-white-1">Cập nhật liên tục các thông tin quan trọng của Agribank</span>
+      <!-- content pc-table -->
+      <div class="main-info-title-content">
+        <div class="main-info-title-content-text">
+          <span class="heading-h5 color-white">Liên hệ</span>
+          <span class="regular-16 color-white-1 pt-2">Cập nhật liên tục các thông tin quan trọng của
+            Agribank</span>
+        </div>
       </div>
     </div>
   </section>
   <section class="col-12 contact-title-main-content" style="margin-bottom: 107px;">
     <div class="content-betwent active" data-content="tab1">
       <div class="content-betwent-title row-ct" style="padding-top: 80px; padding-bottom: 45px;">
-        <div class="col-md-4 p-2 contact-block">
+        <div class="col-lg-4 p-2 contact-block">
           <div class="contact-box p-gs">
-            <a href="">
+            <a href="" class="">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <path
                   d="M20.0004 14.3503C22.7733 14.3503 25.0212 12.1024 25.0212 9.32945C25.0212 6.55651 22.7733 4.30859 20.0004 4.30859C17.2274 4.30859 14.9795 6.55651 14.9795 9.32945C14.9795 12.1024 17.2274 14.3503 20.0004 14.3503Z"
@@ -864,19 +874,19 @@
                   fill="#C33C5E" />
               </svg>
             </a>
-            <span class="title-box-contact body-18">Hotline hỗ trợ</span>
-            <span class="content-box-contact pl-0 pb-4 w-auto">Liên hệ trực tiếp tổng đài để nhận được hỗ trợ nhanh
+            <span class="title-box-contact body-18 pb-6">Hotline hỗ trợ</span>
+            <span class="content-box-contact pl-0 pb-4 w-auto regular-16">Liên hệ trực tiếp tổng đài để nhận được hỗ trợ nhanh
               chóng</span>
-            <div class="row-ct">
+            <div class="row-ct body-15">
               <span class="color-red-1 pr-3">+842532053205 </span>
               <div class="" style="background: rgba(0, 0, 0, 0.10); width: 1px;height: 19px;"></div>
               <span class="color-red-1 pl-3">1900558818</span>
             </div>
           </div>
         </div>
-        <div class="col-md-4 p-2 contact-block">
+        <div class="col-lg-4 p-2 contact-block">
           <div class="contact-box p-gs">
-            <a href="">
+            <a href="" class="">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <path
                   d="M20.0004 14.3503C22.7733 14.3503 25.0212 12.1024 25.0212 9.32945C25.0212 6.55651 22.7733 4.30859 20.0004 4.30859C17.2274 4.30859 14.9795 6.55651 14.9795 9.32945C14.9795 12.1024 17.2274 14.3503 20.0004 14.3503Z"
@@ -899,15 +909,15 @@
                   fill="#C33C5E" />
               </svg>
             </a>
-            <span class="title-box-contact body-18">Email</span>
-            <span class="content-box-contact w-auto pl-0 pb-4">Gửi thư điện tử để nhận hõ trợ hoặc liên hệ hợp tác với
+            <span class="title-box-contact body-18 pb-6">Email</span>
+            <span class="content-box-contact w-auto pl-0 pb-4 regular-16">Gửi thư điện tử để nhận hõ trợ hoặc liên hệ hợp tác với
               Agribank</span>
-            <span class="color-red-1">cskh@agribank.com.vn</span>
+            <span class="color-red-1 body-15 ">cskh@agribank.com.vn</span>
           </div>
         </div>
-        <div class="col-md-4 p-2 contact-block">
+        <div class="col-lg-4 p-2 contact-block">
           <div class="contact-box p-gs">
-            <a href="">
+            <a href="" class="">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <path
                   d="M20.0004 14.3503C22.7733 14.3503 25.0212 12.1024 25.0212 9.32945C25.0212 6.55651 22.7733 4.30859 20.0004 4.30859C17.2274 4.30859 14.9795 6.55651 14.9795 9.32945C14.9795 12.1024 17.2274 14.3503 20.0004 14.3503Z"
@@ -930,8 +940,8 @@
                   fill="#C33C5E" />
               </svg>
             </a>
-            <span class="title-box-contact body-18">Hỗ trợ trực tuyến</span>
-            <span class="content-box-contact w-auto pl-0 pb-4">Kết nối với Agribank trực tiêp trên các nền tảng mạng xã
+            <span class="title-box-contact body-18 pb-6">Hỗ trợ trực tuyến</span>
+            <span class="content-box-contact w-auto pl-0 pb-4 regular-16">Kết nối với Agribank trực tiêp trên các nền tảng mạng xã
               hội</span>
             <div class="" style="display: inline-flex;
             align-items: center;
