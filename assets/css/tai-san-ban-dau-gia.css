@@ -5,7 +5,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background: url("../images/27/istockphoto-1168013916-2048x2048-topaz-sharpen-enhance-2.1x\ 1.svg") no-repeat center;
+    background: url("../images/27/istockphoto-1168013916-2048x2048-topaz-sharpen-enhance-2.1x\ 1.svg")
+        no-repeat center;
     background-size: cover;
     padding: 40px 5%;
 }
@@ -412,11 +413,22 @@
     line-height: 140%; /* 19.6px */
     letter-spacing: 0.28px;
 }
-.disclosure .item-disclosure{
+.disclosure .item-disclosure {
     min-width: 48%;
 }
-.item-disclosure span.col-10{
-    width:50%
+.item-disclosure span.col-10 {
+    width: 50%;
+}
+.disclosure span#select2-ir90-container, span#select2-hgcn-container, 
+span#select2-jsyb-container {
+    color: rgba(0, 0, 0, 0.7);
+
+    /* Desktop/Body/14 */
+    font-family: "BT Grotesk Medium";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 15.4px */
 }
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
@@ -447,7 +459,6 @@
 }
 
 @media (max-width: 768px) {
-    
     .nk-menu-heading {
         padding: 14px;
         color: #af0b35;
@@ -468,7 +479,7 @@
         color: #af0b35;
     } */
     .select2-results__options {
-        color: rgba(0, 0, 0, 0.70);
+        color: rgba(0, 0, 0, 0.7);
         padding-left: 0;
     }
     .select2-dropdown {
