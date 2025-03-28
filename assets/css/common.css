@@ -1035,7 +1035,7 @@ button {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375.6px) {
     .regular-17 {
         font-family: "BT Grotesk Regular";
         font-size: 15px;
@@ -2822,7 +2822,7 @@ a.color-hover-b:hover,
 .padding-right{
     padding-right: 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 375.6px) {
     /* .bld .nav-tabs .nav-link {
         padding: 0.4rem 0;
     } */
@@ -2909,7 +2909,7 @@ a.color-hover-b:hover,
         padding: 40px 20px 40px 36px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 375.6px) {
     .loan-card {
     margin-bottom: 16px;
     }
@@ -3091,13 +3091,14 @@ a.color-hover-b:hover,
 
 .stage {
     display: flex;
-    gap: 32px;
+    gap: 16px;
 }
 
 .stage button {
     padding: 4px 8px;
     border: none;
     border-radius: 4px;
+    font-size: 11px;
 }
 
 .stage button:hover {
@@ -3189,6 +3190,10 @@ margin: 14px 0;
 .calcuate .loan-calculator-radio-form input[type="radio"]:checked + img {
     content: url("../images/checkbox1.svg"); /* Ảnh khi chọn */
 }
+.calcuate .currency-unit select{
+    color: #606060;
+}
+
 @media (max-width:1366px) {
 
     .convert {
@@ -3252,7 +3257,7 @@ margin: 14px 0;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375.6px) {
     .loan-tool-tabs {
         gap: 30px;
     }
@@ -3271,7 +3276,9 @@ margin: 14px 0;
 .interestRate .card-preview {
     border: none;
 }
-
+.interestRate .tbody{
+    color: #28140C;
+}
 .interestRate .card-inner {
     padding: 0 20%;
 }
@@ -4129,14 +4136,14 @@ margin: 14px 0;
     }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375.6px) {
     .col-ssm-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375.6px) {
     .tab-dropdown .nk-menu-link {
         font-size: 12px;
     }
