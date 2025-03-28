@@ -420,12 +420,36 @@
 .recruitment-detail .nk-content {
     padding: 32px 2%;
 }
+.recruitment-detail .head-title {
+    color: var(--dark-1, #080808);
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 123.077% */
+    letter-spacing: 0.26px;
+    padding-bottom: 12px !important;
+}
 
+@media screen and (max-width: 1024px) {
+    .recruitment-detail .flex-col-content {
+        justify-content: center;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .recruitment-detail .px-5-1024 {
+        padding: 0px 8px 25px !important;
+    }
+    .recruitment-detail .flex-col-content {
+        justify-content: center;
+    }
+}
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
     }
-    
+    /* .recruitment-detail .flex-col-content {
+        justify-content: space-between;
+    } */
 }
 @media (max-width: 992px) {
     .recruitment-detail .recruitment-detail-agri-notification-containers {
@@ -457,7 +481,15 @@
     .flex-cover {
         display: block;
     }
-    
+    .recruitment-detail .head-title {
+        color: var(--dark-1, #080808);
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 123.077% */
+        letter-spacing: 0.26px;
+        padding-bottom: 12px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -512,6 +544,28 @@
     .recruitment-detail .head-title {
         padding-bottom: 25px !important;
     }
+    .recruitment-detail .button-view-here {
+        padding-top: 8px;
+    }
+    .recruitment-detail .title-l {
+        color: #494949;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 13.2px */
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        padding-bottom: 8px;
+    }
+    .recruitment-detail .head-title {
+        color: var(--dark-1, #080808);
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 123.077% */
+        letter-spacing: 0.26px;
+        padding-bottom: 12px !important;
+    }
 }
 @media (max-width: 375px) {
     .recruitment-detail-title-section {
@@ -535,5 +589,30 @@
     }
     .recruitment-detail .head-title {
         padding-bottom: 25px !important;
+    }
+    .recruitment-detail .button-view-here {
+        padding-top: 8px;
+    }
+    .recruitment-detail .title-l {
+        color: #494949;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 13.2px */
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        padding-bottom: 8px;
+    }
+    .recruitment-detail .px-5-1024 {
+        padding: 0px 10px !important;
+    }
+    .recruitment-detail .head-title {
+        color: var(--dark-1, #080808);
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 123.077% */
+        letter-spacing: 0.26px;
+        padding-bottom: 12px !important;
     }
 }
