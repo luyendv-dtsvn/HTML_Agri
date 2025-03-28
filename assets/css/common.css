@@ -3272,7 +3272,9 @@ margin: 14px 0;
 }
 
 /* ---------------------------------------------------Page interestRate ------------------------------------------ */
-
+.interestRate .tab{
+width: 100%;
+}
 .interestRate .card-preview {
     border: none;
 }
