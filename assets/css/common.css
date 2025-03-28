@@ -2815,13 +2815,14 @@ a.color-hover-b:hover,
     background-repeat: no-repeat;
 }
 
-.bld .Agribank-related-info-content {
-    gap: 12px;
-}
+
 
 @media (max-width: 375px) {
     .bld .nav-tabs .nav-link {
         padding: 0.4rem 0;
+    }
+    .bld .Agribank-related-info-content {
+        gap: 12px;
     }
 }
 
