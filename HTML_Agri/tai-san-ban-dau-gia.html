@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../assets/css/navmenu.css" />
   <link rel="stylesheet" href="../assets/css/tai-san-ban-dau-gia.css" />
   <link rel="stylesheet" href="../assets/css/home-tab-heading-slim.css" />
+  <link rel="stylesheet" href="../assets/css/main-info-section.css" />
 </head>
 <style>
   @media (max-width: 992px) {
@@ -809,9 +810,18 @@
       </div>
     </div>
   </section>
-  <section class="disclosure-title-section">
-    <div class="disclosure-title-text ">
-      <div class="disclosure-title-sub">
+  <section class="main-info-s">
+    <div class="main-info-img-background">
+      <!-- background-PC -->
+      <img class="d-block d-none-992" src="../assets/images/tai-san-dau-gia/poster-pc.svg" alt="">
+      <!-- background-TABLE -->
+      <img class="d-none d-block-992 d-none-576" src="../assets/images/tai-san-dau-gia/poster-pc.svg" alt="">
+      <!-- background-MOBILE -->
+      <img class="d-none d-block-576" src="../assets/images/tai-san-dau-gia/poster-mobile.svg" alt="">
+    </div>
+
+    <div class="main-info-content">
+      <div class="main-info-title-sub">
         <a href="#" class="color-hover-w"><span class="regular-13 color-white">Trang chủ</span></a>
         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
           <path
@@ -820,9 +830,13 @@
         </svg>
         <a href="#" class="color-hover-w"><span class="regular-13 color-white-1">Tài sản bán đấu giá</span></a>
       </div>
-      <div class="disclosure-title-content">
-        <span class="heading-h5 color-white">Tài sản bán đấu giá</span>
-        <span class="regular-16 color-white-1">Cập nhật liên tục các thông tin quan trọng của Agribank</span>
+      <!-- content pc-table -->
+      <div class="main-info-title-content">
+        <div class="main-info-title-content-text">
+          <span class="heading-h5 color-white">Tài sản bán đấu giá</span>
+          <span class="regular-16 color-white-1 pt-2">Cập nhật liên tục các thông tin quan trọng của
+            Agribank</span>
+        </div>
       </div>
     </div>
   </section>
@@ -891,18 +905,9 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-10 w-content color-dark-2 body-15">Thông báo thay đổi Chủ tịch Hội đồng thành viên và thành viên HĐTV phụ trách điều
+            <span class="col-10 w-content color-dark-2 body-16">Thông báo thay đổi Chủ tịch Hội đồng thành viên và thành viên HĐTV phụ trách điều
               hành hoạt động của HĐTV</span>
-            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
-                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
-                  stroke-linecap="square" />
-                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
-                  stroke-linecap="square" stroke-linejoin="round" />
-              </svg>
-            </a>
+            
           </div>
         </div>
       </div>
@@ -921,17 +926,8 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-10 w-content color-dark-2 body-15">Thông báo thay đổi Thành viên Ban Kiểm soát và Phó Tổng Giám đốc</span>
-            <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
-                <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M17.7188 12.3125V17.5625H3.28125V12.3125" stroke="#343330" stroke-width="1.25"
-                  stroke-linecap="square" />
-                <path d="M13.7812 9.03125L10.5 12.3125L7.21875 9.03125" stroke="#343330" stroke-width="1.25"
-                  stroke-linecap="square" stroke-linejoin="round" />
-              </svg>
-            </a>
+            <span class="col-10 w-content color-dark-2 body-16">Thông báo thay đổi Thành viên Ban Kiểm soát và Phó Tổng Giám đốc</span>
+            
           </div>
         </div>
       </div>
@@ -950,7 +946,7 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-10 w-content color-dark-2 body-15">Sửa đổi nội dung Giấy phép thành lập và hoạt động của Ngân hàng Nông nghiệp và Phát
+            <span class="col-10 w-content color-dark-2 body-16">Sửa đổi nội dung Giấy phép thành lập và hoạt động của Ngân hàng Nông nghiệp và Phát
               triển nông thôn Việt Nam</span>
             <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
@@ -980,7 +976,7 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-10 w-content color-dark-2 body-15">Thông báo thay đổi Phó Tổng Giám đốc</span>
+            <span class="col-10 w-content color-dark-2 body-16">Thông báo thay đổi Phó Tổng Giám đốc</span>
             <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
                 <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
@@ -1009,7 +1005,7 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-10 w-content color-dark-2 body-15">Công bố thông tin tỷ lệ an toàn vốn kỳ 31/12/2023</span>
+            <span class="col-10 w-content color-dark-2 body-16">Công bố thông tin tỷ lệ an toàn vốn kỳ 31/12/2023</span>
             <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
                 <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
@@ -1038,7 +1034,7 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-10 w-content color-dark-2 body-15">Thông báo thay đổi Phó Tổng Giám đốc</span>
+            <span class="col-10 w-content color-dark-2 body-16">Thông báo thay đổi Phó Tổng Giám đốc</span>
             <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
                 <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
@@ -1067,7 +1063,7 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-10 w-content color-dark-2 body-15">Công bố thông tin tỷ lệ an toàn vốn kỳ 31/12/2023</span>
+            <span class="col-10 w-content color-dark-2 body-16">Công bố thông tin tỷ lệ an toàn vốn kỳ 31/12/2023</span>
             <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
                 <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
@@ -1096,7 +1092,7 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-10 w-content color-dark-2 body-15">Giấy ủy quyền công bố thông tin</span>
+            <span class="col-10 w-content color-dark-2 body-16">Giấy ủy quyền công bố thông tin</span>
             <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
                 <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
@@ -1125,7 +1121,7 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-10 w-content color-dark-2 body-15">Báo cáo thực trạng quản trị và cơ cấu tổ chức của Agribank 6 tháng đầu năm
+            <span class="col-10 w-content color-dark-2 body-16">Báo cáo thực trạng quản trị và cơ cấu tổ chức của Agribank 6 tháng đầu năm
               2024</span>
             <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
@@ -1155,7 +1151,7 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-10 w-content color-dark-2 body-15">Báo cáo thực trạng quản trị và cơ cấu tổ chức doanh nghiệp năm 2023</span>
+            <span class="col-10 w-content color-dark-2 body-16">Báo cáo thực trạng quản trị và cơ cấu tổ chức doanh nghiệp năm 2023</span>
             <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
                 <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
@@ -1184,7 +1180,7 @@
                 <path d="M26.91 19.999H20V26.909" stroke="#AF0B35" stroke-width="1.35" stroke-linecap="round" />
               </svg>
             </a>
-            <span class="col-10 w-content color-dark-2 body-15">Thông báo thay đổi Thành viên Hội đồng thành viên</span>
+            <span class="col-10 w-content color-dark-2 body-16">Thông báo thay đổi Thành viên Hội đồng thành viên</span>
             <a href="" class="col-1 pt-3 p-0 p-md-0 d-flex justify-content-end">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
                 <path d="M10.5 12.3125V3.125" stroke="#343330" stroke-width="1.25" stroke-linecap="round"
