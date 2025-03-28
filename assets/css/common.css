@@ -4825,6 +4825,12 @@ a.color-hover-b:hover,
     top: -26%;
 }
 
+@media (min-width: 768px) {
+    .van-hoa-agri-page .why-agribank-culture-text {
+        padding: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .featured-culture-agribank .featured-culture-content .heading-h7 {
         font-size: 19px;
