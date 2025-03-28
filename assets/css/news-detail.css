@@ -522,9 +522,9 @@
         padding-top: 65px;
     }
     
-    .news-detail .title-table-pc {
+    /* .news-detail .title-table-pc {
         display: none;
-    }
+    } */
     .news-detail .title-table-mobile {
         display: contents;
     }
@@ -550,9 +550,9 @@
         display: flex;
         justify-content: center;
     }
-    .news-detail .title-table-pc {
+    /* .news-detail .title-table-pc {
         display: none;
-    }
+    } */
     .news-detail .title-table-mobile {
         display: contents;
     }
