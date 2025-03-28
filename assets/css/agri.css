@@ -2737,7 +2737,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .Agribank-all-awards-container {
         display: block;
         flex-direction: initial;
@@ -2933,6 +2933,21 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 @media (max-width: 768px) {
+
+    .history .Agribank-related-info .Agribank-related-card .Agribank-related-card-overlay span br {
+        display: none;
+    }
+
+    .history .timeline-history-section .timeline-history-title span br {
+        display: none;
+    }
+
+    .history-year-content-card-text {
+        padding-right: 0;
+    }
+}   
+
+@media (max-width: 767px) {
     .why-agribank-culture {
         min-height: 695px;
         display: flex;
@@ -2948,18 +2963,4 @@ input[type="range"]::-webkit-slider-thumb {
         background: linear-gradient(180deg, #AF0B35 63.57%, rgba(175, 11, 53, 0.00) 100%);
         padding: 36px 5%;
     }
-
-    .history .Agribank-related-info .Agribank-related-card .Agribank-related-card-overlay span br {
-        display: none;
-    }
-
-    .history .timeline-history-section .timeline-history-title span br {
-        display: none;
-    }
-
-    .history-year-content-card-text {
-        padding-right: 0;
-    }
-}   
-
-
+}
