@@ -4640,16 +4640,9 @@ a.color-hover-b:hover,
 /* end fix */
 
 /* fix page giải thưởng trongdp */
-.Agribank-award-section .Agribank-award-card-content {
-    height: 56px;
-}
 
-.Agribank-award-section .Agribank-award-card-content p {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.Agribank-award-section .pricing {
+    justify-content: flex-start;
 }
 
 .Agribank-award-section .Agribank-award-card-img {
