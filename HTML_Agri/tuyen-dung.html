@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../assets/css/navmenu.css" />
   <link rel="stylesheet" href="../assets/css/recruitment.css" />
   <link rel="stylesheet" href="../assets/css/home-tab-heading-slim.css" />
+  <link rel="stylesheet" href="../assets/css/main-info-section.css" />
 </head>
 <style>
   @media (max-width: 992px) {
@@ -165,29 +166,22 @@
             </div>
             <li class="nk-menu-item has-sub home-tab-heading-slim">
               <a href="#" class="nk-menu-link nk-menu-toggle color-hover">
-                <span class="nk-menu-text body-15 color-dark-1 mr-1">Về Agribank</span>
+                <span class="nk-menu-text body-15 color-dark-1 mr-1">Chương trình tuyển dụng</span>
                 <em class="ni ni-chevron-down color-dark-1"></em>
               </a>
               <ul class="nk-menu-sub p-0" style="z-index: 9999;">
                 <li class="nk-menu-item ">
-                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Về Agribank</span></a>
+                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Chương trình tuyển
+                      dụng</span></a>
                 </li>
                 <li class="nk-menu-item">
-                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Tin tức</span></a>
+                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Thông báo thi
+                      tuyển</span></a>
                 </li>
                 <li class="nk-menu-item">
-                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Tuyển dụng</span></a>
+                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Kết quả tuyển
+                      dụng</span></a>
                 </li>
-                <li class="nk-menu-item">
-                  <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Mạng lưới</span></a>
-                </li>
-                <li class="nk-menu-item">
-                  <a href="#" class="nk-menu-link"><span class="nk-menu-text body-14">Hỗ trợ</span></a>
-                </li>
-                <li class="nk-menu-item">
-                  <a href="#" class="nk-menu-link"><span class="nk-menu-text body-14">Phát triển bền vững</span></a>
-                </li>
-
               </ul>
             </li>
           </div>
@@ -816,10 +810,20 @@
       </div>
     </div>
   </section>
-  <section class="recruitment-title-section">
-    <div class="recruitment-title-text ">
-      <div class="recruitment-title-sub">
-        <a href="#" class="color-hover-w"><span class="regular-13 color-white">Về Agribank</span></a>
+
+  <section class="main-info-s">
+    <div class="main-info-img-background">
+      <!-- background-PC -->
+      <img class="d-block d-none-992" src="../assets/images/news_detail/poster-pc.svg" alt="">
+      <!-- background-TABLE -->
+      <img class="d-none d-block-992 d-none-576" src="../assets/images/news_detail/poster-pc.svg" alt="">
+      <!-- background-MOBILE -->
+      <img class="d-none d-block-576" src="../assets/images/news_detail/poster-mobile.png" alt="">
+    </div>
+
+    <div class="main-info-content">
+      <div class="main-info-title-sub">
+        <a href="#" class="color-hover-w"><span class="regular-13 color-white">Trang chủ</span></a>
         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
           <path
             d="M6.22076 3.68784L2.66066 0.127804C2.57832 0.045398 2.4684 0 2.3512 0C2.23399 0 2.12408 0.045398 2.04174 0.127804L1.77956 0.389915C1.60896 0.560711 1.60896 0.838302 1.77956 1.00884L4.76906 3.99834L1.77624 6.99116C1.6939 7.07357 1.64844 7.18342 1.64844 7.30056C1.64844 7.41782 1.6939 7.52768 1.77624 7.61015L2.03842 7.8722C2.12082 7.9546 2.23068 8 2.34788 8C2.46508 8 2.575 7.9546 2.65734 7.8722L6.22076 4.30891C6.30329 4.22624 6.34863 4.11587 6.34837 3.99854C6.34863 3.88075 6.30329 3.77044 6.22076 3.68784Z"
@@ -827,9 +831,13 @@
         </svg>
         <a href="#" class="color-hover-w"><span class="regular-13 color-white-1">Tuyển dụng</span></a>
       </div>
-      <div class="recruitment-title-content">
-        <span class="heading-h5 color-white">Tuyển dụng</span>
-        <span class="regular-16 color-white-1">Cập nhật liên tục các thông tin quan trọng của Agribank</span>
+      <!-- content pc-table -->
+      <div class="main-info-title-content">
+        <div class="main-info-title-content-text">
+          <span class="heading-h5 color-white">Tuyển dụng</span>
+          <span class="regular-16 color-white-1 pt-2">Cập nhật liên tục các thông tin quan trọng của
+            Agribank</span>
+        </div>
       </div>
     </div>
   </section>
@@ -846,7 +854,7 @@
               <span class="title-pic-content">Chương trình tuyển dụng</span>
               <span class="pic-content">Thông tin chi tiết các vị trí tuyển dụng của Agribank</span>
             </div>
-            <div class="btn btn-information w-150px">
+            <div class="btn btn-information w-150px pl-">
               <span class="title-buttom regular-14">Xem thông tin</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M6 3L11 8L6 13" stroke="white" stroke-width="1.42857" stroke-linecap="square" />
