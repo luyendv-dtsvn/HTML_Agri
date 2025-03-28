@@ -4,15 +4,6 @@
 }
 
 
-/* Section Tổng */
-.featured-culture-agribank {
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-top: 80px;
-
-}
 
 /* Container */
 .featured-culture-container {
@@ -282,7 +273,7 @@
 }
 
 .advantage-card-question-containers {
-    width: 90%;
+    width: 100%;
     display: flex;
     border-radius: 4px;
     align-items: center;
@@ -461,10 +452,6 @@
 .tab-content-table tr:last-child {
     border-bottom: none;
     padding-bottom: 0;
-}
-
-.tab-content-table ul li {
-    list-style: url("../images/vanhoa-vaylist-vaydetail/CheckCircle.svg");
 }
 
 .tab-content-table ul {
@@ -751,7 +738,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 47px;
 }
 
 .answer-tab-content-pagination {
@@ -1553,7 +1540,7 @@ input::placeholder {
 
     flex-wrap: wrap;
 
-    margin: 30px auto 91px auto;
+    margin: 8px auto 26px auto;
 
 }
 
@@ -1683,5 +1670,11 @@ input::placeholder {
 @media (width:992px) {
     .mobile {
         display: none;
+    }
+}
+
+@media (max-width: 376px) {
+    .body-14 {
+        font-size: 12px;
     }
 }
