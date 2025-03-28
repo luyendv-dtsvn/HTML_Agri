@@ -1054,7 +1054,7 @@ button {
 
     .heading-h4 {
         font-family: "BT Grotesk Regular";
-        font-size: 25px;
+        font-size: 26px;
         line-height: 129.99999523162842%;
         letter-spacing: -1%;
     }
@@ -1071,7 +1071,7 @@ button {
     }
 
     .body-16 {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .body-17 {
@@ -2816,9 +2816,7 @@ a.color-hover-b:hover,
     background-repeat: no-repeat;
 }
 
-.bld .Agribank-related-info-content {
-    gap: 12px;
-}
+
 
 .nav-tabs .nav-item,
 .padding-right{
@@ -2837,6 +2835,9 @@ a.color-hover-b:hover,
     }
     .nav-item{
         flex: 1;
+    }
+    .bld .Agribank-related-info-content {
+        gap: 12px;
     }
     .bld .Agribank-related-info-content {
         gap: 12px;
@@ -2886,8 +2887,8 @@ a.color-hover-b:hover,
     opacity: 0;
 }
 
-.product-list .nav-link {
-    margin: 0 1.75rem;
+.nav-tabs .nav-link{
+    padding: 14px 28px;
 }
 
 .product-list .nav-tabs .nav-link {
@@ -2908,36 +2909,14 @@ a.color-hover-b:hover,
         padding: 40px 20px 40px 36px;
     }
 }
-
-@media (min-width: 1200px) {
-    .product-list .nav-tabs .nav-item {
-        padding-right: 00;
+@media (max-width: 375px) {
+    .loan-card {
+    margin-bottom: 16px;
     }
 }
 
-@media (max-width: 1024px) {
-    .loan-cards .tab-pane {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-}
 
-@media (min-width: 992px) {
-    .product-list .nav-tabs .nav-item {
-        padding-right: 00;
-    }
-}
 
-@media (min-width: 768px) {
-    .product-list .nav-tabs .nav-item {
-        padding-right: 00;
-    }
-}
-
-.product-list .nav-tabs .nav-item:last-child {
-    padding-right: 0;
-}
 
 /* ---------------------------------------------------End Page Product List ------------------------------------------ */
 
@@ -3070,7 +3049,8 @@ a.color-hover-b:hover,
 }
 
 .exchange-rate {
-    color: #000;
+    color: #080808;
+
 }
 
 .amount-vnd {
@@ -3087,7 +3067,7 @@ a.color-hover-b:hover,
 }
 
 .update-time {
-    color: #666;
+    color: #594B45;
 }
 
 .need-conversion,
@@ -3145,6 +3125,7 @@ a.color-hover-b:hover,
 }
 
 .icon-change-mobile {
+margin: 14px 0;
     display: flex;
 }
 
@@ -3165,8 +3146,51 @@ a.color-hover-b:hover,
     background-color: #f4f4f4;
     border: none;
 }
+.calcuate .nav-item .nav-link{
+    color:#6b6b6b ;
+}
+.nav-tabs .nav-link.active {
+    color: #AF0B35;
+}
 
-@media (max-width: 1366px) {
+
+.range-display{
+    margin-top: 10px;
+}
+.input-number{
+    border: none;
+    background-color: #f4f4f4;
+    width: 80%;
+}
+.input-slider-wrapper .currency-unit {
+    color: #606060;
+}
+.loan-result-content .--dark-1{
+    color: #080808;
+}
+.calcuate .loan-calculator-radio-form input[type="radio"] {
+    display: none;
+}
+/* Tạo nút radio tùy chỉnh */
+.calcuate .loan-calculator-radio-form label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px; /* Khoảng cách giữa ảnh và chữ */
+}
+
+/* Ảnh radio mặc định */
+.calcuate .loan-calculator-radio-form label img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Khi radio được chọn, đổi ảnh */
+.calcuate .loan-calculator-radio-form input[type="radio"]:checked + img {
+    content: url("../images/checkbox1.svg"); /* Ảnh khi chọn */
+}
+@media (max-width:1366px) {
+
     .convert {
         gap: 5%;
     }
@@ -3176,7 +3200,13 @@ a.color-hover-b:hover,
     }
 }
 
-@media (max-width: 992px) {
+@media (min-width:992px) {
+    .calcuate .nav-tabs .nav-link {
+        font-size: 0.938rem ;
+    }
+}
+@media (max-width:992px) {
+
     .chart {
         border-top: 1px solid #f2f2f2;
         padding-top: 19px;
@@ -3192,6 +3222,7 @@ a.color-hover-b:hover,
     .calcuate .receive {
         width: 41%;
     }
+    
 }
 
 @media (max-width: 578px) {
@@ -4857,6 +4888,12 @@ a.color-hover-b:hover,
 .van-hoa-agri-page .nk-content .slider-blog.owl-carousel .owl-dots {
     right: 4%;
     top: -26%;
+}
+
+@media (min-width: 768px) {
+    .van-hoa-agri-page .why-agribank-culture-text {
+        padding: 0;
+    }
 }
 
 @media (max-width: 768px) {
