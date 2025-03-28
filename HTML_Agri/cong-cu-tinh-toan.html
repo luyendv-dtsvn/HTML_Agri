@@ -1352,8 +1352,8 @@
                             <label class="body-14  --color-49494949" for="loan-amount">Số tiền vay</label>
                             <div class="money-time-loan-calculator-input">
                                 <div class="input-slider-wrapper pl-3 pr-3 pt-2">
-                                    
-                                    <input type="text" id="moneyInput"  inputmode="numeric" value="0" class="input-number Body-Regular-15"  />
+                                   
+                                    <input type="text" id="moneyInput"  inputmode="numeric" value="0" class="input-number  money-input Body-Regular-15"  />
                                         <div class="line-v" style="background-color: #E9E9E9;"></div>
                                     <span class="currency-unit body-13 --color-49494949">VNĐ</span>
                                 </div>
@@ -1437,10 +1437,7 @@
                                         <label class="body-14 --color-49494949" for="loan-amount">Số tiền vay</label>
                                         <div class="money-time-loan-calculator-input">
                                             <div class="input-slider-wrapper pl-3 pr-3 pt-2">
-                                                <input type="number" id="loan-amount-input" value="810000" min="0"
-                                                    max="10000000" step="1"
-                                                    oninput="this.value = Math.max(this.min, Math.min(this.value, this.max));"
-                                                    class="input-number Body-Regular-15" />
+                                                <input type="text" id="moneyInput"  inputmode="numeric" value="0" class="input-number  money-input Body-Regular-15"  />
                                                     <div class="line-v" style="background-color: #E9E9E9;"></div>
                                                 <span class="currency-unit body-13">VNĐ</span>
                                             </div>
@@ -1549,10 +1546,10 @@
                                             <label class="body-14 ">Số tiền cần quy đổi</label>
                                             <div class="money-time-loan-calculator-input">
                                                 <div class="input-slider-wrapper pl-3 pr-3 pt-3 pb-3">
-                                                    <input type="text" id="moneyInput"  inputmode="numeric" value="0" class="input-number Body-Regular-15"  />
+                                                    <input type="text" id="moneyInput"  inputmode="numeric" value="0" class="input-number  money-input Body-Regular-15"  />
                                                     <div class="line-v"></div>
                                                     
-                                                    <span class="currency-unit body-13 --dark-3"><select>
+                                                    <span class="currency-unit body-12 --dark-3"><select>
                                                             <option value="1">VND</option>
                                                             <option value="2">USD</option>
                                                             <option value="3">EURO</option>
@@ -1574,8 +1571,7 @@
                                             <label class="body-14">Số tiền nhận được</label>
                                             <div class="money-time-loan-calculator-input">
                                                 <div class="input-slider-wrapper pl-3 pr-3 pt-3 pb-3">
-                                                    <input type="number" m step="1"
-                                                        class="input-number Body-Regular-15" />
+                                                    <input type="text" id="moneyInput"  inputmode="numeric" value="0" class="input-number  money-input Body-Regular-15"  />
                                                     <div class="line-v"></div>
                                                     <span class="currency-unit body-13"><span
                                                             class="currency-unit body-13 --dark-3"><select>
@@ -2003,17 +1999,20 @@
 
     </script>
     <script>
-        document.getElementById("moneyInput").addEventListener("input", function (e) {
+        document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".money-input").forEach(function (input) {
+        input.addEventListener("input", function (e) {
             let value = e.target.value.replace(/,/g, ""); // Xóa dấu `,` cũ
-        
+
             if (/^\d*\.?\d*$/.test(value)) { // Chỉ cho phép số và dấu `.`
                 let parts = value.split(".");
                 parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Thêm dấu `,`
                 e.target.value = parts.join(".");
-        
-                document.getElementById("rawValue").innerText = value; // Hiển thị số thực (dùng để tính toán)
             }
         });
+    });
+});
+
         </script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
