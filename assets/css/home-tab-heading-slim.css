@@ -86,7 +86,9 @@
  .home-header-slim .home-tab-heading-slim {
         display: block !important;
     }
-
+    .atm .home-header-slim {
+        padding: 10px 5%;
+    }
 }
 
 @media (max-width:1552px) {
@@ -215,8 +217,8 @@
 
  }
  
- .mobile .header-mobile-menu .nk-quick-nav-icon {
-    border-right: 1px solid #F2F2F2;
+ .mobile .header-mobile-menu img {
+    border-left: 1px solid #F2F2F2;
  }
 
  @media (min-width: 1552.1px) {
