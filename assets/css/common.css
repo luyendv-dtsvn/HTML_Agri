@@ -2903,16 +2903,32 @@ a.color-hover-b:hover,
     width: 40%;
 } */
 
+
 @media (max-width: 1366px) {
     .loan-card-content {
         gap: 0;
-        padding: 40px 20px 40px 36px;
+        padding: 40px 10px 40px 10px;
     }
 }
 @media (max-width: 375.6px) {
     .loan-card {
     margin-bottom: 16px;
     }
+    .loan-card-title1{
+        align-items: baseline;
+     }
+}
+@media (min-width:992px) {
+    .loan-card-title{
+        align-items: flex-end;
+    }
+    .loan-card-subtitle{
+        line-height: 1;
+    }
+    .loan-card-subtitle2{
+        padding-bottom: 5px;
+    }
+    
 }
 
 

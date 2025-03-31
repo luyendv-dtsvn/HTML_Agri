@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/navmenu.css" />
     <link rel="stylesheet" href="../assets/css/home-tab-heading-slim.css" />
+    
+    <link rel="stylesheet" href="../assets/css/agri.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="../assets/css/libs/owl.carousel.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/home-user.css" /> -->
+    
+    <link rel="stylesheet" href="../assets/css/main-info-section.css" />
+    <link rel="stylesheet" href="../assets/css/navmenu.css" />
 </head>
 <style>
     .personal-loan-title.heading-h5.color-white {
@@ -103,10 +111,12 @@
             display: flex;
             flex-direction: column
         }
-        .nk-block-head-content .nk-block-title.heading-h7{
+
+        .nk-block-head-content .nk-block-title.heading-h7 {
             font-size: 19px;
         }
-        .input-group.custom-input-group .form-control.regular-14{
+
+        .input-group.custom-input-group .form-control.regular-14 {
             font-size: 13px;
         }
 
@@ -167,8 +177,12 @@
             }
         }
 
-        .card.card-preview {
+        /* .card.card-preview {
             margin-top: 24px;
+        } */
+        .pb-4,
+        .py-4 {
+            padding-bottom: 0rem !important;
         }
 
         .icon.ni.ni-swap {
@@ -184,6 +198,8 @@
         }
 
         .line-h.mt-5.mb-5.mobile-line {
+            margin-top: 40px !important;
+            margin-bottom: 30px !important;
             display: flex;
         }
 
@@ -199,41 +215,61 @@
             margin-bottom: 3.75rem;
         }
 
-        
-        .row.change-rate-price .title.subtitle-14.color-red-1{
+
+        .row.change-rate-price .title.subtitle-14.color-red-1 {
             font-size: 14px;
         }
-        .row.change-rate-price .color-dark-3.subtitle-14{
+
+        .row.change-rate-price .color-dark-3.subtitle-14 {
             font-size: 14px;
         }
-        .row.change-rate-price .heading-h7{
+
+        .row.change-rate-price .heading-h7 {
             font-size: 19px;
         }
-        .row.change-rate-price .body-12.color-dark-1{
+
+        .row.change-rate-price .body-12.color-dark-1 {
             font-size: 14px;
         }
-        .nk-block-head-content .nk-block-title.heading-h7.color-dark-2{
+
+        .nk-block-head-content .nk-block-title.heading-h7.color-dark-2 {
             font-size: 19px !important;
         }
-        .nk-block-head-content .nk-block-title.heading-h7{
-            margin: -0.75rem !important;
-            padding-top: 11px
+
+        .nk-block-head-content .nk-block-title.heading-h7 {
+            /* margin: -0.75rem !important; */
+            /* padding-top: 11px */
         }
-        .col-12.pt-4.rate-accordions.tab-pane.active{
+
+        .col-12.pt-4.rate-accordions.tab-pane.active {
             padding-left: 0px;
             padding-right: 0px;
         }
-        .nk-block-head.nk-block-head-lg .row-ct.justify-between{
-            margin: -0.75rem !important;
+
+
+        .col-12.col-lg-4.col-md-5.personal-loan-text-sub {
+            padding-left: 0px;
+            padding-right: 0px;
         }
-        .tab-content-mobile{
-            margin: -0.75rem !important;   
-        }
-        .nk-block-title.heading-h7.color-dark-2{
+
+        .nk-block-title.heading-h7.color-dark-2 {
             padding-bottom: 17px;
         }
-    }
 
+        .line-h.mt-5.mb-5.desktop-line {
+            margin-top: 24px !important;
+            margin-bottom: 29px !important;
+        }
+
+        .container-fluid-tygia {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .g-4 {
+            margin: 0rem !important;
+        }
+    }
 </style>
 
 <body class="exchange-rate">
@@ -1486,7 +1522,7 @@
         </div>
     </section>
     <div class="nk-content">
-        <div class="container-fluid">
+        <div class="container-fluid-tygia">
             <div class="nk-content-inner">
                 <div class="nk-content-body">
                     <div class="loan">
@@ -1557,11 +1593,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-button-arrow"><span class="body-14">&nbsp;</span>
-                                            <div class="form-icon-custom pt-2">
-                                                <div class="form-control-wrap mt-1 icon-change-rate"><em
-                                                        class="icon ni ni-swap"></em></div>
-                                            </div>
+                                        <div class="icon-change  ">
+                                            <img src="../assets/images/change.svg" alt="">
+                                        </div>
+                                        <div class="icon-change-mobile mt-4 col-12  no-pabding">
+                                            <hr style="border: 1px dashed #E7E7E7;">
+                                            <img src="../assets/images/Group 83.svg" alt=""> 
                                         </div>
                                         <div class="col-3">
                                             <span class="body-14">Số tiền nhận được</span>
@@ -1618,7 +1655,9 @@
                                     </div>
                                 </div>
                             </div><!-- .card-preview -->
-                            <div class="line-h mt-5 mb-5"></div>
+                            <div class="line-box">
+                                <div class="line-h mt-5 mb-5 desktop-line"></div>
+                            </div>
                             <div class="nk-block-head nk-block-head-lg wide-sm pb-4">
                                 <div class="nk-block-head-content">
                                     <h2 class="nk-block-title heading-h7 color-dark-2">Bảng tỷ giá </h2>
@@ -1630,10 +1669,10 @@
                                         <div class="form-group">
                                             <div class="form-control-wrap">
                                                 <div class="form-icon">
-                                                    <em class="icon ni ni-calendar"></em>
+                                                    <em class="icon ni ni-calendar" style="color: #080808;"></em>
                                                 </div>
                                                 <input type="text" class="form-control date-picker" value="11/12/2024"
-                                                    data-date-format="dd/mm/yyyy">
+                                                    data-date-format="dd/mm/yyyy" style="background-color: rgba(0, 0, 0, 0.04); color: #080808;">
                                             </div>
                                         </div>
                                     </div>
@@ -2230,6 +2269,27 @@
     <link rel="stylesheet" href="../assets/css/libs/aos.css" />
     <script src="../assets/js/libs/aos.js"></script>
     <script src="../assets/js/navmenu.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    function toggleIcons() {
+        let iconChange = document.querySelector(".icon-change");
+        let iconChangeMobile = document.querySelector(".icon-change-mobile");
+
+        if (window.innerWidth < 993) {
+            iconChange.style.display = "none"; // Ẩn icon trên màn hình nhỏ
+            iconChangeMobile.style.display = "block"; // Hiện icon mobile
+        } else {
+            iconChange.style.display = "block"; // Hiện icon trên màn hình lớn
+            iconChangeMobile.style.display = "none"; // Ẩn icon mobile
+        }
+    }
+
+    // Gọi hàm khi tải trang và khi thay đổi kích thước
+    toggleIcons();
+    window.addEventListener("resize", toggleIcons);
+});
+
+    </script>
 </body>
 
 </html>
