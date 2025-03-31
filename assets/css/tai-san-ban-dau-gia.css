@@ -419,16 +419,21 @@
 .item-disclosure span.col-10 {
     width: 50%;
 }
-.disclosure span#select2-ir90-container, span#select2-hgcn-container, 
-span#select2-jsyb-container {
-    color: rgba(0, 0, 0, 0.7);
-
-    /* Desktop/Body/14 */
-    font-family: "BT Grotesk Medium";
+.disclosure li {
+    color: rgba(0, 0, 0, 0.70) !important;
+    font-family: "BT Grotesk Regular";
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 110%; /* 15.4px */
+    line-height: 150%; /* 15.4px */
+}
+.disclosure .select2-selection__rendered {
+    color: rgba(0, 0, 0, 0.70) !important;
+    font-family: "BT Grotesk Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
 }
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
