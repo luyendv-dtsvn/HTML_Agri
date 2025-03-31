@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/navmenu.css" />
     <link rel="stylesheet" href="../assets/css/home-tab-heading-slim.css" />
+    
+    <link rel="stylesheet" href="../assets/css/agri.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="../assets/css/libs/owl.carousel.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/home-user.css" /> -->
+    
+    <link rel="stylesheet" href="../assets/css/main-info-section.css" />
+    <link rel="stylesheet" href="../assets/css/navmenu.css" />
 </head>
 <style>
     .personal-loan-title.heading-h5.color-white {
@@ -1585,11 +1593,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-button-arrow"><span class="body-14">&nbsp;</span>
-                                            <div class="form-icon-custom pt-2">
-                                                <div class="form-control-wrap mt-1 icon-change-rate"><em
-                                                        class="icon ni ni-swap"></em></div>
-                                            </div>
+                                        <div class="icon-change  ">
+                                            <img src="../assets/images/change.svg" alt="">
+                                        </div>
+                                        <div class="icon-change-mobile mt-4 col-12  no-pabding">
+                                            <hr style="border: 1px dashed #E7E7E7;">
+                                            <img src="../assets/images/Group 83.svg" alt=""> 
                                         </div>
                                         <div class="col-3">
                                             <span class="body-14">Số tiền nhận được</span>
@@ -2260,6 +2269,27 @@
     <link rel="stylesheet" href="../assets/css/libs/aos.css" />
     <script src="../assets/js/libs/aos.js"></script>
     <script src="../assets/js/navmenu.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    function toggleIcons() {
+        let iconChange = document.querySelector(".icon-change");
+        let iconChangeMobile = document.querySelector(".icon-change-mobile");
+
+        if (window.innerWidth < 576) {
+            iconChange.style.display = "none"; // Ẩn icon trên màn hình nhỏ
+            iconChangeMobile.style.display = "block"; // Hiện icon mobile
+        } else {
+            iconChange.style.display = "block"; // Hiện icon trên màn hình lớn
+            iconChangeMobile.style.display = "none"; // Ẩn icon mobile
+        }
+    }
+
+    // Gọi hàm khi tải trang và khi thay đổi kích thước
+    toggleIcons();
+    window.addEventListener("resize", toggleIcons);
+});
+
+    </script>
 </body>
 
 </html>
