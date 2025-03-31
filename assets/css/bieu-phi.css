@@ -419,6 +419,9 @@
 .fee-schedule .content-top.menu-tab-ct .content-top-menu {
     width: 25%;
 }
+.fee-schedule .header-t {
+    text-align: center;
+}
 @media (max-width: 1366px) and (min-width: 1199.98px) {
     .fee-schedule .header-t {
         text-align: center;

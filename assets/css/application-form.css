@@ -419,6 +419,9 @@
 .application-form .content-top.menu-tab-ct .content-top-menu {
     width: 25%;
 }
+.application-form .top-title {
+    text-align: center;
+}
 @media (max-width: 1366px) and (min-width: 1199.98px) {
     .col-xl-3 {
         flex: 0 0 33.33333%;
