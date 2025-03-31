@@ -442,6 +442,9 @@
 .contact .subtitle-c {
     color: rgb(255, 255, 255);
 }
+/* .contact .main-info-img-background {
+    height: 580px;
+} */
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
