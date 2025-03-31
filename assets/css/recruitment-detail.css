@@ -417,6 +417,9 @@
 .recruitment-detail .subtitle-12 {
     color: #494949 !important;
 }
+.recruitment-detail .content-body-right .subtitle-12 {
+    text-transform: uppercase;
+}
 .recruitment-detail .nk-content {
     padding: 32px 2%;
 }

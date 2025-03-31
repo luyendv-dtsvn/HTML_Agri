@@ -426,6 +426,15 @@
     line-height: 110%; /* 17.6px */
     letter-spacing: -0.16px;
 }
+.disclosure .content-top.menu-tab-ct .content-top-menu {
+    display: inline-block;
+    cursor: pointer;
+    width: 220px;
+    text-align: center;
+    padding-bottom: 1%;
+    position: relative;
+    min-width: 100px;
+}
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
@@ -455,7 +464,6 @@
 }
 
 @media (max-width: 768px) {
-    
     .nk-menu-heading {
         padding: 14px;
         color: #af0b35;
