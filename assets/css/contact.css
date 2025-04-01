@@ -442,9 +442,9 @@
 .contact .subtitle-c {
     color: rgb(255, 255, 255);
 }
-/* .contact .main-info-img-background {
-    height: 580px;
-} */
+.contact .content-box-contact {
+    max-width: 65%;
+}
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
@@ -545,6 +545,9 @@
     .contact .contact-box {
         min-height: 286px !important;
     }
+    .contact .content-box-contact {
+        max-width: 100%;
+    }
 }
 @media (max-width: 375px) {
     .contact-title-section {
@@ -595,5 +598,8 @@
     }
     .contact .contact-map {
         margin: 12px 0px !important;
+    }
+    .contact .content-box-contact {
+        max-width: 100%;
     }
 }
