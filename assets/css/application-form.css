@@ -570,4 +570,7 @@
         transform: translateX(-50%);
         width: 80%;
     }
+    .disclosure .fs-body-16 {
+        font-size: 0.75rem !important;
+    }
 }
