@@ -27,9 +27,9 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 44%;
+    width: max-content;
     height: 3px;
-    background-color: #9e2b47;
+    background-color: #9e2b47 !important;
     transform: translateX(-50%);
 }
 
@@ -522,6 +522,17 @@
     .application-form .w-content {
         font-size: 16px !important;
     }
+    .application-form .content-top.menu-tab-ct .content-top-menu {
+        display: inline-block;
+        cursor: pointer;
+        width: 220px;
+        text-align: center;
+        gap: 6px;
+        padding-bottom: 1%;
+        position: relative;
+        min-width: 220px;
+        justify-items: center;
+    }
 }
 @media (max-width: 375px) {
     .application-form .content-top {
@@ -548,5 +559,15 @@
     }
     .application-form .w-content {
         font-size: 16px !important;
+    }
+    .application-form .content-top .content-top-menu.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 3px;
+        background-color: unset !important;
+        transform: translateX(-50%);
+        width: 80%;
     }
 }

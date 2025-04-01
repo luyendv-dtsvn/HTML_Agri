@@ -426,7 +426,7 @@
     line-height: 110%; /* 17.6px */
     letter-spacing: -0.16px;
 }
-.disclosure .content-top.menu-tab-ct .content-top-menu {
+/* .disclosure .content-top.menu-tab-ct .content-top-menu {
     display: inline-block;
     cursor: pointer;
     width: 220px;
@@ -434,7 +434,13 @@
     padding-bottom: 1%;
     position: relative;
     min-width: 100px;
-}
+} */
+/* .disclosure .content-top {
+    width: 100%;
+ }
+.disclosure .content-top.menu-tab-ct .content-top-menu {
+    width: 25%;
+} */
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
@@ -506,8 +512,26 @@
     .social-network-text {
         text-align: center;
     }
+    .disclosure .content-top {
+        justify-content: center;
+    }
+    .disclosure .content-top.menu-tab-ct .content-top-menu {
+        display: inline-block;
+        cursor: pointer;
+        width: 220px;
+        text-align: center;
+        gap: 6px;
+        padding-bottom: 1%;
+        position: relative;
+        min-width: 180px;
+        justify-items: center;
+    }
 }
+
 @media (max-width: 375px) {
+    .disclosure .content-top {
+        justify-content: flex-start;
+    }
     .disclosure-title-section {
         height: 375px;
     }
@@ -529,5 +553,21 @@
     }
     .disclosure .icon-l {
         margin-top: 30px !important;
+    }
+    .disclosure .w-content {
+        width: max-content;
+    }
+    .disclosure .content-top .content-top-menu.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 80%;
+        height: 3px;
+        background-color: unset !important;
+        transform: translateX(-50%);
+    }
+    .disclosure .fs-body-16 {
+        font-size: 0.75rem !important;
     }
 }
