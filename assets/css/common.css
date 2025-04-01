@@ -2774,7 +2774,9 @@ a.color-hover-b:hover,
 .agribank-culture {
     background-image: url(../images/bld/gettyimages_medium_1392049391\ 1.png);
 }
-
+.bld .content-top-menu img{
+    margin-bottom: 0;
+}
 .bld .Agribank-related-card-blue-background {
     align-content: center;
     bottom: -129%;
