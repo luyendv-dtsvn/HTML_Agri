@@ -573,4 +573,7 @@
     .application-form .fs-body-16 {
         font-size: 0.75rem !important;
     }
+    .application-form .regular-16 {
+        font-size: 15px;
+    }
 }

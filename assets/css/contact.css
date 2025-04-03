@@ -445,6 +445,14 @@
 .contact .content-box-contact {
     max-width: 65%;
 }
+.contact .p-gs {
+    padding: 26px !important;
+}
+@media (max-width: 1024px) {
+    .contact .p-gs {
+        padding: 18px !important;
+    }
+}
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
@@ -555,7 +563,7 @@
     }
 
     .contact .contact-text-map {
-        padding: 28px;
+        padding: 24px;
     }
     .owl-center.owl-carousel .owl-nav,
     .owl-center.owl-carousel .owl-dots {
@@ -601,5 +609,8 @@
     }
     .contact .content-box-contact {
         max-width: 100%;
+    }
+    .contact .regular-16 {
+        font-size: 16px;
     }
 }
