@@ -4432,6 +4432,7 @@ width: 100%;
         box-shadow: none;
         padding: 0;
         height: auto;
+        background: #fff;
     }
 }
 
@@ -4561,6 +4562,20 @@ width: 100%;
     .advantage-card-question-buttons-card {
         display: none;
     }
+
+    .advantage-product-detail .advantage-card-text .regular-15 {
+        font-size: 13px;
+    }
+
+    .product-detail .loan-tool-section .loan-calculator .body-14 {
+        font-size: 14px;
+    }
+
+    .product-detail .loan-tool-section .loan-calculator .body-15 {
+        font-size: 13px;
+    }
+
+
 }
 
 /* end fix */
@@ -4725,6 +4740,7 @@ width: 100%;
 
 /* end atm-google-map */
 
+/* fix page lịch sử trongdp */
 @media (max-width: 992px) {
     .history
         .main-info-s
@@ -4738,6 +4754,20 @@ width: 100%;
 
     .history .timeline-history-section .timeline-history-years-mobile .item .body-16 {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 375.1px) {
+    .timeline-history-section .timeline-history-title .subtitle-14 {
+        font-size: 12px;
+    }
+
+    .timeline-history-section .history-year-content .accordion-inner .heading-h2 {
+        font-size: 36px;
+    }
+
+    .timeline-history-section .history-year-content .accordion-inner .regular-15 {
+        font-size: 14px;
     }
 }
 
@@ -4871,15 +4901,6 @@ width: 100%;
         max-width: fit-content !important;
     }
 
-    .Agribank-all-awards-section .Agribank-all-awards-text {
-        align-items: flex-start;
-    }
-
-    .Agribank-award-section .Agribank-award-header,
-    .Agribank-award-section .Agribank-award-header span {
-        align-items: flex-start;
-    }
-
     .Agribank-award-section .Agribank-award-header {
         gap: 14px;
     }
@@ -4902,10 +4923,24 @@ width: 100%;
 
     .Agribank-all-awards-section .Agribank-all-awards-text .regular-15 {
         font-size: 14px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 375.1px) {
+    .Agribank-all-awards-section .Agribank-all-awards-text {
+        align-items: flex-start;
+    }
+
+    .Agribank-award-section .Agribank-award-header,
+    .Agribank-award-section .Agribank-award-header span {
+        align-items: flex-start;
     }
 }
 
 /* end fix */
+
+/* fix page văn hóa Agribank trongdp */
 
 .Agribank-identity-list-section .Agribank-identity-list-card-text {
     display: flex;
@@ -5147,4 +5182,17 @@ width: 100%;
         left: 79%;
         top: 53%;
     }
+
+    .Agribank-identity-list-section .Agribank-identity-list-card .Agribank-identity-list-card-text {
+        .regular-15 {
+            font-size: 15px;
+        }
+
+        .regular-16 {
+            font-size: 16px;
+        }
+    }
 }
+
+
+/* end fix */
