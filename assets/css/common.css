@@ -2833,7 +2833,7 @@ a.color-hover-b:hover,
     }
     .bld .nav-link span{
         text-align: center;
-        width: 70%;
+        width: 60%;
     }
     .nav-item{
         flex: 1;
@@ -2843,6 +2843,18 @@ a.color-hover-b:hover,
     }
     .bld .Agribank-related-info-content {
         gap: 12px;
+    }
+    .bld .body-16{
+        font-size: 12px;
+    }
+    .bld .body-18{
+        font-size: 15px;
+    }
+    .bld .content-betwent img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
