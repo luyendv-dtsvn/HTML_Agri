@@ -1106,7 +1106,7 @@ button {
     }
 
     .regular-15 {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .heading-h6 {
@@ -2916,9 +2916,31 @@ a.color-hover-b:hover,
     margin-top: 0;
 }
 
+
 /* .product-list .loan-card-title span{
     width: 40%;
 } */
+
+.product-list .nav-tabs {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: space-between; /* Dàn đều các tab */
+    width: 100%; /* Đảm bảo full width */
+}
+
+.product-list .nav-item {
+    flex: 1; /* Mỗi tab chiếm phần bằng nhau */
+    text-align: center; /* Căn giữa nội dung */
+    align-content: center;
+}
+
+.product-list .nav-link {
+    display: block; /* Giúp tab mở rộng toàn bộ diện tích */
+    width: 100%; /* Đảm bảo link phủ toàn bộ item */
+}
+.product-list .nav-tabs{
+margin-top: 0.75rem ;
+    
+}
 
 
 @media (max-width: 1366px) {
@@ -3517,6 +3539,15 @@ width: 100%;
     .interestRate .content-top-menu img{
         width: 28px;
         height: 28px;
+    }
+    .interestRate .nav-tabs .nav-link{
+        padding: 0.5rem 30px !important;
+    }
+    .interestRate .nav-link {
+        row-gap: 0;
+    }
+    .interestRate .content-top-menu {
+        padding-bottom: 0;
     }
 }
 
