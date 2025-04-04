@@ -1086,7 +1086,7 @@ button {
     }
 
     .body-14 {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .heading-h3 {
@@ -2879,6 +2879,9 @@ a.color-hover-b:hover,
     gap: 8px;
 }
 
+.product-list .main-info-title-content{
+    width: 30%;
+  }
 .product-list .nav-item {
     background: rgba(0, 0, 0, 0.04);
     border-radius: 4px;
@@ -2923,6 +2926,9 @@ a.color-hover-b:hover,
         gap: 0;
         padding: 40px 10px 40px 10px;
     }
+    .product-list .main-info-title-content{
+        width: 100%;
+      }
 }
 @media (max-width: 375.6px) {
     .loan-card {
@@ -2931,6 +2937,9 @@ a.color-hover-b:hover,
     .loan-card-title1{
         align-items: baseline;
      }
+     .product-list .main-info-title-content{
+        width: 100%;
+      }
 }
 @media (min-width:992px) {
     .loan-card-title{
@@ -2943,8 +2952,19 @@ a.color-hover-b:hover,
         padding-bottom: 5px;
     }
     
+    
 }
-
+@media (min-width: 769px) {
+    .product-list .Agribank-related-card:first-child {
+        padding-left: 14px !important;
+    }
+}
+@media (max-width: 768px) {
+    .body-16 {
+        font-size: 15px !important;
+        
+    }
+}
 
 
 
@@ -3294,6 +3314,7 @@ margin: 14px 0;
     .tab-content {
         margin-top: 24px;
     }
+
 }
 
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
@@ -3477,7 +3498,7 @@ width: 100%;
     }
 
     .interestRate .profit-table span:last-child {
-        width: 40%;
+        width: 50%;
     }
     .interestRate .table-mobile {
         padding: 0 4%;
@@ -3490,6 +3511,12 @@ width: 100%;
     }
     .interestRate .profit-table span:last-child {
         width: 80%;
+    }
+}
+@media (max-width: 375.6px) {
+    .interestRate .content-top-menu img{
+        width: 28px;
+        height: 28px;
     }
 }
 
