@@ -409,7 +409,7 @@
     line-height: 22px; /* 146.667% */
     letter-spacing: 0.15px;
 }
-@media (max-width: 1200px) and (min-width: 991.98px) {
+@media (max-width: 1200.6px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
     }
@@ -417,7 +417,7 @@
         color: #494949 !important;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 992.6px) {
     .recruitment-program .recruitment-program-agri-notification-containers {
         gap: 20px;
     }
@@ -473,7 +473,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768.6px) {
     .recruitment-program-title-text {
         padding: 27px 6%;
     }
@@ -531,7 +531,7 @@
         padding-left: 20px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 375.6px) {
     .recruitment-program-title-section {
         height: 375px;
     }
@@ -554,5 +554,8 @@
 
     .recruitment-program .subtitle-h-table-12 {
         color: #494949 !important;
+    }
+    .recruitment-program .regular-16 {
+        font-size: 16px !important;
     }
 }
