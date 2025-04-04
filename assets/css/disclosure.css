@@ -426,21 +426,7 @@
     line-height: 110%; /* 17.6px */
     letter-spacing: -0.16px;
 }
-/* .disclosure .content-top.menu-tab-ct .content-top-menu {
-    display: inline-block;
-    cursor: pointer;
-    width: 220px;
-    text-align: center;
-    padding-bottom: 1%;
-    position: relative;
-    min-width: 100px;
-} */
-/* .disclosure .content-top {
-    width: 100%;
- }
-.disclosure .content-top.menu-tab-ct .content-top-menu {
-    width: 25%;
-} */
+
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
@@ -528,7 +514,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375.9px) {
     .disclosure .content-top {
         justify-content: flex-start;
     }
@@ -567,7 +553,8 @@
         background-color: unset !important;
         transform: translateX(-50%);
     }
-    .disclosure .fs-body-16 {
-        font-size: 0.75rem !important;
-    }
+    
+    .disclosure .regular-16 {
+        font-size: 16px !important;
+    } 
 }
