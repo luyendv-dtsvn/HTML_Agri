@@ -435,9 +435,17 @@
     font-weight: 500;
     line-height: 150%; 
 }
+@media (max-width: 1366px) {
+    .disclosure .regular-16 {
+        font-size: 16px;
+    }
+}
 @media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
+    }
+    .disclosure .regular-16 {
+        font-size: 16px;
     }
 }
 @media (max-width: 992px) {
@@ -460,6 +468,9 @@
 
     .disclosure .disclosure-agri-notification-content {
         padding: 0;
+    }
+    .disclosure .regular-16 {
+        font-size: 16px;
     }
 }
 
@@ -506,6 +517,9 @@
     .social-network-text {
         text-align: center;
     }
+    .disclosure .regular-16 {
+        font-size: 16px;
+    }
 }
 @media (max-width: 375px) {
     .disclosure-title-section {
@@ -526,5 +540,11 @@
     }
     .disclosure .icon-l {
         margin-top: 30px !important;
+    }
+    .disclosure .regular-16 {
+        font-size: 16px;
+    }
+    .disclosure .body-16 {
+        font-size: 16px;
     }
 }

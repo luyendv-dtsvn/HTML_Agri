@@ -566,4 +566,9 @@
     .mobi {
         display: flex;
     }
+    .recruitment .regular-16 {
+        font-size: 15px;
+        line-height: 150%;
+        letter-spacing: 1%;
+    }
 }

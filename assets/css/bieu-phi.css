@@ -557,4 +557,10 @@
         line-height: 130%; /* 35.1px */
         letter-spacing: -0.27px;
     }
+    .fee-schedule .regular-16{
+        font-size: 15px;
+    }
+    .fee-schedule .body-16 {
+        font-size: 16px;
+    }
 }
