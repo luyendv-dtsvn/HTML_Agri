@@ -422,7 +422,7 @@
 .fee-schedule .header-t {
     text-align: center;
 }
-@media (max-width: 1366px) and (min-width: 1199.98px) {
+@media (max-width: 1366.6px) and (min-width: 1199.98px) {
     .fee-schedule .header-t {
         text-align: center;
         font-size: 37px;
@@ -432,12 +432,12 @@
         letter-spacing: -0.27px;
     }
 }
-@media (max-width: 1200px) and (min-width: 991.98px) {
+@media (max-width: 1200.6px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 992.6px) {
     .fee-schedule .fee-schedule-agri-notification-containers {
         gap: 20px;
     }
@@ -468,7 +468,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768.6px) {
     .fee-schedule .content-top {
         width: 100%;
     }
@@ -526,7 +526,7 @@
         letter-spacing: -0.27px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 375.6px) {
     .fee-schedule .content-top {
         width: 100%;
     }
@@ -558,9 +558,9 @@
         letter-spacing: -0.27px;
     }
     .fee-schedule .regular-16{
-        font-size: 15px;
+        font-size: 16px !important;
     }
     .fee-schedule .body-16 {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 }
