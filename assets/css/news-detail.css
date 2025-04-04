@@ -434,7 +434,7 @@
 .news-detail .title-image-news {
     font-size: 12px;
 }
-@media (max-width: 1200px) and (min-width: 991.98px) {
+@media (max-width: 1200.6px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
     }
@@ -448,7 +448,7 @@
         display: none;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 992.6px) {
     .news-detail .news-detail-agri-notification-containers {
         gap: 20px;
     }
@@ -486,7 +486,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768.6px) {
     .nk-menu-heading {
         padding: 14px;
         color: #af0b35;
@@ -550,7 +550,7 @@
         font-size: 11px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 375.6px) {
     .news-detail-title-section {
         height: auto;
     }
