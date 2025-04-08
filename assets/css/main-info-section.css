@@ -273,7 +273,7 @@
     }
 }
 
-@media (max-width: 375.6px) {
+@media (max-width: 375.1px) {
     .main-info-s .main-info-content .main-info-title-content-text .regular-16 {
         font-size: 15px;
     }
@@ -282,3 +282,4 @@
 .product-detail .main-info-s .main-info-title-sub {
     display: block;
 }
+

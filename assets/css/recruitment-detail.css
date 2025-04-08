@@ -433,7 +433,7 @@
     padding-bottom: 12px !important;
 }
 
-@media screen and (max-width: 1024.6px) {
+@media screen and (max-width: 1024px) {
     .recruitment-detail .flex-col-content {
         display: flex;
         flex-direction: row !important;
@@ -444,12 +444,12 @@
         padding-bottom: 12px;
     }
 }
-@media (min-width: 992.6px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     .recruitment-detail .px-5-1024 {
         padding: 0px 8px 25px !important;
     }
 }
-@media (max-width: 1200.6px) and (min-width: 991.98px) {
+@media (max-width: 1200px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
     }
@@ -457,7 +457,7 @@
         justify-content: space-between;
     } */
 }
-@media (max-width: 992.6px) {
+@media (max-width: 992px) {
     .recruitment-detail .recruitment-detail-agri-notification-containers {
         gap: 20px;
     }
@@ -498,7 +498,7 @@
     }
 }
 
-@media (max-width: 768.6px) {
+@media (max-width: 768px) {
     .recruitment-detail-title-text {
         padding: 27px 6%;
     }
@@ -573,7 +573,7 @@
         padding-bottom: 12px !important;
     }
 }
-@media (max-width: 375.6px) {
+@media (max-width: 375px) {
     .recruitment-detail-title-section {
         height: 375px;
     }
@@ -625,7 +625,7 @@
         padding: unset;
     }
     .recruitment-detail .regular-16 {
-        font-size: 16px !important;
+        font-size: 15px;
         line-height: 150%;
         letter-spacing: 1%;
     }

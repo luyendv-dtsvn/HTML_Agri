@@ -1047,7 +1047,7 @@ button {
     }
     .regular-16 {
         font-family: "BT Grotesk Regular";
-        font-size: 14px;
+        font-size: 12px;
         line-height: 150%;
         letter-spacing: 1%;
     }
@@ -1098,7 +1098,7 @@ button {
     }
 
     .body-15 {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .heading-h8 {
@@ -4987,7 +4987,7 @@ width: 100%;
     }
 }
 
-@media (max-width: 375.6px) {
+@media (max-width: 375.9px) {
     .Agribank-all-awards-section .Agribank-all-awards-text {
         align-items: flex-start;
     }

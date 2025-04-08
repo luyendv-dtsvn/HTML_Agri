@@ -435,7 +435,7 @@
     font-weight: 500;
     line-height: 150%; 
 }
-@media (max-width: 1366.6px) {
+@media (max-width: 1366px) {
     .disclosure .regular-16 {
         font-size: 16px;
     }
@@ -448,7 +448,7 @@
         font-size: 16px;
     }
 }
-@media (max-width: 992.6px) {
+@media (max-width: 992px) {
     .disclosure .disclosure-agri-notification-containers {
         gap: 20px;
     }
@@ -474,7 +474,7 @@
     }
 }
 
-@media (max-width: 768.6px) {
+@media (max-width: 768px) {
     .nk-menu-heading {
         padding: 14px;
         color: #af0b35;
@@ -521,7 +521,7 @@
         font-size: 16px;
     }
 }
-@media (max-width: 375.6px) {
+@media (max-width: 375px) {
     .disclosure-title-section {
         height: 375px;
     }
@@ -542,9 +542,9 @@
         margin-top: 30px !important;
     }
     .disclosure .regular-16 {
-        font-size: 16px !important;
+        font-size: 16px;
     }
     .disclosure .body-16 {
-        font-size: 16px !important;
+        font-size: 16px;
     }
 }
