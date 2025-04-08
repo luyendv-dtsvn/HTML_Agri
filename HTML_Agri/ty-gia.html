@@ -19,7 +19,258 @@
     <link rel="stylesheet" href="../assets/css/main-info-section.css" />
     <link rel="stylesheet" href="../assets/css/navmenu.css" />
 </head>
+<style>
+    .personal-loan-title.heading-h5.color-white {
+        font-size: 37px;
+    }
 
+    .personal-loan-description.regular-16.color-white-1 {
+        font-size: 16px;
+    }
+
+    .nk-block-title.heading-h7 {
+        color: #393939;
+    }
+
+    .custom-control-label.body-14 {
+        padding: 9px 23px !important;
+        font-size: 14px;
+        color: #353535;
+    }
+
+    .nk-block.nk-block-lg .card.card-preview .card-inner .row.g-4 .col-3 .body-14 {
+        color: #494949;
+    }
+
+    .row.change-rate-price .heading-h7 {
+        color: #080808;
+    }
+
+    .row.change-rate-price .body-12 {
+        color: #080808;
+    }
+
+    .form-control-wrap.pt-2 {
+        height: 56px;
+    }
+
+    .input-group.custom-input-group {
+        height: 56px;
+    }
+
+    .form-control.regular-14 {
+        height: 56px;
+    }
+
+    .vertical-mid {
+        color: #28140C;
+    }
+
+    .tb-lead.body-15 {
+        color: #28140C;
+    }
+
+    .tab-content {
+        margin-top: 0px;
+    }
+
+    .d-none {
+        display: flex !important;
+    }
+
+    .line-h.mt-5.mb-5.mobile-line {
+        display: none;
+    }
+
+    /* .exchange-rate.no-touch.nk-nio-theme.has-aside .nk-content .container-fluid .nk-content-inner .nk-content-body .mx-auto{
+        margin: 0px 0px;
+    } */
+    .row.justify-around.pt-5 .btn.btn-show-more.regular-13 {
+        margin-bottom: 6.563rem;
+    }
+
+    @media (width: 1920px) {
+        .input-group.custom-input-group {
+            width: 417px;
+            height: 56px;
+        }
+
+        .form-control.regular-14 {
+            height: 56px;
+        }
+    }
+
+    @media (min-width: 993px) {
+        .tab-content-mobile {
+            display: none;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .card-inner .row.g-4 {
+            display: flex;
+            flex-direction: column
+        }
+
+        .nk-block-head-content .nk-block-title.heading-h7 {
+            font-size: 19px;
+        }
+
+        .input-group.custom-input-group .form-control.regular-14 {
+            font-size: 13px;
+        }
+
+        .nk-block.nk-block-lg .card.card-preview .card-inner .row.g-4 .col-3 .body-14 {
+            font-size: 14px;
+            max-width: 100% !important;
+        }
+
+        .col-3 {
+            max-width: 100%;
+        }
+
+        .form-icon-custom.pt-2 {
+            align-items: center;
+            justify-content: center;
+            padding-top: 0px !important;
+        }
+
+        .g-4>li,
+        .g-4>div {
+            padding: 0px !important;
+        }
+
+        .card.card-preview.table-rate {
+            display: none;
+        }
+
+        .custom-control-group.radio-rate {
+            display: none;
+        }
+
+        .col-sm-1.pl-0 {
+            width: 181px;
+            height: 38px;
+        }
+
+        .download-button {
+            display: flex;
+        }
+
+        .btn.btn-dim.d-none.d-sm-inline-flex {
+            justify-content: flex-start;
+        }
+
+        .nk-block-head.nk-block-head-lg .row-ct.justify-between {
+            flex-direction: column;
+        }
+
+        .nk-block-head.nk-block-head-lg.wide-sm {
+            padding-bottom: 0px;
+        }
+
+        .form-button-arrow {
+            padding: 0px;
+
+            .card {
+                margin-top: 30px !important;
+            }
+        }
+
+        /* .card.card-preview {
+            margin-top: 24px;
+        } */
+        .pb-4,
+        .py-4 {
+            padding-bottom: 0rem !important;
+        }
+
+        .icon.ni.ni-swap {
+            transform: rotate(90deg);
+        }
+
+        .nk-block-head.nk-block-head-lg {
+            padding-bottom: 0px;
+        }
+
+        .btn.btn-dim.d-none.d-sm-inline-flex {
+            padding: 9px 0px;
+        }
+
+        .line-h.mt-5.mb-5.mobile-line {
+            margin-top: 40px !important;
+            margin-bottom: 30px !important;
+            display: flex;
+        }
+
+        .personal-loan-title.heading-h5.color-white {
+            font-size: 1.563rem;
+        }
+
+        .personal-loan-description.regular-16.color-white-1 {
+            font-size: 0.938rem;
+        }
+
+        .row.justify-around.pt-5 .btn.btn-show-more.regular-13 {
+            margin-bottom: 3.75rem;
+        }
+
+
+        .row.change-rate-price .title.subtitle-14.color-red-1 {
+            font-size: 14px;
+        }
+
+        .row.change-rate-price .color-dark-3.subtitle-14 {
+            font-size: 14px;
+        }
+
+        .row.change-rate-price .heading-h7 {
+            font-size: 19px;
+        }
+
+        .row.change-rate-price .body-12.color-dark-1 {
+            font-size: 14px;
+        }
+
+        .nk-block-head-content .nk-block-title.heading-h7.color-dark-2 {
+            font-size: 19px !important;
+        }
+
+        .nk-block-head-content .nk-block-title.heading-h7 {
+            /* margin: -0.75rem !important; */
+            /* padding-top: 11px */
+        }
+
+        .col-12.pt-4.rate-accordions.tab-pane.active {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+
+        .col-12.col-lg-4.col-md-5.personal-loan-text-sub {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .nk-block-title.heading-h7.color-dark-2 {
+            padding-bottom: 17px;
+        }
+
+        .line-h.mt-5.mb-5.desktop-line {
+            margin-top: 24px !important;
+            margin-bottom: 29px !important;
+        }
+
+        .container-fluid-tygia {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .g-4 {
+            margin: 0rem !important;
+        }
+    }
+</style>
 
 <body class="exchange-rate">
     <section>
