@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../assets/css/navmenu.css" />
   <link rel="stylesheet" href="../assets/css/blog.css" />
   <link rel="stylesheet" href="../assets/css/home-tab-heading-slim.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 </head>
 <style>
   @media (max-width: 992px) {
@@ -29,6 +30,40 @@
       color: #fff;
     }
   }
+  HTML CSS JSResult Skip Results Iframe
+EDIT ON
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
 </style>
 
 <body class="blog">
@@ -831,158 +866,10 @@
       </div>
     </div>
   </section>
-  <section class="blog-title-section">
-    <div class="blog-title-text ">
-      <div class="blog-title-sub">
-        <a href="#" class="color-hover-w"><span class="regular-13 color-white">Về Agribank</span></a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-          <path
-            d="M6.22076 3.68784L2.66066 0.127804C2.57832 0.045398 2.4684 0 2.3512 0C2.23399 0 2.12408 0.045398 2.04174 0.127804L1.77956 0.389915C1.60896 0.560711 1.60896 0.838302 1.77956 1.00884L4.76906 3.99834L1.77624 6.99116C1.6939 7.07357 1.64844 7.18342 1.64844 7.30056C1.64844 7.41782 1.6939 7.52768 1.77624 7.61015L2.03842 7.8722C2.12082 7.9546 2.23068 8 2.34788 8C2.46508 8 2.575 7.9546 2.65734 7.8722L6.22076 4.30891C6.30329 4.22624 6.34863 4.11587 6.34837 3.99854C6.34863 3.88075 6.30329 3.77044 6.22076 3.68784Z"
-            fill="white" />
-        </svg>
-        <a href="#" class="color-hover-w"><span class="regular-13 color-white-1">Tin tức</span></a>
-      </div>
-      <div class="blog-title-content">
-        <span class="heading-h5 color-white">Tin tức</span>
-        <span class="regular-16 color-white-1">Cập nhật liên tục các thông tin quan trọng của Agribank</span>
-      </div>
-    </div>
-  </section>
-  <div class="nk-header is-light tab-dropdown">
-    <div class="container-lg wide-xl ">
-      <div class="nk-header-wrap">
-        <div class="nk-header-menu w-100">
-          <ul class="nk-menu nk-menu-main" style="flex-wrap: wrap;">
-            <li class="nk-menu-item">
-              <a href="html/index.html" class="nk-menu-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                  <path d="M15 17.5H27.5" stroke="#5A5A5A" stroke-width="1.35" stroke-linecap="square"></path>
-                  <path d="M15 22.5H27.5" stroke="#5A5A5A" stroke-width="1.35" stroke-linecap="square"></path>
-                  <path
-                    d="M5 31.25C5.66304 31.25 6.29893 30.9866 6.76777 30.5178C7.23661 30.0489 7.5 29.413 7.5 28.75V10C7.5 9.66848 7.6317 9.35054 7.86612 9.11612C8.10054 8.8817 8.41848 8.75 8.75 8.75H33.75C34.0815 8.75 34.3995 8.8817 34.6339 9.11612C34.8683 9.35054 35 9.66848 35 10V28.75C35 29.413 34.7366 30.0489 34.2678 30.5178C33.7989 30.9866 33.163 31.25 32.5 31.25H5Z"
-                    stroke="#5A5A5A" stroke-width="1.35" stroke-linecap="square"></path>
-                  <path
-                    d="M5 31.25C4.33696 31.25 3.70107 30.9866 3.23223 30.5178C2.76339 30.0489 2.5 29.413 2.5 28.75V13.75"
-                    stroke="#5A5A5A" stroke-width="1.35" stroke-linecap="square"></path>
-                </svg><span class="nk-menu-text">Tin tức sự kiện</span>
-              </a>
-            </li><!-- .nk-menu-item -->
-            <li class="nk-menu-item has-sub">
-              <a href="#" class="nk-menu-link nk-menu-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                  <path
-                    d="M19.616 14.8609C22.0629 14.8609 24.0465 12.8773 24.0465 10.4305C24.0465 7.98359 22.0629 6 19.616 6C17.1691 6 15.1855 7.98359 15.1855 10.4305C15.1855 12.8773 17.1691 14.8609 19.616 14.8609Z"
-                    stroke="#5A5A5A" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path
-                    d="M7.98323 15.6916C9.74193 15.6916 11.1676 14.2659 11.1676 12.5072C11.1676 10.7485 9.74193 9.32275 7.98323 9.32275C6.22453 9.32275 4.79883 10.7485 4.79883 12.5072C4.79883 14.2659 6.22453 15.6916 7.98323 15.6916Z"
-                    stroke="#5A5A5A" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path
-                    d="M31.243 15.6916C33.0017 15.6916 34.4274 14.2659 34.4274 12.5072C34.4274 10.7485 33.0017 9.32275 31.243 9.32275C29.4843 9.32275 28.0586 10.7485 28.0586 12.5072C28.0586 14.2659 29.4843 15.6916 31.243 15.6916Z"
-                    stroke="#5A5A5A" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path
-                    d="M26.2598 18.1847L19.6142 14.8618L12.9685 18.1847M26.2598 18.1847V33.6912H12.9685V18.1847M26.2598 18.1847L31.2441 15.6925L36.2283 18.1847V29.8146H26.2598V18.1847ZM12.9685 18.1847L7.98425 15.6925L3 18.1847V29.8146H12.9685V18.1847Z"
-                    stroke="#5A5A5A" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path
-                    d="M19.6156 29.2609L19.1383 29.7381L19.6156 30.2155L20.0929 29.7381L19.6156 29.2609ZM17.4004 27.0456L16.7373 26.9191L16.6704 27.2702L16.9231 27.5229L17.4004 27.0456ZM19.6156 15.4341L20.2786 15.3076C20.2179 14.9893 19.9396 14.7591 19.6156 14.7591C19.2916 14.7591 19.0133 14.9893 18.9525 15.3076L19.6156 15.4341ZM21.8308 27.0456L22.3081 27.5229L22.5608 27.2702L22.4938 26.9191L21.8308 27.0456ZM20.0929 28.7836L17.8777 26.5683L16.9231 27.5229L19.1383 29.7381L20.0929 28.7836ZM18.0634 27.1721L20.2786 15.5606L18.9525 15.3076L16.7373 26.9191L18.0634 27.1721ZM18.9525 15.5606L21.1677 27.1721L22.4938 26.9191L20.2786 15.3076L18.9525 15.5606ZM21.3535 26.5683L19.1383 28.7836L20.0929 29.7381L22.3081 27.5229L21.3535 26.5683Z"
-                    fill="#5A5A5A" />
-                </svg><span class="nk-menu-text title-li">Tin về Agribank</span>
-              </a>
-              <ul class="nk-menu-sub">
-                <li class="nk-menu-item">
-                  <a href="html/apps-messages.html" class="nk-menu-link"><span class="nk-menu-text">Hoạt động Agribank</span></a>
-                </li>
-                <li class="nk-menu-item">
-                  <a href="html/apps-inbox.html" class="nk-menu-link"><span class="nk-menu-text">Đơn vị thành viên</span></a>
-                </li>
-                <li class="nk-menu-item">
-                  <a href="html/apps-file-manager.html" class="nk-menu-link"><span class="nk-menu-text">Hoạt động đoàn thể</span></a>
-                </li>
-                <li class="nk-menu-item">
-                  <a href="html/apps-chats.html" class="nk-menu-link"><span class="nk-menu-text">Hoạt động cùng tam nông</span></a>
-                </li>
-              </ul><!-- .nk-menu-sub -->
-            </li><!-- .nk-menu-item -->
-            <li class="nk-menu-item">
-              <a href="html/components.html" class="nk-menu-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                  <path d="M3.75 15H36.25L20 5L3.75 15Z" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M8.75 15V27.5" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M16.25 15V27.5" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M23.75 15V27.5" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M31.25 15V27.5" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M5 27.5H35" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M2.5 32.5H37.5" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                </svg><span class="nk-menu-text">Đảng bộ Agribank</span>
-              </a>
-            </li><!-- .nk-menu-item -->
-            <li class="nk-menu-item">
-              <a href="html/support-kb.html" class="nk-menu-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                  <path d="M33.5 16V6H6V16C6 31 19.75 34.75 19.75 34.75C19.75 34.75 33.5 31 33.5 16Z" stroke="#393939"
-                    stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="square" />
-                  <path d="M19.75 34.75V6" stroke="#393939" stroke-width="1.35" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M6.13281 18.5H33.3641" stroke="#393939" stroke-width="1.35" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                </svg><span class="nk-menu-text">Phòng chống rửa tiền</span>
-              </a>
-            </li><!-- .nk-menu-item -->
-            <li class="nk-menu-item">
-              <a href="html/pages/contact.html" class="nk-menu-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                  <path d="M3.75 15H36.25L20 5L3.75 15Z" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M8.75 15V27.5" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M16.25 15V27.5" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M23.75 15V27.5" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M31.25 15V27.5" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M5 27.5H35" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                  <path d="M2.5 32.5H37.5" stroke="#5A5A5A" stroke-width="1.5" stroke-miterlimit="10"
-                    stroke-linecap="square" />
-                </svg><span class="nk-menu-text">Tài chính ngân hàng</span>
-              </a>
-            </li><!-- .nk-menu-item -->
-          </ul><!-- .nk-menu -->
-        </div><!-- .nk-header-menu -->
-      </div><!-- .nk-header-wrap -->
-    </div><!-- .container-fliud -->
-  </div>
-  <div class="hrrr mb-5"></div>
+  
   <section class="col-12 blog-title-main-content">
-
-    
-    <!-- <div class="background-center">
-      <div class="col-12 col-md-6 col-lg-3 nk-menu-heading">
-        <div class="form-group">
-          <div class="form-control-wrap">
-            <select class="form-select select2-hidden-accessible body-14 form-control-lg" data-select2-id="1"
-              tabindex="-1" aria-hidden="true">
-              <option class="body-14" value="default_option" data-select2-id="3">Xem tất cả</option>
-              <option class="body-14" value="option_select_name ">Cá nhân</option>
-              <option class="body-14" value="option_select_name">Định chế tài chính</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div class="blog-top-news">
-      <div class="col-12 text-left pt-4 pb-5 center">
+      <div class="col-12 text-left pt-4 pb-4">
         <span class="heading-h5 color-dark-1">Tin nổi bật</span>
       </div>
       <div class="card-inner p-0">
@@ -990,8 +877,8 @@
           <div class=" advantage-card-asked-questions-selects">
             <!-- item-1 -->
             <div class="col">
-              <div class="color-hover-w row-ct">
-                <a href="#" class="col-12 col-lg-8    block-img-hover pl-0 pr-0 color-hover">
+              <div class=" row-ct">
+                <a href="#" class="col-12 col-lg-9 color-hover-w    block-img-hover pl-0 pr-0 color-hover">
                   <img src="../assets/images/blog/istockphoto_1465464201 1.png" alt="Cho vay ưu đãi">
                   <div class="title color-white">
                     <span class="borrow-titler subtitle-12">TIN VỀ AGRIBANK</span>
@@ -1000,23 +887,31 @@
                     </span>
                   </div>
                 </a>
-                <div class="col-12 col-lg-4 row-ct gap20 pl-4 pl-0-992 pr-0-992 pt-1-992">
-                  <a href="#" class="col-12 block-img-hover pl-0 pr-0 color-hover">
-                    <img src="../assets/images/blog/image.png" alt="Sản phẩm thẻ">
-                    <div class="title color-white">
-                      <span class="borrow-titler subtitle-12">TIN VỀ AGRIBANK</span>
-                      <span class="borrow-subtitle heading-h8 w-75">
+                <div class="col-12 col-lg-3 row-ct gap20 pl-4 pl-0-992 pr-0-992 pt-1-992">
+                  <a href="#" class="col-12  pl-0 pr-0 color-hover">
+                    <div class="secondary-featured-news">
+                      <div class="block-img-hover">
+                        <img src="../assets/images/blog/image.png" alt="Sản phẩm thẻ">
+                      </div>
+                      <div>
+                        <span class="borrow-titler subtitle-12">TIN VỀ AGRIBANK</span>
+                      <span class="borrow-subtitle heading-h8">
                         Ưu đãi khách hàng cá nhân vay vốn đầu tư hoạt động sản xuất kinh doanh
                       </span>
+                      </div>
                     </div>
                   </a>
                   <a href="#" class="col-12 block-img-hover pl-0 pr-0 color-hover">
-                    <img src="../assets/images/blog/blog_1.png" alt="Cho vay ưu đãi">
-                    <div class="title color-white">
-                      <span class="borrow-titler subtitle-12">TÀI CHÍNH NGÂN HÀNG</span>
-                      <span class="borrow-subtitle heading-h8 w-75">
+                    <div class="secondary-featured-news-title">
+                      <div class="block-img-hover">
+                        <img src="../assets/images/blog/blog_1.png" alt="Cho vay ưu đãi">
+                      </div>
+                      <div class="secondary-featured-news-title">
+                        <span class="borrow-titler subtitle-12">TÀI CHÍNH NGÂN HÀNG</span>
+                      <span class="borrow-subtitle heading-h8">
                         35000 khách hàng may mắn đã được nhận thưởng trong Tuần lễ sinh nhật Agribank
                       </span>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -1026,6 +921,36 @@
         </div>
       </div>
     </div>
+    
+    <div class="blog-menu col-12 row-ct  owl-carousel slider-blog-menu">
+      <div class="blog-menu-image col-12 pl-0 ">
+        <span class="body-18 color-white blog-menu-image-title">Tin về Agribank</span>
+        <img src="../assets/images/blog/Frame 2071857492.png" alt="">
+      </div>
+      <div class="blog-menu-image col-12 pl-0 ">
+        <span class="body-18 color-white blog-menu-image-title">Đảng bộ Agribank</span>
+        <img src="../assets/images/blog/Frame 2071857411.png" alt="">
+      </div>
+      <div class="blog-menu-image col-12 pl-0 ">
+        <span class="body-18 color-white blog-menu-image-title">Hoạt động cộng đồng</span>
+        <img src="../assets/images/blog/Frame 2071857416.png" alt="">
+      </div>
+      <div class="blog-menu-image col-12 pl-0 ">
+        <span class="body-18 color-white blog-menu-image-title">Tài chính ngân hàng</span>
+        <img src="../assets/images/blog/Frame 2071857417.png" alt="">
+      </div>
+      <div class="blog-menu-image col-12 pl-0 ">
+        <span class="body-18 color-white blog-menu-image-title">Phòng, chống rửa tiền</span>
+        <img src="../assets/images/blog/Frame 2071857411.png" alt="">
+      </div>
+      <div class="blog-menu-image col-12 pl-0 ">
+        <span class="body-18 color-white blog-menu-image-title">Đấu giá tài sản</span>
+        <img src="../assets/images/blog/Frame 2071857416.png" alt="">
+      </div>
+    </div>
+    <h3 class="color-dark-1 heading-h5 center mt-5 mb-4">Tin mới cập nhật</h3>
+
+
     <div class="content-betwent active" data-content="tab1">
       <div class="content-betwent-title row-ct">
         <div class="content-betwent-subtitle mb-5 col-lg-3  col-sm-6 col-12">
@@ -1483,7 +1408,7 @@
   <script src="../assets/js/bundle.js"></script>
   <!-- <script src="../assets/js/home.js"></script> -->
   <script src="../assets/js/scripts.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
   <script src="../assets/js/libs/jquery.min.js"></script>
   <script src="../assets/js/libs/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="../assets/css/libs/aos.css" />
@@ -1491,6 +1416,23 @@
   <script src="../assets/js/navmenu.js" defer></script>
 </body>
 <script>
+  $(".slider-blog-menu").owlCarousel({
+    loop: true,
+    responsive: {
+      0: {
+        items: 1.5,
+      },
+      375: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 6,
+      },
+    },
+  });
   if (window.innerWidth > 375) {
     $(".owl-carousel").owlCarousel({
       loop: true,
