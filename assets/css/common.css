@@ -2297,7 +2297,7 @@ div {
 
 .blog .borrow-subtitle {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2781,6 +2781,11 @@ a.color-hover-b:hover,
     max-height: 100%;
 }
 
+.bld .slider-item .image-zoom {
+    box-shadow: 0px 0px 10px rgba(147, 145, 145, 0.2);
+
+}
+
 .content-top-menu img {
     width: 40px;
     /* Điều chỉnh kích thước theo nhu cầu */
@@ -2802,6 +2807,11 @@ a.color-hover-b:hover,
 .nav-tabs .nav-item,
 .padding-right {
     padding-right: 0;
+}
+
+.bld .slider-wrapper {
+
+    justify-content: center;
 }
 
 @media (max-width: 375.6px) {
@@ -3371,6 +3381,24 @@ a.color-hover-b:hover,
 /* ---------------------------------------------------End Page Calcuate Tool ------------------------------------------ */
 .exchange-rate .personal-loan-section {
     background-image: url(../images/banner-ti-gia-ngoai-te.png);
+}
+
+.secondary-featured-news {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.secondary-featured-news-title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.blog-menu-image-title {
+    position: absolute;
+    left: 20px;
+    bottom: 23px;
 }
 
 /* ---------------------------------------------------Page interestRate ------------------------------------------ */
