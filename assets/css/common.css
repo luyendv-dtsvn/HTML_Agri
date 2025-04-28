@@ -4866,6 +4866,45 @@ a.color-hover-b:hover,
 /* end atm-google-map */
 
 /* fix page lịch sử trongdp */
+.Agribank-all-awards-section .Agribank-all-awards-content-year-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.history .Agribank-all-awards-section .Agribank-all-awards-content-year {
+    padding-bottom: 55px;
+}
+
+.history .Agribank-all-awards-section .Agribank-all-awards-content-year .accordion {
+    border: none;
+    background: none;
+}
+
+.history .Agribank-all-awards-section .Agribank-all-awards-content-year .accordion .accordion-head {
+    display: flex;
+}
+
+.history .Agribank-all-awards-section .Agribank-all-awards-content-year .accordion-head .accordion-icon {
+    position: static;
+    transform: translateY(9%);
+}
+
+.history .Agribank-all-awards-section .Agribank-all-awards-content-year .accordion-item:last-child .accordion-inner {
+    border-top: none;
+}
+
+.history .Agribank-all-awards-section .Agribank-all-awards-content-year .accordion-head.collapsed .accordion-icon:before,
+.history .Agribank-all-awards-section .Agribank-all-awards-content-year .accordion-head .accordion-icon:before {
+    color: #AA1D40;
+}
+
+.history .Agribank-all-awards-container .Agribank-all-awards-text span {
+    text-align: center;
+}
+
+
+
 @media (max-width: 992px) {
     .history .main-info-s .main-info-content .main-info-title-content .main-info-title-content-text span br {
         display: none;
@@ -4873,6 +4912,35 @@ a.color-hover-b:hover,
 
     .history .timeline-history-section .timeline-history-years-mobile .item .body-16 {
         font-size: 16px;
+    }
+
+    .Agribank-all-awards-content .Agribank-all-awards-content-list-card {
+        margin-left: 0;
+
+    }
+}
+
+@media (max-width: 768.1px) {
+    .history .Agribank-all-awards-section {
+        padding-top: 40px;
+    }
+
+    .history .Agribank-all-awards-section .Agribank-all-awards-content-year {
+        padding-bottom: 332px;
+    }
+
+    .history .Agribank-all-awards-container .Agribank-all-awards-text span {
+        text-align: unset;
+    }
+
+    .history .Agribank-all-awards-section .Agribank-all-awards-timeline button {
+        border: none;
+        background: #C33C5E;
+        bottom: -28px;
+    }
+
+    .history .Agribank-all-awards-section .Agribank-all-awards-timeline button svg {
+        filter: brightness(0) invert(1);
     }
 }
 
@@ -5312,3 +5380,133 @@ a.color-hover-b:hover,
 
 
 /* end fix */
+/* update trang san-pham - trongpd */
+.product-list-news {
+    padding: 0 5%;
+}
+
+.product-list .request-consultation {
+    padding-bottom: 42px;
+}
+
+@media (max-width: 768.6px) {
+    .product-list-news {
+
+        .slider-blog.owl-carousel .owl-nav,
+        .slider-blog.owl-carousel .owl-dots {
+            display: none;
+        }
+    }
+
+    .product-list .request-consultation {
+        padding-bottom: 20px;
+    }
+
+}
+
+/* end update */
+/* update trang san-pham-chi-tiet - trongpd */
+.advantage-card-asked-questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.asked-questions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.asked-questions-card {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    flex: 1 0 0;
+    border-radius: 4px;
+    border: 1px solid #F1F1F1;
+    background: linear-gradient(92deg, #F7F7F7 0%, #FAF8F8 100.37%);
+}
+
+.asked-questions-title-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.asked-questions-title-all {
+    display: flex;
+    align-items: center;
+}
+
+.advantage-card-asked-questions .slick-initialized .slick-slide,
+.Agribank-award-section .slick-initialized .slick-slide {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.advantage-card-asked-questions-2 .slick-initialized .slick-slide {
+    margin-right: 20px;
+}
+
+@media (max-width: 768.6px) {
+    .advantage-card-asked-questions-2 .slick-initialized .slick-slide {
+        margin-right: 10px;
+    }
+}
+
+/* end update */
+
+/* update bieu-phi, bieu-mau - trongpd */
+@media (max-width: 768px) {
+
+    .application-form .content-top.menu-tab-ct .content-top-menu,
+    .fee-schedule .content-top.menu-tab-ct .content-top-menu {
+        display: inline-block;
+        cursor: pointer;
+        width: 220px;
+        text-align: center;
+        gap: 6px;
+        padding-bottom: 1%;
+        position: relative;
+        min-width: 180px;
+        justify-items: center;
+    }
+
+    .application-form .content-top,
+    .fee-schedule .content-top {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375.9px) {
+
+    .application-form .content-top,
+    .fee-schedule .content-top {
+        justify-content: flex-start;
+    }
+}
+
+/* end update */
+
+/* update header - trongpd */
+.header .hot-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.home-vision-header-button {
+    min-width: 127px;
+}
+
+.home-vision-header-button:hover svg path {
+    fill: #fff;
+}
+
+/* end update */
