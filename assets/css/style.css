@@ -61,29 +61,29 @@
   text-align: center;
 }
 
-.card a {
+.card-menu a {
   width: 20px;
   height: 20px;
 }
 
-.card+.card {
+.card-menu+.card-menu {
   margin-top: 0 !important;
 }
 
-.card:hover {
+.card-menu:hover {
   background: linear-gradient(270deg, #AF0B35 0%, #C93259 100%);
   fill: #fff;
 }
 
-.card:hover .card-icon svg path {
+.card-menu:hover .card-icon svg path {
   stroke: #fff;
 }
 
-.card:hover .card-title {
+.card-menu:hover .card-title {
   color: #ffffff;
 }
 
-.card:hover .card-link {
+.card-menu:hover .card-link {
   color: white;
   opacity: 1;
   /* Hiện khi hover */
@@ -141,8 +141,9 @@
 }
 
 .announcement-subtitle {
+  width: 45%;
   position: relative;
-  margin-bottom: 1%;
+  margin-bottom: 4%;
   display: inline-block;
   text-align: center;
 }
@@ -183,7 +184,7 @@
 .info-overlay {
   padding-right: 2%;
   position: absolute;
-  top: 70%;
+  top: 84%;
   width: 80%;
   /* background: rgba(0, 0, 0, 0.6); */
   color: white;
@@ -199,23 +200,23 @@
   text-align: center;
 }
 
-.card:hover .icon-general {
+.card-menu:hover .icon-general {
   background-image: url(/HTML_Agri/image/NewspaperClipping.svg);
 }
 
-.card:hover .icon-history {
+.card-menu:hover .icon-history {
   background-image: url(/HTML_Agri/image/ClockCounterClockwise.png);
 }
 
-.card:hover .icon-leadership {
+.card-menu:hover .icon-leadership {
   background-image: url(/HTML_Agri/image/Frame.png);
 }
 
-.card:hover .icon-award {
+.card-menu:hover .icon-award {
   background-image: url(/HTML_Agri/image/Trophy.png);
 }
 
-.card:hover .icon-culture {
+.card-menu:hover .icon-culture {
   background-image: url(/HTML_Agri/image/Handshake.png);
 }
 
@@ -375,7 +376,9 @@
   height: auto;
   object-fit: contain;
 }
-
+.prize {
+  flex: 1 1 auto;
+}
 .reports-title {
 
 
@@ -449,12 +452,12 @@
   justify-content: space-between;
   gap: 20px;
   /* Khoảng cách giữa các card */
-  /* justify-content: center; */
+  justify-content: center;
   /* Căn giữa các card */
   width: 100%;
 }
 
-.card {
+.card-menu {
   flex: 1 1 calc(20% - 20px);
   /* Card chiếm 25% chiều rộng, trừ gap */
   max-width: calc(20% - 20px);
@@ -493,7 +496,7 @@
 
   }
 
-  .card {
+  .card-menu {
     /* flex: 1 1 calc(50% - 20px); */
     /* max-width: calc(50% - 20px); */
   }
@@ -526,12 +529,7 @@
 
 
 
-  .card {
-    flex: 1 1 calc(100% - 20px);
-    /* Card chiếm 50% chiều rộng */
-    max-width: calc(100% - 20px);
-    /* Đảm bảo phù hợp với gap */
-  }
+  
 }
 
 @media (max-width:992px) {
@@ -541,6 +539,36 @@
 }
 
 @media (max-width: 768px) {
+  .announcement-subtitle {
+    margin-bottom: 10%;
+  }
+  .card-menu {
+    flex: 1 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    height: 60px; /* Giảm chiều cao */
+    flex-direction: row; /* Các phần tử con nằm ngang */
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap:18px ;
+  }
+  .card-icon{
+    padding: 16px ;
+    margin: 0;
+  }
+  .card-icon svg{
+    width: 30px;
+    height: 30px;
+  }
+  .card-title{
+    position: relative;
+    margin-top: 7px;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+  .card-link{
+    display: none;
+  }
   .img img {
     width: 57%;
   }

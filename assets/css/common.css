@@ -3646,11 +3646,13 @@ a.color-hover-b:hover,
     background-size: cover;
     padding: 40px 5%;
 }
-
+.detailBlog .home-header-slim,
 .blog .home-header-slim {
     background: #ffffff !important;
 }
-
+.detailBlog .home-vision-header-button {
+    background: var(--red-1);
+}
 .blog-title-text {
     width: 100%;
     height: 100%;
@@ -3663,7 +3665,6 @@ a.color-hover-b:hover,
 .title-bottom {
     display: flex;
     justify-content: space-between;
-    padding: 40px 5%;
 }
 
 .title-bottom-left {
@@ -4342,7 +4343,9 @@ a.color-hover-b:hover,
         width: 90%;
     }
 }
-
+.gap10 {
+    gap: 9px;
+}
 .gap20 {
     gap: 20px;
 }
