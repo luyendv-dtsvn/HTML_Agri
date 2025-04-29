@@ -6,37 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About</title>
 
-  <!-- <link rel="stylesheet" href="../assets/css/blogDetail.css" /> -->
-
-  <link rel="stylesheet" href="../assets/css/dashlite.css" />
-  <link rel="stylesheet" href="../assets/css/navmenu.css" />
-  <link rel="stylesheet" href="../assets/css/common.css" />
   <link rel="stylesheet" href="../assets/css/font-awesome.css" />
+  <link rel="stylesheet" href="../assets/css/libs/owl.carousel.css" />
+  <link rel="stylesheet" href="../assets/css/dashlite.css" />
+  <link rel="stylesheet" href="../assets/css/home-user.css" />
+  <link rel="stylesheet" href="../assets/css/common.css" />
+  <link rel="stylesheet" href="../assets/css/navmenu.css" />
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="../assets/css/home-tab-heading-slim.css" />
   <link rel="stylesheet" href="../assets/css/agri.css">
+  <link rel="stylesheet" href="../assets/css/home-user.css" />
+  <style>
+    .owl-carousel {
+    
+    position: absolute !important;
+    z-index: 0 !important;
+    }
+    .text-banner {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46%;
+  text-align: center;
+}
+
+  </style>
 </head>
 
 <body class="about no-touch nk-nio-theme has-aside as-mobile">
   <div class="main">
     <!-- Header -->
     <div class="banner-header">
-      <div class="slider-banner owl-carousel owl-theme">
-        <div class="slider-banner-item" style="width:100vw;height: 100svh;background-image: url('../assets/images/home/banner_user.png');"></div>
-        <div class="slider-banner-item" style="width:100vw;height: 100svh;background-image: url('../assets/images/home/banner_user.png');"></div>
-        <div class="slider-banner-item" style="width:100vw;height: 100svh;background-image: url('../assets/images/home/background-home-33.png');"></div>
-      </div>
       <div class="header header-pc ">
         <div class="top">
           <div class="top-user">
             <div class="top-user-left ">
-              <div class="body-12"><a href="#">Cá nhân</a></div>
+              <div class="active body-12"><a href="#">Cá nhân</a></div>
               <div class="body-12"><a href="#">Doanh nghiệp</a></div>
               <div class="body-12"><a href="#">Định chế tài chính</a></div>
             </div>
             <div class="div-pre-h-right">
               <div class="top-user-right body-12">
-                <div class="body-12 active"> <a href="#">Về Agribank</a></div>
+                <div class="body-12"> <a href="#">Về Agribank</a></div>
                 <div class="body-12"><a href="#">Tin tức</a></div>
                 <div class="body-12"><a href="#">Tuyển dụng</a></div>
                 <div class="body-12"><a href="#">Hỗ trợ</a></div>
@@ -82,55 +93,945 @@
 
 
         <div class="line-h" style="background: #af1f43;"></div>
-        <div class="menu ">
-          <div class="d-none-992 home-header-slim  ">
-            <div class="home-header-slim-left nk-menu nk-menu-main pl-0">
+        <div class="menu menu-pc">
+          <div class="top-menu">
+            <div class="top-menu-left body-15 h-100">
               <div class="icon-agri">
                 <a href="#">
                   <img src="../assets/images/logo-white.png" alt="">
                 </a>
               </div>
-              <div class="line-v home-header-slim-line"></div>
-              <div class="home-header-slim-tab d-none-1366">
-                <a class="color-hover" href="#"><span class="body-15 color-white">Về chính tôi</span></a>
-                <a class="color-hover" href="#"><span class="body-15 color-white">Công bố thông tin</span></a>
-                <a class="color-hover" href="#"><span class="body-15 color-white">Thư viện Agribank</span></a>
-                <a class="color-hover" href="#"><span class="body-15 color-white">Tin tức</span></a>
-                <a class="color-hover" href="#"><span class="body-15 color-white">Sản phẩm đấu giá</span></a>
+              <div class="line-v" style="height: 36px;background: rgba(255, 255, 255, 0.20);"></div>
+              <!-- mega menu -->
+              <div class="mega-menu h-100">
+                <div class="ruby-menu-demo-header h-100">
+                  <div class="ruby-wrapper h-100">
+                    <ul class="ruby-menu">
+                      <li class="ruby-menu-mega-blog "><a href="#" class="body-15">Sản phẩm dịch vụ</a>
+                        <div style="" class="">
+                          <ul class="ruby-menu-mega-blog-nav pb-4 col-3">
+                            <li class="ruby-active-menu-item active "><a href="#" class="pb-2">Gửi tiền</a>
+                              <div class="ruby-grid ruby-grid-lined">
+                                <div class="ruby-row">
+                                  <div class="ruby-col-8">
+                                    <div class="div-content-mega">
+                                      <div class="div-content-title">
+                                        <div class="div-title-icon">
+                                          <span class="heading-h7">Gửi tiền Agribank</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 28 28" fill="none">
+                                            <path
+                                              d="M17.3006 7.36719L16.1314 8.5365L21.3345 13.7397H3.5V15.3934H21.3345L16.1314 20.5966L17.3006 21.7659L24.5 14.5665L17.3006 7.36719Z"
+                                              fill="#080808" />
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="div-content-des">
+                                        <div class="div-des-6">
+                                          <div class="div-des-title ">
+                                            <span class="heading-h8">Tiền gửi</span>
+                                            <span class="regular-14">Đa dạng kỳ hạn gửi và hình thức lãi cho <br>khách
+                                              hàng lựa chọn với thủ tục đơn giản</span>
+                                          </div>
+                                          <div class="div-des-category">
+                                            <span class="subtitle-12" style="text-transform: uppercase;">Sản phẩm nổi
+                                              bật</span>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Tài khoản thanh toán</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Tiền gửi trực tuyến</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-more">
+                                              <span class="regular-15 color-red-1">Xem tất cả
+                                                <em class="icon ni ni-arrow-right"></em></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="div-des-6">
+                                          <div class="div-des-title ">
+                                            <span class="heading-h8">Tiền gửi tiết kiệm</span>
+                                            <span class="regular-14">Tiết kiệm an toàn, sinh lời ổn định với lãi suất
+                                              <br>hấp dẫn. Hãy để tiền của bạn làm việc hiệu quả</span>
+                                          </div>
+                                          <div class="div-des-category">
+                                            <span class="subtitle-12" style="text-transform: uppercase;">Sản phẩm nổi
+                                              bật</span>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Tiết kiệm có kỳ hạn</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Tiền gửi tiết kiệm có kỳ hạn lãi suất thả nổi</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Tiết kiệm gửi góp theo định kỳ</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-more">
+                                              <span class="regular-15 color-red-1">Xem tất cả
+                                                <em class="icon ni ni-arrow-right"></em></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-4 pr-0">
+                                    <div class="div-content-img ">
+                                      <div class="div-img img-hover-btn" style="">
+                                        <img src="../assets/images/menu/tiengui.png" alt="">
+                                        <div class="btn-overlay">
+                                          <a class="btn-img regular-14 color-white" style="color:white">Khám phá
+                                            ngay</a>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-12 div-footer-mega">
+                                    <div class="footer-mega-link">
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M16.5 6.5H7.5V11H16.5V6.5Z" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M19.5 21.5V3.5L4.5 3.5L4.5 21.5H19.5Z" stroke="#9E2B47"
+                                            stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M8.25 15.5C8.87132 15.5 9.375 14.9963 9.375 14.375C9.375 13.7537 8.87132 13.25 8.25 13.25C7.96187 13.25 7.69903 13.3583 7.5 13.5365C7.26984 13.7425 7.125 14.0418 7.125 14.375C7.125 14.9963 7.62868 15.5 8.25 15.5Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M12 15.5C12.6213 15.5 13.125 14.9963 13.125 14.375C13.125 13.7537 12.6213 13.25 12 13.25C11.3787 13.25 10.875 13.7537 10.875 14.375C10.875 14.9963 11.3787 15.5 12 15.5Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M15.75 15.5C16.3713 15.5 16.875 14.9963 16.875 14.375C16.875 13.7537 16.3713 13.25 15.75 13.25C15.1287 13.25 14.625 13.7537 14.625 14.375C14.625 14.9963 15.1287 15.5 15.75 15.5Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M8.25 19.25C8.87132 19.25 9.375 18.7463 9.375 18.125C9.375 17.5037 8.87132 17 8.25 17C7.62868 17 7.125 17.5037 7.125 18.125C7.125 18.7463 7.62868 19.25 8.25 19.25Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M12 19.25C12.6213 19.25 13.125 18.7463 13.125 18.125C13.125 17.5037 12.6213 17 12 17C11.3787 17 10.875 17.5037 10.875 18.125C10.875 18.7463 11.3787 19.25 12 19.25Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M15.75 19.25C16.3713 19.25 16.875 18.7463 16.875 18.125C16.875 17.5037 16.3713 17 15.75 17C15.1287 17 14.625 17.5037 14.625 18.125C14.625 18.7463 15.1287 19.25 15.75 19.25Z"
+                                            fill="#9E2B47" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Tính khoản tiết kiệm</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+                                      <div class="line-v"></div>
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path
+                                            d="M15.5844 7.71496C19.1218 8.2638 21.6002 11.2974 21.6002 14.9574C21.6002 17.4087 20.3861 19.5786 18.5215 20.9097V23.2984H15.1435V21.8803C11.6168 23.2426 8.92638 21.8719 8.92638 21.8719L8.9266 23.2984H5.50021V20.8784C4.69691 20.3079 3.57309 19.2477 3.1202 17.5765C2.05981 17.5765 1.2002 16.7248 1.2002 15.6742V13.8138C1.2002 12.7314 2.08587 11.8538 3.17837 11.8538C3.50353 11.2275 4.19389 9.99513 5.02334 9.34315V5.89905H5.11565C6.43605 5.8759 7.43581 6.51423 8.11557 7.62639H9.55664"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M21 11.7699H21.0553C21.93 11.7699 22.6391 11.0606 22.6391 10.1855V9.5"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M12.6 8.89922C14.5882 8.89922 16.2 7.28744 16.2 5.29922C16.2 3.31099 14.5882 1.69922 12.6 1.69922C10.6118 1.69922 9 3.31099 9 5.29922C9 7.28744 10.6118 8.89922 12.6 8.89922Z"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Lãi suất tiền gửi</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+                                      <div class="line-v"></div>
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M19.5 21.5H4.5V3.5H14.25L19.5 8.75V21.5Z" stroke="#9E2B47"
+                                            stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path d="M14.25 3.5V8.75H19.2" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 13.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 16.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Biểu mẫu và biểu phí</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+
+                                    </div>
+                                    <a class="footer-mega-map">
+                                      <span class="regular-15 color-red-1">Sơ đồ trang</span>
+                                      <em class="icon ni ni-arrow-right color-red-1"></em>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="ruby-dropdown-toggle"></span>
+                            </li>
+                            <li class="hidden-md"><a href="#" class="pb-2">Vay vốn</a>
+                              <div class="ruby-grid ruby-grid-lined">
+                                <div class="ruby-row">
+                                  <div class="ruby-col-8">
+                                    <div class="div-content-mega">
+                                      <div class="div-content-title">
+                                        <div class="div-title-icon">
+                                          <span class="heading-h7">Vay vốn Agribank</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 28 28" fill="none">
+                                            <path
+                                              d="M17.3006 7.36719L16.1314 8.5365L21.3345 13.7397H3.5V15.3934H21.3345L16.1314 20.5966L17.3006 21.7659L24.5 14.5665L17.3006 7.36719Z"
+                                              fill="#080808" />
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="div-content-des">
+                                        <div class="div-des-6">
+                                          <div class="div-des-category">
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Cho vay tín dụng tiêu dùng</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Cho vay hạn mức quy mô nhỏ</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Cho vay lưu vụ</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Cho vay hỗ trợ giảm tổn thất nông nghiệp</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Cho vay phục vụ chính sách phát triển nông nghiệp
+                                                nông thôn</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="div-des-6">
+                                          <div class="div-des-category">
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Cho vay ưu đãi lãi suất</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Cho vay dưới hình thức thấu chi tài khoản</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Cho vay phục vụ nhu cầu đời sống</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Cho vay phục vụ hoạt động kinh doanh</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Cho vay qua tổ vay vốn/tổ liên kết – tổ cho vay lưu
+                                                động</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-4 pr-0">
+                                    <div class="div-content-img ">
+                                      <div class="div-img img-hover-btn" style="">
+                                        <img src="../assets/images/menu/chovay.png" alt="">
+                                        <div class="btn-overlay">
+                                          <a class="btn-img regular-14 color-white" style="color:white">Khám phá
+                                            ngay</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-12 div-footer-mega">
+                                    <div class="footer-mega-link">
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M16.5 6.5H7.5V11H16.5V6.5Z" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M19.5 21.5V3.5L4.5 3.5L4.5 21.5H19.5Z" stroke="#9E2B47"
+                                            stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M8.25 15.5C8.87132 15.5 9.375 14.9963 9.375 14.375C9.375 13.7537 8.87132 13.25 8.25 13.25C7.96187 13.25 7.69903 13.3583 7.5 13.5365C7.26984 13.7425 7.125 14.0418 7.125 14.375C7.125 14.9963 7.62868 15.5 8.25 15.5Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M12 15.5C12.6213 15.5 13.125 14.9963 13.125 14.375C13.125 13.7537 12.6213 13.25 12 13.25C11.3787 13.25 10.875 13.7537 10.875 14.375C10.875 14.9963 11.3787 15.5 12 15.5Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M15.75 15.5C16.3713 15.5 16.875 14.9963 16.875 14.375C16.875 13.7537 16.3713 13.25 15.75 13.25C15.1287 13.25 14.625 13.7537 14.625 14.375C14.625 14.9963 15.1287 15.5 15.75 15.5Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M8.25 19.25C8.87132 19.25 9.375 18.7463 9.375 18.125C9.375 17.5037 8.87132 17 8.25 17C7.62868 17 7.125 17.5037 7.125 18.125C7.125 18.7463 7.62868 19.25 8.25 19.25Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M12 19.25C12.6213 19.25 13.125 18.7463 13.125 18.125C13.125 17.5037 12.6213 17 12 17C11.3787 17 10.875 17.5037 10.875 18.125C10.875 18.7463 11.3787 19.25 12 19.25Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M15.75 19.25C16.3713 19.25 16.875 18.7463 16.875 18.125C16.875 17.5037 16.3713 17 15.75 17C15.1287 17 14.625 17.5037 14.625 18.125C14.625 18.7463 15.1287 19.25 15.75 19.25Z"
+                                            fill="#9E2B47" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Tính khoản vay</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+                                      <div class="line-v"></div>
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M18.75 5.75L5.25 19.25" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path
+                                            d="M7.125 10.25C8.57475 10.25 9.75 9.07475 9.75 7.625C9.75 6.17525 8.57475 5 7.125 5C5.67525 5 4.5 6.17525 4.5 7.625C4.5 9.07475 5.67525 10.25 7.125 10.25Z"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M16.875 20C18.3247 20 19.5 18.8247 19.5 17.375C19.5 15.9253 18.3247 14.75 16.875 14.75C15.4253 14.75 14.25 15.9253 14.25 17.375C14.25 18.8247 15.4253 20 16.875 20Z"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Lãi suất vay</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+                                      <div class="line-v"></div>
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M19.5 21.5H4.5V3.5H14.25L19.5 8.75V21.5Z" stroke="#9E2B47"
+                                            stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path d="M14.25 3.5V8.75H19.2" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 13.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 16.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Biểu mẫu và biểu phí</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+
+                                    </div>
+                                    <a class="footer-mega-map">
+                                      <span class="regular-15 color-red-1">Sơ đồ trang</span>
+                                      <em class="icon ni ni-arrow-right color-red-1"></em>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="ruby-dropdown-toggle"></span>
+                            </li>
+                            <li><a href="#" class="pb-2">Thẻ</a>
+                              <div class="ruby-grid ruby-grid-lined">
+                                <div class="ruby-row">
+                                  <div class="ruby-col-8">
+                                    <div class="div-content-mega">
+                                      <div class="div-content-title">
+                                        <div class="div-title-icon">
+                                          <span class="heading-h7">Thẻ Agribank</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 28 28" fill="none">
+                                            <path
+                                              d="M17.3006 7.36719L16.1314 8.5365L21.3345 13.7397H3.5V15.3934H21.3345L16.1314 20.5966L17.3006 21.7659L24.5 14.5665L17.3006 7.36719Z"
+                                              fill="#080808" />
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="div-content-des">
+                                        <div class="div-des-6">
+                                          <div class="div-des-title ">
+                                            <span class="heading-h8">Thẻ tín dụng</span>
+                                            <span class="regular-14">Thẻ cho phép bạn chi tiêu trước và trả tiền sau
+                                              <br>với hạn mức được cấp</span>
+                                          </div>
+                                          <div class="div-des-category">
+                                            <span class="subtitle-12" style="text-transform: uppercase;">Sản phẩm nổi
+                                              bật</span>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Thẻ Agribank JCB Ultimate</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Thẻ Agribank JCB Gold</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Thẻ Agribank Mastercard Platinum</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-more">
+                                              <span class="regular-15 color-red-1">Xem tất cả
+                                                <em class="icon ni ni-arrow-right"></em></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="div-des-6">
+                                          <div class="div-des-title ">
+                                            <span class="heading-h8">Thẻ ghi nợ</span>
+                                            <span class="regular-14">Thẻ liên kết trực tiếp với tài khoản ngân hàng
+                                              <br>của bạn dùng để chi tiêu hàng ngày</span>
+                                          </div>
+                                          <div class="div-des-category">
+                                            <span class="subtitle-12" style="text-transform: uppercase;">Sản phẩm nổi
+                                              bật</span>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Thẻ ghi nợ quốc tế JCB hạng Vàng</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Thẻ ghi nợ quốc tế Master Card hạng Vàng</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Thẻ ghi nợ quốc tế Master Card hạng chuẩn</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-more">
+                                              <span class="regular-15 color-red-1">Xem tất cả
+                                                <em class="icon ni ni-arrow-right"></em></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-4 pr-0">
+                                    <div class="div-content-img ">
+                                      <div class="div-img img-hover-btn" style="">
+                                        <img src="../assets/images/menu/card.png" alt="">
+                                        <div class="btn-overlay">
+                                          <a class="btn-img regular-14 color-white" style="color:white">Khám phá
+                                            ngay</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-12 div-footer-mega">
+                                    <div class="footer-mega-link">
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M9.75 8.75H14.25" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path
+                                            d="M21.5241 14.9675L17.4319 5.65627C17.0099 5.23435 16.4376 4.99731 15.8409 4.99731C15.2442 4.99731 14.672 5.23435 14.25 5.65627V16.25"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M9.75014 16.25V5.65627C9.32818 5.23435 8.75591 4.99731 8.1592 4.99731C7.56249 4.99731 6.99021 5.23435 6.56826 5.65627L2.47607 14.9675"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M6 20C8.07107 20 9.75 18.3211 9.75 16.25C9.75 14.1789 8.07107 12.5 6 12.5C3.92893 12.5 2.25 14.1789 2.25 16.25C2.25 18.3211 3.92893 20 6 20Z"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M18 20C20.0711 20 21.75 18.3211 21.75 16.25C21.75 14.1789 20.0711 12.5 18 12.5C15.9289 12.5 14.25 14.1789 14.25 16.25C14.25 18.3211 15.9289 20 18 20Z"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Tìm thẻ phù hợp</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+                                      <div class="line-v"></div>
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M12 4.25V20.75" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9.75 20.75H14.25" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M5.25 8.75L18.75 5.75" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path
+                                            d="M2.25 16.25C2.25 17.9066 4.125 18.5 5.25 18.5C6.375 18.5 8.25 17.9066 8.25 16.25L5.25 8.75L2.25 16.25Z"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M15.75 13.25C15.75 14.9066 17.625 15.5 18.75 15.5C19.875 15.5 21.75 14.9066 21.75 13.25L18.75 5.75L15.75 13.25Z"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">So sánh thẻ</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+                                      <div class="line-v"></div>
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M19.5 21.5H4.5V3.5H14.25L19.5 8.75V21.5Z" stroke="#9E2B47"
+                                            stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path d="M14.25 3.5V8.75H19.2" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 13.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 16.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Biểu mẫu và biểu phí</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+
+                                    </div>
+                                    <a class="footer-mega-map">
+                                      <span class="regular-15 color-red-1">Sơ đồ trang</span>
+                                      <em class="icon ni ni-arrow-right color-red-1"></em>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="ruby-dropdown-toggle"></span>
+                            </li>
+                            <li><a href="#" class="pb-2">Thanh toán và chuyển tiền</a>
+                              <div class="ruby-grid ruby-grid-lined">
+                                <div class="ruby-row">
+                                  <div class="ruby-col-8">
+                                    <div class="div-content-mega">
+                                      <div class="div-content-title">
+                                        <div class="div-title-icon">
+                                          <span class="heading-h7">Thanh toán và chuyển tiền</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 28 28" fill="none">
+                                            <path
+                                              d="M17.3006 7.36719L16.1314 8.5365L21.3345 13.7397H3.5V15.3934H21.3345L16.1314 20.5966L17.3006 21.7659L24.5 14.5665L17.3006 7.36719Z"
+                                              fill="#080808" />
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="div-content-des">
+                                        <div class="div-des-6">
+                                          <div class="div-des-title ">
+                                            <span class="heading-h8">Thanh toán</span>
+                                            <span class="regular-14">Chuyển tiền nhanh chóng, an toàn, bất kể <br>nội
+                                              địa hay quốc tế</span>
+                                          </div>
+                                          <div class="div-des-category">
+                                            <span class="subtitle-12" style="text-transform: uppercase;">Sản phẩm nổi
+                                              bật</span>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Giao dịch gửi, rút tiền nhiều nơi</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Thanh toán hóa đơn</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Chuyển và nhận tiền quốc tế qua SWIFT</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-more">
+                                              <span class="regular-15 color-red-1">Xem tất cả
+                                                <em class="icon ni ni-arrow-right"></em></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="div-des-6">
+                                          <div class="div-des-title ">
+                                            <span class="heading-h8">Mua bán ngoại tệ</span>
+                                            <span class="regular-14">Mua bán ngoại tệ với mức phí ưu đãi cạnh tranh và
+                                              mạng lới điểm giao dịch rộng khắp</span>
+                                          </div>
+                                          <div class="div-des-category">
+                                            <span class="subtitle-12" style="text-transform: uppercase;">Sản phẩm nổi
+                                              bật</span>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Mua bán ngoại tệ giao ngay</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Mua bán ngoại tệ kỳ hạn</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15 txt-one-line">Cấp giấy xác nhận mang ngoại tệ, đồng
+                                                Việt Nam tiền mặt ra nước ngoài</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-more">
+                                              <span class="regular-15 color-red-1">Xem tất cả
+                                                <em class="icon ni ni-arrow-right"></em></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-4 pr-0">
+                                    <div class="div-content-img ">
+                                      <div class="div-img img-hover-btn" style="">
+                                        <img src="../assets/images/menu/ck.png" alt="">
+                                        <div class="btn-overlay">
+                                          <a class="btn-img regular-14 color-white" style="color:white">Khám phá
+                                            ngay</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-12 div-footer-mega">
+                                    <div class="footer-mega-link">
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path
+                                            d="M5.10562 19.3944C4.24312 18.5319 4.815 16.7197 4.37625 15.6584C3.92063 14.5625 2.25 13.6719 2.25 12.5C2.25 11.3281 3.92063 10.4375 4.37625 9.34156C4.815 8.28125 4.24312 6.46812 5.10562 5.60562C5.96812 4.74312 7.78125 5.315 8.84156 4.87625C9.94219 4.42063 10.8281 2.75 12 2.75C13.1719 2.75 14.0625 4.42063 15.1584 4.87625C16.2197 5.315 18.0319 4.74312 18.8944 5.60562C19.7569 6.46812 19.185 8.28031 19.6238 9.34156C20.0794 10.4422 21.75 11.3281 21.75 12.5C21.75 13.6719 20.0794 14.5625 19.6238 15.6584C19.185 16.7197 19.7569 18.5319 18.8944 19.3944C18.0319 20.2569 16.2197 19.685 15.1584 20.1238C14.0625 20.5794 13.1719 22.25 12 22.25C10.8281 22.25 9.9375 20.5794 8.84156 20.1238C7.78125 19.685 5.96812 20.2569 5.10562 19.3944Z"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M12 18.5C12.6213 18.5 13.125 17.9963 13.125 17.375C13.125 16.7537 12.6213 16.25 12 16.25C11.3787 16.25 10.875 16.7537 10.875 17.375C10.875 17.9963 11.3787 18.5 12 18.5Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M12 14.9231V13.25C13.6566 13.25 15 12.0744 15 10.625C15 9.17563 13.6566 8 12 8C10.3434 8 9 9.17563 9 10.625V11"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Câu hỏi thường gặp</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+                                      <div class="line-v"></div>
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M19.5 21.5H4.5V3.5H14.25L19.5 8.75V21.5Z" stroke="#9E2B47"
+                                            stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path d="M14.25 3.5V8.75H19.2" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 13.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 16.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Biểu mẫu và biểu phí</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+
+                                    </div>
+                                    <a class="footer-mega-map">
+                                      <span class="regular-15 color-red-1">Sơ đồ trang</span>
+                                      <em class="icon ni ni-arrow-right color-red-1"></em>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="ruby-dropdown-toggle"></span>
+                            </li>
+                            <li><a href="#" class="pb-2">Bảo hiểm</a>
+                              <div class="ruby-grid ruby-grid-lined">
+                                <div class="ruby-row">
+                                  <div class="ruby-col-8">
+                                    <div class="div-content-mega">
+                                      <div class="div-content-title">
+                                        <div class="div-title-icon">
+                                          <span class="heading-h7">Bảo hiểm</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 28 28" fill="none">
+                                            <path
+                                              d="M17.3006 7.36719L16.1314 8.5365L21.3345 13.7397H3.5V15.3934H21.3345L16.1314 20.5966L17.3006 21.7659L24.5 14.5665L17.3006 7.36719Z"
+                                              fill="#080808" />
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="div-content-des">
+                                        <div class="div-des-6">
+                                          <div class="div-des-title ">
+                                            <span class="heading-h8">Bảo hiểm Agribank</span>
+                                            <span class="regular-14">Cung cấp đa dạng sản phẩm bảo hiểm, đặc biệt
+                                              <br>nổi bật với các gói bảo hiểm liên kết với đầu tư</span>
+                                          </div>
+                                          <div class="div-des-category">
+                                            <span class="subtitle-12" style="text-transform: uppercase;">Sản phẩm nổi
+                                              bật</span>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Bảo hiểm bảo an tín dụng</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Bảo hiểm cho chủ thẻ quốc tế</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Bảo hiểm cho chủ thẻ ghi nợ nội địa</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-more">
+                                              <span class="regular-15 color-red-1">Xem tất cả
+                                                <em class="icon ni ni-arrow-right"></em></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="div-des-6">
+                                          <div class="div-des-title ">
+                                            <span class="heading-h8">Bảo hiểm FWD </span>
+                                            <span class="regular-14">Bảo hiểm sức khỏe và bảo hiểm tai nạn, với nhiều
+                                              quyền lợi linh hoạt và thủ tục bồi thường nhanh chóng</span>
+                                          </div>
+                                          <div class="div-des-category">
+                                            <span class="subtitle-12" style="text-transform: uppercase;">Sản phẩm nổi
+                                              bật</span>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Liên kết FWD bộ đôi tài sản</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">Liên kết FWD đón đầu thay đổi 3.0</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-icon">
+                                              <span class="body-15">FWD Vững chắc tương lai</span>
+                                              <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                            <div class="line-h"></div>
+                                            <a class="div-category-more">
+                                              <span class="regular-15 color-red-1">Xem tất cả
+                                                <em class="icon ni ni-arrow-right"></em></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-4 pr-0">
+                                    <div class="div-content-img ">
+                                      <div class="div-img img-hover-btn" style="">
+                                        <img src="../assets/images/menu/baohiem.png" alt="">
+                                        <div class="btn-overlay">
+                                          <a class="btn-img regular-14 color-white" style="color:white">Khám phá
+                                            ngay</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-12 div-footer-mega">
+                                    <div class="footer-mega-link">
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path
+                                            d="M5.10562 19.3944C4.24312 18.5319 4.815 16.7197 4.37625 15.6584C3.92063 14.5625 2.25 13.6719 2.25 12.5C2.25 11.3281 3.92063 10.4375 4.37625 9.34156C4.815 8.28125 4.24312 6.46812 5.10562 5.60562C5.96812 4.74312 7.78125 5.315 8.84156 4.87625C9.94219 4.42063 10.8281 2.75 12 2.75C13.1719 2.75 14.0625 4.42063 15.1584 4.87625C16.2197 5.315 18.0319 4.74312 18.8944 5.60562C19.7569 6.46812 19.185 8.28031 19.6238 9.34156C20.0794 10.4422 21.75 11.3281 21.75 12.5C21.75 13.6719 20.0794 14.5625 19.6238 15.6584C19.185 16.7197 19.7569 18.5319 18.8944 19.3944C18.0319 20.2569 16.2197 19.685 15.1584 20.1238C14.0625 20.5794 13.1719 22.25 12 22.25C10.8281 22.25 9.9375 20.5794 8.84156 20.1238C7.78125 19.685 5.96812 20.2569 5.10562 19.3944Z"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M12 18.5C12.6213 18.5 13.125 17.9963 13.125 17.375C13.125 16.7537 12.6213 16.25 12 16.25C11.3787 16.25 10.875 16.7537 10.875 17.375C10.875 17.9963 11.3787 18.5 12 18.5Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M12 14.9231V13.25C13.6566 13.25 15 12.0744 15 10.625C15 9.17563 13.6566 8 12 8C10.3434 8 9 9.17563 9 10.625V11"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Câu hỏi thường gặp</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+                                      <div class="line-v"></div>
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M19.5 21.5H4.5V3.5H14.25L19.5 8.75V21.5Z" stroke="#9E2B47"
+                                            stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path d="M14.25 3.5V8.75H19.2" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 13.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 16.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Biểu mẫu và biểu phí</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+
+                                    </div>
+                                    <a class="footer-mega-map">
+                                      <span class="regular-15 color-red-1">Sơ đồ trang</span>
+                                      <em class="icon ni ni-arrow-right color-red-1"></em>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="ruby-dropdown-toggle"></span>
+                            </li>
+                            <li class=""><a href="#" class="pb-2">Khác</a>
+                              <div class="ruby-grid ruby-grid-lined">
+                                <div class="ruby-row">
+                                  <div class="ruby-col-8">
+                                    <div class="div-mega-other">
+                                      <div class="div-content-des row-ct">
+                                        <div class="div-other-des col-12">
+                                          <span class="heading-h8">Điểm giao dịch lưu động</span>
+                                          <span class="regular-14">Điểm giao dịch lưu động bằng xe ô tô chuyên dùng -
+                                            Kênh dẫn vốn hiệu quả đến các địa bàn vùng sâu, vùng xa</span>
+                                          <a class="div-category-more">
+                                            <span class="regular-15 color-red-1">Xem chi tiết
+                                              <em class="icon ni ni-arrow-right"></em></span>
+                                          </a>
+                                        </div>
+                                        <div class="div-other-des col-12">
+                                          <span class="heading-h8">Khách hàng ưu tiên</span>
+                                          <span class="regular-14">Hưởng những ưu đãi đặc quyền và các dịch vụ cao cấp
+                                            của Agribank</span>
+                                          <a class="div-category-more">
+                                            <span class="regular-15 color-red-1">Xem chi tiết
+                                              <em class="icon ni ni-arrow-right"></em></span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-4 pr-0">
+                                    <div class="div-content-img ">
+                                      <div class="div-img img-hover-btn" style="">
+                                        <img src="../assets/images/menu/orther.png" alt="">
+                                        <div class="btn-overlay">
+                                          <a class="btn-img regular-14 color-white" style="color:white">Khám phá
+                                            ngay</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ruby-col-12 div-footer-mega">
+                                    <div class="footer-mega-link">
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M16.5 6.5H7.5V11H16.5V6.5Z" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M19.5 21.5V3.5L4.5 3.5L4.5 21.5H19.5Z" stroke="#9E2B47"
+                                            stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M8.25 15.5C8.87132 15.5 9.375 14.9963 9.375 14.375C9.375 13.7537 8.87132 13.25 8.25 13.25C7.96187 13.25 7.69903 13.3583 7.5 13.5365C7.26984 13.7425 7.125 14.0418 7.125 14.375C7.125 14.9963 7.62868 15.5 8.25 15.5Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M12 15.5C12.6213 15.5 13.125 14.9963 13.125 14.375C13.125 13.7537 12.6213 13.25 12 13.25C11.3787 13.25 10.875 13.7537 10.875 14.375C10.875 14.9963 11.3787 15.5 12 15.5Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M15.75 15.5C16.3713 15.5 16.875 14.9963 16.875 14.375C16.875 13.7537 16.3713 13.25 15.75 13.25C15.1287 13.25 14.625 13.7537 14.625 14.375C14.625 14.9963 15.1287 15.5 15.75 15.5Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M8.25 19.25C8.87132 19.25 9.375 18.7463 9.375 18.125C9.375 17.5037 8.87132 17 8.25 17C7.62868 17 7.125 17.5037 7.125 18.125C7.125 18.7463 7.62868 19.25 8.25 19.25Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M12 19.25C12.6213 19.25 13.125 18.7463 13.125 18.125C13.125 17.5037 12.6213 17 12 17C11.3787 17 10.875 17.5037 10.875 18.125C10.875 18.7463 11.3787 19.25 12 19.25Z"
+                                            fill="#9E2B47" />
+                                          <path
+                                            d="M15.75 19.25C16.3713 19.25 16.875 18.7463 16.875 18.125C16.875 17.5037 16.3713 17 15.75 17C15.1287 17 14.625 17.5037 14.625 18.125C14.625 18.7463 15.1287 19.25 15.75 19.25Z"
+                                            fill="#9E2B47" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Tính khoản tiết kiệm</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+                                      <div class="line-v"></div>
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path
+                                            d="M15.5844 7.71496C19.1218 8.2638 21.6002 11.2974 21.6002 14.9574C21.6002 17.4087 20.3861 19.5786 18.5215 20.9097V23.2984H15.1435V21.8803C11.6168 23.2426 8.92638 21.8719 8.92638 21.8719L8.9266 23.2984H5.50021V20.8784C4.69691 20.3079 3.57309 19.2477 3.1202 17.5765C2.05981 17.5765 1.2002 16.7248 1.2002 15.6742V13.8138C1.2002 12.7314 2.08587 11.8538 3.17837 11.8538C3.50353 11.2275 4.19389 9.99513 5.02334 9.34315V5.89905H5.11565C6.43605 5.8759 7.43581 6.51423 8.11557 7.62639H9.55664"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M21 11.7699H21.0553C21.93 11.7699 22.6391 11.0606 22.6391 10.1855V9.5"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path
+                                            d="M12.6 8.89922C14.5882 8.89922 16.2 7.28744 16.2 5.29922C16.2 3.31099 14.5882 1.69922 12.6 1.69922C10.6118 1.69922 9 3.31099 9 5.29922C9 7.28744 10.6118 8.89922 12.6 8.89922Z"
+                                            stroke="#9E2B47" stroke-width="1.25" stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Lãi suất tiền gửi</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+                                      <div class="line-v"></div>
+                                      <a class="div-link-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                          viewBox="0 0 24 25" fill="none">
+                                          <path d="M19.5 21.5H4.5V3.5H14.25L19.5 8.75V21.5Z" stroke="#9E2B47"
+                                            stroke-width="1.25" stroke-miterlimit="10" />
+                                          <path d="M14.25 3.5V8.75H19.2" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 13.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                          <path d="M9 16.25H15" stroke="#9E2B47" stroke-width="1.25"
+                                            stroke-miterlimit="10" />
+                                        </svg>
+                                        <span class="body-15 color-dark-2">Biểu mẫu và biểu phí</span>
+                                        <em class="icon ni ni-chevron-right color-dark-2"></em>
+                                      </a>
+
+                                    </div>
+                                    <a class="footer-mega-map">
+                                      <span class="regular-15 color-red-1">Sơ đồ trang</span>
+                                      <em class="icon ni ni-arrow-right color-red-1"></em>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="ruby-dropdown-toggle"></span>
+                            </li>
+                          </ul>
+                        </div>
+                        <span class="ruby-dropdown-toggle"></span>
+                      </li>
+                      <li class="ruby-menu-mega-blog "><a href="#" class="body-15">Khuyến mãi</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+
               </div>
-              <li class="nk-menu-item has-sub home-tab-heading-slim">
-                <a href="#" class="nk-menu-link nk-menu-toggle color-hover-w">
-                  <span class="nk-menu-text body-15 color-white mr-1">Về chính tôi</span>
-                  <em class="ni ni-chevron-down color-white "></em>
-                </a>
-                <ul class="nk-menu-sub p-0" style="z-index: 9999;">
-                  <li class="nk-menu-item ">
-                    <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Về Agribank</span></a>
-                  </li>
-                  <li class="nk-menu-item ">
-                    <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Công bố thông tin</span></a>
-                  </li>
-                  <li class="nk-menu-item">
-                    <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Thư viện Agribank</span></a>
-                  </li>
-                  <li class="nk-menu-item">
-                    <a href="#" class="nk-menu-link color-hover"><span class="nk-menu-text body-14">Sản phẩm đấu giá</span></a>
-                  </li>
-                </ul>
-              </li>
+              <!-- end mega menu -->
+              <!-- <div>
+              <a href="#">Thư viện Agribank</a>
+            </div> -->
             </div>
-            <div class="home-header-slim-right">
+            <div class="top-menu-right">
               <div class="hot-line">
-                <a href="tel:+1900558818" class="regular-15 color-white color-hover-w"><span
-                    class="txt-hl">Hotline:</span> 1900558818 /
-                  02432053205</a>
+                <a href="tel:+1900558818" class="regular-15 color-white color-hover-w">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                    <path
+                      d="M4.125 16.3125H3.09375C2.54674 16.3125 2.02214 16.0952 1.63534 15.7084C1.24855 15.3216 1.03125 14.797 1.03125 14.25V12.1875C1.03125 11.6405 1.24855 11.1159 1.63534 10.7291C2.02214 10.3423 2.54674 10.125 3.09375 10.125H4.125C4.67201 10.125 5.19661 10.3423 5.58341 10.7291C5.9702 11.1159 6.1875 11.6405 6.1875 12.1875V14.25C6.1875 14.797 5.9702 15.3216 5.58341 15.7084C5.19661 16.0952 4.67201 16.3125 4.125 16.3125ZM3.09375 11.5C2.91141 11.5 2.73655 11.5724 2.60761 11.7014C2.47868 11.8303 2.40625 12.0052 2.40625 12.1875V14.25C2.40625 14.4323 2.47868 14.6072 2.60761 14.7361C2.73655 14.8651 2.91141 14.9375 3.09375 14.9375H4.125C4.30734 14.9375 4.4822 14.8651 4.61114 14.7361C4.74007 14.6072 4.8125 14.4323 4.8125 14.25V12.1875C4.8125 12.0052 4.74007 11.8303 4.61114 11.7014C4.4822 11.5724 4.30734 11.5 4.125 11.5H3.09375ZM18.9062 16.3125H17.875C17.328 16.3125 16.8034 16.0952 16.4166 15.7084C16.0298 15.3216 15.8125 14.797 15.8125 14.25V12.1875C15.8125 11.6405 16.0298 11.1159 16.4166 10.7291C16.8034 10.3423 17.328 10.125 17.875 10.125H18.9062C19.4533 10.125 19.9779 10.3423 20.3647 10.7291C20.7515 11.1159 20.9688 11.6405 20.9688 12.1875V14.25C20.9688 14.797 20.7515 15.3216 20.3647 15.7084C19.9779 16.0952 19.4533 16.3125 18.9062 16.3125ZM17.875 11.5C17.6927 11.5 17.5178 11.5724 17.3889 11.7014C17.2599 11.8303 17.1875 12.0052 17.1875 12.1875V14.25C17.1875 14.4323 17.2599 14.6072 17.3889 14.7361C17.5178 14.8651 17.6927 14.9375 17.875 14.9375H18.9062C19.0886 14.9375 19.2635 14.8651 19.3924 14.7361C19.5213 14.6072 19.5938 14.4323 19.5938 14.25V12.1875C19.5938 12.0052 19.5213 11.8303 19.3924 11.7014C19.2635 11.5724 19.0886 11.5 18.9062 11.5H17.875Z"
+                      fill="white" />
+                    <path
+                      d="M18.9062 11.5H18.2188C18.0364 11.5 17.8615 11.4276 17.7326 11.2986C17.6037 11.1697 17.5312 10.9948 17.5312 10.8125C17.5312 6.83187 14.9256 3.9375 11.3438 3.9375H10.6562C7.07437 3.9375 4.46875 6.83187 4.46875 10.8125C4.46875 10.9948 4.39632 11.1697 4.26739 11.2986C4.13845 11.4276 3.96359 11.5 3.78125 11.5C3.59891 11.5 3.42405 11.4276 3.29511 11.2986C3.16618 11.1697 3.09375 10.9948 3.09375 10.8125C3.09375 6.03438 6.27688 2.5625 10.6562 2.5625H11.3438C15.51 2.5625 18.5969 5.70438 18.9062 10.125C19.0886 10.125 19.2635 10.1974 19.3924 10.3264C19.5213 10.4553 19.5938 10.6302 19.5938 10.8125C19.5938 10.9948 19.5213 11.1697 19.3924 11.2986C19.2635 11.4276 19.0886 11.5 18.9062 11.5ZM14.7812 20.4375H13.4062C13.2239 20.4375 13.049 20.3651 12.9201 20.2361C12.7912 20.1072 12.7188 19.9323 12.7188 19.75C12.7188 19.5677 12.7912 19.3928 12.9201 19.2639C13.049 19.1349 13.2239 19.0625 13.4062 19.0625H14.7812C15.2327 19.0625 15.6797 18.9736 16.0967 18.8008C16.5138 18.6281 16.8927 18.3749 17.2119 18.0557C17.5311 17.7365 17.7843 17.3575 17.9571 16.9405C18.1298 16.5234 18.2188 16.0764 18.2188 15.625C18.2188 15.4427 18.2912 15.2678 18.4201 15.1389C18.549 15.0099 18.7239 14.9375 18.9062 14.9375C19.0886 14.9375 19.2635 15.0099 19.3924 15.1389C19.5213 15.2678 19.5938 15.4427 19.5938 15.625C19.5938 16.9014 19.0867 18.1254 18.1842 19.028C17.2817 19.9305 16.0576 20.4375 14.7812 20.4375Z"
+                      fill="white" />
+                    <path
+                      d="M12.7188 18.375H12.0312C11.6516 18.375 11.3438 18.6828 11.3438 19.0625V20.4375C11.3438 20.8172 11.6516 21.125 12.0312 21.125H12.7188C13.0984 21.125 13.4062 20.8172 13.4062 20.4375V19.0625C13.4062 18.6828 13.0984 18.375 12.7188 18.375Z"
+                      fill="white" />
+                  </svg>
+                  <span class="txt-hl">Hotline:</span> 1900558818 / 02432053205</a>
               </div>
-              <div class="line-v home-header-slim-line"></div>
+              <div class="line-v" style="height: 36px;background: rgba(255, 255, 255, 0.20);"></div>
               <div class="dropdown div-login">
                 <button id="tab-select-answer" class="btn body-14 color-dark-1 home-vision-header-button"
                   data-toggle="dropdown">
-                  <span class="body-14 color-red-1">Đăng nhập</span><em
-                    class="ni ni-chevron-down color-red-1"></em></button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                    <path
+                      d="M6.74202 0.000952256C5.7278 0.000952256 4.89452 0.832332 4.89452 1.84561V3.70073C4.89477 3.83443 4.94806 3.96257 5.04268 4.05702C5.13731 4.15147 5.26555 4.20451 5.39925 4.20451C5.53295 4.20426 5.66108 4.15097 5.75553 4.05634C5.84998 3.96172 5.90303 3.83348 5.90303 3.69978V1.84656C5.90303 1.37801 6.27253 1.00946 6.74107 1.00946H14.652C15.1215 1.00946 15.491 1.37801 15.491 1.84751V14.1525C15.491 14.622 15.1215 14.9905 14.653 14.9905H6.74202C6.63164 14.9916 6.52217 14.9706 6.41998 14.9288C6.31779 14.8871 6.22494 14.8254 6.14684 14.7474C6.06874 14.6694 6.00696 14.5766 5.9651 14.4745C5.92324 14.3723 5.90214 14.2629 5.90303 14.1525V12.3726C5.90303 12.2387 5.84985 12.1104 5.75519 12.0157C5.66054 11.921 5.53216 11.8679 5.39829 11.8679C5.2646 11.8681 5.13646 11.9214 5.04201 12.016C4.94756 12.1107 4.89451 12.2389 4.89452 12.3726V14.1534C4.89452 15.1667 5.7278 16 6.74202 16H14.652C15.6663 16 16.4995 15.1667 16.4995 14.1525V1.84561C16.4973 1.35649 16.3019 0.888072 15.9558 0.542388C15.6098 0.196703 15.1412 0.00175332 14.652 0L6.74202 0.000952256ZM6.97439 4.70829C6.90789 4.70861 6.8421 4.72206 6.78082 4.74789C6.71953 4.77371 6.66395 4.81139 6.61727 4.85876C6.52382 4.95411 6.47195 5.0826 6.47302 5.21611C6.47409 5.34962 6.52801 5.47726 6.62298 5.5711L8.56858 7.4967H1.00522C0.871522 7.4967 0.743286 7.54975 0.648657 7.6442C0.554029 7.73865 0.500741 7.86678 0.500488 8.00048C0.500488 8.13434 0.553665 8.26272 0.648321 8.35738C0.742977 8.45203 0.871357 8.50521 1.00522 8.50521H8.56954L6.62394 10.4289C6.52867 10.5228 6.47457 10.6506 6.47349 10.7844C6.47242 10.9181 6.52448 11.0468 6.61822 11.1422C6.66485 11.1894 6.72032 11.2269 6.78146 11.2526C6.8426 11.2784 6.90822 11.2918 6.97456 11.2922C7.04089 11.2925 7.10665 11.2798 7.16806 11.2547C7.22947 11.2296 7.28534 11.1927 7.33247 11.146L10.1504 8.3576C10.1639 8.34436 10.1766 8.33037 10.1885 8.3157C10.1951 8.30671 10.2015 8.29749 10.2075 8.28808C10.2146 8.27817 10.2212 8.268 10.2275 8.25761C10.2301 8.25288 10.2327 8.24812 10.2352 8.24332C10.2431 8.22939 10.2504 8.21509 10.2571 8.20047C10.2594 8.19511 10.2616 8.18971 10.2637 8.18428C10.2683 8.17237 10.2724 8.1603 10.2761 8.14809C10.2789 8.13864 10.2815 8.12911 10.2837 8.11952C10.2867 8.10692 10.2893 8.09422 10.2913 8.08143C10.2924 8.07541 10.2934 8.06938 10.2942 8.06333C10.2997 8.02065 10.2997 7.97745 10.2942 7.93477C10.2916 7.91456 10.2878 7.89452 10.2828 7.87477C10.2815 7.87095 10.2803 7.86714 10.279 7.86334C10.2737 7.84426 10.2674 7.8255 10.2599 7.80716C10.2428 7.7663 10.2204 7.72788 10.1932 7.69288C10.1798 7.67478 10.1652 7.6576 10.1494 7.64145L7.32866 4.85495C7.23399 4.7609 7.10593 4.70817 6.97249 4.70829H6.97439Z"
+                      fill="#AF0B35" />
+                  </svg>
+                </button>
                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-auto mt-1">
                   <ul class="link-list-plain">
                     <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
@@ -145,23 +1046,12 @@
                   </ul>
                 </div>
               </div>
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <g clip-path="url(#clip0_3509_656)">
-                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#D80027"/>
-                  <path d="M12.0015 6.26074L13.2966 10.2465H17.4874L14.0969 12.7098L15.392 16.6955L12.0015 14.2322L8.61103 16.6955L9.90609 12.7098L6.51562 10.2465H10.7064L12.0015 6.26074Z" fill="#FFDA44"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_3509_656">
-                    <rect width="24" height="24" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg> -->
             </div>
           </div>
         </div>
       </div>
-      <div class="mobile">
-        <div class="header-mobile nk-header is-light">
+      <div class="menu-mobile mobile">
+        <div class="header-mobile nk-header nk-header-fixed is-light">
           <div class="header-mobile-menu">
             <a href="#" class="toggle nk-quick-nav-icon mr-n1" data-target="sideNav"><em
                 class="icon ni ni-menu"></em></a>
@@ -171,8 +1061,12 @@
           <div class="dropdown div-login">
             <button id="tab-select-answer" class="btn body-14 color-dark-1 home-vision-header-button"
               data-toggle="dropdown">
-              <span class="body-14 color-red-1">Đăng nhập</span><em
-                class="ni ni-chevron-down color-red-1"></em></button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <path
+                  d="M6.74202 0.000952256C5.7278 0.000952256 4.89452 0.832332 4.89452 1.84561V3.70073C4.89477 3.83443 4.94806 3.96257 5.04268 4.05702C5.13731 4.15147 5.26555 4.20451 5.39925 4.20451C5.53295 4.20426 5.66108 4.15097 5.75553 4.05634C5.84998 3.96172 5.90303 3.83348 5.90303 3.69978V1.84656C5.90303 1.37801 6.27253 1.00946 6.74107 1.00946H14.652C15.1215 1.00946 15.491 1.37801 15.491 1.84751V14.1525C15.491 14.622 15.1215 14.9905 14.653 14.9905H6.74202C6.63164 14.9916 6.52217 14.9706 6.41998 14.9288C6.31779 14.8871 6.22494 14.8254 6.14684 14.7474C6.06874 14.6694 6.00696 14.5766 5.9651 14.4745C5.92324 14.3723 5.90214 14.2629 5.90303 14.1525V12.3726C5.90303 12.2387 5.84985 12.1104 5.75519 12.0157C5.66054 11.921 5.53216 11.8679 5.39829 11.8679C5.2646 11.8681 5.13646 11.9214 5.04201 12.016C4.94756 12.1107 4.89451 12.2389 4.89452 12.3726V14.1534C4.89452 15.1667 5.7278 16 6.74202 16H14.652C15.6663 16 16.4995 15.1667 16.4995 14.1525V1.84561C16.4973 1.35649 16.3019 0.888072 15.9558 0.542388C15.6098 0.196703 15.1412 0.00175332 14.652 0L6.74202 0.000952256ZM6.97439 4.70829C6.90789 4.70861 6.8421 4.72206 6.78082 4.74789C6.71953 4.77371 6.66395 4.81139 6.61727 4.85876C6.52382 4.95411 6.47195 5.0826 6.47302 5.21611C6.47409 5.34962 6.52801 5.47726 6.62298 5.5711L8.56858 7.4967H1.00522C0.871522 7.4967 0.743286 7.54975 0.648657 7.6442C0.554029 7.73865 0.500741 7.86678 0.500488 8.00048C0.500488 8.13434 0.553665 8.26272 0.648321 8.35738C0.742977 8.45203 0.871357 8.50521 1.00522 8.50521H8.56954L6.62394 10.4289C6.52867 10.5228 6.47457 10.6506 6.47349 10.7844C6.47242 10.9181 6.52448 11.0468 6.61822 11.1422C6.66485 11.1894 6.72032 11.2269 6.78146 11.2526C6.8426 11.2784 6.90822 11.2918 6.97456 11.2922C7.04089 11.2925 7.10665 11.2798 7.16806 11.2547C7.22947 11.2296 7.28534 11.1927 7.33247 11.146L10.1504 8.3576C10.1639 8.34436 10.1766 8.33037 10.1885 8.3157C10.1951 8.30671 10.2015 8.29749 10.2075 8.28808C10.2146 8.27817 10.2212 8.268 10.2275 8.25761C10.2301 8.25288 10.2327 8.24812 10.2352 8.24332C10.2431 8.22939 10.2504 8.21509 10.2571 8.20047C10.2594 8.19511 10.2616 8.18971 10.2637 8.18428C10.2683 8.17237 10.2724 8.1603 10.2761 8.14809C10.2789 8.13864 10.2815 8.12911 10.2837 8.11952C10.2867 8.10692 10.2893 8.09422 10.2913 8.08143C10.2924 8.07541 10.2934 8.06938 10.2942 8.06333C10.2997 8.02065 10.2997 7.97745 10.2942 7.93477C10.2916 7.91456 10.2878 7.89452 10.2828 7.87477C10.2815 7.87095 10.2803 7.86714 10.279 7.86334C10.2737 7.84426 10.2674 7.8255 10.2599 7.80716C10.2428 7.7663 10.2204 7.72788 10.1932 7.69288C10.1798 7.67478 10.1652 7.6576 10.1494 7.64145L7.32866 4.85495C7.23399 4.7609 7.10593 4.70817 6.97249 4.70829H6.97439Z"
+                  fill="#AF0B35" />
+              </svg>
+            </button>
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-auto mt-1">
               <ul class="link-list-plain">
                 <li class="home-vision-button-dropdown"><a class="tab-pane-answer body-14 "
@@ -263,7 +1157,8 @@
                                                     <li class="nk-menu-item pt-0">
                                                       <a href="#"
                                                         class="body-18 color-black header-sub mr-n1 toggle nk-menu-link"
-                                                        data-target="submenu-mobile-tg" data-original-title="" title="">
+                                                        data-target="submenu-mobile-tg-lv2" data-original-title=""
+                                                        title="">
                                                         <em class="icon ni ni-chevron-left"></em>
                                                         <span class="body-18">Gửi tiền Agribank</span>
                                                       </a>
@@ -471,7 +1366,7 @@
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="toggle-overlay-lv2 " data-target="submenu-mobile-tg"></div>
+                                    <div class="toggle-overlay-lv2" data-target="submenu-mobile-tg-lv2"></div>
                                   </li>
                                   <li class="nk-menu-item">
                                     <a href="#" class="nk-menu-link" data-original-title="" title=""><span
@@ -486,11 +1381,11 @@
                                         class="nk-menu-text">Thanh toán và chuyển tiền</span></a>
                                   </li>
                                   <li class="nk-menu-item">
-                                    <a href="#" data-target="submenu-mobile"
+                                    <a href="#" data-target="submenu-mobile1"
                                       class="nk-menu-link toggle nk-quick-nav-icon mr-n1" data-original-title=""
                                       title=""><span class="nk-menu-text">Khác</span></a>
                                     <div class="nk-aside toggle-screen-lg submenu-mobile mobile-menu"
-                                      data-content="submenu-mobile" data-toggle-overlay-lv2="true"
+                                      data-content="submenu-mobile1" data-toggle-overlay-lv2="true"
                                       data-toggle-screen="lg" data-toggle-body="true">
                                       <div class="nk-sidebar-menu content-menu-lv2" data-simplebar="init">
                                         <div class="simplebar-wrapper" style="margin: 0px 0px -40px;">
@@ -658,7 +1553,7 @@
                                 <div class="line-h"></div>
                               </li><!-- .nk-menu-item -->
                               <li class="nk-menu-item">
-                                <a href="#" class="nk-menu-link " data-original-title="" title="">
+                                <a href="#" class="nk-menu-link" data-original-title="" title="">
                                   <span class="nk-menu-text body-13 color-dark-2">Về Agribank</span>
                                 </a>
                               </li><!-- .nk-menu-item -->
@@ -756,7 +1651,23 @@
           </div>
         </div>
       </div>
+      <style>
+        .list-search .owl-item {
+          margin-left: 0;
+          /* Đảm bảo item đầu tiên không bị khuất */
+        }
 
+        .list-search .owl-carousel-search-item {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-position: center;
+        }
+      </style>
+      <div class="text-banner">
+        <span class="color-white heading-h4">Agribank đã và đang giữ vững vị thế là một trong những ngân hàng thương mại hàng đầu, đóng vai trò quan trọng trong sự phát triển bền vững của đất nước</span>
+      </div>
       <div class="banner-search">
         <div class="search gradient-background">
           <div class="input-search" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out">
