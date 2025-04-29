@@ -539,6 +539,9 @@
 }
 
 @media (max-width: 768px) {
+  .text-banner {
+    width: 100%;
+  }
   .announcement-subtitle {
     margin-bottom: 10%;
   }

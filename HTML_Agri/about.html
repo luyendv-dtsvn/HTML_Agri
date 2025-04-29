@@ -28,8 +28,13 @@
   transform: translate(-50%, -50%);
   width: 46%;
   text-align: center;
+  
+  
 }
-
+@media (max-width: 768px) {
+  .text-banner {
+    width: 80%;
+  }}
   </style>
 </head>
 
@@ -1674,7 +1679,7 @@
     };
     checkDevice2();
     window.addEventListener("resize", checkDevice2);
-  });
+   });
   $(document).ready(function () {
     $(".owl-carousel-search").owlCarousel({
       loop: true,
