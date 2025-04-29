@@ -1264,33 +1264,6 @@
     align-self: stretch;
 }
 
-.advantage-card-asked-questions {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 5%;
-}
-
-.asked-questions {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.asked-questions-card {
-    display: flex;
-    padding: 15px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 28px;
-    flex: 1 0 0;
-    border-radius: 4px;
-    border: 1px solid #F1F1F1;
-    background: linear-gradient(92deg, #F7F7F7 0%, #FAF8F8 100.37%);
-}
-
 .col {
     margin-right: 10px;
 }
@@ -2805,6 +2778,7 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background-size: 100% auto;
 }
 
 /* .Agribank-all-awards-content {
@@ -2834,8 +2808,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 .Agribank-all-awards-content .Agribank-all-awards-content-list-card {
-    margin-left: 15% !important;
-    height: 500px;
+    margin-left: 13%;
+    min-height: 500px;
 }
 
 @media (max-width: 767px) {
@@ -3062,49 +3036,27 @@ input[type="range"]::-webkit-slider-thumb {
     }
 }
 
-/* .Agribank-all-awards-list-year {
-    -webkit-mask-image: linear-gradient(to right,
-            transparent 0px,
-            black 20px,
-            black calc(100% - 20px),
-            transparent 100%);
-    mask-image: linear-gradient(to right,
-            transparent 0px,
-            black 20px,
-            black calc(100% - 20px),
-            transparent 100%);
-} */
-
 .Agribank-all-awards-list-year-content {
     position: relative;
-    padding: 0 20px;
-    mask-image: linear-gradient(to right,
-            transparent 0px,
-            black 20px,
-            black calc(100% - 20px),
-            transparent 100%);
-    mask-size: 100% 100%;
-    mask-repeat: no-repeat;
+    padding: 0 80px;
 }
 
-.Agribank-all-awards-list-year-content::before,
-.Agribank-all-awards-list-year-content::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 20px;
-    height: 100%;
-    z-index: 1;
+@media (max-width: 992.6px) {
+    .Agribank-all-awards-list-year-content {
+        padding: 0 60px;
+    }
 }
 
-.Agribank-all-awards-list-year-content::before {
-    left: 0;
-    background: linear-gradient(to right, #fff, transparent);
+@media (max-width: 768.6px) {
+    .Agribank-all-awards-list-year-content {
+        padding: 0 20px;
+    }
 }
 
-.Agribank-all-awards-list-year-content::after {
-    right: 0;
-    background: linear-gradient(to left, #fff, transparent);
+@media (max-width: 375.6px) {
+    .Agribank-all-awards-list-year-content {
+        padding: 0 10px;
+    }
 }
 
 .Agribank-all-awards-year {
