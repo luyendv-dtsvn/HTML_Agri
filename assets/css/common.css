@@ -5510,3 +5510,87 @@ a.color-hover-b:hover,
 }
 
 /* end update */
+
+/* update blog - trongpd */
+.blog-content-main-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 5%;
+}
+
+.blog-content-main-slide .blog-content-main-slide-card-content-left {
+    position: relative;
+    display: block;
+}
+
+.blog-content-main-slide .blog-content-main-slide-card-content-left img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.50) 50%, rgba(0, 0, 0, 0.80) 100%);
+    aspect-ratio: 1279/743;
+}
+
+.blog-content-main-slide .blog-content-main-slide-card-content-left .blog-content-main-slide-card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 31px;
+    padding-top: 144px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 0px 0px 4px 4px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    width: 97.85%;
+}
+
+.blog-content-main-slide .blog-content-main-slide-card-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+
+}
+
+
+.blog-content-main-slide .blog-content-main-slide-card-content-right-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.blog-content-main-slide .blog-content-main-slide-card-content-right-item img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    aspect-ratio: 413/258;
+}
+
+.blog-content-main-slide .owl-carousel .owl-dots {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 38px;
+
+}
+
+.blog-content-main-slide .owl-carousel button.owl-dot {
+    background: rgba(0, 0, 0, 0.10);
+    width: 42px;
+    height: 2px;
+}
+
+.blog-content-main-slide .owl-carousel button.owl-dot.active {
+    background: #AF0B35;
+}
+
+
+.blog-content-main-slide .slider-blog .owl-nav,
+.blog-content-main-slide .slider-blog .owl-dots {
+    display: none;
+}
+
+/* end update */
