@@ -1104,7 +1104,7 @@ button {
     }
 
     .heading-h8 {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .regular-15 {
@@ -1116,7 +1116,7 @@ button {
     }
 
     .heading-h5 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .subtitle-14 {
@@ -2825,7 +2825,7 @@ a.color-hover-b:hover,
 
     .bld .nav-link span {
         text-align: center;
-        width: 60%;
+        width: 65%;
     }
 
     .nav-item {
@@ -3566,7 +3566,9 @@ a.color-hover-b:hover,
         height: 700px;
     }
 }
-
+.justified-text{
+    text-align: justify;
+}
 /* ------------------------------------------Lãi Suất-------------------------------------- */
 .interestRate .personal-loan-section {
     background-image: url(../images/banner-interestRate.png);

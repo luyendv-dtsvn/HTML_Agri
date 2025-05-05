@@ -505,9 +505,16 @@
 
 
 }
-
+@media (min-width: 1024px) {
+  .div-show-more-2 {
+    display: none;
+  }
+}
 @media (max-width: 1024px) {
   .div-show-more {
+    display: block;
+  }
+  .div-show-more-2 {
     display: block;
   }
 
@@ -522,12 +529,17 @@
   }
 
   .about-us {
-    margin: 121px 4% 0 4%;
+    margin: 31px 4% 0 4%;
     text-align: center;
 
   }
-
-
+  .announcement {
+    margin: 60px 0px 0 0px;
+}
+.reports-titles {
+  
+  margin-top: 12px;
+}
 
   
 }
