@@ -4913,6 +4913,9 @@ a.color-hover-b:hover,
     text-align: center;
 }
 
+.history .Agribank-all-awards-section .Agribank-all-awards-list-year-content .Agribank-all-awards-year span {
+    font-size: 36px;
+}
 
 
 @media (max-width: 992px) {
@@ -4947,11 +4950,15 @@ a.color-hover-b:hover,
         border: none;
         background: #C33C5E;
         bottom: -28px;
+        padding: 4px;
     }
 
     .history .Agribank-all-awards-section .Agribank-all-awards-timeline button svg {
         filter: brightness(0) invert(1);
+        width: 14px;
+        height: 14px;
     }
+
 }
 
 @media (max-width: 376.1px) {
@@ -4965,6 +4972,10 @@ a.color-hover-b:hover,
 
     .timeline-history-section .history-year-content .accordion-inner .regular-15 {
         font-size: 14px;
+    }
+
+    .history .Agribank-all-awards-section .Agribank-all-awards-list-year-content .Agribank-all-awards-year span {
+        font-size: 20px;
     }
 }
 
