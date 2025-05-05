@@ -1,12 +1,12 @@
 @import url(common.css);
+
 /* viet file common */
 .fee-schedule-title-section {
     height: 573px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background: url("../images/application_form/Mask\ group.svg") no-repeat
-        center;
+    background: url("../images/application_form/Mask\ group.svg") no-repeat center;
     background-size: cover;
     padding: 40px 5%;
 }
@@ -36,16 +36,20 @@
 .background-white {
     background: #fff;
 }
+
 .content-top-menu:hover div {
     color: #af0b35;
 }
+
 .content-top-menu:hover svg path {
     stroke: #af0b35;
 }
+
 .fee-schedule .content-top-menu img {
     width: 100%;
     height: 100%;
 }
+
 .button-login-red {
     padding: 14px;
     display: flex;
@@ -56,12 +60,15 @@
     background: var(--red-1);
     border: var(--red-1);
 }
+
 .fee-schedule .content-top-menu.underline::before {
     display: none;
 }
+
 .fee-schedule .image-cate {
     position: relative;
 }
+
 .fee-schedule .title-cate {
     display: flex;
     flex-direction: column;
@@ -70,9 +77,11 @@
     bottom: 32px;
     left: 37px;
 }
+
 .slick-dots li button {
     background-color: #8094ae;
 }
+
 .slick-dots li.slick-active button {
     background-color: #af0b35;
 }
@@ -113,16 +122,20 @@
 .fee-schedule .fee-schedule-agri-notification-right {
     border-left: 1px solid #f2f2f2;
 }
+
 /* end common */
 .social-network,
 .agri-notification-section {
     display: flex;
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
     width: 100%;
     height: 100%;
     padding: 20px 5%;
 }
+
 .social-network-center {
     width: 100%;
     background: #f2f2f2;
@@ -191,6 +204,7 @@
     overflow: hidden;
     justify-content: center;
 }
+
 .fee-schedule-top-news-item-title {
     width: 50%;
     bottom: 38px;
@@ -200,16 +214,20 @@
     gap: 12px;
     flex-direction: column;
 }
+
 .fee-schedule-top-news-item-slide {
     position: relative;
 }
+
 .slick-dots li button {
     height: 2px;
     width: 42px;
 }
+
 .content-betwent {
     margin-top: 58px;
 }
+
 .content-betwent-title {
     flex-wrap: wrap;
     display: flex;
@@ -223,6 +241,7 @@
     overflow: hidden;
     border-radius: 4px;
 }
+
 .content-betwent-subtitle a {
     display: flex;
     flex-direction: column;
@@ -239,13 +258,16 @@
 .cate {
     color: #494949;
 }
+
 .subtitle {
     color: #393939;
 }
+
 .notification-slide,
 .tab {
     padding: 0 5.5%;
 }
+
 .turn-page {
     display: flex;
     justify-content: center;
@@ -278,18 +300,23 @@
 .fee-schedule .top-menu-right .hot-line span {
     color: rgba(0, 0, 0, 0.6);
 }
+
 .nk-menu-main .nk-menu-item .nk-menu-toggle:after {
     display: none;
 }
+
 .fee-schedule .home-header-slim-button {
     background: #af0b35;
 }
+
 .fee-schedule .home-header-slim-line {
     background: #f2f2f2;
 }
+
 .fee-schedule .top-menu-right .hot-line a {
     color: #000;
 }
+
 /* .stt:active {
     background-color: #ffffff;
    
@@ -304,28 +331,33 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .notification {
     text-align: center;
 }
+
 .notification-slide-new-title {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
 .see-more a {
     display: flex;
     justify-content: center;
     gap: 8px;
 }
+
 .mobi {
     display: none;
 }
+
 .owl-center.owl-carousel .owl-nav,
 .owl-center.owl-carousel .owl-dots {
     bottom: calc(100% + 130px);
 }
-.content-betwent-subtitle a div {
-}
+
+.content-betwent-subtitle a div {}
 
 .active-stt {
     background-color: #af0b35;
@@ -351,6 +383,7 @@
     padding-top: 68px;
     width: 100%;
 }
+
 .content-pic {
     display: flex;
     width: 95%;
@@ -358,29 +391,31 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0) 100%
-    );
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0) 100%);
     position: absolute;
 }
+
 .title-pic-content {
     color: #fff;
 
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 32.5px */
+    line-height: 130%;
+    /* 32.5px */
     letter-spacing: -0.25px;
 }
+
 .pic-content {
     color: rgba(255, 255, 255, 0.8);
 
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 22.5px */
+    line-height: 150%;
+    /* 22.5px */
     letter-spacing: 0.15px;
 }
 
@@ -400,7 +435,8 @@
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
 }
-.recuitment-block:hover > .btn-information {
+
+.recuitment-block:hover>.btn-information {
     opacity: 1 !important;
 }
 
@@ -410,34 +446,43 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 19.6px */
+    line-height: 140%;
+    /* 19.6px */
     letter-spacing: 0.28px;
 }
+
 .fee-schedule .content-top {
     width: 100%;
+    gap: 70px;
 }
+
 .fee-schedule .content-top.menu-tab-ct .content-top-menu {
-    width: 25%;
+    width: 208px
 }
+
 .fee-schedule .header-t {
     text-align: center;
 }
+
 @media (max-width: 1366px) and (min-width: 1199.98px) {
     .fee-schedule .header-t {
         text-align: center;
         font-size: 37px;
         font-style: normal;
         font-weight: 400;
-        line-height: 130%; /* 35.1px */
+        line-height: 130%;
+        /* 35.1px */
         letter-spacing: -0.27px;
     }
 }
-@media (max-width: 1200px) and (min-width: 991.98px) {
+
+@media (max-width: 1200.6px) and (min-width: 991.98px) {
     .advantage-card-asked-questions-selects .heading-h8 {
         font-size: 14px;
     }
 }
-@media (max-width: 992px) {
+
+@media (max-width: 992.6px) {
     .fee-schedule .fee-schedule-agri-notification-containers {
         gap: 20px;
     }
@@ -458,46 +503,55 @@
     .fee-schedule .fee-schedule-agri-notification-content {
         padding: 0;
     }
+
     .fee-schedule .header-t {
         text-align: center;
         font-size: 37px;
         font-style: normal;
         font-weight: 400;
-        line-height: 130%; /* 35.1px */
+        line-height: 130%;
+        /* 35.1px */
         letter-spacing: -0.27px;
+    }
+
+    .fee-schedule .content-top {
+        gap: 40px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768.6px) {
     .fee-schedule .content-top {
         width: 100%;
     }
+
     .fee-schedule .content-top {
         justify-content: space-around;
     }
+
     .nk-menu-heading {
         padding: 14px;
         color: #af0b35;
     }
-    .select2-container--default
-        .select2-selection--single
-        .select2-selection__rendered {
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
         padding-left: 0;
     }
+
     .select2-container--default .select2-selection--single {
         border: none;
         border-bottom: 1px solid #dbdfea;
         border-radius: 0;
     }
-    .select2-container--default
-        .select2-selection--single
-        .select2-selection__rendered {
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
         color: #af0b35;
     }
+
     .select2-results__options {
         color: #af0b35;
         padding-left: 00;
     }
+
     .select2-dropdown {
         border: none;
         padding-left: 0;
@@ -514,25 +568,39 @@
     .social-network-center {
         flex-direction: column;
     }
+
     .social-network-text {
         text-align: center;
     }
+
     .fee-schedule .header-t {
         text-align: center;
         font-size: 27px;
         font-style: normal;
         font-weight: 400;
-        line-height: 130%; /* 35.1px */
+        line-height: 130%;
+        /* 35.1px */
         letter-spacing: -0.27px;
     }
+
+    .fee-schedule .content-top {
+        gap: 0;
+    }
+
+    .fee-schedule .content-top.menu-tab-ct .content-top-menu {
+        width: 50%
+    }
 }
-@media (max-width: 375px) {
+
+@media (max-width: 375.6px) {
     .fee-schedule .content-top {
         width: 100%;
     }
+
     .fee-schedule .content-top {
         justify-content: space-around;
     }
+
     .fee-schedule-title-section {
         height: 375px;
     }
@@ -540,26 +608,32 @@
     .fee-schedule-title-text {
         padding: 18px 6%;
     }
+
     .owl-center.owl-carousel .owl-nav,
-    .owl-center.owl-carousel .owl-dots {
-    }
+    .owl-center.owl-carousel .owl-dots {}
+
     .destop {
         display: none;
     }
+
     .mobi {
         display: flex;
     }
+
     .fee-schedule .header-t {
         text-align: center;
         font-size: 27px;
         font-style: normal;
         font-weight: 400;
-        line-height: 130%; /* 35.1px */
+        line-height: 130%;
+        /* 35.1px */
         letter-spacing: -0.27px;
     }
-    .fee-schedule .regular-16{
+
+    .fee-schedule .regular-16 {
         font-size: 15px;
     }
+
     .fee-schedule .body-16 {
         font-size: 16px;
     }
