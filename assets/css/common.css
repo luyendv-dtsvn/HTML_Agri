@@ -3566,9 +3566,11 @@ a.color-hover-b:hover,
         height: 700px;
     }
 }
-.justified-text{
+
+.justified-text {
     text-align: justify;
 }
+
 /* ------------------------------------------Lãi Suất-------------------------------------- */
 .interestRate .personal-loan-section {
     background-image: url(../images/banner-interestRate.png);
@@ -5622,3 +5624,61 @@ a.color-hover-b:hover,
 }
 
 /* end update */
+
+
+/* fix biểu mẫu  */
+.application-form .application-form-title-main-content .item-disclosure,
+.fee-schedule .fee-schedule-title-main-content .item-disclosure,
+.disclosure .disclosure-title-main-content .item-disclosure {
+    align-items: center;
+}
+
+.application-form .application-form-title-main-content .item-disclosure .w-content,
+.fee-schedule .fee-schedule-title-main-content .item-disclosure span,
+.disclosure .disclosure-title-main-content .item-disclosure span {
+    display: flex;
+    align-items: center;
+}
+
+/* end fix */
+
+/* fix danh-sach-tin-tuc  */
+.agri-notification-section {
+    flex-direction: row;
+    align-items: unset;
+}
+
+.fee-schedule .content-betwent,
+.disclosure .content-betwent,
+.application-form .content-betwent {
+    display: none;
+}
+
+.fee-schedule .content-betwent.active,
+.disclosure .content-betwent.active,
+.application-form .content-betwent.active {
+    display: block;
+}
+
+.application-form .content-top .content-top-menu.active::after {
+    width: 100%;
+}
+
+
+.recruitment-program .home-vision-header-button div {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.nk-tb-item.table-block:hover .home-vision-header-button span,
+.nk-tb-item.table-block:hover .home-vision-header-button em {
+    color: white;
+}
+
+.recruitment-program .nk-tb-list .table-l,
+.nk-tb-list .tb-amount-sm {
+    max-width: none;
+}
+
+/* end fix */
