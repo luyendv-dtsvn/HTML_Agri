@@ -2862,6 +2862,12 @@ input[type="range"]::-webkit-slider-thumb {
     aspect-ratio: 557 / 301;
 }
 
+.about .Agribank-award-card-content,
+.prize-page .Agribank-award-card-content {
+    padding-right: 0;
+    align-items: center;
+}
+
 @media (min-width: 1023.9px) {
     .Agribank-identity-list-section .Agribank-identity-list-content .Agribank-identity-list-card:hover {
         width: auto;

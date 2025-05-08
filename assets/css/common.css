@@ -5486,7 +5486,7 @@ a.color-hover-b:hover,
 /* end update */
 
 /* update bieu-phi, bieu-mau - trongpd */
-@media (max-width: 768px) {
+@media (max-width: 768.6px) {
 
     .application-form .content-top.menu-tab-ct .content-top-menu,
     .fee-schedule .content-top.menu-tab-ct .content-top-menu {
@@ -5680,5 +5680,103 @@ a.color-hover-b:hover,
 .nk-tb-list .tb-amount-sm {
     max-width: none;
 }
+
+/* end fix */
+
+/* fix about  */
+.about .report-content {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.about .report-content .report-left-1 .report-left,
+.about .report-content .report-left-2 .report-left {
+    flex-direction: column;
+    padding: 34px 72px 38px 48px;
+    justify-content: space-between;
+}
+
+.about .report-content .report-left-1 .report-left {
+    gap: 207px;
+}
+
+.about .report-content .report-left-2 .report-left {
+    height: 100%;
+}
+
+.about .report-content .report-left-1 .report-left-title-content,
+.about .report-content .report-left-2 .report-left-title-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768.6px) {
+    .about .report-content {
+        flex-direction: column;
+    }
+
+    .about .report-content .report-left-1 .report-left,
+    .about .report-content .report-left-2 .report-left {
+        padding: 23px 30px;
+    }
+
+    .about .report-content .report-left-2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about .report-content .report-left-1 .report-left {
+        gap: 0;
+    }
+
+    .about .report-content .report-left-2 .report-left {
+        gap: 89px;
+    }
+
+    .about .report-content .report-left-1 .report-left-title-content-2 {
+        gap: 112px;
+    }
+}
+
+@media (max-width: 375.6px) {
+    .about .report-content .report-left-1 .report-left .report-left-title-content-2 .report-left-title-content .heading-h5 {
+        font-size: 25px;
+    }
+
+    .about .report-content .report-left-1 .report-left .report-left-title-content .regular-16 {
+        font-size: 14px;
+    }
+
+    .about .report-content .report-left-1 .report-left .report-left-title-content .regular-15 {
+        font-size: 13px;
+    }
+
+    .about .background-relative .community-stats-left-subtitle-a,
+    .about .background-relative .community_slider {
+        padding-left: 0;
+    }
+
+    .about .background-relative .community-stats-left-subtitle-a .regular-15 {
+        font-size: 13px;
+    }
+}
+
+/* end fix */
+
+/* fix about  */
+.bld .bld-item-card {
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+}
+
+.bld .tab-content .image-zoom {
+    border-radius: 4px;
+}
+
 
 /* end fix */
