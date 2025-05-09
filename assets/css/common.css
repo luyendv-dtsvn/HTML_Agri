@@ -4921,10 +4921,6 @@ a.color-hover-b:hover,
 
 
 @media (max-width: 992px) {
-    .history .main-info-s .main-info-content .main-info-title-content .main-info-title-content-text span br {
-        display: none;
-    }
-
     .history .timeline-history-section .timeline-history-years-mobile .item .body-16 {
         font-size: 16px;
     }
@@ -4932,6 +4928,10 @@ a.color-hover-b:hover,
     .Agribank-all-awards-content .Agribank-all-awards-content-list-card {
         margin-left: 0;
 
+    }
+
+    .history .main-info-s .main-info-title-content-text span br {
+        display: block !important;
     }
 }
 
@@ -5153,11 +5153,6 @@ a.color-hover-b:hover,
 
 /* fix page văn hóa Agribank trongdp */
 
-.Agribank-identity-list-section .Agribank-identity-list-card-text {
-    display: flex;
-    flex-direction: column;
-}
-
 .van-hoa-agri-page .nk-content {
     padding: 0 5%;
 }
@@ -5168,13 +5163,43 @@ a.color-hover-b:hover,
     top: -26%;
 }
 
-@media (min-width: 768px) {
+.van-hoa-agri-page .Agribank-identity-list-section .Agribank-identity-list-card {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid #E1E1E1;
+}
+
+.van-hoa-agri-page .Agribank-identity-list-section .Agribank-identity-list-card:hover {
+    background: #AF0B35;
+
+    span {
+        color: #fff !important;
+    }
+
+    img {
+        filter: brightness(0) invert(1);
+    }
+
+    path {
+        stroke: #fff !important;
+    }
+}
+
+.van-hoa-agri-page .Agribank-identity-list-card .Agribank-identity-list-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768.6px) {
     .van-hoa-agri-page .why-agribank-culture-text {
         padding: 0;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768.6px) {
     .featured-culture-agribank .featured-culture-content .heading-h7 {
         font-size: 19px;
     }
@@ -5201,6 +5226,10 @@ a.color-hover-b:hover,
 
     .featured-culture-agribank .featured-culture-image img {
         aspect-ratio: 846 / 736;
+    }
+
+    .van-hoa-agri-page .Agribank-identity-list-section .Agribank-identity-list-card {
+        gap: 60px;
     }
 }
 
@@ -5257,7 +5286,7 @@ a.color-hover-b:hover,
     width: 91px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024.6px) {
 
     .van-hoa-agri-page .slider-blog.owl-carousel .owl-nav,
     .van-hoa-agri-page .slider-blog.owl-carousel .owl-dots {
@@ -5331,7 +5360,7 @@ a.color-hover-b:hover,
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600.6px) {
     .van-hoa-agri-page .agribank-quote-section .agribank-quote-main-content {
         padding-left: 24px;
     }
@@ -5389,18 +5418,17 @@ a.color-hover-b:hover,
         left: 79%;
         top: 53%;
     }
-
-    .Agribank-identity-list-section .Agribank-identity-list-card .Agribank-identity-list-card-text {
-        .regular-15 {
-            font-size: 15px;
-        }
-
-        .regular-16 {
-            font-size: 16px;
-        }
-    }
 }
 
+@media (max-width: 375.6px) {
+    .van-hoa-agri-page .Agribank-identity-list-card-content .Agribank-identity-list-card-text .regular-15 {
+        font-size: 15px;
+    }
+
+    .van-hoa-agri-page .Agribank-identity-list-card-content .Agribank-identity-list-card-continue .regular-16 {
+        font-size: 16px;
+    }
+}
 
 /* end fix */
 /* update trang san-pham - trongpd */
